@@ -342,52 +342,28 @@ fn append_frame(
 
     let prompt = statusline_config.unwrap_or(&theme.prompt);
     let mut y_offset: f32 = 0.0;
+    let mut statusline_drawn = false;
 
     for row_index in 0..frame.buffer.height {
         let row = frame.buffer.row(row_index);
         let row_y = layout.frame_y + y_offset;
 
         if powerline && statusline::is_powerline_row(row) {
-            let sl = statusline::parse_row(row, &theme.terminal.background);
-
-            // Left prompt segments
-            statusline::render_segments_left(
-                svg,
-                &sl.left,
-                prompt,
-                layout.frame_x,
-                row_y,
-                &theme.terminal.background,
-                0,
-            )?;
-
-            // Right prompt segments
-            let right_edge = layout.frame_x + layout.terminal_width;
-            statusline::render_segments_right(
-                svg,
-                &sl.right,
-                prompt,
-                right_edge,
-                row_y,
-                &theme.terminal.background,
-                0,
-            )?;
-
-            // Middle gap: render as regular terminal text (the typed command)
-            if sl.middle_start_col < sl.middle_end_col {
-                let middle_text_y = row_y + prompt.segment_height / 2.0 - layout.line_height / 2.0;
-                append_row_text_range(
+            // Only draw the bespoke statusline once per frame (on the first
+            // powerline row). Subsequent powerline rows are simply skipped.
+            if !statusline_drawn {
+                statusline::render_bespoke_statusline(
                     svg,
-                    layout,
-                    theme,
-                    middle_text_y,
-                    row,
-                    sl.middle_start_col,
-                    sl.middle_end_col,
+                    prompt,
+                    layout.frame_x,
+                    row_y,
+                    layout.terminal_width,
+                    layout.line_height,
+                    &theme.terminal.background,
                 )?;
+                statusline_drawn = true;
             }
-
-            y_offset += prompt.segment_height;
+            y_offset += layout.line_height;
         } else {
             append_row_text(svg, layout, theme, row_y, row, powerline)?;
             y_offset += layout.line_height;
@@ -435,10 +411,6 @@ fn append_row_text(
             continue;
         }
 
-        if powerline && is_powerline_glyph(&cell.text) {
-            append_powerline_glyph(svg, layout, row_y, column, cell)?;
-            continue;
-        }
 
         // When powerline is enabled, skip any Private Use Area glyph
         // so we never depend on Nerd Fonts being installed.
@@ -472,129 +444,6 @@ fn append_row_text(
         }
     }
     Ok(())
-}
-
-/// Render a column range of a row as plain terminal text (used for the middle
-/// gap of a powerline row where the typed command lives).
-fn append_row_text_range(
-    svg: &mut String,
-    layout: &Layout,
-    _theme: &ThemeDefinition,
-    row_y: f32,
-    row: &[ScreenCell],
-    start_col: usize,
-    end_col: usize,
-) -> Result<()> {
-    let text_y = row_y + 4.0;
-    for column in start_col..end_col.min(row.len()) {
-        let cell = &row[column];
-        if cell.is_wide_continuation || cell.text == " " {
-            continue;
-        }
-        if statusline::is_private_use_area(&cell.text) {
-            continue;
-        }
-        if is_prompt_marker_glyph(&cell.text) {
-            append_prompt_marker(svg, layout, row_y, column, cell)?;
-            continue;
-        }
-        let cell_x = layout.frame_x + column as f32 * layout.cell_width;
-        let x = cell_x + 4.0;
-        writeln!(
-            svg,
-            r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}"{}>{}</text>"#,
-            x,
-            text_y,
-            effective_foreground(cell),
-            if cell.italic {
-                r#" font-style="italic""#
-            } else {
-                ""
-            },
-            escape_xml(&cell.text)
-        )?;
-    }
-    Ok(())
-}
-
-fn append_powerline_glyph(
-    svg: &mut String,
-    layout: &Layout,
-    row_y: f32,
-    column: usize,
-    cell: &ScreenCell,
-) -> Result<()> {
-    let x = layout.frame_x + column as f32 * layout.cell_width;
-    let y = row_y;
-    let w = layout.cell_width;
-    let h = layout.line_height;
-    let fg = effective_foreground(cell);
-
-    match cell.text.as_str() {
-        "" => {
-            writeln!(
-                svg,
-                r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}"/>"#,
-                x,
-                y,
-                x + w,
-                y + h / 2.0,
-                x,
-                y + h,
-                fg
-            )?;
-        }
-        "" => {
-            writeln!(
-                svg,
-                r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}"/>"#,
-                x + w,
-                y,
-                x,
-                y + h / 2.0,
-                x + w,
-                y + h,
-                fg
-            )?;
-        }
-        "" | "" => {
-            writeln!(
-                svg,
-                r#"<path d="M {:.2} {:.2} L {:.2} {:.2}" stroke="{}" stroke-width="2" stroke-linecap="round"/>"#,
-                x + w * 0.28,
-                y + 4.0,
-                x + w * 0.72,
-                y + h - 4.0,
-                fg
-            )?;
-        }
-        "" => {
-            writeln!(
-                svg,
-                r#"<path d="M {:.2} {:.2} Q {:.2} {:.2} {:.2} {:.2} L {:.2} {:.2} Q {:.2} {:.2} {:.2} {:.2} Z" fill="{}"/>"#,
-                x + w,
-                y,
-                x + w * 0.18,
-                y,
-                x,
-                y + h / 2.0,
-                x,
-                y + h / 2.0,
-                x + w * 0.18,
-                y + h,
-                x + w,
-                y + h,
-                fg
-            )?;
-        }
-        _ => {}
-    }
-
-    Ok(())
-}
-
-fn is_powerline_glyph(text: &str) -> bool {
-    matches!(text, "" | "" | "" | "" | "")
 }
 
 fn append_prompt_marker(
@@ -742,11 +591,12 @@ mod tests {
             },
         )
         .unwrap();
-        // Statusline renderer draws rects and polygons for segments
+        // Bespoke statusline draws rects and polygons from theme segments
         assert!(svg.contains("<rect"));
         assert!(svg.contains("<polygon"));
-        // Segment text is rendered
-        assert!(svg.contains("test"));
+        // Bespoke segment text from theme (not from cast content)
+        assert!(svg.contains("user"));
+        assert!(svg.contains(">~</text>"));
     }
 
     #[test]

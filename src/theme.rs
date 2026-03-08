@@ -63,6 +63,8 @@ pub struct PromptTheme {
     pub palette: Vec<String>,
     #[serde(default)]
     pub segment_padding_x: Option<f32>,
+    #[serde(default)]
+    pub segments: Vec<String>,
 }
 
 impl PromptTheme {

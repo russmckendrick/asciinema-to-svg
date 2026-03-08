@@ -4,12 +4,25 @@ Powerline/starship prompt rendering is enabled by default.
 
 ## Behavior
 
-- The renderer scans each row for powerline separator glyphs (`` U+E0B0, `` U+E0B2, `` U+E0B4).
-- When a separator is found, the row is treated as a **statusline row**.
-- Text between separators is extracted into segments.
-- Each segment is drawn as a colored `<rect>` with an arrow `<polygon>` separator, using the theme's `prompt.palette` colors (cycling by index).
-- Segment text is rendered centered inside each bar.
-- The final arrow fades into the terminal background color.
+- The renderer scans each row for powerline separator glyphs (`` U+E0B0, `` U+E0B2, `` U+E0B4, etc.).
+- When a separator is found, the row is treated as a **powerline row** and is **skipped** — its raw content is not rendered.
+- Instead, a **bespoke statusline** is drawn using the `prompt.segments` array from the theme (or `--statusline` override).
+- Each segment is drawn as a colored `<rect>` with a right-pointing arrow `<polygon>` separator, using the theme's `prompt.palette` colors (cycling by index).
+- Only the **first** powerline row per frame triggers the statusline; subsequent powerline rows are silently skipped.
+- The statusline height matches `line_height`, so it is the same height as regular text rows.
+
+## Bespoke Segments
+
+The statusline text is defined in the theme, not extracted from the cast. This makes rendering reliable regardless of the shell prompt configuration:
+
+```json
+"prompt": {
+  "segments": ["user", "~"],
+  "palette": ["#d96d0f", "#d7a126"]
+}
+```
+
+Each entry in `segments` becomes one colored bar. Colors cycle through `palette`.
 
 ## Statusline Override
 
@@ -27,6 +40,6 @@ Use `--no-powerline` to render the original prompt text without remapping.
 
 ## Detection Heuristic
 
-- Detection is row-based: any row containing a powerline separator glyph is rendered as a statusline.
-- Non-prompt rows are rendered as plain terminal text.
-- Statusline rows use `prompt.segment_height` for their height, which may differ from the normal `line_height`. Subsequent rows are offset accordingly.
+- Detection is row-based: any row containing a powerline separator glyph is treated as a powerline row.
+- Non-powerline rows are rendered as plain terminal text.
+- Private Use Area glyphs in non-powerline rows are filtered out when powerline mode is enabled.

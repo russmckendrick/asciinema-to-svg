@@ -42,12 +42,13 @@ Controls how powerline/statusline rows are rendered. Can also be supplied standa
 - `font_family`: font used for segment text
 - `font_size`: text size inside segments
 - `row_padding_x`: horizontal padding inside each segment before/after text
-- `segment_height`: height of each statusline bar (can be taller than normal `line_height`)
+- `segment_height`: reserved height value (defaults to `28.0` to match `line_height`)
 - `text_color`: color of text inside segments
 - `edge_fill`: reserved for edge decoration color
 - `separator_fill`: reserved for separator decoration color
-- `leading_symbol`: glyph rendered at the start of the statusline
-- `trailing_symbol`: glyph rendered at the end of the statusline
+- `leading_symbol`: reserved for future use
+- `trailing_symbol`: reserved for future use
+- `segments`: array of strings defining the bespoke statusline content (e.g. `["user", "~"]`). Each entry becomes one colored segment.
 - `palette`: array of one or more segment background colors; segments cycle through these by index
 - `segment_padding_x` (optional): override horizontal text padding within segments
 
@@ -55,4 +56,5 @@ Controls how powerline/statusline rows are rendered. Can also be supplied standa
 
 - Built-in themes are regular JSON and can be used as a starting point for custom themes.
 - The `prompt` section is used whenever a powerline row is detected and `--no-powerline` is not set.
+- The `segments` array defines what text appears in the bespoke statusline. The actual cast prompt content is skipped — only the theme-defined segments are rendered.
 - A standalone `--statusline` JSON file uses the same shape as the `prompt` section and overrides it when provided.
