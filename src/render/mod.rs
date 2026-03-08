@@ -142,6 +142,7 @@ fn append_styles(svg: &mut String, theme: &ThemeDefinition, duration: f64) -> Re
         .terminal-text {{
             font-family: {};
             font-size: {}px;
+            font-weight: 400;
             dominant-baseline: hanging;
             white-space: pre;
         }}
@@ -165,6 +166,10 @@ fn append_window_chrome(
     layout: &Layout,
     title: &str,
 ) -> Result<()> {
+    let title_bar_top = 0.0;
+    let title_bar_bottom = theme.chrome.padding + theme.chrome.title_bar_height;
+    let title_bar_center_y = title_bar_top + (title_bar_bottom - title_bar_top) / 2.0;
+
     writeln!(
         svg,
         r#"<rect x="0" y="0" width="{:.2}" height="{:.2}" rx="{:.2}" fill="{}" stroke="{}"/>"#,
@@ -176,20 +181,30 @@ fn append_window_chrome(
     )?;
 
     if matches!(theme.chrome.kind, ChromeKind::Macos) {
+        let radius = (theme.chrome.radius - 2.0).max(0.0);
         writeln!(
             svg,
-            r##"<rect x="1" y="1" width="{:.2}" height="{:.2}" rx="{:.2}" fill="#2a3157" opacity="0.82"/>"##,
-            layout.width - 2.0,
-            theme.chrome.title_bar_height + theme.chrome.padding * 0.6,
-            (theme.chrome.radius - 2.0).max(0.0)
+            r##"<path d="M 1.00 {:.2} A {:.2} {:.2} 0 0 1 {:.2} 1.00 L {:.2} 1.00 A {:.2} {:.2} 0 0 1 {:.2} {:.2} L {:.2} {:.2} L 1.00 {:.2} Z" fill="#2a3157" opacity="0.82"/>"##,
+            radius + 1.0,
+            radius,
+            radius,
+            radius + 1.0,
+            layout.width - radius - 1.0,
+            radius,
+            radius,
+            layout.width - 1.0,
+            radius + 1.0,
+            layout.width - 1.0,
+            title_bar_bottom,
+            title_bar_bottom
         )?;
         writeln!(
             svg,
             r##"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="#3a4677" stroke-width="1" opacity="0.8"/>"##,
-            theme.chrome.padding,
-            theme.chrome.padding + theme.chrome.title_bar_height + 0.5,
-            layout.width - theme.chrome.padding,
-            theme.chrome.padding + theme.chrome.title_bar_height + 0.5
+            0.0,
+            title_bar_bottom + 0.5,
+            layout.width,
+            title_bar_bottom + 0.5
         )?;
     }
 
@@ -200,7 +215,7 @@ fn append_window_chrome(
             ChromeKind::Macos | ChromeKind::Linux => layout.width / 2.0,
             ChromeKind::Powershell => 12.0,
         },
-        theme.chrome.padding + theme.chrome.title_bar_height / 2.0 + 0.5,
+        title_bar_center_y + 0.5,
         css_text("ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"),
         if matches!(theme.chrome.kind, ChromeKind::Macos) {
             17
@@ -223,7 +238,7 @@ fn append_window_chrome(
                     svg,
                     r#"<circle cx="{:.2}" cy="{:.2}" r="7" fill="{}"/>"#,
                     theme.chrome.padding + 18.0 + 22.0 * index as f32,
-                    theme.chrome.padding + theme.chrome.title_bar_height / 2.0 + 0.5,
+                    title_bar_center_y + 0.5,
                     color
                 )?;
             }
@@ -348,15 +363,10 @@ fn append_row_text(
 
         writeln!(
             svg,
-            r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}"{}{}>{}</text>"#,
+            r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}"{}>{}</text>"#,
             x,
             text_y,
             effective_foreground(cell),
-            if cell.bold {
-                r#" font-weight="700""#
-            } else {
-                ""
-            },
             if cell.italic {
                 r#" font-style="italic""#
             } else {
@@ -470,7 +480,7 @@ fn append_prompt_marker(
     let y = layout.frame_y + row_index as f32 * layout.line_height + 2.0;
     writeln!(
         svg,
-        r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}" font-weight="700">$</text>"#,
+        r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,
         x,
         y,
         effective_foreground(cell)
