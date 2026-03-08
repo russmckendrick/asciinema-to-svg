@@ -96,6 +96,83 @@ pub fn render_bespoke_statusline(
     Ok(())
 }
 
+/// Return the column range `(start, end)` of the command area on a statusline row.
+///
+/// The command area is the gap between the left-side prompt segments and the
+/// right-side status segments. It is identified by finding a large run of
+/// terminal-background spaces between separator groups.
+/// If no gap is found, returns `(row.len(), row.len())` (empty range).
+pub fn command_area(row: &[ScreenCell], terminal_bg: &str) -> (usize, usize) {
+    // Collect all separator column positions.
+    let sep_cols: Vec<usize> = row
+        .iter()
+        .enumerate()
+        .filter(|(_, c)| !c.is_wide_continuation && is_statusline_separator(&c.text))
+        .map(|(i, _)| i)
+        .collect();
+
+    if sep_cols.is_empty() {
+        return (0, row.len());
+    }
+
+    // Find the largest gap of terminal-bg cells between consecutive separators.
+    let mut best_start = row.len();
+    let mut best_end = row.len();
+    let mut best_len = 0usize;
+
+    for window in sep_cols.windows(2) {
+        let gap_start = window[0] + 1;
+        let gap_end = window[1];
+        if gap_end <= gap_start {
+            continue;
+        }
+        let bg_count = row[gap_start..gap_end]
+            .iter()
+            .filter(|c| {
+                !c.is_wide_continuation
+                    && effective_bg(c).eq_ignore_ascii_case(terminal_bg)
+            })
+            .count();
+        if bg_count > best_len {
+            best_len = bg_count;
+            best_start = gap_start;
+            best_end = gap_end;
+        }
+    }
+
+    // Also check the gap after the last separator to end of row.
+    if let Some(&last) = sep_cols.last() {
+        let gap_start = last + 1;
+        let gap_end = row.len();
+        let bg_count = row[gap_start..gap_end]
+            .iter()
+            .filter(|c| {
+                !c.is_wide_continuation
+                    && effective_bg(c).eq_ignore_ascii_case(terminal_bg)
+            })
+            .count();
+        if bg_count > best_len {
+            best_len = bg_count;
+            best_start = gap_start;
+            best_end = gap_end;
+        }
+    }
+
+    if best_len == 0 {
+        return (row.len(), row.len());
+    }
+
+    (best_start, best_end)
+}
+
+fn effective_bg(cell: &ScreenCell) -> &str {
+    if cell.reversed {
+        &cell.foreground
+    } else {
+        &cell.background
+    }
+}
+
 /// All statusline separator glyphs (both solid and thin variants).
 fn is_statusline_separator(text: &str) -> bool {
     let ch = match text.chars().next() {

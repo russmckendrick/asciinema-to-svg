@@ -42,7 +42,35 @@ pub fn render_animated_svg(
     let natural_line_height = theme.line_height;
     let content_top_gap = theme.chrome.content_top_gap;
     let natural_terminal_width = session.terminal_size.width as f32 * natural_cell_width;
-    let natural_terminal_height = session.terminal_size.height as f32 * natural_line_height;
+
+    // Each statusline row with command text occupies an extra line_height
+    // (one for the statusline bar, one for the "$ command" line below it).
+    // Find the maximum extra lines needed across all frames.
+    let extra_statusline_rows = if options.statusline {
+        frames
+            .iter()
+            .map(|frame| {
+                let mut extra = 0usize;
+                let mut first = true;
+                for row_idx in 0..frame.buffer.height {
+                    let row = frame.buffer.row(row_idx);
+                    if statusline::is_statusline_row(row) {
+                        if first {
+                            // First statusline row gets an extra line for itself
+                            extra += 1;
+                            first = false;
+                        }
+                    }
+                }
+                extra
+            })
+            .max()
+            .unwrap_or(0)
+    } else {
+        0
+    };
+    let natural_terminal_height =
+        (session.terminal_size.height as f32 + extra_statusline_rows as f32) * natural_line_height;
     let natural_width = theme.chrome.padding * 2.0 + natural_terminal_width;
     let natural_height =
         theme.chrome.padding * 2.0
@@ -362,7 +390,12 @@ fn append_frame(
                     &theme.terminal.background,
                 )?;
                 statusline_drawn = true;
+                y_offset += layout.line_height;
             }
+            // Render any typed command text on its own line below the statusline
+            let (cmd_start, cmd_end) = statusline::command_area(row, &theme.terminal.background);
+            let cmd_y = layout.frame_y + y_offset;
+            append_row_text_range(svg, layout, theme, cmd_y, row, cmd_start, cmd_end)?;
             y_offset += layout.line_height;
         } else {
             append_row_text(svg, layout, theme, row_y, row, statusline)?;
@@ -442,6 +475,77 @@ fn append_row_text(
                 effective_foreground(cell)
             )?;
         }
+    }
+    Ok(())
+}
+
+/// Render command text from a statusline row's command area.
+///
+/// Draws a `$` prompt marker at the left edge, then the command text
+/// immediately after it, shifted to the start of the line.
+fn append_row_text_range(
+    svg: &mut String,
+    layout: &Layout,
+    theme: &ThemeDefinition,
+    row_y: f32,
+    row: &[ScreenCell],
+    start_col: usize,
+    end_col: usize,
+) -> Result<()> {
+    // Find the first non-space, non-PUA cell to skip leading whitespace.
+    let range = &row[start_col..end_col.min(row.len())];
+    let first_visible = range.iter().position(|c| {
+        !c.is_wide_continuation
+            && c.text.trim() != ""
+            && !statusline::is_private_use_area(&c.text)
+    });
+    let first_visible = match first_visible {
+        Some(i) => i,
+        None => return Ok(()),
+    };
+
+    let text_y = row_y + 4.0;
+    let mut x = layout.frame_x + 4.0;
+
+    // Draw $ prompt marker
+    writeln!(
+        svg,
+        r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,
+        x, text_y + 2.0, theme.terminal.foreground
+    )?;
+    x += layout.cell_width * 2.0;
+
+    // Draw command text sequentially from the left, preserving spaces
+    for cell in &range[first_visible..] {
+        if cell.is_wide_continuation {
+            continue;
+        }
+        if statusline::is_private_use_area(&cell.text) || is_prompt_marker_glyph(&cell.text) {
+            continue;
+        }
+        if cell.text == " " {
+            x += layout.cell_width;
+            continue;
+        }
+
+        writeln!(
+            svg,
+            r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}"{}>{}</text>"#,
+            x,
+            text_y,
+            effective_foreground(cell),
+            if cell.italic {
+                r#" font-style="italic""#
+            } else {
+                ""
+            },
+            escape_xml(&cell.text)
+        )?;
+        x += if cell.is_wide {
+            layout.cell_width * 2.0
+        } else {
+            layout.cell_width
+        };
     }
     Ok(())
 }
@@ -622,6 +726,7 @@ mod tests {
         .unwrap();
         assert!(svg.contains(""));
     }
+
 
     #[test]
     fn replaces_prompt_marker_glyph_with_dollar() {

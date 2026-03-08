@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1112" height="918" viewBox="0 0 1112 918" role="img" aria-label="Animated terminal recording" data-theme="macos">
+<svg xmlns="http://www.w3.org/2000/svg" width="1112" height="946" viewBox="0 0 1112 946" role="img" aria-label="Animated terminal recording" data-theme="macos">
 <defs><style>
         .terminal-text {
             font-family: SFMono-Regular, Menlo, Consolas, Monaco, monospace;
@@ -14,17 +14,17 @@
             animation-iteration-count: infinite;
         }
         </style>
-</defs><rect x="0" y="0" width="1112.00" height="918.00" rx="26.00" fill="#232744" stroke="#232744"/>
+</defs><rect x="0" y="0" width="1112.00" height="946.00" rx="26.00" fill="#232744" stroke="#232744"/>
 <path d="M 1.00 25.00 A 24.00 24.00 0 0 1 25.00 1.00 L 1087.00 1.00 A 24.00 24.00 0 0 1 1111.00 25.00 L 1111.00 54.00 L 1.00 54.00 Z" fill="#2a3157" opacity="0.82"/>
 <line x1="0.00" y1="54.50" x2="1112.00" y2="54.50" stroke="#3a4677" stroke-width="1" opacity="0.8"/>
-<text x="556.00" y="27.50" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" fill="#cfd3e6" dominant-baseline="middle" text-anchor="middle">Testing</text>
+<text x="556.00" y="27.50" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" fill="#cfd3e6" dominant-baseline="middle" text-anchor="middle">650158</text>
 <circle cx="34.00" cy="27.50" r="7" fill="#ff5f57"/>
 <circle cx="56.00" cy="27.50" r="7" fill="#febc2e"/>
 <circle cx="78.00" cy="27.50" r="7" fill="#28c840"/>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <g class="frame" style="animation-name: frame-0;">
 <style>@keyframes frame-0 { 0%, 0.219% { opacity: 0; } 0.219%, 0.936% { opacity: 1; } 0.936%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -36,7 +36,7 @@
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-1;">
 <style>@keyframes frame-1 { 0%, 0.936% { opacity: 0; } 0.936%, 1.155% { opacity: 1; } 1.155%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -48,16 +48,16 @@
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-2;">
 <style>@keyframes frame-2 { 0%, 1.155% { opacity: 0; } 1.155%, 1.374% { opacity: 1; } 1.374%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 </g><g class="frame" style="animation-name: frame-3;">
 <style>@keyframes frame-3 { 0%, 1.374% { opacity: 0; } 1.374%, 1.593% { opacity: 1; } 1.593%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 </g><g class="frame" style="animation-name: frame-4;">
 <style>@keyframes frame-4 { 0%, 1.593% { opacity: 0; } 1.593%, 1.811% { opacity: 1; } 1.811%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 </g><g class="frame" style="animation-name: frame-5;">
 <style>@keyframes frame-5 { 0%, 1.811% { opacity: 0; } 1.811%, 2.030% { opacity: 1; } 2.030%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -69,7 +69,7 @@
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-6;">
 <style>@keyframes frame-6 { 0%, 2.030% { opacity: 0; } 2.030%, 2.249% { opacity: 1; } 2.249%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -81,7 +81,7 @@
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-7;">
 <style>@keyframes frame-7 { 0%, 2.249% { opacity: 0; } 2.249%, 2.468% { opacity: 1; } 2.468%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -93,7 +93,7 @@
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-8;">
 <style>@keyframes frame-8 { 0%, 2.468% { opacity: 0; } 2.468%, 2.687% { opacity: 1; } 2.687%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -105,7 +105,7 @@
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-9;">
 <style>@keyframes frame-9 { 0%, 2.687% { opacity: 0; } 2.687%, 9.259% { opacity: 1; } 9.259%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -117,7 +117,7 @@
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-10;">
 <style>@keyframes frame-10 { 0%, 9.259% { opacity: 0; } 9.259%, 10.622% { opacity: 1; } 10.622%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -127,9 +127,11 @@
 <text x="106.80" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="62.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="96.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="94.00" fill="#f5e9c9">z</text>
 </g><g class="frame" style="animation-name: frame-11;">
 <style>@keyframes frame-11 { 0%, 10.622% { opacity: 0; } 10.622%, 11.527% { opacity: 1; } 11.527%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -139,9 +141,11 @@
 <text x="106.80" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="62.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="96.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="94.00" fill="#f5e9c9">z</text>
 </g><g class="frame" style="animation-name: frame-12;">
 <style>@keyframes frame-12 { 0%, 11.527% { opacity: 0; } 11.527%, 12.131% { opacity: 1; } 12.131%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -151,9 +155,12 @@
 <text x="106.80" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="62.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="96.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="94.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="94.00" fill="#f5e9c9">d</text>
 </g><g class="frame" style="animation-name: frame-13;">
 <style>@keyframes frame-13 { 0%, 12.131% { opacity: 0; } 12.131%, 13.199% { opacity: 1; } 13.199%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -163,9 +170,13 @@
 <text x="106.80" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="62.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="96.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="94.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="94.00" fill="#f5e9c9">d</text>
+<text class="terminal-text" x="74.00" y="94.00" fill="#f5e9c9">o</text>
 </g><g class="frame" style="animation-name: frame-14;">
 <style>@keyframes frame-14 { 0%, 13.199% { opacity: 0; } 13.199%, 14.564% { opacity: 1; } 14.564%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -175,9 +186,14 @@
 <text x="106.80" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="62.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="96.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="94.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="94.00" fill="#f5e9c9">d</text>
+<text class="terminal-text" x="74.00" y="94.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="84.80" y="94.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-15;">
 <style>@keyframes frame-15 { 0%, 14.564% { opacity: 0; } 14.564%, 14.782% { opacity: 1; } 14.782%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -187,9 +203,14 @@
 <text x="106.80" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="62.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="96.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="94.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="94.00" fill="#f5e9c9">d</text>
+<text class="terminal-text" x="74.00" y="94.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="84.80" y="94.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-16;">
 <style>@keyframes frame-16 { 0%, 14.782% { opacity: 0; } 14.782%, 15.001% { opacity: 1; } 15.001%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="1080.00" height="28.00" fill="#232744"/>
 <rect x="16.00" y="62.00" width="64.80" height="28.00" fill="#d96d0f" class="statusline-seg"/>
 <text x="28.00" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
@@ -199,9 +220,14 @@
 <text x="106.80" y="76.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="62.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,62.00 143.00,76.00 129.00,90.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="96.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="94.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="94.00" fill="#f5e9c9">d</text>
+<text class="terminal-text" x="74.00" y="94.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="84.80" y="94.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-17;">
 <style>@keyframes frame-17 { 0%, 15.001% { opacity: 0; } 15.001%, 15.220% { opacity: 1; } 15.220%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -209,7 +235,7 @@
 <text class="terminal-text" x="84.80" y="66.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-18;">
 <style>@keyframes frame-18 { 0%, 15.220% { opacity: 0; } 15.220%, 15.439% { opacity: 1; } 15.439%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -217,7 +243,7 @@
 <text class="terminal-text" x="84.80" y="66.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-19;">
 <style>@keyframes frame-19 { 0%, 15.439% { opacity: 0; } 15.439%, 15.658% { opacity: 1; } 15.658%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -225,7 +251,7 @@
 <text class="terminal-text" x="84.80" y="66.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-20;">
 <style>@keyframes frame-20 { 0%, 15.658% { opacity: 0; } 15.658%, 15.876% { opacity: 1; } 15.876%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -233,7 +259,7 @@
 <text class="terminal-text" x="84.80" y="66.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-21;">
 <style>@keyframes frame-21 { 0%, 15.876% { opacity: 0; } 15.876%, 16.095% { opacity: 1; } 16.095%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -241,7 +267,7 @@
 <text class="terminal-text" x="84.80" y="66.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-22;">
 <style>@keyframes frame-22 { 0%, 16.095% { opacity: 0; } 16.095%, 16.314% { opacity: 1; } 16.314%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -249,7 +275,7 @@
 <text class="terminal-text" x="84.80" y="66.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-23;">
 <style>@keyframes frame-23 { 0%, 16.314% { opacity: 0; } 16.314%, 16.533% { opacity: 1; } 16.533%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -257,7 +283,7 @@
 <text class="terminal-text" x="84.80" y="66.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-24;">
 <style>@keyframes frame-24 { 0%, 16.533% { opacity: 0; } 16.533%, 16.752% { opacity: 1; } 16.752%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -274,7 +300,7 @@
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-25;">
 <style>@keyframes frame-25 { 0%, 16.752% { opacity: 0; } 16.752%, 16.971% { opacity: 1; } 16.971%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -291,7 +317,7 @@
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-26;">
 <style>@keyframes frame-26 { 0%, 16.971% { opacity: 0; } 16.971%, 17.189% { opacity: 1; } 17.189%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -308,7 +334,7 @@
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-27;">
 <style>@keyframes frame-27 { 0%, 17.189% { opacity: 0; } 17.189%, 25.240% { opacity: 1; } 25.240%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -325,7 +351,7 @@
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-28;">
 <style>@keyframes frame-28 { 0%, 25.240% { opacity: 0; } 25.240%, 26.120% { opacity: 1; } 26.120%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -340,9 +366,11 @@
 <text x="106.80" y="132.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="118.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="152.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="150.00" fill="#f5e9c9">t</text>
 </g><g class="frame" style="animation-name: frame-29;">
 <style>@keyframes frame-29 { 0%, 26.120% { opacity: 0; } 26.120%, 27.364% { opacity: 1; } 27.364%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -357,9 +385,12 @@
 <text x="106.80" y="132.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="118.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="152.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="150.00" fill="#f5e9c9">t</text>
+<text class="terminal-text" x="52.40" y="150.00" fill="#f5e9c9">r</text>
 </g><g class="frame" style="animation-name: frame-30;">
 <style>@keyframes frame-30 { 0%, 27.364% { opacity: 0; } 27.364%, 28.023% { opacity: 1; } 28.023%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -374,9 +405,13 @@
 <text x="106.80" y="132.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="118.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="152.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="150.00" fill="#f5e9c9">t</text>
+<text class="terminal-text" x="52.40" y="150.00" fill="#f5e9c9">r</text>
+<text class="terminal-text" x="63.20" y="150.00" fill="#f5e9c9">e</text>
 </g><g class="frame" style="animation-name: frame-31;">
 <style>@keyframes frame-31 { 0%, 28.023% { opacity: 0; } 28.023%, 31.975% { opacity: 1; } 31.975%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -391,9 +426,14 @@
 <text x="106.80" y="132.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="118.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="152.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="150.00" fill="#f5e9c9">t</text>
+<text class="terminal-text" x="52.40" y="150.00" fill="#f5e9c9">r</text>
+<text class="terminal-text" x="63.20" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="74.00" y="150.00" fill="#f5e9c9">e</text>
 </g><g class="frame" style="animation-name: frame-32;">
 <style>@keyframes frame-32 { 0%, 31.975% { opacity: 0; } 31.975%, 32.755% { opacity: 1; } 32.755%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -408,9 +448,14 @@
 <text x="106.80" y="132.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="118.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="152.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="150.00" fill="#f5e9c9">t</text>
+<text class="terminal-text" x="52.40" y="150.00" fill="#f5e9c9">r</text>
+<text class="terminal-text" x="63.20" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="74.00" y="150.00" fill="#f5e9c9">e</text>
 </g><g class="frame" style="animation-name: frame-33;">
 <style>@keyframes frame-33 { 0%, 32.755% { opacity: 0; } 32.755%, 33.537% { opacity: 1; } 33.537%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -425,9 +470,15 @@
 <text x="106.80" y="132.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="118.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="152.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="150.00" fill="#f5e9c9">t</text>
+<text class="terminal-text" x="52.40" y="150.00" fill="#f5e9c9">r</text>
+<text class="terminal-text" x="63.20" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="74.00" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="95.60" y="150.00" fill="#f5e9c9">-</text>
 </g><g class="frame" style="animation-name: frame-34;">
 <style>@keyframes frame-34 { 0%, 33.537% { opacity: 0; } 33.537%, 36.759% { opacity: 1; } 36.759%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -442,9 +493,16 @@
 <text x="106.80" y="132.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="118.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="152.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="150.00" fill="#f5e9c9">t</text>
+<text class="terminal-text" x="52.40" y="150.00" fill="#f5e9c9">r</text>
+<text class="terminal-text" x="63.20" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="74.00" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="95.60" y="150.00" fill="#f5e9c9">-</text>
+<text class="terminal-text" x="106.40" y="150.00" fill="#f5e9c9">a</text>
 </g><g class="frame" style="animation-name: frame-35;">
 <style>@keyframes frame-35 { 0%, 36.759% { opacity: 0; } 36.759%, 36.978% { opacity: 1; } 36.978%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -459,9 +517,16 @@
 <text x="106.80" y="132.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="118.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="152.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="150.00" fill="#f5e9c9">t</text>
+<text class="terminal-text" x="52.40" y="150.00" fill="#f5e9c9">r</text>
+<text class="terminal-text" x="63.20" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="74.00" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="95.60" y="150.00" fill="#f5e9c9">-</text>
+<text class="terminal-text" x="106.40" y="150.00" fill="#f5e9c9">a</text>
 </g><g class="frame" style="animation-name: frame-36;">
 <style>@keyframes frame-36 { 0%, 36.978% { opacity: 0; } 36.978%, 37.197% { opacity: 1; } 37.197%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -476,9 +541,16 @@
 <text x="106.80" y="132.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="118.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,118.00 143.00,132.00 129.00,146.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="152.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="150.00" fill="#f5e9c9">t</text>
+<text class="terminal-text" x="52.40" y="150.00" fill="#f5e9c9">r</text>
+<text class="terminal-text" x="63.20" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="74.00" y="150.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="95.60" y="150.00" fill="#f5e9c9">-</text>
+<text class="terminal-text" x="106.40" y="150.00" fill="#f5e9c9">a</text>
 </g><g class="frame" style="animation-name: frame-37;">
 <style>@keyframes frame-37 { 0%, 37.197% { opacity: 0; } 37.197%, 37.416% { opacity: 1; } 37.416%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -493,7 +565,7 @@
 <text class="terminal-text" x="106.40" y="94.00" fill="#f5e9c9">a</text>
 </g><g class="frame" style="animation-name: frame-38;">
 <style>@keyframes frame-38 { 0%, 37.416% { opacity: 0; } 37.416%, 37.635% { opacity: 1; } 37.635%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -508,7 +580,7 @@
 <text class="terminal-text" x="106.40" y="94.00" fill="#f5e9c9">a</text>
 </g><g class="frame" style="animation-name: frame-39;">
 <style>@keyframes frame-39 { 0%, 37.635% { opacity: 0; } 37.635%, 37.853% { opacity: 1; } 37.853%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -523,7 +595,7 @@
 <text class="terminal-text" x="106.40" y="94.00" fill="#f5e9c9">a</text>
 </g><g class="frame" style="animation-name: frame-40;">
 <style>@keyframes frame-40 { 0%, 37.853% { opacity: 0; } 37.853%, 38.072% { opacity: 1; } 38.072%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -539,7 +611,7 @@
 <text class="terminal-text" x="20.00" y="122.00" fill="#5ccfe6">.</text>
 </g><g class="frame" style="animation-name: frame-41;">
 <style>@keyframes frame-41 { 0%, 38.072% { opacity: 0; } 38.072%, 38.291% { opacity: 1; } 38.291%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -619,7 +691,7 @@
 <text class="terminal-text" x="160.40" y="262.00" fill="#f5e9c9">e</text>
 </g><g class="frame" style="animation-name: frame-42;">
 <style>@keyframes frame-42 { 0%, 38.291% { opacity: 0; } 38.291%, 38.510% { opacity: 1; } 38.510%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -775,7 +847,7 @@
 <text class="terminal-text" x="192.80" y="430.00" fill="#f5e9c9">n</text>
 </g><g class="frame" style="animation-name: frame-43;">
 <style>@keyframes frame-43 { 0%, 38.510% { opacity: 0; } 38.510%, 38.729% { opacity: 1; } 38.729%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -968,7 +1040,7 @@
 <text class="terminal-text" x="160.40" y="514.00" fill="#f5e9c9">h</text>
 </g><g class="frame" style="animation-name: frame-44;">
 <style>@keyframes frame-44 { 0%, 38.729% { opacity: 0; } 38.729%, 38.947% { opacity: 1; } 38.947%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -1178,7 +1250,7 @@
 <text class="terminal-text" x="203.60" y="542.00" fill="#5ccfe6">e</text>
 </g><g class="frame" style="animation-name: frame-45;">
 <style>@keyframes frame-45 { 0%, 38.947% { opacity: 0; } 38.947%, 39.166% { opacity: 1; } 39.166%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -1539,7 +1611,7 @@
 <text class="terminal-text" x="257.60" y="710.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-46;">
 <style>@keyframes frame-46 { 0%, 39.166% { opacity: 0; } 39.166%, 39.385% { opacity: 1; } 39.385%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -1900,7 +1972,7 @@
 <text class="terminal-text" x="257.60" y="710.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-47;">
 <style>@keyframes frame-47 { 0%, 39.385% { opacity: 0; } 39.385%, 39.604% { opacity: 1; } 39.604%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -2261,7 +2333,7 @@
 <text class="terminal-text" x="257.60" y="710.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-48;">
 <style>@keyframes frame-48 { 0%, 39.604% { opacity: 0; } 39.604%, 39.823% { opacity: 1; } 39.823%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -2622,7 +2694,7 @@
 <text class="terminal-text" x="257.60" y="710.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-49;">
 <style>@keyframes frame-49 { 0%, 39.823% { opacity: 0; } 39.823%, 40.042% { opacity: 1; } 40.042%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -2983,7 +3055,7 @@
 <text class="terminal-text" x="257.60" y="710.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-50;">
 <style>@keyframes frame-50 { 0%, 40.042% { opacity: 0; } 40.042%, 40.260% { opacity: 1; } 40.260%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -3353,7 +3425,7 @@
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-51;">
 <style>@keyframes frame-51 { 0%, 40.260% { opacity: 0; } 40.260%, 40.479% { opacity: 1; } 40.479%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -3723,7 +3795,7 @@
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-52;">
 <style>@keyframes frame-52 { 0%, 40.479% { opacity: 0; } 40.479%, 40.698% { opacity: 1; } 40.698%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -4093,7 +4165,7 @@
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-53;">
 <style>@keyframes frame-53 { 0%, 40.698% { opacity: 0; } 40.698%, 48.385% { opacity: 1; } 48.385%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -4463,7 +4535,7 @@
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-54;">
 <style>@keyframes frame-54 { 0%, 48.385% { opacity: 0; } 48.385%, 49.688% { opacity: 1; } 49.688%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -4831,9 +4903,11 @@
 <text x="106.80" y="776.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="762.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="796.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="794.00" fill="#f5e9c9">z</text>
 </g><g class="frame" style="animation-name: frame-55;">
 <style>@keyframes frame-55 { 0%, 49.688% { opacity: 0; } 49.688%, 51.719% { opacity: 1; } 51.719%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -5201,9 +5275,11 @@
 <text x="106.80" y="776.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="762.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="796.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="794.00" fill="#f5e9c9">z</text>
 </g><g class="frame" style="animation-name: frame-56;">
 <style>@keyframes frame-56 { 0%, 51.719% { opacity: 0; } 51.719%, 52.374% { opacity: 1; } 52.374%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -5571,9 +5647,12 @@
 <text x="106.80" y="776.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="762.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="796.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="794.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="794.00" fill="#f5e9c9">b</text>
 </g><g class="frame" style="animation-name: frame-57;">
 <style>@keyframes frame-57 { 0%, 52.374% { opacity: 0; } 52.374%, 53.097% { opacity: 1; } 53.097%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -5941,9 +6020,13 @@
 <text x="106.80" y="776.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="762.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="796.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="794.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="794.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="74.00" y="794.00" fill="#f5e9c9">l</text>
 </g><g class="frame" style="animation-name: frame-58;">
 <style>@keyframes frame-58 { 0%, 53.097% { opacity: 0; } 53.097%, 53.751% { opacity: 1; } 53.751%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -6311,9 +6394,14 @@
 <text x="106.80" y="776.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="762.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="796.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="794.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="794.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="74.00" y="794.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="84.80" y="794.00" fill="#f5e9c9">o</text>
 </g><g class="frame" style="animation-name: frame-59;">
 <style>@keyframes frame-59 { 0%, 53.751% { opacity: 0; } 53.751%, 54.684% { opacity: 1; } 54.684%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -6681,9 +6769,15 @@
 <text x="106.80" y="776.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="762.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="796.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="794.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="794.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="74.00" y="794.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="84.80" y="794.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="95.60" y="794.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-60;">
 <style>@keyframes frame-60 { 0%, 54.684% { opacity: 0; } 54.684%, 54.903% { opacity: 1; } 54.903%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -7051,9 +7145,15 @@
 <text x="106.80" y="776.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="762.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="796.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="794.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="794.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="74.00" y="794.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="84.80" y="794.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="95.60" y="794.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-61;">
 <style>@keyframes frame-61 { 0%, 54.903% { opacity: 0; } 54.903%, 55.122% { opacity: 1; } 55.122%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -7421,9 +7521,15 @@
 <text x="106.80" y="776.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="762.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,762.00 143.00,776.00 129.00,790.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="796.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="794.00" fill="#f5e9c9">z</text>
+<text class="terminal-text" x="63.20" y="794.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="74.00" y="794.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="84.80" y="794.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="95.60" y="794.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-62;">
 <style>@keyframes frame-62 { 0%, 55.122% { opacity: 0; } 55.122%, 55.341% { opacity: 1; } 55.341%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -7790,7 +7896,7 @@
 <text class="terminal-text" x="95.60" y="738.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-63;">
 <style>@keyframes frame-63 { 0%, 55.341% { opacity: 0; } 55.341%, 55.560% { opacity: 1; } 55.560%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -8157,7 +8263,7 @@
 <text class="terminal-text" x="95.60" y="738.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-64;">
 <style>@keyframes frame-64 { 0%, 55.560% { opacity: 0; } 55.560%, 55.779% { opacity: 1; } 55.779%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -8524,7 +8630,7 @@
 <text class="terminal-text" x="95.60" y="738.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-65;">
 <style>@keyframes frame-65 { 0%, 55.779% { opacity: 0; } 55.779%, 55.997% { opacity: 1; } 55.997%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -8891,7 +8997,7 @@
 <text class="terminal-text" x="95.60" y="738.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-66;">
 <style>@keyframes frame-66 { 0%, 55.997% { opacity: 0; } 55.997%, 56.216% { opacity: 1; } 56.216%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -9258,7 +9364,7 @@
 <text class="terminal-text" x="95.60" y="738.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-67;">
 <style>@keyframes frame-67 { 0%, 56.216% { opacity: 0; } 56.216%, 56.435% { opacity: 1; } 56.435%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -9625,7 +9731,7 @@
 <text class="terminal-text" x="95.60" y="738.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-68;">
 <style>@keyframes frame-68 { 0%, 56.435% { opacity: 0; } 56.435%, 56.654% { opacity: 1; } 56.654%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -9992,7 +10098,7 @@
 <text class="terminal-text" x="95.60" y="738.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-69;">
 <style>@keyframes frame-69 { 0%, 56.654% { opacity: 0; } 56.654%, 56.873% { opacity: 1; } 56.873%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -10368,7 +10474,7 @@
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-70;">
 <style>@keyframes frame-70 { 0%, 56.873% { opacity: 0; } 56.873%, 57.091% { opacity: 1; } 57.091%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -10744,7 +10850,7 @@
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-71;">
 <style>@keyframes frame-71 { 0%, 57.091% { opacity: 0; } 57.091%, 57.310% { opacity: 1; } 57.310%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -11120,7 +11226,7 @@
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-72;">
 <style>@keyframes frame-72 { 0%, 57.310% { opacity: 0; } 57.310%, 57.529% { opacity: 1; } 57.529%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -11496,7 +11602,7 @@
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-73;">
 <style>@keyframes frame-73 { 0%, 57.529% { opacity: 0; } 57.529%, 57.748% { opacity: 1; } 57.748%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -11872,7 +11978,7 @@
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-74;">
 <style>@keyframes frame-74 { 0%, 57.748% { opacity: 0; } 57.748%, 57.967% { opacity: 1; } 57.967%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -12248,7 +12354,7 @@
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-75;">
 <style>@keyframes frame-75 { 0%, 57.967% { opacity: 0; } 57.967%, 58.185% { opacity: 1; } 58.185%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -12624,7 +12730,7 @@
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-76;">
 <style>@keyframes frame-76 { 0%, 58.185% { opacity: 0; } 58.185%, 58.404% { opacity: 1; } 58.404%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -13000,7 +13106,7 @@
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-77;">
 <style>@keyframes frame-77 { 0%, 58.404% { opacity: 0; } 58.404%, 58.623% { opacity: 1; } 58.623%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -13374,9 +13480,11 @@
 <text x="106.80" y="804.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="790.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="824.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="822.00" fill="#f5e9c9">l</text>
 </g><g class="frame" style="animation-name: frame-78;">
 <style>@keyframes frame-78 { 0%, 58.623% { opacity: 0; } 58.623%, 58.874% { opacity: 1; } 58.874%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -13750,9 +13858,12 @@
 <text x="106.80" y="804.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="790.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="824.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="822.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="52.40" y="822.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-79;">
 <style>@keyframes frame-79 { 0%, 58.874% { opacity: 0; } 58.874%, 59.093% { opacity: 1; } 59.093%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -14126,9 +14237,12 @@
 <text x="106.80" y="804.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="790.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="824.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="822.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="52.40" y="822.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-80;">
 <style>@keyframes frame-80 { 0%, 59.093% { opacity: 0; } 59.093%, 59.312% { opacity: 1; } 59.312%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -14502,9 +14616,12 @@
 <text x="106.80" y="804.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="790.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,790.00 143.00,804.00 129.00,818.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="824.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="822.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="52.40" y="822.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-81;">
 <style>@keyframes frame-81 { 0%, 59.312% { opacity: 0; } 59.312%, 59.531% { opacity: 1; } 59.531%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -14874,7 +14991,7 @@
 <text class="terminal-text" x="52.40" y="766.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-82;">
 <style>@keyframes frame-82 { 0%, 59.531% { opacity: 0; } 59.531%, 59.750% { opacity: 1; } 59.750%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -15244,7 +15361,7 @@
 <text class="terminal-text" x="52.40" y="766.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-83;">
 <style>@keyframes frame-83 { 0%, 59.750% { opacity: 0; } 59.750%, 59.968% { opacity: 1; } 59.968%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -15614,7 +15731,7 @@
 <text class="terminal-text" x="52.40" y="766.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-84;">
 <style>@keyframes frame-84 { 0%, 59.968% { opacity: 0; } 59.968%, 60.187% { opacity: 1; } 60.187%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">z</text>
 <text class="terminal-text" x="63.20" y="66.00" fill="#f5e9c9">d</text>
@@ -16107,7 +16224,7 @@
 <text class="terminal-text" x="592.40" y="850.00" fill="#5ccfe6">c</text>
 </g><g class="frame" style="animation-name: frame-85;">
 <style>@keyframes frame-85 { 0%, 60.187% { opacity: 0; } 60.187%, 60.406% { opacity: 1; } 60.406%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">t</text>
 <text class="terminal-text" x="52.40" y="66.00" fill="#f5e9c9">r</text>
@@ -16618,7 +16735,7 @@
 <text class="terminal-text" x="624.80" y="850.00" fill="#5ccfe6">s</text>
 </g><g class="frame" style="animation-name: frame-86;">
 <style>@keyframes frame-86 { 0%, 60.406% { opacity: 0; } 60.406%, 60.625% { opacity: 1; } 60.625%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">t</text>
 <text class="terminal-text" x="52.40" y="66.00" fill="#f5e9c9">r</text>
@@ -17129,7 +17246,7 @@
 <text class="terminal-text" x="624.80" y="850.00" fill="#5ccfe6">s</text>
 </g><g class="frame" style="animation-name: frame-87;">
 <style>@keyframes frame-87 { 0%, 60.625% { opacity: 0; } 60.625%, 60.844% { opacity: 1; } 60.844%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">t</text>
 <text class="terminal-text" x="52.40" y="66.00" fill="#f5e9c9">r</text>
@@ -17640,7 +17757,7 @@
 <text class="terminal-text" x="624.80" y="850.00" fill="#5ccfe6">s</text>
 </g><g class="frame" style="animation-name: frame-88;">
 <style>@keyframes frame-88 { 0%, 60.844% { opacity: 0; } 60.844%, 61.063% { opacity: 1; } 61.063%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">t</text>
 <text class="terminal-text" x="52.40" y="66.00" fill="#f5e9c9">r</text>
@@ -18151,7 +18268,7 @@
 <text class="terminal-text" x="624.80" y="850.00" fill="#5ccfe6">s</text>
 </g><g class="frame" style="animation-name: frame-89;">
 <style>@keyframes frame-89 { 0%, 61.063% { opacity: 0; } 61.063%, 61.281% { opacity: 1; } 61.281%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -18664,7 +18781,7 @@
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-90;">
 <style>@keyframes frame-90 { 0%, 61.281% { opacity: 0; } 61.281%, 61.500% { opacity: 1; } 61.500%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -19177,7 +19294,7 @@
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-91;">
 <style>@keyframes frame-91 { 0%, 61.500% { opacity: 0; } 61.500%, 61.719% { opacity: 1; } 61.719%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -19690,7 +19807,7 @@
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-92;">
 <style>@keyframes frame-92 { 0%, 61.719% { opacity: 0; } 61.719%, 73.000% { opacity: 1; } 73.000%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -20203,7 +20320,7 @@
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-93;">
 <style>@keyframes frame-93 { 0%, 73.000% { opacity: 0; } 73.000%, 73.582% { opacity: 1; } 73.582%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -20714,9 +20831,11 @@
 <text x="106.80" y="888.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="874.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="908.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="906.00" fill="#f5e9c9">b</text>
 </g><g class="frame" style="animation-name: frame-94;">
 <style>@keyframes frame-94 { 0%, 73.582% { opacity: 0; } 73.582%, 74.236% { opacity: 1; } 74.236%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -21227,9 +21346,12 @@
 <text x="106.80" y="888.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="874.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="908.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="906.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="52.40" y="906.00" fill="#f5e9c9">l</text>
 </g><g class="frame" style="animation-name: frame-95;">
 <style>@keyframes frame-95 { 0%, 74.236% { opacity: 0; } 74.236%, 74.968% { opacity: 1; } 74.968%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -21740,9 +21862,13 @@
 <text x="106.80" y="888.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="874.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="908.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="906.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="52.40" y="906.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="63.20" y="906.00" fill="#f5e9c9">o</text>
 </g><g class="frame" style="animation-name: frame-96;">
 <style>@keyframes frame-96 { 0%, 74.968% { opacity: 0; } 74.968%, 76.273% { opacity: 1; } 76.273%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -22253,9 +22379,14 @@
 <text x="106.80" y="888.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="874.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="908.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="906.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="52.40" y="906.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="63.20" y="906.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="74.00" y="906.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-97;">
 <style>@keyframes frame-97 { 0%, 76.273% { opacity: 0; } 76.273%, 76.492% { opacity: 1; } 76.492%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -22766,9 +22897,14 @@
 <text x="106.80" y="888.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="874.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="908.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="906.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="52.40" y="906.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="63.20" y="906.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="74.00" y="906.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-98;">
 <style>@keyframes frame-98 { 0%, 76.492% { opacity: 0; } 76.492%, 76.711% { opacity: 1; } 76.711%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -23279,9 +23415,14 @@
 <text x="106.80" y="888.00" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="17" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
 <rect x="129.00" y="874.00" width="14.00" height="28.00" fill="#232744"/>
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="20.00" y="908.00" fill="#f5e9c9">$</text>
+<text class="terminal-text" x="41.60" y="906.00" fill="#f5e9c9">b</text>
+<text class="terminal-text" x="52.40" y="906.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="63.20" y="906.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="74.00" y="906.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-99;">
 <style>@keyframes frame-99 { 0%, 76.711% { opacity: 0; } 76.711%, 76.929% { opacity: 1; } 76.929%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -23790,7 +23931,7 @@
 <text class="terminal-text" x="74.00" y="850.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-100;">
 <style>@keyframes frame-100 { 0%, 76.929% { opacity: 0; } 76.929%, 77.148% { opacity: 1; } 77.148%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -24299,7 +24440,7 @@
 <text class="terminal-text" x="74.00" y="850.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-101;">
 <style>@keyframes frame-101 { 0%, 77.148% { opacity: 0; } 77.148%, 77.367% { opacity: 1; } 77.367%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -24808,7 +24949,7 @@
 <text class="terminal-text" x="74.00" y="850.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-102;">
 <style>@keyframes frame-102 { 0%, 77.367% { opacity: 0; } 77.367%, 77.586% { opacity: 1; } 77.586%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">.</text>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="94.00" fill="#f5e9c9">─</text>
@@ -25317,7 +25458,7 @@
 <text class="terminal-text" x="74.00" y="850.00" fill="#f5e9c9">g</text>
 </g><g class="frame" style="animation-name: frame-103;">
 <style>@keyframes frame-103 { 0%, 77.586% { opacity: 0; } 77.586%, 77.805% { opacity: 1; } 77.805%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#f5e9c9">─</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">─</text>
@@ -25920,7 +26061,7 @@
 <text class="terminal-text" x="128.00" y="850.00" fill="#f5e9c9">}</text>
 </g><g class="frame" style="animation-name: frame-104;">
 <style>@keyframes frame-104 { 0%, 77.805% { opacity: 0; } 77.805%, 78.024% { opacity: 1; } 78.024%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#f5e9c9">─</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">─</text>
@@ -26641,7 +26782,7 @@
 <text class="terminal-text" x="549.20" y="850.00" fill="#f5e9c9">l</text>
 </g><g class="frame" style="animation-name: frame-105;">
 <style>@keyframes frame-105 { 0%, 78.024% { opacity: 0; } 78.024%, 78.242% { opacity: 1; } 78.242%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#f5e9c9">─</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">─</text>
@@ -27368,7 +27509,7 @@
 <text class="terminal-text" x="246.80" y="850.00" fill="#f5e9c9">…</text>
 </g><g class="frame" style="animation-name: frame-106;">
 <style>@keyframes frame-106 { 0%, 78.242% { opacity: 0; } 78.242%, 82.269% { opacity: 1; } 82.269%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#f5e9c9">─</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">─</text>
@@ -28174,7 +28315,7 @@
 <text class="terminal-text" x="257.60" y="822.00" fill="#f5e9c9">w</text>
 </g><g class="frame" style="animation-name: frame-107;">
 <style>@keyframes frame-107 { 0%, 82.269% { opacity: 0; } 82.269%, 82.488% { opacity: 1; } 82.488%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#f5e9c9">─</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">─</text>
@@ -28968,7 +29109,7 @@
 <text class="terminal-text" x="257.60" y="794.00" fill="#f5e9c9">w</text>
 </g><g class="frame" style="animation-name: frame-108;">
 <style>@keyframes frame-108 { 0%, 82.488% { opacity: 0; } 82.488%, 82.706% { opacity: 1; } 82.706%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#f5e9c9">├</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#f5e9c9">─</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">─</text>
@@ -29763,7 +29904,7 @@
 <text class="terminal-text" x="225.20" y="878.00" fill="#f5e9c9">|</text>
 </g><g class="frame" style="animation-name: frame-109;">
 <style>@keyframes frame-109 { 0%, 82.706% { opacity: 0; } 82.706%, 82.925% { opacity: 1; } 82.925%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="94.00" fill="#f5e9c9">4</text>
 <text class="terminal-text" x="41.60" y="94.00" fill="#f5e9c9">d</text>
 <text class="terminal-text" x="52.40" y="94.00" fill="#f5e9c9">i</text>
@@ -30476,7 +30617,7 @@
 <text class="terminal-text" x="182.00" y="850.00" fill="#f5e9c9">s</text>
 </g><g class="frame" style="animation-name: frame-110;">
 <style>@keyframes frame-110 { 0%, 82.925% { opacity: 0; } 82.925%, 94.152% { opacity: 1; } 94.152%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">a</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#5ccfe6">r</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#5ccfe6">c</text>
@@ -31320,7 +31461,7 @@
 <text class="terminal-text" x="225.20" y="850.00" fill="#f5e9c9">p</text>
 </g><g class="frame" style="animation-name: frame-111;">
 <style>@keyframes frame-111 { 0%, 94.152% { opacity: 0; } 94.152%, 94.371% { opacity: 1; } 94.371%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">a</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#5ccfe6">r</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#5ccfe6">c</text>
@@ -32166,7 +32307,7 @@
 <text class="terminal-text" x="30.80" y="878.00" fill="#f5e9c9">C</text>
 </g><g class="frame" style="animation-name: frame-112;">
 <style>@keyframes frame-112 { 0%, 94.371% { opacity: 0; } 94.371%, 94.590% { opacity: 1; } 94.590%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">a</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#5ccfe6">s</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#5ccfe6">s</text>
@@ -32970,7 +33111,7 @@
 <text class="terminal-text" x="41.60" y="850.00" fill="#232744">%</text>
 </g><g class="frame" style="animation-name: frame-113;">
 <style>@keyframes frame-113 { 0%, 94.590% { opacity: 0; } 94.590%, 94.809% { opacity: 1; } 94.809%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">a</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#5ccfe6">s</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#5ccfe6">s</text>
@@ -33774,7 +33915,7 @@
 <text class="terminal-text" x="41.60" y="850.00" fill="#232744">%</text>
 </g><g class="frame" style="animation-name: frame-114;">
 <style>@keyframes frame-114 { 0%, 94.809% { opacity: 0; } 94.809%, 95.027% { opacity: 1; } 95.027%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">a</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#5ccfe6">s</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#5ccfe6">s</text>
@@ -34578,7 +34719,7 @@
 <text class="terminal-text" x="41.60" y="850.00" fill="#232744">%</text>
 </g><g class="frame" style="animation-name: frame-115;">
 <style>@keyframes frame-115 { 0%, 95.027% { opacity: 0; } 95.027%, 95.246% { opacity: 1; } 95.246%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5ccfe6">a</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#5ccfe6">s</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#5ccfe6">s</text>
@@ -35382,7 +35523,7 @@
 <text class="terminal-text" x="41.60" y="850.00" fill="#232744">%</text>
 </g><g class="frame" style="animation-name: frame-116;">
 <style>@keyframes frame-116 { 0%, 95.246% { opacity: 0; } 95.246%, 95.465% { opacity: 1; } 95.465%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#f5e9c9">c</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#f5e9c9">o</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">n</text>
@@ -36161,7 +36302,7 @@
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-117;">
 <style>@keyframes frame-117 { 0%, 95.465% { opacity: 0; } 95.465%, 95.684% { opacity: 1; } 95.684%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#f5e9c9">c</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#f5e9c9">o</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">n</text>
@@ -36940,7 +37081,7 @@
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-118;">
 <style>@keyframes frame-118 { 0%, 95.684% { opacity: 0; } 95.684%, 99.125% { opacity: 1; } 99.125%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#f5e9c9">c</text>
 <text class="terminal-text" x="30.80" y="66.00" fill="#f5e9c9">o</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">n</text>
@@ -37719,7 +37860,7 @@
 <polygon points="129.00,874.00 143.00,888.00 129.00,902.00" fill="#d7a126" class="statusline-arrow"/>
 </g><g class="frame" style="animation-name: frame-119;">
 <style>@keyframes frame-119 { 0%, 99.125% { opacity: 0; } 99.125%, 100.000% { opacity: 1; } 100.000%, 100% { opacity: 0; } }</style>
-<rect x="16.00" y="62.00" width="1080.00" height="840.00" fill="#232744"/>
+<rect x="16.00" y="62.00" width="1080.00" height="868.00" fill="#232744"/>
 <text class="terminal-text" x="20.00" y="66.00" fill="#5FD700">❯</text>
 <text class="terminal-text" x="41.60" y="66.00" fill="#f5e9c9">b</text>
 <text class="terminal-text" x="52.40" y="66.00" fill="#f5e9c9">l</text>
