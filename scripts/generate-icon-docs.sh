@@ -68,7 +68,7 @@ jq -r 'keys[] | select(. == "_comment" | not)' "$TAGS_FILE" | while IFS= read -r
   jq -r --arg c "$category" '.[$c] | to_entries[] | "\(.key)\t\(.value)"' "$TAGS_FILE" | while IFS=$'\t' read -r name tags; do
     svg_path="../../icons/$category/$name.svg"
     if [ -f "$ICONS_DIR/$category/${name}.svg" ]; then
-      icon_cell="![${name}](${svg_path})"
+      icon_cell="<img src=\"${svg_path}\" alt=\"${name}\" width=\"24\" height=\"24\">"
     else
       icon_cell="-"
     fi
