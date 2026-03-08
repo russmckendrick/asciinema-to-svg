@@ -23,6 +23,12 @@ fn main() -> Result<()> {
         })
         .or_else(|| Some("Terminal".to_string()));
 
+    let statusline_config = cli
+        .statusline
+        .as_deref()
+        .map(theme::PromptTheme::load_from_file)
+        .transpose()?;
+
     let svg = render::render_animated_svg(
         &session,
         &theme,
@@ -31,6 +37,7 @@ fn main() -> Result<()> {
             height_px: cli.height,
             window_title: title,
             powerline: !cli.no_powerline,
+            statusline_config,
         },
     )?;
 

@@ -33,21 +33,26 @@ Theme files are JSON documents. The tool ships with built-in themes under [`them
 - `radius`
 - `padding`
 - `title_bar_height`
+- `content_top_gap` (optional, default `8.0`): vertical gap between the title bar and terminal content area
 
 ## `prompt`
 
-- `font_family`
-- `font_size`
-- `row_padding_x`
-- `segment_height`
-- `text_color`
-- `edge_fill`
-- `separator_fill`
-- `leading_symbol`
-- `trailing_symbol`
-- `palette`: one or more segment background colors
+Controls how powerline/statusline rows are rendered. Can also be supplied standalone via `--statusline`.
+
+- `font_family`: font used for segment text
+- `font_size`: text size inside segments
+- `row_padding_x`: horizontal padding inside each segment before/after text
+- `segment_height`: height of each statusline bar (can be taller than normal `line_height`)
+- `text_color`: color of text inside segments
+- `edge_fill`: reserved for edge decoration color
+- `separator_fill`: reserved for separator decoration color
+- `leading_symbol`: glyph rendered at the start of the statusline
+- `trailing_symbol`: glyph rendered at the end of the statusline
+- `palette`: array of one or more segment background colors; segments cycle through these by index
+- `segment_padding_x` (optional): override horizontal text padding within segments
 
 ## Notes
 
 - Built-in themes are regular JSON and can be used as a starting point for custom themes.
-- Prompt remapping uses the selected theme’s `prompt` section when a compatible powerline/starship line is detected.
+- The `prompt` section is used whenever a powerline row is detected and `--no-powerline` is not set.
+- A standalone `--statusline` JSON file uses the same shape as the `prompt` section and overrides it when provided.

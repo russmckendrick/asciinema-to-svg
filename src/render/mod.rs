@@ -1,6 +1,8 @@
+mod statusline;
+
 use crate::cast::RecordingSession;
 use crate::terminal::{TerminalEmulator, TerminalFrame, screen_buffer::ScreenCell};
-use crate::theme::{ChromeKind, ThemeDefinition};
+use crate::theme::{ChromeKind, PromptTheme, ThemeDefinition};
 use anyhow::Result;
 use std::fmt::Write;
 
@@ -9,6 +11,7 @@ pub struct RenderOptions {
     pub height_px: Option<u32>,
     pub window_title: Option<String>,
     pub powerline: bool,
+    pub statusline_config: Option<PromptTheme>,
 }
 
 struct Layout {
@@ -143,6 +146,7 @@ pub fn render_animated_svg(
             index,
             total_duration,
             options.powerline,
+            options.statusline_config.as_ref(),
         )?;
     }
 
@@ -304,6 +308,7 @@ fn append_frame(
     index: usize,
     total_duration: f64,
     powerline: bool,
+    statusline_config: Option<&PromptTheme>,
 ) -> Result<()> {
     let start = if total_duration <= 0.0 {
         0.0
@@ -335,14 +340,58 @@ fn append_frame(
         theme.terminal.background
     )?;
 
-    let mut display_row_index = 0usize;
+    let prompt = statusline_config.unwrap_or(&theme.prompt);
+    let mut y_offset: f32 = 0.0;
+
     for row_index in 0..frame.buffer.height {
         let row = frame.buffer.row(row_index);
-        if powerline && should_skip_powerline_row(row) {
-            continue;
+        let row_y = layout.frame_y + y_offset;
+
+        if powerline && statusline::is_powerline_row(row) {
+            let sl = statusline::parse_row(row, &theme.terminal.background);
+
+            // Left prompt segments
+            statusline::render_segments_left(
+                svg,
+                &sl.left,
+                prompt,
+                layout.frame_x,
+                row_y,
+                &theme.terminal.background,
+                0,
+            )?;
+
+            // Right prompt segments
+            let right_edge = layout.frame_x + layout.terminal_width;
+            statusline::render_segments_right(
+                svg,
+                &sl.right,
+                prompt,
+                right_edge,
+                row_y,
+                &theme.terminal.background,
+                0,
+            )?;
+
+            // Middle gap: render as regular terminal text (the typed command)
+            if sl.middle_start_col < sl.middle_end_col {
+                let middle_text_y = row_y + prompt.segment_height / 2.0 - layout.line_height / 2.0;
+                append_row_text_range(
+                    svg,
+                    layout,
+                    theme,
+                    middle_text_y,
+                    row,
+                    sl.middle_start_col,
+                    sl.middle_end_col,
+                )?;
+            }
+
+            y_offset += prompt.segment_height;
+        } else {
+            append_row_text(svg, layout, theme, row_y, row, powerline)?;
+            y_offset += layout.line_height;
         }
-        append_row_text(svg, layout, theme, display_row_index, row, powerline)?;
-        display_row_index += 1;
     }
     svg.push_str("</g>");
     Ok(())
@@ -352,11 +401,11 @@ fn append_row_text(
     svg: &mut String,
     layout: &Layout,
     theme: &ThemeDefinition,
-    row_index: usize,
+    row_y: f32,
     row: &[ScreenCell],
     powerline: bool,
 ) -> Result<()> {
-    let text_y = layout.frame_y + row_index as f32 * layout.line_height + 4.0;
+    let text_y = row_y + 4.0;
     for (column, cell) in row.iter().enumerate() {
         if cell.is_wide_continuation || cell.text == " " {
             continue;
@@ -370,7 +419,7 @@ fn append_row_text(
                 svg,
                 r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
                 cell_x,
-                layout.frame_y + row_index as f32 * layout.line_height,
+                row_y,
                 if cell.is_wide {
                     layout.cell_width * 2.0
                 } else {
@@ -381,13 +430,19 @@ fn append_row_text(
             )?;
         }
 
-        if powerline && is_powerline_glyph(&cell.text) {
-            append_powerline_glyph(svg, layout, row_index, column, cell)?;
+        if is_prompt_marker_glyph(&cell.text) {
+            append_prompt_marker(svg, layout, row_y, column, cell)?;
             continue;
         }
 
-        if is_prompt_marker_glyph(&cell.text) {
-            append_prompt_marker(svg, layout, row_index, column, cell)?;
+        if powerline && is_powerline_glyph(&cell.text) {
+            append_powerline_glyph(svg, layout, row_y, column, cell)?;
+            continue;
+        }
+
+        // When powerline is enabled, skip any Private Use Area glyph
+        // so we never depend on Nerd Fonts being installed.
+        if powerline && statusline::is_private_use_area(&cell.text) {
             continue;
         }
 
@@ -419,15 +474,58 @@ fn append_row_text(
     Ok(())
 }
 
+/// Render a column range of a row as plain terminal text (used for the middle
+/// gap of a powerline row where the typed command lives).
+fn append_row_text_range(
+    svg: &mut String,
+    layout: &Layout,
+    _theme: &ThemeDefinition,
+    row_y: f32,
+    row: &[ScreenCell],
+    start_col: usize,
+    end_col: usize,
+) -> Result<()> {
+    let text_y = row_y + 4.0;
+    for column in start_col..end_col.min(row.len()) {
+        let cell = &row[column];
+        if cell.is_wide_continuation || cell.text == " " {
+            continue;
+        }
+        if statusline::is_private_use_area(&cell.text) {
+            continue;
+        }
+        if is_prompt_marker_glyph(&cell.text) {
+            append_prompt_marker(svg, layout, row_y, column, cell)?;
+            continue;
+        }
+        let cell_x = layout.frame_x + column as f32 * layout.cell_width;
+        let x = cell_x + 4.0;
+        writeln!(
+            svg,
+            r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}"{}>{}</text>"#,
+            x,
+            text_y,
+            effective_foreground(cell),
+            if cell.italic {
+                r#" font-style="italic""#
+            } else {
+                ""
+            },
+            escape_xml(&cell.text)
+        )?;
+    }
+    Ok(())
+}
+
 fn append_powerline_glyph(
     svg: &mut String,
     layout: &Layout,
-    row_index: usize,
+    row_y: f32,
     column: usize,
     cell: &ScreenCell,
 ) -> Result<()> {
     let x = layout.frame_x + column as f32 * layout.cell_width;
-    let y = layout.frame_y + row_index as f32 * layout.line_height;
+    let y = row_y;
     let w = layout.cell_width;
     let h = layout.line_height;
     let fg = effective_foreground(cell);
@@ -502,12 +600,12 @@ fn is_powerline_glyph(text: &str) -> bool {
 fn append_prompt_marker(
     svg: &mut String,
     layout: &Layout,
-    row_index: usize,
+    row_y: f32,
     column: usize,
     cell: &ScreenCell,
 ) -> Result<()> {
     let x = layout.frame_x + column as f32 * layout.cell_width + 1.0;
-    let y = layout.frame_y + row_index as f32 * layout.line_height + 2.0;
+    let y = row_y + 2.0;
     writeln!(
         svg,
         r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,
@@ -520,11 +618,6 @@ fn append_prompt_marker(
 
 fn is_prompt_marker_glyph(text: &str) -> bool {
     text.contains('')
-}
-
-fn should_skip_powerline_row(row: &[ScreenCell]) -> bool {
-    row.iter()
-        .any(|cell| !cell.is_wide_continuation && is_powerline_glyph(&cell.text))
 }
 
 fn effective_foreground(cell: &ScreenCell) -> &str {
@@ -592,6 +685,7 @@ mod tests {
                 height_px: None,
                 window_title: Some("demo".to_string()),
                 powerline: true,
+                statusline_config: None,
             },
         )
         .unwrap();
@@ -618,6 +712,7 @@ mod tests {
                 height_px: None,
                 window_title: Some("demo".to_string()),
                 powerline: true,
+                statusline_config: None,
             },
         )
         .unwrap();
@@ -627,7 +722,7 @@ mod tests {
     }
 
     #[test]
-    fn drops_powerline_rows_when_cleanup_is_enabled() {
+    fn renders_statusline_for_powerline_rows() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let session = RecordingSession::read_from_str(
             r#"{"version":2,"width":40,"height":4,"timestamp":0}
@@ -643,11 +738,15 @@ mod tests {
                 height_px: None,
                 window_title: None,
                 powerline: true,
+                statusline_config: None,
             },
         )
         .unwrap();
-        assert!(!svg.contains("test"));
-        assert!(!svg.contains("<polygon"));
+        // Statusline renderer draws rects and polygons for segments
+        assert!(svg.contains("<rect"));
+        assert!(svg.contains("<polygon"));
+        // Segment text is rendered
+        assert!(svg.contains("test"));
     }
 
     #[test]
@@ -667,6 +766,7 @@ mod tests {
                 height_px: None,
                 window_title: None,
                 powerline: false,
+                statusline_config: None,
             },
         )
         .unwrap();
@@ -690,6 +790,7 @@ mod tests {
                 height_px: None,
                 window_title: None,
                 powerline: true,
+                statusline_config: None,
             },
         )
         .unwrap();

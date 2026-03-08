@@ -33,6 +33,10 @@ pub struct Cli {
     /// Disable powerline/starship prompt remapping
     #[arg(long)]
     pub no_powerline: bool,
+
+    /// Path to a standalone statusline config JSON (overrides theme prompt section)
+    #[arg(long)]
+    pub statusline: Option<String>,
 }
 
 #[cfg(test)]

@@ -1,19 +1,32 @@
-# Powerline Remapping
+# Powerline / Statusline Rendering
 
-Powerline/starship prompt remapping is enabled by default.
+Powerline/starship prompt rendering is enabled by default.
 
 ## Behavior
 
-- The renderer looks for prompt rows containing common powerline separator glyphs such as ``, ``, ``, or ``.
-- When detected, the prompt is redrawn with SVG shapes owned by the renderer rather than relying on terminal font glyphs.
-- The selected theme controls the prompt font, colors, separators, leading symbol, and trailing symbol.
+- The renderer scans each row for powerline separator glyphs (`` U+E0B0, `` U+E0B2, `` U+E0B4).
+- When a separator is found, the row is treated as a **statusline row**.
+- Text between separators is extracted into segments.
+- Each segment is drawn as a colored `<rect>` with an arrow `<polygon>` separator, using the theme's `prompt.palette` colors (cycling by index).
+- Segment text is rendered centered inside each bar.
+- The final arrow fades into the terminal background color.
+
+## Statusline Override
+
+Use `--statusline <path>` to supply a standalone JSON config that overrides the theme's `prompt` section:
+
+```bash
+asciinema-to-svg demo.cast -o demo.svg --statusline custom-prompt.json
+```
+
+The JSON file uses the same shape as the `prompt` section in a theme file. See [Theme Format](theme-format.md) for field descriptions.
 
 ## Disable
 
 Use `--no-powerline` to render the original prompt text without remapping.
 
-## Current Heuristic
+## Detection Heuristic
 
-- Detection is intentionally conservative and row-based.
+- Detection is row-based: any row containing a powerline separator glyph is rendered as a statusline.
 - Non-prompt rows are rendered as plain terminal text.
-- The default `macos` theme uses the supplied personal prompt look as the reference direction.
+- Statusline rows use `prompt.segment_height` for their height, which may differ from the normal `line_height`. Subsequent rows are offset accordingly.

@@ -61,6 +61,21 @@ pub struct PromptTheme {
     pub leading_symbol: String,
     pub trailing_symbol: String,
     pub palette: Vec<String>,
+    #[serde(default)]
+    pub segment_padding_x: Option<f32>,
+}
+
+impl PromptTheme {
+    pub fn load_from_file(path: &str) -> Result<Self> {
+        let contents = std::fs::read_to_string(Path::new(path))
+            .with_context(|| format!("failed to read statusline config file {}", path))?;
+        let theme: Self = serde_json::from_str(&contents)
+            .with_context(|| format!("failed to parse statusline config file {}", path))?;
+        if theme.palette.is_empty() {
+            anyhow::bail!("statusline palette must not be empty");
+        }
+        Ok(theme)
+    }
 }
 
 impl ThemeDefinition {
