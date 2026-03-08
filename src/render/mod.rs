@@ -22,12 +22,6 @@ struct Layout {
     line_height: f32,
 }
 
-#[derive(Debug, Clone, PartialEq, Eq)]
-struct PromptSegment {
-    text: String,
-    fill: String,
-}
-
 pub fn render_animated_svg(
     session: &RecordingSession,
     theme: &ThemeDefinition,
@@ -40,12 +34,14 @@ pub fn render_animated_svg(
     );
     let mut frames = emulator.replay(session);
     normalize_frame_timing(&mut frames);
-    let (content_cols, content_rows) = measure_content_bounds(&frames, theme);
 
-    let natural_width = theme.chrome.padding * 2.0 + content_cols as f32 * theme.font_size * 0.62;
-    let natural_height = theme.chrome.padding * 2.0
-        + theme.chrome.title_bar_height
-        + content_rows as f32 * theme.line_height;
+    let natural_cell_width = theme.font_size * 0.6;
+    let natural_line_height = theme.line_height;
+    let natural_terminal_width = session.terminal_size.width as f32 * natural_cell_width;
+    let natural_terminal_height = session.terminal_size.height as f32 * natural_line_height;
+    let natural_width = theme.chrome.padding * 2.0 + natural_terminal_width;
+    let natural_height =
+        theme.chrome.padding * 2.0 + theme.chrome.title_bar_height + natural_terminal_height;
 
     let mut width = options
         .width_px
@@ -62,32 +58,44 @@ pub fn render_animated_svg(
         width = height * natural_width / natural_height;
     }
 
-    let layout = Layout {
-        width,
-        height,
-        frame_x: theme.chrome.padding,
-        frame_y: theme.chrome.padding + theme.chrome.title_bar_height,
-        terminal_width: (width - theme.chrome.padding * 2.0).max(1.0),
-        terminal_height: (height - theme.chrome.padding * 2.0 - theme.chrome.title_bar_height)
-            .max(1.0),
-        cell_width: ((width - theme.chrome.padding * 2.0)
-            / session.terminal_size.width.max(1) as f32)
-            .max(theme.font_size * 0.45),
-        line_height: ((height - theme.chrome.padding * 2.0 - theme.chrome.title_bar_height)
-            / session.terminal_size.height.max(1) as f32)
-            .max(theme.line_height),
+    let layout = if options.width_px.is_none() && options.height_px.is_none() {
+        Layout {
+            width,
+            height,
+            frame_x: theme.chrome.padding,
+            frame_y: theme.chrome.padding + theme.chrome.title_bar_height,
+            terminal_width: natural_terminal_width,
+            terminal_height: natural_terminal_height,
+            cell_width: natural_cell_width,
+            line_height: natural_line_height,
+        }
+    } else {
+        Layout {
+            width,
+            height,
+            frame_x: theme.chrome.padding,
+            frame_y: theme.chrome.padding + theme.chrome.title_bar_height,
+            terminal_width: (width - theme.chrome.padding * 2.0).max(1.0),
+            terminal_height: (height - theme.chrome.padding * 2.0 - theme.chrome.title_bar_height)
+                .max(1.0),
+            cell_width: ((width - theme.chrome.padding * 2.0)
+                / session.terminal_size.width.max(1) as f32)
+                .max(theme.font_size * 0.52),
+            line_height: ((height - theme.chrome.padding * 2.0 - theme.chrome.title_bar_height)
+                / session.terminal_size.height.max(1) as f32)
+                .max(theme.line_height),
+        }
     };
 
     let title = options
         .window_title
         .unwrap_or_else(|| "Terminal".to_string());
-
     let total_duration = frames
         .last()
         .map(|frame| frame.time.max(0.2) + 0.2)
         .unwrap_or(0.2);
-    let mut svg = String::new();
 
+    let mut svg = String::new();
     writeln!(
         svg,
         r#"<svg xmlns="http://www.w3.org/2000/svg" width="{:.0}" height="{:.0}" viewBox="0 0 {:.0} {:.0}" role="img" aria-label="Animated terminal recording" data-theme="{}">"#,
@@ -101,14 +109,15 @@ pub fn render_animated_svg(
     append_styles(&mut svg, theme, total_duration)?;
     svg.push_str("</defs>");
     append_window_chrome(&mut svg, theme, &layout, &title)?;
-    svg.push_str(&format!(
+    writeln!(
+        svg,
         r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
         layout.frame_x,
         layout.frame_y,
         layout.terminal_width,
         layout.terminal_height,
         theme.terminal.background
-    ));
+    )?;
 
     for (index, frame) in frames.iter().enumerate() {
         append_frame(
@@ -136,11 +145,6 @@ fn append_styles(svg: &mut String, theme: &ThemeDefinition, duration: f64) -> Re
             dominant-baseline: hanging;
             white-space: pre;
         }}
-        .prompt-text {{
-            font-family: {};
-            font-size: {}px;
-            dominant-baseline: middle;
-        }}
         .frame {{
             opacity: 0;
             animation-duration: {}s;
@@ -150,8 +154,6 @@ fn append_styles(svg: &mut String, theme: &ThemeDefinition, duration: f64) -> Re
         </style>"#,
         css_text(&theme.font_family),
         theme.font_size,
-        css_text(&theme.prompt.font_family),
-        theme.prompt.font_size,
         duration
     )?;
     Ok(())
@@ -172,15 +174,39 @@ fn append_window_chrome(
         theme.chrome.background,
         theme.chrome.border_color
     )?;
+
+    if matches!(theme.chrome.kind, ChromeKind::Macos) {
+        writeln!(
+            svg,
+            r##"<rect x="1" y="1" width="{:.2}" height="{:.2}" rx="{:.2}" fill="#2a3157" opacity="0.82"/>"##,
+            layout.width - 2.0,
+            theme.chrome.title_bar_height + theme.chrome.padding * 0.6,
+            (theme.chrome.radius - 2.0).max(0.0)
+        )?;
+        writeln!(
+            svg,
+            r##"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="#3a4677" stroke-width="1" opacity="0.8"/>"##,
+            theme.chrome.padding,
+            theme.chrome.padding + theme.chrome.title_bar_height + 0.5,
+            layout.width - theme.chrome.padding,
+            theme.chrome.padding + theme.chrome.title_bar_height + 0.5
+        )?;
+    }
+
     writeln!(
         svg,
-        r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="14" fill="{}" dominant-baseline="middle"{}>{}</text>"#,
+        r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="{}" fill="{}" dominant-baseline="middle"{}>{}</text>"#,
         match theme.chrome.kind {
             ChromeKind::Macos | ChromeKind::Linux => layout.width / 2.0,
             ChromeKind::Powershell => 12.0,
         },
-        theme.chrome.padding + theme.chrome.title_bar_height / 2.0,
+        theme.chrome.padding + theme.chrome.title_bar_height / 2.0 + 0.5,
         css_text("ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"),
+        if matches!(theme.chrome.kind, ChromeKind::Macos) {
+            17
+        } else {
+            14
+        },
         theme.chrome.title_color,
         if matches!(theme.chrome.kind, ChromeKind::Macos | ChromeKind::Linux) {
             r#" text-anchor="middle""#
@@ -197,27 +223,17 @@ fn append_window_chrome(
                     svg,
                     r#"<circle cx="{:.2}" cy="{:.2}" r="7" fill="{}"/>"#,
                     theme.chrome.padding + 18.0 + 22.0 * index as f32,
-                    theme.chrome.padding + theme.chrome.title_bar_height / 2.0,
+                    theme.chrome.padding + theme.chrome.title_bar_height / 2.0 + 0.5,
                     color
                 )?;
             }
-            writeln!(
-                svg,
-                r#"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="{}" stroke-width="1.5" opacity="0.55"/>"#,
-                theme.chrome.padding + 100.0,
-                theme.chrome.padding + theme.chrome.title_bar_height / 2.0,
-                layout.width - (theme.chrome.padding + 100.0),
-                theme.chrome.padding + theme.chrome.title_bar_height / 2.0,
-                theme.chrome.subtitle_color
-            )?;
         }
         ChromeKind::Linux => {
+            let y = theme.chrome.padding + theme.chrome.title_bar_height / 2.0;
             writeln!(
                 svg,
                 r##"<circle cx="18" cy="{:.2}" r="8" fill="#dd4814"/><circle cx="42" cy="{:.2}" r="8" fill="#666666"/><circle cx="66" cy="{:.2}" r="8" fill="#888888"/>"##,
-                theme.chrome.padding + theme.chrome.title_bar_height / 2.0,
-                theme.chrome.padding + theme.chrome.title_bar_height / 2.0,
-                theme.chrome.padding + theme.chrome.title_bar_height / 2.0
+                y, y, y
             )?;
         }
         ChromeKind::Powershell => {
@@ -263,7 +279,6 @@ fn append_frame(
     } else {
         (frame.time / total_duration * 100.0).clamp(0.0, 100.0)
     };
-    let end = 100.0;
     writeln!(
         svg,
         r#"<g class="frame" style="animation-name: frame-{};">"#,
@@ -271,19 +286,18 @@ fn append_frame(
     )?;
     writeln!(
         svg,
-        r#"<style>@keyframes frame-{} {{ 0%, {:.3}% {{ opacity: 0; }} {:.3}%, {}% {{ opacity: 1; }} }}</style>"#,
-        index, start, start, end
+        r#"<style>@keyframes frame-{} {{ 0%, {:.3}% {{ opacity: 0; }} {:.3}%, 100% {{ opacity: 1; }} }}</style>"#,
+        index, start, start
     )?;
 
+    let mut display_row_index = 0usize;
     for row_index in 0..frame.buffer.height {
         let row = frame.buffer.row(row_index);
-        if powerline {
-            if let Some(prompt) = detect_powerline_prompt(row, theme) {
-                append_prompt(svg, theme, layout, row_index, &prompt)?;
-                continue;
-            }
+        if powerline && should_skip_powerline_row(row) {
+            continue;
         }
-        append_row_text(svg, layout, theme, row_index, row)?;
+        append_row_text(svg, layout, theme, display_row_index, row, powerline)?;
+        display_row_index += 1;
     }
     svg.push_str("</g>");
     Ok(())
@@ -295,19 +309,22 @@ fn append_row_text(
     theme: &ThemeDefinition,
     row_index: usize,
     row: &[ScreenCell],
+    powerline: bool,
 ) -> Result<()> {
-    let y = layout.frame_y + row_index as f32 * layout.line_height + 4.0;
+    let text_y = layout.frame_y + row_index as f32 * layout.line_height + 4.0;
     for (column, cell) in row.iter().enumerate() {
         if cell.is_wide_continuation || cell.text == " " {
             continue;
         }
-        let x = layout.frame_x + column as f32 * layout.cell_width + 4.0;
+
+        let cell_x = layout.frame_x + column as f32 * layout.cell_width;
+        let x = cell_x + 4.0;
         let background = effective_background(cell);
-        if background != theme.terminal.background {
+        if !background.eq_ignore_ascii_case(&theme.terminal.background) {
             writeln!(
                 svg,
-                r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}" opacity="0.95"/>"#,
-                layout.frame_x + column as f32 * layout.cell_width,
+                r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
+                cell_x,
                 layout.frame_y + row_index as f32 * layout.line_height,
                 if cell.is_wide {
                     layout.cell_width * 2.0
@@ -318,11 +335,22 @@ fn append_row_text(
                 background
             )?;
         }
+
+        if powerline && is_powerline_glyph(&cell.text) {
+            append_powerline_glyph(svg, layout, row_index, column, cell)?;
+            continue;
+        }
+
+        if is_prompt_marker_glyph(&cell.text) {
+            append_prompt_marker(svg, layout, row_index, column, cell)?;
+            continue;
+        }
+
         writeln!(
             svg,
             r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}"{}{}>{}</text>"#,
             x,
-            y,
+            text_y,
             effective_foreground(cell),
             if cell.bold {
                 r#" font-weight="700""#
@@ -341,9 +369,9 @@ fn append_row_text(
                 svg,
                 r#"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="{}" stroke-width="1.2"/>"#,
                 x,
-                y + theme.font_size + 1.0,
+                text_y + 19.0,
                 x + layout.cell_width * if cell.is_wide { 2.0 } else { 1.0 },
-                y + theme.font_size + 1.0,
+                text_y + 19.0,
                 effective_foreground(cell)
             )?;
         }
@@ -351,226 +379,112 @@ fn append_row_text(
     Ok(())
 }
 
-fn append_prompt(
+fn append_powerline_glyph(
     svg: &mut String,
-    theme: &ThemeDefinition,
     layout: &Layout,
     row_index: usize,
-    prompt: &[PromptSegment],
+    column: usize,
+    cell: &ScreenCell,
 ) -> Result<()> {
-    let mut cursor_x = layout.frame_x + 4.0;
-    let y = layout.frame_y + row_index as f32 * layout.line_height + 2.0;
-    let height = theme
-        .prompt
-        .segment_height
-        .min(layout.line_height - 4.0)
-        .max(18.0);
-    let top = y;
-    let center_y = top + height / 2.0;
+    let x = layout.frame_x + column as f32 * layout.cell_width;
+    let y = layout.frame_y + row_index as f32 * layout.line_height;
+    let w = layout.cell_width;
+    let h = layout.line_height;
+    let fg = effective_foreground(cell);
 
-    for (index, segment) in prompt.iter().enumerate() {
-        let is_blank = segment.text.is_empty();
-        let width = if is_blank {
-            (theme.prompt.segment_height * 0.88).max(26.0)
-        } else {
-            theme.prompt.row_padding_x * 2.0
-                + segment.text.chars().count() as f32 * theme.prompt.font_size * 0.62
-                + 22.0
-        };
-        let color = &segment.fill;
-        let next_color = prompt
-            .get(index + 1)
-            .map(|value| value.fill.as_str())
-            .unwrap_or(theme.prompt.separator_fill.as_str());
-
-        if index == 0 {
+    match cell.text.as_str() {
+        "" => {
             writeln!(
                 svg,
-                r#"<path d="M {:.2} {:.2} h {:.2} l 16 {:.2} l -16 {:.2} h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="{}"/>"#,
-                cursor_x + 12.0,
-                top,
-                width - 12.0,
-                height / 2.0,
-                height / 2.0,
-                color
-            )?;
-            writeln!(
-                svg,
-                r#"<text class="prompt-text" x="{:.2}" y="{:.2}" fill="{}">{}</text>"#,
-                cursor_x + 20.0,
-                center_y,
-                theme.prompt.text_color,
-                escape_xml(&theme.prompt.leading_symbol)
-            )?;
-        } else {
-            writeln!(
-                svg,
-                r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}" opacity="0.95"/>"#,
-                cursor_x,
-                top,
-                cursor_x + 18.0,
-                center_y,
-                cursor_x,
-                top + height,
-                theme.prompt.edge_fill
-            )?;
-            writeln!(
-                svg,
-                r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
-                cursor_x + 10.0,
-                top,
-                width - 10.0,
-                height,
-                color
+                r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}"/>"#,
+                x,
+                y,
+                x + w,
+                y + h / 2.0,
+                x,
+                y + h,
+                fg
             )?;
         }
-
-        if !is_blank {
+        "" => {
             writeln!(
                 svg,
-                r#"<text class="prompt-text" x="{:.2}" y="{:.2}" fill="{}">{}</text>"#,
-                cursor_x + theme.prompt.row_padding_x + 28.0,
-                center_y,
-                theme.prompt.text_color,
-                escape_xml(&segment.text)
+                r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}"/>"#,
+                x + w,
+                y,
+                x,
+                y + h / 2.0,
+                x + w,
+                y + h,
+                fg
             )?;
         }
-
-        let right_x = cursor_x + width;
-        writeln!(
-            svg,
-            r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}"/>"#,
-            right_x - 6.0,
-            top,
-            right_x + 18.0,
-            center_y,
-            right_x - 6.0,
-            top + height,
-            next_color
-        )?;
-        cursor_x = right_x + 8.0;
+        "" | "" => {
+            writeln!(
+                svg,
+                r#"<path d="M {:.2} {:.2} L {:.2} {:.2}" stroke="{}" stroke-width="2" stroke-linecap="round"/>"#,
+                x + w * 0.28,
+                y + 4.0,
+                x + w * 0.72,
+                y + h - 4.0,
+                fg
+            )?;
+        }
+        "" => {
+            writeln!(
+                svg,
+                r#"<path d="M {:.2} {:.2} Q {:.2} {:.2} {:.2} {:.2} L {:.2} {:.2} Q {:.2} {:.2} {:.2} {:.2} Z" fill="{}"/>"#,
+                x + w,
+                y,
+                x + w * 0.18,
+                y,
+                x,
+                y + h / 2.0,
+                x,
+                y + h / 2.0,
+                x + w * 0.18,
+                y + h,
+                x + w,
+                y + h,
+                fg
+            )?;
+        }
+        _ => {}
     }
-
-    writeln!(
-        svg,
-        r##"<text class="prompt-text" x="{:.2}" y="{:.2}" fill="#39ff14">{}</text>"##,
-        cursor_x + 6.0,
-        center_y,
-        escape_xml(&theme.prompt.trailing_symbol)
-    )?;
 
     Ok(())
 }
 
-fn detect_powerline_prompt(
-    row: &[ScreenCell],
-    theme: &ThemeDefinition,
-) -> Option<Vec<PromptSegment>> {
-    if !row.iter().any(|cell| {
-        !cell.is_wide_continuation
-            && (cell.text.contains('')
-                || cell.text.contains('')
-                || cell.text.contains('')
-                || cell.text.contains('')
-                || cell.text.contains(''))
-    }) {
-        return None;
-    }
-
-    let mut segments = Vec::new();
-    let mut current_fill: Option<&str> = None;
-    let mut current_text = String::new();
-
-    for cell in row {
-        if cell.is_wide_continuation {
-            continue;
-        }
-
-        let background = effective_background(cell);
-        if background.eq_ignore_ascii_case(&theme.terminal.background) {
-            if let Some(fill) = current_fill.take() {
-                segments.push(PromptSegment {
-                    text: normalize_prompt_segment(&current_text),
-                    fill: fill.to_string(),
-                });
-                current_text.clear();
-            }
-            continue;
-        }
-
-        match current_fill {
-            Some(fill) if fill.eq_ignore_ascii_case(background) => {
-                current_text.push_str(&cell.text);
-            }
-            Some(fill) => {
-                segments.push(PromptSegment {
-                    text: normalize_prompt_segment(&current_text),
-                    fill: fill.to_string(),
-                });
-                current_text.clear();
-                current_text.push_str(&cell.text);
-                current_fill = Some(background);
-            }
-            None => {
-                current_text.push_str(&cell.text);
-                current_fill = Some(background);
-            }
-        }
-    }
-
-    if let Some(fill) = current_fill {
-        segments.push(PromptSegment {
-            text: normalize_prompt_segment(&current_text),
-            fill: fill.to_string(),
-        });
-    }
-
-    let cleaned = segments
-        .into_iter()
-        .filter(|segment| {
-            !segment
-                .fill
-                .eq_ignore_ascii_case(&theme.terminal.background)
-        })
-        .collect::<Vec<_>>();
-
-    if cleaned.is_empty() {
-        None
-    } else {
-        Some(cleaned)
-    }
+fn is_powerline_glyph(text: &str) -> bool {
+    matches!(text, "" | "" | "" | "" | "")
 }
 
-fn normalize_prompt_segment(segment: &str) -> String {
-    segment
-        .chars()
-        .filter(|ch| {
-            ch.is_ascii_alphanumeric()
-                || matches!(
-                    ch,
-                    ' ' | '~'
-                        | '.'
-                        | '/'
-                        | '_'
-                        | '-'
-                        | '+'
-                        | ':'
-                        | '['
-                        | ']'
-                        | '('
-                        | ')'
-                        | '{'
-                        | '}'
-                        | '!'
-                        | '?'
-                        | '@'
-                        | '\\'
-                )
-        })
-        .collect::<String>()
-        .split_whitespace()
-        .collect::<Vec<_>>()
-        .join(" ")
+fn append_prompt_marker(
+    svg: &mut String,
+    layout: &Layout,
+    row_index: usize,
+    column: usize,
+    cell: &ScreenCell,
+) -> Result<()> {
+    let x = layout.frame_x + column as f32 * layout.cell_width + 1.0;
+    let y = layout.frame_y + row_index as f32 * layout.line_height + 2.0;
+    writeln!(
+        svg,
+        r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}" font-weight="700">$</text>"#,
+        x,
+        y,
+        effective_foreground(cell)
+    )?;
+    Ok(())
+}
+
+fn is_prompt_marker_glyph(text: &str) -> bool {
+    text.contains('')
+}
+
+fn should_skip_powerline_row(row: &[ScreenCell]) -> bool {
+    row.iter()
+        .any(|cell| !cell.is_wide_continuation && is_powerline_glyph(&cell.text))
 }
 
 fn effective_foreground(cell: &ScreenCell) -> &str {
@@ -602,42 +516,6 @@ fn normalize_frame_timing(frames: &mut [TerminalFrame]) {
         }
         last_time = frame.time;
     }
-}
-
-fn measure_content_bounds(frames: &[TerminalFrame], theme: &ThemeDefinition) -> (usize, usize) {
-    let mut max_row = 0usize;
-    let mut max_col = 0usize;
-
-    for frame in frames {
-        for row_index in 0..frame.buffer.height {
-            let row = frame.buffer.row(row_index);
-            let mut row_has_content = false;
-            for (col_index, cell) in row.iter().enumerate() {
-                if cell.is_wide_continuation {
-                    continue;
-                }
-                let has_content = cell.text != " "
-                    || !effective_background(cell).eq_ignore_ascii_case(&theme.terminal.background);
-                if has_content {
-                    row_has_content = true;
-                    max_col = max_col.max(col_index + if cell.is_wide { 2 } else { 1 });
-                }
-            }
-            if row_has_content {
-                max_row = max_row.max(row_index + 1);
-            }
-        }
-    }
-
-    let max_width = frames.first().map(|frame| frame.buffer.width).unwrap_or(48);
-    let max_height = frames.first().map(|frame| frame.buffer.height).unwrap_or(6);
-    let min_width = 48.min(max_width);
-    let min_height = 6.min(max_height);
-
-    (
-        max_col.clamp(min_width, max_width),
-        max_row.clamp(min_height, max_height),
-    )
 }
 
 fn css_text(value: &str) -> String {
@@ -682,20 +560,27 @@ mod tests {
     }
 
     #[test]
-    fn detects_powerline_prompts() {
+    fn drops_powerline_rows_when_cleanup_is_enabled() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let session = RecordingSession::read_from_str(
             r#"{"version":2,"width":40,"height":4,"timestamp":0}
-[0.1,"o","\u001b[38;2;214;93;14m\u001b[48;2;214;93;14;38;2;251;241;199m󰀵 russ.mckendrick \u001b[48;2;215;153;33;38;2;214;93;14m\u001b[38;2;251;241;199m ~ \u001b[48;2;104;157;106;38;2;215;153;33m\u001b[48;2;69;133;136;38;2;104;157;106m\u001b[48;2;131;165;152;38;2;69;133;136m\u001b[0m\u001b[38;2;131;165;152m\u001b[0m\r\n"]
+[0.1,"o","\u001b[38;2;214;93;14m\u001b[48;2;214;93;14;38;2;251;241;199mtest \u001b[48;2;215;153;33;38;2;214;93;14m\u001b[38;2;251;241;199m ~ \r\n"]
 "#,
         )
         .unwrap();
-        let mut emulator = TerminalEmulator::new(40, 4, &theme);
-        let frames = emulator.replay(&session);
-        let prompt = detect_powerline_prompt(frames[0].buffer.row(0), &theme).unwrap();
-        assert_eq!(prompt[0].text, "russ.mckendrick");
-        assert_eq!(prompt[1].text, "~");
-        assert!(prompt.len() >= 4);
+        let svg = render_animated_svg(
+            &session,
+            &theme,
+            RenderOptions {
+                width_px: None,
+                height_px: None,
+                window_title: None,
+                powerline: true,
+            },
+        )
+        .unwrap();
+        assert!(!svg.contains("test"));
+        assert!(!svg.contains("<polygon"));
     }
 
     #[test]
@@ -718,6 +603,30 @@ mod tests {
             },
         )
         .unwrap();
-        assert!(!svg.contains(""));
+        assert!(svg.contains(""));
+    }
+
+    #[test]
+    fn replaces_prompt_marker_glyph_with_dollar() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let session = RecordingSession::read_from_str(
+            r#"{"version":2,"width":20,"height":4,"timestamp":0}
+[0.1,"o","\u001b[1;38;2;65;255;0m\u001b[0m echo\r\n"]
+"#,
+        )
+        .unwrap();
+        let svg = render_animated_svg(
+            &session,
+            &theme,
+            RenderOptions {
+                width_px: None,
+                height_px: None,
+                window_title: None,
+                powerline: true,
+            },
+        )
+        .unwrap();
+        assert!(svg.contains("$</text>"));
+        assert!(!svg.contains(""));
     }
 }

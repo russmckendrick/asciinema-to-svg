@@ -33,8 +33,8 @@
     "title_color": "#cfd3e6",
     "subtitle_color": "#7ea7d8",
     "radius": 26.0,
-    "padding": 18.0,
-    "title_bar_height": 50.0
+    "padding": 16.0,
+    "title_bar_height": 42.0
   },
   "prompt": {
     "font_family": "SFMono-Regular, Menlo, Consolas, Monaco, monospace",

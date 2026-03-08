@@ -47,6 +47,7 @@ pub enum ChromeKind {
 }
 
 #[derive(Debug, Clone, Deserialize)]
+#[allow(dead_code)]
 pub struct PromptTheme {
     pub font_family: String,
     pub font_size: f32,
