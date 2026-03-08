@@ -7,5 +7,5 @@
 - [Cast Support](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/cast-support.md)
 - [Rendering](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/rendering.md)
 - [Theme Format](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/theme-format.md)
-- [Powerline Remapping](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/powerline-remapping.md)
+- [Statusline Rendering](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/statusline-rendering.md)
 - [Development](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/development.md)

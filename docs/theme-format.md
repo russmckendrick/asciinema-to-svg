@@ -37,7 +37,7 @@ Theme files are JSON documents. The tool ships with built-in themes under [`them
 
 ## `prompt`
 
-Controls how powerline/statusline rows are rendered. Can also be supplied standalone via `--statusline`.
+Controls how statusline rows are rendered. Can also be supplied standalone via `--statusline`.
 
 - `font_family`: font used for segment text
 - `font_size`: text size inside segments
@@ -55,6 +55,6 @@ Controls how powerline/statusline rows are rendered. Can also be supplied standa
 ## Notes
 
 - Built-in themes are regular JSON and can be used as a starting point for custom themes.
-- The `prompt` section is used whenever a powerline row is detected and `--no-powerline` is not set.
+- The `prompt` section is used whenever a statusline row is detected and `--no-statusline` is not set.
 - The `segments` array defines what text appears in the bespoke statusline. The actual cast prompt content is skipped — only the theme-defined segments are rendered.
 - A standalone `--statusline` JSON file uses the same shape as the `prompt` section and overrides it when provided.

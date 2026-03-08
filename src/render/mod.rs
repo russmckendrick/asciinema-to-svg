@@ -10,7 +10,7 @@ pub struct RenderOptions {
     pub width_px: Option<u32>,
     pub height_px: Option<u32>,
     pub window_title: Option<String>,
-    pub powerline: bool,
+    pub statusline: bool,
     pub statusline_config: Option<PromptTheme>,
 }
 
@@ -145,7 +145,7 @@ pub fn render_animated_svg(
             next_frame_time,
             index,
             total_duration,
-            options.powerline,
+            options.statusline,
             options.statusline_config.as_ref(),
         )?;
     }
@@ -307,7 +307,7 @@ fn append_frame(
     next_frame_time: f64,
     index: usize,
     total_duration: f64,
-    powerline: bool,
+    statusline: bool,
     statusline_config: Option<&PromptTheme>,
 ) -> Result<()> {
     let start = if total_duration <= 0.0 {
@@ -348,9 +348,9 @@ fn append_frame(
         let row = frame.buffer.row(row_index);
         let row_y = layout.frame_y + y_offset;
 
-        if powerline && statusline::is_powerline_row(row) {
+        if statusline && statusline::is_statusline_row(row) {
             // Only draw the bespoke statusline once per frame (on the first
-            // powerline row). Subsequent powerline rows are simply skipped.
+            // statusline row). Subsequent statusline rows are simply skipped.
             if !statusline_drawn {
                 statusline::render_bespoke_statusline(
                     svg,
@@ -365,7 +365,7 @@ fn append_frame(
             }
             y_offset += layout.line_height;
         } else {
-            append_row_text(svg, layout, theme, row_y, row, powerline)?;
+            append_row_text(svg, layout, theme, row_y, row, statusline)?;
             y_offset += layout.line_height;
         }
     }
@@ -379,7 +379,7 @@ fn append_row_text(
     theme: &ThemeDefinition,
     row_y: f32,
     row: &[ScreenCell],
-    powerline: bool,
+    statusline: bool,
 ) -> Result<()> {
     let text_y = row_y + 4.0;
     for (column, cell) in row.iter().enumerate() {
@@ -412,9 +412,9 @@ fn append_row_text(
         }
 
 
-        // When powerline is enabled, skip any Private Use Area glyph
+        // When statusline mode is enabled, skip any Private Use Area glyph
         // so we never depend on Nerd Fonts being installed.
-        if powerline && statusline::is_private_use_area(&cell.text) {
+        if statusline && statusline::is_private_use_area(&cell.text) {
             continue;
         }
 
@@ -533,7 +533,7 @@ mod tests {
                 width_px: None,
                 height_px: None,
                 window_title: Some("demo".to_string()),
-                powerline: true,
+                statusline: true,
                 statusline_config: None,
             },
         )
@@ -560,7 +560,7 @@ mod tests {
                 width_px: None,
                 height_px: None,
                 window_title: Some("demo".to_string()),
-                powerline: true,
+                statusline: true,
                 statusline_config: None,
             },
         )
@@ -571,7 +571,7 @@ mod tests {
     }
 
     #[test]
-    fn renders_statusline_for_powerline_rows() {
+    fn renders_bespoke_statusline_for_statusline_rows() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let session = RecordingSession::read_from_str(
             r#"{"version":2,"width":40,"height":4,"timestamp":0}
@@ -586,7 +586,7 @@ mod tests {
                 width_px: None,
                 height_px: None,
                 window_title: None,
-                powerline: true,
+                statusline: true,
                 statusline_config: None,
             },
         )
@@ -600,7 +600,7 @@ mod tests {
     }
 
     #[test]
-    fn respects_no_powerline_flag() {
+    fn respects_no_statusline_flag() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let session = RecordingSession::read_from_str(
             r#"{"version":2,"width":40,"height":4,"timestamp":0}
@@ -615,7 +615,7 @@ mod tests {
                 width_px: None,
                 height_px: None,
                 window_title: None,
-                powerline: false,
+                statusline: false,
                 statusline_config: None,
             },
         )
@@ -639,7 +639,7 @@ mod tests {
                 width_px: None,
                 height_px: None,
                 window_title: None,
-                powerline: true,
+                statusline: true,
                 statusline_config: None,
             },
         )

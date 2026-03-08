@@ -36,7 +36,7 @@ fn main() -> Result<()> {
             width_px: cli.width,
             height_px: cli.height,
             window_title: title,
-            powerline: !cli.no_powerline,
+            statusline: !cli.no_statusline,
             statusline_config,
         },
     )?;

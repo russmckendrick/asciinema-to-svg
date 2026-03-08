@@ -3,10 +3,10 @@ use crate::theme::PromptTheme;
 use anyhow::Result;
 use std::fmt::Write;
 
-/// Check whether a row contains any powerline separator glyph.
-pub fn is_powerline_row(row: &[ScreenCell]) -> bool {
+/// Check whether a row contains any statusline separator glyph.
+pub fn is_statusline_row(row: &[ScreenCell]) -> bool {
     row.iter()
-        .any(|cell| !cell.is_wide_continuation && is_powerline_separator(&cell.text))
+        .any(|cell| !cell.is_wide_continuation && is_statusline_separator(&cell.text))
 }
 
 /// Render a bespoke statusline using the theme's `prompt.segments` text.
@@ -96,8 +96,8 @@ pub fn render_bespoke_statusline(
     Ok(())
 }
 
-/// All powerline separator glyphs (both solid and thin variants).
-fn is_powerline_separator(text: &str) -> bool {
+/// All statusline separator glyphs (both solid and thin variants).
+fn is_statusline_separator(text: &str) -> bool {
     let ch = match text.chars().next() {
         Some(c) if text.chars().count() == 1 => c,
         _ => return false,
@@ -167,21 +167,21 @@ mod tests {
     }
 
     #[test]
-    fn detects_powerline_row_e0b0() {
+    fn detects_statusline_row_e0b0() {
         let row = vec![cell("u"), cell("s"), cell("e"), cell("r"), cell("\u{E0B0}"), cell("~")];
-        assert!(is_powerline_row(&row));
+        assert!(is_statusline_row(&row));
     }
 
     #[test]
-    fn detects_powerline_row_e0ba() {
+    fn detects_statusline_row_e0ba() {
         let row = vec![cell("x"), cell("\u{E0BA}"), cell("y")];
-        assert!(is_powerline_row(&row));
+        assert!(is_statusline_row(&row));
     }
 
     #[test]
-    fn detects_non_powerline_row() {
+    fn detects_non_statusline_row() {
         let row = vec![cell("h"), cell("e"), cell("l"), cell("l"), cell("o")];
-        assert!(!is_powerline_row(&row));
+        assert!(!is_statusline_row(&row));
     }
 
     #[test]

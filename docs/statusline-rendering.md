@@ -1,14 +1,14 @@
-# Powerline / Statusline Rendering
+# Statusline Rendering
 
-Powerline/starship prompt rendering is enabled by default.
+Statusline prompt rendering is enabled by default.
 
 ## Behavior
 
-- The renderer scans each row for powerline separator glyphs (`` U+E0B0, `` U+E0B2, `` U+E0B4, etc.).
-- When a separator is found, the row is treated as a **powerline row** and is **skipped** — its raw content is not rendered.
+- The renderer scans each row for statusline separator glyphs (U+E0B0–U+E0BF range).
+- When a separator is found, the row is treated as a **statusline row** and is **skipped** — its raw content is not rendered.
 - Instead, a **bespoke statusline** is drawn using the `prompt.segments` array from the theme (or `--statusline` override).
 - Each segment is drawn as a colored `<rect>` with a right-pointing arrow `<polygon>` separator, using the theme's `prompt.palette` colors (cycling by index).
-- Only the **first** powerline row per frame triggers the statusline; subsequent powerline rows are silently skipped.
+- Only the **first** statusline row per frame triggers the statusline; subsequent statusline rows are silently skipped.
 - The statusline height matches `line_height`, so it is the same height as regular text rows.
 
 ## Bespoke Segments
@@ -36,10 +36,10 @@ The JSON file uses the same shape as the `prompt` section in a theme file. See [
 
 ## Disable
 
-Use `--no-powerline` to render the original prompt text without remapping.
+Use `--no-statusline` to render the original prompt text without remapping.
 
 ## Detection Heuristic
 
-- Detection is row-based: any row containing a powerline separator glyph is treated as a powerline row.
-- Non-powerline rows are rendered as plain terminal text.
-- Private Use Area glyphs in non-powerline rows are filtered out when powerline mode is enabled.
+- Detection is row-based: any row containing a statusline separator glyph is treated as a statusline row.
+- Non-statusline rows are rendered as plain terminal text.
+- Private Use Area glyphs in non-statusline rows are filtered out when statusline mode is enabled.

@@ -34,7 +34,7 @@ cargo run -- demo.cast --width 1600 --height 900 --title "Build Output" --output
 Disable prompt remapping:
 
 ```bash
-cargo run -- demo.cast --no-powerline --output plain.svg
+cargo run -- demo.cast --no-statusline --output plain.svg
 ```
 
 Load a custom theme file:
@@ -48,7 +48,7 @@ cargo run -- demo.cast --theme ./themes/my-theme.json --output custom.svg
 - Imports asciinema v2 and v3 casts
 - Emits animated SVG output by default
 - Ships with `macos`, `linux`, and `powershell` themes
-- Enables powerline/starship prompt remapping by default
+- Enables statusline prompt remapping by default
 - Supports custom theme JSON files
 - Allows explicit output `--width`, `--height`, and `--title` overrides
 

@@ -13,7 +13,7 @@ asciinema-to-svg <input.cast> [options]
 - `--width <px>`: explicit SVG width in pixels.
 - `--height <px>`: explicit SVG height in pixels.
 - `--title <text>`: override the title bar text.
-- `--no-powerline`: disable powerline/starship prompt remapping.
+- `--no-statusline`: disable statusline prompt remapping.
 - `--statusline <path>`: path to a standalone statusline config JSON that overrides the theme's `prompt` section. Uses the same shape as the `prompt` object in a theme file.
 
 ## Examples
