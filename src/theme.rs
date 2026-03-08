@@ -36,6 +36,8 @@ pub struct ChromeTheme {
     pub radius: f32,
     pub padding: f32,
     pub title_bar_height: f32,
+    #[serde(default = "default_content_top_gap")]
+    pub content_top_gap: f32,
 }
 
 #[derive(Debug, Clone, Deserialize, PartialEq, Eq)]
@@ -108,6 +110,10 @@ impl ThemeDefinition {
         let bb = if b == 0 { 0 } else { 55 + b * 40 } as u8;
         format!("#{:02X}{:02X}{:02X}", rr, gg, bb)
     }
+}
+
+fn default_content_top_gap() -> f32 {
+    8.0
 }
 
 #[cfg(test)]

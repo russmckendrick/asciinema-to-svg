@@ -34,7 +34,8 @@
     "subtitle_color": "#bcbcbc",
     "radius": 10.0,
     "padding": 12.0,
-    "title_bar_height": 36.0
+    "title_bar_height": 36.0,
+    "content_top_gap": 8.0
   },
   "prompt": {
     "font_family": "Ubuntu Mono, DejaVu Sans Mono, monospace",

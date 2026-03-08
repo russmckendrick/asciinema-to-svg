@@ -34,7 +34,8 @@
     "subtitle_color": "#7ea7d8",
     "radius": 26.0,
     "padding": 16.0,
-    "title_bar_height": 42.0
+    "title_bar_height": 38.0,
+    "content_top_gap": 8.0
   },
   "prompt": {
     "font_family": "SFMono-Regular, Menlo, Consolas, Monaco, monospace",

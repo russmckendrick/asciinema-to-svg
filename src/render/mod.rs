@@ -37,11 +37,15 @@ pub fn render_animated_svg(
 
     let natural_cell_width = theme.font_size * 0.6;
     let natural_line_height = theme.line_height;
+    let content_top_gap = theme.chrome.content_top_gap;
     let natural_terminal_width = session.terminal_size.width as f32 * natural_cell_width;
     let natural_terminal_height = session.terminal_size.height as f32 * natural_line_height;
     let natural_width = theme.chrome.padding * 2.0 + natural_terminal_width;
     let natural_height =
-        theme.chrome.padding * 2.0 + theme.chrome.title_bar_height + natural_terminal_height;
+        theme.chrome.padding * 2.0
+            + theme.chrome.title_bar_height
+            + content_top_gap
+            + natural_terminal_height;
 
     let mut width = options
         .width_px
@@ -63,7 +67,7 @@ pub fn render_animated_svg(
             width,
             height,
             frame_x: theme.chrome.padding,
-            frame_y: theme.chrome.padding + theme.chrome.title_bar_height,
+            frame_y: theme.chrome.padding + theme.chrome.title_bar_height + content_top_gap,
             terminal_width: natural_terminal_width,
             terminal_height: natural_terminal_height,
             cell_width: natural_cell_width,
@@ -74,14 +78,20 @@ pub fn render_animated_svg(
             width,
             height,
             frame_x: theme.chrome.padding,
-            frame_y: theme.chrome.padding + theme.chrome.title_bar_height,
+            frame_y: theme.chrome.padding + theme.chrome.title_bar_height + content_top_gap,
             terminal_width: (width - theme.chrome.padding * 2.0).max(1.0),
-            terminal_height: (height - theme.chrome.padding * 2.0 - theme.chrome.title_bar_height)
+            terminal_height: (height
+                - theme.chrome.padding * 2.0
+                - theme.chrome.title_bar_height
+                - content_top_gap)
                 .max(1.0),
             cell_width: ((width - theme.chrome.padding * 2.0)
                 / session.terminal_size.width.max(1) as f32)
                 .max(theme.font_size * 0.52),
-            line_height: ((height - theme.chrome.padding * 2.0 - theme.chrome.title_bar_height)
+            line_height: ((height
+                - theme.chrome.padding * 2.0
+                - theme.chrome.title_bar_height
+                - content_top_gap)
                 / session.terminal_size.height.max(1) as f32)
                 .max(theme.line_height),
         }
@@ -120,11 +130,16 @@ pub fn render_animated_svg(
     )?;
 
     for (index, frame) in frames.iter().enumerate() {
+        let next_frame_time = frames
+            .get(index + 1)
+            .map(|next| next.time)
+            .unwrap_or(total_duration);
         append_frame(
             &mut svg,
             theme,
             &layout,
             frame,
+            next_frame_time,
             index,
             total_duration,
             options.powerline,
@@ -285,6 +300,7 @@ fn append_frame(
     theme: &ThemeDefinition,
     layout: &Layout,
     frame: &TerminalFrame,
+    next_frame_time: f64,
     index: usize,
     total_duration: f64,
     powerline: bool,
@@ -294,6 +310,11 @@ fn append_frame(
     } else {
         (frame.time / total_duration * 100.0).clamp(0.0, 100.0)
     };
+    let end = if total_duration <= 0.0 {
+        100.0
+    } else {
+        (next_frame_time / total_duration * 100.0).clamp(start, 100.0)
+    };
     writeln!(
         svg,
         r#"<g class="frame" style="animation-name: frame-{};">"#,
@@ -301,8 +322,17 @@ fn append_frame(
     )?;
     writeln!(
         svg,
-        r#"<style>@keyframes frame-{} {{ 0%, {:.3}% {{ opacity: 0; }} {:.3}%, 100% {{ opacity: 1; }} }}</style>"#,
-        index, start, start
+        r#"<style>@keyframes frame-{} {{ 0%, {:.3}% {{ opacity: 0; }} {:.3}%, {:.3}% {{ opacity: 1; }} {:.3}%, 100% {{ opacity: 0; }} }}</style>"#,
+        index, start, start, end, end
+    )?;
+    writeln!(
+        svg,
+        r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
+        layout.frame_x,
+        layout.frame_y,
+        layout.terminal_width,
+        layout.terminal_height,
+        theme.terminal.background
     )?;
 
     let mut display_row_index = 0usize;
@@ -567,6 +597,33 @@ mod tests {
         .unwrap();
         assert!(svg.contains("<svg"));
         assert!(svg.contains("demo"));
+        assert!(svg.contains(r#"<rect x="16.00" y="62.00""#));
+    }
+
+    #[test]
+    fn clears_terminal_viewport_for_each_frame() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let session = RecordingSession::read_from_str(
+            r#"{"version":2,"width":20,"height":4,"timestamp":0}
+[0.1,"o","hello"]
+[0.2,"o","\r\nworld"]
+"#,
+        )
+        .unwrap();
+        let svg = render_animated_svg(
+            &session,
+            &theme,
+            RenderOptions {
+                width_px: None,
+                height_px: None,
+                window_title: Some("demo".to_string()),
+                powerline: true,
+            },
+        )
+        .unwrap();
+        let terminal_rect =
+            r##"<rect x="16.00" y="62.00" width="216.00" height="112.00" fill="#232744"/>"##;
+        assert!(svg.matches(terminal_rect).count() >= 3);
     }
 
     #[test]
