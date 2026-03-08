@@ -4,45 +4,87 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `heart` | affection,cardiac,cardio,collection,favorite,healthcare,healthy,like,love,passion,wellbeing,关爱,喜欢,心脏,心血管,收藏,热情,爱好,爱心 | `{"icon": "heart"}` |
-| - | `heart-2` | affection,cardiac,cardio,collection,favorite,healthcare,like,love,passion,wellbeing,关爱,喜欢,心脏,心血管,收藏,热情,爱心 | `{"icon": "heart-2"}` |
-| - | `heart-3` | affection,collection,favorite,like,love,passion,romance,symbol,valentine,喜欢,情人节,收藏,浪漫,热情,爱心,象征 | `{"icon": "heart-3"}` |
-| - | `heart-add` | add favorite,add to favorites,affection,bookmark,care,collection,create,insert,like,love,passion,plus,positive,save,书签,保存,关爱,创建,加上,加入收藏,喜欢,增加,插入,新增收藏,添加收藏,热情,爱心 | `{"icon": "heart-add"}` |
-| - | `heart-add-2` | add favorite,add to favorites,affection,bookmark,care,collection,create,insert,like,love,passion,plus,positive,save,书签,保存,关爱,创建,加上,加入收藏,喜欢,增加,插入,新增收藏,添加收藏,热情,爱心 | `{"icon": "heart-add-2"}` |
-| - | `dislike` | block,hate,negative,remove favorite,unlike,不喜欢,厌恶,取消喜欢,取消收藏,屏蔽,负向 | `{"icon": "dislike"}` |
-| - | `hearts` | affection,love,romance,valentine,恋爱,情人节,浪漫,爱心,爱情 | `{"icon": "hearts"}` |
-| - | `heart-pulse` | bpm,cardio monitor,collection,ecg,ekg,favorite,heart rate,heartbeat,like,love,passion,喜欢,心率监测,心电图,收藏,每分钟心跳,热情,爱心 | `{"icon": "heart-pulse"}` |
-| - | `pulse` | frequency,heart rate,rhythm,signal,vitals,wave,心率,波形,生命体征,脉搏,节律,频率 | `{"icon": "pulse"}` |
-| - | `pulse-ai` | AI分析,anomaly,cardio analysis,detect,signal,vitals,wave,异常,心率分析,智能分析,检测,波形,生命体征 | `{"icon": "pulse-ai"}` |
-| - | `empathize` | care,compassion,empathy,mental support,共情,关怀,同理心,心理支持 | `{"icon": "empathize"}` |
-| - | `nurse` | caregiver,clinic,healthcare,medical staff,nursing,rn,医务,医护人员,护士站,护理人员 | `{"icon": "nurse"}` |
-| - | `dossier` | case,chart,ehr,emr,medical record,report,就诊记录,报告,档案,电子病历,病例,病案 | `{"icon": "dossier"}` |
-| - | `health-book` | health handbook,immunization record,medical manual,vaccination,vaccine card,体检手册,体检报告,健康手册,医疗手册,疫苗本,记录,预防接种本 | `{"icon": "health-book"}` |
-| - | `first-aid-kit` | antiseptic,bandage,emergency kit,first aid,rescue,包扎,急救包,急救用品,急救箱,救援,止血,消毒,绷带 | `{"icon": "first-aid-kit"}` |
-| - | `capsule` | dose,drug,medication,oral,pharma,pill,剂量,口服,处方药,胶囊,药品,药物 | `{"icon": "capsule"}` |
-| - | `medicine-bottle` | drug,liquid medicine,pharmacy,prescription,vial,处方药,药剂,药品,药水,药液,药瓶 | `{"icon": "medicine-bottle"}` |
-| - | `flask` | chemistry,experiment,lab test,laboratory,labware,reagent,化学,化验,器皿,实验室,烧瓶,试剂 | `{"icon": "flask"}` |
-| - | `test-tube` | analysis,experiment,lab test,laboratory,sample,specimen,分析,化验,实验,标本,样本,试管 | `{"icon": "test-tube"}` |
-| - | `dropper` | color picker,dosage,eyedropper,measure,pipette,剂量,取样器,取色器,测量,滴定,胶头滴管 | `{"icon": "dropper"}` |
-| - | `microscope` | biology,lab analysis,magnify,observe,research,实验室,放大,显微观察,显微镜,检验,生物,研究 | `{"icon": "microscope"}` |
-| - | `hand-sanitizer` | alcohol,clean,disinfectant,hand wash,hygiene,手卫生,手部消毒,洗手液,消毒液,清洁,酒精,防疫 | `{"icon": "hand-sanitizer"}` |
-| - | `mental-health` | anxiety,counseling,depression,psychology,therapy,wellbeing,心理健康,心理咨询,心理辅导,抑郁,焦虑,精神健康,身心健康 | `{"icon": "mental-health"}` |
-| - | `psychotherapy` | cbt,counseling,mental therapy,session,treatment,会谈,心理咨询,心理治疗,心理疏导,认知行为疗法 | `{"icon": "psychotherapy"}` |
-| - | `stethoscope` | auscultation,checkup,clinic,doctor,examination,体检,医生,听诊器,心肺听诊,检查,诊查,门诊 | `{"icon": "stethoscope"}` |
-| - | `syringe` | immunization,injection,needle,shot,vaccine,免疫注射,医用针,打针,注射器,疫苗,针筒 | `{"icon": "syringe"}` |
-| - | `thermometer` | fever,measure,temperature check,体温检测,体温计,发烧,测温,温度 | `{"icon": "thermometer"}` |
-| - | `infrared-thermometer` | contactless,forehead,gun,non-contact,scan,体温枪,扫描,测温枪,红外线体温计,非接触,额温枪 | `{"icon": "infrared-thermometer"}` |
-| - | `surgical-mask` | face mask,medical mask,n95,ppe,protection,个人防护,医用口罩,口罩防护,外科口罩,面罩 | `{"icon": "surgical-mask"}` |
-| - | `virus` | disease,epidemic,germ,infection,outbreak,pathogen,传染病,感染,疫情,疾病,病原体,病毒 | `{"icon": "virus"}` |
-| - | `lungs` | breathing,chest,oxygen,pulmonary,respiratory,呼吸系统,呼吸道,氧气,氧饱和度,肺炎,肺部,胸腔 | `{"icon": "lungs"}` |
-| - | `rest-time` | break,closed,off hours,休息时间,打烊,暂停营业,闭店 | `{"icon": "rest-time"}` |
-| - | `zzz` | nap,rest,sleep,snooze,休息,小憩,打盹,睡眠,睡觉 | `{"icon": "zzz"}` |
-| - | `brain` | cognition,intelligence,memory,neural,neuroscience,thinking,大脑,思考,智能,神经科学,认知,记忆 | `{"icon": "brain"}` |
-| - | `brain-2` | cognition,intelligence,memory,neural,neuroscience,thinking,大脑,思考,智能,神经科学,认知,记忆 | `{"icon": "brain-2"}` |
-| - | `brain-3` | AI,ai brain,artificial intelligence,deep learning,model,neural network,人工智能,大脑,思考,深度学习,神经网络 | `{"icon": "brain-3"}` |
-| - | `brain-ai-3` | AI脑,ai brain,algorithm,model,neural network,smart,人工智能,智能大脑,模型,神经网络,算法 | `{"icon": "brain-ai-3"}` |
-| - | `brain-4` | AI,ai brain,artificial intelligence,deep learning,model,neural network,smart,人工智能,智能大脑,模型,神经网络,算法 | `{"icon": "brain-4"}` |
-| - | `aed` | automated external defibrillator,cpr,emergency,rescue,心肺复苏,心脏电击,急救,救援,自动体外除颤器 | `{"icon": "aed"}` |
-| - | `aed-electrodes` | connection,electrode,lead,pads,导联,电极片,贴片,连接线 | `{"icon": "aed-electrodes"}` |
-| - | `dna` | genetics,genome,helix,双螺旋,基因组,遗传 | `{"icon": "dna"}` |
-| - | `atom` | chemistry,molecule,nuclear,particle,physics,分子,化学,原子,核,物理,粒子 | `{"icon": "atom"}` |
+| <img src="../../icons/Health & Medical/heart-fill.svg" alt="heart-fill" width="24" height="24"> | `heart-fill` | affection,cardiac,cardio,collection,favorite,healthcare,healthy,like,love,passion,wellbeing,关爱,喜欢,心脏,心血管,收藏,热情,爱好,爱心 | `{"icon": "heart-fill"}` |
+| <img src="../../icons/Health & Medical/heart-line.svg" alt="heart-line" width="24" height="24"> | `heart-line` | affection,cardiac,cardio,collection,favorite,healthcare,healthy,like,love,passion,wellbeing,关爱,喜欢,心脏,心血管,收藏,热情,爱好,爱心 | `{"icon": "heart-line"}` |
+| <img src="../../icons/Health & Medical/heart-2-fill.svg" alt="heart-2-fill" width="24" height="24"> | `heart-2-fill` | affection,cardiac,cardio,collection,favorite,healthcare,like,love,passion,wellbeing,关爱,喜欢,心脏,心血管,收藏,热情,爱心 | `{"icon": "heart-2-fill"}` |
+| <img src="../../icons/Health & Medical/heart-2-line.svg" alt="heart-2-line" width="24" height="24"> | `heart-2-line` | affection,cardiac,cardio,collection,favorite,healthcare,like,love,passion,wellbeing,关爱,喜欢,心脏,心血管,收藏,热情,爱心 | `{"icon": "heart-2-line"}` |
+| <img src="../../icons/Health & Medical/heart-3-fill.svg" alt="heart-3-fill" width="24" height="24"> | `heart-3-fill` | affection,collection,favorite,like,love,passion,romance,symbol,valentine,喜欢,情人节,收藏,浪漫,热情,爱心,象征 | `{"icon": "heart-3-fill"}` |
+| <img src="../../icons/Health & Medical/heart-3-line.svg" alt="heart-3-line" width="24" height="24"> | `heart-3-line` | affection,collection,favorite,like,love,passion,romance,symbol,valentine,喜欢,情人节,收藏,浪漫,热情,爱心,象征 | `{"icon": "heart-3-line"}` |
+| <img src="../../icons/Health & Medical/heart-add-fill.svg" alt="heart-add-fill" width="24" height="24"> | `heart-add-fill` | add favorite,add to favorites,affection,bookmark,care,collection,create,insert,like,love,passion,plus,positive,save,书签,保存,关爱,创建,加上,加入收藏,喜欢,增加,插入,新增收藏,添加收藏,热情,爱心 | `{"icon": "heart-add-fill"}` |
+| <img src="../../icons/Health & Medical/heart-add-line.svg" alt="heart-add-line" width="24" height="24"> | `heart-add-line` | add favorite,add to favorites,affection,bookmark,care,collection,create,insert,like,love,passion,plus,positive,save,书签,保存,关爱,创建,加上,加入收藏,喜欢,增加,插入,新增收藏,添加收藏,热情,爱心 | `{"icon": "heart-add-line"}` |
+| <img src="../../icons/Health & Medical/heart-add-2-fill.svg" alt="heart-add-2-fill" width="24" height="24"> | `heart-add-2-fill` | add favorite,add to favorites,affection,bookmark,care,collection,create,insert,like,love,passion,plus,positive,save,书签,保存,关爱,创建,加上,加入收藏,喜欢,增加,插入,新增收藏,添加收藏,热情,爱心 | `{"icon": "heart-add-2-fill"}` |
+| <img src="../../icons/Health & Medical/heart-add-2-line.svg" alt="heart-add-2-line" width="24" height="24"> | `heart-add-2-line` | add favorite,add to favorites,affection,bookmark,care,collection,create,insert,like,love,passion,plus,positive,save,书签,保存,关爱,创建,加上,加入收藏,喜欢,增加,插入,新增收藏,添加收藏,热情,爱心 | `{"icon": "heart-add-2-line"}` |
+| <img src="../../icons/Health & Medical/dislike-fill.svg" alt="dislike-fill" width="24" height="24"> | `dislike-fill` | block,hate,negative,remove favorite,unlike,不喜欢,厌恶,取消喜欢,取消收藏,屏蔽,负向 | `{"icon": "dislike-fill"}` |
+| <img src="../../icons/Health & Medical/dislike-line.svg" alt="dislike-line" width="24" height="24"> | `dislike-line` | block,hate,negative,remove favorite,unlike,不喜欢,厌恶,取消喜欢,取消收藏,屏蔽,负向 | `{"icon": "dislike-line"}` |
+| <img src="../../icons/Health & Medical/hearts-fill.svg" alt="hearts-fill" width="24" height="24"> | `hearts-fill` | affection,love,romance,valentine,恋爱,情人节,浪漫,爱心,爱情 | `{"icon": "hearts-fill"}` |
+| <img src="../../icons/Health & Medical/hearts-line.svg" alt="hearts-line" width="24" height="24"> | `hearts-line` | affection,love,romance,valentine,恋爱,情人节,浪漫,爱心,爱情 | `{"icon": "hearts-line"}` |
+| <img src="../../icons/Health & Medical/heart-pulse-fill.svg" alt="heart-pulse-fill" width="24" height="24"> | `heart-pulse-fill` | bpm,cardio monitor,collection,ecg,ekg,favorite,heart rate,heartbeat,like,love,passion,喜欢,心率监测,心电图,收藏,每分钟心跳,热情,爱心 | `{"icon": "heart-pulse-fill"}` |
+| <img src="../../icons/Health & Medical/heart-pulse-line.svg" alt="heart-pulse-line" width="24" height="24"> | `heart-pulse-line` | bpm,cardio monitor,collection,ecg,ekg,favorite,heart rate,heartbeat,like,love,passion,喜欢,心率监测,心电图,收藏,每分钟心跳,热情,爱心 | `{"icon": "heart-pulse-line"}` |
+| <img src="../../icons/Health & Medical/pulse-fill.svg" alt="pulse-fill" width="24" height="24"> | `pulse-fill` | frequency,heart rate,rhythm,signal,vitals,wave,心率,波形,生命体征,脉搏,节律,频率 | `{"icon": "pulse-fill"}` |
+| <img src="../../icons/Health & Medical/pulse-line.svg" alt="pulse-line" width="24" height="24"> | `pulse-line` | frequency,heart rate,rhythm,signal,vitals,wave,心率,波形,生命体征,脉搏,节律,频率 | `{"icon": "pulse-line"}` |
+| <img src="../../icons/Health & Medical/pulse-ai-fill.svg" alt="pulse-ai-fill" width="24" height="24"> | `pulse-ai-fill` | AI分析,anomaly,cardio analysis,detect,signal,vitals,wave,异常,心率分析,智能分析,检测,波形,生命体征 | `{"icon": "pulse-ai-fill"}` |
+| <img src="../../icons/Health & Medical/pulse-ai-line.svg" alt="pulse-ai-line" width="24" height="24"> | `pulse-ai-line` | AI分析,anomaly,cardio analysis,detect,signal,vitals,wave,异常,心率分析,智能分析,检测,波形,生命体征 | `{"icon": "pulse-ai-line"}` |
+| <img src="../../icons/Health & Medical/empathize-fill.svg" alt="empathize-fill" width="24" height="24"> | `empathize-fill` | care,compassion,empathy,mental support,共情,关怀,同理心,心理支持 | `{"icon": "empathize-fill"}` |
+| <img src="../../icons/Health & Medical/empathize-line.svg" alt="empathize-line" width="24" height="24"> | `empathize-line` | care,compassion,empathy,mental support,共情,关怀,同理心,心理支持 | `{"icon": "empathize-line"}` |
+| <img src="../../icons/Health & Medical/nurse-fill.svg" alt="nurse-fill" width="24" height="24"> | `nurse-fill` | caregiver,clinic,healthcare,medical staff,nursing,rn,医务,医护人员,护士站,护理人员 | `{"icon": "nurse-fill"}` |
+| <img src="../../icons/Health & Medical/nurse-line.svg" alt="nurse-line" width="24" height="24"> | `nurse-line` | caregiver,clinic,healthcare,medical staff,nursing,rn,医务,医护人员,护士站,护理人员 | `{"icon": "nurse-line"}` |
+| <img src="../../icons/Health & Medical/dossier-fill.svg" alt="dossier-fill" width="24" height="24"> | `dossier-fill` | case,chart,ehr,emr,medical record,report,就诊记录,报告,档案,电子病历,病例,病案 | `{"icon": "dossier-fill"}` |
+| <img src="../../icons/Health & Medical/dossier-line.svg" alt="dossier-line" width="24" height="24"> | `dossier-line` | case,chart,ehr,emr,medical record,report,就诊记录,报告,档案,电子病历,病例,病案 | `{"icon": "dossier-line"}` |
+| <img src="../../icons/Health & Medical/health-book-fill.svg" alt="health-book-fill" width="24" height="24"> | `health-book-fill` | health handbook,immunization record,medical manual,vaccination,vaccine card,体检手册,体检报告,健康手册,医疗手册,疫苗本,记录,预防接种本 | `{"icon": "health-book-fill"}` |
+| <img src="../../icons/Health & Medical/health-book-line.svg" alt="health-book-line" width="24" height="24"> | `health-book-line` | health handbook,immunization record,medical manual,vaccination,vaccine card,体检手册,体检报告,健康手册,医疗手册,疫苗本,记录,预防接种本 | `{"icon": "health-book-line"}` |
+| <img src="../../icons/Health & Medical/first-aid-kit-fill.svg" alt="first-aid-kit-fill" width="24" height="24"> | `first-aid-kit-fill` | antiseptic,bandage,emergency kit,first aid,rescue,包扎,急救包,急救用品,急救箱,救援,止血,消毒,绷带 | `{"icon": "first-aid-kit-fill"}` |
+| <img src="../../icons/Health & Medical/first-aid-kit-line.svg" alt="first-aid-kit-line" width="24" height="24"> | `first-aid-kit-line` | antiseptic,bandage,emergency kit,first aid,rescue,包扎,急救包,急救用品,急救箱,救援,止血,消毒,绷带 | `{"icon": "first-aid-kit-line"}` |
+| <img src="../../icons/Health & Medical/capsule-fill.svg" alt="capsule-fill" width="24" height="24"> | `capsule-fill` | dose,drug,medication,oral,pharma,pill,剂量,口服,处方药,胶囊,药品,药物 | `{"icon": "capsule-fill"}` |
+| <img src="../../icons/Health & Medical/capsule-line.svg" alt="capsule-line" width="24" height="24"> | `capsule-line` | dose,drug,medication,oral,pharma,pill,剂量,口服,处方药,胶囊,药品,药物 | `{"icon": "capsule-line"}` |
+| <img src="../../icons/Health & Medical/medicine-bottle-fill.svg" alt="medicine-bottle-fill" width="24" height="24"> | `medicine-bottle-fill` | drug,liquid medicine,pharmacy,prescription,vial,处方药,药剂,药品,药水,药液,药瓶 | `{"icon": "medicine-bottle-fill"}` |
+| <img src="../../icons/Health & Medical/medicine-bottle-line.svg" alt="medicine-bottle-line" width="24" height="24"> | `medicine-bottle-line` | drug,liquid medicine,pharmacy,prescription,vial,处方药,药剂,药品,药水,药液,药瓶 | `{"icon": "medicine-bottle-line"}` |
+| <img src="../../icons/Health & Medical/flask-fill.svg" alt="flask-fill" width="24" height="24"> | `flask-fill` | chemistry,experiment,lab test,laboratory,labware,reagent,化学,化验,器皿,实验室,烧瓶,试剂 | `{"icon": "flask-fill"}` |
+| <img src="../../icons/Health & Medical/flask-line.svg" alt="flask-line" width="24" height="24"> | `flask-line` | chemistry,experiment,lab test,laboratory,labware,reagent,化学,化验,器皿,实验室,烧瓶,试剂 | `{"icon": "flask-line"}` |
+| <img src="../../icons/Health & Medical/test-tube-fill.svg" alt="test-tube-fill" width="24" height="24"> | `test-tube-fill` | analysis,experiment,lab test,laboratory,sample,specimen,分析,化验,实验,标本,样本,试管 | `{"icon": "test-tube-fill"}` |
+| <img src="../../icons/Health & Medical/test-tube-line.svg" alt="test-tube-line" width="24" height="24"> | `test-tube-line` | analysis,experiment,lab test,laboratory,sample,specimen,分析,化验,实验,标本,样本,试管 | `{"icon": "test-tube-line"}` |
+| <img src="../../icons/Health & Medical/dropper-fill.svg" alt="dropper-fill" width="24" height="24"> | `dropper-fill` | color picker,dosage,eyedropper,measure,pipette,剂量,取样器,取色器,测量,滴定,胶头滴管 | `{"icon": "dropper-fill"}` |
+| <img src="../../icons/Health & Medical/dropper-line.svg" alt="dropper-line" width="24" height="24"> | `dropper-line` | color picker,dosage,eyedropper,measure,pipette,剂量,取样器,取色器,测量,滴定,胶头滴管 | `{"icon": "dropper-line"}` |
+| <img src="../../icons/Health & Medical/microscope-fill.svg" alt="microscope-fill" width="24" height="24"> | `microscope-fill` | biology,lab analysis,magnify,observe,research,实验室,放大,显微观察,显微镜,检验,生物,研究 | `{"icon": "microscope-fill"}` |
+| <img src="../../icons/Health & Medical/microscope-line.svg" alt="microscope-line" width="24" height="24"> | `microscope-line` | biology,lab analysis,magnify,observe,research,实验室,放大,显微观察,显微镜,检验,生物,研究 | `{"icon": "microscope-line"}` |
+| <img src="../../icons/Health & Medical/hand-sanitizer-fill.svg" alt="hand-sanitizer-fill" width="24" height="24"> | `hand-sanitizer-fill` | alcohol,clean,disinfectant,hand wash,hygiene,手卫生,手部消毒,洗手液,消毒液,清洁,酒精,防疫 | `{"icon": "hand-sanitizer-fill"}` |
+| <img src="../../icons/Health & Medical/hand-sanitizer-line.svg" alt="hand-sanitizer-line" width="24" height="24"> | `hand-sanitizer-line` | alcohol,clean,disinfectant,hand wash,hygiene,手卫生,手部消毒,洗手液,消毒液,清洁,酒精,防疫 | `{"icon": "hand-sanitizer-line"}` |
+| <img src="../../icons/Health & Medical/mental-health-fill.svg" alt="mental-health-fill" width="24" height="24"> | `mental-health-fill` | anxiety,counseling,depression,psychology,therapy,wellbeing,心理健康,心理咨询,心理辅导,抑郁,焦虑,精神健康,身心健康 | `{"icon": "mental-health-fill"}` |
+| <img src="../../icons/Health & Medical/mental-health-line.svg" alt="mental-health-line" width="24" height="24"> | `mental-health-line` | anxiety,counseling,depression,psychology,therapy,wellbeing,心理健康,心理咨询,心理辅导,抑郁,焦虑,精神健康,身心健康 | `{"icon": "mental-health-line"}` |
+| <img src="../../icons/Health & Medical/psychotherapy-fill.svg" alt="psychotherapy-fill" width="24" height="24"> | `psychotherapy-fill` | cbt,counseling,mental therapy,session,treatment,会谈,心理咨询,心理治疗,心理疏导,认知行为疗法 | `{"icon": "psychotherapy-fill"}` |
+| <img src="../../icons/Health & Medical/psychotherapy-line.svg" alt="psychotherapy-line" width="24" height="24"> | `psychotherapy-line` | cbt,counseling,mental therapy,session,treatment,会谈,心理咨询,心理治疗,心理疏导,认知行为疗法 | `{"icon": "psychotherapy-line"}` |
+| <img src="../../icons/Health & Medical/stethoscope-fill.svg" alt="stethoscope-fill" width="24" height="24"> | `stethoscope-fill` | auscultation,checkup,clinic,doctor,examination,体检,医生,听诊器,心肺听诊,检查,诊查,门诊 | `{"icon": "stethoscope-fill"}` |
+| <img src="../../icons/Health & Medical/stethoscope-line.svg" alt="stethoscope-line" width="24" height="24"> | `stethoscope-line` | auscultation,checkup,clinic,doctor,examination,体检,医生,听诊器,心肺听诊,检查,诊查,门诊 | `{"icon": "stethoscope-line"}` |
+| <img src="../../icons/Health & Medical/syringe-fill.svg" alt="syringe-fill" width="24" height="24"> | `syringe-fill` | immunization,injection,needle,shot,vaccine,免疫注射,医用针,打针,注射器,疫苗,针筒 | `{"icon": "syringe-fill"}` |
+| <img src="../../icons/Health & Medical/syringe-line.svg" alt="syringe-line" width="24" height="24"> | `syringe-line` | immunization,injection,needle,shot,vaccine,免疫注射,医用针,打针,注射器,疫苗,针筒 | `{"icon": "syringe-line"}` |
+| <img src="../../icons/Health & Medical/thermometer-fill.svg" alt="thermometer-fill" width="24" height="24"> | `thermometer-fill` | fever,measure,temperature check,体温检测,体温计,发烧,测温,温度 | `{"icon": "thermometer-fill"}` |
+| <img src="../../icons/Health & Medical/thermometer-line.svg" alt="thermometer-line" width="24" height="24"> | `thermometer-line` | fever,measure,temperature check,体温检测,体温计,发烧,测温,温度 | `{"icon": "thermometer-line"}` |
+| <img src="../../icons/Health & Medical/infrared-thermometer-fill.svg" alt="infrared-thermometer-fill" width="24" height="24"> | `infrared-thermometer-fill` | contactless,forehead,gun,non-contact,scan,体温枪,扫描,测温枪,红外线体温计,非接触,额温枪 | `{"icon": "infrared-thermometer-fill"}` |
+| <img src="../../icons/Health & Medical/infrared-thermometer-line.svg" alt="infrared-thermometer-line" width="24" height="24"> | `infrared-thermometer-line` | contactless,forehead,gun,non-contact,scan,体温枪,扫描,测温枪,红外线体温计,非接触,额温枪 | `{"icon": "infrared-thermometer-line"}` |
+| <img src="../../icons/Health & Medical/surgical-mask-fill.svg" alt="surgical-mask-fill" width="24" height="24"> | `surgical-mask-fill` | face mask,medical mask,n95,ppe,protection,个人防护,医用口罩,口罩防护,外科口罩,面罩 | `{"icon": "surgical-mask-fill"}` |
+| <img src="../../icons/Health & Medical/surgical-mask-line.svg" alt="surgical-mask-line" width="24" height="24"> | `surgical-mask-line` | face mask,medical mask,n95,ppe,protection,个人防护,医用口罩,口罩防护,外科口罩,面罩 | `{"icon": "surgical-mask-line"}` |
+| <img src="../../icons/Health & Medical/virus-fill.svg" alt="virus-fill" width="24" height="24"> | `virus-fill` | disease,epidemic,germ,infection,outbreak,pathogen,传染病,感染,疫情,疾病,病原体,病毒 | `{"icon": "virus-fill"}` |
+| <img src="../../icons/Health & Medical/virus-line.svg" alt="virus-line" width="24" height="24"> | `virus-line` | disease,epidemic,germ,infection,outbreak,pathogen,传染病,感染,疫情,疾病,病原体,病毒 | `{"icon": "virus-line"}` |
+| <img src="../../icons/Health & Medical/lungs-fill.svg" alt="lungs-fill" width="24" height="24"> | `lungs-fill` | breathing,chest,oxygen,pulmonary,respiratory,呼吸系统,呼吸道,氧气,氧饱和度,肺炎,肺部,胸腔 | `{"icon": "lungs-fill"}` |
+| <img src="../../icons/Health & Medical/lungs-line.svg" alt="lungs-line" width="24" height="24"> | `lungs-line` | breathing,chest,oxygen,pulmonary,respiratory,呼吸系统,呼吸道,氧气,氧饱和度,肺炎,肺部,胸腔 | `{"icon": "lungs-line"}` |
+| <img src="../../icons/Health & Medical/rest-time-fill.svg" alt="rest-time-fill" width="24" height="24"> | `rest-time-fill` | break,closed,off hours,休息时间,打烊,暂停营业,闭店 | `{"icon": "rest-time-fill"}` |
+| <img src="../../icons/Health & Medical/rest-time-line.svg" alt="rest-time-line" width="24" height="24"> | `rest-time-line` | break,closed,off hours,休息时间,打烊,暂停营业,闭店 | `{"icon": "rest-time-line"}` |
+| <img src="../../icons/Health & Medical/zzz-fill.svg" alt="zzz-fill" width="24" height="24"> | `zzz-fill` | nap,rest,sleep,snooze,休息,小憩,打盹,睡眠,睡觉 | `{"icon": "zzz-fill"}` |
+| <img src="../../icons/Health & Medical/zzz-line.svg" alt="zzz-line" width="24" height="24"> | `zzz-line` | nap,rest,sleep,snooze,休息,小憩,打盹,睡眠,睡觉 | `{"icon": "zzz-line"}` |
+| <img src="../../icons/Health & Medical/brain-fill.svg" alt="brain-fill" width="24" height="24"> | `brain-fill` | cognition,intelligence,memory,neural,neuroscience,thinking,大脑,思考,智能,神经科学,认知,记忆 | `{"icon": "brain-fill"}` |
+| <img src="../../icons/Health & Medical/brain-line.svg" alt="brain-line" width="24" height="24"> | `brain-line` | cognition,intelligence,memory,neural,neuroscience,thinking,大脑,思考,智能,神经科学,认知,记忆 | `{"icon": "brain-line"}` |
+| <img src="../../icons/Health & Medical/brain-2-fill.svg" alt="brain-2-fill" width="24" height="24"> | `brain-2-fill` | cognition,intelligence,memory,neural,neuroscience,thinking,大脑,思考,智能,神经科学,认知,记忆 | `{"icon": "brain-2-fill"}` |
+| <img src="../../icons/Health & Medical/brain-2-line.svg" alt="brain-2-line" width="24" height="24"> | `brain-2-line` | cognition,intelligence,memory,neural,neuroscience,thinking,大脑,思考,智能,神经科学,认知,记忆 | `{"icon": "brain-2-line"}` |
+| <img src="../../icons/Health & Medical/brain-3-fill.svg" alt="brain-3-fill" width="24" height="24"> | `brain-3-fill` | AI,ai brain,artificial intelligence,deep learning,model,neural network,人工智能,大脑,思考,深度学习,神经网络 | `{"icon": "brain-3-fill"}` |
+| <img src="../../icons/Health & Medical/brain-3-line.svg" alt="brain-3-line" width="24" height="24"> | `brain-3-line` | AI,ai brain,artificial intelligence,deep learning,model,neural network,人工智能,大脑,思考,深度学习,神经网络 | `{"icon": "brain-3-line"}` |
+| <img src="../../icons/Health & Medical/brain-ai-3-fill.svg" alt="brain-ai-3-fill" width="24" height="24"> | `brain-ai-3-fill` | AI脑,ai brain,algorithm,model,neural network,smart,人工智能,智能大脑,模型,神经网络,算法 | `{"icon": "brain-ai-3-fill"}` |
+| <img src="../../icons/Health & Medical/brain-ai-3-line.svg" alt="brain-ai-3-line" width="24" height="24"> | `brain-ai-3-line` | AI脑,ai brain,algorithm,model,neural network,smart,人工智能,智能大脑,模型,神经网络,算法 | `{"icon": "brain-ai-3-line"}` |
+| <img src="../../icons/Health & Medical/brain-4-fill.svg" alt="brain-4-fill" width="24" height="24"> | `brain-4-fill` | AI,ai brain,artificial intelligence,deep learning,model,neural network,smart,人工智能,智能大脑,模型,神经网络,算法 | `{"icon": "brain-4-fill"}` |
+| <img src="../../icons/Health & Medical/brain-4-line.svg" alt="brain-4-line" width="24" height="24"> | `brain-4-line` | AI,ai brain,artificial intelligence,deep learning,model,neural network,smart,人工智能,智能大脑,模型,神经网络,算法 | `{"icon": "brain-4-line"}` |
+| <img src="../../icons/Health & Medical/aed-fill.svg" alt="aed-fill" width="24" height="24"> | `aed-fill` | automated external defibrillator,cpr,emergency,rescue,心肺复苏,心脏电击,急救,救援,自动体外除颤器 | `{"icon": "aed-fill"}` |
+| <img src="../../icons/Health & Medical/aed-line.svg" alt="aed-line" width="24" height="24"> | `aed-line` | automated external defibrillator,cpr,emergency,rescue,心肺复苏,心脏电击,急救,救援,自动体外除颤器 | `{"icon": "aed-line"}` |
+| <img src="../../icons/Health & Medical/aed-electrodes-fill.svg" alt="aed-electrodes-fill" width="24" height="24"> | `aed-electrodes-fill` | connection,electrode,lead,pads,导联,电极片,贴片,连接线 | `{"icon": "aed-electrodes-fill"}` |
+| <img src="../../icons/Health & Medical/aed-electrodes-line.svg" alt="aed-electrodes-line" width="24" height="24"> | `aed-electrodes-line` | connection,electrode,lead,pads,导联,电极片,贴片,连接线 | `{"icon": "aed-electrodes-line"}` |
+| <img src="../../icons/Health & Medical/dna-fill.svg" alt="dna-fill" width="24" height="24"> | `dna-fill` | genetics,genome,helix,双螺旋,基因组,遗传 | `{"icon": "dna-fill"}` |
+| <img src="../../icons/Health & Medical/dna-line.svg" alt="dna-line" width="24" height="24"> | `dna-line` | genetics,genome,helix,双螺旋,基因组,遗传 | `{"icon": "dna-line"}` |
+| <img src="../../icons/Health & Medical/atom-fill.svg" alt="atom-fill" width="24" height="24"> | `atom-fill` | chemistry,molecule,nuclear,particle,physics,分子,化学,原子,核,物理,粒子 | `{"icon": "atom-fill"}` |
+| <img src="../../icons/Health & Medical/atom-line.svg" alt="atom-line" width="24" height="24"> | `atom-line` | chemistry,molecule,nuclear,particle,physics,分子,化学,原子,核,物理,粒子 | `{"icon": "atom-line"}` |

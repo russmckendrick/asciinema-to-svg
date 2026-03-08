@@ -4,125 +4,247 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `file` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file"}` |
-| - | `file-ai` | AI文件,ai file,artificial intelligence,assistant,automated,smart document,人工智能,助手,智能文档,生成式,自动化 | `{"icon": "file-ai"}` |
-| - | `file-2` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-2"}` |
-| - | `file-ai-2` | AI文件,ai file,artificial intelligence,assistant,automated,smart document,人工智能,助手,智能文档,生成式,自动化 | `{"icon": "file-ai-2"}` |
-| - | `file-3` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-3"}` |
-| - | `file-4` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-4"}` |
-| - | `sticky-note` | memo,post-it,reminder,便利贴,便签纸,备忘录,文件,新建 | `{"icon": "sticky-note"}` |
-| - | `sticky-note-add` | create,insert,memo,plus,positive,post-it,reminder,便利贴,便签纸,创建,加上,增加,备忘录,插入,文件,新建,添加 | `{"icon": "sticky-note-add"}` |
-| - | `sticky-note-2` | memo,post-it,reminder,便利贴,便签纸,备忘录,文件,新建 | `{"icon": "sticky-note-2"}` |
-| - | `file-edit` | change,modify,pencil,revise,update,write,修改,修订,文件,更新,编写,编辑 | `{"icon": "file-edit"}` |
-| - | `draft` | temporary,wip,work in progress,临时,未完成,草稿箱,进行中 | `{"icon": "draft"}` |
-| - | `file-paper` | music score,sheet,乐谱,文件,纸 | `{"icon": "file-paper"}` |
-| - | `file-paper-2` | music score,sheet,乐谱,文件,纸 | `{"icon": "file-paper-2"}` |
-| - | `receipt` | bill,confirmation,invoice,proof,凭据,凭证,发票,收据,证明 | `{"icon": "receipt"}` |
-| - | `file-text` | content,plain text,plaintext,txt,内容,文件,纯文本 | `{"icon": "file-text"}` |
-| - | `file-list` | checklist,inventory,items,task list,to-do,任务清单,列表,库存,清单项 | `{"icon": "file-list"}` |
-| - | `file-list-2` | checklist,inventory,items,task list,to-do,任务清单,列表,库存,清单项 | `{"icon": "file-list-2"}` |
-| - | `file-list-3` | bulletin,checklist,items,newspaper,公告,列表,报纸,清单项 | `{"icon": "file-list-3"}` |
-| - | `bill` | charge,expense,invoice,payment,付款,发票,收费,账单,费用 | `{"icon": "bill"}` |
-| - | `file-copy` | backup,clone,duplicate file,克隆,副本,备份,复制 | `{"icon": "file-copy"}` |
-| - | `file-copy-2` | backup,clone,duplicate file,克隆,副本,备份,复制 | `{"icon": "file-copy-2"}` |
-| - | `clipboard` | clip,copy,paste,temporary storage,临时存储,剪贴板,复制,粘贴 | `{"icon": "clipboard"}` |
-| - | `survey` | census,checkboxes,clipboard,form,poll,questionnaire,research,民调,表单,调研,问卷调查 | `{"icon": "survey"}` |
-| - | `article` | content,essay,file,newspaper,page,print,publication,publisher,word,内容,出版物,报纸,文章,稿件 | `{"icon": "article"}` |
-| - | `newspaper` | journalism,media,news,press,媒体,报纸,新闻业 | `{"icon": "newspaper"}` |
-| - | `news` | blog,headline,information,media,信息,博客,头条,媒体,新闻 | `{"icon": "news"}` |
-| - | `file-zip` | 7z,archive,compressed,compression,rar,压缩包,压缩文件,归档 | `{"icon": "file-zip"}` |
-| - | `file-marked` | bookmark,flagged,important,starred,书签,加星,文件,标记,重要 | `{"icon": "file-marked"}` |
-| - | `certificate-2` | 认证,证,证明 | `{"icon": "certificate-2"}` |
-| - | `certificate` | 认证,证,证书,证明 | `{"icon": "certificate"}` |
-| - | `task` | assignment,job,task list,todo,work,任务清单,作业,工作,待办 | `{"icon": "task"}` |
-| - | `todo` | checklist,reminder,task list,to-do,任务列表,待办,提醒,清单 | `{"icon": "todo"}` |
-| - | `book` | booklet,dictionary,education,literature,reading,字典,小册子,教育,文学,读书,阅读 | `{"icon": "book"}` |
-| - | `book-ai` | AI阅读,ai reading,artificial intelligence,booklet,dictionary,e-learning,smart book,人工智能,字典,小册子,智能书籍,电子学习 | `{"icon": "book-ai"}` |
-| - | `book-marked` | booklet,bookmark,dictionary,favorite,read,saved,书签,字典,小册子,已保存,收藏,阅读 | `{"icon": "book-marked"}` |
-| - | `book-2` | booklet,dictionary,education,literature,reading,字典,小册子,教育,文学,读书,阅读 | `{"icon": "book-2"}` |
-| - | `book-3` | booklet,dictionary,education,literature,reading,字典,小册子,教育,文学,读书,阅读 | `{"icon": "book-3"}` |
-| - | `book-open` | booklet,magazine,open book,reading,小册子,打开的书,杂志,翻阅,阅读 | `{"icon": "book-open"}` |
-| - | `book-read` | booklet,magazine,reading,study,学习,小册子,杂志,读书,阅读 | `{"icon": "book-read"}` |
-| - | `contacts-book` | address book,phonebook,电话簿,联系人,通讯录 | `{"icon": "contacts-book"}` |
-| - | `contacts-book-2` | address book,phonebook,电话簿,联系人,通讯录 | `{"icon": "contacts-book-2"}` |
-| - | `contacts-book-upload` | address book,import,sync,上传,同步,导入,联系人,通讯录 | `{"icon": "contacts-book-upload"}` |
-| - | `booklet` | guidebook,handbook,manual,notebook,小册子,手册,指南书,笔记本 | `{"icon": "booklet"}` |
-| - | `contacts-book-3` | address book,phonebook,电话簿,联系人,通讯录 | `{"icon": "contacts-book-3"}` |
-| - | `file-code` | config,json,programming,script,source code,toml,yaml,源代码,编程,脚本,配置文件 | `{"icon": "file-code"}` |
-| - | `file-pdf` | PDF格式,adobe,portable document format,reader,文件,阅读器 | `{"icon": "file-pdf"}` |
-| - | `file-pdf-2` | PDF格式,adobe,portable document format,reader,文件,阅读器 | `{"icon": "file-pdf-2"}` |
-| - | `file-word` | docx,microsoft word,office,text document,微软文档,文本文档 | `{"icon": "file-word"}` |
-| - | `file-ppt` | microsoft,office,powerpoint,presentation,slides,幻灯片,微软,文件,演示文稿 | `{"icon": "file-ppt"}` |
-| - | `file-excel` | microsoft excel,office,sheets,spreadsheet,table,xlsx,微软表格,电子表格,表单 | `{"icon": "file-excel"}` |
-| - | `file-word-2` | docx,microsoft word,office,text document,微软文档,文本文档 | `{"icon": "file-word-2"}` |
-| - | `file-ppt-2` | microsoft,office,powerpoint,presentation,slides,幻灯片,微软,文件,演示文稿 | `{"icon": "file-ppt-2"}` |
-| - | `file-excel-2` | microsoft excel,office,sheets,spreadsheet,table,xlsx,微软表格,电子表格,表单 | `{"icon": "file-excel-2"}` |
-| - | `file-hwp` | hancom,hangul word processor,hwp format,korean,文件,韩文处理器,韩语 | `{"icon": "file-hwp"}` |
-| - | `keynote` | apple,mac,presentation,slides,幻灯片,演示文稿,演讲,苹果,讲演 | `{"icon": "keynote"}` |
-| - | `numbers` | apple,calculation,data,sheets,spreadsheet,数据,电子表格,苹果,计算 | `{"icon": "numbers"}` |
-| - | `pages` | apple,blocks,browser,prototype,ui,website,word processor,文字处理器,文稿,苹果 | `{"icon": "pages"}` |
-| - | `file-search` | browse,discovery,find,locate,lookup,query,search document,zoom,发现,定位,探索,搜索,放大镜,文件,查找,查询,检索,浏览 | `{"icon": "file-search"}` |
-| - | `file-add` | create,insert,new,page,plus,positive,创建,加上,增加,插入,文件,新建,添加 | `{"icon": "file-add"}` |
-| - | `file-reduce` | delete,minus,page,remove,subtract,减少,删除,文件,移除 | `{"icon": "file-reduce"}` |
-| - | `file-settings` | cog,configuration,gear,management,options,page,preferences,setup,偏好,文件,管理,设置,配置,首选项 | `{"icon": "file-settings"}` |
-| - | `file-upload` | cloud,page,sync,上传,云端,同步,文件 | `{"icon": "file-upload"}` |
-| - | `file-transfer` | move,page,send,传输,传送,发送,文件,移动 | `{"icon": "file-transfer"}` |
-| - | `file-download` | get,page,save,下载,保存,文件,获取 | `{"icon": "file-download"}` |
-| - | `file-lock` | encrypt,locked,page,password,private,protected,secure,security,保护,加密,加锁,安全,密码,文件,私人,私有 | `{"icon": "file-lock"}` |
-| - | `file-chart` | analysis,analytics,bar chart,data,graph,metrics,page,report,statistics,分析,图表,报表,数据,文件,柱状图,统计 | `{"icon": "file-chart"}` |
-| - | `file-chart-2` | analysis,analytics,data,donut chart,graph,metrics,pie chart,report,statistics,分析,图表,报表,数据,文件,环形图,统计,饼图 | `{"icon": "file-chart-2"}` |
-| - | `file-image` | background,graphic,image file,jpeg,photo,picture,png,wallpaper,图像文件,图片,壁纸,照片,相册 | `{"icon": "file-image"}` |
-| - | `file-music` | audio,mp3,song,sound,track,声音,文件,歌曲,音乐,音轨,音频 | `{"icon": "file-music"}` |
-| - | `file-video` | avi,clip,film,media,movie,mp4,record,媒体,录制,影片,文件,电影,视频 | `{"icon": "file-video"}` |
-| - | `file-gif` | animated image,animation,loop,动图,动画,循环,文件 | `{"icon": "file-gif"}` |
-| - | `file-check` | approved,checkmark,correct,done,ok,success,tick,valid,verified,verify,勾选,完成,对勾,成功,批准,文件,正确,确认,验证 | `{"icon": "file-check"}` |
-| - | `file-close` | cancel,cross,delete,exit,quit,remove,停止,关闭,删除,取消,文件,退出,错误 | `{"icon": "file-close"}` |
-| - | `file-forbid` | access denied,blocked,forbidden,restricted,拒绝访问,文件,禁止,禁用,阻止,限制 | `{"icon": "file-forbid"}` |
-| - | `file-info` | about,details,help,hint,information,metadata,properties,信息,元数据,关于,属性,帮助,提示,文件,详情 | `{"icon": "file-info"}` |
-| - | `file-warning` | alert,caution,exclamation,important,page,paper,提醒,文件,注意,警告,重要 | `{"icon": "file-warning"}` |
-| - | `file-unknow` | mystery,question mark,unknown,unrecognized,不明,文件,无法识别,未知,神秘,问号 | `{"icon": "file-unknow"}` |
-| - | `file-user` | account,agent,author,avatar,individual,member,owner,personal,profile,个人资料,个体,作者,头像,成员,所有者,文件,档案,用户,账户,身份 | `{"icon": "file-user"}` |
-| - | `file-shield` | encrypted,protected,safe,secured,security,保护,加密,安全的,文件,盾牌 | `{"icon": "file-shield"}` |
-| - | `file-shield-2` | encrypted,protected,safe,secured,security,保护,加密,安全的,文件,盾牌 | `{"icon": "file-shield-2"}` |
-| - | `file-damage` | breakdown,broken,corrupt,damaged,error,损坏,文件,破损,破裂,错误 | `{"icon": "file-damage"}` |
-| - | `file-history` | backup,record,timeline,version,历史,备份,文件,时间线,版本,记录 | `{"icon": "file-history"}` |
-| - | `file-shred` | cut,delete permanently,destroy,shredder,永久删除,破裂,碎纸机,粉碎,销毁 | `{"icon": "file-shred"}` |
-| - | `file-scan` | doc,document,document scanner,paper,扫描,扫描仪,文件,文档 | `{"icon": "file-scan"}` |
-| - | `file-cloud` | backup,cloud drive,network,online,server,storage,sync,云盘,云端,同步,在线,备份,存储,文件,服务器,网络 | `{"icon": "file-cloud"}` |
-| - | `contract` | agreement,approve,deal,examine,legal,交易,协议,合同,合约,审批通过,法律文件 | `{"icon": "contract"}` |
-| - | `folder` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder"}` |
-| - | `folder-2` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-2"}` |
-| - | `folder-3` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-3"}` |
-| - | `folder-4` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-4"}` |
-| - | `folder-5` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-5"}` |
-| - | `folder-6` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-6"}` |
-| - | `folders` | batch,collection,directory,file,multiple,多个,批量,文件夹,目录,集合 | `{"icon": "folders"}` |
-| - | `folder-add` | add folder,collection,container,create,directory,file,insert,new,plus,positive,storage,创建,加上,增加,存储,插入,收藏,文件夹,新建,添加,目录 | `{"icon": "folder-add"}` |
-| - | `folder-reduce` | collection,container,delete,directory,file,remove folder,storage,subtract,减,删除,存储,收藏,文件夹,目录,移除 | `{"icon": "folder-reduce"}` |
-| - | `folder-settings` | cog,collection,configuration,container,directory,file,folder settings,gear,management,options,preferences,setup,storage,偏好,存储,收藏,文件夹,目录,管理,设置,配置,首选项 | `{"icon": "folder-settings"}` |
-| - | `folder-upload` | cloud,collection,container,directory,file,storage,sync,upload folder,上传,云端,同步,存储,收藏,文件夹,目录 | `{"icon": "folder-upload"}` |
-| - | `folder-transfer` | collection,container,directory,file,move,send,storage,transfer folder,传输,发送,存储,收藏,文件夹,目录,移动 | `{"icon": "folder-transfer"}` |
-| - | `folder-download` | collection,container,directory,download folder,file,get,save,storage,下载,保存,存储,收藏,文件夹,目录,获取 | `{"icon": "folder-download"}` |
-| - | `folder-lock` | collection,container,directory,encrypt,file,locked folder,password,private,protected,secure,security,storage,保护,加密,加锁,存储,安全,密码,收藏,文件夹,目录,私人,私有 | `{"icon": "folder-lock"}` |
-| - | `folder-chart` | analysis,analytics,bar chart,collection,container,data,directory,graph,metrics,report,statistics,storage,分析,图表,存储,报表,收藏,数据,文件夹,柱状图,目录,统计 | `{"icon": "folder-chart"}` |
-| - | `folder-chart-2` | analysis,analytics,collection,container,data,directory,donut chart,graph,metrics,pie chart,report,statistics,storage,分析,图表,存储,报表,收藏,数据,文件夹,环形图,目录,统计,饼图 | `{"icon": "folder-chart-2"}` |
-| - | `folder-music` | audio,collection,container,directory,file,media,music folder,sound,storage,媒体,存储,收藏,文件夹,目录,音乐,音频 | `{"icon": "folder-music"}` |
-| - | `folder-image` | background,collection,container,directory,file,gallery,graphic,image folder,photo,picture,storage,wallpaper,图像,图库,图片,壁纸,存储,收藏,文件夹,照片,目录,相册 | `{"icon": "folder-image"}` |
-| - | `folder-video` | collection,container,directory,file,film,media,movie,record,storage,video folder,媒体,存储,录制,影片,收藏,文件夹,电影,目录,视频 | `{"icon": "folder-video"}` |
-| - | `folder-check` | approved,collection,container,directory,done,file,ok,storage,success,tick,verified,verify,存储,完成,对勾,成功,批准,收藏,文件夹,检查,目录,确认,验证 | `{"icon": "folder-check"}` |
-| - | `folder-close` | cancel,collection,container,cross,delete,directory,exit,file,quit,remove,storage,停止,关闭,删除,取消,存储,收藏,文件夹,目录,退出,错误 | `{"icon": "folder-close"}` |
-| - | `folder-forbid` | blocked,collection,container,denied,directory,file,forbidden,restricted,storage,存储,收藏,文件夹,目录,禁止,禁用,阻止,限制 | `{"icon": "folder-forbid"}` |
-| - | `folder-info` | about,collection,container,details,directory,file,help,hint,properties,storage,信息,关于,存储,属性,帮助,提示,收藏,文件夹,目录,详情 | `{"icon": "folder-info"}` |
-| - | `folder-warning` | alert,caution,collection,container,directory,exclamation,important,storage,存储,提醒,收藏,文件夹,注意,目录,警告,重要 | `{"icon": "folder-warning"}` |
-| - | `folder-unknow` | collection,container,directory,file,mystery,storage,unknown,unrecognized,不明,存储,收藏,文件夹,无法识别,未知,目录,神秘 | `{"icon": "folder-unknow"}` |
-| - | `folder-user` | account,agent,avatar,collection,container,directory,individual,member,owner,personal,profile,storage,个人资料,个体,头像,存储,成员,所有者,收藏,文件夹,档案,用户,目录,账户,身份 | `{"icon": "folder-user"}` |
-| - | `folder-shield` | collection,container,directory,encrypted,file,protected,secured,security,storage,保护,加密,存储,安全,收藏,文件夹,目录,盾牌 | `{"icon": "folder-shield"}` |
-| - | `folder-shield-2` | collection,container,directory,encrypted,file,protected,secured,security,storage,保护,加密,存储,安全,收藏,文件夹,目录,盾牌 | `{"icon": "folder-shield-2"}` |
-| - | `folder-shared` | collaboration,collection,container,directory,file,shared folder,storage,teamwork,共享文件夹,分享,协作,团队合作,存储,收藏,目录 | `{"icon": "folder-shared"}` |
-| - | `folder-received` | collection,container,directory,file,inbox,incoming,received folder,storage,传入,存储,已接收,收件箱,收藏,文件夹,目录 | `{"icon": "folder-received"}` |
-| - | `folder-open` | access,browse,collection,container,directory,file,storage,存储,打开,收藏,文件夹,浏览,目录,访问 | `{"icon": "folder-open"}` |
-| - | `folder-keyhole` | collection,container,directory,encryption,file,locked,secure,storage,加密文档,存储,安全,收藏,文件夹,目录,钥匙孔,锁定 | `{"icon": "folder-keyhole"}` |
-| - | `folder-zip` | archive,collection,compression,container,directory,file,storage,压缩包,存储,归档,收藏,文件夹,目录 | `{"icon": "folder-zip"}` |
-| - | `folder-history` | collection,container,directory,file,record,storage,timeline,version,历史,存储,收藏,文件夹,时间线,版本,目录,记录 | `{"icon": "folder-history"}` |
-| - | `folder-cloud` | backup,cloud folder,collection,container,directory,file,online,server,storage,sync,云文件夹,云文档,云端,同步,在线,备份,存储,收藏,服务器,目录 | `{"icon": "folder-cloud"}` |
-| - | `markdown` | arrow,documentation,markup,md,readme,text formatting,标记语言,格式化,说明 | `{"icon": "markdown"}` |
+| <img src="../../icons/Document/file-fill.svg" alt="file-fill" width="24" height="24"> | `file-fill` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-fill"}` |
+| <img src="../../icons/Document/file-line.svg" alt="file-line" width="24" height="24"> | `file-line` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-line"}` |
+| <img src="../../icons/Document/file-ai-fill.svg" alt="file-ai-fill" width="24" height="24"> | `file-ai-fill` | AI文件,ai file,artificial intelligence,assistant,automated,smart document,人工智能,助手,智能文档,生成式,自动化 | `{"icon": "file-ai-fill"}` |
+| <img src="../../icons/Document/file-ai-line.svg" alt="file-ai-line" width="24" height="24"> | `file-ai-line` | AI文件,ai file,artificial intelligence,assistant,automated,smart document,人工智能,助手,智能文档,生成式,自动化 | `{"icon": "file-ai-line"}` |
+| <img src="../../icons/Document/file-2-fill.svg" alt="file-2-fill" width="24" height="24"> | `file-2-fill` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-2-fill"}` |
+| <img src="../../icons/Document/file-2-line.svg" alt="file-2-line" width="24" height="24"> | `file-2-line` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-2-line"}` |
+| <img src="../../icons/Document/file-ai-2-fill.svg" alt="file-ai-2-fill" width="24" height="24"> | `file-ai-2-fill` | AI文件,ai file,artificial intelligence,assistant,automated,smart document,人工智能,助手,智能文档,生成式,自动化 | `{"icon": "file-ai-2-fill"}` |
+| <img src="../../icons/Document/file-ai-2-line.svg" alt="file-ai-2-line" width="24" height="24"> | `file-ai-2-line` | AI文件,ai file,artificial intelligence,assistant,automated,smart document,人工智能,助手,智能文档,生成式,自动化 | `{"icon": "file-ai-2-line"}` |
+| <img src="../../icons/Document/file-3-fill.svg" alt="file-3-fill" width="24" height="24"> | `file-3-fill` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-3-fill"}` |
+| <img src="../../icons/Document/file-3-line.svg" alt="file-3-line" width="24" height="24"> | `file-3-line` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-3-line"}` |
+| <img src="../../icons/Document/file-4-fill.svg" alt="file-4-fill" width="24" height="24"> | `file-4-fill` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-4-fill"}` |
+| <img src="../../icons/Document/file-4-line.svg" alt="file-4-line" width="24" height="24"> | `file-4-line` | create,doc,new,paper,record,创建,文件,文稿,新建,档案 | `{"icon": "file-4-line"}` |
+| <img src="../../icons/Document/sticky-note-fill.svg" alt="sticky-note-fill" width="24" height="24"> | `sticky-note-fill` | memo,post-it,reminder,便利贴,便签纸,备忘录,文件,新建 | `{"icon": "sticky-note-fill"}` |
+| <img src="../../icons/Document/sticky-note-line.svg" alt="sticky-note-line" width="24" height="24"> | `sticky-note-line` | memo,post-it,reminder,便利贴,便签纸,备忘录,文件,新建 | `{"icon": "sticky-note-line"}` |
+| <img src="../../icons/Document/sticky-note-add-fill.svg" alt="sticky-note-add-fill" width="24" height="24"> | `sticky-note-add-fill` | create,insert,memo,plus,positive,post-it,reminder,便利贴,便签纸,创建,加上,增加,备忘录,插入,文件,新建,添加 | `{"icon": "sticky-note-add-fill"}` |
+| <img src="../../icons/Document/sticky-note-add-line.svg" alt="sticky-note-add-line" width="24" height="24"> | `sticky-note-add-line` | create,insert,memo,plus,positive,post-it,reminder,便利贴,便签纸,创建,加上,增加,备忘录,插入,文件,新建,添加 | `{"icon": "sticky-note-add-line"}` |
+| <img src="../../icons/Document/sticky-note-2-fill.svg" alt="sticky-note-2-fill" width="24" height="24"> | `sticky-note-2-fill` | memo,post-it,reminder,便利贴,便签纸,备忘录,文件,新建 | `{"icon": "sticky-note-2-fill"}` |
+| <img src="../../icons/Document/sticky-note-2-line.svg" alt="sticky-note-2-line" width="24" height="24"> | `sticky-note-2-line` | memo,post-it,reminder,便利贴,便签纸,备忘录,文件,新建 | `{"icon": "sticky-note-2-line"}` |
+| <img src="../../icons/Document/file-edit-fill.svg" alt="file-edit-fill" width="24" height="24"> | `file-edit-fill` | change,modify,pencil,revise,update,write,修改,修订,文件,更新,编写,编辑 | `{"icon": "file-edit-fill"}` |
+| <img src="../../icons/Document/file-edit-line.svg" alt="file-edit-line" width="24" height="24"> | `file-edit-line` | change,modify,pencil,revise,update,write,修改,修订,文件,更新,编写,编辑 | `{"icon": "file-edit-line"}` |
+| <img src="../../icons/Document/draft-fill.svg" alt="draft-fill" width="24" height="24"> | `draft-fill` | temporary,wip,work in progress,临时,未完成,草稿箱,进行中 | `{"icon": "draft-fill"}` |
+| <img src="../../icons/Document/draft-line.svg" alt="draft-line" width="24" height="24"> | `draft-line` | temporary,wip,work in progress,临时,未完成,草稿箱,进行中 | `{"icon": "draft-line"}` |
+| <img src="../../icons/Document/file-paper-fill.svg" alt="file-paper-fill" width="24" height="24"> | `file-paper-fill` | music score,sheet,乐谱,文件,纸 | `{"icon": "file-paper-fill"}` |
+| <img src="../../icons/Document/file-paper-line.svg" alt="file-paper-line" width="24" height="24"> | `file-paper-line` | music score,sheet,乐谱,文件,纸 | `{"icon": "file-paper-line"}` |
+| <img src="../../icons/Document/file-paper-2-fill.svg" alt="file-paper-2-fill" width="24" height="24"> | `file-paper-2-fill` | music score,sheet,乐谱,文件,纸 | `{"icon": "file-paper-2-fill"}` |
+| <img src="../../icons/Document/file-paper-2-line.svg" alt="file-paper-2-line" width="24" height="24"> | `file-paper-2-line` | music score,sheet,乐谱,文件,纸 | `{"icon": "file-paper-2-line"}` |
+| <img src="../../icons/Document/receipt-fill.svg" alt="receipt-fill" width="24" height="24"> | `receipt-fill` | bill,confirmation,invoice,proof,凭据,凭证,发票,收据,证明 | `{"icon": "receipt-fill"}` |
+| <img src="../../icons/Document/receipt-line.svg" alt="receipt-line" width="24" height="24"> | `receipt-line` | bill,confirmation,invoice,proof,凭据,凭证,发票,收据,证明 | `{"icon": "receipt-line"}` |
+| <img src="../../icons/Document/file-text-fill.svg" alt="file-text-fill" width="24" height="24"> | `file-text-fill` | content,plain text,plaintext,txt,内容,文件,纯文本 | `{"icon": "file-text-fill"}` |
+| <img src="../../icons/Document/file-text-line.svg" alt="file-text-line" width="24" height="24"> | `file-text-line` | content,plain text,plaintext,txt,内容,文件,纯文本 | `{"icon": "file-text-line"}` |
+| <img src="../../icons/Document/file-list-fill.svg" alt="file-list-fill" width="24" height="24"> | `file-list-fill` | checklist,inventory,items,task list,to-do,任务清单,列表,库存,清单项 | `{"icon": "file-list-fill"}` |
+| <img src="../../icons/Document/file-list-line.svg" alt="file-list-line" width="24" height="24"> | `file-list-line` | checklist,inventory,items,task list,to-do,任务清单,列表,库存,清单项 | `{"icon": "file-list-line"}` |
+| <img src="../../icons/Document/file-list-2-fill.svg" alt="file-list-2-fill" width="24" height="24"> | `file-list-2-fill` | checklist,inventory,items,task list,to-do,任务清单,列表,库存,清单项 | `{"icon": "file-list-2-fill"}` |
+| <img src="../../icons/Document/file-list-2-line.svg" alt="file-list-2-line" width="24" height="24"> | `file-list-2-line` | checklist,inventory,items,task list,to-do,任务清单,列表,库存,清单项 | `{"icon": "file-list-2-line"}` |
+| <img src="../../icons/Document/file-list-3-fill.svg" alt="file-list-3-fill" width="24" height="24"> | `file-list-3-fill` | bulletin,checklist,items,newspaper,公告,列表,报纸,清单项 | `{"icon": "file-list-3-fill"}` |
+| <img src="../../icons/Document/file-list-3-line.svg" alt="file-list-3-line" width="24" height="24"> | `file-list-3-line` | bulletin,checklist,items,newspaper,公告,列表,报纸,清单项 | `{"icon": "file-list-3-line"}` |
+| <img src="../../icons/Document/bill-fill.svg" alt="bill-fill" width="24" height="24"> | `bill-fill` | charge,expense,invoice,payment,付款,发票,收费,账单,费用 | `{"icon": "bill-fill"}` |
+| <img src="../../icons/Document/bill-line.svg" alt="bill-line" width="24" height="24"> | `bill-line` | charge,expense,invoice,payment,付款,发票,收费,账单,费用 | `{"icon": "bill-line"}` |
+| <img src="../../icons/Document/file-copy-fill.svg" alt="file-copy-fill" width="24" height="24"> | `file-copy-fill` | backup,clone,duplicate file,克隆,副本,备份,复制 | `{"icon": "file-copy-fill"}` |
+| <img src="../../icons/Document/file-copy-line.svg" alt="file-copy-line" width="24" height="24"> | `file-copy-line` | backup,clone,duplicate file,克隆,副本,备份,复制 | `{"icon": "file-copy-line"}` |
+| <img src="../../icons/Document/file-copy-2-fill.svg" alt="file-copy-2-fill" width="24" height="24"> | `file-copy-2-fill` | backup,clone,duplicate file,克隆,副本,备份,复制 | `{"icon": "file-copy-2-fill"}` |
+| <img src="../../icons/Document/file-copy-2-line.svg" alt="file-copy-2-line" width="24" height="24"> | `file-copy-2-line` | backup,clone,duplicate file,克隆,副本,备份,复制 | `{"icon": "file-copy-2-line"}` |
+| <img src="../../icons/Document/clipboard-fill.svg" alt="clipboard-fill" width="24" height="24"> | `clipboard-fill` | clip,copy,paste,temporary storage,临时存储,剪贴板,复制,粘贴 | `{"icon": "clipboard-fill"}` |
+| <img src="../../icons/Document/clipboard-line.svg" alt="clipboard-line" width="24" height="24"> | `clipboard-line` | clip,copy,paste,temporary storage,临时存储,剪贴板,复制,粘贴 | `{"icon": "clipboard-line"}` |
+| <img src="../../icons/Document/survey-fill.svg" alt="survey-fill" width="24" height="24"> | `survey-fill` | census,checkboxes,clipboard,form,poll,questionnaire,research,民调,表单,调研,问卷调查 | `{"icon": "survey-fill"}` |
+| <img src="../../icons/Document/survey-line.svg" alt="survey-line" width="24" height="24"> | `survey-line` | census,checkboxes,clipboard,form,poll,questionnaire,research,民调,表单,调研,问卷调查 | `{"icon": "survey-line"}` |
+| <img src="../../icons/Document/article-fill.svg" alt="article-fill" width="24" height="24"> | `article-fill` | content,essay,file,newspaper,page,print,publication,publisher,word,内容,出版物,报纸,文章,稿件 | `{"icon": "article-fill"}` |
+| <img src="../../icons/Document/article-line.svg" alt="article-line" width="24" height="24"> | `article-line` | content,essay,file,newspaper,page,print,publication,publisher,word,内容,出版物,报纸,文章,稿件 | `{"icon": "article-line"}` |
+| <img src="../../icons/Document/newspaper-fill.svg" alt="newspaper-fill" width="24" height="24"> | `newspaper-fill` | journalism,media,news,press,媒体,报纸,新闻业 | `{"icon": "newspaper-fill"}` |
+| <img src="../../icons/Document/newspaper-line.svg" alt="newspaper-line" width="24" height="24"> | `newspaper-line` | journalism,media,news,press,媒体,报纸,新闻业 | `{"icon": "newspaper-line"}` |
+| <img src="../../icons/Document/news-fill.svg" alt="news-fill" width="24" height="24"> | `news-fill` | blog,headline,information,media,信息,博客,头条,媒体,新闻 | `{"icon": "news-fill"}` |
+| <img src="../../icons/Document/news-line.svg" alt="news-line" width="24" height="24"> | `news-line` | blog,headline,information,media,信息,博客,头条,媒体,新闻 | `{"icon": "news-line"}` |
+| <img src="../../icons/Document/file-zip-fill.svg" alt="file-zip-fill" width="24" height="24"> | `file-zip-fill` | 7z,archive,compressed,compression,rar,压缩包,压缩文件,归档 | `{"icon": "file-zip-fill"}` |
+| <img src="../../icons/Document/file-zip-line.svg" alt="file-zip-line" width="24" height="24"> | `file-zip-line` | 7z,archive,compressed,compression,rar,压缩包,压缩文件,归档 | `{"icon": "file-zip-line"}` |
+| <img src="../../icons/Document/file-marked-fill.svg" alt="file-marked-fill" width="24" height="24"> | `file-marked-fill` | bookmark,flagged,important,starred,书签,加星,文件,标记,重要 | `{"icon": "file-marked-fill"}` |
+| <img src="../../icons/Document/file-marked-line.svg" alt="file-marked-line" width="24" height="24"> | `file-marked-line` | bookmark,flagged,important,starred,书签,加星,文件,标记,重要 | `{"icon": "file-marked-line"}` |
+| <img src="../../icons/Document/certificate-2-fill.svg" alt="certificate-2-fill" width="24" height="24"> | `certificate-2-fill` | 认证,证,证明 | `{"icon": "certificate-2-fill"}` |
+| <img src="../../icons/Document/certificate-2-line.svg" alt="certificate-2-line" width="24" height="24"> | `certificate-2-line` | 认证,证,证明 | `{"icon": "certificate-2-line"}` |
+| <img src="../../icons/Document/certificate-fill.svg" alt="certificate-fill" width="24" height="24"> | `certificate-fill` | 认证,证,证书,证明 | `{"icon": "certificate-fill"}` |
+| <img src="../../icons/Document/certificate-line.svg" alt="certificate-line" width="24" height="24"> | `certificate-line` | 认证,证,证书,证明 | `{"icon": "certificate-line"}` |
+| <img src="../../icons/Document/task-fill.svg" alt="task-fill" width="24" height="24"> | `task-fill` | assignment,job,task list,todo,work,任务清单,作业,工作,待办 | `{"icon": "task-fill"}` |
+| <img src="../../icons/Document/task-line.svg" alt="task-line" width="24" height="24"> | `task-line` | assignment,job,task list,todo,work,任务清单,作业,工作,待办 | `{"icon": "task-line"}` |
+| <img src="../../icons/Document/todo-fill.svg" alt="todo-fill" width="24" height="24"> | `todo-fill` | checklist,reminder,task list,to-do,任务列表,待办,提醒,清单 | `{"icon": "todo-fill"}` |
+| <img src="../../icons/Document/todo-line.svg" alt="todo-line" width="24" height="24"> | `todo-line` | checklist,reminder,task list,to-do,任务列表,待办,提醒,清单 | `{"icon": "todo-line"}` |
+| <img src="../../icons/Document/book-fill.svg" alt="book-fill" width="24" height="24"> | `book-fill` | booklet,dictionary,education,literature,reading,字典,小册子,教育,文学,读书,阅读 | `{"icon": "book-fill"}` |
+| <img src="../../icons/Document/book-line.svg" alt="book-line" width="24" height="24"> | `book-line` | booklet,dictionary,education,literature,reading,字典,小册子,教育,文学,读书,阅读 | `{"icon": "book-line"}` |
+| <img src="../../icons/Document/book-ai-fill.svg" alt="book-ai-fill" width="24" height="24"> | `book-ai-fill` | AI阅读,ai reading,artificial intelligence,booklet,dictionary,e-learning,smart book,人工智能,字典,小册子,智能书籍,电子学习 | `{"icon": "book-ai-fill"}` |
+| <img src="../../icons/Document/book-ai-line.svg" alt="book-ai-line" width="24" height="24"> | `book-ai-line` | AI阅读,ai reading,artificial intelligence,booklet,dictionary,e-learning,smart book,人工智能,字典,小册子,智能书籍,电子学习 | `{"icon": "book-ai-line"}` |
+| <img src="../../icons/Document/book-marked-fill.svg" alt="book-marked-fill" width="24" height="24"> | `book-marked-fill` | booklet,bookmark,dictionary,favorite,read,saved,书签,字典,小册子,已保存,收藏,阅读 | `{"icon": "book-marked-fill"}` |
+| <img src="../../icons/Document/book-marked-line.svg" alt="book-marked-line" width="24" height="24"> | `book-marked-line` | booklet,bookmark,dictionary,favorite,read,saved,书签,字典,小册子,已保存,收藏,阅读 | `{"icon": "book-marked-line"}` |
+| <img src="../../icons/Document/book-2-fill.svg" alt="book-2-fill" width="24" height="24"> | `book-2-fill` | booklet,dictionary,education,literature,reading,字典,小册子,教育,文学,读书,阅读 | `{"icon": "book-2-fill"}` |
+| <img src="../../icons/Document/book-2-line.svg" alt="book-2-line" width="24" height="24"> | `book-2-line` | booklet,dictionary,education,literature,reading,字典,小册子,教育,文学,读书,阅读 | `{"icon": "book-2-line"}` |
+| <img src="../../icons/Document/book-3-fill.svg" alt="book-3-fill" width="24" height="24"> | `book-3-fill` | booklet,dictionary,education,literature,reading,字典,小册子,教育,文学,读书,阅读 | `{"icon": "book-3-fill"}` |
+| <img src="../../icons/Document/book-3-line.svg" alt="book-3-line" width="24" height="24"> | `book-3-line` | booklet,dictionary,education,literature,reading,字典,小册子,教育,文学,读书,阅读 | `{"icon": "book-3-line"}` |
+| <img src="../../icons/Document/book-open-fill.svg" alt="book-open-fill" width="24" height="24"> | `book-open-fill` | booklet,magazine,open book,reading,小册子,打开的书,杂志,翻阅,阅读 | `{"icon": "book-open-fill"}` |
+| <img src="../../icons/Document/book-open-line.svg" alt="book-open-line" width="24" height="24"> | `book-open-line` | booklet,magazine,open book,reading,小册子,打开的书,杂志,翻阅,阅读 | `{"icon": "book-open-line"}` |
+| <img src="../../icons/Document/book-read-fill.svg" alt="book-read-fill" width="24" height="24"> | `book-read-fill` | booklet,magazine,reading,study,学习,小册子,杂志,读书,阅读 | `{"icon": "book-read-fill"}` |
+| <img src="../../icons/Document/book-read-line.svg" alt="book-read-line" width="24" height="24"> | `book-read-line` | booklet,magazine,reading,study,学习,小册子,杂志,读书,阅读 | `{"icon": "book-read-line"}` |
+| <img src="../../icons/Document/contacts-book-fill.svg" alt="contacts-book-fill" width="24" height="24"> | `contacts-book-fill` | address book,phonebook,电话簿,联系人,通讯录 | `{"icon": "contacts-book-fill"}` |
+| <img src="../../icons/Document/contacts-book-line.svg" alt="contacts-book-line" width="24" height="24"> | `contacts-book-line` | address book,phonebook,电话簿,联系人,通讯录 | `{"icon": "contacts-book-line"}` |
+| <img src="../../icons/Document/contacts-book-2-fill.svg" alt="contacts-book-2-fill" width="24" height="24"> | `contacts-book-2-fill` | address book,phonebook,电话簿,联系人,通讯录 | `{"icon": "contacts-book-2-fill"}` |
+| <img src="../../icons/Document/contacts-book-2-line.svg" alt="contacts-book-2-line" width="24" height="24"> | `contacts-book-2-line` | address book,phonebook,电话簿,联系人,通讯录 | `{"icon": "contacts-book-2-line"}` |
+| <img src="../../icons/Document/contacts-book-upload-fill.svg" alt="contacts-book-upload-fill" width="24" height="24"> | `contacts-book-upload-fill` | address book,import,sync,上传,同步,导入,联系人,通讯录 | `{"icon": "contacts-book-upload-fill"}` |
+| <img src="../../icons/Document/contacts-book-upload-line.svg" alt="contacts-book-upload-line" width="24" height="24"> | `contacts-book-upload-line` | address book,import,sync,上传,同步,导入,联系人,通讯录 | `{"icon": "contacts-book-upload-line"}` |
+| <img src="../../icons/Document/booklet-fill.svg" alt="booklet-fill" width="24" height="24"> | `booklet-fill` | guidebook,handbook,manual,notebook,小册子,手册,指南书,笔记本 | `{"icon": "booklet-fill"}` |
+| <img src="../../icons/Document/booklet-line.svg" alt="booklet-line" width="24" height="24"> | `booklet-line` | guidebook,handbook,manual,notebook,小册子,手册,指南书,笔记本 | `{"icon": "booklet-line"}` |
+| <img src="../../icons/Document/contacts-book-3-fill.svg" alt="contacts-book-3-fill" width="24" height="24"> | `contacts-book-3-fill` | address book,phonebook,电话簿,联系人,通讯录 | `{"icon": "contacts-book-3-fill"}` |
+| <img src="../../icons/Document/contacts-book-3-line.svg" alt="contacts-book-3-line" width="24" height="24"> | `contacts-book-3-line` | address book,phonebook,电话簿,联系人,通讯录 | `{"icon": "contacts-book-3-line"}` |
+| <img src="../../icons/Document/file-code-fill.svg" alt="file-code-fill" width="24" height="24"> | `file-code-fill` | config,json,programming,script,source code,toml,yaml,源代码,编程,脚本,配置文件 | `{"icon": "file-code-fill"}` |
+| <img src="../../icons/Document/file-code-line.svg" alt="file-code-line" width="24" height="24"> | `file-code-line` | config,json,programming,script,source code,toml,yaml,源代码,编程,脚本,配置文件 | `{"icon": "file-code-line"}` |
+| <img src="../../icons/Document/file-pdf-fill.svg" alt="file-pdf-fill" width="24" height="24"> | `file-pdf-fill` | PDF格式,adobe,portable document format,reader,文件,阅读器 | `{"icon": "file-pdf-fill"}` |
+| <img src="../../icons/Document/file-pdf-line.svg" alt="file-pdf-line" width="24" height="24"> | `file-pdf-line` | PDF格式,adobe,portable document format,reader,文件,阅读器 | `{"icon": "file-pdf-line"}` |
+| <img src="../../icons/Document/file-pdf-2-fill.svg" alt="file-pdf-2-fill" width="24" height="24"> | `file-pdf-2-fill` | PDF格式,adobe,portable document format,reader,文件,阅读器 | `{"icon": "file-pdf-2-fill"}` |
+| <img src="../../icons/Document/file-pdf-2-line.svg" alt="file-pdf-2-line" width="24" height="24"> | `file-pdf-2-line` | PDF格式,adobe,portable document format,reader,文件,阅读器 | `{"icon": "file-pdf-2-line"}` |
+| <img src="../../icons/Document/file-word-fill.svg" alt="file-word-fill" width="24" height="24"> | `file-word-fill` | docx,microsoft word,office,text document,微软文档,文本文档 | `{"icon": "file-word-fill"}` |
+| <img src="../../icons/Document/file-word-line.svg" alt="file-word-line" width="24" height="24"> | `file-word-line` | docx,microsoft word,office,text document,微软文档,文本文档 | `{"icon": "file-word-line"}` |
+| <img src="../../icons/Document/file-ppt-fill.svg" alt="file-ppt-fill" width="24" height="24"> | `file-ppt-fill` | microsoft,office,powerpoint,presentation,slides,幻灯片,微软,文件,演示文稿 | `{"icon": "file-ppt-fill"}` |
+| <img src="../../icons/Document/file-ppt-line.svg" alt="file-ppt-line" width="24" height="24"> | `file-ppt-line` | microsoft,office,powerpoint,presentation,slides,幻灯片,微软,文件,演示文稿 | `{"icon": "file-ppt-line"}` |
+| <img src="../../icons/Document/file-excel-fill.svg" alt="file-excel-fill" width="24" height="24"> | `file-excel-fill` | microsoft excel,office,sheets,spreadsheet,table,xlsx,微软表格,电子表格,表单 | `{"icon": "file-excel-fill"}` |
+| <img src="../../icons/Document/file-excel-line.svg" alt="file-excel-line" width="24" height="24"> | `file-excel-line` | microsoft excel,office,sheets,spreadsheet,table,xlsx,微软表格,电子表格,表单 | `{"icon": "file-excel-line"}` |
+| <img src="../../icons/Document/file-word-2-fill.svg" alt="file-word-2-fill" width="24" height="24"> | `file-word-2-fill` | docx,microsoft word,office,text document,微软文档,文本文档 | `{"icon": "file-word-2-fill"}` |
+| <img src="../../icons/Document/file-word-2-line.svg" alt="file-word-2-line" width="24" height="24"> | `file-word-2-line` | docx,microsoft word,office,text document,微软文档,文本文档 | `{"icon": "file-word-2-line"}` |
+| <img src="../../icons/Document/file-ppt-2-fill.svg" alt="file-ppt-2-fill" width="24" height="24"> | `file-ppt-2-fill` | microsoft,office,powerpoint,presentation,slides,幻灯片,微软,文件,演示文稿 | `{"icon": "file-ppt-2-fill"}` |
+| <img src="../../icons/Document/file-ppt-2-line.svg" alt="file-ppt-2-line" width="24" height="24"> | `file-ppt-2-line` | microsoft,office,powerpoint,presentation,slides,幻灯片,微软,文件,演示文稿 | `{"icon": "file-ppt-2-line"}` |
+| <img src="../../icons/Document/file-excel-2-fill.svg" alt="file-excel-2-fill" width="24" height="24"> | `file-excel-2-fill` | microsoft excel,office,sheets,spreadsheet,table,xlsx,微软表格,电子表格,表单 | `{"icon": "file-excel-2-fill"}` |
+| <img src="../../icons/Document/file-excel-2-line.svg" alt="file-excel-2-line" width="24" height="24"> | `file-excel-2-line` | microsoft excel,office,sheets,spreadsheet,table,xlsx,微软表格,电子表格,表单 | `{"icon": "file-excel-2-line"}` |
+| <img src="../../icons/Document/file-hwp-fill.svg" alt="file-hwp-fill" width="24" height="24"> | `file-hwp-fill` | hancom,hangul word processor,hwp format,korean,文件,韩文处理器,韩语 | `{"icon": "file-hwp-fill"}` |
+| <img src="../../icons/Document/file-hwp-line.svg" alt="file-hwp-line" width="24" height="24"> | `file-hwp-line` | hancom,hangul word processor,hwp format,korean,文件,韩文处理器,韩语 | `{"icon": "file-hwp-line"}` |
+| <img src="../../icons/Document/keynote-fill.svg" alt="keynote-fill" width="24" height="24"> | `keynote-fill` | apple,mac,presentation,slides,幻灯片,演示文稿,演讲,苹果,讲演 | `{"icon": "keynote-fill"}` |
+| <img src="../../icons/Document/keynote-line.svg" alt="keynote-line" width="24" height="24"> | `keynote-line` | apple,mac,presentation,slides,幻灯片,演示文稿,演讲,苹果,讲演 | `{"icon": "keynote-line"}` |
+| <img src="../../icons/Document/numbers-fill.svg" alt="numbers-fill" width="24" height="24"> | `numbers-fill` | apple,calculation,data,sheets,spreadsheet,数据,电子表格,苹果,计算 | `{"icon": "numbers-fill"}` |
+| <img src="../../icons/Document/numbers-line.svg" alt="numbers-line" width="24" height="24"> | `numbers-line` | apple,calculation,data,sheets,spreadsheet,数据,电子表格,苹果,计算 | `{"icon": "numbers-line"}` |
+| <img src="../../icons/Document/pages-fill.svg" alt="pages-fill" width="24" height="24"> | `pages-fill` | apple,blocks,browser,prototype,ui,website,word processor,文字处理器,文稿,苹果 | `{"icon": "pages-fill"}` |
+| <img src="../../icons/Document/pages-line.svg" alt="pages-line" width="24" height="24"> | `pages-line` | apple,blocks,browser,prototype,ui,website,word processor,文字处理器,文稿,苹果 | `{"icon": "pages-line"}` |
+| <img src="../../icons/Document/file-search-fill.svg" alt="file-search-fill" width="24" height="24"> | `file-search-fill` | browse,discovery,find,locate,lookup,query,search document,zoom,发现,定位,探索,搜索,放大镜,文件,查找,查询,检索,浏览 | `{"icon": "file-search-fill"}` |
+| <img src="../../icons/Document/file-search-line.svg" alt="file-search-line" width="24" height="24"> | `file-search-line` | browse,discovery,find,locate,lookup,query,search document,zoom,发现,定位,探索,搜索,放大镜,文件,查找,查询,检索,浏览 | `{"icon": "file-search-line"}` |
+| <img src="../../icons/Document/file-add-fill.svg" alt="file-add-fill" width="24" height="24"> | `file-add-fill` | create,insert,new,page,plus,positive,创建,加上,增加,插入,文件,新建,添加 | `{"icon": "file-add-fill"}` |
+| <img src="../../icons/Document/file-add-line.svg" alt="file-add-line" width="24" height="24"> | `file-add-line` | create,insert,new,page,plus,positive,创建,加上,增加,插入,文件,新建,添加 | `{"icon": "file-add-line"}` |
+| <img src="../../icons/Document/file-reduce-fill.svg" alt="file-reduce-fill" width="24" height="24"> | `file-reduce-fill` | delete,minus,page,remove,subtract,减少,删除,文件,移除 | `{"icon": "file-reduce-fill"}` |
+| <img src="../../icons/Document/file-reduce-line.svg" alt="file-reduce-line" width="24" height="24"> | `file-reduce-line` | delete,minus,page,remove,subtract,减少,删除,文件,移除 | `{"icon": "file-reduce-line"}` |
+| <img src="../../icons/Document/file-settings-fill.svg" alt="file-settings-fill" width="24" height="24"> | `file-settings-fill` | cog,configuration,gear,management,options,page,preferences,setup,偏好,文件,管理,设置,配置,首选项 | `{"icon": "file-settings-fill"}` |
+| <img src="../../icons/Document/file-settings-line.svg" alt="file-settings-line" width="24" height="24"> | `file-settings-line` | cog,configuration,gear,management,options,page,preferences,setup,偏好,文件,管理,设置,配置,首选项 | `{"icon": "file-settings-line"}` |
+| <img src="../../icons/Document/file-upload-fill.svg" alt="file-upload-fill" width="24" height="24"> | `file-upload-fill` | cloud,page,sync,上传,云端,同步,文件 | `{"icon": "file-upload-fill"}` |
+| <img src="../../icons/Document/file-upload-line.svg" alt="file-upload-line" width="24" height="24"> | `file-upload-line` | cloud,page,sync,上传,云端,同步,文件 | `{"icon": "file-upload-line"}` |
+| <img src="../../icons/Document/file-transfer-fill.svg" alt="file-transfer-fill" width="24" height="24"> | `file-transfer-fill` | move,page,send,传输,传送,发送,文件,移动 | `{"icon": "file-transfer-fill"}` |
+| <img src="../../icons/Document/file-transfer-line.svg" alt="file-transfer-line" width="24" height="24"> | `file-transfer-line` | move,page,send,传输,传送,发送,文件,移动 | `{"icon": "file-transfer-line"}` |
+| <img src="../../icons/Document/file-download-fill.svg" alt="file-download-fill" width="24" height="24"> | `file-download-fill` | get,page,save,下载,保存,文件,获取 | `{"icon": "file-download-fill"}` |
+| <img src="../../icons/Document/file-download-line.svg" alt="file-download-line" width="24" height="24"> | `file-download-line` | get,page,save,下载,保存,文件,获取 | `{"icon": "file-download-line"}` |
+| <img src="../../icons/Document/file-lock-fill.svg" alt="file-lock-fill" width="24" height="24"> | `file-lock-fill` | encrypt,locked,page,password,private,protected,secure,security,保护,加密,加锁,安全,密码,文件,私人,私有 | `{"icon": "file-lock-fill"}` |
+| <img src="../../icons/Document/file-lock-line.svg" alt="file-lock-line" width="24" height="24"> | `file-lock-line` | encrypt,locked,page,password,private,protected,secure,security,保护,加密,加锁,安全,密码,文件,私人,私有 | `{"icon": "file-lock-line"}` |
+| <img src="../../icons/Document/file-chart-fill.svg" alt="file-chart-fill" width="24" height="24"> | `file-chart-fill` | analysis,analytics,bar chart,data,graph,metrics,page,report,statistics,分析,图表,报表,数据,文件,柱状图,统计 | `{"icon": "file-chart-fill"}` |
+| <img src="../../icons/Document/file-chart-line.svg" alt="file-chart-line" width="24" height="24"> | `file-chart-line` | analysis,analytics,bar chart,data,graph,metrics,page,report,statistics,分析,图表,报表,数据,文件,柱状图,统计 | `{"icon": "file-chart-line"}` |
+| <img src="../../icons/Document/file-chart-2-fill.svg" alt="file-chart-2-fill" width="24" height="24"> | `file-chart-2-fill` | analysis,analytics,data,donut chart,graph,metrics,pie chart,report,statistics,分析,图表,报表,数据,文件,环形图,统计,饼图 | `{"icon": "file-chart-2-fill"}` |
+| <img src="../../icons/Document/file-chart-2-line.svg" alt="file-chart-2-line" width="24" height="24"> | `file-chart-2-line` | analysis,analytics,data,donut chart,graph,metrics,pie chart,report,statistics,分析,图表,报表,数据,文件,环形图,统计,饼图 | `{"icon": "file-chart-2-line"}` |
+| <img src="../../icons/Document/file-image-fill.svg" alt="file-image-fill" width="24" height="24"> | `file-image-fill` | background,graphic,image file,jpeg,photo,picture,png,wallpaper,图像文件,图片,壁纸,照片,相册 | `{"icon": "file-image-fill"}` |
+| <img src="../../icons/Document/file-image-line.svg" alt="file-image-line" width="24" height="24"> | `file-image-line` | background,graphic,image file,jpeg,photo,picture,png,wallpaper,图像文件,图片,壁纸,照片,相册 | `{"icon": "file-image-line"}` |
+| <img src="../../icons/Document/file-music-fill.svg" alt="file-music-fill" width="24" height="24"> | `file-music-fill` | audio,mp3,song,sound,track,声音,文件,歌曲,音乐,音轨,音频 | `{"icon": "file-music-fill"}` |
+| <img src="../../icons/Document/file-music-line.svg" alt="file-music-line" width="24" height="24"> | `file-music-line` | audio,mp3,song,sound,track,声音,文件,歌曲,音乐,音轨,音频 | `{"icon": "file-music-line"}` |
+| <img src="../../icons/Document/file-video-fill.svg" alt="file-video-fill" width="24" height="24"> | `file-video-fill` | avi,clip,film,media,movie,mp4,record,媒体,录制,影片,文件,电影,视频 | `{"icon": "file-video-fill"}` |
+| <img src="../../icons/Document/file-video-line.svg" alt="file-video-line" width="24" height="24"> | `file-video-line` | avi,clip,film,media,movie,mp4,record,媒体,录制,影片,文件,电影,视频 | `{"icon": "file-video-line"}` |
+| <img src="../../icons/Document/file-gif-fill.svg" alt="file-gif-fill" width="24" height="24"> | `file-gif-fill` | animated image,animation,loop,动图,动画,循环,文件 | `{"icon": "file-gif-fill"}` |
+| <img src="../../icons/Document/file-gif-line.svg" alt="file-gif-line" width="24" height="24"> | `file-gif-line` | animated image,animation,loop,动图,动画,循环,文件 | `{"icon": "file-gif-line"}` |
+| <img src="../../icons/Document/file-check-fill.svg" alt="file-check-fill" width="24" height="24"> | `file-check-fill` | approved,checkmark,correct,done,ok,success,tick,valid,verified,verify,勾选,完成,对勾,成功,批准,文件,正确,确认,验证 | `{"icon": "file-check-fill"}` |
+| <img src="../../icons/Document/file-check-line.svg" alt="file-check-line" width="24" height="24"> | `file-check-line` | approved,checkmark,correct,done,ok,success,tick,valid,verified,verify,勾选,完成,对勾,成功,批准,文件,正确,确认,验证 | `{"icon": "file-check-line"}` |
+| <img src="../../icons/Document/file-close-fill.svg" alt="file-close-fill" width="24" height="24"> | `file-close-fill` | cancel,cross,delete,exit,quit,remove,停止,关闭,删除,取消,文件,退出,错误 | `{"icon": "file-close-fill"}` |
+| <img src="../../icons/Document/file-close-line.svg" alt="file-close-line" width="24" height="24"> | `file-close-line` | cancel,cross,delete,exit,quit,remove,停止,关闭,删除,取消,文件,退出,错误 | `{"icon": "file-close-line"}` |
+| <img src="../../icons/Document/file-forbid-fill.svg" alt="file-forbid-fill" width="24" height="24"> | `file-forbid-fill` | access denied,blocked,forbidden,restricted,拒绝访问,文件,禁止,禁用,阻止,限制 | `{"icon": "file-forbid-fill"}` |
+| <img src="../../icons/Document/file-forbid-line.svg" alt="file-forbid-line" width="24" height="24"> | `file-forbid-line` | access denied,blocked,forbidden,restricted,拒绝访问,文件,禁止,禁用,阻止,限制 | `{"icon": "file-forbid-line"}` |
+| <img src="../../icons/Document/file-info-fill.svg" alt="file-info-fill" width="24" height="24"> | `file-info-fill` | about,details,help,hint,information,metadata,properties,信息,元数据,关于,属性,帮助,提示,文件,详情 | `{"icon": "file-info-fill"}` |
+| <img src="../../icons/Document/file-info-line.svg" alt="file-info-line" width="24" height="24"> | `file-info-line` | about,details,help,hint,information,metadata,properties,信息,元数据,关于,属性,帮助,提示,文件,详情 | `{"icon": "file-info-line"}` |
+| <img src="../../icons/Document/file-warning-fill.svg" alt="file-warning-fill" width="24" height="24"> | `file-warning-fill` | alert,caution,exclamation,important,page,paper,提醒,文件,注意,警告,重要 | `{"icon": "file-warning-fill"}` |
+| <img src="../../icons/Document/file-warning-line.svg" alt="file-warning-line" width="24" height="24"> | `file-warning-line` | alert,caution,exclamation,important,page,paper,提醒,文件,注意,警告,重要 | `{"icon": "file-warning-line"}` |
+| <img src="../../icons/Document/file-unknow-fill.svg" alt="file-unknow-fill" width="24" height="24"> | `file-unknow-fill` | mystery,question mark,unknown,unrecognized,不明,文件,无法识别,未知,神秘,问号 | `{"icon": "file-unknow-fill"}` |
+| <img src="../../icons/Document/file-unknow-line.svg" alt="file-unknow-line" width="24" height="24"> | `file-unknow-line` | mystery,question mark,unknown,unrecognized,不明,文件,无法识别,未知,神秘,问号 | `{"icon": "file-unknow-line"}` |
+| <img src="../../icons/Document/file-user-fill.svg" alt="file-user-fill" width="24" height="24"> | `file-user-fill` | account,agent,author,avatar,individual,member,owner,personal,profile,个人资料,个体,作者,头像,成员,所有者,文件,档案,用户,账户,身份 | `{"icon": "file-user-fill"}` |
+| <img src="../../icons/Document/file-user-line.svg" alt="file-user-line" width="24" height="24"> | `file-user-line` | account,agent,author,avatar,individual,member,owner,personal,profile,个人资料,个体,作者,头像,成员,所有者,文件,档案,用户,账户,身份 | `{"icon": "file-user-line"}` |
+| <img src="../../icons/Document/file-shield-fill.svg" alt="file-shield-fill" width="24" height="24"> | `file-shield-fill` | encrypted,protected,safe,secured,security,保护,加密,安全的,文件,盾牌 | `{"icon": "file-shield-fill"}` |
+| <img src="../../icons/Document/file-shield-line.svg" alt="file-shield-line" width="24" height="24"> | `file-shield-line` | encrypted,protected,safe,secured,security,保护,加密,安全的,文件,盾牌 | `{"icon": "file-shield-line"}` |
+| <img src="../../icons/Document/file-shield-2-fill.svg" alt="file-shield-2-fill" width="24" height="24"> | `file-shield-2-fill` | encrypted,protected,safe,secured,security,保护,加密,安全的,文件,盾牌 | `{"icon": "file-shield-2-fill"}` |
+| <img src="../../icons/Document/file-shield-2-line.svg" alt="file-shield-2-line" width="24" height="24"> | `file-shield-2-line` | encrypted,protected,safe,secured,security,保护,加密,安全的,文件,盾牌 | `{"icon": "file-shield-2-line"}` |
+| <img src="../../icons/Document/file-damage-fill.svg" alt="file-damage-fill" width="24" height="24"> | `file-damage-fill` | breakdown,broken,corrupt,damaged,error,损坏,文件,破损,破裂,错误 | `{"icon": "file-damage-fill"}` |
+| <img src="../../icons/Document/file-damage-line.svg" alt="file-damage-line" width="24" height="24"> | `file-damage-line` | breakdown,broken,corrupt,damaged,error,损坏,文件,破损,破裂,错误 | `{"icon": "file-damage-line"}` |
+| <img src="../../icons/Document/file-history-fill.svg" alt="file-history-fill" width="24" height="24"> | `file-history-fill` | backup,record,timeline,version,历史,备份,文件,时间线,版本,记录 | `{"icon": "file-history-fill"}` |
+| <img src="../../icons/Document/file-history-line.svg" alt="file-history-line" width="24" height="24"> | `file-history-line` | backup,record,timeline,version,历史,备份,文件,时间线,版本,记录 | `{"icon": "file-history-line"}` |
+| <img src="../../icons/Document/file-shred-fill.svg" alt="file-shred-fill" width="24" height="24"> | `file-shred-fill` | cut,delete permanently,destroy,shredder,永久删除,破裂,碎纸机,粉碎,销毁 | `{"icon": "file-shred-fill"}` |
+| <img src="../../icons/Document/file-shred-line.svg" alt="file-shred-line" width="24" height="24"> | `file-shred-line` | cut,delete permanently,destroy,shredder,永久删除,破裂,碎纸机,粉碎,销毁 | `{"icon": "file-shred-line"}` |
+| <img src="../../icons/Document/file-scan-fill.svg" alt="file-scan-fill" width="24" height="24"> | `file-scan-fill` | doc,document,document scanner,paper,扫描,扫描仪,文件,文档 | `{"icon": "file-scan-fill"}` |
+| <img src="../../icons/Document/file-scan-line.svg" alt="file-scan-line" width="24" height="24"> | `file-scan-line` | doc,document,document scanner,paper,扫描,扫描仪,文件,文档 | `{"icon": "file-scan-line"}` |
+| <img src="../../icons/Document/file-cloud-fill.svg" alt="file-cloud-fill" width="24" height="24"> | `file-cloud-fill` | backup,cloud drive,network,online,server,storage,sync,云盘,云端,同步,在线,备份,存储,文件,服务器,网络 | `{"icon": "file-cloud-fill"}` |
+| <img src="../../icons/Document/file-cloud-line.svg" alt="file-cloud-line" width="24" height="24"> | `file-cloud-line` | backup,cloud drive,network,online,server,storage,sync,云盘,云端,同步,在线,备份,存储,文件,服务器,网络 | `{"icon": "file-cloud-line"}` |
+| <img src="../../icons/Document/contract-fill.svg" alt="contract-fill" width="24" height="24"> | `contract-fill` | agreement,approve,deal,examine,legal,交易,协议,合同,合约,审批通过,法律文件 | `{"icon": "contract-fill"}` |
+| <img src="../../icons/Document/contract-line.svg" alt="contract-line" width="24" height="24"> | `contract-line` | agreement,approve,deal,examine,legal,交易,协议,合同,合约,审批通过,法律文件 | `{"icon": "contract-line"}` |
+| <img src="../../icons/Document/folder-fill.svg" alt="folder-fill" width="24" height="24"> | `folder-fill` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-fill"}` |
+| <img src="../../icons/Document/folder-line.svg" alt="folder-line" width="24" height="24"> | `folder-line` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-line"}` |
+| <img src="../../icons/Document/folder-2-fill.svg" alt="folder-2-fill" width="24" height="24"> | `folder-2-fill` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-2-fill"}` |
+| <img src="../../icons/Document/folder-2-line.svg" alt="folder-2-line" width="24" height="24"> | `folder-2-line` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-2-line"}` |
+| <img src="../../icons/Document/folder-3-fill.svg" alt="folder-3-fill" width="24" height="24"> | `folder-3-fill` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-3-fill"}` |
+| <img src="../../icons/Document/folder-3-line.svg" alt="folder-3-line" width="24" height="24"> | `folder-3-line` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-3-line"}` |
+| <img src="../../icons/Document/folder-4-fill.svg" alt="folder-4-fill" width="24" height="24"> | `folder-4-fill` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-4-fill"}` |
+| <img src="../../icons/Document/folder-4-line.svg" alt="folder-4-line" width="24" height="24"> | `folder-4-line` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-4-line"}` |
+| <img src="../../icons/Document/folder-5-fill.svg" alt="folder-5-fill" width="24" height="24"> | `folder-5-fill` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-5-fill"}` |
+| <img src="../../icons/Document/folder-5-line.svg" alt="folder-5-line" width="24" height="24"> | `folder-5-line` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-5-line"}` |
+| <img src="../../icons/Document/folder-6-fill.svg" alt="folder-6-fill" width="24" height="24"> | `folder-6-fill` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-6-fill"}` |
+| <img src="../../icons/Document/folder-6-line.svg" alt="folder-6-line" width="24" height="24"> | `folder-6-line` | collection,container,directory,file,organize,storage,存储,收藏,整理,文件夹,目录 | `{"icon": "folder-6-line"}` |
+| <img src="../../icons/Document/folders-fill.svg" alt="folders-fill" width="24" height="24"> | `folders-fill` | batch,collection,directory,file,multiple,多个,批量,文件夹,目录,集合 | `{"icon": "folders-fill"}` |
+| <img src="../../icons/Document/folders-line.svg" alt="folders-line" width="24" height="24"> | `folders-line` | batch,collection,directory,file,multiple,多个,批量,文件夹,目录,集合 | `{"icon": "folders-line"}` |
+| <img src="../../icons/Document/folder-add-fill.svg" alt="folder-add-fill" width="24" height="24"> | `folder-add-fill` | add folder,collection,container,create,directory,file,insert,new,plus,positive,storage,创建,加上,增加,存储,插入,收藏,文件夹,新建,添加,目录 | `{"icon": "folder-add-fill"}` |
+| <img src="../../icons/Document/folder-add-line.svg" alt="folder-add-line" width="24" height="24"> | `folder-add-line` | add folder,collection,container,create,directory,file,insert,new,plus,positive,storage,创建,加上,增加,存储,插入,收藏,文件夹,新建,添加,目录 | `{"icon": "folder-add-line"}` |
+| <img src="../../icons/Document/folder-reduce-fill.svg" alt="folder-reduce-fill" width="24" height="24"> | `folder-reduce-fill` | collection,container,delete,directory,file,remove folder,storage,subtract,减,删除,存储,收藏,文件夹,目录,移除 | `{"icon": "folder-reduce-fill"}` |
+| <img src="../../icons/Document/folder-reduce-line.svg" alt="folder-reduce-line" width="24" height="24"> | `folder-reduce-line` | collection,container,delete,directory,file,remove folder,storage,subtract,减,删除,存储,收藏,文件夹,目录,移除 | `{"icon": "folder-reduce-line"}` |
+| <img src="../../icons/Document/folder-settings-fill.svg" alt="folder-settings-fill" width="24" height="24"> | `folder-settings-fill` | cog,collection,configuration,container,directory,file,folder settings,gear,management,options,preferences,setup,storage,偏好,存储,收藏,文件夹,目录,管理,设置,配置,首选项 | `{"icon": "folder-settings-fill"}` |
+| <img src="../../icons/Document/folder-settings-line.svg" alt="folder-settings-line" width="24" height="24"> | `folder-settings-line` | cog,collection,configuration,container,directory,file,folder settings,gear,management,options,preferences,setup,storage,偏好,存储,收藏,文件夹,目录,管理,设置,配置,首选项 | `{"icon": "folder-settings-line"}` |
+| <img src="../../icons/Document/folder-upload-fill.svg" alt="folder-upload-fill" width="24" height="24"> | `folder-upload-fill` | cloud,collection,container,directory,file,storage,sync,upload folder,上传,云端,同步,存储,收藏,文件夹,目录 | `{"icon": "folder-upload-fill"}` |
+| <img src="../../icons/Document/folder-upload-line.svg" alt="folder-upload-line" width="24" height="24"> | `folder-upload-line` | cloud,collection,container,directory,file,storage,sync,upload folder,上传,云端,同步,存储,收藏,文件夹,目录 | `{"icon": "folder-upload-line"}` |
+| <img src="../../icons/Document/folder-transfer-fill.svg" alt="folder-transfer-fill" width="24" height="24"> | `folder-transfer-fill` | collection,container,directory,file,move,send,storage,transfer folder,传输,发送,存储,收藏,文件夹,目录,移动 | `{"icon": "folder-transfer-fill"}` |
+| <img src="../../icons/Document/folder-transfer-line.svg" alt="folder-transfer-line" width="24" height="24"> | `folder-transfer-line` | collection,container,directory,file,move,send,storage,transfer folder,传输,发送,存储,收藏,文件夹,目录,移动 | `{"icon": "folder-transfer-line"}` |
+| <img src="../../icons/Document/folder-download-fill.svg" alt="folder-download-fill" width="24" height="24"> | `folder-download-fill` | collection,container,directory,download folder,file,get,save,storage,下载,保存,存储,收藏,文件夹,目录,获取 | `{"icon": "folder-download-fill"}` |
+| <img src="../../icons/Document/folder-download-line.svg" alt="folder-download-line" width="24" height="24"> | `folder-download-line` | collection,container,directory,download folder,file,get,save,storage,下载,保存,存储,收藏,文件夹,目录,获取 | `{"icon": "folder-download-line"}` |
+| <img src="../../icons/Document/folder-lock-fill.svg" alt="folder-lock-fill" width="24" height="24"> | `folder-lock-fill` | collection,container,directory,encrypt,file,locked folder,password,private,protected,secure,security,storage,保护,加密,加锁,存储,安全,密码,收藏,文件夹,目录,私人,私有 | `{"icon": "folder-lock-fill"}` |
+| <img src="../../icons/Document/folder-lock-line.svg" alt="folder-lock-line" width="24" height="24"> | `folder-lock-line` | collection,container,directory,encrypt,file,locked folder,password,private,protected,secure,security,storage,保护,加密,加锁,存储,安全,密码,收藏,文件夹,目录,私人,私有 | `{"icon": "folder-lock-line"}` |
+| <img src="../../icons/Document/folder-chart-fill.svg" alt="folder-chart-fill" width="24" height="24"> | `folder-chart-fill` | analysis,analytics,bar chart,collection,container,data,directory,graph,metrics,report,statistics,storage,分析,图表,存储,报表,收藏,数据,文件夹,柱状图,目录,统计 | `{"icon": "folder-chart-fill"}` |
+| <img src="../../icons/Document/folder-chart-line.svg" alt="folder-chart-line" width="24" height="24"> | `folder-chart-line` | analysis,analytics,bar chart,collection,container,data,directory,graph,metrics,report,statistics,storage,分析,图表,存储,报表,收藏,数据,文件夹,柱状图,目录,统计 | `{"icon": "folder-chart-line"}` |
+| <img src="../../icons/Document/folder-chart-2-fill.svg" alt="folder-chart-2-fill" width="24" height="24"> | `folder-chart-2-fill` | analysis,analytics,collection,container,data,directory,donut chart,graph,metrics,pie chart,report,statistics,storage,分析,图表,存储,报表,收藏,数据,文件夹,环形图,目录,统计,饼图 | `{"icon": "folder-chart-2-fill"}` |
+| <img src="../../icons/Document/folder-chart-2-line.svg" alt="folder-chart-2-line" width="24" height="24"> | `folder-chart-2-line` | analysis,analytics,collection,container,data,directory,donut chart,graph,metrics,pie chart,report,statistics,storage,分析,图表,存储,报表,收藏,数据,文件夹,环形图,目录,统计,饼图 | `{"icon": "folder-chart-2-line"}` |
+| <img src="../../icons/Document/folder-music-fill.svg" alt="folder-music-fill" width="24" height="24"> | `folder-music-fill` | audio,collection,container,directory,file,media,music folder,sound,storage,媒体,存储,收藏,文件夹,目录,音乐,音频 | `{"icon": "folder-music-fill"}` |
+| <img src="../../icons/Document/folder-music-line.svg" alt="folder-music-line" width="24" height="24"> | `folder-music-line` | audio,collection,container,directory,file,media,music folder,sound,storage,媒体,存储,收藏,文件夹,目录,音乐,音频 | `{"icon": "folder-music-line"}` |
+| <img src="../../icons/Document/folder-image-fill.svg" alt="folder-image-fill" width="24" height="24"> | `folder-image-fill` | background,collection,container,directory,file,gallery,graphic,image folder,photo,picture,storage,wallpaper,图像,图库,图片,壁纸,存储,收藏,文件夹,照片,目录,相册 | `{"icon": "folder-image-fill"}` |
+| <img src="../../icons/Document/folder-image-line.svg" alt="folder-image-line" width="24" height="24"> | `folder-image-line` | background,collection,container,directory,file,gallery,graphic,image folder,photo,picture,storage,wallpaper,图像,图库,图片,壁纸,存储,收藏,文件夹,照片,目录,相册 | `{"icon": "folder-image-line"}` |
+| <img src="../../icons/Document/folder-video-fill.svg" alt="folder-video-fill" width="24" height="24"> | `folder-video-fill` | collection,container,directory,file,film,media,movie,record,storage,video folder,媒体,存储,录制,影片,收藏,文件夹,电影,目录,视频 | `{"icon": "folder-video-fill"}` |
+| <img src="../../icons/Document/folder-video-line.svg" alt="folder-video-line" width="24" height="24"> | `folder-video-line` | collection,container,directory,file,film,media,movie,record,storage,video folder,媒体,存储,录制,影片,收藏,文件夹,电影,目录,视频 | `{"icon": "folder-video-line"}` |
+| <img src="../../icons/Document/folder-check-fill.svg" alt="folder-check-fill" width="24" height="24"> | `folder-check-fill` | approved,collection,container,directory,done,file,ok,storage,success,tick,verified,verify,存储,完成,对勾,成功,批准,收藏,文件夹,检查,目录,确认,验证 | `{"icon": "folder-check-fill"}` |
+| <img src="../../icons/Document/folder-check-line.svg" alt="folder-check-line" width="24" height="24"> | `folder-check-line` | approved,collection,container,directory,done,file,ok,storage,success,tick,verified,verify,存储,完成,对勾,成功,批准,收藏,文件夹,检查,目录,确认,验证 | `{"icon": "folder-check-line"}` |
+| <img src="../../icons/Document/folder-close-fill.svg" alt="folder-close-fill" width="24" height="24"> | `folder-close-fill` | cancel,collection,container,cross,delete,directory,exit,file,quit,remove,storage,停止,关闭,删除,取消,存储,收藏,文件夹,目录,退出,错误 | `{"icon": "folder-close-fill"}` |
+| <img src="../../icons/Document/folder-close-line.svg" alt="folder-close-line" width="24" height="24"> | `folder-close-line` | cancel,collection,container,cross,delete,directory,exit,file,quit,remove,storage,停止,关闭,删除,取消,存储,收藏,文件夹,目录,退出,错误 | `{"icon": "folder-close-line"}` |
+| <img src="../../icons/Document/folder-forbid-fill.svg" alt="folder-forbid-fill" width="24" height="24"> | `folder-forbid-fill` | blocked,collection,container,denied,directory,file,forbidden,restricted,storage,存储,收藏,文件夹,目录,禁止,禁用,阻止,限制 | `{"icon": "folder-forbid-fill"}` |
+| <img src="../../icons/Document/folder-forbid-line.svg" alt="folder-forbid-line" width="24" height="24"> | `folder-forbid-line` | blocked,collection,container,denied,directory,file,forbidden,restricted,storage,存储,收藏,文件夹,目录,禁止,禁用,阻止,限制 | `{"icon": "folder-forbid-line"}` |
+| <img src="../../icons/Document/folder-info-fill.svg" alt="folder-info-fill" width="24" height="24"> | `folder-info-fill` | about,collection,container,details,directory,file,help,hint,properties,storage,信息,关于,存储,属性,帮助,提示,收藏,文件夹,目录,详情 | `{"icon": "folder-info-fill"}` |
+| <img src="../../icons/Document/folder-info-line.svg" alt="folder-info-line" width="24" height="24"> | `folder-info-line` | about,collection,container,details,directory,file,help,hint,properties,storage,信息,关于,存储,属性,帮助,提示,收藏,文件夹,目录,详情 | `{"icon": "folder-info-line"}` |
+| <img src="../../icons/Document/folder-warning-fill.svg" alt="folder-warning-fill" width="24" height="24"> | `folder-warning-fill` | alert,caution,collection,container,directory,exclamation,important,storage,存储,提醒,收藏,文件夹,注意,目录,警告,重要 | `{"icon": "folder-warning-fill"}` |
+| <img src="../../icons/Document/folder-warning-line.svg" alt="folder-warning-line" width="24" height="24"> | `folder-warning-line` | alert,caution,collection,container,directory,exclamation,important,storage,存储,提醒,收藏,文件夹,注意,目录,警告,重要 | `{"icon": "folder-warning-line"}` |
+| <img src="../../icons/Document/folder-unknow-fill.svg" alt="folder-unknow-fill" width="24" height="24"> | `folder-unknow-fill` | collection,container,directory,file,mystery,storage,unknown,unrecognized,不明,存储,收藏,文件夹,无法识别,未知,目录,神秘 | `{"icon": "folder-unknow-fill"}` |
+| <img src="../../icons/Document/folder-unknow-line.svg" alt="folder-unknow-line" width="24" height="24"> | `folder-unknow-line` | collection,container,directory,file,mystery,storage,unknown,unrecognized,不明,存储,收藏,文件夹,无法识别,未知,目录,神秘 | `{"icon": "folder-unknow-line"}` |
+| <img src="../../icons/Document/folder-user-fill.svg" alt="folder-user-fill" width="24" height="24"> | `folder-user-fill` | account,agent,avatar,collection,container,directory,individual,member,owner,personal,profile,storage,个人资料,个体,头像,存储,成员,所有者,收藏,文件夹,档案,用户,目录,账户,身份 | `{"icon": "folder-user-fill"}` |
+| <img src="../../icons/Document/folder-user-line.svg" alt="folder-user-line" width="24" height="24"> | `folder-user-line` | account,agent,avatar,collection,container,directory,individual,member,owner,personal,profile,storage,个人资料,个体,头像,存储,成员,所有者,收藏,文件夹,档案,用户,目录,账户,身份 | `{"icon": "folder-user-line"}` |
+| <img src="../../icons/Document/folder-shield-fill.svg" alt="folder-shield-fill" width="24" height="24"> | `folder-shield-fill` | collection,container,directory,encrypted,file,protected,secured,security,storage,保护,加密,存储,安全,收藏,文件夹,目录,盾牌 | `{"icon": "folder-shield-fill"}` |
+| <img src="../../icons/Document/folder-shield-line.svg" alt="folder-shield-line" width="24" height="24"> | `folder-shield-line` | collection,container,directory,encrypted,file,protected,secured,security,storage,保护,加密,存储,安全,收藏,文件夹,目录,盾牌 | `{"icon": "folder-shield-line"}` |
+| <img src="../../icons/Document/folder-shield-2-fill.svg" alt="folder-shield-2-fill" width="24" height="24"> | `folder-shield-2-fill` | collection,container,directory,encrypted,file,protected,secured,security,storage,保护,加密,存储,安全,收藏,文件夹,目录,盾牌 | `{"icon": "folder-shield-2-fill"}` |
+| <img src="../../icons/Document/folder-shield-2-line.svg" alt="folder-shield-2-line" width="24" height="24"> | `folder-shield-2-line` | collection,container,directory,encrypted,file,protected,secured,security,storage,保护,加密,存储,安全,收藏,文件夹,目录,盾牌 | `{"icon": "folder-shield-2-line"}` |
+| <img src="../../icons/Document/folder-shared-fill.svg" alt="folder-shared-fill" width="24" height="24"> | `folder-shared-fill` | collaboration,collection,container,directory,file,shared folder,storage,teamwork,共享文件夹,分享,协作,团队合作,存储,收藏,目录 | `{"icon": "folder-shared-fill"}` |
+| <img src="../../icons/Document/folder-shared-line.svg" alt="folder-shared-line" width="24" height="24"> | `folder-shared-line` | collaboration,collection,container,directory,file,shared folder,storage,teamwork,共享文件夹,分享,协作,团队合作,存储,收藏,目录 | `{"icon": "folder-shared-line"}` |
+| <img src="../../icons/Document/folder-received-fill.svg" alt="folder-received-fill" width="24" height="24"> | `folder-received-fill` | collection,container,directory,file,inbox,incoming,received folder,storage,传入,存储,已接收,收件箱,收藏,文件夹,目录 | `{"icon": "folder-received-fill"}` |
+| <img src="../../icons/Document/folder-received-line.svg" alt="folder-received-line" width="24" height="24"> | `folder-received-line` | collection,container,directory,file,inbox,incoming,received folder,storage,传入,存储,已接收,收件箱,收藏,文件夹,目录 | `{"icon": "folder-received-line"}` |
+| <img src="../../icons/Document/folder-open-fill.svg" alt="folder-open-fill" width="24" height="24"> | `folder-open-fill` | access,browse,collection,container,directory,file,storage,存储,打开,收藏,文件夹,浏览,目录,访问 | `{"icon": "folder-open-fill"}` |
+| <img src="../../icons/Document/folder-open-line.svg" alt="folder-open-line" width="24" height="24"> | `folder-open-line` | access,browse,collection,container,directory,file,storage,存储,打开,收藏,文件夹,浏览,目录,访问 | `{"icon": "folder-open-line"}` |
+| <img src="../../icons/Document/folder-keyhole-fill.svg" alt="folder-keyhole-fill" width="24" height="24"> | `folder-keyhole-fill` | collection,container,directory,encryption,file,locked,secure,storage,加密文档,存储,安全,收藏,文件夹,目录,钥匙孔,锁定 | `{"icon": "folder-keyhole-fill"}` |
+| <img src="../../icons/Document/folder-keyhole-line.svg" alt="folder-keyhole-line" width="24" height="24"> | `folder-keyhole-line` | collection,container,directory,encryption,file,locked,secure,storage,加密文档,存储,安全,收藏,文件夹,目录,钥匙孔,锁定 | `{"icon": "folder-keyhole-line"}` |
+| <img src="../../icons/Document/folder-zip-fill.svg" alt="folder-zip-fill" width="24" height="24"> | `folder-zip-fill` | archive,collection,compression,container,directory,file,storage,压缩包,存储,归档,收藏,文件夹,目录 | `{"icon": "folder-zip-fill"}` |
+| <img src="../../icons/Document/folder-zip-line.svg" alt="folder-zip-line" width="24" height="24"> | `folder-zip-line` | archive,collection,compression,container,directory,file,storage,压缩包,存储,归档,收藏,文件夹,目录 | `{"icon": "folder-zip-line"}` |
+| <img src="../../icons/Document/folder-history-fill.svg" alt="folder-history-fill" width="24" height="24"> | `folder-history-fill` | collection,container,directory,file,record,storage,timeline,version,历史,存储,收藏,文件夹,时间线,版本,目录,记录 | `{"icon": "folder-history-fill"}` |
+| <img src="../../icons/Document/folder-history-line.svg" alt="folder-history-line" width="24" height="24"> | `folder-history-line` | collection,container,directory,file,record,storage,timeline,version,历史,存储,收藏,文件夹,时间线,版本,目录,记录 | `{"icon": "folder-history-line"}` |
+| <img src="../../icons/Document/folder-cloud-fill.svg" alt="folder-cloud-fill" width="24" height="24"> | `folder-cloud-fill` | backup,cloud folder,collection,container,directory,file,online,server,storage,sync,云文件夹,云文档,云端,同步,在线,备份,存储,收藏,服务器,目录 | `{"icon": "folder-cloud-fill"}` |
+| <img src="../../icons/Document/folder-cloud-line.svg" alt="folder-cloud-line" width="24" height="24"> | `folder-cloud-line` | backup,cloud folder,collection,container,directory,file,online,server,storage,sync,云文件夹,云文档,云端,同步,在线,备份,存储,收藏,服务器,目录 | `{"icon": "folder-cloud-line"}` |
+| <img src="../../icons/Document/markdown-fill.svg" alt="markdown-fill" width="24" height="24"> | `markdown-fill` | arrow,documentation,markup,md,readme,text formatting,标记语言,格式化,说明 | `{"icon": "markdown-fill"}` |
+| <img src="../../icons/Document/markdown-line.svg" alt="markdown-line" width="24" height="24"> | `markdown-line` | arrow,documentation,markup,md,readme,text formatting,标记语言,格式化,说明 | `{"icon": "markdown-line"}` |

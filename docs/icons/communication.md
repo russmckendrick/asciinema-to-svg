@@ -4,49 +4,95 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `chat-1` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-1"}` |
-| - | `chat-ai` | artificial intelligence,assistant,bot,comment,message,reply,人工智能,助手,回复,机器人,消息,聊天,评论 | `{"icon": "chat-ai"}` |
-| - | `chat-2` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-2"}` |
-| - | `chat-ai-2` | artificial intelligence,comment,message,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-ai-2"}` |
-| - | `chat-3` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-3"}` |
-| - | `chat-ai-3` | artificial intelligence,comment,message,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-ai-3"}` |
-| - | `chat-4` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-4"}` |
-| - | `chat-ai-4` | artificial intelligence,comment,message,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-ai-4"}` |
-| - | `message` | chat,comment,reply,回复,消息,聊天,评论 | `{"icon": "message"}` |
-| - | `message-2` | chat,comment,reply,回复,消息,聊天,评论 | `{"icon": "message-2"}` |
-| - | `message-3` | chat,comment,reply,回复,消息,聊天,评论 | `{"icon": "message-3"}` |
-| - | `message-ai-3` | artificial intelligence,chat,comment,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "message-ai-3"}` |
-| - | `chat-check` | comment,delivered,done,message,ok,read,reply,success,tick,verify,回复,完成,对勾,已送达,已阅,成功,消息,确认,聊天,评论 | `{"icon": "chat-check"}` |
-| - | `chat-delete` | bin,clear,comment,garbage,message,recycle,remove,waste,删除,回复,回收,垃圾桶,消息,清理,清除,移除,聊天,评论 | `{"icon": "chat-delete"}` |
-| - | `chat-forward` | comment,message,send,share,分享,发送,消息,聊天,转发 | `{"icon": "chat-forward"}` |
-| - | `chat-upload` | attachment,comment,file,message,上传,文件,消息,聊天,附件 | `{"icon": "chat-upload"}` |
-| - | `chat-download` | comment,file,message,save,下载,保存,文件,消息 | `{"icon": "chat-download"}` |
-| - | `chat-new` | comment,create,message,reply,start,回复,开始,新建,消息,聊天,评论 | `{"icon": "chat-new"}` |
-| - | `chat-settings` | cog,comment,configuration,gear,management,message,options,preferences,setup,偏好,回复,消息,管理,聊天,设置,评论,配置,首选项 | `{"icon": "chat-settings"}` |
-| - | `chat-unread` | badge,comment,new message,notification,回复,提醒,未读,消息,聊天,评论,通知 | `{"icon": "chat-unread"}` |
-| - | `chat-search` | browse,comment,discovery,find,lookup,message,query,zoom,发现,回复,探索,搜索,放大镜,查找,检索,浏览,消息,聊天,评论 | `{"icon": "chat-search"}` |
-| - | `chat-smile` | comment,emoji,happy,message,reply,回复,开心,微笑,消息,聊天,表情,评论 | `{"icon": "chat-smile"}` |
-| - | `chat-smile-2` | comment,emoji,happy,message,reply,回复,开心,微笑,消息,聊天,表情,评论 | `{"icon": "chat-smile-2"}` |
-| - | `chat-smile-ai` | artificial intelligence,comment,emoji,message,reply,人工智能,回复,消息,聊天,表情,评论 | `{"icon": "chat-smile-ai"}` |
-| - | `chat-smile-3` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-smile-3"}` |
-| - | `chat-smile-ai-3` | artificial intelligence,comment,happy,message,reply,robot,人工智能,回复,开心,微笑,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-smile-ai-3"}` |
-| - | `chat-heart` | collection,comment,favorite,like,love,message,passion,reply,喜欢,回复,收藏,消息,点赞,热情,爱心,聊天,评论 | `{"icon": "chat-heart"}` |
-| - | `chat-off` | comment,message,reply,slash,关闭,回复,消息,禁止,聊天,评论 | `{"icon": "chat-off"}` |
-| - | `feedback` | comment,message,opinion,review,反馈,回复,意见,消息,聊天,评价,评论 | `{"icon": "feedback"}` |
-| - | `discuss` | comment,conversation,group chat,message,reply,回复,对话,消息,群聊,聊天,讨论,评论 | `{"icon": "discuss"}` |
-| - | `question-answer` | Q&A,comment,faq,help,message,reply,support,回复,帮助,常见问题,消息,疑问,群聊,聊天,讨论,评论,问答 | `{"icon": "question-answer"}` |
-| - | `questionnaire` | comment,form,help,message,survey,回复,帮助,消息,聊天,表单,讨论,评论,调查问卷 | `{"icon": "questionnaire"}` |
-| - | `video-chat` | comment,conference,film,media,message,movie,record,video call,会议,录制,影片,消息,电影,视频聊天,视频通话 | `{"icon": "video-chat"}` |
-| - | `chat-voice` | audio,comment,voice message,录音,语音消息,音频 | `{"icon": "chat-voice"}` |
-| - | `chat-voice-ai` | artificial intelligence,comment,voice message,人工智能,智能语音,语音消息 | `{"icon": "chat-voice-ai"}` |
-| - | `chat-quote` | citation,comment,message,reference,reply,参考,引用回复,消息 | `{"icon": "chat-quote"}` |
-| - | `chat-follow-up` | +1,comment,continue,message,reply,消息,继续,跟帖,跟进 | `{"icon": "chat-follow-up"}` |
-| - | `chat-poll` | election,message,questionnaire,survey,vote,投票,民调,消息,选举,问卷调查 | `{"icon": "chat-poll"}` |
-| - | `chat-history` | archive,log,message,record,历史消息,存档,日志,消息记录 | `{"icon": "chat-history"}` |
-| - | `chat-private` | confidential,message,secret,保密,密聊,机密,私密消息 | `{"icon": "chat-private"}` |
-| - | `chat-thread` | discussion,hashtag,topic,主题,井号,哈希,讨论串,话题 | `{"icon": "chat-thread"}` |
-| - | `speak` | audio,speech,talk,voice,声音,对话,演讲,讲话 | `{"icon": "speak"}` |
-| - | `speak-ai` | artificial intelligence,speech,talk,voice,人工智能,声音,智能对话,讲话 | `{"icon": "speak-ai"}` |
-| - | `emoji-sticker` | decoration,emoticon,face,符号,表情,装饰,贴纸 | `{"icon": "emoji-sticker"}` |
-| - | `text-to-speech` | audio,read aloud,speech synthesis,tts,voice,播报,文字转语音,朗读,语音合成 | `{"icon": "text-to-speech"}` |
-| - | `speech-to-text` | asr,dictation,stt,voice recognition,口述,听写,语音识别,语音转文字 | `{"icon": "speech-to-text"}` |
+| <img src="../../icons/Communication/chat-1-fill.svg" alt="chat-1-fill" width="24" height="24"> | `chat-1-fill` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-1-fill"}` |
+| <img src="../../icons/Communication/chat-1-line.svg" alt="chat-1-line" width="24" height="24"> | `chat-1-line` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-1-line"}` |
+| <img src="../../icons/Communication/chat-ai-fill.svg" alt="chat-ai-fill" width="24" height="24"> | `chat-ai-fill` | artificial intelligence,assistant,bot,comment,message,reply,人工智能,助手,回复,机器人,消息,聊天,评论 | `{"icon": "chat-ai-fill"}` |
+| <img src="../../icons/Communication/chat-ai-line.svg" alt="chat-ai-line" width="24" height="24"> | `chat-ai-line` | artificial intelligence,assistant,bot,comment,message,reply,人工智能,助手,回复,机器人,消息,聊天,评论 | `{"icon": "chat-ai-line"}` |
+| <img src="../../icons/Communication/chat-2-fill.svg" alt="chat-2-fill" width="24" height="24"> | `chat-2-fill` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-2-fill"}` |
+| <img src="../../icons/Communication/chat-2-line.svg" alt="chat-2-line" width="24" height="24"> | `chat-2-line` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-2-line"}` |
+| <img src="../../icons/Communication/chat-ai-2-fill.svg" alt="chat-ai-2-fill" width="24" height="24"> | `chat-ai-2-fill` | artificial intelligence,comment,message,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-ai-2-fill"}` |
+| <img src="../../icons/Communication/chat-ai-2-line.svg" alt="chat-ai-2-line" width="24" height="24"> | `chat-ai-2-line` | artificial intelligence,comment,message,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-ai-2-line"}` |
+| <img src="../../icons/Communication/chat-3-fill.svg" alt="chat-3-fill" width="24" height="24"> | `chat-3-fill` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-3-fill"}` |
+| <img src="../../icons/Communication/chat-3-line.svg" alt="chat-3-line" width="24" height="24"> | `chat-3-line` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-3-line"}` |
+| <img src="../../icons/Communication/chat-ai-3-fill.svg" alt="chat-ai-3-fill" width="24" height="24"> | `chat-ai-3-fill` | artificial intelligence,comment,message,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-ai-3-fill"}` |
+| <img src="../../icons/Communication/chat-ai-3-line.svg" alt="chat-ai-3-line" width="24" height="24"> | `chat-ai-3-line` | artificial intelligence,comment,message,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-ai-3-line"}` |
+| <img src="../../icons/Communication/chat-4-fill.svg" alt="chat-4-fill" width="24" height="24"> | `chat-4-fill` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-4-fill"}` |
+| <img src="../../icons/Communication/chat-4-line.svg" alt="chat-4-line" width="24" height="24"> | `chat-4-line` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-4-line"}` |
+| <img src="../../icons/Communication/chat-ai-4-fill.svg" alt="chat-ai-4-fill" width="24" height="24"> | `chat-ai-4-fill` | artificial intelligence,comment,message,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-ai-4-fill"}` |
+| <img src="../../icons/Communication/chat-ai-4-line.svg" alt="chat-ai-4-line" width="24" height="24"> | `chat-ai-4-line` | artificial intelligence,comment,message,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-ai-4-line"}` |
+| <img src="../../icons/Communication/message-fill.svg" alt="message-fill" width="24" height="24"> | `message-fill` | chat,comment,reply,回复,消息,聊天,评论 | `{"icon": "message-fill"}` |
+| <img src="../../icons/Communication/message-line.svg" alt="message-line" width="24" height="24"> | `message-line` | chat,comment,reply,回复,消息,聊天,评论 | `{"icon": "message-line"}` |
+| <img src="../../icons/Communication/message-2-fill.svg" alt="message-2-fill" width="24" height="24"> | `message-2-fill` | chat,comment,reply,回复,消息,聊天,评论 | `{"icon": "message-2-fill"}` |
+| <img src="../../icons/Communication/message-2-line.svg" alt="message-2-line" width="24" height="24"> | `message-2-line` | chat,comment,reply,回复,消息,聊天,评论 | `{"icon": "message-2-line"}` |
+| <img src="../../icons/Communication/message-3-fill.svg" alt="message-3-fill" width="24" height="24"> | `message-3-fill` | chat,comment,reply,回复,消息,聊天,评论 | `{"icon": "message-3-fill"}` |
+| <img src="../../icons/Communication/message-3-line.svg" alt="message-3-line" width="24" height="24"> | `message-3-line` | chat,comment,reply,回复,消息,聊天,评论 | `{"icon": "message-3-line"}` |
+| <img src="../../icons/Communication/message-ai-3-fill.svg" alt="message-ai-3-fill" width="24" height="24"> | `message-ai-3-fill` | artificial intelligence,chat,comment,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "message-ai-3-fill"}` |
+| <img src="../../icons/Communication/message-ai-3-line.svg" alt="message-ai-3-line" width="24" height="24"> | `message-ai-3-line` | artificial intelligence,chat,comment,reply,robot,人工智能,回复,智能助手,机器人,消息,聊天,评论 | `{"icon": "message-ai-3-line"}` |
+| <img src="../../icons/Communication/chat-check-fill.svg" alt="chat-check-fill" width="24" height="24"> | `chat-check-fill` | comment,delivered,done,message,ok,read,reply,success,tick,verify,回复,完成,对勾,已送达,已阅,成功,消息,确认,聊天,评论 | `{"icon": "chat-check-fill"}` |
+| <img src="../../icons/Communication/chat-check-line.svg" alt="chat-check-line" width="24" height="24"> | `chat-check-line` | comment,delivered,done,message,ok,read,reply,success,tick,verify,回复,完成,对勾,已送达,已阅,成功,消息,确认,聊天,评论 | `{"icon": "chat-check-line"}` |
+| <img src="../../icons/Communication/chat-delete-fill.svg" alt="chat-delete-fill" width="24" height="24"> | `chat-delete-fill` | bin,clear,comment,garbage,message,recycle,remove,waste,删除,回复,回收,垃圾桶,消息,清理,清除,移除,聊天,评论 | `{"icon": "chat-delete-fill"}` |
+| <img src="../../icons/Communication/chat-delete-line.svg" alt="chat-delete-line" width="24" height="24"> | `chat-delete-line` | bin,clear,comment,garbage,message,recycle,remove,waste,删除,回复,回收,垃圾桶,消息,清理,清除,移除,聊天,评论 | `{"icon": "chat-delete-line"}` |
+| <img src="../../icons/Communication/chat-forward-fill.svg" alt="chat-forward-fill" width="24" height="24"> | `chat-forward-fill` | comment,message,send,share,分享,发送,消息,聊天,转发 | `{"icon": "chat-forward-fill"}` |
+| <img src="../../icons/Communication/chat-forward-line.svg" alt="chat-forward-line" width="24" height="24"> | `chat-forward-line` | comment,message,send,share,分享,发送,消息,聊天,转发 | `{"icon": "chat-forward-line"}` |
+| <img src="../../icons/Communication/chat-upload-fill.svg" alt="chat-upload-fill" width="24" height="24"> | `chat-upload-fill` | attachment,comment,file,message,上传,文件,消息,聊天,附件 | `{"icon": "chat-upload-fill"}` |
+| <img src="../../icons/Communication/chat-upload-line.svg" alt="chat-upload-line" width="24" height="24"> | `chat-upload-line` | attachment,comment,file,message,上传,文件,消息,聊天,附件 | `{"icon": "chat-upload-line"}` |
+| <img src="../../icons/Communication/chat-download-fill.svg" alt="chat-download-fill" width="24" height="24"> | `chat-download-fill` | comment,file,message,save,下载,保存,文件,消息 | `{"icon": "chat-download-fill"}` |
+| <img src="../../icons/Communication/chat-download-line.svg" alt="chat-download-line" width="24" height="24"> | `chat-download-line` | comment,file,message,save,下载,保存,文件,消息 | `{"icon": "chat-download-line"}` |
+| <img src="../../icons/Communication/chat-new-fill.svg" alt="chat-new-fill" width="24" height="24"> | `chat-new-fill` | comment,create,message,reply,start,回复,开始,新建,消息,聊天,评论 | `{"icon": "chat-new-fill"}` |
+| <img src="../../icons/Communication/chat-new-line.svg" alt="chat-new-line" width="24" height="24"> | `chat-new-line` | comment,create,message,reply,start,回复,开始,新建,消息,聊天,评论 | `{"icon": "chat-new-line"}` |
+| <img src="../../icons/Communication/chat-settings-fill.svg" alt="chat-settings-fill" width="24" height="24"> | `chat-settings-fill` | cog,comment,configuration,gear,management,message,options,preferences,setup,偏好,回复,消息,管理,聊天,设置,评论,配置,首选项 | `{"icon": "chat-settings-fill"}` |
+| <img src="../../icons/Communication/chat-settings-line.svg" alt="chat-settings-line" width="24" height="24"> | `chat-settings-line` | cog,comment,configuration,gear,management,message,options,preferences,setup,偏好,回复,消息,管理,聊天,设置,评论,配置,首选项 | `{"icon": "chat-settings-line"}` |
+| <img src="../../icons/Communication/chat-unread-fill.svg" alt="chat-unread-fill" width="24" height="24"> | `chat-unread-fill` | badge,comment,new message,notification,回复,提醒,未读,消息,聊天,评论,通知 | `{"icon": "chat-unread-fill"}` |
+| <img src="../../icons/Communication/chat-unread-line.svg" alt="chat-unread-line" width="24" height="24"> | `chat-unread-line` | badge,comment,new message,notification,回复,提醒,未读,消息,聊天,评论,通知 | `{"icon": "chat-unread-line"}` |
+| <img src="../../icons/Communication/chat-search-fill.svg" alt="chat-search-fill" width="24" height="24"> | `chat-search-fill` | browse,comment,discovery,find,lookup,message,query,zoom,发现,回复,探索,搜索,放大镜,查找,检索,浏览,消息,聊天,评论 | `{"icon": "chat-search-fill"}` |
+| <img src="../../icons/Communication/chat-search-line.svg" alt="chat-search-line" width="24" height="24"> | `chat-search-line` | browse,comment,discovery,find,lookup,message,query,zoom,发现,回复,探索,搜索,放大镜,查找,检索,浏览,消息,聊天,评论 | `{"icon": "chat-search-line"}` |
+| <img src="../../icons/Communication/chat-smile-fill.svg" alt="chat-smile-fill" width="24" height="24"> | `chat-smile-fill` | comment,emoji,happy,message,reply,回复,开心,微笑,消息,聊天,表情,评论 | `{"icon": "chat-smile-fill"}` |
+| <img src="../../icons/Communication/chat-smile-line.svg" alt="chat-smile-line" width="24" height="24"> | `chat-smile-line` | comment,emoji,happy,message,reply,回复,开心,微笑,消息,聊天,表情,评论 | `{"icon": "chat-smile-line"}` |
+| <img src="../../icons/Communication/chat-smile-2-fill.svg" alt="chat-smile-2-fill" width="24" height="24"> | `chat-smile-2-fill` | comment,emoji,happy,message,reply,回复,开心,微笑,消息,聊天,表情,评论 | `{"icon": "chat-smile-2-fill"}` |
+| <img src="../../icons/Communication/chat-smile-2-line.svg" alt="chat-smile-2-line" width="24" height="24"> | `chat-smile-2-line` | comment,emoji,happy,message,reply,回复,开心,微笑,消息,聊天,表情,评论 | `{"icon": "chat-smile-2-line"}` |
+| <img src="../../icons/Communication/chat-smile-ai-fill.svg" alt="chat-smile-ai-fill" width="24" height="24"> | `chat-smile-ai-fill` | artificial intelligence,comment,emoji,message,reply,人工智能,回复,消息,聊天,表情,评论 | `{"icon": "chat-smile-ai-fill"}` |
+| <img src="../../icons/Communication/chat-smile-ai-line.svg" alt="chat-smile-ai-line" width="24" height="24"> | `chat-smile-ai-line` | artificial intelligence,comment,emoji,message,reply,人工智能,回复,消息,聊天,表情,评论 | `{"icon": "chat-smile-ai-line"}` |
+| <img src="../../icons/Communication/chat-smile-3-fill.svg" alt="chat-smile-3-fill" width="24" height="24"> | `chat-smile-3-fill` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-smile-3-fill"}` |
+| <img src="../../icons/Communication/chat-smile-3-line.svg" alt="chat-smile-3-line" width="24" height="24"> | `chat-smile-3-line` | comment,message,reply,回复,消息,聊天,评论 | `{"icon": "chat-smile-3-line"}` |
+| <img src="../../icons/Communication/chat-smile-ai-3-fill.svg" alt="chat-smile-ai-3-fill" width="24" height="24"> | `chat-smile-ai-3-fill` | artificial intelligence,comment,happy,message,reply,robot,人工智能,回复,开心,微笑,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-smile-ai-3-fill"}` |
+| <img src="../../icons/Communication/chat-smile-ai-3-line.svg" alt="chat-smile-ai-3-line" width="24" height="24"> | `chat-smile-ai-3-line` | artificial intelligence,comment,happy,message,reply,robot,人工智能,回复,开心,微笑,智能助手,机器人,消息,聊天,评论 | `{"icon": "chat-smile-ai-3-line"}` |
+| <img src="../../icons/Communication/chat-heart-fill.svg" alt="chat-heart-fill" width="24" height="24"> | `chat-heart-fill` | collection,comment,favorite,like,love,message,passion,reply,喜欢,回复,收藏,消息,点赞,热情,爱心,聊天,评论 | `{"icon": "chat-heart-fill"}` |
+| <img src="../../icons/Communication/chat-heart-line.svg" alt="chat-heart-line" width="24" height="24"> | `chat-heart-line` | collection,comment,favorite,like,love,message,passion,reply,喜欢,回复,收藏,消息,点赞,热情,爱心,聊天,评论 | `{"icon": "chat-heart-line"}` |
+| <img src="../../icons/Communication/chat-off-fill.svg" alt="chat-off-fill" width="24" height="24"> | `chat-off-fill` | comment,message,reply,slash,关闭,回复,消息,禁止,聊天,评论 | `{"icon": "chat-off-fill"}` |
+| <img src="../../icons/Communication/chat-off-line.svg" alt="chat-off-line" width="24" height="24"> | `chat-off-line` | comment,message,reply,slash,关闭,回复,消息,禁止,聊天,评论 | `{"icon": "chat-off-line"}` |
+| <img src="../../icons/Communication/feedback-fill.svg" alt="feedback-fill" width="24" height="24"> | `feedback-fill` | comment,message,opinion,review,反馈,回复,意见,消息,聊天,评价,评论 | `{"icon": "feedback-fill"}` |
+| <img src="../../icons/Communication/feedback-line.svg" alt="feedback-line" width="24" height="24"> | `feedback-line` | comment,message,opinion,review,反馈,回复,意见,消息,聊天,评价,评论 | `{"icon": "feedback-line"}` |
+| <img src="../../icons/Communication/discuss-fill.svg" alt="discuss-fill" width="24" height="24"> | `discuss-fill` | comment,conversation,group chat,message,reply,回复,对话,消息,群聊,聊天,讨论,评论 | `{"icon": "discuss-fill"}` |
+| <img src="../../icons/Communication/discuss-line.svg" alt="discuss-line" width="24" height="24"> | `discuss-line` | comment,conversation,group chat,message,reply,回复,对话,消息,群聊,聊天,讨论,评论 | `{"icon": "discuss-line"}` |
+| <img src="../../icons/Communication/question-answer-fill.svg" alt="question-answer-fill" width="24" height="24"> | `question-answer-fill` | Q&A,comment,faq,help,message,reply,support,回复,帮助,常见问题,消息,疑问,群聊,聊天,讨论,评论,问答 | `{"icon": "question-answer-fill"}` |
+| <img src="../../icons/Communication/question-answer-line.svg" alt="question-answer-line" width="24" height="24"> | `question-answer-line` | Q&A,comment,faq,help,message,reply,support,回复,帮助,常见问题,消息,疑问,群聊,聊天,讨论,评论,问答 | `{"icon": "question-answer-line"}` |
+| <img src="../../icons/Communication/questionnaire-fill.svg" alt="questionnaire-fill" width="24" height="24"> | `questionnaire-fill` | comment,form,help,message,survey,回复,帮助,消息,聊天,表单,讨论,评论,调查问卷 | `{"icon": "questionnaire-fill"}` |
+| <img src="../../icons/Communication/questionnaire-line.svg" alt="questionnaire-line" width="24" height="24"> | `questionnaire-line` | comment,form,help,message,survey,回复,帮助,消息,聊天,表单,讨论,评论,调查问卷 | `{"icon": "questionnaire-line"}` |
+| <img src="../../icons/Communication/video-chat-fill.svg" alt="video-chat-fill" width="24" height="24"> | `video-chat-fill` | comment,conference,film,media,message,movie,record,video call,会议,录制,影片,消息,电影,视频聊天,视频通话 | `{"icon": "video-chat-fill"}` |
+| <img src="../../icons/Communication/video-chat-line.svg" alt="video-chat-line" width="24" height="24"> | `video-chat-line` | comment,conference,film,media,message,movie,record,video call,会议,录制,影片,消息,电影,视频聊天,视频通话 | `{"icon": "video-chat-line"}` |
+| <img src="../../icons/Communication/chat-voice-fill.svg" alt="chat-voice-fill" width="24" height="24"> | `chat-voice-fill` | audio,comment,voice message,录音,语音消息,音频 | `{"icon": "chat-voice-fill"}` |
+| <img src="../../icons/Communication/chat-voice-line.svg" alt="chat-voice-line" width="24" height="24"> | `chat-voice-line` | audio,comment,voice message,录音,语音消息,音频 | `{"icon": "chat-voice-line"}` |
+| <img src="../../icons/Communication/chat-voice-ai-fill.svg" alt="chat-voice-ai-fill" width="24" height="24"> | `chat-voice-ai-fill` | artificial intelligence,comment,voice message,人工智能,智能语音,语音消息 | `{"icon": "chat-voice-ai-fill"}` |
+| <img src="../../icons/Communication/chat-voice-ai-line.svg" alt="chat-voice-ai-line" width="24" height="24"> | `chat-voice-ai-line` | artificial intelligence,comment,voice message,人工智能,智能语音,语音消息 | `{"icon": "chat-voice-ai-line"}` |
+| <img src="../../icons/Communication/chat-quote-fill.svg" alt="chat-quote-fill" width="24" height="24"> | `chat-quote-fill` | citation,comment,message,reference,reply,参考,引用回复,消息 | `{"icon": "chat-quote-fill"}` |
+| <img src="../../icons/Communication/chat-quote-line.svg" alt="chat-quote-line" width="24" height="24"> | `chat-quote-line` | citation,comment,message,reference,reply,参考,引用回复,消息 | `{"icon": "chat-quote-line"}` |
+| <img src="../../icons/Communication/chat-follow-up-fill.svg" alt="chat-follow-up-fill" width="24" height="24"> | `chat-follow-up-fill` | +1,comment,continue,message,reply,消息,继续,跟帖,跟进 | `{"icon": "chat-follow-up-fill"}` |
+| <img src="../../icons/Communication/chat-follow-up-line.svg" alt="chat-follow-up-line" width="24" height="24"> | `chat-follow-up-line` | +1,comment,continue,message,reply,消息,继续,跟帖,跟进 | `{"icon": "chat-follow-up-line"}` |
+| <img src="../../icons/Communication/chat-poll-fill.svg" alt="chat-poll-fill" width="24" height="24"> | `chat-poll-fill` | election,message,questionnaire,survey,vote,投票,民调,消息,选举,问卷调查 | `{"icon": "chat-poll-fill"}` |
+| <img src="../../icons/Communication/chat-poll-line.svg" alt="chat-poll-line" width="24" height="24"> | `chat-poll-line` | election,message,questionnaire,survey,vote,投票,民调,消息,选举,问卷调查 | `{"icon": "chat-poll-line"}` |
+| <img src="../../icons/Communication/chat-history-fill.svg" alt="chat-history-fill" width="24" height="24"> | `chat-history-fill` | archive,log,message,record,历史消息,存档,日志,消息记录 | `{"icon": "chat-history-fill"}` |
+| <img src="../../icons/Communication/chat-history-line.svg" alt="chat-history-line" width="24" height="24"> | `chat-history-line` | archive,log,message,record,历史消息,存档,日志,消息记录 | `{"icon": "chat-history-line"}` |
+| <img src="../../icons/Communication/chat-private-fill.svg" alt="chat-private-fill" width="24" height="24"> | `chat-private-fill` | confidential,message,secret,保密,密聊,机密,私密消息 | `{"icon": "chat-private-fill"}` |
+| <img src="../../icons/Communication/chat-private-line.svg" alt="chat-private-line" width="24" height="24"> | `chat-private-line` | confidential,message,secret,保密,密聊,机密,私密消息 | `{"icon": "chat-private-line"}` |
+| <img src="../../icons/Communication/chat-thread-fill.svg" alt="chat-thread-fill" width="24" height="24"> | `chat-thread-fill` | discussion,hashtag,topic,主题,井号,哈希,讨论串,话题 | `{"icon": "chat-thread-fill"}` |
+| <img src="../../icons/Communication/chat-thread-line.svg" alt="chat-thread-line" width="24" height="24"> | `chat-thread-line` | discussion,hashtag,topic,主题,井号,哈希,讨论串,话题 | `{"icon": "chat-thread-line"}` |
+| <img src="../../icons/Communication/speak-fill.svg" alt="speak-fill" width="24" height="24"> | `speak-fill` | audio,speech,talk,voice,声音,对话,演讲,讲话 | `{"icon": "speak-fill"}` |
+| <img src="../../icons/Communication/speak-line.svg" alt="speak-line" width="24" height="24"> | `speak-line` | audio,speech,talk,voice,声音,对话,演讲,讲话 | `{"icon": "speak-line"}` |
+| <img src="../../icons/Communication/speak-ai-fill.svg" alt="speak-ai-fill" width="24" height="24"> | `speak-ai-fill` | artificial intelligence,speech,talk,voice,人工智能,声音,智能对话,讲话 | `{"icon": "speak-ai-fill"}` |
+| <img src="../../icons/Communication/speak-ai-line.svg" alt="speak-ai-line" width="24" height="24"> | `speak-ai-line` | artificial intelligence,speech,talk,voice,人工智能,声音,智能对话,讲话 | `{"icon": "speak-ai-line"}` |
+| <img src="../../icons/Communication/emoji-sticker-fill.svg" alt="emoji-sticker-fill" width="24" height="24"> | `emoji-sticker-fill` | decoration,emoticon,face,符号,表情,装饰,贴纸 | `{"icon": "emoji-sticker-fill"}` |
+| <img src="../../icons/Communication/emoji-sticker-line.svg" alt="emoji-sticker-line" width="24" height="24"> | `emoji-sticker-line` | decoration,emoticon,face,符号,表情,装饰,贴纸 | `{"icon": "emoji-sticker-line"}` |
+| <img src="../../icons/Communication/text-to-speech-fill.svg" alt="text-to-speech-fill" width="24" height="24"> | `text-to-speech-fill` | audio,read aloud,speech synthesis,tts,voice,播报,文字转语音,朗读,语音合成 | `{"icon": "text-to-speech-fill"}` |
+| <img src="../../icons/Communication/text-to-speech-line.svg" alt="text-to-speech-line" width="24" height="24"> | `text-to-speech-line` | audio,read aloud,speech synthesis,tts,voice,播报,文字转语音,朗读,语音合成 | `{"icon": "text-to-speech-line"}` |
+| <img src="../../icons/Communication/speech-to-text-fill.svg" alt="speech-to-text-fill" width="24" height="24"> | `speech-to-text-fill` | asr,dictation,stt,voice recognition,口述,听写,语音识别,语音转文字 | `{"icon": "speech-to-text-fill"}` |
+| <img src="../../icons/Communication/speech-to-text-line.svg" alt="speech-to-text-line" width="24" height="24"> | `speech-to-text-line` | asr,dictation,stt,voice recognition,口述,听写,语音识别,语音转文字 | `{"icon": "speech-to-text-line"}` |

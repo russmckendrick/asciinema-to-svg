@@ -4,36 +4,69 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `bug` | anomaly,defect,error,fault,fix,glitch,issue,patch,problem,regression,tracker,triage,修复,分诊,回归,异常,故障,漏洞,缺陷,补丁,跟踪,错误,问题 | `{"icon": "bug"}` |
-| - | `bug-2` | anomaly,defect,error,fault,fix,glitch,issue,patch,problem,regression,tracker,triage,修复,分诊,回归,异常,故障,漏洞,缺陷,补丁,跟踪,错误,问题 | `{"icon": "bug-2"}` |
-| - | `code` | build,coding,compile,debug,dev,engineer,programmer,programming,run,script,snippet,source code,代码片段,工程师,开发者,构建,源码,程序员,编码,编程,编译,脚本,调试,运行 | `{"icon": "code"}` |
-| - | `code-s` | build,coding,compile,debug,dev,engineer,programmer,programming,run,script,snippet,source code,代码片段,工程师,开发者,构建,源码,程序员,编码,编程,编译,脚本,调试,运行 | `{"icon": "code-s"}` |
-| - | `code-ai` | AI编程,LLM,ai assistant,ai coding,auto generate,autocompletion,code generation,copilot,pair programming,代码助手,代码生成,大型语言模型,智能体,智能助手,智能编码,结对编程,自动生成,自动补全 | `{"icon": "code-ai"}` |
-| - | `code-s-slash` | comment out,disabled,turn off,停用,关闭代码,注释掉,禁用 | `{"icon": "code-s-slash"}` |
-| - | `code-box` | code block,code fence,fenced,preformatted,snippet,syntax highlight,代码块,代码高亮,围栏代码,片段,语法高亮,预格式化 | `{"icon": "code-box"}` |
-| - | `terminal-box` | bash,cli,cmd,command line,console,powershell,prompt,tty,zsh,命令提示符,命令行,控制台,终端仿真 | `{"icon": "terminal-box"}` |
-| - | `terminal` | bash,cli,cmd,command line,console,powershell,prompt,tty,zsh,命令提示符,命令行,控制台,终端仿真 | `{"icon": "terminal"}` |
-| - | `terminal-window` | cli,console,prompt,shell,tabbed terminal,ui,命令行,提示符,标签页,界面,终端窗口,选项卡 | `{"icon": "terminal-window"}` |
-| - | `parentheses` | code,delimiters,grouping,math,round brackets,优先级,分组,圆括号,小括号,括号匹配,界定符 | `{"icon": "parentheses"}` |
-| - | `brackets` | array,code,delimiters,grouping,indexing,math,square brackets,中括号,分组,数组,方括号,界定符,索引 | `{"icon": "brackets"}` |
-| - | `braces` | block,code,curly braces,delimiters,grouping,math,object,scope,代码块,作用域,分组,大括号,对象,界定符,花括号 | `{"icon": "braces"}` |
-| - | `command` | cmd,command key,hotkey,meta,shortcut key,⌘,命令键,快捷键,热键,组合键,花键,苹果键 | `{"icon": "command"}` |
-| - | `cursor` | arrow,caret,click,hover,mouse pointer,selection,光标,悬停,指针,插入符,点击,选择,鼠标 | `{"icon": "cursor"}` |
-| - | `git-commit` | check-in,checkpoint,commit message,hash,history point,push,savepoint,保存点,历史,推送,提交记录,提交说明,检查点 | `{"icon": "git-commit"}` |
-| - | `git-pull-request` | PR,code review,merge request,pull request,代码评审,合并申请,合并请求,审查,拉取请求 | `{"icon": "git-pull-request"}` |
-| - | `git-merge` | branch,combine,merge conflict,rebase,resolve conflicts,冲突解决,分支,变基,合并冲突 | `{"icon": "git-merge"}` |
-| - | `git-branch` | diverge,feature branch,main,split,主分支,分叉,功能分支,拆分,支线 | `{"icon": "git-branch"}` |
-| - | `git-fork` | branch,clone,copy,duplicate,克隆,分支,复制,派生仓库 | `{"icon": "git-fork"}` |
-| - | `git-close-pull-request` | cancel,close pull request,cross,decline,exit,quit,停止,关闭PR,关闭请求,取消,拒绝,退出 | `{"icon": "git-close-pull-request"}` |
-| - | `git-pr-draft` | draft PR,pull request,拉取请求,草稿PR | `{"icon": "git-pr-draft"}` |
-| - | `issues` | issue,问题,问题记录 | `{"icon": "issues"}` |
-| - | `issues-reopen` | reopen,重新打开,重新打开问题,重新打开问题记录 | `{"icon": "issues-reopen"}` |
-| - | `git-repository` | bookmark,repo,vcs,version control,书签,仓库,代码库,版本库,版本控制 | `{"icon": "git-repository"}` |
-| - | `git-repository-commits` | book,history,log,upload,仓库,历史,提交记录,日志 | `{"icon": "git-repository-commits"}` |
-| - | `git-repository-private` | access control,locked,private repo,secure,加锁,私人仓库,私密仓库,私有仓库,访问控制,锁定 | `{"icon": "git-repository-private"}` |
-| - | `html5` | canvas,frontend,h5,html,markup,semantic,video,web,前端,标记语言,画布,视频,语义化,超文本 | `{"icon": "html5"}` |
-| - | `css3` | css,flexbox,grid,layout,less,sass,selectors,stylesheet,web,层叠样式表,弹性布局,网格,选择器,预处理器 | `{"icon": "css3"}` |
-| - | `javascript` | ECMAScript,async,dom,es6,frontend,js,node,react,typescript,web,前端,异步,脚本,语言 | `{"icon": "javascript"}` |
-| - | `puzzle` | add-on,extension,integration,modular,module,plugin system,plugins,加载项,扩展,拼图,插件系统,模块化,集成 | `{"icon": "puzzle"}` |
-| - | `puzzle-2` | add-on,extension,integration,modular,module,plugin system,plugins,加载项,扩展,拼图,插件系统,模块化,集成 | `{"icon": "puzzle-2"}` |
-| - | `php` | Web开发,backend,lamp,language,laravel,programming,scripting,server side,web development,wordpress,后端,拉拉维尔,服务器端,编程,网页开发,脚本,语言 | `{"icon": "php"}` |
+| <img src="../../icons/Development/bug-fill.svg" alt="bug-fill" width="24" height="24"> | `bug-fill` | anomaly,defect,error,fault,fix,glitch,issue,patch,problem,regression,tracker,triage,修复,分诊,回归,异常,故障,漏洞,缺陷,补丁,跟踪,错误,问题 | `{"icon": "bug-fill"}` |
+| <img src="../../icons/Development/bug-line.svg" alt="bug-line" width="24" height="24"> | `bug-line` | anomaly,defect,error,fault,fix,glitch,issue,patch,problem,regression,tracker,triage,修复,分诊,回归,异常,故障,漏洞,缺陷,补丁,跟踪,错误,问题 | `{"icon": "bug-line"}` |
+| <img src="../../icons/Development/bug-2-fill.svg" alt="bug-2-fill" width="24" height="24"> | `bug-2-fill` | anomaly,defect,error,fault,fix,glitch,issue,patch,problem,regression,tracker,triage,修复,分诊,回归,异常,故障,漏洞,缺陷,补丁,跟踪,错误,问题 | `{"icon": "bug-2-fill"}` |
+| <img src="../../icons/Development/bug-2-line.svg" alt="bug-2-line" width="24" height="24"> | `bug-2-line` | anomaly,defect,error,fault,fix,glitch,issue,patch,problem,regression,tracker,triage,修复,分诊,回归,异常,故障,漏洞,缺陷,补丁,跟踪,错误,问题 | `{"icon": "bug-2-line"}` |
+| <img src="../../icons/Development/code-fill.svg" alt="code-fill" width="24" height="24"> | `code-fill` | build,coding,compile,debug,dev,engineer,programmer,programming,run,script,snippet,source code,代码片段,工程师,开发者,构建,源码,程序员,编码,编程,编译,脚本,调试,运行 | `{"icon": "code-fill"}` |
+| <img src="../../icons/Development/code-line.svg" alt="code-line" width="24" height="24"> | `code-line` | build,coding,compile,debug,dev,engineer,programmer,programming,run,script,snippet,source code,代码片段,工程师,开发者,构建,源码,程序员,编码,编程,编译,脚本,调试,运行 | `{"icon": "code-line"}` |
+| <img src="../../icons/Development/code-s-fill.svg" alt="code-s-fill" width="24" height="24"> | `code-s-fill` | build,coding,compile,debug,dev,engineer,programmer,programming,run,script,snippet,source code,代码片段,工程师,开发者,构建,源码,程序员,编码,编程,编译,脚本,调试,运行 | `{"icon": "code-s-fill"}` |
+| <img src="../../icons/Development/code-s-line.svg" alt="code-s-line" width="24" height="24"> | `code-s-line` | build,coding,compile,debug,dev,engineer,programmer,programming,run,script,snippet,source code,代码片段,工程师,开发者,构建,源码,程序员,编码,编程,编译,脚本,调试,运行 | `{"icon": "code-s-line"}` |
+| <img src="../../icons/Development/code-ai-fill.svg" alt="code-ai-fill" width="24" height="24"> | `code-ai-fill` | AI编程,LLM,ai assistant,ai coding,auto generate,autocompletion,code generation,copilot,pair programming,代码助手,代码生成,大型语言模型,智能体,智能助手,智能编码,结对编程,自动生成,自动补全 | `{"icon": "code-ai-fill"}` |
+| <img src="../../icons/Development/code-ai-line.svg" alt="code-ai-line" width="24" height="24"> | `code-ai-line` | AI编程,LLM,ai assistant,ai coding,auto generate,autocompletion,code generation,copilot,pair programming,代码助手,代码生成,大型语言模型,智能体,智能助手,智能编码,结对编程,自动生成,自动补全 | `{"icon": "code-ai-line"}` |
+| <img src="../../icons/Development/code-s-slash-fill.svg" alt="code-s-slash-fill" width="24" height="24"> | `code-s-slash-fill` | comment out,disabled,turn off,停用,关闭代码,注释掉,禁用 | `{"icon": "code-s-slash-fill"}` |
+| <img src="../../icons/Development/code-s-slash-line.svg" alt="code-s-slash-line" width="24" height="24"> | `code-s-slash-line` | comment out,disabled,turn off,停用,关闭代码,注释掉,禁用 | `{"icon": "code-s-slash-line"}` |
+| <img src="../../icons/Development/code-box-fill.svg" alt="code-box-fill" width="24" height="24"> | `code-box-fill` | code block,code fence,fenced,preformatted,snippet,syntax highlight,代码块,代码高亮,围栏代码,片段,语法高亮,预格式化 | `{"icon": "code-box-fill"}` |
+| <img src="../../icons/Development/code-box-line.svg" alt="code-box-line" width="24" height="24"> | `code-box-line` | code block,code fence,fenced,preformatted,snippet,syntax highlight,代码块,代码高亮,围栏代码,片段,语法高亮,预格式化 | `{"icon": "code-box-line"}` |
+| <img src="../../icons/Development/terminal-box-fill.svg" alt="terminal-box-fill" width="24" height="24"> | `terminal-box-fill` | bash,cli,cmd,command line,console,powershell,prompt,tty,zsh,命令提示符,命令行,控制台,终端仿真 | `{"icon": "terminal-box-fill"}` |
+| <img src="../../icons/Development/terminal-box-line.svg" alt="terminal-box-line" width="24" height="24"> | `terminal-box-line` | bash,cli,cmd,command line,console,powershell,prompt,tty,zsh,命令提示符,命令行,控制台,终端仿真 | `{"icon": "terminal-box-line"}` |
+| <img src="../../icons/Development/terminal-fill.svg" alt="terminal-fill" width="24" height="24"> | `terminal-fill` | bash,cli,cmd,command line,console,powershell,prompt,tty,zsh,命令提示符,命令行,控制台,终端仿真 | `{"icon": "terminal-fill"}` |
+| <img src="../../icons/Development/terminal-line.svg" alt="terminal-line" width="24" height="24"> | `terminal-line` | bash,cli,cmd,command line,console,powershell,prompt,tty,zsh,命令提示符,命令行,控制台,终端仿真 | `{"icon": "terminal-line"}` |
+| <img src="../../icons/Development/terminal-window-fill.svg" alt="terminal-window-fill" width="24" height="24"> | `terminal-window-fill` | cli,console,prompt,shell,tabbed terminal,ui,命令行,提示符,标签页,界面,终端窗口,选项卡 | `{"icon": "terminal-window-fill"}` |
+| <img src="../../icons/Development/terminal-window-line.svg" alt="terminal-window-line" width="24" height="24"> | `terminal-window-line` | cli,console,prompt,shell,tabbed terminal,ui,命令行,提示符,标签页,界面,终端窗口,选项卡 | `{"icon": "terminal-window-line"}` |
+| <img src="../../icons/Development/parentheses-fill.svg" alt="parentheses-fill" width="24" height="24"> | `parentheses-fill` | code,delimiters,grouping,math,round brackets,优先级,分组,圆括号,小括号,括号匹配,界定符 | `{"icon": "parentheses-fill"}` |
+| <img src="../../icons/Development/parentheses-line.svg" alt="parentheses-line" width="24" height="24"> | `parentheses-line` | code,delimiters,grouping,math,round brackets,优先级,分组,圆括号,小括号,括号匹配,界定符 | `{"icon": "parentheses-line"}` |
+| <img src="../../icons/Development/brackets-fill.svg" alt="brackets-fill" width="24" height="24"> | `brackets-fill` | array,code,delimiters,grouping,indexing,math,square brackets,中括号,分组,数组,方括号,界定符,索引 | `{"icon": "brackets-fill"}` |
+| <img src="../../icons/Development/brackets-line.svg" alt="brackets-line" width="24" height="24"> | `brackets-line` | array,code,delimiters,grouping,indexing,math,square brackets,中括号,分组,数组,方括号,界定符,索引 | `{"icon": "brackets-line"}` |
+| <img src="../../icons/Development/braces-fill.svg" alt="braces-fill" width="24" height="24"> | `braces-fill` | block,code,curly braces,delimiters,grouping,math,object,scope,代码块,作用域,分组,大括号,对象,界定符,花括号 | `{"icon": "braces-fill"}` |
+| <img src="../../icons/Development/braces-line.svg" alt="braces-line" width="24" height="24"> | `braces-line` | block,code,curly braces,delimiters,grouping,math,object,scope,代码块,作用域,分组,大括号,对象,界定符,花括号 | `{"icon": "braces-line"}` |
+| <img src="../../icons/Development/command-fill.svg" alt="command-fill" width="24" height="24"> | `command-fill` | cmd,command key,hotkey,meta,shortcut key,⌘,命令键,快捷键,热键,组合键,花键,苹果键 | `{"icon": "command-fill"}` |
+| <img src="../../icons/Development/command-line.svg" alt="command-line" width="24" height="24"> | `command-line` | cmd,command key,hotkey,meta,shortcut key,⌘,命令键,快捷键,热键,组合键,花键,苹果键 | `{"icon": "command-line"}` |
+| <img src="../../icons/Development/cursor-fill.svg" alt="cursor-fill" width="24" height="24"> | `cursor-fill` | arrow,caret,click,hover,mouse pointer,selection,光标,悬停,指针,插入符,点击,选择,鼠标 | `{"icon": "cursor-fill"}` |
+| <img src="../../icons/Development/cursor-line.svg" alt="cursor-line" width="24" height="24"> | `cursor-line` | arrow,caret,click,hover,mouse pointer,selection,光标,悬停,指针,插入符,点击,选择,鼠标 | `{"icon": "cursor-line"}` |
+| <img src="../../icons/Development/git-commit-fill.svg" alt="git-commit-fill" width="24" height="24"> | `git-commit-fill` | check-in,checkpoint,commit message,hash,history point,push,savepoint,保存点,历史,推送,提交记录,提交说明,检查点 | `{"icon": "git-commit-fill"}` |
+| <img src="../../icons/Development/git-commit-line.svg" alt="git-commit-line" width="24" height="24"> | `git-commit-line` | check-in,checkpoint,commit message,hash,history point,push,savepoint,保存点,历史,推送,提交记录,提交说明,检查点 | `{"icon": "git-commit-line"}` |
+| <img src="../../icons/Development/git-pull-request-fill.svg" alt="git-pull-request-fill" width="24" height="24"> | `git-pull-request-fill` | PR,code review,merge request,pull request,代码评审,合并申请,合并请求,审查,拉取请求 | `{"icon": "git-pull-request-fill"}` |
+| <img src="../../icons/Development/git-pull-request-line.svg" alt="git-pull-request-line" width="24" height="24"> | `git-pull-request-line` | PR,code review,merge request,pull request,代码评审,合并申请,合并请求,审查,拉取请求 | `{"icon": "git-pull-request-line"}` |
+| <img src="../../icons/Development/git-merge-fill.svg" alt="git-merge-fill" width="24" height="24"> | `git-merge-fill` | branch,combine,merge conflict,rebase,resolve conflicts,冲突解决,分支,变基,合并冲突 | `{"icon": "git-merge-fill"}` |
+| <img src="../../icons/Development/git-merge-line.svg" alt="git-merge-line" width="24" height="24"> | `git-merge-line` | branch,combine,merge conflict,rebase,resolve conflicts,冲突解决,分支,变基,合并冲突 | `{"icon": "git-merge-line"}` |
+| <img src="../../icons/Development/git-branch-fill.svg" alt="git-branch-fill" width="24" height="24"> | `git-branch-fill` | diverge,feature branch,main,split,主分支,分叉,功能分支,拆分,支线 | `{"icon": "git-branch-fill"}` |
+| <img src="../../icons/Development/git-branch-line.svg" alt="git-branch-line" width="24" height="24"> | `git-branch-line` | diverge,feature branch,main,split,主分支,分叉,功能分支,拆分,支线 | `{"icon": "git-branch-line"}` |
+| <img src="../../icons/Development/git-fork-fill.svg" alt="git-fork-fill" width="24" height="24"> | `git-fork-fill` | branch,clone,copy,duplicate,克隆,分支,复制,派生仓库 | `{"icon": "git-fork-fill"}` |
+| <img src="../../icons/Development/git-fork-line.svg" alt="git-fork-line" width="24" height="24"> | `git-fork-line` | branch,clone,copy,duplicate,克隆,分支,复制,派生仓库 | `{"icon": "git-fork-line"}` |
+| <img src="../../icons/Development/git-close-pull-request-fill.svg" alt="git-close-pull-request-fill" width="24" height="24"> | `git-close-pull-request-fill` | cancel,close pull request,cross,decline,exit,quit,停止,关闭PR,关闭请求,取消,拒绝,退出 | `{"icon": "git-close-pull-request-fill"}` |
+| <img src="../../icons/Development/git-close-pull-request-line.svg" alt="git-close-pull-request-line" width="24" height="24"> | `git-close-pull-request-line` | cancel,close pull request,cross,decline,exit,quit,停止,关闭PR,关闭请求,取消,拒绝,退出 | `{"icon": "git-close-pull-request-line"}` |
+| <img src="../../icons/Development/git-pr-draft-fill.svg" alt="git-pr-draft-fill" width="24" height="24"> | `git-pr-draft-fill` | draft PR,pull request,拉取请求,草稿PR | `{"icon": "git-pr-draft-fill"}` |
+| <img src="../../icons/Development/git-pr-draft-line.svg" alt="git-pr-draft-line" width="24" height="24"> | `git-pr-draft-line` | draft PR,pull request,拉取请求,草稿PR | `{"icon": "git-pr-draft-line"}` |
+| <img src="../../icons/Development/issues-fill.svg" alt="issues-fill" width="24" height="24"> | `issues-fill` | issue,问题,问题记录 | `{"icon": "issues-fill"}` |
+| <img src="../../icons/Development/issues-line.svg" alt="issues-line" width="24" height="24"> | `issues-line` | issue,问题,问题记录 | `{"icon": "issues-line"}` |
+| <img src="../../icons/Development/issues-reopen-fill.svg" alt="issues-reopen-fill" width="24" height="24"> | `issues-reopen-fill` | reopen,重新打开,重新打开问题,重新打开问题记录 | `{"icon": "issues-reopen-fill"}` |
+| <img src="../../icons/Development/issues-reopen-line.svg" alt="issues-reopen-line" width="24" height="24"> | `issues-reopen-line` | reopen,重新打开,重新打开问题,重新打开问题记录 | `{"icon": "issues-reopen-line"}` |
+| <img src="../../icons/Development/git-repository-fill.svg" alt="git-repository-fill" width="24" height="24"> | `git-repository-fill` | bookmark,repo,vcs,version control,书签,仓库,代码库,版本库,版本控制 | `{"icon": "git-repository-fill"}` |
+| <img src="../../icons/Development/git-repository-line.svg" alt="git-repository-line" width="24" height="24"> | `git-repository-line` | bookmark,repo,vcs,version control,书签,仓库,代码库,版本库,版本控制 | `{"icon": "git-repository-line"}` |
+| <img src="../../icons/Development/git-repository-commits-fill.svg" alt="git-repository-commits-fill" width="24" height="24"> | `git-repository-commits-fill` | book,history,log,upload,仓库,历史,提交记录,日志 | `{"icon": "git-repository-commits-fill"}` |
+| <img src="../../icons/Development/git-repository-commits-line.svg" alt="git-repository-commits-line" width="24" height="24"> | `git-repository-commits-line` | book,history,log,upload,仓库,历史,提交记录,日志 | `{"icon": "git-repository-commits-line"}` |
+| <img src="../../icons/Development/git-repository-private-fill.svg" alt="git-repository-private-fill" width="24" height="24"> | `git-repository-private-fill` | access control,locked,private repo,secure,加锁,私人仓库,私密仓库,私有仓库,访问控制,锁定 | `{"icon": "git-repository-private-fill"}` |
+| <img src="../../icons/Development/git-repository-private-line.svg" alt="git-repository-private-line" width="24" height="24"> | `git-repository-private-line` | access control,locked,private repo,secure,加锁,私人仓库,私密仓库,私有仓库,访问控制,锁定 | `{"icon": "git-repository-private-line"}` |
+| <img src="../../icons/Development/html5-fill.svg" alt="html5-fill" width="24" height="24"> | `html5-fill` | canvas,frontend,h5,html,markup,semantic,video,web,前端,标记语言,画布,视频,语义化,超文本 | `{"icon": "html5-fill"}` |
+| <img src="../../icons/Development/html5-line.svg" alt="html5-line" width="24" height="24"> | `html5-line` | canvas,frontend,h5,html,markup,semantic,video,web,前端,标记语言,画布,视频,语义化,超文本 | `{"icon": "html5-line"}` |
+| <img src="../../icons/Development/css3-fill.svg" alt="css3-fill" width="24" height="24"> | `css3-fill` | css,flexbox,grid,layout,less,sass,selectors,stylesheet,web,层叠样式表,弹性布局,网格,选择器,预处理器 | `{"icon": "css3-fill"}` |
+| <img src="../../icons/Development/css3-line.svg" alt="css3-line" width="24" height="24"> | `css3-line` | css,flexbox,grid,layout,less,sass,selectors,stylesheet,web,层叠样式表,弹性布局,网格,选择器,预处理器 | `{"icon": "css3-line"}` |
+| <img src="../../icons/Development/javascript-fill.svg" alt="javascript-fill" width="24" height="24"> | `javascript-fill` | ECMAScript,async,dom,es6,frontend,js,node,react,typescript,web,前端,异步,脚本,语言 | `{"icon": "javascript-fill"}` |
+| <img src="../../icons/Development/javascript-line.svg" alt="javascript-line" width="24" height="24"> | `javascript-line` | ECMAScript,async,dom,es6,frontend,js,node,react,typescript,web,前端,异步,脚本,语言 | `{"icon": "javascript-line"}` |
+| <img src="../../icons/Development/puzzle-fill.svg" alt="puzzle-fill" width="24" height="24"> | `puzzle-fill` | add-on,extension,integration,modular,module,plugin system,plugins,加载项,扩展,拼图,插件系统,模块化,集成 | `{"icon": "puzzle-fill"}` |
+| <img src="../../icons/Development/puzzle-line.svg" alt="puzzle-line" width="24" height="24"> | `puzzle-line` | add-on,extension,integration,modular,module,plugin system,plugins,加载项,扩展,拼图,插件系统,模块化,集成 | `{"icon": "puzzle-line"}` |
+| <img src="../../icons/Development/puzzle-2-fill.svg" alt="puzzle-2-fill" width="24" height="24"> | `puzzle-2-fill` | add-on,extension,integration,modular,module,plugin system,plugins,加载项,扩展,拼图,插件系统,模块化,集成 | `{"icon": "puzzle-2-fill"}` |
+| <img src="../../icons/Development/puzzle-2-line.svg" alt="puzzle-2-line" width="24" height="24"> | `puzzle-2-line` | add-on,extension,integration,modular,module,plugin system,plugins,加载项,扩展,拼图,插件系统,模块化,集成 | `{"icon": "puzzle-2-line"}` |
+| <img src="../../icons/Development/php-fill.svg" alt="php-fill" width="24" height="24"> | `php-fill` | Web开发,backend,lamp,language,laravel,programming,scripting,server side,web development,wordpress,后端,拉拉维尔,服务器端,编程,网页开发,脚本,语言 | `{"icon": "php-fill"}` |
+| <img src="../../icons/Development/php-line.svg" alt="php-line" width="24" height="24"> | `php-line` | Web开发,backend,lamp,language,laravel,programming,scripting,server side,web development,wordpress,后端,拉拉维尔,服务器端,编程,网页开发,脚本,语言 | `{"icon": "php-line"}` |

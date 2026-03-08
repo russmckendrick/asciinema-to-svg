@@ -4,34 +4,65 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `home` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home"}` |
-| - | `home-2` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-2"}` |
-| - | `home-3` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-3"}` |
-| - | `home-4` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-4"}` |
-| - | `home-5` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-5"}` |
-| - | `home-6` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-6"}` |
-| - | `home-7` | entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-7"}` |
-| - | `home-8` | entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-8"}` |
-| - | `home-9` | entrance,house,index,main,origin,portal,property,residence,roof,start,主页,住所,入口,家,开始,房子,房顶,索引,起点,门户 | `{"icon": "home-9"}` |
-| - | `home-gear` | configuration,entrance,house,index,main,origin,portal,property,residence,settings,smart home,start,主页,住所,入口,工厂,开始,房子,智能家居,索引,设置,起点,配置,门户 | `{"icon": "home-gear"}` |
-| - | `home-wifi` | connectivity,entrance,index,internet,main,origin,portal,property,residence,smart home,start,wireless,主页,住所,入口,家具,开始,房子,无线网络,智能家居,索引,起点,连接,门户 | `{"icon": "home-wifi"}` |
-| - | `home-smile` | entrance,house,index,main,origin,portal,property,residence,smart home,start,主页,住所,入口,开始,微笑,房子,智能家居,索引,起点,门户 | `{"icon": "home-smile"}` |
-| - | `home-smile-2` | entrance,house,index,main,origin,portal,property,residence,smart home,start,主页,住所,入口,开始,微笑,房子,智能家居,索引,起点,门户 | `{"icon": "home-smile-2"}` |
-| - | `home-heart` | collection,entrance,favorite,house,index,like,love,main,origin,passion,portal,property,residence,start,主页,住所,入口,喜欢,孤儿院,家,开始,房子,收藏,热情,爱心,索引,起点,门户 | `{"icon": "home-heart"}` |
-| - | `home-office` | entrance,index,main,origin,portal,property,remote work,residence,start,telecommuting,workplace,主页,住所,入口,办公室,居家办公,开始,索引,起点,远程工作,门户 | `{"icon": "home-office"}` |
-| - | `building` | city,enterprise,office,企业,写字楼,办公楼,城市 | `{"icon": "building"}` |
-| - | `building-2` | city,construction,enterprise,office,企业,城市,楼 | `{"icon": "building-2"}` |
-| - | `building-3` | enterprise,factory,plant,企业,工厂,楼 | `{"icon": "building-3"}` |
-| - | `building-4` | city,enterprise,office,企业,写字楼,办公楼,城市 | `{"icon": "building-4"}` |
-| - | `hotel` | building,enterprise,office,tavern,企业,写字楼,办公楼,酒店 | `{"icon": "hotel"}` |
-| - | `community` | building,neighborhood,residential,society,住宅区,社会,社区,酒店 | `{"icon": "community"}` |
-| - | `school` | campus,college,education,university,学校,学院,教育,校园 | `{"icon": "school"}` |
-| - | `government` | administration,building,public,公共,大会堂,政府,行政 | `{"icon": "government"}` |
-| - | `bank` | banking,finance,financial institution,savings,交易所,储蓄,金融机构,银行 | `{"icon": "bank"}` |
-| - | `store` | mall,retail,shop,supermarket,商家,商店,店铺,超市 | `{"icon": "store"}` |
-| - | `store-2` | mall,retail,shop,supermarket,商家,商店,店铺,超市 | `{"icon": "store-2"}` |
-| - | `store-3` | mall,retail,shop,supermarket,商家,商店,店铺,超市 | `{"icon": "store-3"}` |
-| - | `hospital` | clinic,healthcare,medical,健康,医疗,医院,诊所 | `{"icon": "hospital"}` |
-| - | `ancient-gate` | architecture,genre,historical,scenic,travel,trip,历史,古代,城门,旅游,旅行,景区 | `{"icon": "ancient-gate"}` |
-| - | `ancient-pavilion` | architecture,genre,historical,scenic,travel,trip,凉亭,历史,古代,旅游,旅行,景区 | `{"icon": "ancient-pavilion"}` |
-| - | `tent` | adventure,camping,outdoor,冒险,帐篷,户外,营地,露营 | `{"icon": "tent"}` |
+| <img src="../../icons/Buildings/home-fill.svg" alt="home-fill" width="24" height="24"> | `home-fill` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-fill"}` |
+| <img src="../../icons/Buildings/home-line.svg" alt="home-line" width="24" height="24"> | `home-line` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-line"}` |
+| <img src="../../icons/Buildings/home-2-fill.svg" alt="home-2-fill" width="24" height="24"> | `home-2-fill` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-2-fill"}` |
+| <img src="../../icons/Buildings/home-2-line.svg" alt="home-2-line" width="24" height="24"> | `home-2-line` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-2-line"}` |
+| <img src="../../icons/Buildings/home-3-fill.svg" alt="home-3-fill" width="24" height="24"> | `home-3-fill` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-3-fill"}` |
+| <img src="../../icons/Buildings/home-3-line.svg" alt="home-3-line" width="24" height="24"> | `home-3-line` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-3-line"}` |
+| <img src="../../icons/Buildings/home-4-fill.svg" alt="home-4-fill" width="24" height="24"> | `home-4-fill` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-4-fill"}` |
+| <img src="../../icons/Buildings/home-4-line.svg" alt="home-4-line" width="24" height="24"> | `home-4-line` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-4-line"}` |
+| <img src="../../icons/Buildings/home-5-fill.svg" alt="home-5-fill" width="24" height="24"> | `home-5-fill` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-5-fill"}` |
+| <img src="../../icons/Buildings/home-5-line.svg" alt="home-5-line" width="24" height="24"> | `home-5-line` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-5-line"}` |
+| <img src="../../icons/Buildings/home-6-fill.svg" alt="home-6-fill" width="24" height="24"> | `home-6-fill` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-6-fill"}` |
+| <img src="../../icons/Buildings/home-6-line.svg" alt="home-6-line" width="24" height="24"> | `home-6-line` | building,entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-6-line"}` |
+| <img src="../../icons/Buildings/home-7-fill.svg" alt="home-7-fill" width="24" height="24"> | `home-7-fill` | entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-7-fill"}` |
+| <img src="../../icons/Buildings/home-7-line.svg" alt="home-7-line" width="24" height="24"> | `home-7-line` | entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-7-line"}` |
+| <img src="../../icons/Buildings/home-8-fill.svg" alt="home-8-fill" width="24" height="24"> | `home-8-fill` | entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-8-fill"}` |
+| <img src="../../icons/Buildings/home-8-line.svg" alt="home-8-line" width="24" height="24"> | `home-8-line` | entrance,house,index,main,origin,portal,property,residence,start,主页,住所,入口,家,开始,房子,索引,起点,门户 | `{"icon": "home-8-line"}` |
+| <img src="../../icons/Buildings/home-9-fill.svg" alt="home-9-fill" width="24" height="24"> | `home-9-fill` | entrance,house,index,main,origin,portal,property,residence,roof,start,主页,住所,入口,家,开始,房子,房顶,索引,起点,门户 | `{"icon": "home-9-fill"}` |
+| <img src="../../icons/Buildings/home-9-line.svg" alt="home-9-line" width="24" height="24"> | `home-9-line` | entrance,house,index,main,origin,portal,property,residence,roof,start,主页,住所,入口,家,开始,房子,房顶,索引,起点,门户 | `{"icon": "home-9-line"}` |
+| <img src="../../icons/Buildings/home-gear-fill.svg" alt="home-gear-fill" width="24" height="24"> | `home-gear-fill` | configuration,entrance,house,index,main,origin,portal,property,residence,settings,smart home,start,主页,住所,入口,工厂,开始,房子,智能家居,索引,设置,起点,配置,门户 | `{"icon": "home-gear-fill"}` |
+| <img src="../../icons/Buildings/home-gear-line.svg" alt="home-gear-line" width="24" height="24"> | `home-gear-line` | configuration,entrance,house,index,main,origin,portal,property,residence,settings,smart home,start,主页,住所,入口,工厂,开始,房子,智能家居,索引,设置,起点,配置,门户 | `{"icon": "home-gear-line"}` |
+| <img src="../../icons/Buildings/home-wifi-fill.svg" alt="home-wifi-fill" width="24" height="24"> | `home-wifi-fill` | connectivity,entrance,index,internet,main,origin,portal,property,residence,smart home,start,wireless,主页,住所,入口,家具,开始,房子,无线网络,智能家居,索引,起点,连接,门户 | `{"icon": "home-wifi-fill"}` |
+| <img src="../../icons/Buildings/home-wifi-line.svg" alt="home-wifi-line" width="24" height="24"> | `home-wifi-line` | connectivity,entrance,index,internet,main,origin,portal,property,residence,smart home,start,wireless,主页,住所,入口,家具,开始,房子,无线网络,智能家居,索引,起点,连接,门户 | `{"icon": "home-wifi-line"}` |
+| <img src="../../icons/Buildings/home-smile-fill.svg" alt="home-smile-fill" width="24" height="24"> | `home-smile-fill` | entrance,house,index,main,origin,portal,property,residence,smart home,start,主页,住所,入口,开始,微笑,房子,智能家居,索引,起点,门户 | `{"icon": "home-smile-fill"}` |
+| <img src="../../icons/Buildings/home-smile-line.svg" alt="home-smile-line" width="24" height="24"> | `home-smile-line` | entrance,house,index,main,origin,portal,property,residence,smart home,start,主页,住所,入口,开始,微笑,房子,智能家居,索引,起点,门户 | `{"icon": "home-smile-line"}` |
+| <img src="../../icons/Buildings/home-smile-2-fill.svg" alt="home-smile-2-fill" width="24" height="24"> | `home-smile-2-fill` | entrance,house,index,main,origin,portal,property,residence,smart home,start,主页,住所,入口,开始,微笑,房子,智能家居,索引,起点,门户 | `{"icon": "home-smile-2-fill"}` |
+| <img src="../../icons/Buildings/home-smile-2-line.svg" alt="home-smile-2-line" width="24" height="24"> | `home-smile-2-line` | entrance,house,index,main,origin,portal,property,residence,smart home,start,主页,住所,入口,开始,微笑,房子,智能家居,索引,起点,门户 | `{"icon": "home-smile-2-line"}` |
+| <img src="../../icons/Buildings/home-heart-fill.svg" alt="home-heart-fill" width="24" height="24"> | `home-heart-fill` | collection,entrance,favorite,house,index,like,love,main,origin,passion,portal,property,residence,start,主页,住所,入口,喜欢,孤儿院,家,开始,房子,收藏,热情,爱心,索引,起点,门户 | `{"icon": "home-heart-fill"}` |
+| <img src="../../icons/Buildings/home-heart-line.svg" alt="home-heart-line" width="24" height="24"> | `home-heart-line` | collection,entrance,favorite,house,index,like,love,main,origin,passion,portal,property,residence,start,主页,住所,入口,喜欢,孤儿院,家,开始,房子,收藏,热情,爱心,索引,起点,门户 | `{"icon": "home-heart-line"}` |
+| <img src="../../icons/Buildings/home-office-fill.svg" alt="home-office-fill" width="24" height="24"> | `home-office-fill` | entrance,index,main,origin,portal,property,remote work,residence,start,telecommuting,workplace,主页,住所,入口,办公室,居家办公,开始,索引,起点,远程工作,门户 | `{"icon": "home-office-fill"}` |
+| <img src="../../icons/Buildings/home-office-line.svg" alt="home-office-line" width="24" height="24"> | `home-office-line` | entrance,index,main,origin,portal,property,remote work,residence,start,telecommuting,workplace,主页,住所,入口,办公室,居家办公,开始,索引,起点,远程工作,门户 | `{"icon": "home-office-line"}` |
+| <img src="../../icons/Buildings/building-fill.svg" alt="building-fill" width="24" height="24"> | `building-fill` | city,enterprise,office,企业,写字楼,办公楼,城市 | `{"icon": "building-fill"}` |
+| <img src="../../icons/Buildings/building-line.svg" alt="building-line" width="24" height="24"> | `building-line` | city,enterprise,office,企业,写字楼,办公楼,城市 | `{"icon": "building-line"}` |
+| <img src="../../icons/Buildings/building-2-fill.svg" alt="building-2-fill" width="24" height="24"> | `building-2-fill` | city,construction,enterprise,office,企业,城市,楼 | `{"icon": "building-2-fill"}` |
+| <img src="../../icons/Buildings/building-2-line.svg" alt="building-2-line" width="24" height="24"> | `building-2-line` | city,construction,enterprise,office,企业,城市,楼 | `{"icon": "building-2-line"}` |
+| <img src="../../icons/Buildings/building-3-fill.svg" alt="building-3-fill" width="24" height="24"> | `building-3-fill` | enterprise,factory,plant,企业,工厂,楼 | `{"icon": "building-3-fill"}` |
+| <img src="../../icons/Buildings/building-3-line.svg" alt="building-3-line" width="24" height="24"> | `building-3-line` | enterprise,factory,plant,企业,工厂,楼 | `{"icon": "building-3-line"}` |
+| <img src="../../icons/Buildings/building-4-fill.svg" alt="building-4-fill" width="24" height="24"> | `building-4-fill` | city,enterprise,office,企业,写字楼,办公楼,城市 | `{"icon": "building-4-fill"}` |
+| <img src="../../icons/Buildings/building-4-line.svg" alt="building-4-line" width="24" height="24"> | `building-4-line` | city,enterprise,office,企业,写字楼,办公楼,城市 | `{"icon": "building-4-line"}` |
+| <img src="../../icons/Buildings/hotel-fill.svg" alt="hotel-fill" width="24" height="24"> | `hotel-fill` | building,enterprise,office,tavern,企业,写字楼,办公楼,酒店 | `{"icon": "hotel-fill"}` |
+| <img src="../../icons/Buildings/hotel-line.svg" alt="hotel-line" width="24" height="24"> | `hotel-line` | building,enterprise,office,tavern,企业,写字楼,办公楼,酒店 | `{"icon": "hotel-line"}` |
+| <img src="../../icons/Buildings/community-fill.svg" alt="community-fill" width="24" height="24"> | `community-fill` | building,neighborhood,residential,society,住宅区,社会,社区,酒店 | `{"icon": "community-fill"}` |
+| <img src="../../icons/Buildings/community-line.svg" alt="community-line" width="24" height="24"> | `community-line` | building,neighborhood,residential,society,住宅区,社会,社区,酒店 | `{"icon": "community-line"}` |
+| <img src="../../icons/Buildings/school-fill.svg" alt="school-fill" width="24" height="24"> | `school-fill` | campus,college,education,university,学校,学院,教育,校园 | `{"icon": "school-fill"}` |
+| <img src="../../icons/Buildings/school-line.svg" alt="school-line" width="24" height="24"> | `school-line` | campus,college,education,university,学校,学院,教育,校园 | `{"icon": "school-line"}` |
+| <img src="../../icons/Buildings/government-fill.svg" alt="government-fill" width="24" height="24"> | `government-fill` | administration,building,public,公共,大会堂,政府,行政 | `{"icon": "government-fill"}` |
+| <img src="../../icons/Buildings/government-line.svg" alt="government-line" width="24" height="24"> | `government-line` | administration,building,public,公共,大会堂,政府,行政 | `{"icon": "government-line"}` |
+| <img src="../../icons/Buildings/bank-fill.svg" alt="bank-fill" width="24" height="24"> | `bank-fill` | banking,finance,financial institution,savings,交易所,储蓄,金融机构,银行 | `{"icon": "bank-fill"}` |
+| <img src="../../icons/Buildings/bank-line.svg" alt="bank-line" width="24" height="24"> | `bank-line` | banking,finance,financial institution,savings,交易所,储蓄,金融机构,银行 | `{"icon": "bank-line"}` |
+| <img src="../../icons/Buildings/store-fill.svg" alt="store-fill" width="24" height="24"> | `store-fill` | mall,retail,shop,supermarket,商家,商店,店铺,超市 | `{"icon": "store-fill"}` |
+| <img src="../../icons/Buildings/store-line.svg" alt="store-line" width="24" height="24"> | `store-line` | mall,retail,shop,supermarket,商家,商店,店铺,超市 | `{"icon": "store-line"}` |
+| <img src="../../icons/Buildings/store-2-fill.svg" alt="store-2-fill" width="24" height="24"> | `store-2-fill` | mall,retail,shop,supermarket,商家,商店,店铺,超市 | `{"icon": "store-2-fill"}` |
+| <img src="../../icons/Buildings/store-2-line.svg" alt="store-2-line" width="24" height="24"> | `store-2-line` | mall,retail,shop,supermarket,商家,商店,店铺,超市 | `{"icon": "store-2-line"}` |
+| <img src="../../icons/Buildings/store-3-fill.svg" alt="store-3-fill" width="24" height="24"> | `store-3-fill` | mall,retail,shop,supermarket,商家,商店,店铺,超市 | `{"icon": "store-3-fill"}` |
+| <img src="../../icons/Buildings/store-3-line.svg" alt="store-3-line" width="24" height="24"> | `store-3-line` | mall,retail,shop,supermarket,商家,商店,店铺,超市 | `{"icon": "store-3-line"}` |
+| <img src="../../icons/Buildings/hospital-fill.svg" alt="hospital-fill" width="24" height="24"> | `hospital-fill` | clinic,healthcare,medical,健康,医疗,医院,诊所 | `{"icon": "hospital-fill"}` |
+| <img src="../../icons/Buildings/hospital-line.svg" alt="hospital-line" width="24" height="24"> | `hospital-line` | clinic,healthcare,medical,健康,医疗,医院,诊所 | `{"icon": "hospital-line"}` |
+| <img src="../../icons/Buildings/ancient-gate-fill.svg" alt="ancient-gate-fill" width="24" height="24"> | `ancient-gate-fill` | architecture,genre,historical,scenic,travel,trip,历史,古代,城门,旅游,旅行,景区 | `{"icon": "ancient-gate-fill"}` |
+| <img src="../../icons/Buildings/ancient-gate-line.svg" alt="ancient-gate-line" width="24" height="24"> | `ancient-gate-line` | architecture,genre,historical,scenic,travel,trip,历史,古代,城门,旅游,旅行,景区 | `{"icon": "ancient-gate-line"}` |
+| <img src="../../icons/Buildings/ancient-pavilion-fill.svg" alt="ancient-pavilion-fill" width="24" height="24"> | `ancient-pavilion-fill` | architecture,genre,historical,scenic,travel,trip,凉亭,历史,古代,旅游,旅行,景区 | `{"icon": "ancient-pavilion-fill"}` |
+| <img src="../../icons/Buildings/ancient-pavilion-line.svg" alt="ancient-pavilion-line" width="24" height="24"> | `ancient-pavilion-line` | architecture,genre,historical,scenic,travel,trip,凉亭,历史,古代,旅游,旅行,景区 | `{"icon": "ancient-pavilion-line"}` |
+| <img src="../../icons/Buildings/tent-fill.svg" alt="tent-fill" width="24" height="24"> | `tent-fill` | adventure,camping,outdoor,冒险,帐篷,户外,营地,露营 | `{"icon": "tent-fill"}` |
+| <img src="../../icons/Buildings/tent-line.svg" alt="tent-line" width="24" height="24"> | `tent-line` | adventure,camping,outdoor,冒险,帐篷,户外,营地,露营 | `{"icon": "tent-line"}` |

@@ -4,89 +4,175 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `wallet` | accounting,apple pay,billfold,budgeting,card holder,cash,digital wallet,e-wallet,expense,google pay,ledger,payment,pocketbook,purse,wallet balance,余额,卡包,开销,微信支付,支付宝,数字钱包,现金,理财,电子钱包,皮夹,记账,账本,钱夹,预算 | `{"icon": "wallet"}` |
-| - | `wallet-2` | billfold,card holder,cash,e-wallet,minimalist,money clip,payment,purse,slim,卡夹,支付,现金,理财,电子钱包,皮夹,钱夹 | `{"icon": "wallet-2"}` |
-| - | `wallet-3` | billfold,card holder,cash,e-wallet,minimalist,money clip,payment,purse,slim,卡夹,支付,现金,理财,电子钱包,皮夹,钱夹 | `{"icon": "wallet-3"}` |
-| - | `bank-card` | cc,chip,contactless,credit,debit,emv,magstripe,nfc,payment,pos,purchase,swipe,tap,信用卡,借记卡,刷卡,卡片,支付,消费,磁条,芯片,购买,银行卡,闪付 | `{"icon": "bank-card"}` |
-| - | `bank-card-2` | cc,chip,contactless,credit,debit,emv,magstripe,nfc,payment,pos,purchase,swipe,tap,信用卡,借记卡,刷卡,卡片,支付,消费,磁条,芯片,购买,银行卡,闪付 | `{"icon": "bank-card-2"}` |
-| - | `no-credit-card` | blocked,cc,declined,disabled,forbidden,payment,purchase,unsupported,不可用,不支持,信用卡,停用,拒付,支付,消费,禁用,购买,银行卡 | `{"icon": "no-credit-card"}` |
-| - | `secure-payment` | 3d secure,encrypted,fraud prevention,pci dss,protected,risk control,tokenization,信用卡,加密,合规,安全,支付,消费,购买,银行卡,防欺诈,风控 | `{"icon": "secure-payment"}` |
-| - | `refund` | cc,chargeback,repayment,return goods,reversal,信用卡,撤销,还款,退单,退款,退货,退费,银行卡 | `{"icon": "refund"}` |
-| - | `refund-2` | cc,chargeback,repayment,return goods,reversal,信用卡,撤销,还款,退单,退款,退货,退费,银行卡 | `{"icon": "refund-2"}` |
-| - | `safe` | deposit box,lockbox,secure,security,vault,保管箱,保险柜,保险箱,金库 | `{"icon": "safe"}` |
-| - | `safe-2` | deposit box,insecure,lockbox,open safe,unlocked,vault,不安全,保险柜,保险箱,打开,未加锁 | `{"icon": "safe-2"}` |
-| - | `safe-3` | deposit box,insecure,lockbox,open safe,unlocked,vault,不安全,保险柜,保险箱,打开,未加锁 | `{"icon": "safe-3"}` |
-| - | `price-tag` | barcode,cost,label,pricing,sale,sticker,价格,价签,促销,售价,定价,条码,标签,费用 | `{"icon": "price-tag"}` |
-| - | `price-tag-2` | barcode,cost,label,pricing,sale,sticker,价格,价签,促销,售价,定价,条码,标签,费用 | `{"icon": "price-tag-2"}` |
-| - | `price-tag-3` | barcode,cost,label,pricing,sale,sticker,价格,价签,促销,售价,定价,条码,标签,费用 | `{"icon": "price-tag-3"}` |
-| - | `ticket` | admission,bill,coupon,pass,receipt,voucher,代金券,优惠券,入场券,票据 | `{"icon": "ticket"}` |
-| - | `ticket-2` | admission,bill,coupon,pass,receipt,voucher,代金券,优惠券,入场券,票据 | `{"icon": "ticket-2"}` |
-| - | `coupon` | discount,promo code,ticket,voucher,代金券,优惠券,优惠码,折扣码,票 | `{"icon": "coupon"}` |
-| - | `coupon-2` | discount,promo code,ticket,voucher,代金券,优惠券,优惠码,折扣码,票 | `{"icon": "coupon-2"}` |
-| - | `coupon-3` | discount,promo code,ticket,voucher,代金券,优惠券,优惠码,折扣码,票 | `{"icon": "coupon-3"}` |
-| - | `coupon-4` | discount,promo code,voucher,代金券,优惠券,优惠码,折扣码 | `{"icon": "coupon-4"}` |
-| - | `coupon-5` | discount,promo code,voucher,代金券,优惠券,优惠码,折扣码 | `{"icon": "coupon-5"}` |
-| - | `shopping-bag` | add to cart,checkout,e-commerce,purchase,purse,retail,加入购物车,商城,消费,电商,结算,购买,购物袋,零售 | `{"icon": "shopping-bag"}` |
-| - | `shopping-bag-2` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物袋,零售 | `{"icon": "shopping-bag-2"}` |
-| - | `shopping-bag-3` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物袋,零售 | `{"icon": "shopping-bag-3"}` |
-| - | `shopping-bag-4` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,零售 | `{"icon": "shopping-bag-4"}` |
-| - | `shopping-basket` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物篮,零售 | `{"icon": "shopping-basket"}` |
-| - | `shopping-basket-2` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物篮,零售 | `{"icon": "shopping-basket-2"}` |
-| - | `shopping-cart` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,零售 | `{"icon": "shopping-cart"}` |
-| - | `shopping-cart-2` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,零售 | `{"icon": "shopping-cart-2"}` |
-| - | `vip` | elite,loyalty,membership,perks,premium,tier,会员权益,会员等级,尊享,贵宾,高级 | `{"icon": "vip"}` |
-| - | `vip-crown` | king,membership,premium,queen,royalty,tier,会员等级,国王,女王,尊享,王冠,王后,皇冠,贵宾 | `{"icon": "vip-crown"}` |
-| - | `vip-crown-2` | king,membership,premium,queen,royalty,tier,会员等级,国王,女王,尊享,王冠,王后,皇冠,贵宾 | `{"icon": "vip-crown-2"}` |
-| - | `vip-diamond` | diamond membership,loyalty,premium,tier,会员权益,会员等级,尊享,钻石,高端 | `{"icon": "vip-diamond"}` |
-| - | `diamond` | gem,jewelry,precious stone,wealth,会员,宝石,珍宝,珠宝,财富,钻石 | `{"icon": "diamond"}` |
-| - | `diamond-ring` | engagement,jewelry,proposal,wedding,戒指,结婚戒,订婚戒,钻戒,首饰 | `{"icon": "diamond-ring"}` |
-| - | `jewelry` | accessory,gem,ornament,珠宝,配饰,饰品,首饰 | `{"icon": "jewelry"}` |
-| - | `trophy` | achievement,award,prize,winner,优胜,奖品,奖杯,成就,荣誉,金杯 | `{"icon": "trophy"}` |
-| - | `exchange` | conversion,convert,currency exchange,forex,fx,rate,swap,交换,交易,兑换,外汇,换汇,汇兑,汇率 | `{"icon": "exchange"}` |
-| - | `exchange-box` | conversion,convert,currency exchange,forex,fx,rate,swap,交换,交易,兑换,外汇,换汇,汇兑,汇率 | `{"icon": "exchange-box"}` |
-| - | `exchange-2` | conversion,convert,currency exchange,forex,fx,rate,swap,交换,交易,兑换,外汇,换汇,汇兑,汇率 | `{"icon": "exchange-2"}` |
-| - | `swap` | conversion,convert,exchange,rate,trade,互换,交换,交易,兑换,换汇,换算 | `{"icon": "swap"}` |
-| - | `swap-box` | conversion,convert,exchange,rate,trade,互换,交换,交易,兑换,换汇,换算 | `{"icon": "swap-box"}` |
-| - | `swap-2` | conversion,convert,exchange,flow direction,rate,trade,互换,交换,交易,兑换,换汇,换算,方向 | `{"icon": "swap-2"}` |
-| - | `swap-3` | conversion,convert,exchange,flow direction,rate,trade,互换,交换,交易,兑换,换汇,换算,方向 | `{"icon": "swap-3"}` |
-| - | `exchange-dollar` | conversion,convert,fx,rate,remittance,transfer,usd,交易,兑换,外汇,换汇,汇款,汇率,美元,转账 | `{"icon": "exchange-dollar"}` |
-| - | `exchange-cny` | conversion,convert,fx,rate,remittance,transfer,交易,人民币,兑换,外汇,换汇,汇款,汇率,转账 | `{"icon": "exchange-cny"}` |
-| - | `exchange-funds` | conversion,convert,fund,fx,rate,remittance,stock,transfer,交易,兑换,基金,外汇,换汇,汇款,汇率,股票,转账 | `{"icon": "exchange-funds"}` |
-| - | `increase-decrease` | arrow,calculator,change,decline,delta,down,growth,indicator,trend,up,上涨,下跌,下降,变化,增长,差值,指标,涨幅,计算器,趋势,跌幅 | `{"icon": "increase-decrease"}` |
-| - | `percent` | fee,interest,percentage,rate,ratio,利率,比率,百分比,费率 | `{"icon": "percent"}` |
-| - | `copper-coin` | currency,payment,token,virtual coin,支付,硬币,虚拟币,货币,钱,铜币 | `{"icon": "copper-coin"}` |
-| - | `copper-diamond` | coins,currency,gems,gold,virtual coin,支付,虚拟币,货币,金币,钱,钻石 | `{"icon": "copper-diamond"}` |
-| - | `money-cny-box` | cashless,currency,payment,yuan,人民币,元,支付,货币,钱 | `{"icon": "money-cny-box"}` |
-| - | `money-cny-circle` | cashless,coins,currency,yuan,人民币,元,支付,货币,金币,钱 | `{"icon": "money-cny-circle"}` |
-| - | `money-dollar-box` | cashless,currency,payment,usd,支付,美元,美金,货币,钱 | `{"icon": "money-dollar-box"}` |
-| - | `money-dollar-circle` | cashless,cent,coins,currency,penny,usd,便士,支付,美元,美分,美金,货币,金币,钱 | `{"icon": "money-dollar-circle"}` |
-| - | `money-euro-box` | cashless,currency,eur,payment,支付,欧元,货币,钱 | `{"icon": "money-euro-box"}` |
-| - | `money-euro-circle` | cashless,coins,currency,eur,支付,欧元,货币,金币,钱 | `{"icon": "money-euro-circle"}` |
-| - | `money-pound-box` | cashless,currency,gbp,payment,支付,英镑,货币,钱 | `{"icon": "money-pound-box"}` |
-| - | `money-pound-circle` | cashless,coins,currency,gbp,支付,英镑,货币,金币,钱 | `{"icon": "money-pound-circle"}` |
-| - | `money-rupee-circle` | cashless,coins,currency,inr,卢比,支付,货币,金币,钱 | `{"icon": "money-rupee-circle"}` |
-| - | `bit-coin` | bitcoin,blockchain,btc,crypto,currency,payment,加密货币,区块链,比特币,钱 | `{"icon": "bit-coin"}` |
-| - | `coin` | change,coins,token,virtual coin,硬币,虚拟币,金币,零钱 | `{"icon": "coin"}` |
-| - | `cash` | banknotes,bills,paper money,现金,现钞,纸币,钞票 | `{"icon": "cash"}` |
-| - | `coins` | change,token,virtual coin,硬币,虚拟币,金币,零钱 | `{"icon": "coins"}` |
-| - | `currency` | forex,legal tender,money,外汇,法币,货币,钱 | `{"icon": "currency"}` |
-| - | `funds` | asset,investment,mutual fund,portfolio,wealth management,基金,投资,理财,组合,股票,资产 | `{"icon": "funds"}` |
-| - | `funds-box` | asset,investment,mutual fund,portfolio,wealth management,基金,投资,理财,组合,股票,资产 | `{"icon": "funds-box"}` |
-| - | `red-packet` | angpao,bonus,gift money,hongbao,lucky money,压岁钱,奖金,礼金,红包 | `{"icon": "red-packet"}` |
-| - | `water-flash` | bill,electricity,gas,utilities,公用事业,水电费,水费,燃气费,账单 | `{"icon": "water-flash"}` |
-| - | `stock` | equities,index,market,shares,trading,交易,指数,股市,股票,行情图,证券 | `{"icon": "stock"}` |
-| - | `auction` | auction house,bidding,gavel,hammer,lot,拍卖会,拍卖行,竞拍,锤子 | `{"icon": "auction"}` |
-| - | `gift` | benefit,bonus,giveaway,present,reward,奖励,礼物,福利,赠品 | `{"icon": "gift"}` |
-| - | `gift-2` | benefit,bonus,giveaway,present,reward,奖励,礼物,福利,赠品 | `{"icon": "gift-2"}` |
-| - | `hand-coin` | charity,donate,give money,payment,tip,付款,慈善,打赏,捐赠,给钱 | `{"icon": "hand-coin"}` |
-| - | `hand-heart` | charity,collection,donate,favorite,help,like,love,passion,volunteer,welfare,公益,喜欢,帮助,志愿者,慈善,捐赠,收藏,热情,爱心 | `{"icon": "hand-heart"}` |
-| - | `24-hours` | 24/7,24小时营业,around the clock,business hours,open late,全天候,全年无休,常开,营业时间 | `{"icon": "24-hours"}` |
-| - | `nft` | blockchain,collectibles,crypto,digital art,metadata,non-fungible token,元数据,加密货币,区块链,数字艺术,藏品,非同质化代币 | `{"icon": "nft"}` |
-| - | `p2p` | community,loan,peer to peer,swap,trade,transfer,互转,交易,借贷,切换,点对点,社区 | `{"icon": "p2p"}` |
-| - | `token-swap` | amm,defi,dex,exchange,liquidity,兑换,去中心化交易所,去中心化金融,流动性,自动做市 | `{"icon": "token-swap"}` |
-| - | `btc` | bitcoin,crypto,加密货币,比特币 | `{"icon": "btc"}` |
-| - | `eth` | crypto,ethereum,gas,smart contract,以太坊,加密货币,智能合约,燃料费 | `{"icon": "eth"}` |
-| - | `xtz` | blockchain,crypto,tezos,兔子币,区块链,泰佐斯 | `{"icon": "xtz"}` |
-| - | `bnb` | binance coin,crypto,加密货币,币安币 | `{"icon": "bnb"}` |
-| - | `xrp` | crypto,ripple,加密货币,瑞波币 | `{"icon": "xrp"}` |
-| - | `discount-percent` | clearance,flash sale,percentage off,price off,promotion,促销,打折,折扣,清仓,降价,限时特价 | `{"icon": "discount-percent"}` |
+| <img src="../../icons/Finance/wallet-fill.svg" alt="wallet-fill" width="24" height="24"> | `wallet-fill` | accounting,apple pay,billfold,budgeting,card holder,cash,digital wallet,e-wallet,expense,google pay,ledger,payment,pocketbook,purse,wallet balance,余额,卡包,开销,微信支付,支付宝,数字钱包,现金,理财,电子钱包,皮夹,记账,账本,钱夹,预算 | `{"icon": "wallet-fill"}` |
+| <img src="../../icons/Finance/wallet-line.svg" alt="wallet-line" width="24" height="24"> | `wallet-line` | accounting,apple pay,billfold,budgeting,card holder,cash,digital wallet,e-wallet,expense,google pay,ledger,payment,pocketbook,purse,wallet balance,余额,卡包,开销,微信支付,支付宝,数字钱包,现金,理财,电子钱包,皮夹,记账,账本,钱夹,预算 | `{"icon": "wallet-line"}` |
+| <img src="../../icons/Finance/wallet-2-fill.svg" alt="wallet-2-fill" width="24" height="24"> | `wallet-2-fill` | billfold,card holder,cash,e-wallet,minimalist,money clip,payment,purse,slim,卡夹,支付,现金,理财,电子钱包,皮夹,钱夹 | `{"icon": "wallet-2-fill"}` |
+| <img src="../../icons/Finance/wallet-2-line.svg" alt="wallet-2-line" width="24" height="24"> | `wallet-2-line` | billfold,card holder,cash,e-wallet,minimalist,money clip,payment,purse,slim,卡夹,支付,现金,理财,电子钱包,皮夹,钱夹 | `{"icon": "wallet-2-line"}` |
+| <img src="../../icons/Finance/wallet-3-fill.svg" alt="wallet-3-fill" width="24" height="24"> | `wallet-3-fill` | billfold,card holder,cash,e-wallet,minimalist,money clip,payment,purse,slim,卡夹,支付,现金,理财,电子钱包,皮夹,钱夹 | `{"icon": "wallet-3-fill"}` |
+| <img src="../../icons/Finance/wallet-3-line.svg" alt="wallet-3-line" width="24" height="24"> | `wallet-3-line` | billfold,card holder,cash,e-wallet,minimalist,money clip,payment,purse,slim,卡夹,支付,现金,理财,电子钱包,皮夹,钱夹 | `{"icon": "wallet-3-line"}` |
+| <img src="../../icons/Finance/bank-card-fill.svg" alt="bank-card-fill" width="24" height="24"> | `bank-card-fill` | cc,chip,contactless,credit,debit,emv,magstripe,nfc,payment,pos,purchase,swipe,tap,信用卡,借记卡,刷卡,卡片,支付,消费,磁条,芯片,购买,银行卡,闪付 | `{"icon": "bank-card-fill"}` |
+| <img src="../../icons/Finance/bank-card-line.svg" alt="bank-card-line" width="24" height="24"> | `bank-card-line` | cc,chip,contactless,credit,debit,emv,magstripe,nfc,payment,pos,purchase,swipe,tap,信用卡,借记卡,刷卡,卡片,支付,消费,磁条,芯片,购买,银行卡,闪付 | `{"icon": "bank-card-line"}` |
+| <img src="../../icons/Finance/bank-card-2-fill.svg" alt="bank-card-2-fill" width="24" height="24"> | `bank-card-2-fill` | cc,chip,contactless,credit,debit,emv,magstripe,nfc,payment,pos,purchase,swipe,tap,信用卡,借记卡,刷卡,卡片,支付,消费,磁条,芯片,购买,银行卡,闪付 | `{"icon": "bank-card-2-fill"}` |
+| <img src="../../icons/Finance/bank-card-2-line.svg" alt="bank-card-2-line" width="24" height="24"> | `bank-card-2-line` | cc,chip,contactless,credit,debit,emv,magstripe,nfc,payment,pos,purchase,swipe,tap,信用卡,借记卡,刷卡,卡片,支付,消费,磁条,芯片,购买,银行卡,闪付 | `{"icon": "bank-card-2-line"}` |
+| <img src="../../icons/Finance/no-credit-card-fill.svg" alt="no-credit-card-fill" width="24" height="24"> | `no-credit-card-fill` | blocked,cc,declined,disabled,forbidden,payment,purchase,unsupported,不可用,不支持,信用卡,停用,拒付,支付,消费,禁用,购买,银行卡 | `{"icon": "no-credit-card-fill"}` |
+| <img src="../../icons/Finance/no-credit-card-line.svg" alt="no-credit-card-line" width="24" height="24"> | `no-credit-card-line` | blocked,cc,declined,disabled,forbidden,payment,purchase,unsupported,不可用,不支持,信用卡,停用,拒付,支付,消费,禁用,购买,银行卡 | `{"icon": "no-credit-card-line"}` |
+| <img src="../../icons/Finance/secure-payment-fill.svg" alt="secure-payment-fill" width="24" height="24"> | `secure-payment-fill` | 3d secure,encrypted,fraud prevention,pci dss,protected,risk control,tokenization,信用卡,加密,合规,安全,支付,消费,购买,银行卡,防欺诈,风控 | `{"icon": "secure-payment-fill"}` |
+| <img src="../../icons/Finance/secure-payment-line.svg" alt="secure-payment-line" width="24" height="24"> | `secure-payment-line` | 3d secure,encrypted,fraud prevention,pci dss,protected,risk control,tokenization,信用卡,加密,合规,安全,支付,消费,购买,银行卡,防欺诈,风控 | `{"icon": "secure-payment-line"}` |
+| <img src="../../icons/Finance/refund-fill.svg" alt="refund-fill" width="24" height="24"> | `refund-fill` | cc,chargeback,repayment,return goods,reversal,信用卡,撤销,还款,退单,退款,退货,退费,银行卡 | `{"icon": "refund-fill"}` |
+| <img src="../../icons/Finance/refund-line.svg" alt="refund-line" width="24" height="24"> | `refund-line` | cc,chargeback,repayment,return goods,reversal,信用卡,撤销,还款,退单,退款,退货,退费,银行卡 | `{"icon": "refund-line"}` |
+| <img src="../../icons/Finance/refund-2-fill.svg" alt="refund-2-fill" width="24" height="24"> | `refund-2-fill` | cc,chargeback,repayment,return goods,reversal,信用卡,撤销,还款,退单,退款,退货,退费,银行卡 | `{"icon": "refund-2-fill"}` |
+| <img src="../../icons/Finance/refund-2-line.svg" alt="refund-2-line" width="24" height="24"> | `refund-2-line` | cc,chargeback,repayment,return goods,reversal,信用卡,撤销,还款,退单,退款,退货,退费,银行卡 | `{"icon": "refund-2-line"}` |
+| <img src="../../icons/Finance/safe-fill.svg" alt="safe-fill" width="24" height="24"> | `safe-fill` | deposit box,lockbox,secure,security,vault,保管箱,保险柜,保险箱,金库 | `{"icon": "safe-fill"}` |
+| <img src="../../icons/Finance/safe-line.svg" alt="safe-line" width="24" height="24"> | `safe-line` | deposit box,lockbox,secure,security,vault,保管箱,保险柜,保险箱,金库 | `{"icon": "safe-line"}` |
+| <img src="../../icons/Finance/safe-2-fill.svg" alt="safe-2-fill" width="24" height="24"> | `safe-2-fill` | deposit box,insecure,lockbox,open safe,unlocked,vault,不安全,保险柜,保险箱,打开,未加锁 | `{"icon": "safe-2-fill"}` |
+| <img src="../../icons/Finance/safe-2-line.svg" alt="safe-2-line" width="24" height="24"> | `safe-2-line` | deposit box,insecure,lockbox,open safe,unlocked,vault,不安全,保险柜,保险箱,打开,未加锁 | `{"icon": "safe-2-line"}` |
+| <img src="../../icons/Finance/safe-3-fill.svg" alt="safe-3-fill" width="24" height="24"> | `safe-3-fill` | deposit box,insecure,lockbox,open safe,unlocked,vault,不安全,保险柜,保险箱,打开,未加锁 | `{"icon": "safe-3-fill"}` |
+| <img src="../../icons/Finance/safe-3-line.svg" alt="safe-3-line" width="24" height="24"> | `safe-3-line` | deposit box,insecure,lockbox,open safe,unlocked,vault,不安全,保险柜,保险箱,打开,未加锁 | `{"icon": "safe-3-line"}` |
+| <img src="../../icons/Finance/price-tag-fill.svg" alt="price-tag-fill" width="24" height="24"> | `price-tag-fill` | barcode,cost,label,pricing,sale,sticker,价格,价签,促销,售价,定价,条码,标签,费用 | `{"icon": "price-tag-fill"}` |
+| <img src="../../icons/Finance/price-tag-line.svg" alt="price-tag-line" width="24" height="24"> | `price-tag-line` | barcode,cost,label,pricing,sale,sticker,价格,价签,促销,售价,定价,条码,标签,费用 | `{"icon": "price-tag-line"}` |
+| <img src="../../icons/Finance/price-tag-2-fill.svg" alt="price-tag-2-fill" width="24" height="24"> | `price-tag-2-fill` | barcode,cost,label,pricing,sale,sticker,价格,价签,促销,售价,定价,条码,标签,费用 | `{"icon": "price-tag-2-fill"}` |
+| <img src="../../icons/Finance/price-tag-2-line.svg" alt="price-tag-2-line" width="24" height="24"> | `price-tag-2-line` | barcode,cost,label,pricing,sale,sticker,价格,价签,促销,售价,定价,条码,标签,费用 | `{"icon": "price-tag-2-line"}` |
+| <img src="../../icons/Finance/price-tag-3-fill.svg" alt="price-tag-3-fill" width="24" height="24"> | `price-tag-3-fill` | barcode,cost,label,pricing,sale,sticker,价格,价签,促销,售价,定价,条码,标签,费用 | `{"icon": "price-tag-3-fill"}` |
+| <img src="../../icons/Finance/price-tag-3-line.svg" alt="price-tag-3-line" width="24" height="24"> | `price-tag-3-line` | barcode,cost,label,pricing,sale,sticker,价格,价签,促销,售价,定价,条码,标签,费用 | `{"icon": "price-tag-3-line"}` |
+| <img src="../../icons/Finance/ticket-fill.svg" alt="ticket-fill" width="24" height="24"> | `ticket-fill` | admission,bill,coupon,pass,receipt,voucher,代金券,优惠券,入场券,票据 | `{"icon": "ticket-fill"}` |
+| <img src="../../icons/Finance/ticket-line.svg" alt="ticket-line" width="24" height="24"> | `ticket-line` | admission,bill,coupon,pass,receipt,voucher,代金券,优惠券,入场券,票据 | `{"icon": "ticket-line"}` |
+| <img src="../../icons/Finance/ticket-2-fill.svg" alt="ticket-2-fill" width="24" height="24"> | `ticket-2-fill` | admission,bill,coupon,pass,receipt,voucher,代金券,优惠券,入场券,票据 | `{"icon": "ticket-2-fill"}` |
+| <img src="../../icons/Finance/ticket-2-line.svg" alt="ticket-2-line" width="24" height="24"> | `ticket-2-line` | admission,bill,coupon,pass,receipt,voucher,代金券,优惠券,入场券,票据 | `{"icon": "ticket-2-line"}` |
+| <img src="../../icons/Finance/coupon-fill.svg" alt="coupon-fill" width="24" height="24"> | `coupon-fill` | discount,promo code,ticket,voucher,代金券,优惠券,优惠码,折扣码,票 | `{"icon": "coupon-fill"}` |
+| <img src="../../icons/Finance/coupon-line.svg" alt="coupon-line" width="24" height="24"> | `coupon-line` | discount,promo code,ticket,voucher,代金券,优惠券,优惠码,折扣码,票 | `{"icon": "coupon-line"}` |
+| <img src="../../icons/Finance/coupon-2-fill.svg" alt="coupon-2-fill" width="24" height="24"> | `coupon-2-fill` | discount,promo code,ticket,voucher,代金券,优惠券,优惠码,折扣码,票 | `{"icon": "coupon-2-fill"}` |
+| <img src="../../icons/Finance/coupon-2-line.svg" alt="coupon-2-line" width="24" height="24"> | `coupon-2-line` | discount,promo code,ticket,voucher,代金券,优惠券,优惠码,折扣码,票 | `{"icon": "coupon-2-line"}` |
+| <img src="../../icons/Finance/coupon-3-fill.svg" alt="coupon-3-fill" width="24" height="24"> | `coupon-3-fill` | discount,promo code,ticket,voucher,代金券,优惠券,优惠码,折扣码,票 | `{"icon": "coupon-3-fill"}` |
+| <img src="../../icons/Finance/coupon-3-line.svg" alt="coupon-3-line" width="24" height="24"> | `coupon-3-line` | discount,promo code,ticket,voucher,代金券,优惠券,优惠码,折扣码,票 | `{"icon": "coupon-3-line"}` |
+| <img src="../../icons/Finance/coupon-4-fill.svg" alt="coupon-4-fill" width="24" height="24"> | `coupon-4-fill` | discount,promo code,voucher,代金券,优惠券,优惠码,折扣码 | `{"icon": "coupon-4-fill"}` |
+| <img src="../../icons/Finance/coupon-4-line.svg" alt="coupon-4-line" width="24" height="24"> | `coupon-4-line` | discount,promo code,voucher,代金券,优惠券,优惠码,折扣码 | `{"icon": "coupon-4-line"}` |
+| <img src="../../icons/Finance/coupon-5-fill.svg" alt="coupon-5-fill" width="24" height="24"> | `coupon-5-fill` | discount,promo code,voucher,代金券,优惠券,优惠码,折扣码 | `{"icon": "coupon-5-fill"}` |
+| <img src="../../icons/Finance/coupon-5-line.svg" alt="coupon-5-line" width="24" height="24"> | `coupon-5-line` | discount,promo code,voucher,代金券,优惠券,优惠码,折扣码 | `{"icon": "coupon-5-line"}` |
+| <img src="../../icons/Finance/shopping-bag-fill.svg" alt="shopping-bag-fill" width="24" height="24"> | `shopping-bag-fill` | add to cart,checkout,e-commerce,purchase,purse,retail,加入购物车,商城,消费,电商,结算,购买,购物袋,零售 | `{"icon": "shopping-bag-fill"}` |
+| <img src="../../icons/Finance/shopping-bag-line.svg" alt="shopping-bag-line" width="24" height="24"> | `shopping-bag-line` | add to cart,checkout,e-commerce,purchase,purse,retail,加入购物车,商城,消费,电商,结算,购买,购物袋,零售 | `{"icon": "shopping-bag-line"}` |
+| <img src="../../icons/Finance/shopping-bag-2-fill.svg" alt="shopping-bag-2-fill" width="24" height="24"> | `shopping-bag-2-fill` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物袋,零售 | `{"icon": "shopping-bag-2-fill"}` |
+| <img src="../../icons/Finance/shopping-bag-2-line.svg" alt="shopping-bag-2-line" width="24" height="24"> | `shopping-bag-2-line` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物袋,零售 | `{"icon": "shopping-bag-2-line"}` |
+| <img src="../../icons/Finance/shopping-bag-3-fill.svg" alt="shopping-bag-3-fill" width="24" height="24"> | `shopping-bag-3-fill` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物袋,零售 | `{"icon": "shopping-bag-3-fill"}` |
+| <img src="../../icons/Finance/shopping-bag-3-line.svg" alt="shopping-bag-3-line" width="24" height="24"> | `shopping-bag-3-line` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物袋,零售 | `{"icon": "shopping-bag-3-line"}` |
+| <img src="../../icons/Finance/shopping-bag-4-fill.svg" alt="shopping-bag-4-fill" width="24" height="24"> | `shopping-bag-4-fill` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,零售 | `{"icon": "shopping-bag-4-fill"}` |
+| <img src="../../icons/Finance/shopping-bag-4-line.svg" alt="shopping-bag-4-line" width="24" height="24"> | `shopping-bag-4-line` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,零售 | `{"icon": "shopping-bag-4-line"}` |
+| <img src="../../icons/Finance/shopping-basket-fill.svg" alt="shopping-basket-fill" width="24" height="24"> | `shopping-basket-fill` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物篮,零售 | `{"icon": "shopping-basket-fill"}` |
+| <img src="../../icons/Finance/shopping-basket-line.svg" alt="shopping-basket-line" width="24" height="24"> | `shopping-basket-line` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物篮,零售 | `{"icon": "shopping-basket-line"}` |
+| <img src="../../icons/Finance/shopping-basket-2-fill.svg" alt="shopping-basket-2-fill" width="24" height="24"> | `shopping-basket-2-fill` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物篮,零售 | `{"icon": "shopping-basket-2-fill"}` |
+| <img src="../../icons/Finance/shopping-basket-2-line.svg" alt="shopping-basket-2-line" width="24" height="24"> | `shopping-basket-2-line` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,购物篮,零售 | `{"icon": "shopping-basket-2-line"}` |
+| <img src="../../icons/Finance/shopping-cart-fill.svg" alt="shopping-cart-fill" width="24" height="24"> | `shopping-cart-fill` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,零售 | `{"icon": "shopping-cart-fill"}` |
+| <img src="../../icons/Finance/shopping-cart-line.svg" alt="shopping-cart-line" width="24" height="24"> | `shopping-cart-line` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,零售 | `{"icon": "shopping-cart-line"}` |
+| <img src="../../icons/Finance/shopping-cart-2-fill.svg" alt="shopping-cart-2-fill" width="24" height="24"> | `shopping-cart-2-fill` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,零售 | `{"icon": "shopping-cart-2-fill"}` |
+| <img src="../../icons/Finance/shopping-cart-2-line.svg" alt="shopping-cart-2-line" width="24" height="24"> | `shopping-cart-2-line` | add to cart,checkout,e-commerce,purchase,retail,加入购物车,商城,消费,电商,结算,购买,零售 | `{"icon": "shopping-cart-2-line"}` |
+| <img src="../../icons/Finance/vip-fill.svg" alt="vip-fill" width="24" height="24"> | `vip-fill` | elite,loyalty,membership,perks,premium,tier,会员权益,会员等级,尊享,贵宾,高级 | `{"icon": "vip-fill"}` |
+| <img src="../../icons/Finance/vip-line.svg" alt="vip-line" width="24" height="24"> | `vip-line` | elite,loyalty,membership,perks,premium,tier,会员权益,会员等级,尊享,贵宾,高级 | `{"icon": "vip-line"}` |
+| <img src="../../icons/Finance/vip-crown-fill.svg" alt="vip-crown-fill" width="24" height="24"> | `vip-crown-fill` | king,membership,premium,queen,royalty,tier,会员等级,国王,女王,尊享,王冠,王后,皇冠,贵宾 | `{"icon": "vip-crown-fill"}` |
+| <img src="../../icons/Finance/vip-crown-line.svg" alt="vip-crown-line" width="24" height="24"> | `vip-crown-line` | king,membership,premium,queen,royalty,tier,会员等级,国王,女王,尊享,王冠,王后,皇冠,贵宾 | `{"icon": "vip-crown-line"}` |
+| <img src="../../icons/Finance/vip-crown-2-fill.svg" alt="vip-crown-2-fill" width="24" height="24"> | `vip-crown-2-fill` | king,membership,premium,queen,royalty,tier,会员等级,国王,女王,尊享,王冠,王后,皇冠,贵宾 | `{"icon": "vip-crown-2-fill"}` |
+| <img src="../../icons/Finance/vip-crown-2-line.svg" alt="vip-crown-2-line" width="24" height="24"> | `vip-crown-2-line` | king,membership,premium,queen,royalty,tier,会员等级,国王,女王,尊享,王冠,王后,皇冠,贵宾 | `{"icon": "vip-crown-2-line"}` |
+| <img src="../../icons/Finance/vip-diamond-fill.svg" alt="vip-diamond-fill" width="24" height="24"> | `vip-diamond-fill` | diamond membership,loyalty,premium,tier,会员权益,会员等级,尊享,钻石,高端 | `{"icon": "vip-diamond-fill"}` |
+| <img src="../../icons/Finance/vip-diamond-line.svg" alt="vip-diamond-line" width="24" height="24"> | `vip-diamond-line` | diamond membership,loyalty,premium,tier,会员权益,会员等级,尊享,钻石,高端 | `{"icon": "vip-diamond-line"}` |
+| <img src="../../icons/Finance/diamond-fill.svg" alt="diamond-fill" width="24" height="24"> | `diamond-fill` | gem,jewelry,precious stone,wealth,会员,宝石,珍宝,珠宝,财富,钻石 | `{"icon": "diamond-fill"}` |
+| <img src="../../icons/Finance/diamond-line.svg" alt="diamond-line" width="24" height="24"> | `diamond-line` | gem,jewelry,precious stone,wealth,会员,宝石,珍宝,珠宝,财富,钻石 | `{"icon": "diamond-line"}` |
+| <img src="../../icons/Finance/diamond-ring-fill.svg" alt="diamond-ring-fill" width="24" height="24"> | `diamond-ring-fill` | engagement,jewelry,proposal,wedding,戒指,结婚戒,订婚戒,钻戒,首饰 | `{"icon": "diamond-ring-fill"}` |
+| <img src="../../icons/Finance/diamond-ring-line.svg" alt="diamond-ring-line" width="24" height="24"> | `diamond-ring-line` | engagement,jewelry,proposal,wedding,戒指,结婚戒,订婚戒,钻戒,首饰 | `{"icon": "diamond-ring-line"}` |
+| <img src="../../icons/Finance/jewelry-fill.svg" alt="jewelry-fill" width="24" height="24"> | `jewelry-fill` | accessory,gem,ornament,珠宝,配饰,饰品,首饰 | `{"icon": "jewelry-fill"}` |
+| <img src="../../icons/Finance/jewelry-line.svg" alt="jewelry-line" width="24" height="24"> | `jewelry-line` | accessory,gem,ornament,珠宝,配饰,饰品,首饰 | `{"icon": "jewelry-line"}` |
+| <img src="../../icons/Finance/trophy-fill.svg" alt="trophy-fill" width="24" height="24"> | `trophy-fill` | achievement,award,prize,winner,优胜,奖品,奖杯,成就,荣誉,金杯 | `{"icon": "trophy-fill"}` |
+| <img src="../../icons/Finance/trophy-line.svg" alt="trophy-line" width="24" height="24"> | `trophy-line` | achievement,award,prize,winner,优胜,奖品,奖杯,成就,荣誉,金杯 | `{"icon": "trophy-line"}` |
+| <img src="../../icons/Finance/exchange-fill.svg" alt="exchange-fill" width="24" height="24"> | `exchange-fill` | conversion,convert,currency exchange,forex,fx,rate,swap,交换,交易,兑换,外汇,换汇,汇兑,汇率 | `{"icon": "exchange-fill"}` |
+| <img src="../../icons/Finance/exchange-line.svg" alt="exchange-line" width="24" height="24"> | `exchange-line` | conversion,convert,currency exchange,forex,fx,rate,swap,交换,交易,兑换,外汇,换汇,汇兑,汇率 | `{"icon": "exchange-line"}` |
+| <img src="../../icons/Finance/exchange-box-fill.svg" alt="exchange-box-fill" width="24" height="24"> | `exchange-box-fill` | conversion,convert,currency exchange,forex,fx,rate,swap,交换,交易,兑换,外汇,换汇,汇兑,汇率 | `{"icon": "exchange-box-fill"}` |
+| <img src="../../icons/Finance/exchange-box-line.svg" alt="exchange-box-line" width="24" height="24"> | `exchange-box-line` | conversion,convert,currency exchange,forex,fx,rate,swap,交换,交易,兑换,外汇,换汇,汇兑,汇率 | `{"icon": "exchange-box-line"}` |
+| <img src="../../icons/Finance/exchange-2-fill.svg" alt="exchange-2-fill" width="24" height="24"> | `exchange-2-fill` | conversion,convert,currency exchange,forex,fx,rate,swap,交换,交易,兑换,外汇,换汇,汇兑,汇率 | `{"icon": "exchange-2-fill"}` |
+| <img src="../../icons/Finance/exchange-2-line.svg" alt="exchange-2-line" width="24" height="24"> | `exchange-2-line` | conversion,convert,currency exchange,forex,fx,rate,swap,交换,交易,兑换,外汇,换汇,汇兑,汇率 | `{"icon": "exchange-2-line"}` |
+| <img src="../../icons/Finance/swap-fill.svg" alt="swap-fill" width="24" height="24"> | `swap-fill` | conversion,convert,exchange,rate,trade,互换,交换,交易,兑换,换汇,换算 | `{"icon": "swap-fill"}` |
+| <img src="../../icons/Finance/swap-line.svg" alt="swap-line" width="24" height="24"> | `swap-line` | conversion,convert,exchange,rate,trade,互换,交换,交易,兑换,换汇,换算 | `{"icon": "swap-line"}` |
+| <img src="../../icons/Finance/swap-box-fill.svg" alt="swap-box-fill" width="24" height="24"> | `swap-box-fill` | conversion,convert,exchange,rate,trade,互换,交换,交易,兑换,换汇,换算 | `{"icon": "swap-box-fill"}` |
+| <img src="../../icons/Finance/swap-box-line.svg" alt="swap-box-line" width="24" height="24"> | `swap-box-line` | conversion,convert,exchange,rate,trade,互换,交换,交易,兑换,换汇,换算 | `{"icon": "swap-box-line"}` |
+| <img src="../../icons/Finance/swap-2-fill.svg" alt="swap-2-fill" width="24" height="24"> | `swap-2-fill` | conversion,convert,exchange,flow direction,rate,trade,互换,交换,交易,兑换,换汇,换算,方向 | `{"icon": "swap-2-fill"}` |
+| <img src="../../icons/Finance/swap-2-line.svg" alt="swap-2-line" width="24" height="24"> | `swap-2-line` | conversion,convert,exchange,flow direction,rate,trade,互换,交换,交易,兑换,换汇,换算,方向 | `{"icon": "swap-2-line"}` |
+| <img src="../../icons/Finance/swap-3-fill.svg" alt="swap-3-fill" width="24" height="24"> | `swap-3-fill` | conversion,convert,exchange,flow direction,rate,trade,互换,交换,交易,兑换,换汇,换算,方向 | `{"icon": "swap-3-fill"}` |
+| <img src="../../icons/Finance/swap-3-line.svg" alt="swap-3-line" width="24" height="24"> | `swap-3-line` | conversion,convert,exchange,flow direction,rate,trade,互换,交换,交易,兑换,换汇,换算,方向 | `{"icon": "swap-3-line"}` |
+| <img src="../../icons/Finance/exchange-dollar-fill.svg" alt="exchange-dollar-fill" width="24" height="24"> | `exchange-dollar-fill` | conversion,convert,fx,rate,remittance,transfer,usd,交易,兑换,外汇,换汇,汇款,汇率,美元,转账 | `{"icon": "exchange-dollar-fill"}` |
+| <img src="../../icons/Finance/exchange-dollar-line.svg" alt="exchange-dollar-line" width="24" height="24"> | `exchange-dollar-line` | conversion,convert,fx,rate,remittance,transfer,usd,交易,兑换,外汇,换汇,汇款,汇率,美元,转账 | `{"icon": "exchange-dollar-line"}` |
+| <img src="../../icons/Finance/exchange-cny-fill.svg" alt="exchange-cny-fill" width="24" height="24"> | `exchange-cny-fill` | conversion,convert,fx,rate,remittance,transfer,交易,人民币,兑换,外汇,换汇,汇款,汇率,转账 | `{"icon": "exchange-cny-fill"}` |
+| <img src="../../icons/Finance/exchange-cny-line.svg" alt="exchange-cny-line" width="24" height="24"> | `exchange-cny-line` | conversion,convert,fx,rate,remittance,transfer,交易,人民币,兑换,外汇,换汇,汇款,汇率,转账 | `{"icon": "exchange-cny-line"}` |
+| <img src="../../icons/Finance/exchange-funds-fill.svg" alt="exchange-funds-fill" width="24" height="24"> | `exchange-funds-fill` | conversion,convert,fund,fx,rate,remittance,stock,transfer,交易,兑换,基金,外汇,换汇,汇款,汇率,股票,转账 | `{"icon": "exchange-funds-fill"}` |
+| <img src="../../icons/Finance/exchange-funds-line.svg" alt="exchange-funds-line" width="24" height="24"> | `exchange-funds-line` | conversion,convert,fund,fx,rate,remittance,stock,transfer,交易,兑换,基金,外汇,换汇,汇款,汇率,股票,转账 | `{"icon": "exchange-funds-line"}` |
+| <img src="../../icons/Finance/increase-decrease-fill.svg" alt="increase-decrease-fill" width="24" height="24"> | `increase-decrease-fill` | arrow,calculator,change,decline,delta,down,growth,indicator,trend,up,上涨,下跌,下降,变化,增长,差值,指标,涨幅,计算器,趋势,跌幅 | `{"icon": "increase-decrease-fill"}` |
+| <img src="../../icons/Finance/increase-decrease-line.svg" alt="increase-decrease-line" width="24" height="24"> | `increase-decrease-line` | arrow,calculator,change,decline,delta,down,growth,indicator,trend,up,上涨,下跌,下降,变化,增长,差值,指标,涨幅,计算器,趋势,跌幅 | `{"icon": "increase-decrease-line"}` |
+| <img src="../../icons/Finance/percent-fill.svg" alt="percent-fill" width="24" height="24"> | `percent-fill` | fee,interest,percentage,rate,ratio,利率,比率,百分比,费率 | `{"icon": "percent-fill"}` |
+| <img src="../../icons/Finance/percent-line.svg" alt="percent-line" width="24" height="24"> | `percent-line` | fee,interest,percentage,rate,ratio,利率,比率,百分比,费率 | `{"icon": "percent-line"}` |
+| <img src="../../icons/Finance/copper-coin-fill.svg" alt="copper-coin-fill" width="24" height="24"> | `copper-coin-fill` | currency,payment,token,virtual coin,支付,硬币,虚拟币,货币,钱,铜币 | `{"icon": "copper-coin-fill"}` |
+| <img src="../../icons/Finance/copper-coin-line.svg" alt="copper-coin-line" width="24" height="24"> | `copper-coin-line` | currency,payment,token,virtual coin,支付,硬币,虚拟币,货币,钱,铜币 | `{"icon": "copper-coin-line"}` |
+| <img src="../../icons/Finance/copper-diamond-fill.svg" alt="copper-diamond-fill" width="24" height="24"> | `copper-diamond-fill` | coins,currency,gems,gold,virtual coin,支付,虚拟币,货币,金币,钱,钻石 | `{"icon": "copper-diamond-fill"}` |
+| <img src="../../icons/Finance/copper-diamond-line.svg" alt="copper-diamond-line" width="24" height="24"> | `copper-diamond-line` | coins,currency,gems,gold,virtual coin,支付,虚拟币,货币,金币,钱,钻石 | `{"icon": "copper-diamond-line"}` |
+| <img src="../../icons/Finance/money-cny-box-fill.svg" alt="money-cny-box-fill" width="24" height="24"> | `money-cny-box-fill` | cashless,currency,payment,yuan,人民币,元,支付,货币,钱 | `{"icon": "money-cny-box-fill"}` |
+| <img src="../../icons/Finance/money-cny-box-line.svg" alt="money-cny-box-line" width="24" height="24"> | `money-cny-box-line` | cashless,currency,payment,yuan,人民币,元,支付,货币,钱 | `{"icon": "money-cny-box-line"}` |
+| <img src="../../icons/Finance/money-cny-circle-fill.svg" alt="money-cny-circle-fill" width="24" height="24"> | `money-cny-circle-fill` | cashless,coins,currency,yuan,人民币,元,支付,货币,金币,钱 | `{"icon": "money-cny-circle-fill"}` |
+| <img src="../../icons/Finance/money-cny-circle-line.svg" alt="money-cny-circle-line" width="24" height="24"> | `money-cny-circle-line` | cashless,coins,currency,yuan,人民币,元,支付,货币,金币,钱 | `{"icon": "money-cny-circle-line"}` |
+| <img src="../../icons/Finance/money-dollar-box-fill.svg" alt="money-dollar-box-fill" width="24" height="24"> | `money-dollar-box-fill` | cashless,currency,payment,usd,支付,美元,美金,货币,钱 | `{"icon": "money-dollar-box-fill"}` |
+| <img src="../../icons/Finance/money-dollar-box-line.svg" alt="money-dollar-box-line" width="24" height="24"> | `money-dollar-box-line` | cashless,currency,payment,usd,支付,美元,美金,货币,钱 | `{"icon": "money-dollar-box-line"}` |
+| <img src="../../icons/Finance/money-dollar-circle-fill.svg" alt="money-dollar-circle-fill" width="24" height="24"> | `money-dollar-circle-fill` | cashless,cent,coins,currency,penny,usd,便士,支付,美元,美分,美金,货币,金币,钱 | `{"icon": "money-dollar-circle-fill"}` |
+| <img src="../../icons/Finance/money-dollar-circle-line.svg" alt="money-dollar-circle-line" width="24" height="24"> | `money-dollar-circle-line` | cashless,cent,coins,currency,penny,usd,便士,支付,美元,美分,美金,货币,金币,钱 | `{"icon": "money-dollar-circle-line"}` |
+| <img src="../../icons/Finance/money-euro-box-fill.svg" alt="money-euro-box-fill" width="24" height="24"> | `money-euro-box-fill` | cashless,currency,eur,payment,支付,欧元,货币,钱 | `{"icon": "money-euro-box-fill"}` |
+| <img src="../../icons/Finance/money-euro-box-line.svg" alt="money-euro-box-line" width="24" height="24"> | `money-euro-box-line` | cashless,currency,eur,payment,支付,欧元,货币,钱 | `{"icon": "money-euro-box-line"}` |
+| <img src="../../icons/Finance/money-euro-circle-fill.svg" alt="money-euro-circle-fill" width="24" height="24"> | `money-euro-circle-fill` | cashless,coins,currency,eur,支付,欧元,货币,金币,钱 | `{"icon": "money-euro-circle-fill"}` |
+| <img src="../../icons/Finance/money-euro-circle-line.svg" alt="money-euro-circle-line" width="24" height="24"> | `money-euro-circle-line` | cashless,coins,currency,eur,支付,欧元,货币,金币,钱 | `{"icon": "money-euro-circle-line"}` |
+| <img src="../../icons/Finance/money-pound-box-fill.svg" alt="money-pound-box-fill" width="24" height="24"> | `money-pound-box-fill` | cashless,currency,gbp,payment,支付,英镑,货币,钱 | `{"icon": "money-pound-box-fill"}` |
+| <img src="../../icons/Finance/money-pound-box-line.svg" alt="money-pound-box-line" width="24" height="24"> | `money-pound-box-line` | cashless,currency,gbp,payment,支付,英镑,货币,钱 | `{"icon": "money-pound-box-line"}` |
+| <img src="../../icons/Finance/money-pound-circle-fill.svg" alt="money-pound-circle-fill" width="24" height="24"> | `money-pound-circle-fill` | cashless,coins,currency,gbp,支付,英镑,货币,金币,钱 | `{"icon": "money-pound-circle-fill"}` |
+| <img src="../../icons/Finance/money-pound-circle-line.svg" alt="money-pound-circle-line" width="24" height="24"> | `money-pound-circle-line` | cashless,coins,currency,gbp,支付,英镑,货币,金币,钱 | `{"icon": "money-pound-circle-line"}` |
+| <img src="../../icons/Finance/money-rupee-circle-fill.svg" alt="money-rupee-circle-fill" width="24" height="24"> | `money-rupee-circle-fill` | cashless,coins,currency,inr,卢比,支付,货币,金币,钱 | `{"icon": "money-rupee-circle-fill"}` |
+| <img src="../../icons/Finance/money-rupee-circle-line.svg" alt="money-rupee-circle-line" width="24" height="24"> | `money-rupee-circle-line` | cashless,coins,currency,inr,卢比,支付,货币,金币,钱 | `{"icon": "money-rupee-circle-line"}` |
+| <img src="../../icons/Finance/bit-coin-fill.svg" alt="bit-coin-fill" width="24" height="24"> | `bit-coin-fill` | bitcoin,blockchain,btc,crypto,currency,payment,加密货币,区块链,比特币,钱 | `{"icon": "bit-coin-fill"}` |
+| <img src="../../icons/Finance/bit-coin-line.svg" alt="bit-coin-line" width="24" height="24"> | `bit-coin-line` | bitcoin,blockchain,btc,crypto,currency,payment,加密货币,区块链,比特币,钱 | `{"icon": "bit-coin-line"}` |
+| <img src="../../icons/Finance/coin-fill.svg" alt="coin-fill" width="24" height="24"> | `coin-fill` | change,coins,token,virtual coin,硬币,虚拟币,金币,零钱 | `{"icon": "coin-fill"}` |
+| <img src="../../icons/Finance/coin-line.svg" alt="coin-line" width="24" height="24"> | `coin-line` | change,coins,token,virtual coin,硬币,虚拟币,金币,零钱 | `{"icon": "coin-line"}` |
+| <img src="../../icons/Finance/cash-fill.svg" alt="cash-fill" width="24" height="24"> | `cash-fill` | banknotes,bills,paper money,现金,现钞,纸币,钞票 | `{"icon": "cash-fill"}` |
+| <img src="../../icons/Finance/cash-line.svg" alt="cash-line" width="24" height="24"> | `cash-line` | banknotes,bills,paper money,现金,现钞,纸币,钞票 | `{"icon": "cash-line"}` |
+| <img src="../../icons/Finance/coins-fill.svg" alt="coins-fill" width="24" height="24"> | `coins-fill` | change,token,virtual coin,硬币,虚拟币,金币,零钱 | `{"icon": "coins-fill"}` |
+| <img src="../../icons/Finance/coins-line.svg" alt="coins-line" width="24" height="24"> | `coins-line` | change,token,virtual coin,硬币,虚拟币,金币,零钱 | `{"icon": "coins-line"}` |
+| <img src="../../icons/Finance/currency-fill.svg" alt="currency-fill" width="24" height="24"> | `currency-fill` | forex,legal tender,money,外汇,法币,货币,钱 | `{"icon": "currency-fill"}` |
+| <img src="../../icons/Finance/currency-line.svg" alt="currency-line" width="24" height="24"> | `currency-line` | forex,legal tender,money,外汇,法币,货币,钱 | `{"icon": "currency-line"}` |
+| <img src="../../icons/Finance/funds-fill.svg" alt="funds-fill" width="24" height="24"> | `funds-fill` | asset,investment,mutual fund,portfolio,wealth management,基金,投资,理财,组合,股票,资产 | `{"icon": "funds-fill"}` |
+| <img src="../../icons/Finance/funds-line.svg" alt="funds-line" width="24" height="24"> | `funds-line` | asset,investment,mutual fund,portfolio,wealth management,基金,投资,理财,组合,股票,资产 | `{"icon": "funds-line"}` |
+| <img src="../../icons/Finance/funds-box-fill.svg" alt="funds-box-fill" width="24" height="24"> | `funds-box-fill` | asset,investment,mutual fund,portfolio,wealth management,基金,投资,理财,组合,股票,资产 | `{"icon": "funds-box-fill"}` |
+| <img src="../../icons/Finance/funds-box-line.svg" alt="funds-box-line" width="24" height="24"> | `funds-box-line` | asset,investment,mutual fund,portfolio,wealth management,基金,投资,理财,组合,股票,资产 | `{"icon": "funds-box-line"}` |
+| <img src="../../icons/Finance/red-packet-fill.svg" alt="red-packet-fill" width="24" height="24"> | `red-packet-fill` | angpao,bonus,gift money,hongbao,lucky money,压岁钱,奖金,礼金,红包 | `{"icon": "red-packet-fill"}` |
+| <img src="../../icons/Finance/red-packet-line.svg" alt="red-packet-line" width="24" height="24"> | `red-packet-line` | angpao,bonus,gift money,hongbao,lucky money,压岁钱,奖金,礼金,红包 | `{"icon": "red-packet-line"}` |
+| <img src="../../icons/Finance/water-flash-fill.svg" alt="water-flash-fill" width="24" height="24"> | `water-flash-fill` | bill,electricity,gas,utilities,公用事业,水电费,水费,燃气费,账单 | `{"icon": "water-flash-fill"}` |
+| <img src="../../icons/Finance/water-flash-line.svg" alt="water-flash-line" width="24" height="24"> | `water-flash-line` | bill,electricity,gas,utilities,公用事业,水电费,水费,燃气费,账单 | `{"icon": "water-flash-line"}` |
+| <img src="../../icons/Finance/stock-fill.svg" alt="stock-fill" width="24" height="24"> | `stock-fill` | equities,index,market,shares,trading,交易,指数,股市,股票,行情图,证券 | `{"icon": "stock-fill"}` |
+| <img src="../../icons/Finance/stock-line.svg" alt="stock-line" width="24" height="24"> | `stock-line` | equities,index,market,shares,trading,交易,指数,股市,股票,行情图,证券 | `{"icon": "stock-line"}` |
+| <img src="../../icons/Finance/auction-fill.svg" alt="auction-fill" width="24" height="24"> | `auction-fill` | auction house,bidding,gavel,hammer,lot,拍卖会,拍卖行,竞拍,锤子 | `{"icon": "auction-fill"}` |
+| <img src="../../icons/Finance/auction-line.svg" alt="auction-line" width="24" height="24"> | `auction-line` | auction house,bidding,gavel,hammer,lot,拍卖会,拍卖行,竞拍,锤子 | `{"icon": "auction-line"}` |
+| <img src="../../icons/Finance/gift-fill.svg" alt="gift-fill" width="24" height="24"> | `gift-fill` | benefit,bonus,giveaway,present,reward,奖励,礼物,福利,赠品 | `{"icon": "gift-fill"}` |
+| <img src="../../icons/Finance/gift-line.svg" alt="gift-line" width="24" height="24"> | `gift-line` | benefit,bonus,giveaway,present,reward,奖励,礼物,福利,赠品 | `{"icon": "gift-line"}` |
+| <img src="../../icons/Finance/gift-2-fill.svg" alt="gift-2-fill" width="24" height="24"> | `gift-2-fill` | benefit,bonus,giveaway,present,reward,奖励,礼物,福利,赠品 | `{"icon": "gift-2-fill"}` |
+| <img src="../../icons/Finance/gift-2-line.svg" alt="gift-2-line" width="24" height="24"> | `gift-2-line` | benefit,bonus,giveaway,present,reward,奖励,礼物,福利,赠品 | `{"icon": "gift-2-line"}` |
+| <img src="../../icons/Finance/hand-coin-fill.svg" alt="hand-coin-fill" width="24" height="24"> | `hand-coin-fill` | charity,donate,give money,payment,tip,付款,慈善,打赏,捐赠,给钱 | `{"icon": "hand-coin-fill"}` |
+| <img src="../../icons/Finance/hand-coin-line.svg" alt="hand-coin-line" width="24" height="24"> | `hand-coin-line` | charity,donate,give money,payment,tip,付款,慈善,打赏,捐赠,给钱 | `{"icon": "hand-coin-line"}` |
+| <img src="../../icons/Finance/hand-heart-fill.svg" alt="hand-heart-fill" width="24" height="24"> | `hand-heart-fill` | charity,collection,donate,favorite,help,like,love,passion,volunteer,welfare,公益,喜欢,帮助,志愿者,慈善,捐赠,收藏,热情,爱心 | `{"icon": "hand-heart-fill"}` |
+| <img src="../../icons/Finance/hand-heart-line.svg" alt="hand-heart-line" width="24" height="24"> | `hand-heart-line` | charity,collection,donate,favorite,help,like,love,passion,volunteer,welfare,公益,喜欢,帮助,志愿者,慈善,捐赠,收藏,热情,爱心 | `{"icon": "hand-heart-line"}` |
+| <img src="../../icons/Finance/24-hours-fill.svg" alt="24-hours-fill" width="24" height="24"> | `24-hours-fill` | 24/7,24小时营业,around the clock,business hours,open late,全天候,全年无休,常开,营业时间 | `{"icon": "24-hours-fill"}` |
+| <img src="../../icons/Finance/24-hours-line.svg" alt="24-hours-line" width="24" height="24"> | `24-hours-line` | 24/7,24小时营业,around the clock,business hours,open late,全天候,全年无休,常开,营业时间 | `{"icon": "24-hours-line"}` |
+| <img src="../../icons/Finance/nft-fill.svg" alt="nft-fill" width="24" height="24"> | `nft-fill` | blockchain,collectibles,crypto,digital art,metadata,non-fungible token,元数据,加密货币,区块链,数字艺术,藏品,非同质化代币 | `{"icon": "nft-fill"}` |
+| <img src="../../icons/Finance/nft-line.svg" alt="nft-line" width="24" height="24"> | `nft-line` | blockchain,collectibles,crypto,digital art,metadata,non-fungible token,元数据,加密货币,区块链,数字艺术,藏品,非同质化代币 | `{"icon": "nft-line"}` |
+| <img src="../../icons/Finance/p2p-fill.svg" alt="p2p-fill" width="24" height="24"> | `p2p-fill` | community,loan,peer to peer,swap,trade,transfer,互转,交易,借贷,切换,点对点,社区 | `{"icon": "p2p-fill"}` |
+| <img src="../../icons/Finance/p2p-line.svg" alt="p2p-line" width="24" height="24"> | `p2p-line` | community,loan,peer to peer,swap,trade,transfer,互转,交易,借贷,切换,点对点,社区 | `{"icon": "p2p-line"}` |
+| <img src="../../icons/Finance/token-swap-fill.svg" alt="token-swap-fill" width="24" height="24"> | `token-swap-fill` | amm,defi,dex,exchange,liquidity,兑换,去中心化交易所,去中心化金融,流动性,自动做市 | `{"icon": "token-swap-fill"}` |
+| <img src="../../icons/Finance/token-swap-line.svg" alt="token-swap-line" width="24" height="24"> | `token-swap-line` | amm,defi,dex,exchange,liquidity,兑换,去中心化交易所,去中心化金融,流动性,自动做市 | `{"icon": "token-swap-line"}` |
+| <img src="../../icons/Finance/btc-fill.svg" alt="btc-fill" width="24" height="24"> | `btc-fill` | bitcoin,crypto,加密货币,比特币 | `{"icon": "btc-fill"}` |
+| <img src="../../icons/Finance/btc-line.svg" alt="btc-line" width="24" height="24"> | `btc-line` | bitcoin,crypto,加密货币,比特币 | `{"icon": "btc-line"}` |
+| <img src="../../icons/Finance/eth-fill.svg" alt="eth-fill" width="24" height="24"> | `eth-fill` | crypto,ethereum,gas,smart contract,以太坊,加密货币,智能合约,燃料费 | `{"icon": "eth-fill"}` |
+| <img src="../../icons/Finance/eth-line.svg" alt="eth-line" width="24" height="24"> | `eth-line` | crypto,ethereum,gas,smart contract,以太坊,加密货币,智能合约,燃料费 | `{"icon": "eth-line"}` |
+| <img src="../../icons/Finance/xtz-fill.svg" alt="xtz-fill" width="24" height="24"> | `xtz-fill` | blockchain,crypto,tezos,兔子币,区块链,泰佐斯 | `{"icon": "xtz-fill"}` |
+| <img src="../../icons/Finance/xtz-line.svg" alt="xtz-line" width="24" height="24"> | `xtz-line` | blockchain,crypto,tezos,兔子币,区块链,泰佐斯 | `{"icon": "xtz-line"}` |
+| <img src="../../icons/Finance/bnb-fill.svg" alt="bnb-fill" width="24" height="24"> | `bnb-fill` | binance coin,crypto,加密货币,币安币 | `{"icon": "bnb-fill"}` |
+| <img src="../../icons/Finance/bnb-line.svg" alt="bnb-line" width="24" height="24"> | `bnb-line` | binance coin,crypto,加密货币,币安币 | `{"icon": "bnb-line"}` |
+| <img src="../../icons/Finance/xrp-fill.svg" alt="xrp-fill" width="24" height="24"> | `xrp-fill` | crypto,ripple,加密货币,瑞波币 | `{"icon": "xrp-fill"}` |
+| <img src="../../icons/Finance/xrp-line.svg" alt="xrp-line" width="24" height="24"> | `xrp-line` | crypto,ripple,加密货币,瑞波币 | `{"icon": "xrp-line"}` |
+| <img src="../../icons/Finance/discount-percent-fill.svg" alt="discount-percent-fill" width="24" height="24"> | `discount-percent-fill` | clearance,flash sale,percentage off,price off,promotion,促销,打折,折扣,清仓,降价,限时特价 | `{"icon": "discount-percent-fill"}` |
+| <img src="../../icons/Finance/discount-percent-line.svg" alt="discount-percent-line" width="24" height="24"> | `discount-percent-line` | clearance,flash sale,percentage off,price off,promotion,促销,打折,折扣,清仓,降价,限时特价 | `{"icon": "discount-percent-line"}` |

@@ -46,7 +46,7 @@ HEADER
 page_count=0
 
 jq -r 'keys[] | select(. == "_comment" | not)' "$TAGS_FILE" | while IFS= read -r category; do
-  count=$(jq -r --arg c "$category" '.[$c] | keys | length' "$TAGS_FILE")
+  count=$(find "$ICONS_DIR/$category" -name "*.svg" 2>/dev/null | wc -l | tr -d ' ')
   slug=$(slug_for "$category")
   echo "| $category | $count | [Browse](${slug}.md) |" >> "$DOCS_DIR/README.md"
 done
@@ -66,14 +66,15 @@ jq -r 'keys[] | select(. == "_comment" | not)' "$TAGS_FILE" | while IFS= read -r
   } > "$outfile"
 
   jq -r --arg c "$category" '.[$c] | to_entries[] | "\(.key)\t\(.value)"' "$TAGS_FILE" | while IFS=$'\t' read -r name tags; do
-    svg_path="../../icons/$category/$name.svg"
-    if [ -f "$ICONS_DIR/$category/${name}.svg" ]; then
-      icon_cell="<img src=\"${svg_path}\" alt=\"${name}\" width=\"24\" height=\"24\">"
-    else
-      icon_cell="-"
-    fi
     safe_tags=$(echo "$tags" | tr ',' ', ')
-    echo "| ${icon_cell} | \`${name}\` | ${safe_tags} | \`{\"icon\": \"${name}\"}\` |" >> "$outfile"
+    # tags.json uses base names; actual files have -fill/-line suffixes
+    for variant in "${name}-fill" "${name}-line" "${name}"; do
+      if [ -f "$ICONS_DIR/$category/${variant}.svg" ]; then
+        svg_path="../../icons/$category/$variant.svg"
+        icon_cell="<img src=\"${svg_path}\" alt=\"${variant}\" width=\"24\" height=\"24\">"
+        echo "| ${icon_cell} | \`${variant}\` | ${safe_tags} | \`{\"icon\": \"${variant}\"}\` |" >> "$outfile"
+      fi
+    done
   done
 
   echo "Generated $outfile"

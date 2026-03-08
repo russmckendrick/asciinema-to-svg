@@ -4,92 +4,181 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `arrow-left-up` | corner,direction,navigation,导航,左上 | `{"icon": "arrow-left-up"}` |
-| - | `arrow-up` | direction,navigation,send,upload,上传,发送,向上,导航 | `{"icon": "arrow-up"}` |
-| - | `arrow-right-up` | corner,direction,navigation,send,发送,右上,导航 | `{"icon": "arrow-right-up"}` |
-| - | `arrow-right` | direction,forward,navigation,next,下一个,向右,导航 | `{"icon": "arrow-right"}` |
-| - | `arrow-right-down` | corner,direction,navigation,右下,导航 | `{"icon": "arrow-right-down"}` |
-| - | `arrow-down` | direction,download,navigation,receive,下载,向下,导航,接收,收款 | `{"icon": "arrow-down"}` |
-| - | `arrow-left-down` | corner,direction,navigation,receive,导航,左下,接收,收款 | `{"icon": "arrow-left-down"}` |
-| - | `arrow-left` | backward,direction,navigation,previous,上一个,向左,导航,返回 | `{"icon": "arrow-left"}` |
-| - | `arrow-left-up-long` | corner,左上 | `{"icon": "arrow-left-up-long"}` |
-| - | `arrow-up-long` | send,发送,向上 | `{"icon": "arrow-up-long"}` |
-| - | `arrow-right-up-long` | corner,send,发送,右上 | `{"icon": "arrow-right-up-long"}` |
-| - | `arrow-right-long` | forward,向右 | `{"icon": "arrow-right-long"}` |
-| - | `arrow-right-down-long` | corner,右下 | `{"icon": "arrow-right-down-long"}` |
-| - | `arrow-down-long` | receive,向下,接收,收款 | `{"icon": "arrow-down-long"}` |
-| - | `arrow-left-down-long` | corner,receive,左下,接收,收款 | `{"icon": "arrow-left-down-long"}` |
-| - | `arrow-left-long` | backward,向左,返回 | `{"icon": "arrow-left-long"}` |
-| - | `corner-right-up` | arrow,右上 | `{"icon": "corner-right-up"}` |
-| - | `corner-up-left` | arrow,上左 | `{"icon": "corner-up-left"}` |
-| - | `corner-up-right` | arrow,上右 | `{"icon": "corner-up-right"}` |
-| - | `corner-right-down` | arrow,右下 | `{"icon": "corner-right-down"}` |
-| - | `corner-down-left` | arrow,下左 | `{"icon": "corner-down-left"}` |
-| - | `corner-left-up` | arrow,左上 | `{"icon": "corner-left-up"}` |
-| - | `corner-left-down` | arrow,左下 | `{"icon": "corner-left-down"}` |
-| - | `corner-down-right` | arrow,下右 | `{"icon": "corner-down-right"}` |
-| - | `arrow-up-circle` | 向上 | `{"icon": "arrow-up-circle"}` |
-| - | `arrow-right-circle` | forward,向右 | `{"icon": "arrow-right-circle"}` |
-| - | `arrow-down-circle` | 下载,向下 | `{"icon": "arrow-down-circle"}` |
-| - | `arrow-left-circle` | backward,向左,返回 | `{"icon": "arrow-left-circle"}` |
-| - | `arrow-left-up-box` | corner,左上 | `{"icon": "arrow-left-up-box"}` |
-| - | `arrow-up-box` | send,发送,向上 | `{"icon": "arrow-up-box"}` |
-| - | `arrow-right-up-box` | corner,send,发送,右上 | `{"icon": "arrow-right-up-box"}` |
-| - | `arrow-right-box` | forward,向右 | `{"icon": "arrow-right-box"}` |
-| - | `arrow-right-down-box` | corner,右下 | `{"icon": "arrow-right-down-box"}` |
-| - | `arrow-down-box` | receive,向下,接收,收款 | `{"icon": "arrow-down-box"}` |
-| - | `arrow-left-down-box` | corner,receive,左下,接收,收款 | `{"icon": "arrow-left-down-box"}` |
-| - | `arrow-left-box` | backward,向左,返回 | `{"icon": "arrow-left-box"}` |
-| - | `arrow-up-s` | chevron,向上 | `{"icon": "arrow-up-s"}` |
-| - | `arrow-right-s` | chevron,forward,向右 | `{"icon": "arrow-right-s"}` |
-| - | `arrow-down-s` | chevron,向下 | `{"icon": "arrow-down-s"}` |
-| - | `arrow-left-s` | backward,chevron,向左,返回 | `{"icon": "arrow-left-s"}` |
-| - | `skip-up` | arrow,expand,top,unfold,展开,收起,置顶 | `{"icon": "skip-up"}` |
-| - | `skip-right` | arrow,expand,next,unfold,展开,收起,跳过 | `{"icon": "skip-right"}` |
-| - | `skip-down` | arrow,expand,next,unfold,展开,收起,跳过 | `{"icon": "skip-down"}` |
-| - | `skip-left` | arrow,bottom,expand,unfold,展开,收起 | `{"icon": "skip-left"}` |
-| - | `arrow-left-right` | exchange,swap,交换,兑换,左右,换算 | `{"icon": "arrow-left-right"}` |
-| - | `arrow-up-down` | exchange,swap,上下,交换,兑换,换算 | `{"icon": "arrow-up-down"}` |
-| - | `arrow-drop-up` | chevron,dropdown,select,下拉,向上,选择 | `{"icon": "arrow-drop-up"}` |
-| - | `arrow-drop-right` | chevron,dropdown,forward,select,下拉,向右,选择 | `{"icon": "arrow-drop-right"}` |
-| - | `arrow-drop-down` | chevron,dropdown,select,下拉,向下,选择 | `{"icon": "arrow-drop-down"}` |
-| - | `arrow-drop-left` | backward,chevron,dropdown,select,下拉,向左,返回,选择 | `{"icon": "arrow-drop-left"}` |
-| - | `arrow-up-wide` | expand,thick,向上,宽,展开,粗 | `{"icon": "arrow-up-wide"}` |
-| - | `arrow-right-wide` | expand,thick,向右,宽,展开,粗 | `{"icon": "arrow-right-wide"}` |
-| - | `arrow-down-wide` | expand,thick,向下,宽,展开,粗 | `{"icon": "arrow-down-wide"}` |
-| - | `arrow-left-wide` | expand,thick,向左,宽,展开,粗 | `{"icon": "arrow-left-wide"}` |
-| - | `arrow-up-double` | chevron,expand,top,unfold,展开,收起 | `{"icon": "arrow-up-double"}` |
-| - | `arrow-right-double` | chevron,expand,unfold,展开,收起 | `{"icon": "arrow-right-double"}` |
-| - | `arrow-down-double` | chevron,expand,unfold,展开,收起 | `{"icon": "arrow-down-double"}` |
-| - | `arrow-left-double` | chevron,expand,unfold,展开,收起 | `{"icon": "arrow-left-double"}` |
-| - | `corner-up-left-double` | arrow,replay-all,回复全部 | `{"icon": "corner-up-left-double"}` |
-| - | `corner-up-right-double` | arrow,forward-all,转发全部 | `{"icon": "corner-up-right-double"}` |
-| - | `drag-move` | arrow,cursor,drop,光标,拖拽,移动 | `{"icon": "drag-move"}` |
-| - | `drag-move-2` | arrow,cursor,drop,光标,拖拽,移动 | `{"icon": "drag-move-2"}` |
-| - | `expand-left` | arrow,pull,resize,slide,unfold,展开,拉伸,滑动,调整大小 | `{"icon": "expand-left"}` |
-| - | `expand-right` | arrow,pull,resize,slide,unfold,右,展开,拉伸,收起,滑动,调整大小 | `{"icon": "expand-right"}` |
-| - | `contract-left` | arrow,fold,pull,resize,slide,拉伸,收起,滑动,调整大小 | `{"icon": "contract-left"}` |
-| - | `contract-right` | arrow,fold,pull,resize,slide,右,展开,拉伸,收起,滑动,调整大小 | `{"icon": "contract-right"}` |
-| - | `expand-up-down` | arrow,dropdown,switch,unfold,展开 | `{"icon": "expand-up-down"}` |
-| - | `expand-left-right` | arrow,dropdown,switch,unfold | `{"icon": "expand-left-right"}` |
-| - | `contract-up-down` | arrow,fold,收起 | `{"icon": "contract-up-down"}` |
-| - | `contract-left-right` | arrow,fold,收起 | `{"icon": "contract-left-right"}` |
-| - | `expand-height` | arrow,switch,unfold,展开 | `{"icon": "expand-height"}` |
-| - | `expand-width` | arrow,switch,unfold,展开 | `{"icon": "expand-width"}` |
-| - | `expand-horizontal` | arrow,switch,unfold,展开 | `{"icon": "expand-horizontal"}` |
-| - | `expand-vertical` | arrow,dropdown,switch,unfold,展开 | `{"icon": "expand-vertical"}` |
-| - | `collapse-horizontal` | arrow,scale,收起,缩小 | `{"icon": "collapse-horizontal"}` |
-| - | `collapse-vertical` | arrow,scale,收起,缩小 | `{"icon": "collapse-vertical"}` |
-| - | `expand-diagonal` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal"}` |
-| - | `expand-diagonal-2` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-2"}` |
-| - | `collapse-diagonal` | arrow,scale,收起,缩小 | `{"icon": "collapse-diagonal"}` |
-| - | `collapse-diagonal-2` | arrow,scale,收起,缩小 | `{"icon": "collapse-diagonal-2"}` |
-| - | `expand-horizontal-s` | arrow,switch,unfold,展开 | `{"icon": "expand-horizontal-s"}` |
-| - | `expand-vertical-s` | arrow,switch,unfold,展开 | `{"icon": "expand-vertical-s"}` |
-| - | `expand-diagonal-s` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-s"}` |
-| - | `expand-diagonal-s-2` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-s-2"}` |
-| - | `arrow-go-back` | undo,撤回,撤销,返回 | `{"icon": "arrow-go-back"}` |
-| - | `arrow-go-forward` | redo,撤回,撤销,重做 | `{"icon": "arrow-go-forward"}` |
-| - | `arrow-turn-forward` | 掉头 | `{"icon": "arrow-turn-forward"}` |
-| - | `arrow-turn-back` | 掉头 | `{"icon": "arrow-turn-back"}` |
-| - | `scroll-to-bottom` | mouse,navigation,导航,滚动到底部,鼠标 | `{"icon": "scroll-to-bottom"}` |
+| <img src="../../icons/Arrows/arrow-left-up-fill.svg" alt="arrow-left-up-fill" width="24" height="24"> | `arrow-left-up-fill` | corner,direction,navigation,导航,左上 | `{"icon": "arrow-left-up-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-up-line.svg" alt="arrow-left-up-line" width="24" height="24"> | `arrow-left-up-line` | corner,direction,navigation,导航,左上 | `{"icon": "arrow-left-up-line"}` |
+| <img src="../../icons/Arrows/arrow-up-fill.svg" alt="arrow-up-fill" width="24" height="24"> | `arrow-up-fill` | direction,navigation,send,upload,上传,发送,向上,导航 | `{"icon": "arrow-up-fill"}` |
+| <img src="../../icons/Arrows/arrow-up-line.svg" alt="arrow-up-line" width="24" height="24"> | `arrow-up-line` | direction,navigation,send,upload,上传,发送,向上,导航 | `{"icon": "arrow-up-line"}` |
+| <img src="../../icons/Arrows/arrow-right-up-fill.svg" alt="arrow-right-up-fill" width="24" height="24"> | `arrow-right-up-fill` | corner,direction,navigation,send,发送,右上,导航 | `{"icon": "arrow-right-up-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-up-line.svg" alt="arrow-right-up-line" width="24" height="24"> | `arrow-right-up-line` | corner,direction,navigation,send,发送,右上,导航 | `{"icon": "arrow-right-up-line"}` |
+| <img src="../../icons/Arrows/arrow-right-fill.svg" alt="arrow-right-fill" width="24" height="24"> | `arrow-right-fill` | direction,forward,navigation,next,下一个,向右,导航 | `{"icon": "arrow-right-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-line.svg" alt="arrow-right-line" width="24" height="24"> | `arrow-right-line` | direction,forward,navigation,next,下一个,向右,导航 | `{"icon": "arrow-right-line"}` |
+| <img src="../../icons/Arrows/arrow-right-down-fill.svg" alt="arrow-right-down-fill" width="24" height="24"> | `arrow-right-down-fill` | corner,direction,navigation,右下,导航 | `{"icon": "arrow-right-down-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-down-line.svg" alt="arrow-right-down-line" width="24" height="24"> | `arrow-right-down-line` | corner,direction,navigation,右下,导航 | `{"icon": "arrow-right-down-line"}` |
+| <img src="../../icons/Arrows/arrow-down-fill.svg" alt="arrow-down-fill" width="24" height="24"> | `arrow-down-fill` | direction,download,navigation,receive,下载,向下,导航,接收,收款 | `{"icon": "arrow-down-fill"}` |
+| <img src="../../icons/Arrows/arrow-down-line.svg" alt="arrow-down-line" width="24" height="24"> | `arrow-down-line` | direction,download,navigation,receive,下载,向下,导航,接收,收款 | `{"icon": "arrow-down-line"}` |
+| <img src="../../icons/Arrows/arrow-left-down-fill.svg" alt="arrow-left-down-fill" width="24" height="24"> | `arrow-left-down-fill` | corner,direction,navigation,receive,导航,左下,接收,收款 | `{"icon": "arrow-left-down-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-down-line.svg" alt="arrow-left-down-line" width="24" height="24"> | `arrow-left-down-line` | corner,direction,navigation,receive,导航,左下,接收,收款 | `{"icon": "arrow-left-down-line"}` |
+| <img src="../../icons/Arrows/arrow-left-fill.svg" alt="arrow-left-fill" width="24" height="24"> | `arrow-left-fill` | backward,direction,navigation,previous,上一个,向左,导航,返回 | `{"icon": "arrow-left-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-line.svg" alt="arrow-left-line" width="24" height="24"> | `arrow-left-line` | backward,direction,navigation,previous,上一个,向左,导航,返回 | `{"icon": "arrow-left-line"}` |
+| <img src="../../icons/Arrows/arrow-left-up-long-fill.svg" alt="arrow-left-up-long-fill" width="24" height="24"> | `arrow-left-up-long-fill` | corner,左上 | `{"icon": "arrow-left-up-long-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-up-long-line.svg" alt="arrow-left-up-long-line" width="24" height="24"> | `arrow-left-up-long-line` | corner,左上 | `{"icon": "arrow-left-up-long-line"}` |
+| <img src="../../icons/Arrows/arrow-up-long-fill.svg" alt="arrow-up-long-fill" width="24" height="24"> | `arrow-up-long-fill` | send,发送,向上 | `{"icon": "arrow-up-long-fill"}` |
+| <img src="../../icons/Arrows/arrow-up-long-line.svg" alt="arrow-up-long-line" width="24" height="24"> | `arrow-up-long-line` | send,发送,向上 | `{"icon": "arrow-up-long-line"}` |
+| <img src="../../icons/Arrows/arrow-right-up-long-fill.svg" alt="arrow-right-up-long-fill" width="24" height="24"> | `arrow-right-up-long-fill` | corner,send,发送,右上 | `{"icon": "arrow-right-up-long-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-up-long-line.svg" alt="arrow-right-up-long-line" width="24" height="24"> | `arrow-right-up-long-line` | corner,send,发送,右上 | `{"icon": "arrow-right-up-long-line"}` |
+| <img src="../../icons/Arrows/arrow-right-long-fill.svg" alt="arrow-right-long-fill" width="24" height="24"> | `arrow-right-long-fill` | forward,向右 | `{"icon": "arrow-right-long-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-long-line.svg" alt="arrow-right-long-line" width="24" height="24"> | `arrow-right-long-line` | forward,向右 | `{"icon": "arrow-right-long-line"}` |
+| <img src="../../icons/Arrows/arrow-right-down-long-fill.svg" alt="arrow-right-down-long-fill" width="24" height="24"> | `arrow-right-down-long-fill` | corner,右下 | `{"icon": "arrow-right-down-long-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-down-long-line.svg" alt="arrow-right-down-long-line" width="24" height="24"> | `arrow-right-down-long-line` | corner,右下 | `{"icon": "arrow-right-down-long-line"}` |
+| <img src="../../icons/Arrows/arrow-down-long-fill.svg" alt="arrow-down-long-fill" width="24" height="24"> | `arrow-down-long-fill` | receive,向下,接收,收款 | `{"icon": "arrow-down-long-fill"}` |
+| <img src="../../icons/Arrows/arrow-down-long-line.svg" alt="arrow-down-long-line" width="24" height="24"> | `arrow-down-long-line` | receive,向下,接收,收款 | `{"icon": "arrow-down-long-line"}` |
+| <img src="../../icons/Arrows/arrow-left-down-long-fill.svg" alt="arrow-left-down-long-fill" width="24" height="24"> | `arrow-left-down-long-fill` | corner,receive,左下,接收,收款 | `{"icon": "arrow-left-down-long-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-down-long-line.svg" alt="arrow-left-down-long-line" width="24" height="24"> | `arrow-left-down-long-line` | corner,receive,左下,接收,收款 | `{"icon": "arrow-left-down-long-line"}` |
+| <img src="../../icons/Arrows/arrow-left-long-fill.svg" alt="arrow-left-long-fill" width="24" height="24"> | `arrow-left-long-fill` | backward,向左,返回 | `{"icon": "arrow-left-long-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-long-line.svg" alt="arrow-left-long-line" width="24" height="24"> | `arrow-left-long-line` | backward,向左,返回 | `{"icon": "arrow-left-long-line"}` |
+| <img src="../../icons/Arrows/corner-right-up-fill.svg" alt="corner-right-up-fill" width="24" height="24"> | `corner-right-up-fill` | arrow,右上 | `{"icon": "corner-right-up-fill"}` |
+| <img src="../../icons/Arrows/corner-right-up-line.svg" alt="corner-right-up-line" width="24" height="24"> | `corner-right-up-line` | arrow,右上 | `{"icon": "corner-right-up-line"}` |
+| <img src="../../icons/Arrows/corner-up-left-fill.svg" alt="corner-up-left-fill" width="24" height="24"> | `corner-up-left-fill` | arrow,上左 | `{"icon": "corner-up-left-fill"}` |
+| <img src="../../icons/Arrows/corner-up-left-line.svg" alt="corner-up-left-line" width="24" height="24"> | `corner-up-left-line` | arrow,上左 | `{"icon": "corner-up-left-line"}` |
+| <img src="../../icons/Arrows/corner-up-right-fill.svg" alt="corner-up-right-fill" width="24" height="24"> | `corner-up-right-fill` | arrow,上右 | `{"icon": "corner-up-right-fill"}` |
+| <img src="../../icons/Arrows/corner-up-right-line.svg" alt="corner-up-right-line" width="24" height="24"> | `corner-up-right-line` | arrow,上右 | `{"icon": "corner-up-right-line"}` |
+| <img src="../../icons/Arrows/corner-right-down-fill.svg" alt="corner-right-down-fill" width="24" height="24"> | `corner-right-down-fill` | arrow,右下 | `{"icon": "corner-right-down-fill"}` |
+| <img src="../../icons/Arrows/corner-right-down-line.svg" alt="corner-right-down-line" width="24" height="24"> | `corner-right-down-line` | arrow,右下 | `{"icon": "corner-right-down-line"}` |
+| <img src="../../icons/Arrows/corner-down-left-fill.svg" alt="corner-down-left-fill" width="24" height="24"> | `corner-down-left-fill` | arrow,下左 | `{"icon": "corner-down-left-fill"}` |
+| <img src="../../icons/Arrows/corner-down-left-line.svg" alt="corner-down-left-line" width="24" height="24"> | `corner-down-left-line` | arrow,下左 | `{"icon": "corner-down-left-line"}` |
+| <img src="../../icons/Arrows/corner-left-up-fill.svg" alt="corner-left-up-fill" width="24" height="24"> | `corner-left-up-fill` | arrow,左上 | `{"icon": "corner-left-up-fill"}` |
+| <img src="../../icons/Arrows/corner-left-up-line.svg" alt="corner-left-up-line" width="24" height="24"> | `corner-left-up-line` | arrow,左上 | `{"icon": "corner-left-up-line"}` |
+| <img src="../../icons/Arrows/corner-left-down-fill.svg" alt="corner-left-down-fill" width="24" height="24"> | `corner-left-down-fill` | arrow,左下 | `{"icon": "corner-left-down-fill"}` |
+| <img src="../../icons/Arrows/corner-left-down-line.svg" alt="corner-left-down-line" width="24" height="24"> | `corner-left-down-line` | arrow,左下 | `{"icon": "corner-left-down-line"}` |
+| <img src="../../icons/Arrows/corner-down-right-fill.svg" alt="corner-down-right-fill" width="24" height="24"> | `corner-down-right-fill` | arrow,下右 | `{"icon": "corner-down-right-fill"}` |
+| <img src="../../icons/Arrows/corner-down-right-line.svg" alt="corner-down-right-line" width="24" height="24"> | `corner-down-right-line` | arrow,下右 | `{"icon": "corner-down-right-line"}` |
+| <img src="../../icons/Arrows/arrow-up-circle-fill.svg" alt="arrow-up-circle-fill" width="24" height="24"> | `arrow-up-circle-fill` | 向上 | `{"icon": "arrow-up-circle-fill"}` |
+| <img src="../../icons/Arrows/arrow-up-circle-line.svg" alt="arrow-up-circle-line" width="24" height="24"> | `arrow-up-circle-line` | 向上 | `{"icon": "arrow-up-circle-line"}` |
+| <img src="../../icons/Arrows/arrow-right-circle-fill.svg" alt="arrow-right-circle-fill" width="24" height="24"> | `arrow-right-circle-fill` | forward,向右 | `{"icon": "arrow-right-circle-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-circle-line.svg" alt="arrow-right-circle-line" width="24" height="24"> | `arrow-right-circle-line` | forward,向右 | `{"icon": "arrow-right-circle-line"}` |
+| <img src="../../icons/Arrows/arrow-down-circle-fill.svg" alt="arrow-down-circle-fill" width="24" height="24"> | `arrow-down-circle-fill` | 下载,向下 | `{"icon": "arrow-down-circle-fill"}` |
+| <img src="../../icons/Arrows/arrow-down-circle-line.svg" alt="arrow-down-circle-line" width="24" height="24"> | `arrow-down-circle-line` | 下载,向下 | `{"icon": "arrow-down-circle-line"}` |
+| <img src="../../icons/Arrows/arrow-left-circle-fill.svg" alt="arrow-left-circle-fill" width="24" height="24"> | `arrow-left-circle-fill` | backward,向左,返回 | `{"icon": "arrow-left-circle-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-circle-line.svg" alt="arrow-left-circle-line" width="24" height="24"> | `arrow-left-circle-line` | backward,向左,返回 | `{"icon": "arrow-left-circle-line"}` |
+| <img src="../../icons/Arrows/arrow-left-up-box-fill.svg" alt="arrow-left-up-box-fill" width="24" height="24"> | `arrow-left-up-box-fill` | corner,左上 | `{"icon": "arrow-left-up-box-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-up-box-line.svg" alt="arrow-left-up-box-line" width="24" height="24"> | `arrow-left-up-box-line` | corner,左上 | `{"icon": "arrow-left-up-box-line"}` |
+| <img src="../../icons/Arrows/arrow-up-box-fill.svg" alt="arrow-up-box-fill" width="24" height="24"> | `arrow-up-box-fill` | send,发送,向上 | `{"icon": "arrow-up-box-fill"}` |
+| <img src="../../icons/Arrows/arrow-up-box-line.svg" alt="arrow-up-box-line" width="24" height="24"> | `arrow-up-box-line` | send,发送,向上 | `{"icon": "arrow-up-box-line"}` |
+| <img src="../../icons/Arrows/arrow-right-up-box-fill.svg" alt="arrow-right-up-box-fill" width="24" height="24"> | `arrow-right-up-box-fill` | corner,send,发送,右上 | `{"icon": "arrow-right-up-box-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-up-box-line.svg" alt="arrow-right-up-box-line" width="24" height="24"> | `arrow-right-up-box-line` | corner,send,发送,右上 | `{"icon": "arrow-right-up-box-line"}` |
+| <img src="../../icons/Arrows/arrow-right-box-fill.svg" alt="arrow-right-box-fill" width="24" height="24"> | `arrow-right-box-fill` | forward,向右 | `{"icon": "arrow-right-box-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-box-line.svg" alt="arrow-right-box-line" width="24" height="24"> | `arrow-right-box-line` | forward,向右 | `{"icon": "arrow-right-box-line"}` |
+| <img src="../../icons/Arrows/arrow-right-down-box-fill.svg" alt="arrow-right-down-box-fill" width="24" height="24"> | `arrow-right-down-box-fill` | corner,右下 | `{"icon": "arrow-right-down-box-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-down-box-line.svg" alt="arrow-right-down-box-line" width="24" height="24"> | `arrow-right-down-box-line` | corner,右下 | `{"icon": "arrow-right-down-box-line"}` |
+| <img src="../../icons/Arrows/arrow-down-box-fill.svg" alt="arrow-down-box-fill" width="24" height="24"> | `arrow-down-box-fill` | receive,向下,接收,收款 | `{"icon": "arrow-down-box-fill"}` |
+| <img src="../../icons/Arrows/arrow-down-box-line.svg" alt="arrow-down-box-line" width="24" height="24"> | `arrow-down-box-line` | receive,向下,接收,收款 | `{"icon": "arrow-down-box-line"}` |
+| <img src="../../icons/Arrows/arrow-left-down-box-fill.svg" alt="arrow-left-down-box-fill" width="24" height="24"> | `arrow-left-down-box-fill` | corner,receive,左下,接收,收款 | `{"icon": "arrow-left-down-box-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-down-box-line.svg" alt="arrow-left-down-box-line" width="24" height="24"> | `arrow-left-down-box-line` | corner,receive,左下,接收,收款 | `{"icon": "arrow-left-down-box-line"}` |
+| <img src="../../icons/Arrows/arrow-left-box-fill.svg" alt="arrow-left-box-fill" width="24" height="24"> | `arrow-left-box-fill` | backward,向左,返回 | `{"icon": "arrow-left-box-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-box-line.svg" alt="arrow-left-box-line" width="24" height="24"> | `arrow-left-box-line` | backward,向左,返回 | `{"icon": "arrow-left-box-line"}` |
+| <img src="../../icons/Arrows/arrow-up-s-fill.svg" alt="arrow-up-s-fill" width="24" height="24"> | `arrow-up-s-fill` | chevron,向上 | `{"icon": "arrow-up-s-fill"}` |
+| <img src="../../icons/Arrows/arrow-up-s-line.svg" alt="arrow-up-s-line" width="24" height="24"> | `arrow-up-s-line` | chevron,向上 | `{"icon": "arrow-up-s-line"}` |
+| <img src="../../icons/Arrows/arrow-right-s-fill.svg" alt="arrow-right-s-fill" width="24" height="24"> | `arrow-right-s-fill` | chevron,forward,向右 | `{"icon": "arrow-right-s-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-s-line.svg" alt="arrow-right-s-line" width="24" height="24"> | `arrow-right-s-line` | chevron,forward,向右 | `{"icon": "arrow-right-s-line"}` |
+| <img src="../../icons/Arrows/arrow-down-s-fill.svg" alt="arrow-down-s-fill" width="24" height="24"> | `arrow-down-s-fill` | chevron,向下 | `{"icon": "arrow-down-s-fill"}` |
+| <img src="../../icons/Arrows/arrow-down-s-line.svg" alt="arrow-down-s-line" width="24" height="24"> | `arrow-down-s-line` | chevron,向下 | `{"icon": "arrow-down-s-line"}` |
+| <img src="../../icons/Arrows/arrow-left-s-fill.svg" alt="arrow-left-s-fill" width="24" height="24"> | `arrow-left-s-fill` | backward,chevron,向左,返回 | `{"icon": "arrow-left-s-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-s-line.svg" alt="arrow-left-s-line" width="24" height="24"> | `arrow-left-s-line` | backward,chevron,向左,返回 | `{"icon": "arrow-left-s-line"}` |
+| <img src="../../icons/Arrows/skip-up-fill.svg" alt="skip-up-fill" width="24" height="24"> | `skip-up-fill` | arrow,expand,top,unfold,展开,收起,置顶 | `{"icon": "skip-up-fill"}` |
+| <img src="../../icons/Arrows/skip-up-line.svg" alt="skip-up-line" width="24" height="24"> | `skip-up-line` | arrow,expand,top,unfold,展开,收起,置顶 | `{"icon": "skip-up-line"}` |
+| <img src="../../icons/Arrows/skip-right-fill.svg" alt="skip-right-fill" width="24" height="24"> | `skip-right-fill` | arrow,expand,next,unfold,展开,收起,跳过 | `{"icon": "skip-right-fill"}` |
+| <img src="../../icons/Arrows/skip-right-line.svg" alt="skip-right-line" width="24" height="24"> | `skip-right-line` | arrow,expand,next,unfold,展开,收起,跳过 | `{"icon": "skip-right-line"}` |
+| <img src="../../icons/Arrows/skip-down-fill.svg" alt="skip-down-fill" width="24" height="24"> | `skip-down-fill` | arrow,expand,next,unfold,展开,收起,跳过 | `{"icon": "skip-down-fill"}` |
+| <img src="../../icons/Arrows/skip-down-line.svg" alt="skip-down-line" width="24" height="24"> | `skip-down-line` | arrow,expand,next,unfold,展开,收起,跳过 | `{"icon": "skip-down-line"}` |
+| <img src="../../icons/Arrows/skip-left-fill.svg" alt="skip-left-fill" width="24" height="24"> | `skip-left-fill` | arrow,bottom,expand,unfold,展开,收起 | `{"icon": "skip-left-fill"}` |
+| <img src="../../icons/Arrows/skip-left-line.svg" alt="skip-left-line" width="24" height="24"> | `skip-left-line` | arrow,bottom,expand,unfold,展开,收起 | `{"icon": "skip-left-line"}` |
+| <img src="../../icons/Arrows/arrow-left-right-fill.svg" alt="arrow-left-right-fill" width="24" height="24"> | `arrow-left-right-fill` | exchange,swap,交换,兑换,左右,换算 | `{"icon": "arrow-left-right-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-right-line.svg" alt="arrow-left-right-line" width="24" height="24"> | `arrow-left-right-line` | exchange,swap,交换,兑换,左右,换算 | `{"icon": "arrow-left-right-line"}` |
+| <img src="../../icons/Arrows/arrow-up-down-fill.svg" alt="arrow-up-down-fill" width="24" height="24"> | `arrow-up-down-fill` | exchange,swap,上下,交换,兑换,换算 | `{"icon": "arrow-up-down-fill"}` |
+| <img src="../../icons/Arrows/arrow-up-down-line.svg" alt="arrow-up-down-line" width="24" height="24"> | `arrow-up-down-line` | exchange,swap,上下,交换,兑换,换算 | `{"icon": "arrow-up-down-line"}` |
+| <img src="../../icons/Arrows/arrow-drop-up-fill.svg" alt="arrow-drop-up-fill" width="24" height="24"> | `arrow-drop-up-fill` | chevron,dropdown,select,下拉,向上,选择 | `{"icon": "arrow-drop-up-fill"}` |
+| <img src="../../icons/Arrows/arrow-drop-up-line.svg" alt="arrow-drop-up-line" width="24" height="24"> | `arrow-drop-up-line` | chevron,dropdown,select,下拉,向上,选择 | `{"icon": "arrow-drop-up-line"}` |
+| <img src="../../icons/Arrows/arrow-drop-right-fill.svg" alt="arrow-drop-right-fill" width="24" height="24"> | `arrow-drop-right-fill` | chevron,dropdown,forward,select,下拉,向右,选择 | `{"icon": "arrow-drop-right-fill"}` |
+| <img src="../../icons/Arrows/arrow-drop-right-line.svg" alt="arrow-drop-right-line" width="24" height="24"> | `arrow-drop-right-line` | chevron,dropdown,forward,select,下拉,向右,选择 | `{"icon": "arrow-drop-right-line"}` |
+| <img src="../../icons/Arrows/arrow-drop-down-fill.svg" alt="arrow-drop-down-fill" width="24" height="24"> | `arrow-drop-down-fill` | chevron,dropdown,select,下拉,向下,选择 | `{"icon": "arrow-drop-down-fill"}` |
+| <img src="../../icons/Arrows/arrow-drop-down-line.svg" alt="arrow-drop-down-line" width="24" height="24"> | `arrow-drop-down-line` | chevron,dropdown,select,下拉,向下,选择 | `{"icon": "arrow-drop-down-line"}` |
+| <img src="../../icons/Arrows/arrow-drop-left-fill.svg" alt="arrow-drop-left-fill" width="24" height="24"> | `arrow-drop-left-fill` | backward,chevron,dropdown,select,下拉,向左,返回,选择 | `{"icon": "arrow-drop-left-fill"}` |
+| <img src="../../icons/Arrows/arrow-drop-left-line.svg" alt="arrow-drop-left-line" width="24" height="24"> | `arrow-drop-left-line` | backward,chevron,dropdown,select,下拉,向左,返回,选择 | `{"icon": "arrow-drop-left-line"}` |
+| <img src="../../icons/Arrows/arrow-up-wide-fill.svg" alt="arrow-up-wide-fill" width="24" height="24"> | `arrow-up-wide-fill` | expand,thick,向上,宽,展开,粗 | `{"icon": "arrow-up-wide-fill"}` |
+| <img src="../../icons/Arrows/arrow-up-wide-line.svg" alt="arrow-up-wide-line" width="24" height="24"> | `arrow-up-wide-line` | expand,thick,向上,宽,展开,粗 | `{"icon": "arrow-up-wide-line"}` |
+| <img src="../../icons/Arrows/arrow-right-wide-fill.svg" alt="arrow-right-wide-fill" width="24" height="24"> | `arrow-right-wide-fill` | expand,thick,向右,宽,展开,粗 | `{"icon": "arrow-right-wide-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-wide-line.svg" alt="arrow-right-wide-line" width="24" height="24"> | `arrow-right-wide-line` | expand,thick,向右,宽,展开,粗 | `{"icon": "arrow-right-wide-line"}` |
+| <img src="../../icons/Arrows/arrow-down-wide-fill.svg" alt="arrow-down-wide-fill" width="24" height="24"> | `arrow-down-wide-fill` | expand,thick,向下,宽,展开,粗 | `{"icon": "arrow-down-wide-fill"}` |
+| <img src="../../icons/Arrows/arrow-down-wide-line.svg" alt="arrow-down-wide-line" width="24" height="24"> | `arrow-down-wide-line` | expand,thick,向下,宽,展开,粗 | `{"icon": "arrow-down-wide-line"}` |
+| <img src="../../icons/Arrows/arrow-left-wide-fill.svg" alt="arrow-left-wide-fill" width="24" height="24"> | `arrow-left-wide-fill` | expand,thick,向左,宽,展开,粗 | `{"icon": "arrow-left-wide-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-wide-line.svg" alt="arrow-left-wide-line" width="24" height="24"> | `arrow-left-wide-line` | expand,thick,向左,宽,展开,粗 | `{"icon": "arrow-left-wide-line"}` |
+| <img src="../../icons/Arrows/arrow-up-double-fill.svg" alt="arrow-up-double-fill" width="24" height="24"> | `arrow-up-double-fill` | chevron,expand,top,unfold,展开,收起 | `{"icon": "arrow-up-double-fill"}` |
+| <img src="../../icons/Arrows/arrow-up-double-line.svg" alt="arrow-up-double-line" width="24" height="24"> | `arrow-up-double-line` | chevron,expand,top,unfold,展开,收起 | `{"icon": "arrow-up-double-line"}` |
+| <img src="../../icons/Arrows/arrow-right-double-fill.svg" alt="arrow-right-double-fill" width="24" height="24"> | `arrow-right-double-fill` | chevron,expand,unfold,展开,收起 | `{"icon": "arrow-right-double-fill"}` |
+| <img src="../../icons/Arrows/arrow-right-double-line.svg" alt="arrow-right-double-line" width="24" height="24"> | `arrow-right-double-line` | chevron,expand,unfold,展开,收起 | `{"icon": "arrow-right-double-line"}` |
+| <img src="../../icons/Arrows/arrow-down-double-fill.svg" alt="arrow-down-double-fill" width="24" height="24"> | `arrow-down-double-fill` | chevron,expand,unfold,展开,收起 | `{"icon": "arrow-down-double-fill"}` |
+| <img src="../../icons/Arrows/arrow-down-double-line.svg" alt="arrow-down-double-line" width="24" height="24"> | `arrow-down-double-line` | chevron,expand,unfold,展开,收起 | `{"icon": "arrow-down-double-line"}` |
+| <img src="../../icons/Arrows/arrow-left-double-fill.svg" alt="arrow-left-double-fill" width="24" height="24"> | `arrow-left-double-fill` | chevron,expand,unfold,展开,收起 | `{"icon": "arrow-left-double-fill"}` |
+| <img src="../../icons/Arrows/arrow-left-double-line.svg" alt="arrow-left-double-line" width="24" height="24"> | `arrow-left-double-line` | chevron,expand,unfold,展开,收起 | `{"icon": "arrow-left-double-line"}` |
+| <img src="../../icons/Arrows/corner-up-left-double-fill.svg" alt="corner-up-left-double-fill" width="24" height="24"> | `corner-up-left-double-fill` | arrow,replay-all,回复全部 | `{"icon": "corner-up-left-double-fill"}` |
+| <img src="../../icons/Arrows/corner-up-left-double-line.svg" alt="corner-up-left-double-line" width="24" height="24"> | `corner-up-left-double-line` | arrow,replay-all,回复全部 | `{"icon": "corner-up-left-double-line"}` |
+| <img src="../../icons/Arrows/corner-up-right-double-fill.svg" alt="corner-up-right-double-fill" width="24" height="24"> | `corner-up-right-double-fill` | arrow,forward-all,转发全部 | `{"icon": "corner-up-right-double-fill"}` |
+| <img src="../../icons/Arrows/corner-up-right-double-line.svg" alt="corner-up-right-double-line" width="24" height="24"> | `corner-up-right-double-line` | arrow,forward-all,转发全部 | `{"icon": "corner-up-right-double-line"}` |
+| <img src="../../icons/Arrows/drag-move-fill.svg" alt="drag-move-fill" width="24" height="24"> | `drag-move-fill` | arrow,cursor,drop,光标,拖拽,移动 | `{"icon": "drag-move-fill"}` |
+| <img src="../../icons/Arrows/drag-move-line.svg" alt="drag-move-line" width="24" height="24"> | `drag-move-line` | arrow,cursor,drop,光标,拖拽,移动 | `{"icon": "drag-move-line"}` |
+| <img src="../../icons/Arrows/drag-move-2-fill.svg" alt="drag-move-2-fill" width="24" height="24"> | `drag-move-2-fill` | arrow,cursor,drop,光标,拖拽,移动 | `{"icon": "drag-move-2-fill"}` |
+| <img src="../../icons/Arrows/drag-move-2-line.svg" alt="drag-move-2-line" width="24" height="24"> | `drag-move-2-line` | arrow,cursor,drop,光标,拖拽,移动 | `{"icon": "drag-move-2-line"}` |
+| <img src="../../icons/Arrows/expand-left-fill.svg" alt="expand-left-fill" width="24" height="24"> | `expand-left-fill` | arrow,pull,resize,slide,unfold,展开,拉伸,滑动,调整大小 | `{"icon": "expand-left-fill"}` |
+| <img src="../../icons/Arrows/expand-left-line.svg" alt="expand-left-line" width="24" height="24"> | `expand-left-line` | arrow,pull,resize,slide,unfold,展开,拉伸,滑动,调整大小 | `{"icon": "expand-left-line"}` |
+| <img src="../../icons/Arrows/expand-right-fill.svg" alt="expand-right-fill" width="24" height="24"> | `expand-right-fill` | arrow,pull,resize,slide,unfold,右,展开,拉伸,收起,滑动,调整大小 | `{"icon": "expand-right-fill"}` |
+| <img src="../../icons/Arrows/expand-right-line.svg" alt="expand-right-line" width="24" height="24"> | `expand-right-line` | arrow,pull,resize,slide,unfold,右,展开,拉伸,收起,滑动,调整大小 | `{"icon": "expand-right-line"}` |
+| <img src="../../icons/Arrows/contract-left-fill.svg" alt="contract-left-fill" width="24" height="24"> | `contract-left-fill` | arrow,fold,pull,resize,slide,拉伸,收起,滑动,调整大小 | `{"icon": "contract-left-fill"}` |
+| <img src="../../icons/Arrows/contract-left-line.svg" alt="contract-left-line" width="24" height="24"> | `contract-left-line` | arrow,fold,pull,resize,slide,拉伸,收起,滑动,调整大小 | `{"icon": "contract-left-line"}` |
+| <img src="../../icons/Arrows/contract-right-fill.svg" alt="contract-right-fill" width="24" height="24"> | `contract-right-fill` | arrow,fold,pull,resize,slide,右,展开,拉伸,收起,滑动,调整大小 | `{"icon": "contract-right-fill"}` |
+| <img src="../../icons/Arrows/contract-right-line.svg" alt="contract-right-line" width="24" height="24"> | `contract-right-line` | arrow,fold,pull,resize,slide,右,展开,拉伸,收起,滑动,调整大小 | `{"icon": "contract-right-line"}` |
+| <img src="../../icons/Arrows/expand-up-down-fill.svg" alt="expand-up-down-fill" width="24" height="24"> | `expand-up-down-fill` | arrow,dropdown,switch,unfold,展开 | `{"icon": "expand-up-down-fill"}` |
+| <img src="../../icons/Arrows/expand-up-down-line.svg" alt="expand-up-down-line" width="24" height="24"> | `expand-up-down-line` | arrow,dropdown,switch,unfold,展开 | `{"icon": "expand-up-down-line"}` |
+| <img src="../../icons/Arrows/expand-left-right-fill.svg" alt="expand-left-right-fill" width="24" height="24"> | `expand-left-right-fill` | arrow,dropdown,switch,unfold | `{"icon": "expand-left-right-fill"}` |
+| <img src="../../icons/Arrows/expand-left-right-line.svg" alt="expand-left-right-line" width="24" height="24"> | `expand-left-right-line` | arrow,dropdown,switch,unfold | `{"icon": "expand-left-right-line"}` |
+| <img src="../../icons/Arrows/contract-up-down-fill.svg" alt="contract-up-down-fill" width="24" height="24"> | `contract-up-down-fill` | arrow,fold,收起 | `{"icon": "contract-up-down-fill"}` |
+| <img src="../../icons/Arrows/contract-up-down-line.svg" alt="contract-up-down-line" width="24" height="24"> | `contract-up-down-line` | arrow,fold,收起 | `{"icon": "contract-up-down-line"}` |
+| <img src="../../icons/Arrows/contract-left-right-fill.svg" alt="contract-left-right-fill" width="24" height="24"> | `contract-left-right-fill` | arrow,fold,收起 | `{"icon": "contract-left-right-fill"}` |
+| <img src="../../icons/Arrows/contract-left-right-line.svg" alt="contract-left-right-line" width="24" height="24"> | `contract-left-right-line` | arrow,fold,收起 | `{"icon": "contract-left-right-line"}` |
+| <img src="../../icons/Arrows/expand-height-fill.svg" alt="expand-height-fill" width="24" height="24"> | `expand-height-fill` | arrow,switch,unfold,展开 | `{"icon": "expand-height-fill"}` |
+| <img src="../../icons/Arrows/expand-height-line.svg" alt="expand-height-line" width="24" height="24"> | `expand-height-line` | arrow,switch,unfold,展开 | `{"icon": "expand-height-line"}` |
+| <img src="../../icons/Arrows/expand-width-fill.svg" alt="expand-width-fill" width="24" height="24"> | `expand-width-fill` | arrow,switch,unfold,展开 | `{"icon": "expand-width-fill"}` |
+| <img src="../../icons/Arrows/expand-width-line.svg" alt="expand-width-line" width="24" height="24"> | `expand-width-line` | arrow,switch,unfold,展开 | `{"icon": "expand-width-line"}` |
+| <img src="../../icons/Arrows/expand-horizontal-fill.svg" alt="expand-horizontal-fill" width="24" height="24"> | `expand-horizontal-fill` | arrow,switch,unfold,展开 | `{"icon": "expand-horizontal-fill"}` |
+| <img src="../../icons/Arrows/expand-horizontal-line.svg" alt="expand-horizontal-line" width="24" height="24"> | `expand-horizontal-line` | arrow,switch,unfold,展开 | `{"icon": "expand-horizontal-line"}` |
+| <img src="../../icons/Arrows/expand-vertical-fill.svg" alt="expand-vertical-fill" width="24" height="24"> | `expand-vertical-fill` | arrow,dropdown,switch,unfold,展开 | `{"icon": "expand-vertical-fill"}` |
+| <img src="../../icons/Arrows/expand-vertical-line.svg" alt="expand-vertical-line" width="24" height="24"> | `expand-vertical-line` | arrow,dropdown,switch,unfold,展开 | `{"icon": "expand-vertical-line"}` |
+| <img src="../../icons/Arrows/collapse-horizontal-fill.svg" alt="collapse-horizontal-fill" width="24" height="24"> | `collapse-horizontal-fill` | arrow,scale,收起,缩小 | `{"icon": "collapse-horizontal-fill"}` |
+| <img src="../../icons/Arrows/collapse-horizontal-line.svg" alt="collapse-horizontal-line" width="24" height="24"> | `collapse-horizontal-line` | arrow,scale,收起,缩小 | `{"icon": "collapse-horizontal-line"}` |
+| <img src="../../icons/Arrows/collapse-vertical-fill.svg" alt="collapse-vertical-fill" width="24" height="24"> | `collapse-vertical-fill` | arrow,scale,收起,缩小 | `{"icon": "collapse-vertical-fill"}` |
+| <img src="../../icons/Arrows/collapse-vertical-line.svg" alt="collapse-vertical-line" width="24" height="24"> | `collapse-vertical-line` | arrow,scale,收起,缩小 | `{"icon": "collapse-vertical-line"}` |
+| <img src="../../icons/Arrows/expand-diagonal-fill.svg" alt="expand-diagonal-fill" width="24" height="24"> | `expand-diagonal-fill` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-fill"}` |
+| <img src="../../icons/Arrows/expand-diagonal-line.svg" alt="expand-diagonal-line" width="24" height="24"> | `expand-diagonal-line` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-line"}` |
+| <img src="../../icons/Arrows/expand-diagonal-2-fill.svg" alt="expand-diagonal-2-fill" width="24" height="24"> | `expand-diagonal-2-fill` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-2-fill"}` |
+| <img src="../../icons/Arrows/expand-diagonal-2-line.svg" alt="expand-diagonal-2-line" width="24" height="24"> | `expand-diagonal-2-line` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-2-line"}` |
+| <img src="../../icons/Arrows/collapse-diagonal-fill.svg" alt="collapse-diagonal-fill" width="24" height="24"> | `collapse-diagonal-fill` | arrow,scale,收起,缩小 | `{"icon": "collapse-diagonal-fill"}` |
+| <img src="../../icons/Arrows/collapse-diagonal-line.svg" alt="collapse-diagonal-line" width="24" height="24"> | `collapse-diagonal-line` | arrow,scale,收起,缩小 | `{"icon": "collapse-diagonal-line"}` |
+| <img src="../../icons/Arrows/collapse-diagonal-2-fill.svg" alt="collapse-diagonal-2-fill" width="24" height="24"> | `collapse-diagonal-2-fill` | arrow,scale,收起,缩小 | `{"icon": "collapse-diagonal-2-fill"}` |
+| <img src="../../icons/Arrows/collapse-diagonal-2-line.svg" alt="collapse-diagonal-2-line" width="24" height="24"> | `collapse-diagonal-2-line` | arrow,scale,收起,缩小 | `{"icon": "collapse-diagonal-2-line"}` |
+| <img src="../../icons/Arrows/expand-horizontal-s-fill.svg" alt="expand-horizontal-s-fill" width="24" height="24"> | `expand-horizontal-s-fill` | arrow,switch,unfold,展开 | `{"icon": "expand-horizontal-s-fill"}` |
+| <img src="../../icons/Arrows/expand-horizontal-s-line.svg" alt="expand-horizontal-s-line" width="24" height="24"> | `expand-horizontal-s-line` | arrow,switch,unfold,展开 | `{"icon": "expand-horizontal-s-line"}` |
+| <img src="../../icons/Arrows/expand-vertical-s-fill.svg" alt="expand-vertical-s-fill" width="24" height="24"> | `expand-vertical-s-fill` | arrow,switch,unfold,展开 | `{"icon": "expand-vertical-s-fill"}` |
+| <img src="../../icons/Arrows/expand-vertical-s-line.svg" alt="expand-vertical-s-line" width="24" height="24"> | `expand-vertical-s-line` | arrow,switch,unfold,展开 | `{"icon": "expand-vertical-s-line"}` |
+| <img src="../../icons/Arrows/expand-diagonal-s-fill.svg" alt="expand-diagonal-s-fill" width="24" height="24"> | `expand-diagonal-s-fill` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-s-fill"}` |
+| <img src="../../icons/Arrows/expand-diagonal-s-line.svg" alt="expand-diagonal-s-line" width="24" height="24"> | `expand-diagonal-s-line` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-s-line"}` |
+| <img src="../../icons/Arrows/expand-diagonal-s-2-fill.svg" alt="expand-diagonal-s-2-fill" width="24" height="24"> | `expand-diagonal-s-2-fill` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-s-2-fill"}` |
+| <img src="../../icons/Arrows/expand-diagonal-s-2-line.svg" alt="expand-diagonal-s-2-line" width="24" height="24"> | `expand-diagonal-s-2-line` | arrow,scale,展开,放大 | `{"icon": "expand-diagonal-s-2-line"}` |
+| <img src="../../icons/Arrows/arrow-go-back-fill.svg" alt="arrow-go-back-fill" width="24" height="24"> | `arrow-go-back-fill` | undo,撤回,撤销,返回 | `{"icon": "arrow-go-back-fill"}` |
+| <img src="../../icons/Arrows/arrow-go-back-line.svg" alt="arrow-go-back-line" width="24" height="24"> | `arrow-go-back-line` | undo,撤回,撤销,返回 | `{"icon": "arrow-go-back-line"}` |
+| <img src="../../icons/Arrows/arrow-go-forward-fill.svg" alt="arrow-go-forward-fill" width="24" height="24"> | `arrow-go-forward-fill` | redo,撤回,撤销,重做 | `{"icon": "arrow-go-forward-fill"}` |
+| <img src="../../icons/Arrows/arrow-go-forward-line.svg" alt="arrow-go-forward-line" width="24" height="24"> | `arrow-go-forward-line` | redo,撤回,撤销,重做 | `{"icon": "arrow-go-forward-line"}` |
+| <img src="../../icons/Arrows/arrow-turn-forward-fill.svg" alt="arrow-turn-forward-fill" width="24" height="24"> | `arrow-turn-forward-fill` | 掉头 | `{"icon": "arrow-turn-forward-fill"}` |
+| <img src="../../icons/Arrows/arrow-turn-forward-line.svg" alt="arrow-turn-forward-line" width="24" height="24"> | `arrow-turn-forward-line` | 掉头 | `{"icon": "arrow-turn-forward-line"}` |
+| <img src="../../icons/Arrows/arrow-turn-back-fill.svg" alt="arrow-turn-back-fill" width="24" height="24"> | `arrow-turn-back-fill` | 掉头 | `{"icon": "arrow-turn-back-fill"}` |
+| <img src="../../icons/Arrows/arrow-turn-back-line.svg" alt="arrow-turn-back-line" width="24" height="24"> | `arrow-turn-back-line` | 掉头 | `{"icon": "arrow-turn-back-line"}` |
+| <img src="../../icons/Arrows/scroll-to-bottom-fill.svg" alt="scroll-to-bottom-fill" width="24" height="24"> | `scroll-to-bottom-fill` | mouse,navigation,导航,滚动到底部,鼠标 | `{"icon": "scroll-to-bottom-fill"}` |
+| <img src="../../icons/Arrows/scroll-to-bottom-line.svg" alt="scroll-to-bottom-line" width="24" height="24"> | `scroll-to-bottom-line` | mouse,navigation,导航,滚动到底部,鼠标 | `{"icon": "scroll-to-bottom-line"}` |

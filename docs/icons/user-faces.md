@@ -4,70 +4,137 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `user` | account,agent,avatar,human,identity,individual,member,people,person,profile,个人资料,个体,人物,人类,头像,成员,账户,身份 | `{"icon": "user"}` |
-| - | `user-2` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-2"}` |
-| - | `user-3` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-3"}` |
-| - | `user-4` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-4"}` |
-| - | `user-5` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-5"}` |
-| - | `user-6` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-6"}` |
-| - | `user-smile` | account,agent,avatar,emoji,happy,individual,member,people,person,profile,个人资料,个体,头像,开心,微笑,成员,笑脸,账户,身份 | `{"icon": "user-smile"}` |
-| - | `account-box` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-box"}` |
-| - | `account-box-2` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-box-2"}` |
-| - | `account-circle` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-circle"}` |
-| - | `account-circle-2` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-circle-2"}` |
-| - | `account-pin-box` | avatar,profile,个人资料,头像,标注,账户 | `{"icon": "account-pin-box"}` |
-| - | `account-pin-circle` | avatar,profile,个人资料,头像,标注,账户 | `{"icon": "account-pin-circle"}` |
-| - | `ai-agent` | AI助手,assistant,automation,bot,智能代理,机器人,自动化 | `{"icon": "ai-agent"}` |
-| - | `user-add` | account,agent,avatar,create,individual,insert,invite,member,people,person,plus,positive,profile,register,个人资料,个体,创建,加上,增加,头像,成员,插入,新增,注册,添加,账户,身份,邀请 | `{"icon": "user-add"}` |
-| - | `user-minus` | account,agent,avatar,delete,individual,member,people,person,profile,remove,unfollow,个人资料,个体,减少,删除,取关,头像,成员,移除,账户,身份 | `{"icon": "user-minus"}` |
-| - | `user-follow` | account,agent,avatar,individual,member,people,person,profile,subscription,个人资料,个体,关注,头像,成员,订阅,账户,身份 | `{"icon": "user-follow"}` |
-| - | `user-unfollow` | account,agent,avatar,individual,member,people,person,profile,remove,unsubscribe,个人资料,个体,取关,取消关注,取消订阅,头像,成员,移除,账户,身份 | `{"icon": "user-unfollow"}` |
-| - | `user-shared` | account,agent,avatar,individual,member,people,person,profile,send,share,transfer,个人资料,个体,传输,发送,头像,成员,我分享的,账户,身份 | `{"icon": "user-shared"}` |
-| - | `user-shared-2` | account,agent,avatar,individual,member,people,person,profile,send,share,transfer,个人资料,个体,传输,发送,头像,成员,我分享的,账户,身份 | `{"icon": "user-shared-2"}` |
-| - | `user-received` | account,agent,avatar,download,inbox,individual,member,people,person,profile,receive,个人资料,个体,头像,成员,我接收的,收件箱,收取,账户,身份 | `{"icon": "user-received"}` |
-| - | `user-received-2` | account,agent,avatar,download,inbox,individual,member,people,person,profile,receive,个人资料,个体,头像,成员,我接收的,收件箱,收取,账户,身份 | `{"icon": "user-received-2"}` |
-| - | `user-location` | account,agent,avatar,geolocation,gps,individual,member,person,profile,个人资料,个体,头像,定位,成员,用户位置,账户,身份 | `{"icon": "user-location"}` |
-| - | `user-search` | account,agent,avatar,browse,discovery,find,individual,lookup,member,person,profile,query,zoom,个人资料,个体,发现,头像,成员,探索,放大镜,查找,检索,浏览,用户搜索,账户,身份 | `{"icon": "user-search"}` |
-| - | `user-settings` | account,admin,agent,avatar,cog,configuration,gear,individual,management,member,options,people,person,preferences,profile,setup,个人资料,个体,偏好,头像,成员,管理员,设置,账户,身份,配置,首选项 | `{"icon": "user-settings"}` |
-| - | `user-star` | account,agent,avatar,bookmark,collection,favorite,individual,like,member,person,profile,rate,个人资料,个体,书签,关注,喜欢,头像,成员,收藏,星标,评分,账户,身份 | `{"icon": "user-star"}` |
-| - | `user-heart` | account,agent,avatar,collection,favorite,individual,like,love,member,passion,person,profile,个人资料,个体,关注,喜欢,头像,心形,成员,收藏,热情,爱心,账户,身份 | `{"icon": "user-heart"}` |
-| - | `admin` | moderator,people,person,settings,管理员 | `{"icon": "admin"}` |
-| - | `user-forbid` | account,agent,avatar,ban,blocked,disabled,individual,member,person,profile,terminated,个人资料,个体,头像,封禁,成员,拉黑,禁止,终止,账户,身份 | `{"icon": "user-forbid"}` |
-| - | `contacts` | address book,电话簿,联系人,通讯录 | `{"icon": "contacts"}` |
-| - | `group` | community,multiple users,organization,people,person,team,user group,团队,社区,组织,群组 | `{"icon": "group"}` |
-| - | `group-2` | community,multiple users,organization,people,person,team,user group,团队,社区,组织,群组 | `{"icon": "group-2"}` |
-| - | `group-3` | community,multiple users,organization,people,person,team,user group,团队,社区,组织,群组 | `{"icon": "group-3"}` |
-| - | `team` | community,group,people,person,团队,小组,群组 | `{"icon": "team"}` |
-| - | `user-voice` | account,agent,avatar,individual,member,microphone,person,profile,record,speech,talk,个人资料,个体,头像,录音,成员,演讲,语音,说话,账户,身份,麦克风 | `{"icon": "user-voice"}` |
-| - | `emotion` | emoji,expression,face,笑脸,表情符号 | `{"icon": "emotion"}` |
-| - | `emotion-2` | emoji,expression,face,笑脸,表情符号 | `{"icon": "emotion-2"}` |
-| - | `emotion-add` | create,insert,plus,positive,创建,加上,增加,插入 | `{"icon": "emotion-add"}` |
-| - | `emotion-happy` | emoji,face,smile,开心,快乐,笑,表情 | `{"icon": "emotion-happy"}` |
-| - | `emotion-normal` | emoji,face,neutral,一般,普通,表情 | `{"icon": "emotion-normal"}` |
-| - | `emotion-unhappy` | emoji,face,sad,不开心,表情,难过 | `{"icon": "emotion-unhappy"}` |
-| - | `emotion-laugh` | comedy,emoji,happy,喜剧,大笑,开心,笑脸,表情 | `{"icon": "emotion-laugh"}` |
-| - | `emotion-sad` | cry,drama,tears,哭泣,悲剧,泪,难过 | `{"icon": "emotion-sad"}` |
-| - | `skull` | danger,halloween,危险,恐怖,骷髅,鬼怪 | `{"icon": "skull"}` |
-| - | `skull-2` | halloween,horror,thriller,恐怖,恐惧,骷髅,鬼怪 | `{"icon": "skull-2"}` |
-| - | `men` | gender,male,man,男人,男性 | `{"icon": "men"}` |
-| - | `women` | female,gender,woman,女人,女性 | `{"icon": "women"}` |
-| - | `travesti` | nonbinary,transgender,中性,变装,跨性别 | `{"icon": "travesti"}` |
-| - | `genderless` | gender,neutral,nonbinary,中性,无性别 | `{"icon": "genderless"}` |
-| - | `open-arm` | hug,open arms,welcome,张开双臂,拥抱,欢迎 | `{"icon": "open-arm"}` |
-| - | `body-scan` | body scan,gesture recognition,体态识别,动作识别,姿态识别,手势识别,扫描身体 | `{"icon": "body-scan"}` |
-| - | `parent` | family,patriarch,亲子,家庭,家长,父母 | `{"icon": "parent"}` |
-| - | `user-community` | account,agent,avatar,individual,member,multiple users,network,people,person,profile,social,team,user group,个人资料,个体,团队,头像,成员,社区,社群,群组,账户,身份 | `{"icon": "user-community"}` |
-| - | `robot` | ai,android,cyborg,智能,机器人,机械 | `{"icon": "robot"}` |
-| - | `robot-2` | ai,android,cyborg,智能,机器人,机械 | `{"icon": "robot-2"}` |
-| - | `robot-3` | ai,android,cyborg,智能,机器人,机械 | `{"icon": "robot-3"}` |
-| - | `aliens` | et,science fiction,ufo,不明飞行物,外星人,科幻小说 | `{"icon": "aliens"}` |
-| - | `bear-smile` | anime,cartoon,mascot,儿童,动漫,动画片,卡通,小熊,微笑 | `{"icon": "bear-smile"}` |
-| - | `mickey` | cartoon,disney,mouse,儿童,动画片,卡通,微笑,米老鼠,迪士尼 | `{"icon": "mickey"}` |
-| - | `criminal` | crime,mugshot,suspect,嫌疑人,犯罪,罪犯 | `{"icon": "criminal"}` |
-| - | `ghost` | haunted,horror,thriller,幽灵,恐怖,恐惧,鬼怪 | `{"icon": "ghost"}` |
-| - | `ghost-2` | haunted,horror,幽灵,恐怖,恐惧,鬼怪 | `{"icon": "ghost-2"}` |
-| - | `ghost-smile` | 幽灵,微笑 | `{"icon": "ghost-smile"}` |
-| - | `ghost-3` | 幽灵,微笑 | `{"icon": "ghost-3"}` |
-| - | `ghost-4` | 幽灵,微笑 | `{"icon": "ghost-4"}` |
-| - | `star-smile` | animation,bookmark,collection,cute,favorite,like,rate,书签,动画,可爱,喜欢,微笑,收藏,星星,星标,评分 | `{"icon": "star-smile"}` |
-| - | `spy` | detective,incognito mode,privacy,secret,侦探,无痕模式,间谍,隐私模式 | `{"icon": "spy"}` |
+| <img src="../../icons/User & Faces/user-fill.svg" alt="user-fill" width="24" height="24"> | `user-fill` | account,agent,avatar,human,identity,individual,member,people,person,profile,个人资料,个体,人物,人类,头像,成员,账户,身份 | `{"icon": "user-fill"}` |
+| <img src="../../icons/User & Faces/user-line.svg" alt="user-line" width="24" height="24"> | `user-line` | account,agent,avatar,human,identity,individual,member,people,person,profile,个人资料,个体,人物,人类,头像,成员,账户,身份 | `{"icon": "user-line"}` |
+| <img src="../../icons/User & Faces/user-2-fill.svg" alt="user-2-fill" width="24" height="24"> | `user-2-fill` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-2-fill"}` |
+| <img src="../../icons/User & Faces/user-2-line.svg" alt="user-2-line" width="24" height="24"> | `user-2-line` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-2-line"}` |
+| <img src="../../icons/User & Faces/user-3-fill.svg" alt="user-3-fill" width="24" height="24"> | `user-3-fill` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-3-fill"}` |
+| <img src="../../icons/User & Faces/user-3-line.svg" alt="user-3-line" width="24" height="24"> | `user-3-line` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-3-line"}` |
+| <img src="../../icons/User & Faces/user-4-fill.svg" alt="user-4-fill" width="24" height="24"> | `user-4-fill` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-4-fill"}` |
+| <img src="../../icons/User & Faces/user-4-line.svg" alt="user-4-line" width="24" height="24"> | `user-4-line` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-4-line"}` |
+| <img src="../../icons/User & Faces/user-5-fill.svg" alt="user-5-fill" width="24" height="24"> | `user-5-fill` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-5-fill"}` |
+| <img src="../../icons/User & Faces/user-5-line.svg" alt="user-5-line" width="24" height="24"> | `user-5-line` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-5-line"}` |
+| <img src="../../icons/User & Faces/user-6-fill.svg" alt="user-6-fill" width="24" height="24"> | `user-6-fill` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-6-fill"}` |
+| <img src="../../icons/User & Faces/user-6-line.svg" alt="user-6-line" width="24" height="24"> | `user-6-line` | account,agent,avatar,individual,member,people,person,profile,个人资料,个体,人物,头像,成员,账户,身份 | `{"icon": "user-6-line"}` |
+| <img src="../../icons/User & Faces/user-smile-fill.svg" alt="user-smile-fill" width="24" height="24"> | `user-smile-fill` | account,agent,avatar,emoji,happy,individual,member,people,person,profile,个人资料,个体,头像,开心,微笑,成员,笑脸,账户,身份 | `{"icon": "user-smile-fill"}` |
+| <img src="../../icons/User & Faces/user-smile-line.svg" alt="user-smile-line" width="24" height="24"> | `user-smile-line` | account,agent,avatar,emoji,happy,individual,member,people,person,profile,个人资料,个体,头像,开心,微笑,成员,笑脸,账户,身份 | `{"icon": "user-smile-line"}` |
+| <img src="../../icons/User & Faces/account-box-fill.svg" alt="account-box-fill" width="24" height="24"> | `account-box-fill` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-box-fill"}` |
+| <img src="../../icons/User & Faces/account-box-line.svg" alt="account-box-line" width="24" height="24"> | `account-box-line` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-box-line"}` |
+| <img src="../../icons/User & Faces/account-box-2-fill.svg" alt="account-box-2-fill" width="24" height="24"> | `account-box-2-fill` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-box-2-fill"}` |
+| <img src="../../icons/User & Faces/account-box-2-line.svg" alt="account-box-2-line" width="24" height="24"> | `account-box-2-line` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-box-2-line"}` |
+| <img src="../../icons/User & Faces/account-circle-fill.svg" alt="account-circle-fill" width="24" height="24"> | `account-circle-fill` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-circle-fill"}` |
+| <img src="../../icons/User & Faces/account-circle-line.svg" alt="account-circle-line" width="24" height="24"> | `account-circle-line` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-circle-line"}` |
+| <img src="../../icons/User & Faces/account-circle-2-fill.svg" alt="account-circle-2-fill" width="24" height="24"> | `account-circle-2-fill` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-circle-2-fill"}` |
+| <img src="../../icons/User & Faces/account-circle-2-line.svg" alt="account-circle-2-line" width="24" height="24"> | `account-circle-2-line` | avatar,profile,个人资料,头像,账户 | `{"icon": "account-circle-2-line"}` |
+| <img src="../../icons/User & Faces/account-pin-box-fill.svg" alt="account-pin-box-fill" width="24" height="24"> | `account-pin-box-fill` | avatar,profile,个人资料,头像,标注,账户 | `{"icon": "account-pin-box-fill"}` |
+| <img src="../../icons/User & Faces/account-pin-box-line.svg" alt="account-pin-box-line" width="24" height="24"> | `account-pin-box-line` | avatar,profile,个人资料,头像,标注,账户 | `{"icon": "account-pin-box-line"}` |
+| <img src="../../icons/User & Faces/account-pin-circle-fill.svg" alt="account-pin-circle-fill" width="24" height="24"> | `account-pin-circle-fill` | avatar,profile,个人资料,头像,标注,账户 | `{"icon": "account-pin-circle-fill"}` |
+| <img src="../../icons/User & Faces/account-pin-circle-line.svg" alt="account-pin-circle-line" width="24" height="24"> | `account-pin-circle-line` | avatar,profile,个人资料,头像,标注,账户 | `{"icon": "account-pin-circle-line"}` |
+| <img src="../../icons/User & Faces/ai-agent-fill.svg" alt="ai-agent-fill" width="24" height="24"> | `ai-agent-fill` | AI助手,assistant,automation,bot,智能代理,机器人,自动化 | `{"icon": "ai-agent-fill"}` |
+| <img src="../../icons/User & Faces/ai-agent-line.svg" alt="ai-agent-line" width="24" height="24"> | `ai-agent-line` | AI助手,assistant,automation,bot,智能代理,机器人,自动化 | `{"icon": "ai-agent-line"}` |
+| <img src="../../icons/User & Faces/user-add-fill.svg" alt="user-add-fill" width="24" height="24"> | `user-add-fill` | account,agent,avatar,create,individual,insert,invite,member,people,person,plus,positive,profile,register,个人资料,个体,创建,加上,增加,头像,成员,插入,新增,注册,添加,账户,身份,邀请 | `{"icon": "user-add-fill"}` |
+| <img src="../../icons/User & Faces/user-add-line.svg" alt="user-add-line" width="24" height="24"> | `user-add-line` | account,agent,avatar,create,individual,insert,invite,member,people,person,plus,positive,profile,register,个人资料,个体,创建,加上,增加,头像,成员,插入,新增,注册,添加,账户,身份,邀请 | `{"icon": "user-add-line"}` |
+| <img src="../../icons/User & Faces/user-minus-fill.svg" alt="user-minus-fill" width="24" height="24"> | `user-minus-fill` | account,agent,avatar,delete,individual,member,people,person,profile,remove,unfollow,个人资料,个体,减少,删除,取关,头像,成员,移除,账户,身份 | `{"icon": "user-minus-fill"}` |
+| <img src="../../icons/User & Faces/user-minus-line.svg" alt="user-minus-line" width="24" height="24"> | `user-minus-line` | account,agent,avatar,delete,individual,member,people,person,profile,remove,unfollow,个人资料,个体,减少,删除,取关,头像,成员,移除,账户,身份 | `{"icon": "user-minus-line"}` |
+| <img src="../../icons/User & Faces/user-follow-fill.svg" alt="user-follow-fill" width="24" height="24"> | `user-follow-fill` | account,agent,avatar,individual,member,people,person,profile,subscription,个人资料,个体,关注,头像,成员,订阅,账户,身份 | `{"icon": "user-follow-fill"}` |
+| <img src="../../icons/User & Faces/user-follow-line.svg" alt="user-follow-line" width="24" height="24"> | `user-follow-line` | account,agent,avatar,individual,member,people,person,profile,subscription,个人资料,个体,关注,头像,成员,订阅,账户,身份 | `{"icon": "user-follow-line"}` |
+| <img src="../../icons/User & Faces/user-unfollow-fill.svg" alt="user-unfollow-fill" width="24" height="24"> | `user-unfollow-fill` | account,agent,avatar,individual,member,people,person,profile,remove,unsubscribe,个人资料,个体,取关,取消关注,取消订阅,头像,成员,移除,账户,身份 | `{"icon": "user-unfollow-fill"}` |
+| <img src="../../icons/User & Faces/user-unfollow-line.svg" alt="user-unfollow-line" width="24" height="24"> | `user-unfollow-line` | account,agent,avatar,individual,member,people,person,profile,remove,unsubscribe,个人资料,个体,取关,取消关注,取消订阅,头像,成员,移除,账户,身份 | `{"icon": "user-unfollow-line"}` |
+| <img src="../../icons/User & Faces/user-shared-fill.svg" alt="user-shared-fill" width="24" height="24"> | `user-shared-fill` | account,agent,avatar,individual,member,people,person,profile,send,share,transfer,个人资料,个体,传输,发送,头像,成员,我分享的,账户,身份 | `{"icon": "user-shared-fill"}` |
+| <img src="../../icons/User & Faces/user-shared-line.svg" alt="user-shared-line" width="24" height="24"> | `user-shared-line` | account,agent,avatar,individual,member,people,person,profile,send,share,transfer,个人资料,个体,传输,发送,头像,成员,我分享的,账户,身份 | `{"icon": "user-shared-line"}` |
+| <img src="../../icons/User & Faces/user-shared-2-fill.svg" alt="user-shared-2-fill" width="24" height="24"> | `user-shared-2-fill` | account,agent,avatar,individual,member,people,person,profile,send,share,transfer,个人资料,个体,传输,发送,头像,成员,我分享的,账户,身份 | `{"icon": "user-shared-2-fill"}` |
+| <img src="../../icons/User & Faces/user-shared-2-line.svg" alt="user-shared-2-line" width="24" height="24"> | `user-shared-2-line` | account,agent,avatar,individual,member,people,person,profile,send,share,transfer,个人资料,个体,传输,发送,头像,成员,我分享的,账户,身份 | `{"icon": "user-shared-2-line"}` |
+| <img src="../../icons/User & Faces/user-received-fill.svg" alt="user-received-fill" width="24" height="24"> | `user-received-fill` | account,agent,avatar,download,inbox,individual,member,people,person,profile,receive,个人资料,个体,头像,成员,我接收的,收件箱,收取,账户,身份 | `{"icon": "user-received-fill"}` |
+| <img src="../../icons/User & Faces/user-received-line.svg" alt="user-received-line" width="24" height="24"> | `user-received-line` | account,agent,avatar,download,inbox,individual,member,people,person,profile,receive,个人资料,个体,头像,成员,我接收的,收件箱,收取,账户,身份 | `{"icon": "user-received-line"}` |
+| <img src="../../icons/User & Faces/user-received-2-fill.svg" alt="user-received-2-fill" width="24" height="24"> | `user-received-2-fill` | account,agent,avatar,download,inbox,individual,member,people,person,profile,receive,个人资料,个体,头像,成员,我接收的,收件箱,收取,账户,身份 | `{"icon": "user-received-2-fill"}` |
+| <img src="../../icons/User & Faces/user-received-2-line.svg" alt="user-received-2-line" width="24" height="24"> | `user-received-2-line` | account,agent,avatar,download,inbox,individual,member,people,person,profile,receive,个人资料,个体,头像,成员,我接收的,收件箱,收取,账户,身份 | `{"icon": "user-received-2-line"}` |
+| <img src="../../icons/User & Faces/user-location-fill.svg" alt="user-location-fill" width="24" height="24"> | `user-location-fill` | account,agent,avatar,geolocation,gps,individual,member,person,profile,个人资料,个体,头像,定位,成员,用户位置,账户,身份 | `{"icon": "user-location-fill"}` |
+| <img src="../../icons/User & Faces/user-location-line.svg" alt="user-location-line" width="24" height="24"> | `user-location-line` | account,agent,avatar,geolocation,gps,individual,member,person,profile,个人资料,个体,头像,定位,成员,用户位置,账户,身份 | `{"icon": "user-location-line"}` |
+| <img src="../../icons/User & Faces/user-search-fill.svg" alt="user-search-fill" width="24" height="24"> | `user-search-fill` | account,agent,avatar,browse,discovery,find,individual,lookup,member,person,profile,query,zoom,个人资料,个体,发现,头像,成员,探索,放大镜,查找,检索,浏览,用户搜索,账户,身份 | `{"icon": "user-search-fill"}` |
+| <img src="../../icons/User & Faces/user-search-line.svg" alt="user-search-line" width="24" height="24"> | `user-search-line` | account,agent,avatar,browse,discovery,find,individual,lookup,member,person,profile,query,zoom,个人资料,个体,发现,头像,成员,探索,放大镜,查找,检索,浏览,用户搜索,账户,身份 | `{"icon": "user-search-line"}` |
+| <img src="../../icons/User & Faces/user-settings-fill.svg" alt="user-settings-fill" width="24" height="24"> | `user-settings-fill` | account,admin,agent,avatar,cog,configuration,gear,individual,management,member,options,people,person,preferences,profile,setup,个人资料,个体,偏好,头像,成员,管理员,设置,账户,身份,配置,首选项 | `{"icon": "user-settings-fill"}` |
+| <img src="../../icons/User & Faces/user-settings-line.svg" alt="user-settings-line" width="24" height="24"> | `user-settings-line` | account,admin,agent,avatar,cog,configuration,gear,individual,management,member,options,people,person,preferences,profile,setup,个人资料,个体,偏好,头像,成员,管理员,设置,账户,身份,配置,首选项 | `{"icon": "user-settings-line"}` |
+| <img src="../../icons/User & Faces/user-star-fill.svg" alt="user-star-fill" width="24" height="24"> | `user-star-fill` | account,agent,avatar,bookmark,collection,favorite,individual,like,member,person,profile,rate,个人资料,个体,书签,关注,喜欢,头像,成员,收藏,星标,评分,账户,身份 | `{"icon": "user-star-fill"}` |
+| <img src="../../icons/User & Faces/user-star-line.svg" alt="user-star-line" width="24" height="24"> | `user-star-line` | account,agent,avatar,bookmark,collection,favorite,individual,like,member,person,profile,rate,个人资料,个体,书签,关注,喜欢,头像,成员,收藏,星标,评分,账户,身份 | `{"icon": "user-star-line"}` |
+| <img src="../../icons/User & Faces/user-heart-fill.svg" alt="user-heart-fill" width="24" height="24"> | `user-heart-fill` | account,agent,avatar,collection,favorite,individual,like,love,member,passion,person,profile,个人资料,个体,关注,喜欢,头像,心形,成员,收藏,热情,爱心,账户,身份 | `{"icon": "user-heart-fill"}` |
+| <img src="../../icons/User & Faces/user-heart-line.svg" alt="user-heart-line" width="24" height="24"> | `user-heart-line` | account,agent,avatar,collection,favorite,individual,like,love,member,passion,person,profile,个人资料,个体,关注,喜欢,头像,心形,成员,收藏,热情,爱心,账户,身份 | `{"icon": "user-heart-line"}` |
+| <img src="../../icons/User & Faces/admin-fill.svg" alt="admin-fill" width="24" height="24"> | `admin-fill` | moderator,people,person,settings,管理员 | `{"icon": "admin-fill"}` |
+| <img src="../../icons/User & Faces/admin-line.svg" alt="admin-line" width="24" height="24"> | `admin-line` | moderator,people,person,settings,管理员 | `{"icon": "admin-line"}` |
+| <img src="../../icons/User & Faces/user-forbid-fill.svg" alt="user-forbid-fill" width="24" height="24"> | `user-forbid-fill` | account,agent,avatar,ban,blocked,disabled,individual,member,person,profile,terminated,个人资料,个体,头像,封禁,成员,拉黑,禁止,终止,账户,身份 | `{"icon": "user-forbid-fill"}` |
+| <img src="../../icons/User & Faces/user-forbid-line.svg" alt="user-forbid-line" width="24" height="24"> | `user-forbid-line` | account,agent,avatar,ban,blocked,disabled,individual,member,person,profile,terminated,个人资料,个体,头像,封禁,成员,拉黑,禁止,终止,账户,身份 | `{"icon": "user-forbid-line"}` |
+| <img src="../../icons/User & Faces/contacts-fill.svg" alt="contacts-fill" width="24" height="24"> | `contacts-fill` | address book,电话簿,联系人,通讯录 | `{"icon": "contacts-fill"}` |
+| <img src="../../icons/User & Faces/contacts-line.svg" alt="contacts-line" width="24" height="24"> | `contacts-line` | address book,电话簿,联系人,通讯录 | `{"icon": "contacts-line"}` |
+| <img src="../../icons/User & Faces/group-fill.svg" alt="group-fill" width="24" height="24"> | `group-fill` | community,multiple users,organization,people,person,team,user group,团队,社区,组织,群组 | `{"icon": "group-fill"}` |
+| <img src="../../icons/User & Faces/group-line.svg" alt="group-line" width="24" height="24"> | `group-line` | community,multiple users,organization,people,person,team,user group,团队,社区,组织,群组 | `{"icon": "group-line"}` |
+| <img src="../../icons/User & Faces/group-2-fill.svg" alt="group-2-fill" width="24" height="24"> | `group-2-fill` | community,multiple users,organization,people,person,team,user group,团队,社区,组织,群组 | `{"icon": "group-2-fill"}` |
+| <img src="../../icons/User & Faces/group-2-line.svg" alt="group-2-line" width="24" height="24"> | `group-2-line` | community,multiple users,organization,people,person,team,user group,团队,社区,组织,群组 | `{"icon": "group-2-line"}` |
+| <img src="../../icons/User & Faces/group-3-fill.svg" alt="group-3-fill" width="24" height="24"> | `group-3-fill` | community,multiple users,organization,people,person,team,user group,团队,社区,组织,群组 | `{"icon": "group-3-fill"}` |
+| <img src="../../icons/User & Faces/group-3-line.svg" alt="group-3-line" width="24" height="24"> | `group-3-line` | community,multiple users,organization,people,person,team,user group,团队,社区,组织,群组 | `{"icon": "group-3-line"}` |
+| <img src="../../icons/User & Faces/team-fill.svg" alt="team-fill" width="24" height="24"> | `team-fill` | community,group,people,person,团队,小组,群组 | `{"icon": "team-fill"}` |
+| <img src="../../icons/User & Faces/team-line.svg" alt="team-line" width="24" height="24"> | `team-line` | community,group,people,person,团队,小组,群组 | `{"icon": "team-line"}` |
+| <img src="../../icons/User & Faces/user-voice-fill.svg" alt="user-voice-fill" width="24" height="24"> | `user-voice-fill` | account,agent,avatar,individual,member,microphone,person,profile,record,speech,talk,个人资料,个体,头像,录音,成员,演讲,语音,说话,账户,身份,麦克风 | `{"icon": "user-voice-fill"}` |
+| <img src="../../icons/User & Faces/user-voice-line.svg" alt="user-voice-line" width="24" height="24"> | `user-voice-line` | account,agent,avatar,individual,member,microphone,person,profile,record,speech,talk,个人资料,个体,头像,录音,成员,演讲,语音,说话,账户,身份,麦克风 | `{"icon": "user-voice-line"}` |
+| <img src="../../icons/User & Faces/emotion-fill.svg" alt="emotion-fill" width="24" height="24"> | `emotion-fill` | emoji,expression,face,笑脸,表情符号 | `{"icon": "emotion-fill"}` |
+| <img src="../../icons/User & Faces/emotion-line.svg" alt="emotion-line" width="24" height="24"> | `emotion-line` | emoji,expression,face,笑脸,表情符号 | `{"icon": "emotion-line"}` |
+| <img src="../../icons/User & Faces/emotion-2-fill.svg" alt="emotion-2-fill" width="24" height="24"> | `emotion-2-fill` | emoji,expression,face,笑脸,表情符号 | `{"icon": "emotion-2-fill"}` |
+| <img src="../../icons/User & Faces/emotion-2-line.svg" alt="emotion-2-line" width="24" height="24"> | `emotion-2-line` | emoji,expression,face,笑脸,表情符号 | `{"icon": "emotion-2-line"}` |
+| <img src="../../icons/User & Faces/emotion-add-fill.svg" alt="emotion-add-fill" width="24" height="24"> | `emotion-add-fill` | create,insert,plus,positive,创建,加上,增加,插入 | `{"icon": "emotion-add-fill"}` |
+| <img src="../../icons/User & Faces/emotion-add-line.svg" alt="emotion-add-line" width="24" height="24"> | `emotion-add-line` | create,insert,plus,positive,创建,加上,增加,插入 | `{"icon": "emotion-add-line"}` |
+| <img src="../../icons/User & Faces/emotion-happy-fill.svg" alt="emotion-happy-fill" width="24" height="24"> | `emotion-happy-fill` | emoji,face,smile,开心,快乐,笑,表情 | `{"icon": "emotion-happy-fill"}` |
+| <img src="../../icons/User & Faces/emotion-happy-line.svg" alt="emotion-happy-line" width="24" height="24"> | `emotion-happy-line` | emoji,face,smile,开心,快乐,笑,表情 | `{"icon": "emotion-happy-line"}` |
+| <img src="../../icons/User & Faces/emotion-normal-fill.svg" alt="emotion-normal-fill" width="24" height="24"> | `emotion-normal-fill` | emoji,face,neutral,一般,普通,表情 | `{"icon": "emotion-normal-fill"}` |
+| <img src="../../icons/User & Faces/emotion-normal-line.svg" alt="emotion-normal-line" width="24" height="24"> | `emotion-normal-line` | emoji,face,neutral,一般,普通,表情 | `{"icon": "emotion-normal-line"}` |
+| <img src="../../icons/User & Faces/emotion-unhappy-fill.svg" alt="emotion-unhappy-fill" width="24" height="24"> | `emotion-unhappy-fill` | emoji,face,sad,不开心,表情,难过 | `{"icon": "emotion-unhappy-fill"}` |
+| <img src="../../icons/User & Faces/emotion-unhappy-line.svg" alt="emotion-unhappy-line" width="24" height="24"> | `emotion-unhappy-line` | emoji,face,sad,不开心,表情,难过 | `{"icon": "emotion-unhappy-line"}` |
+| <img src="../../icons/User & Faces/emotion-laugh-fill.svg" alt="emotion-laugh-fill" width="24" height="24"> | `emotion-laugh-fill` | comedy,emoji,happy,喜剧,大笑,开心,笑脸,表情 | `{"icon": "emotion-laugh-fill"}` |
+| <img src="../../icons/User & Faces/emotion-laugh-line.svg" alt="emotion-laugh-line" width="24" height="24"> | `emotion-laugh-line` | comedy,emoji,happy,喜剧,大笑,开心,笑脸,表情 | `{"icon": "emotion-laugh-line"}` |
+| <img src="../../icons/User & Faces/emotion-sad-fill.svg" alt="emotion-sad-fill" width="24" height="24"> | `emotion-sad-fill` | cry,drama,tears,哭泣,悲剧,泪,难过 | `{"icon": "emotion-sad-fill"}` |
+| <img src="../../icons/User & Faces/emotion-sad-line.svg" alt="emotion-sad-line" width="24" height="24"> | `emotion-sad-line` | cry,drama,tears,哭泣,悲剧,泪,难过 | `{"icon": "emotion-sad-line"}` |
+| <img src="../../icons/User & Faces/skull-fill.svg" alt="skull-fill" width="24" height="24"> | `skull-fill` | danger,halloween,危险,恐怖,骷髅,鬼怪 | `{"icon": "skull-fill"}` |
+| <img src="../../icons/User & Faces/skull-line.svg" alt="skull-line" width="24" height="24"> | `skull-line` | danger,halloween,危险,恐怖,骷髅,鬼怪 | `{"icon": "skull-line"}` |
+| <img src="../../icons/User & Faces/skull-2-fill.svg" alt="skull-2-fill" width="24" height="24"> | `skull-2-fill` | halloween,horror,thriller,恐怖,恐惧,骷髅,鬼怪 | `{"icon": "skull-2-fill"}` |
+| <img src="../../icons/User & Faces/skull-2-line.svg" alt="skull-2-line" width="24" height="24"> | `skull-2-line` | halloween,horror,thriller,恐怖,恐惧,骷髅,鬼怪 | `{"icon": "skull-2-line"}` |
+| <img src="../../icons/User & Faces/men-fill.svg" alt="men-fill" width="24" height="24"> | `men-fill` | gender,male,man,男人,男性 | `{"icon": "men-fill"}` |
+| <img src="../../icons/User & Faces/men-line.svg" alt="men-line" width="24" height="24"> | `men-line` | gender,male,man,男人,男性 | `{"icon": "men-line"}` |
+| <img src="../../icons/User & Faces/women-fill.svg" alt="women-fill" width="24" height="24"> | `women-fill` | female,gender,woman,女人,女性 | `{"icon": "women-fill"}` |
+| <img src="../../icons/User & Faces/women-line.svg" alt="women-line" width="24" height="24"> | `women-line` | female,gender,woman,女人,女性 | `{"icon": "women-line"}` |
+| <img src="../../icons/User & Faces/travesti-fill.svg" alt="travesti-fill" width="24" height="24"> | `travesti-fill` | nonbinary,transgender,中性,变装,跨性别 | `{"icon": "travesti-fill"}` |
+| <img src="../../icons/User & Faces/travesti-line.svg" alt="travesti-line" width="24" height="24"> | `travesti-line` | nonbinary,transgender,中性,变装,跨性别 | `{"icon": "travesti-line"}` |
+| <img src="../../icons/User & Faces/genderless-fill.svg" alt="genderless-fill" width="24" height="24"> | `genderless-fill` | gender,neutral,nonbinary,中性,无性别 | `{"icon": "genderless-fill"}` |
+| <img src="../../icons/User & Faces/genderless-line.svg" alt="genderless-line" width="24" height="24"> | `genderless-line` | gender,neutral,nonbinary,中性,无性别 | `{"icon": "genderless-line"}` |
+| <img src="../../icons/User & Faces/open-arm-fill.svg" alt="open-arm-fill" width="24" height="24"> | `open-arm-fill` | hug,open arms,welcome,张开双臂,拥抱,欢迎 | `{"icon": "open-arm-fill"}` |
+| <img src="../../icons/User & Faces/open-arm-line.svg" alt="open-arm-line" width="24" height="24"> | `open-arm-line` | hug,open arms,welcome,张开双臂,拥抱,欢迎 | `{"icon": "open-arm-line"}` |
+| <img src="../../icons/User & Faces/body-scan-fill.svg" alt="body-scan-fill" width="24" height="24"> | `body-scan-fill` | body scan,gesture recognition,体态识别,动作识别,姿态识别,手势识别,扫描身体 | `{"icon": "body-scan-fill"}` |
+| <img src="../../icons/User & Faces/body-scan-line.svg" alt="body-scan-line" width="24" height="24"> | `body-scan-line` | body scan,gesture recognition,体态识别,动作识别,姿态识别,手势识别,扫描身体 | `{"icon": "body-scan-line"}` |
+| <img src="../../icons/User & Faces/parent-fill.svg" alt="parent-fill" width="24" height="24"> | `parent-fill` | family,patriarch,亲子,家庭,家长,父母 | `{"icon": "parent-fill"}` |
+| <img src="../../icons/User & Faces/parent-line.svg" alt="parent-line" width="24" height="24"> | `parent-line` | family,patriarch,亲子,家庭,家长,父母 | `{"icon": "parent-line"}` |
+| <img src="../../icons/User & Faces/user-community-fill.svg" alt="user-community-fill" width="24" height="24"> | `user-community-fill` | account,agent,avatar,individual,member,multiple users,network,people,person,profile,social,team,user group,个人资料,个体,团队,头像,成员,社区,社群,群组,账户,身份 | `{"icon": "user-community-fill"}` |
+| <img src="../../icons/User & Faces/user-community-line.svg" alt="user-community-line" width="24" height="24"> | `user-community-line` | account,agent,avatar,individual,member,multiple users,network,people,person,profile,social,team,user group,个人资料,个体,团队,头像,成员,社区,社群,群组,账户,身份 | `{"icon": "user-community-line"}` |
+| <img src="../../icons/User & Faces/robot-fill.svg" alt="robot-fill" width="24" height="24"> | `robot-fill` | ai,android,cyborg,智能,机器人,机械 | `{"icon": "robot-fill"}` |
+| <img src="../../icons/User & Faces/robot-line.svg" alt="robot-line" width="24" height="24"> | `robot-line` | ai,android,cyborg,智能,机器人,机械 | `{"icon": "robot-line"}` |
+| <img src="../../icons/User & Faces/robot-2-fill.svg" alt="robot-2-fill" width="24" height="24"> | `robot-2-fill` | ai,android,cyborg,智能,机器人,机械 | `{"icon": "robot-2-fill"}` |
+| <img src="../../icons/User & Faces/robot-2-line.svg" alt="robot-2-line" width="24" height="24"> | `robot-2-line` | ai,android,cyborg,智能,机器人,机械 | `{"icon": "robot-2-line"}` |
+| <img src="../../icons/User & Faces/robot-3-fill.svg" alt="robot-3-fill" width="24" height="24"> | `robot-3-fill` | ai,android,cyborg,智能,机器人,机械 | `{"icon": "robot-3-fill"}` |
+| <img src="../../icons/User & Faces/robot-3-line.svg" alt="robot-3-line" width="24" height="24"> | `robot-3-line` | ai,android,cyborg,智能,机器人,机械 | `{"icon": "robot-3-line"}` |
+| <img src="../../icons/User & Faces/aliens-fill.svg" alt="aliens-fill" width="24" height="24"> | `aliens-fill` | et,science fiction,ufo,不明飞行物,外星人,科幻小说 | `{"icon": "aliens-fill"}` |
+| <img src="../../icons/User & Faces/aliens-line.svg" alt="aliens-line" width="24" height="24"> | `aliens-line` | et,science fiction,ufo,不明飞行物,外星人,科幻小说 | `{"icon": "aliens-line"}` |
+| <img src="../../icons/User & Faces/bear-smile-fill.svg" alt="bear-smile-fill" width="24" height="24"> | `bear-smile-fill` | anime,cartoon,mascot,儿童,动漫,动画片,卡通,小熊,微笑 | `{"icon": "bear-smile-fill"}` |
+| <img src="../../icons/User & Faces/bear-smile-line.svg" alt="bear-smile-line" width="24" height="24"> | `bear-smile-line` | anime,cartoon,mascot,儿童,动漫,动画片,卡通,小熊,微笑 | `{"icon": "bear-smile-line"}` |
+| <img src="../../icons/User & Faces/mickey-fill.svg" alt="mickey-fill" width="24" height="24"> | `mickey-fill` | cartoon,disney,mouse,儿童,动画片,卡通,微笑,米老鼠,迪士尼 | `{"icon": "mickey-fill"}` |
+| <img src="../../icons/User & Faces/mickey-line.svg" alt="mickey-line" width="24" height="24"> | `mickey-line` | cartoon,disney,mouse,儿童,动画片,卡通,微笑,米老鼠,迪士尼 | `{"icon": "mickey-line"}` |
+| <img src="../../icons/User & Faces/criminal-fill.svg" alt="criminal-fill" width="24" height="24"> | `criminal-fill` | crime,mugshot,suspect,嫌疑人,犯罪,罪犯 | `{"icon": "criminal-fill"}` |
+| <img src="../../icons/User & Faces/criminal-line.svg" alt="criminal-line" width="24" height="24"> | `criminal-line` | crime,mugshot,suspect,嫌疑人,犯罪,罪犯 | `{"icon": "criminal-line"}` |
+| <img src="../../icons/User & Faces/ghost-fill.svg" alt="ghost-fill" width="24" height="24"> | `ghost-fill` | haunted,horror,thriller,幽灵,恐怖,恐惧,鬼怪 | `{"icon": "ghost-fill"}` |
+| <img src="../../icons/User & Faces/ghost-line.svg" alt="ghost-line" width="24" height="24"> | `ghost-line` | haunted,horror,thriller,幽灵,恐怖,恐惧,鬼怪 | `{"icon": "ghost-line"}` |
+| <img src="../../icons/User & Faces/ghost-2-fill.svg" alt="ghost-2-fill" width="24" height="24"> | `ghost-2-fill` | haunted,horror,幽灵,恐怖,恐惧,鬼怪 | `{"icon": "ghost-2-fill"}` |
+| <img src="../../icons/User & Faces/ghost-2-line.svg" alt="ghost-2-line" width="24" height="24"> | `ghost-2-line` | haunted,horror,幽灵,恐怖,恐惧,鬼怪 | `{"icon": "ghost-2-line"}` |
+| <img src="../../icons/User & Faces/ghost-smile-fill.svg" alt="ghost-smile-fill" width="24" height="24"> | `ghost-smile-fill` | 幽灵,微笑 | `{"icon": "ghost-smile-fill"}` |
+| <img src="../../icons/User & Faces/ghost-smile-line.svg" alt="ghost-smile-line" width="24" height="24"> | `ghost-smile-line` | 幽灵,微笑 | `{"icon": "ghost-smile-line"}` |
+| <img src="../../icons/User & Faces/ghost-3-fill.svg" alt="ghost-3-fill" width="24" height="24"> | `ghost-3-fill` | 幽灵,微笑 | `{"icon": "ghost-3-fill"}` |
+| <img src="../../icons/User & Faces/ghost-3-line.svg" alt="ghost-3-line" width="24" height="24"> | `ghost-3-line` | 幽灵,微笑 | `{"icon": "ghost-3-line"}` |
+| <img src="../../icons/User & Faces/ghost-4-fill.svg" alt="ghost-4-fill" width="24" height="24"> | `ghost-4-fill` | 幽灵,微笑 | `{"icon": "ghost-4-fill"}` |
+| <img src="../../icons/User & Faces/ghost-4-line.svg" alt="ghost-4-line" width="24" height="24"> | `ghost-4-line` | 幽灵,微笑 | `{"icon": "ghost-4-line"}` |
+| <img src="../../icons/User & Faces/star-smile-fill.svg" alt="star-smile-fill" width="24" height="24"> | `star-smile-fill` | animation,bookmark,collection,cute,favorite,like,rate,书签,动画,可爱,喜欢,微笑,收藏,星星,星标,评分 | `{"icon": "star-smile-fill"}` |
+| <img src="../../icons/User & Faces/star-smile-line.svg" alt="star-smile-line" width="24" height="24"> | `star-smile-line` | animation,bookmark,collection,cute,favorite,like,rate,书签,动画,可爱,喜欢,微笑,收藏,星星,星标,评分 | `{"icon": "star-smile-line"}` |
+| <img src="../../icons/User & Faces/spy-fill.svg" alt="spy-fill" width="24" height="24"> | `spy-fill` | detective,incognito mode,privacy,secret,侦探,无痕模式,间谍,隐私模式 | `{"icon": "spy-fill"}` |
+| <img src="../../icons/User & Faces/spy-line.svg" alt="spy-line" width="24" height="24"> | `spy-line` | detective,incognito mode,privacy,secret,侦探,无痕模式,间谍,隐私模式 | `{"icon": "spy-line"}` |

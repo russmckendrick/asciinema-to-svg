@@ -4,177 +4,351 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `apps` | app grid,application,launcher,tiles,workspace,九宫格,启动器,工作区,应用抽屉,网格,面板 | `{"icon": "apps"}` |
-| - | `apps-ai` | ai apps,assistant,automation,smart apps,助手,推荐,智能应用,自动化 | `{"icon": "apps-ai"}` |
-| - | `apps-2` | app grid,application,launcher,tiles,workspace,九宫格,启动器,工作区,应用抽屉,网格,面板 | `{"icon": "apps-2"}` |
-| - | `apps-2-add` | add app,create,insert,install,new app,plus,positive,创建,加上,增加,安装,插入,新增应用,添加应用 | `{"icon": "apps-2-add"}` |
-| - | `apps-2-ai` | ai apps,assistant,automation,smart apps,助手,推荐,智能应用,自动化 | `{"icon": "apps-2-ai"}` |
-| - | `function` | card,feature,layout,module,widget,功能,卡片,布局,模块,组件 | `{"icon": "function"}` |
-| - | `function-ai` | AI 模块,ai feature,smart module,推荐,智能功能,自动化 | `{"icon": "function-ai"}` |
-| - | `function-add` | add feature,add module,create,insert,plus,positive,创建,加上,增加,插入,新建应用,添加功能,添加模块 | `{"icon": "function-add"}` |
-| - | `dashboard` | console,monitoring,overview,statistics,仪表盘,控制台,概览,监控,统计,面板 | `{"icon": "dashboard"}` |
-| - | `dashboard-horizontal` | console,monitoring,overview,statistics,仪表盘,控制台,概览,横向,监控,统计,面板 | `{"icon": "dashboard-horizontal"}` |
-| - | `menu` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu"}` |
-| - | `menu-2` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-2"}` |
-| - | `menu-3` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-3"}` |
-| - | `menu-4` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-4"}` |
-| - | `menu-5` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-5"}` |
-| - | `menu-add` | create,hamburger,insert,navigation,plus,positive,创建,加上,增加,导航,插入,汉堡菜单,添加 | `{"icon": "menu-add"}` |
-| - | `menu-fold` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold"}` |
-| - | `menu-unfold` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold"}` |
-| - | `menu-unfold-3` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-3"}` |
-| - | `menu-fold-4` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-4"}` |
-| - | `menu-unfold-4` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-4"}` |
-| - | `menu-fold-3` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-3"}` |
-| - | `menu-fold-2` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-2"}` |
-| - | `menu-unfold-2` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-2"}` |
-| - | `menu-search` | browse,category,discovery,find,lookup,menu search,query,zoom,分类,发现,导航,探索,搜索,放大镜,检索,浏览,菜单 | `{"icon": "menu-search"}` |
-| - | `more` | additional,ellipsis,options,更多,省略,选项,附加 | `{"icon": "more"}` |
-| - | `more-2` | additional,ellipsis,kebab menu,options,更多,省略,选项,附加 | `{"icon": "more-2"}` |
-| - | `star` | bookmark,collection,favorite,highlight,like,rate,书签,喜欢,收藏,星标,标记,评分,高亮 | `{"icon": "star"}` |
-| - | `star-off` | bookmark,collection,like,rate,star slash,unfavorite,书签,取消关注,取消喜欢,取消收藏,取消星标,评分 | `{"icon": "star-off"}` |
-| - | `star-s` | bookmark,collection,favorite,like,rate,书签,半星,喜欢,收藏,星标,评分 | `{"icon": "star-s"}` |
-| - | `star-half` | bookmark,collection,favorite,like,rate,书签,半星,喜欢,收藏,星标,评分 | `{"icon": "star-half"}` |
-| - | `star-half-s` | bookmark,collection,favorite,like,rate,书签,半星,喜欢,收藏,星标,评分 | `{"icon": "star-half-s"}` |
-| - | `settings` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings"}` |
-| - | `settings-2` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-2"}` |
-| - | `settings-3` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-3"}` |
-| - | `settings-4` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-4"}` |
-| - | `settings-5` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-5"}` |
-| - | `settings-6` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-6"}` |
-| - | `list-settings` | cog,configuration,gear,list settings,management,options,preference,setup,偏好,列表设置,参数,管理,配置,首选项 | `{"icon": "list-settings"}` |
-| - | `forbid` | ban,block,prohibited,slash,不允许,禁止,禁用 | `{"icon": "forbid"}` |
-| - | `forbid-2` | ban,block,prohibited,slash,不允许,禁止,禁用 | `{"icon": "forbid-2"}` |
-| - | `prohibited` | ban,block,forbid,slash,不允许,禁止,禁用 | `{"icon": "prohibited"}` |
-| - | `prohibited-2` | ban,block,forbid,slash,不允许,禁止,禁用 | `{"icon": "prohibited-2"}` |
-| - | `information` | info,信息,提示,说明 | `{"icon": "information"}` |
-| - | `information-2` | info,信息,提示,说明 | `{"icon": "information-2"}` |
-| - | `information-off` | info,信息,关闭,禁用,隐藏 | `{"icon": "information-off"}` |
-| - | `error-warning` | !,alert,danger,exclamation,fail,important,危险,失败,提醒,警告,错误 | `{"icon": "error-warning"}` |
-| - | `question` | faq,help,support,帮助,常见问题,提示,疑问,问号 | `{"icon": "question"}` |
-| - | `alert` | notification,reminder,提醒,警告,通知 | `{"icon": "alert"}` |
-| - | `spam` | alert,block,junk mail,垃圾邮件,拦截,警告,骚扰 | `{"icon": "spam"}` |
-| - | `spam-2` | alert,block,junk mail,垃圾邮件,拦截,警告,骚扰 | `{"icon": "spam-2"}` |
-| - | `spam-3` | alert,block,junk mail,垃圾邮件,拦截,警告,骚扰 | `{"icon": "spam-3"}` |
-| - | `checkbox-blank` | empty,复选框,未选,空,选择框 | `{"icon": "checkbox-blank"}` |
-| - | `checkbox` | selected,勾选,复选框,选中,选择 | `{"icon": "checkbox"}` |
-| - | `checkbox-indeterminate` | 不确定,中间态,半选,复选框 | `{"icon": "checkbox-indeterminate"}` |
-| - | `add-box` | create,insert,new,plus,positive,创建,加上,加号,增加,复选框,插入,新增,添加 | `{"icon": "add-box"}` |
-| - | `checkbox-blank-circle` | empty,复选框,未选,空 | `{"icon": "checkbox-blank-circle"}` |
-| - | `checkbox-circle` | selected,勾选,复选框,选中 | `{"icon": "checkbox-circle"}` |
-| - | `indeterminate-circle` | ban,checkbox,slash,不确定,中间态,复选框 | `{"icon": "indeterminate-circle"}` |
-| - | `add-circle` | create,insert,new,plus,positive,创建,加上,加号,增加,复选框,插入,新增,添加 | `{"icon": "add-circle"}` |
-| - | `close-circle` | cancel,cross,delete,empty,exit,quit,remove,停止,关闭,删除,取消,清空,移除,退出 | `{"icon": "close-circle"}` |
-| - | `radio-button` | single choice,单选框,圆点选择 | `{"icon": "radio-button"}` |
-| - | `checkbox-multiple-blank` | multi select,复选框,多选,未选,空 | `{"icon": "checkbox-multiple-blank"}` |
-| - | `checkbox-multiple` | multi select,勾选,复选框,多选,选中 | `{"icon": "checkbox-multiple"}` |
-| - | `check` | complete,confirm,correct,done,ok,success,tick,verify,勾选,完成,对勾,已办,成功,正确,确认,验证 | `{"icon": "check"}` |
-| - | `check-double` | done,double-tick,ok,read,success,verify,双对勾,完成,已读,成功,确认 | `{"icon": "check-double"}` |
-| - | `close` | cancel,cross,empty,exit,quit,remove,stop,times,停止,关闭,删除,取消,清空,移除,终止,退出 | `{"icon": "close"}` |
-| - | `add` | create,insert,new,plus,positive,创建,加上,加号,增加,插入,新增,添加,肯定 | `{"icon": "add"}` |
-| - | `subtract` | minus,reduce,减号,减少 | `{"icon": "subtract"}` |
-| - | `divide` | division,分割,除以,除号 | `{"icon": "divide"}` |
-| - | `equal` | equals,result,sum,相等,等于,结果 | `{"icon": "equal"}` |
-| - | `close-large` | cancel,cross,delete,empty,exit,quit,remove,停止,关闭,删除,取消,清空,移除,退出 | `{"icon": "close-large"}` |
-| - | `add-large` | create,insert,new,plus,positive,创建,加上,加号,增加,插入,新增,添加 | `{"icon": "add-large"}` |
-| - | `download` | backup,import,receive,save,下载,保存,同步,备份,导入,接收 | `{"icon": "download"}` |
-| - | `upload` | export,post,send,上传,发送,同步,导出,提交 | `{"icon": "upload"}` |
-| - | `download-2` | backup,import,receive,save,下载,保存,同步,备份,导入,接收 | `{"icon": "download-2"}` |
-| - | `upload-2` | export,post,send,上传,发送,同步,导出,提交 | `{"icon": "upload-2"}` |
-| - | `import` | download,下载,导入数据 | `{"icon": "import"}` |
-| - | `export` | upload,上传,导出数据 | `{"icon": "export"}` |
-| - | `download-cloud` | backup,online,server,storage,下载,云端,备份,存储,服务器 | `{"icon": "download-cloud"}` |
-| - | `upload-cloud` | backup,online,server,storage,上传,云端,同步,备份,存储,服务器 | `{"icon": "upload-cloud"}` |
-| - | `download-cloud-2` | backup,online,server,storage,下载,云端,备份,存储,服务器 | `{"icon": "download-cloud-2"}` |
-| - | `upload-cloud-2` | backup,online,server,storage,上传,云端,同步,备份,存储,服务器 | `{"icon": "upload-cloud-2"}` |
-| - | `login-box` | enter,entrance,sign in,signin,登入,登录框,进入 | `{"icon": "login-box"}` |
-| - | `logout-box` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-box"}` |
-| - | `logout-box-r` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-box-r"}` |
-| - | `login-circle` | enter,entrance,sign in,signin,登入,登录圆,进入 | `{"icon": "login-circle"}` |
-| - | `logout-circle` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-circle"}` |
-| - | `logout-circle-r` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-circle-r"}` |
-| - | `shield` | protect,safety,security,保护,卫士,安全,盾牌,防御 | `{"icon": "shield"}` |
-| - | `shield-cross` | protect,safety,交叉,安全,盾牌,红十字 | `{"icon": "shield-cross"}` |
-| - | `shield-flash` | protect,safety,卫士,安全,盾牌,闪电,防御 | `{"icon": "shield-flash"}` |
-| - | `shield-star` | bookmark,collection,favorite,like,police badge,protect,rate,safety,书签,喜欢,安全,收藏,星星,星标,盾牌,警徽,评分 | `{"icon": "shield-star"}` |
-| - | `shield-user` | account,agent,avatar,guarantor,individual,member,person,profile,safety,user protected,个人资料,个体,头像,安全,成员,用户,盾牌,账户,身份,防护 | `{"icon": "shield-user"}` |
-| - | `shield-keyhole` | protect,safety,加密,安全,钥匙孔 | `{"icon": "shield-keyhole"}` |
-| - | `shield-check` | done,ok,protect,safety,success,tick,verify,勾选,安全,完成,对勾,成功,确认,通过,验证 | `{"icon": "shield-check"}` |
-| - | `delete-back` | backspace,bin,garbage,recycle,remove,waste,删除,回收,回退,垃圾桶,清理,移除,退格 | `{"icon": "delete-back"}` |
-| - | `delete-back-2` | backspace,bin,garbage,recycle,remove,waste,删除,回收,回退,垃圾桶,清理,移除,退格 | `{"icon": "delete-back-2"}` |
-| - | `delete-bin` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin"}` |
-| - | `delete-bin-2` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-2"}` |
-| - | `delete-bin-3` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-3"}` |
-| - | `delete-bin-4` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-4"}` |
-| - | `delete-bin-5` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-5"}` |
-| - | `delete-bin-6` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-6"}` |
-| - | `delete-bin-7` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-7"}` |
-| - | `lock` | encrypt,password,private,security,加密,安全,密码,私人,锁 | `{"icon": "lock"}` |
-| - | `lock-2` | encrypt,password,private,security,加密,安全,密码,私人,锁 | `{"icon": "lock-2"}` |
-| - | `lock-password` | encrypt,private,security,加密,安全,密码,私人,锁 | `{"icon": "lock-password"}` |
-| - | `lock-unlock` | accessible,encrypt,password,private,public,security,公开,加密,安全,密码,权限,私人,解密,解锁 | `{"icon": "lock-unlock"}` |
-| - | `lock-star` | bookmark,collection,encrypt,favorite,like,member,password,premium,private,rate,security,书签,会员,加密,喜欢,安全,密码,收藏,星标,特权,私人,评分,锁,高级 | `{"icon": "lock-star"}` |
-| - | `eye` | preview,visible,watch,可见,查看,眼睛,预览 | `{"icon": "eye"}` |
-| - | `eye-off` | hidden,hide,preview,slash,visible,watch,不可见,关闭,查看,禁止,隐藏,预览 | `{"icon": "eye-off"}` |
-| - | `eye-2` | preview,visible,watch,可见,查看,眼睛,预览 | `{"icon": "eye-2"}` |
-| - | `eye-close` | cancel,cross,exit,hide,preview,quit,visible,watch,停止,关闭,取消,可见,查看,退出,闭眼,隐藏,预览 | `{"icon": "eye-close"}` |
-| - | `search` | browse,discovery,explore,filter,find,lookup,magnifying glass,query,scan,zoom,发现,扫描,探索,搜索,放大镜,查找,查询,检索,浏览,筛选,缩放 | `{"icon": "search"}` |
-| - | `search-ai` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai"}` |
-| - | `search-ai-3` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-3"}` |
-| - | `search-2` | browse,discovery,explore,filter,find,lookup,magnifying glass,query,scan,zoom,发现,扫描,探索,搜索,放大镜,查找,查询,检索,浏览,筛选,缩放 | `{"icon": "search-2"}` |
-| - | `search-ai-2` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-2"}` |
-| - | `search-ai-4` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-4"}` |
-| - | `search-eye` | browse,discovery,find,lookup,preview,query,visible,watch,zoom,发现,可见,探索,搜索,放大镜,查找,查看,检索,浏览,眼睛,预览 | `{"icon": "search-eye"}` |
-| - | `zoom-in` | magnify,放大镜,缩放 | `{"icon": "zoom-in"}` |
-| - | `zoom-out` | shrink,放大镜,缩小,缩放 | `{"icon": "zoom-out"}` |
-| - | `find-replace` | 搜索,替换,查找 | `{"icon": "find-replace"}` |
-| - | `share` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share"}` |
-| - | `share-2` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-2"}` |
-| - | `share-box` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-box"}` |
-| - | `share-circle` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-circle"}` |
-| - | `share-forward` | distribute,sharing,传播,分享,转发 | `{"icon": "share-forward"}` |
-| - | `share-forward-2` | distribute,sharing,传播,分享,转发 | `{"icon": "share-forward-2"}` |
-| - | `share-forward-box` | distribute,sharing,传播,分享,转发 | `{"icon": "share-forward-box"}` |
-| - | `external-link` | address,hyperlink,url,地址,外链,新窗口,超链接,跳转 | `{"icon": "external-link"}` |
-| - | `side-bar` | sidebar,侧边栏,工具栏 | `{"icon": "side-bar"}` |
-| - | `sidebar-unfold` | expand,展开侧边栏,打开侧边栏 | `{"icon": "sidebar-unfold"}` |
-| - | `sidebar-fold` | collapse,关闭侧边栏,收起侧边栏 | `{"icon": "sidebar-fold"}` |
-| - | `time` | clock,时钟,时间,钟表 | `{"icon": "time"}` |
-| - | `timer` | chronograph,stopwatch,倒计时,秒表,计时器 | `{"icon": "timer"}` |
-| - | `timer-2` | chronograph,stopwatch,倒计时,秒表,计时器 | `{"icon": "timer-2"}` |
-| - | `timer-flash` | chronograph,stopwatch,加速,秒表,计时器,闪电 | `{"icon": "timer-flash"}` |
-| - | `alarm` | alarm clock,提醒,闹钟 | `{"icon": "alarm"}` |
-| - | `alarm-add` | add alarm,create,insert,plus,positive,创建,加上,增加,插入,新增提醒,添加闹钟 | `{"icon": "alarm-add"}` |
-| - | `alarm-snooze` | 再睡一会,暂停闹钟,稍后提醒 | `{"icon": "alarm-snooze"}` |
-| - | `history` | recent,record,time machine,历史记录,最近,浏览记录 | `{"icon": "history"}` |
-| - | `hourglass-2` | duration,history,recent,time,历史记录,时间,最近,沙漏,耗时 | `{"icon": "hourglass-2"}` |
-| - | `hourglass` | duration,history,recent,time,历史记录,时间,最近,沙漏,耗时 | `{"icon": "hourglass"}` |
-| - | `thumb-up` | good,like,upvote,喜欢,好评,赞 | `{"icon": "thumb-up"}` |
-| - | `thumb-down` | bad,dislike,downvote,不喜欢,差评,踩 | `{"icon": "thumb-down"}` |
-| - | `alarm-warning` | alert,police light,report,举报,告警,报警,警灯 | `{"icon": "alarm-warning"}` |
-| - | `notification-badge` | alarm,alert,bell,red dot,remind,小红点,提醒,消息提示,警告,通知,铃铛 | `{"icon": "notification-badge"}` |
-| - | `toggle` | switch,切换,开关,触发器 | `{"icon": "toggle"}` |
-| - | `filter` | filtration,筛选,过滤器 | `{"icon": "filter"}` |
-| - | `filter-2` | filtration,筛选,过滤器 | `{"icon": "filter-2"}` |
-| - | `filter-3` | filtration,筛选,过滤器 | `{"icon": "filter-3"}` |
-| - | `filter-off` | clear-filter,filtration,清除筛选,过滤 | `{"icon": "filter-off"}` |
-| - | `loader` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader"}` |
-| - | `loader-2` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-2"}` |
-| - | `loader-3` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-3"}` |
-| - | `loader-4` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-4"}` |
-| - | `loader-5` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-5"}` |
-| - | `refresh` | loader,reload,repeat,replace,reset,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "refresh"}` |
-| - | `loop-left` | loader,reload,repeat,replace,reset,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "loop-left"}` |
-| - | `loop-left-ai` | AI 更新,ai update,smart refresh,智能刷新,自动化 | `{"icon": "loop-left-ai"}` |
-| - | `loop-right` | loader,reload,repeat,replace,reset,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "loop-right"}` |
-| - | `loop-right-ai` | AI 更新,ai update,smart refresh,智能刷新,自动化 | `{"icon": "loop-right-ai"}` |
-| - | `reset-left` | loader,refresh,reload,repeat,replace,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "reset-left"}` |
-| - | `reset-right` | loader,refresh,reload,repeat,replace,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "reset-right"}` |
-| - | `progress-1` | percent,状态,百分比,进度 | `{"icon": "progress-1"}` |
-| - | `progress-2` | percent,状态,百分比,进度 | `{"icon": "progress-2"}` |
-| - | `progress-3` | percent,状态,百分比,进度 | `{"icon": "progress-3"}` |
-| - | `progress-4` | percent,状态,百分比,进度 | `{"icon": "progress-4"}` |
-| - | `progress-5` | percent,状态,百分比,进度 | `{"icon": "progress-5"}` |
-| - | `progress-6` | percent,状态,百分比,进度 | `{"icon": "progress-6"}` |
-| - | `progress-7` | percent,状态,百分比,进度 | `{"icon": "progress-7"}` |
-| - | `progress-8` | percent,状态,百分比,进度 | `{"icon": "progress-8"}` |
+| <img src="../../icons/System/apps-fill.svg" alt="apps-fill" width="24" height="24"> | `apps-fill` | app grid,application,launcher,tiles,workspace,九宫格,启动器,工作区,应用抽屉,网格,面板 | `{"icon": "apps-fill"}` |
+| <img src="../../icons/System/apps-line.svg" alt="apps-line" width="24" height="24"> | `apps-line` | app grid,application,launcher,tiles,workspace,九宫格,启动器,工作区,应用抽屉,网格,面板 | `{"icon": "apps-line"}` |
+| <img src="../../icons/System/apps-ai-fill.svg" alt="apps-ai-fill" width="24" height="24"> | `apps-ai-fill` | ai apps,assistant,automation,smart apps,助手,推荐,智能应用,自动化 | `{"icon": "apps-ai-fill"}` |
+| <img src="../../icons/System/apps-ai-line.svg" alt="apps-ai-line" width="24" height="24"> | `apps-ai-line` | ai apps,assistant,automation,smart apps,助手,推荐,智能应用,自动化 | `{"icon": "apps-ai-line"}` |
+| <img src="../../icons/System/apps-2-fill.svg" alt="apps-2-fill" width="24" height="24"> | `apps-2-fill` | app grid,application,launcher,tiles,workspace,九宫格,启动器,工作区,应用抽屉,网格,面板 | `{"icon": "apps-2-fill"}` |
+| <img src="../../icons/System/apps-2-line.svg" alt="apps-2-line" width="24" height="24"> | `apps-2-line` | app grid,application,launcher,tiles,workspace,九宫格,启动器,工作区,应用抽屉,网格,面板 | `{"icon": "apps-2-line"}` |
+| <img src="../../icons/System/apps-2-add-fill.svg" alt="apps-2-add-fill" width="24" height="24"> | `apps-2-add-fill` | add app,create,insert,install,new app,plus,positive,创建,加上,增加,安装,插入,新增应用,添加应用 | `{"icon": "apps-2-add-fill"}` |
+| <img src="../../icons/System/apps-2-add-line.svg" alt="apps-2-add-line" width="24" height="24"> | `apps-2-add-line` | add app,create,insert,install,new app,plus,positive,创建,加上,增加,安装,插入,新增应用,添加应用 | `{"icon": "apps-2-add-line"}` |
+| <img src="../../icons/System/apps-2-ai-fill.svg" alt="apps-2-ai-fill" width="24" height="24"> | `apps-2-ai-fill` | ai apps,assistant,automation,smart apps,助手,推荐,智能应用,自动化 | `{"icon": "apps-2-ai-fill"}` |
+| <img src="../../icons/System/apps-2-ai-line.svg" alt="apps-2-ai-line" width="24" height="24"> | `apps-2-ai-line` | ai apps,assistant,automation,smart apps,助手,推荐,智能应用,自动化 | `{"icon": "apps-2-ai-line"}` |
+| <img src="../../icons/System/function-fill.svg" alt="function-fill" width="24" height="24"> | `function-fill` | card,feature,layout,module,widget,功能,卡片,布局,模块,组件 | `{"icon": "function-fill"}` |
+| <img src="../../icons/System/function-line.svg" alt="function-line" width="24" height="24"> | `function-line` | card,feature,layout,module,widget,功能,卡片,布局,模块,组件 | `{"icon": "function-line"}` |
+| <img src="../../icons/System/function-ai-fill.svg" alt="function-ai-fill" width="24" height="24"> | `function-ai-fill` | AI 模块,ai feature,smart module,推荐,智能功能,自动化 | `{"icon": "function-ai-fill"}` |
+| <img src="../../icons/System/function-ai-line.svg" alt="function-ai-line" width="24" height="24"> | `function-ai-line` | AI 模块,ai feature,smart module,推荐,智能功能,自动化 | `{"icon": "function-ai-line"}` |
+| <img src="../../icons/System/function-add-fill.svg" alt="function-add-fill" width="24" height="24"> | `function-add-fill` | add feature,add module,create,insert,plus,positive,创建,加上,增加,插入,新建应用,添加功能,添加模块 | `{"icon": "function-add-fill"}` |
+| <img src="../../icons/System/function-add-line.svg" alt="function-add-line" width="24" height="24"> | `function-add-line` | add feature,add module,create,insert,plus,positive,创建,加上,增加,插入,新建应用,添加功能,添加模块 | `{"icon": "function-add-line"}` |
+| <img src="../../icons/System/dashboard-fill.svg" alt="dashboard-fill" width="24" height="24"> | `dashboard-fill` | console,monitoring,overview,statistics,仪表盘,控制台,概览,监控,统计,面板 | `{"icon": "dashboard-fill"}` |
+| <img src="../../icons/System/dashboard-line.svg" alt="dashboard-line" width="24" height="24"> | `dashboard-line` | console,monitoring,overview,statistics,仪表盘,控制台,概览,监控,统计,面板 | `{"icon": "dashboard-line"}` |
+| <img src="../../icons/System/dashboard-horizontal-fill.svg" alt="dashboard-horizontal-fill" width="24" height="24"> | `dashboard-horizontal-fill` | console,monitoring,overview,statistics,仪表盘,控制台,概览,横向,监控,统计,面板 | `{"icon": "dashboard-horizontal-fill"}` |
+| <img src="../../icons/System/dashboard-horizontal-line.svg" alt="dashboard-horizontal-line" width="24" height="24"> | `dashboard-horizontal-line` | console,monitoring,overview,statistics,仪表盘,控制台,概览,横向,监控,统计,面板 | `{"icon": "dashboard-horizontal-line"}` |
+| <img src="../../icons/System/menu-fill.svg" alt="menu-fill" width="24" height="24"> | `menu-fill` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-fill"}` |
+| <img src="../../icons/System/menu-line.svg" alt="menu-line" width="24" height="24"> | `menu-line` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-line"}` |
+| <img src="../../icons/System/menu-2-fill.svg" alt="menu-2-fill" width="24" height="24"> | `menu-2-fill` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-2-fill"}` |
+| <img src="../../icons/System/menu-2-line.svg" alt="menu-2-line" width="24" height="24"> | `menu-2-line` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-2-line"}` |
+| <img src="../../icons/System/menu-3-fill.svg" alt="menu-3-fill" width="24" height="24"> | `menu-3-fill` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-3-fill"}` |
+| <img src="../../icons/System/menu-3-line.svg" alt="menu-3-line" width="24" height="24"> | `menu-3-line` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-3-line"}` |
+| <img src="../../icons/System/menu-4-fill.svg" alt="menu-4-fill" width="24" height="24"> | `menu-4-fill` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-4-fill"}` |
+| <img src="../../icons/System/menu-4-line.svg" alt="menu-4-line" width="24" height="24"> | `menu-4-line` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-4-line"}` |
+| <img src="../../icons/System/menu-5-fill.svg" alt="menu-5-fill" width="24" height="24"> | `menu-5-fill` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-5-fill"}` |
+| <img src="../../icons/System/menu-5-line.svg" alt="menu-5-line" width="24" height="24"> | `menu-5-line` | categories,drawer,hamburger,list,navigation,options,分类,列表,导航,抽屉,汉堡菜单,目录,选项 | `{"icon": "menu-5-line"}` |
+| <img src="../../icons/System/menu-add-fill.svg" alt="menu-add-fill" width="24" height="24"> | `menu-add-fill` | create,hamburger,insert,navigation,plus,positive,创建,加上,增加,导航,插入,汉堡菜单,添加 | `{"icon": "menu-add-fill"}` |
+| <img src="../../icons/System/menu-add-line.svg" alt="menu-add-line" width="24" height="24"> | `menu-add-line` | create,hamburger,insert,navigation,plus,positive,创建,加上,增加,导航,插入,汉堡菜单,添加 | `{"icon": "menu-add-line"}` |
+| <img src="../../icons/System/menu-fold-fill.svg" alt="menu-fold-fill" width="24" height="24"> | `menu-fold-fill` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-fill"}` |
+| <img src="../../icons/System/menu-fold-line.svg" alt="menu-fold-line" width="24" height="24"> | `menu-fold-line` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-line"}` |
+| <img src="../../icons/System/menu-unfold-fill.svg" alt="menu-unfold-fill" width="24" height="24"> | `menu-unfold-fill` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-fill"}` |
+| <img src="../../icons/System/menu-unfold-line.svg" alt="menu-unfold-line" width="24" height="24"> | `menu-unfold-line` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-line"}` |
+| <img src="../../icons/System/menu-unfold-3-fill.svg" alt="menu-unfold-3-fill" width="24" height="24"> | `menu-unfold-3-fill` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-3-fill"}` |
+| <img src="../../icons/System/menu-unfold-3-line.svg" alt="menu-unfold-3-line" width="24" height="24"> | `menu-unfold-3-line` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-3-line"}` |
+| <img src="../../icons/System/menu-fold-4-fill.svg" alt="menu-fold-4-fill" width="24" height="24"> | `menu-fold-4-fill` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-4-fill"}` |
+| <img src="../../icons/System/menu-fold-4-line.svg" alt="menu-fold-4-line" width="24" height="24"> | `menu-fold-4-line` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-4-line"}` |
+| <img src="../../icons/System/menu-unfold-4-fill.svg" alt="menu-unfold-4-fill" width="24" height="24"> | `menu-unfold-4-fill` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-4-fill"}` |
+| <img src="../../icons/System/menu-unfold-4-line.svg" alt="menu-unfold-4-line" width="24" height="24"> | `menu-unfold-4-line` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-4-line"}` |
+| <img src="../../icons/System/menu-fold-3-fill.svg" alt="menu-fold-3-fill" width="24" height="24"> | `menu-fold-3-fill` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-3-fill"}` |
+| <img src="../../icons/System/menu-fold-3-line.svg" alt="menu-fold-3-line" width="24" height="24"> | `menu-fold-3-line` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-3-line"}` |
+| <img src="../../icons/System/menu-fold-2-fill.svg" alt="menu-fold-2-fill" width="24" height="24"> | `menu-fold-2-fill` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-2-fill"}` |
+| <img src="../../icons/System/menu-fold-2-line.svg" alt="menu-fold-2-line" width="24" height="24"> | `menu-fold-2-line` | collapse,hamburger,navigation,导航,折叠,收起,汉堡菜单 | `{"icon": "menu-fold-2-line"}` |
+| <img src="../../icons/System/menu-unfold-2-fill.svg" alt="menu-unfold-2-fill" width="24" height="24"> | `menu-unfold-2-fill` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-2-fill"}` |
+| <img src="../../icons/System/menu-unfold-2-line.svg" alt="menu-unfold-2-line" width="24" height="24"> | `menu-unfold-2-line` | expand,hamburger,navigation,导航,展开,打开,汉堡菜单 | `{"icon": "menu-unfold-2-line"}` |
+| <img src="../../icons/System/menu-search-fill.svg" alt="menu-search-fill" width="24" height="24"> | `menu-search-fill` | browse,category,discovery,find,lookup,menu search,query,zoom,分类,发现,导航,探索,搜索,放大镜,检索,浏览,菜单 | `{"icon": "menu-search-fill"}` |
+| <img src="../../icons/System/menu-search-line.svg" alt="menu-search-line" width="24" height="24"> | `menu-search-line` | browse,category,discovery,find,lookup,menu search,query,zoom,分类,发现,导航,探索,搜索,放大镜,检索,浏览,菜单 | `{"icon": "menu-search-line"}` |
+| <img src="../../icons/System/more-fill.svg" alt="more-fill" width="24" height="24"> | `more-fill` | additional,ellipsis,options,更多,省略,选项,附加 | `{"icon": "more-fill"}` |
+| <img src="../../icons/System/more-line.svg" alt="more-line" width="24" height="24"> | `more-line` | additional,ellipsis,options,更多,省略,选项,附加 | `{"icon": "more-line"}` |
+| <img src="../../icons/System/more-2-fill.svg" alt="more-2-fill" width="24" height="24"> | `more-2-fill` | additional,ellipsis,kebab menu,options,更多,省略,选项,附加 | `{"icon": "more-2-fill"}` |
+| <img src="../../icons/System/more-2-line.svg" alt="more-2-line" width="24" height="24"> | `more-2-line` | additional,ellipsis,kebab menu,options,更多,省略,选项,附加 | `{"icon": "more-2-line"}` |
+| <img src="../../icons/System/star-fill.svg" alt="star-fill" width="24" height="24"> | `star-fill` | bookmark,collection,favorite,highlight,like,rate,书签,喜欢,收藏,星标,标记,评分,高亮 | `{"icon": "star-fill"}` |
+| <img src="../../icons/System/star-line.svg" alt="star-line" width="24" height="24"> | `star-line` | bookmark,collection,favorite,highlight,like,rate,书签,喜欢,收藏,星标,标记,评分,高亮 | `{"icon": "star-line"}` |
+| <img src="../../icons/System/star-off-fill.svg" alt="star-off-fill" width="24" height="24"> | `star-off-fill` | bookmark,collection,like,rate,star slash,unfavorite,书签,取消关注,取消喜欢,取消收藏,取消星标,评分 | `{"icon": "star-off-fill"}` |
+| <img src="../../icons/System/star-off-line.svg" alt="star-off-line" width="24" height="24"> | `star-off-line` | bookmark,collection,like,rate,star slash,unfavorite,书签,取消关注,取消喜欢,取消收藏,取消星标,评分 | `{"icon": "star-off-line"}` |
+| <img src="../../icons/System/star-s-fill.svg" alt="star-s-fill" width="24" height="24"> | `star-s-fill` | bookmark,collection,favorite,like,rate,书签,半星,喜欢,收藏,星标,评分 | `{"icon": "star-s-fill"}` |
+| <img src="../../icons/System/star-s-line.svg" alt="star-s-line" width="24" height="24"> | `star-s-line` | bookmark,collection,favorite,like,rate,书签,半星,喜欢,收藏,星标,评分 | `{"icon": "star-s-line"}` |
+| <img src="../../icons/System/star-half-fill.svg" alt="star-half-fill" width="24" height="24"> | `star-half-fill` | bookmark,collection,favorite,like,rate,书签,半星,喜欢,收藏,星标,评分 | `{"icon": "star-half-fill"}` |
+| <img src="../../icons/System/star-half-line.svg" alt="star-half-line" width="24" height="24"> | `star-half-line` | bookmark,collection,favorite,like,rate,书签,半星,喜欢,收藏,星标,评分 | `{"icon": "star-half-line"}` |
+| <img src="../../icons/System/star-half-s-fill.svg" alt="star-half-s-fill" width="24" height="24"> | `star-half-s-fill` | bookmark,collection,favorite,like,rate,书签,半星,喜欢,收藏,星标,评分 | `{"icon": "star-half-s-fill"}` |
+| <img src="../../icons/System/star-half-s-line.svg" alt="star-half-s-line" width="24" height="24"> | `star-half-s-line` | bookmark,collection,favorite,like,rate,书签,半星,喜欢,收藏,星标,评分 | `{"icon": "star-half-s-line"}` |
+| <img src="../../icons/System/settings-fill.svg" alt="settings-fill" width="24" height="24"> | `settings-fill` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-fill"}` |
+| <img src="../../icons/System/settings-line.svg" alt="settings-line" width="24" height="24"> | `settings-line` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-line"}` |
+| <img src="../../icons/System/settings-2-fill.svg" alt="settings-2-fill" width="24" height="24"> | `settings-2-fill` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-2-fill"}` |
+| <img src="../../icons/System/settings-2-line.svg" alt="settings-2-line" width="24" height="24"> | `settings-2-line` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-2-line"}` |
+| <img src="../../icons/System/settings-3-fill.svg" alt="settings-3-fill" width="24" height="24"> | `settings-3-fill` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-3-fill"}` |
+| <img src="../../icons/System/settings-3-line.svg" alt="settings-3-line" width="24" height="24"> | `settings-3-line` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-3-line"}` |
+| <img src="../../icons/System/settings-4-fill.svg" alt="settings-4-fill" width="24" height="24"> | `settings-4-fill` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-4-fill"}` |
+| <img src="../../icons/System/settings-4-line.svg" alt="settings-4-line" width="24" height="24"> | `settings-4-line` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-4-line"}` |
+| <img src="../../icons/System/settings-5-fill.svg" alt="settings-5-fill" width="24" height="24"> | `settings-5-fill` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-5-fill"}` |
+| <img src="../../icons/System/settings-5-line.svg" alt="settings-5-line" width="24" height="24"> | `settings-5-line` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-5-line"}` |
+| <img src="../../icons/System/settings-6-fill.svg" alt="settings-6-fill" width="24" height="24"> | `settings-6-fill` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-6-fill"}` |
+| <img src="../../icons/System/settings-6-line.svg" alt="settings-6-line" width="24" height="24"> | `settings-6-line` | adjust,cog,configuration,control,customize,edit,fix,gear,management,options,preferences,setup,tools,修复,偏好,定制,工具,控制,管理,设置,调整,配置,首选项,齿轮 | `{"icon": "settings-6-line"}` |
+| <img src="../../icons/System/list-settings-fill.svg" alt="list-settings-fill" width="24" height="24"> | `list-settings-fill` | cog,configuration,gear,list settings,management,options,preference,setup,偏好,列表设置,参数,管理,配置,首选项 | `{"icon": "list-settings-fill"}` |
+| <img src="../../icons/System/list-settings-line.svg" alt="list-settings-line" width="24" height="24"> | `list-settings-line` | cog,configuration,gear,list settings,management,options,preference,setup,偏好,列表设置,参数,管理,配置,首选项 | `{"icon": "list-settings-line"}` |
+| <img src="../../icons/System/forbid-fill.svg" alt="forbid-fill" width="24" height="24"> | `forbid-fill` | ban,block,prohibited,slash,不允许,禁止,禁用 | `{"icon": "forbid-fill"}` |
+| <img src="../../icons/System/forbid-line.svg" alt="forbid-line" width="24" height="24"> | `forbid-line` | ban,block,prohibited,slash,不允许,禁止,禁用 | `{"icon": "forbid-line"}` |
+| <img src="../../icons/System/forbid-2-fill.svg" alt="forbid-2-fill" width="24" height="24"> | `forbid-2-fill` | ban,block,prohibited,slash,不允许,禁止,禁用 | `{"icon": "forbid-2-fill"}` |
+| <img src="../../icons/System/forbid-2-line.svg" alt="forbid-2-line" width="24" height="24"> | `forbid-2-line` | ban,block,prohibited,slash,不允许,禁止,禁用 | `{"icon": "forbid-2-line"}` |
+| <img src="../../icons/System/prohibited-fill.svg" alt="prohibited-fill" width="24" height="24"> | `prohibited-fill` | ban,block,forbid,slash,不允许,禁止,禁用 | `{"icon": "prohibited-fill"}` |
+| <img src="../../icons/System/prohibited-line.svg" alt="prohibited-line" width="24" height="24"> | `prohibited-line` | ban,block,forbid,slash,不允许,禁止,禁用 | `{"icon": "prohibited-line"}` |
+| <img src="../../icons/System/prohibited-2-fill.svg" alt="prohibited-2-fill" width="24" height="24"> | `prohibited-2-fill` | ban,block,forbid,slash,不允许,禁止,禁用 | `{"icon": "prohibited-2-fill"}` |
+| <img src="../../icons/System/prohibited-2-line.svg" alt="prohibited-2-line" width="24" height="24"> | `prohibited-2-line` | ban,block,forbid,slash,不允许,禁止,禁用 | `{"icon": "prohibited-2-line"}` |
+| <img src="../../icons/System/information-fill.svg" alt="information-fill" width="24" height="24"> | `information-fill` | info,信息,提示,说明 | `{"icon": "information-fill"}` |
+| <img src="../../icons/System/information-line.svg" alt="information-line" width="24" height="24"> | `information-line` | info,信息,提示,说明 | `{"icon": "information-line"}` |
+| <img src="../../icons/System/information-2-fill.svg" alt="information-2-fill" width="24" height="24"> | `information-2-fill` | info,信息,提示,说明 | `{"icon": "information-2-fill"}` |
+| <img src="../../icons/System/information-2-line.svg" alt="information-2-line" width="24" height="24"> | `information-2-line` | info,信息,提示,说明 | `{"icon": "information-2-line"}` |
+| <img src="../../icons/System/information-off-fill.svg" alt="information-off-fill" width="24" height="24"> | `information-off-fill` | info,信息,关闭,禁用,隐藏 | `{"icon": "information-off-fill"}` |
+| <img src="../../icons/System/information-off-line.svg" alt="information-off-line" width="24" height="24"> | `information-off-line` | info,信息,关闭,禁用,隐藏 | `{"icon": "information-off-line"}` |
+| <img src="../../icons/System/error-warning-fill.svg" alt="error-warning-fill" width="24" height="24"> | `error-warning-fill` | !,alert,danger,exclamation,fail,important,危险,失败,提醒,警告,错误 | `{"icon": "error-warning-fill"}` |
+| <img src="../../icons/System/error-warning-line.svg" alt="error-warning-line" width="24" height="24"> | `error-warning-line` | !,alert,danger,exclamation,fail,important,危险,失败,提醒,警告,错误 | `{"icon": "error-warning-line"}` |
+| <img src="../../icons/System/question-fill.svg" alt="question-fill" width="24" height="24"> | `question-fill` | faq,help,support,帮助,常见问题,提示,疑问,问号 | `{"icon": "question-fill"}` |
+| <img src="../../icons/System/question-line.svg" alt="question-line" width="24" height="24"> | `question-line` | faq,help,support,帮助,常见问题,提示,疑问,问号 | `{"icon": "question-line"}` |
+| <img src="../../icons/System/alert-fill.svg" alt="alert-fill" width="24" height="24"> | `alert-fill` | notification,reminder,提醒,警告,通知 | `{"icon": "alert-fill"}` |
+| <img src="../../icons/System/alert-line.svg" alt="alert-line" width="24" height="24"> | `alert-line` | notification,reminder,提醒,警告,通知 | `{"icon": "alert-line"}` |
+| <img src="../../icons/System/spam-fill.svg" alt="spam-fill" width="24" height="24"> | `spam-fill` | alert,block,junk mail,垃圾邮件,拦截,警告,骚扰 | `{"icon": "spam-fill"}` |
+| <img src="../../icons/System/spam-line.svg" alt="spam-line" width="24" height="24"> | `spam-line` | alert,block,junk mail,垃圾邮件,拦截,警告,骚扰 | `{"icon": "spam-line"}` |
+| <img src="../../icons/System/spam-2-fill.svg" alt="spam-2-fill" width="24" height="24"> | `spam-2-fill` | alert,block,junk mail,垃圾邮件,拦截,警告,骚扰 | `{"icon": "spam-2-fill"}` |
+| <img src="../../icons/System/spam-2-line.svg" alt="spam-2-line" width="24" height="24"> | `spam-2-line` | alert,block,junk mail,垃圾邮件,拦截,警告,骚扰 | `{"icon": "spam-2-line"}` |
+| <img src="../../icons/System/spam-3-fill.svg" alt="spam-3-fill" width="24" height="24"> | `spam-3-fill` | alert,block,junk mail,垃圾邮件,拦截,警告,骚扰 | `{"icon": "spam-3-fill"}` |
+| <img src="../../icons/System/spam-3-line.svg" alt="spam-3-line" width="24" height="24"> | `spam-3-line` | alert,block,junk mail,垃圾邮件,拦截,警告,骚扰 | `{"icon": "spam-3-line"}` |
+| <img src="../../icons/System/checkbox-blank-fill.svg" alt="checkbox-blank-fill" width="24" height="24"> | `checkbox-blank-fill` | empty,复选框,未选,空,选择框 | `{"icon": "checkbox-blank-fill"}` |
+| <img src="../../icons/System/checkbox-blank-line.svg" alt="checkbox-blank-line" width="24" height="24"> | `checkbox-blank-line` | empty,复选框,未选,空,选择框 | `{"icon": "checkbox-blank-line"}` |
+| <img src="../../icons/System/checkbox-fill.svg" alt="checkbox-fill" width="24" height="24"> | `checkbox-fill` | selected,勾选,复选框,选中,选择 | `{"icon": "checkbox-fill"}` |
+| <img src="../../icons/System/checkbox-line.svg" alt="checkbox-line" width="24" height="24"> | `checkbox-line` | selected,勾选,复选框,选中,选择 | `{"icon": "checkbox-line"}` |
+| <img src="../../icons/System/checkbox-indeterminate-fill.svg" alt="checkbox-indeterminate-fill" width="24" height="24"> | `checkbox-indeterminate-fill` | 不确定,中间态,半选,复选框 | `{"icon": "checkbox-indeterminate-fill"}` |
+| <img src="../../icons/System/checkbox-indeterminate-line.svg" alt="checkbox-indeterminate-line" width="24" height="24"> | `checkbox-indeterminate-line` | 不确定,中间态,半选,复选框 | `{"icon": "checkbox-indeterminate-line"}` |
+| <img src="../../icons/System/add-box-fill.svg" alt="add-box-fill" width="24" height="24"> | `add-box-fill` | create,insert,new,plus,positive,创建,加上,加号,增加,复选框,插入,新增,添加 | `{"icon": "add-box-fill"}` |
+| <img src="../../icons/System/add-box-line.svg" alt="add-box-line" width="24" height="24"> | `add-box-line` | create,insert,new,plus,positive,创建,加上,加号,增加,复选框,插入,新增,添加 | `{"icon": "add-box-line"}` |
+| <img src="../../icons/System/checkbox-blank-circle-fill.svg" alt="checkbox-blank-circle-fill" width="24" height="24"> | `checkbox-blank-circle-fill` | empty,复选框,未选,空 | `{"icon": "checkbox-blank-circle-fill"}` |
+| <img src="../../icons/System/checkbox-blank-circle-line.svg" alt="checkbox-blank-circle-line" width="24" height="24"> | `checkbox-blank-circle-line` | empty,复选框,未选,空 | `{"icon": "checkbox-blank-circle-line"}` |
+| <img src="../../icons/System/checkbox-circle-fill.svg" alt="checkbox-circle-fill" width="24" height="24"> | `checkbox-circle-fill` | selected,勾选,复选框,选中 | `{"icon": "checkbox-circle-fill"}` |
+| <img src="../../icons/System/checkbox-circle-line.svg" alt="checkbox-circle-line" width="24" height="24"> | `checkbox-circle-line` | selected,勾选,复选框,选中 | `{"icon": "checkbox-circle-line"}` |
+| <img src="../../icons/System/indeterminate-circle-fill.svg" alt="indeterminate-circle-fill" width="24" height="24"> | `indeterminate-circle-fill` | ban,checkbox,slash,不确定,中间态,复选框 | `{"icon": "indeterminate-circle-fill"}` |
+| <img src="../../icons/System/indeterminate-circle-line.svg" alt="indeterminate-circle-line" width="24" height="24"> | `indeterminate-circle-line` | ban,checkbox,slash,不确定,中间态,复选框 | `{"icon": "indeterminate-circle-line"}` |
+| <img src="../../icons/System/add-circle-fill.svg" alt="add-circle-fill" width="24" height="24"> | `add-circle-fill` | create,insert,new,plus,positive,创建,加上,加号,增加,复选框,插入,新增,添加 | `{"icon": "add-circle-fill"}` |
+| <img src="../../icons/System/add-circle-line.svg" alt="add-circle-line" width="24" height="24"> | `add-circle-line` | create,insert,new,plus,positive,创建,加上,加号,增加,复选框,插入,新增,添加 | `{"icon": "add-circle-line"}` |
+| <img src="../../icons/System/close-circle-fill.svg" alt="close-circle-fill" width="24" height="24"> | `close-circle-fill` | cancel,cross,delete,empty,exit,quit,remove,停止,关闭,删除,取消,清空,移除,退出 | `{"icon": "close-circle-fill"}` |
+| <img src="../../icons/System/close-circle-line.svg" alt="close-circle-line" width="24" height="24"> | `close-circle-line` | cancel,cross,delete,empty,exit,quit,remove,停止,关闭,删除,取消,清空,移除,退出 | `{"icon": "close-circle-line"}` |
+| <img src="../../icons/System/radio-button-fill.svg" alt="radio-button-fill" width="24" height="24"> | `radio-button-fill` | single choice,单选框,圆点选择 | `{"icon": "radio-button-fill"}` |
+| <img src="../../icons/System/radio-button-line.svg" alt="radio-button-line" width="24" height="24"> | `radio-button-line` | single choice,单选框,圆点选择 | `{"icon": "radio-button-line"}` |
+| <img src="../../icons/System/checkbox-multiple-blank-fill.svg" alt="checkbox-multiple-blank-fill" width="24" height="24"> | `checkbox-multiple-blank-fill` | multi select,复选框,多选,未选,空 | `{"icon": "checkbox-multiple-blank-fill"}` |
+| <img src="../../icons/System/checkbox-multiple-blank-line.svg" alt="checkbox-multiple-blank-line" width="24" height="24"> | `checkbox-multiple-blank-line` | multi select,复选框,多选,未选,空 | `{"icon": "checkbox-multiple-blank-line"}` |
+| <img src="../../icons/System/checkbox-multiple-fill.svg" alt="checkbox-multiple-fill" width="24" height="24"> | `checkbox-multiple-fill` | multi select,勾选,复选框,多选,选中 | `{"icon": "checkbox-multiple-fill"}` |
+| <img src="../../icons/System/checkbox-multiple-line.svg" alt="checkbox-multiple-line" width="24" height="24"> | `checkbox-multiple-line` | multi select,勾选,复选框,多选,选中 | `{"icon": "checkbox-multiple-line"}` |
+| <img src="../../icons/System/check-fill.svg" alt="check-fill" width="24" height="24"> | `check-fill` | complete,confirm,correct,done,ok,success,tick,verify,勾选,完成,对勾,已办,成功,正确,确认,验证 | `{"icon": "check-fill"}` |
+| <img src="../../icons/System/check-line.svg" alt="check-line" width="24" height="24"> | `check-line` | complete,confirm,correct,done,ok,success,tick,verify,勾选,完成,对勾,已办,成功,正确,确认,验证 | `{"icon": "check-line"}` |
+| <img src="../../icons/System/check-double-fill.svg" alt="check-double-fill" width="24" height="24"> | `check-double-fill` | done,double-tick,ok,read,success,verify,双对勾,完成,已读,成功,确认 | `{"icon": "check-double-fill"}` |
+| <img src="../../icons/System/check-double-line.svg" alt="check-double-line" width="24" height="24"> | `check-double-line` | done,double-tick,ok,read,success,verify,双对勾,完成,已读,成功,确认 | `{"icon": "check-double-line"}` |
+| <img src="../../icons/System/close-fill.svg" alt="close-fill" width="24" height="24"> | `close-fill` | cancel,cross,empty,exit,quit,remove,stop,times,停止,关闭,删除,取消,清空,移除,终止,退出 | `{"icon": "close-fill"}` |
+| <img src="../../icons/System/close-line.svg" alt="close-line" width="24" height="24"> | `close-line` | cancel,cross,empty,exit,quit,remove,stop,times,停止,关闭,删除,取消,清空,移除,终止,退出 | `{"icon": "close-line"}` |
+| <img src="../../icons/System/add-fill.svg" alt="add-fill" width="24" height="24"> | `add-fill` | create,insert,new,plus,positive,创建,加上,加号,增加,插入,新增,添加,肯定 | `{"icon": "add-fill"}` |
+| <img src="../../icons/System/add-line.svg" alt="add-line" width="24" height="24"> | `add-line` | create,insert,new,plus,positive,创建,加上,加号,增加,插入,新增,添加,肯定 | `{"icon": "add-line"}` |
+| <img src="../../icons/System/subtract-fill.svg" alt="subtract-fill" width="24" height="24"> | `subtract-fill` | minus,reduce,减号,减少 | `{"icon": "subtract-fill"}` |
+| <img src="../../icons/System/subtract-line.svg" alt="subtract-line" width="24" height="24"> | `subtract-line` | minus,reduce,减号,减少 | `{"icon": "subtract-line"}` |
+| <img src="../../icons/System/divide-fill.svg" alt="divide-fill" width="24" height="24"> | `divide-fill` | division,分割,除以,除号 | `{"icon": "divide-fill"}` |
+| <img src="../../icons/System/divide-line.svg" alt="divide-line" width="24" height="24"> | `divide-line` | division,分割,除以,除号 | `{"icon": "divide-line"}` |
+| <img src="../../icons/System/equal-fill.svg" alt="equal-fill" width="24" height="24"> | `equal-fill` | equals,result,sum,相等,等于,结果 | `{"icon": "equal-fill"}` |
+| <img src="../../icons/System/equal-line.svg" alt="equal-line" width="24" height="24"> | `equal-line` | equals,result,sum,相等,等于,结果 | `{"icon": "equal-line"}` |
+| <img src="../../icons/System/close-large-fill.svg" alt="close-large-fill" width="24" height="24"> | `close-large-fill` | cancel,cross,delete,empty,exit,quit,remove,停止,关闭,删除,取消,清空,移除,退出 | `{"icon": "close-large-fill"}` |
+| <img src="../../icons/System/close-large-line.svg" alt="close-large-line" width="24" height="24"> | `close-large-line` | cancel,cross,delete,empty,exit,quit,remove,停止,关闭,删除,取消,清空,移除,退出 | `{"icon": "close-large-line"}` |
+| <img src="../../icons/System/add-large-fill.svg" alt="add-large-fill" width="24" height="24"> | `add-large-fill` | create,insert,new,plus,positive,创建,加上,加号,增加,插入,新增,添加 | `{"icon": "add-large-fill"}` |
+| <img src="../../icons/System/add-large-line.svg" alt="add-large-line" width="24" height="24"> | `add-large-line` | create,insert,new,plus,positive,创建,加上,加号,增加,插入,新增,添加 | `{"icon": "add-large-line"}` |
+| <img src="../../icons/System/download-fill.svg" alt="download-fill" width="24" height="24"> | `download-fill` | backup,import,receive,save,下载,保存,同步,备份,导入,接收 | `{"icon": "download-fill"}` |
+| <img src="../../icons/System/download-line.svg" alt="download-line" width="24" height="24"> | `download-line` | backup,import,receive,save,下载,保存,同步,备份,导入,接收 | `{"icon": "download-line"}` |
+| <img src="../../icons/System/upload-fill.svg" alt="upload-fill" width="24" height="24"> | `upload-fill` | export,post,send,上传,发送,同步,导出,提交 | `{"icon": "upload-fill"}` |
+| <img src="../../icons/System/upload-line.svg" alt="upload-line" width="24" height="24"> | `upload-line` | export,post,send,上传,发送,同步,导出,提交 | `{"icon": "upload-line"}` |
+| <img src="../../icons/System/download-2-fill.svg" alt="download-2-fill" width="24" height="24"> | `download-2-fill` | backup,import,receive,save,下载,保存,同步,备份,导入,接收 | `{"icon": "download-2-fill"}` |
+| <img src="../../icons/System/download-2-line.svg" alt="download-2-line" width="24" height="24"> | `download-2-line` | backup,import,receive,save,下载,保存,同步,备份,导入,接收 | `{"icon": "download-2-line"}` |
+| <img src="../../icons/System/upload-2-fill.svg" alt="upload-2-fill" width="24" height="24"> | `upload-2-fill` | export,post,send,上传,发送,同步,导出,提交 | `{"icon": "upload-2-fill"}` |
+| <img src="../../icons/System/upload-2-line.svg" alt="upload-2-line" width="24" height="24"> | `upload-2-line` | export,post,send,上传,发送,同步,导出,提交 | `{"icon": "upload-2-line"}` |
+| <img src="../../icons/System/import-fill.svg" alt="import-fill" width="24" height="24"> | `import-fill` | download,下载,导入数据 | `{"icon": "import-fill"}` |
+| <img src="../../icons/System/import-line.svg" alt="import-line" width="24" height="24"> | `import-line` | download,下载,导入数据 | `{"icon": "import-line"}` |
+| <img src="../../icons/System/export-fill.svg" alt="export-fill" width="24" height="24"> | `export-fill` | upload,上传,导出数据 | `{"icon": "export-fill"}` |
+| <img src="../../icons/System/export-line.svg" alt="export-line" width="24" height="24"> | `export-line` | upload,上传,导出数据 | `{"icon": "export-line"}` |
+| <img src="../../icons/System/download-cloud-fill.svg" alt="download-cloud-fill" width="24" height="24"> | `download-cloud-fill` | backup,online,server,storage,下载,云端,备份,存储,服务器 | `{"icon": "download-cloud-fill"}` |
+| <img src="../../icons/System/download-cloud-line.svg" alt="download-cloud-line" width="24" height="24"> | `download-cloud-line` | backup,online,server,storage,下载,云端,备份,存储,服务器 | `{"icon": "download-cloud-line"}` |
+| <img src="../../icons/System/upload-cloud-fill.svg" alt="upload-cloud-fill" width="24" height="24"> | `upload-cloud-fill` | backup,online,server,storage,上传,云端,同步,备份,存储,服务器 | `{"icon": "upload-cloud-fill"}` |
+| <img src="../../icons/System/upload-cloud-line.svg" alt="upload-cloud-line" width="24" height="24"> | `upload-cloud-line` | backup,online,server,storage,上传,云端,同步,备份,存储,服务器 | `{"icon": "upload-cloud-line"}` |
+| <img src="../../icons/System/download-cloud-2-fill.svg" alt="download-cloud-2-fill" width="24" height="24"> | `download-cloud-2-fill` | backup,online,server,storage,下载,云端,备份,存储,服务器 | `{"icon": "download-cloud-2-fill"}` |
+| <img src="../../icons/System/download-cloud-2-line.svg" alt="download-cloud-2-line" width="24" height="24"> | `download-cloud-2-line` | backup,online,server,storage,下载,云端,备份,存储,服务器 | `{"icon": "download-cloud-2-line"}` |
+| <img src="../../icons/System/upload-cloud-2-fill.svg" alt="upload-cloud-2-fill" width="24" height="24"> | `upload-cloud-2-fill` | backup,online,server,storage,上传,云端,同步,备份,存储,服务器 | `{"icon": "upload-cloud-2-fill"}` |
+| <img src="../../icons/System/upload-cloud-2-line.svg" alt="upload-cloud-2-line" width="24" height="24"> | `upload-cloud-2-line` | backup,online,server,storage,上传,云端,同步,备份,存储,服务器 | `{"icon": "upload-cloud-2-line"}` |
+| <img src="../../icons/System/login-box-fill.svg" alt="login-box-fill" width="24" height="24"> | `login-box-fill` | enter,entrance,sign in,signin,登入,登录框,进入 | `{"icon": "login-box-fill"}` |
+| <img src="../../icons/System/login-box-line.svg" alt="login-box-line" width="24" height="24"> | `login-box-line` | enter,entrance,sign in,signin,登入,登录框,进入 | `{"icon": "login-box-line"}` |
+| <img src="../../icons/System/logout-box-fill.svg" alt="logout-box-fill" width="24" height="24"> | `logout-box-fill` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-box-fill"}` |
+| <img src="../../icons/System/logout-box-line.svg" alt="logout-box-line" width="24" height="24"> | `logout-box-line` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-box-line"}` |
+| <img src="../../icons/System/logout-box-r-fill.svg" alt="logout-box-r-fill" width="24" height="24"> | `logout-box-r-fill` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-box-r-fill"}` |
+| <img src="../../icons/System/logout-box-r-line.svg" alt="logout-box-r-line" width="24" height="24"> | `logout-box-r-line` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-box-r-line"}` |
+| <img src="../../icons/System/login-circle-fill.svg" alt="login-circle-fill" width="24" height="24"> | `login-circle-fill` | enter,entrance,sign in,signin,登入,登录圆,进入 | `{"icon": "login-circle-fill"}` |
+| <img src="../../icons/System/login-circle-line.svg" alt="login-circle-line" width="24" height="24"> | `login-circle-line` | enter,entrance,sign in,signin,登入,登录圆,进入 | `{"icon": "login-circle-line"}` |
+| <img src="../../icons/System/logout-circle-fill.svg" alt="logout-circle-fill" width="24" height="24"> | `logout-circle-fill` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-circle-fill"}` |
+| <img src="../../icons/System/logout-circle-line.svg" alt="logout-circle-line" width="24" height="24"> | `logout-circle-line` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-circle-line"}` |
+| <img src="../../icons/System/logout-circle-r-fill.svg" alt="logout-circle-r-fill" width="24" height="24"> | `logout-circle-r-fill` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-circle-r-fill"}` |
+| <img src="../../icons/System/logout-circle-r-line.svg" alt="logout-circle-r-line" width="24" height="24"> | `logout-circle-r-line` | exit,sign out,signout,注销,登出,退出 | `{"icon": "logout-circle-r-line"}` |
+| <img src="../../icons/System/shield-fill.svg" alt="shield-fill" width="24" height="24"> | `shield-fill` | protect,safety,security,保护,卫士,安全,盾牌,防御 | `{"icon": "shield-fill"}` |
+| <img src="../../icons/System/shield-line.svg" alt="shield-line" width="24" height="24"> | `shield-line` | protect,safety,security,保护,卫士,安全,盾牌,防御 | `{"icon": "shield-line"}` |
+| <img src="../../icons/System/shield-cross-fill.svg" alt="shield-cross-fill" width="24" height="24"> | `shield-cross-fill` | protect,safety,交叉,安全,盾牌,红十字 | `{"icon": "shield-cross-fill"}` |
+| <img src="../../icons/System/shield-cross-line.svg" alt="shield-cross-line" width="24" height="24"> | `shield-cross-line` | protect,safety,交叉,安全,盾牌,红十字 | `{"icon": "shield-cross-line"}` |
+| <img src="../../icons/System/shield-flash-fill.svg" alt="shield-flash-fill" width="24" height="24"> | `shield-flash-fill` | protect,safety,卫士,安全,盾牌,闪电,防御 | `{"icon": "shield-flash-fill"}` |
+| <img src="../../icons/System/shield-flash-line.svg" alt="shield-flash-line" width="24" height="24"> | `shield-flash-line` | protect,safety,卫士,安全,盾牌,闪电,防御 | `{"icon": "shield-flash-line"}` |
+| <img src="../../icons/System/shield-star-fill.svg" alt="shield-star-fill" width="24" height="24"> | `shield-star-fill` | bookmark,collection,favorite,like,police badge,protect,rate,safety,书签,喜欢,安全,收藏,星星,星标,盾牌,警徽,评分 | `{"icon": "shield-star-fill"}` |
+| <img src="../../icons/System/shield-star-line.svg" alt="shield-star-line" width="24" height="24"> | `shield-star-line` | bookmark,collection,favorite,like,police badge,protect,rate,safety,书签,喜欢,安全,收藏,星星,星标,盾牌,警徽,评分 | `{"icon": "shield-star-line"}` |
+| <img src="../../icons/System/shield-user-fill.svg" alt="shield-user-fill" width="24" height="24"> | `shield-user-fill` | account,agent,avatar,guarantor,individual,member,person,profile,safety,user protected,个人资料,个体,头像,安全,成员,用户,盾牌,账户,身份,防护 | `{"icon": "shield-user-fill"}` |
+| <img src="../../icons/System/shield-user-line.svg" alt="shield-user-line" width="24" height="24"> | `shield-user-line` | account,agent,avatar,guarantor,individual,member,person,profile,safety,user protected,个人资料,个体,头像,安全,成员,用户,盾牌,账户,身份,防护 | `{"icon": "shield-user-line"}` |
+| <img src="../../icons/System/shield-keyhole-fill.svg" alt="shield-keyhole-fill" width="24" height="24"> | `shield-keyhole-fill` | protect,safety,加密,安全,钥匙孔 | `{"icon": "shield-keyhole-fill"}` |
+| <img src="../../icons/System/shield-keyhole-line.svg" alt="shield-keyhole-line" width="24" height="24"> | `shield-keyhole-line` | protect,safety,加密,安全,钥匙孔 | `{"icon": "shield-keyhole-line"}` |
+| <img src="../../icons/System/shield-check-fill.svg" alt="shield-check-fill" width="24" height="24"> | `shield-check-fill` | done,ok,protect,safety,success,tick,verify,勾选,安全,完成,对勾,成功,确认,通过,验证 | `{"icon": "shield-check-fill"}` |
+| <img src="../../icons/System/shield-check-line.svg" alt="shield-check-line" width="24" height="24"> | `shield-check-line` | done,ok,protect,safety,success,tick,verify,勾选,安全,完成,对勾,成功,确认,通过,验证 | `{"icon": "shield-check-line"}` |
+| <img src="../../icons/System/delete-back-fill.svg" alt="delete-back-fill" width="24" height="24"> | `delete-back-fill` | backspace,bin,garbage,recycle,remove,waste,删除,回收,回退,垃圾桶,清理,移除,退格 | `{"icon": "delete-back-fill"}` |
+| <img src="../../icons/System/delete-back-line.svg" alt="delete-back-line" width="24" height="24"> | `delete-back-line` | backspace,bin,garbage,recycle,remove,waste,删除,回收,回退,垃圾桶,清理,移除,退格 | `{"icon": "delete-back-line"}` |
+| <img src="../../icons/System/delete-back-2-fill.svg" alt="delete-back-2-fill" width="24" height="24"> | `delete-back-2-fill` | backspace,bin,garbage,recycle,remove,waste,删除,回收,回退,垃圾桶,清理,移除,退格 | `{"icon": "delete-back-2-fill"}` |
+| <img src="../../icons/System/delete-back-2-line.svg" alt="delete-back-2-line" width="24" height="24"> | `delete-back-2-line` | backspace,bin,garbage,recycle,remove,waste,删除,回收,回退,垃圾桶,清理,移除,退格 | `{"icon": "delete-back-2-line"}` |
+| <img src="../../icons/System/delete-bin-fill.svg" alt="delete-bin-fill" width="24" height="24"> | `delete-bin-fill` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-fill"}` |
+| <img src="../../icons/System/delete-bin-line.svg" alt="delete-bin-line" width="24" height="24"> | `delete-bin-line` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-line"}` |
+| <img src="../../icons/System/delete-bin-2-fill.svg" alt="delete-bin-2-fill" width="24" height="24"> | `delete-bin-2-fill` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-2-fill"}` |
+| <img src="../../icons/System/delete-bin-2-line.svg" alt="delete-bin-2-line" width="24" height="24"> | `delete-bin-2-line` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-2-line"}` |
+| <img src="../../icons/System/delete-bin-3-fill.svg" alt="delete-bin-3-fill" width="24" height="24"> | `delete-bin-3-fill` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-3-fill"}` |
+| <img src="../../icons/System/delete-bin-3-line.svg" alt="delete-bin-3-line" width="24" height="24"> | `delete-bin-3-line` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-3-line"}` |
+| <img src="../../icons/System/delete-bin-4-fill.svg" alt="delete-bin-4-fill" width="24" height="24"> | `delete-bin-4-fill` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-4-fill"}` |
+| <img src="../../icons/System/delete-bin-4-line.svg" alt="delete-bin-4-line" width="24" height="24"> | `delete-bin-4-line` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-4-line"}` |
+| <img src="../../icons/System/delete-bin-5-fill.svg" alt="delete-bin-5-fill" width="24" height="24"> | `delete-bin-5-fill` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-5-fill"}` |
+| <img src="../../icons/System/delete-bin-5-line.svg" alt="delete-bin-5-line" width="24" height="24"> | `delete-bin-5-line` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-5-line"}` |
+| <img src="../../icons/System/delete-bin-6-fill.svg" alt="delete-bin-6-fill" width="24" height="24"> | `delete-bin-6-fill` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-6-fill"}` |
+| <img src="../../icons/System/delete-bin-6-line.svg" alt="delete-bin-6-line" width="24" height="24"> | `delete-bin-6-line` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-6-line"}` |
+| <img src="../../icons/System/delete-bin-7-fill.svg" alt="delete-bin-7-fill" width="24" height="24"> | `delete-bin-7-fill` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-7-fill"}` |
+| <img src="../../icons/System/delete-bin-7-line.svg" alt="delete-bin-7-line" width="24" height="24"> | `delete-bin-7-line` | dustbin,garbage,recycle,remove,trash,uninstall,waste,删除,卸载,回收站,垃圾桶,清理,移除 | `{"icon": "delete-bin-7-line"}` |
+| <img src="../../icons/System/lock-fill.svg" alt="lock-fill" width="24" height="24"> | `lock-fill` | encrypt,password,private,security,加密,安全,密码,私人,锁 | `{"icon": "lock-fill"}` |
+| <img src="../../icons/System/lock-line.svg" alt="lock-line" width="24" height="24"> | `lock-line` | encrypt,password,private,security,加密,安全,密码,私人,锁 | `{"icon": "lock-line"}` |
+| <img src="../../icons/System/lock-2-fill.svg" alt="lock-2-fill" width="24" height="24"> | `lock-2-fill` | encrypt,password,private,security,加密,安全,密码,私人,锁 | `{"icon": "lock-2-fill"}` |
+| <img src="../../icons/System/lock-2-line.svg" alt="lock-2-line" width="24" height="24"> | `lock-2-line` | encrypt,password,private,security,加密,安全,密码,私人,锁 | `{"icon": "lock-2-line"}` |
+| <img src="../../icons/System/lock-password-fill.svg" alt="lock-password-fill" width="24" height="24"> | `lock-password-fill` | encrypt,private,security,加密,安全,密码,私人,锁 | `{"icon": "lock-password-fill"}` |
+| <img src="../../icons/System/lock-password-line.svg" alt="lock-password-line" width="24" height="24"> | `lock-password-line` | encrypt,private,security,加密,安全,密码,私人,锁 | `{"icon": "lock-password-line"}` |
+| <img src="../../icons/System/lock-unlock-fill.svg" alt="lock-unlock-fill" width="24" height="24"> | `lock-unlock-fill` | accessible,encrypt,password,private,public,security,公开,加密,安全,密码,权限,私人,解密,解锁 | `{"icon": "lock-unlock-fill"}` |
+| <img src="../../icons/System/lock-unlock-line.svg" alt="lock-unlock-line" width="24" height="24"> | `lock-unlock-line` | accessible,encrypt,password,private,public,security,公开,加密,安全,密码,权限,私人,解密,解锁 | `{"icon": "lock-unlock-line"}` |
+| <img src="../../icons/System/lock-star-fill.svg" alt="lock-star-fill" width="24" height="24"> | `lock-star-fill` | bookmark,collection,encrypt,favorite,like,member,password,premium,private,rate,security,书签,会员,加密,喜欢,安全,密码,收藏,星标,特权,私人,评分,锁,高级 | `{"icon": "lock-star-fill"}` |
+| <img src="../../icons/System/lock-star-line.svg" alt="lock-star-line" width="24" height="24"> | `lock-star-line` | bookmark,collection,encrypt,favorite,like,member,password,premium,private,rate,security,书签,会员,加密,喜欢,安全,密码,收藏,星标,特权,私人,评分,锁,高级 | `{"icon": "lock-star-line"}` |
+| <img src="../../icons/System/eye-fill.svg" alt="eye-fill" width="24" height="24"> | `eye-fill` | preview,visible,watch,可见,查看,眼睛,预览 | `{"icon": "eye-fill"}` |
+| <img src="../../icons/System/eye-line.svg" alt="eye-line" width="24" height="24"> | `eye-line` | preview,visible,watch,可见,查看,眼睛,预览 | `{"icon": "eye-line"}` |
+| <img src="../../icons/System/eye-off-fill.svg" alt="eye-off-fill" width="24" height="24"> | `eye-off-fill` | hidden,hide,preview,slash,visible,watch,不可见,关闭,查看,禁止,隐藏,预览 | `{"icon": "eye-off-fill"}` |
+| <img src="../../icons/System/eye-off-line.svg" alt="eye-off-line" width="24" height="24"> | `eye-off-line` | hidden,hide,preview,slash,visible,watch,不可见,关闭,查看,禁止,隐藏,预览 | `{"icon": "eye-off-line"}` |
+| <img src="../../icons/System/eye-2-fill.svg" alt="eye-2-fill" width="24" height="24"> | `eye-2-fill` | preview,visible,watch,可见,查看,眼睛,预览 | `{"icon": "eye-2-fill"}` |
+| <img src="../../icons/System/eye-2-line.svg" alt="eye-2-line" width="24" height="24"> | `eye-2-line` | preview,visible,watch,可见,查看,眼睛,预览 | `{"icon": "eye-2-line"}` |
+| <img src="../../icons/System/eye-close-fill.svg" alt="eye-close-fill" width="24" height="24"> | `eye-close-fill` | cancel,cross,exit,hide,preview,quit,visible,watch,停止,关闭,取消,可见,查看,退出,闭眼,隐藏,预览 | `{"icon": "eye-close-fill"}` |
+| <img src="../../icons/System/eye-close-line.svg" alt="eye-close-line" width="24" height="24"> | `eye-close-line` | cancel,cross,exit,hide,preview,quit,visible,watch,停止,关闭,取消,可见,查看,退出,闭眼,隐藏,预览 | `{"icon": "eye-close-line"}` |
+| <img src="../../icons/System/search-fill.svg" alt="search-fill" width="24" height="24"> | `search-fill` | browse,discovery,explore,filter,find,lookup,magnifying glass,query,scan,zoom,发现,扫描,探索,搜索,放大镜,查找,查询,检索,浏览,筛选,缩放 | `{"icon": "search-fill"}` |
+| <img src="../../icons/System/search-line.svg" alt="search-line" width="24" height="24"> | `search-line` | browse,discovery,explore,filter,find,lookup,magnifying glass,query,scan,zoom,发现,扫描,探索,搜索,放大镜,查找,查询,检索,浏览,筛选,缩放 | `{"icon": "search-line"}` |
+| <img src="../../icons/System/search-ai-fill.svg" alt="search-ai-fill" width="24" height="24"> | `search-ai-fill` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-fill"}` |
+| <img src="../../icons/System/search-ai-line.svg" alt="search-ai-line" width="24" height="24"> | `search-ai-line` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-line"}` |
+| <img src="../../icons/System/search-ai-3-fill.svg" alt="search-ai-3-fill" width="24" height="24"> | `search-ai-3-fill` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-3-fill"}` |
+| <img src="../../icons/System/search-ai-3-line.svg" alt="search-ai-3-line" width="24" height="24"> | `search-ai-3-line` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-3-line"}` |
+| <img src="../../icons/System/search-2-fill.svg" alt="search-2-fill" width="24" height="24"> | `search-2-fill` | browse,discovery,explore,filter,find,lookup,magnifying glass,query,scan,zoom,发现,扫描,探索,搜索,放大镜,查找,查询,检索,浏览,筛选,缩放 | `{"icon": "search-2-fill"}` |
+| <img src="../../icons/System/search-2-line.svg" alt="search-2-line" width="24" height="24"> | `search-2-line` | browse,discovery,explore,filter,find,lookup,magnifying glass,query,scan,zoom,发现,扫描,探索,搜索,放大镜,查找,查询,检索,浏览,筛选,缩放 | `{"icon": "search-2-line"}` |
+| <img src="../../icons/System/search-ai-2-fill.svg" alt="search-ai-2-fill" width="24" height="24"> | `search-ai-2-fill` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-2-fill"}` |
+| <img src="../../icons/System/search-ai-2-line.svg" alt="search-ai-2-line" width="24" height="24"> | `search-ai-2-line` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-2-line"}` |
+| <img src="../../icons/System/search-ai-4-fill.svg" alt="search-ai-4-fill" width="24" height="24"> | `search-ai-4-fill` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-4-fill"}` |
+| <img src="../../icons/System/search-ai-4-line.svg" alt="search-ai-4-line" width="24" height="24"> | `search-ai-4-line` | AI 搜索,ai search,browse,discovery,find,lookup,query,smart search,zoom,发现,探索,推荐,放大镜,智能搜索,检索,浏览 | `{"icon": "search-ai-4-line"}` |
+| <img src="../../icons/System/search-eye-fill.svg" alt="search-eye-fill" width="24" height="24"> | `search-eye-fill` | browse,discovery,find,lookup,preview,query,visible,watch,zoom,发现,可见,探索,搜索,放大镜,查找,查看,检索,浏览,眼睛,预览 | `{"icon": "search-eye-fill"}` |
+| <img src="../../icons/System/search-eye-line.svg" alt="search-eye-line" width="24" height="24"> | `search-eye-line` | browse,discovery,find,lookup,preview,query,visible,watch,zoom,发现,可见,探索,搜索,放大镜,查找,查看,检索,浏览,眼睛,预览 | `{"icon": "search-eye-line"}` |
+| <img src="../../icons/System/zoom-in-fill.svg" alt="zoom-in-fill" width="24" height="24"> | `zoom-in-fill` | magnify,放大镜,缩放 | `{"icon": "zoom-in-fill"}` |
+| <img src="../../icons/System/zoom-in-line.svg" alt="zoom-in-line" width="24" height="24"> | `zoom-in-line` | magnify,放大镜,缩放 | `{"icon": "zoom-in-line"}` |
+| <img src="../../icons/System/zoom-out-fill.svg" alt="zoom-out-fill" width="24" height="24"> | `zoom-out-fill` | shrink,放大镜,缩小,缩放 | `{"icon": "zoom-out-fill"}` |
+| <img src="../../icons/System/zoom-out-line.svg" alt="zoom-out-line" width="24" height="24"> | `zoom-out-line` | shrink,放大镜,缩小,缩放 | `{"icon": "zoom-out-line"}` |
+| <img src="../../icons/System/find-replace-fill.svg" alt="find-replace-fill" width="24" height="24"> | `find-replace-fill` | 搜索,替换,查找 | `{"icon": "find-replace-fill"}` |
+| <img src="../../icons/System/find-replace-line.svg" alt="find-replace-line" width="24" height="24"> | `find-replace-line` | 搜索,替换,查找 | `{"icon": "find-replace-line"}` |
+| <img src="../../icons/System/share-fill.svg" alt="share-fill" width="24" height="24"> | `share-fill` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-fill"}` |
+| <img src="../../icons/System/share-line.svg" alt="share-line" width="24" height="24"> | `share-line` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-line"}` |
+| <img src="../../icons/System/share-2-fill.svg" alt="share-2-fill" width="24" height="24"> | `share-2-fill` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-2-fill"}` |
+| <img src="../../icons/System/share-2-line.svg" alt="share-2-line" width="24" height="24"> | `share-2-line` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-2-line"}` |
+| <img src="../../icons/System/share-box-fill.svg" alt="share-box-fill" width="24" height="24"> | `share-box-fill` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-box-fill"}` |
+| <img src="../../icons/System/share-box-line.svg" alt="share-box-line" width="24" height="24"> | `share-box-line` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-box-line"}` |
+| <img src="../../icons/System/share-circle-fill.svg" alt="share-circle-fill" width="24" height="24"> | `share-circle-fill` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-circle-fill"}` |
+| <img src="../../icons/System/share-circle-line.svg" alt="share-circle-line" width="24" height="24"> | `share-circle-line` | distribute,forward,sharing,传播,分享,转发 | `{"icon": "share-circle-line"}` |
+| <img src="../../icons/System/share-forward-fill.svg" alt="share-forward-fill" width="24" height="24"> | `share-forward-fill` | distribute,sharing,传播,分享,转发 | `{"icon": "share-forward-fill"}` |
+| <img src="../../icons/System/share-forward-line.svg" alt="share-forward-line" width="24" height="24"> | `share-forward-line` | distribute,sharing,传播,分享,转发 | `{"icon": "share-forward-line"}` |
+| <img src="../../icons/System/share-forward-2-fill.svg" alt="share-forward-2-fill" width="24" height="24"> | `share-forward-2-fill` | distribute,sharing,传播,分享,转发 | `{"icon": "share-forward-2-fill"}` |
+| <img src="../../icons/System/share-forward-2-line.svg" alt="share-forward-2-line" width="24" height="24"> | `share-forward-2-line` | distribute,sharing,传播,分享,转发 | `{"icon": "share-forward-2-line"}` |
+| <img src="../../icons/System/share-forward-box-fill.svg" alt="share-forward-box-fill" width="24" height="24"> | `share-forward-box-fill` | distribute,sharing,传播,分享,转发 | `{"icon": "share-forward-box-fill"}` |
+| <img src="../../icons/System/share-forward-box-line.svg" alt="share-forward-box-line" width="24" height="24"> | `share-forward-box-line` | distribute,sharing,传播,分享,转发 | `{"icon": "share-forward-box-line"}` |
+| <img src="../../icons/System/external-link-fill.svg" alt="external-link-fill" width="24" height="24"> | `external-link-fill` | address,hyperlink,url,地址,外链,新窗口,超链接,跳转 | `{"icon": "external-link-fill"}` |
+| <img src="../../icons/System/external-link-line.svg" alt="external-link-line" width="24" height="24"> | `external-link-line` | address,hyperlink,url,地址,外链,新窗口,超链接,跳转 | `{"icon": "external-link-line"}` |
+| <img src="../../icons/System/side-bar-fill.svg" alt="side-bar-fill" width="24" height="24"> | `side-bar-fill` | sidebar,侧边栏,工具栏 | `{"icon": "side-bar-fill"}` |
+| <img src="../../icons/System/side-bar-line.svg" alt="side-bar-line" width="24" height="24"> | `side-bar-line` | sidebar,侧边栏,工具栏 | `{"icon": "side-bar-line"}` |
+| <img src="../../icons/System/sidebar-unfold-fill.svg" alt="sidebar-unfold-fill" width="24" height="24"> | `sidebar-unfold-fill` | expand,展开侧边栏,打开侧边栏 | `{"icon": "sidebar-unfold-fill"}` |
+| <img src="../../icons/System/sidebar-unfold-line.svg" alt="sidebar-unfold-line" width="24" height="24"> | `sidebar-unfold-line` | expand,展开侧边栏,打开侧边栏 | `{"icon": "sidebar-unfold-line"}` |
+| <img src="../../icons/System/sidebar-fold-fill.svg" alt="sidebar-fold-fill" width="24" height="24"> | `sidebar-fold-fill` | collapse,关闭侧边栏,收起侧边栏 | `{"icon": "sidebar-fold-fill"}` |
+| <img src="../../icons/System/sidebar-fold-line.svg" alt="sidebar-fold-line" width="24" height="24"> | `sidebar-fold-line` | collapse,关闭侧边栏,收起侧边栏 | `{"icon": "sidebar-fold-line"}` |
+| <img src="../../icons/System/time-fill.svg" alt="time-fill" width="24" height="24"> | `time-fill` | clock,时钟,时间,钟表 | `{"icon": "time-fill"}` |
+| <img src="../../icons/System/time-line.svg" alt="time-line" width="24" height="24"> | `time-line` | clock,时钟,时间,钟表 | `{"icon": "time-line"}` |
+| <img src="../../icons/System/timer-fill.svg" alt="timer-fill" width="24" height="24"> | `timer-fill` | chronograph,stopwatch,倒计时,秒表,计时器 | `{"icon": "timer-fill"}` |
+| <img src="../../icons/System/timer-line.svg" alt="timer-line" width="24" height="24"> | `timer-line` | chronograph,stopwatch,倒计时,秒表,计时器 | `{"icon": "timer-line"}` |
+| <img src="../../icons/System/timer-2-fill.svg" alt="timer-2-fill" width="24" height="24"> | `timer-2-fill` | chronograph,stopwatch,倒计时,秒表,计时器 | `{"icon": "timer-2-fill"}` |
+| <img src="../../icons/System/timer-2-line.svg" alt="timer-2-line" width="24" height="24"> | `timer-2-line` | chronograph,stopwatch,倒计时,秒表,计时器 | `{"icon": "timer-2-line"}` |
+| <img src="../../icons/System/timer-flash-fill.svg" alt="timer-flash-fill" width="24" height="24"> | `timer-flash-fill` | chronograph,stopwatch,加速,秒表,计时器,闪电 | `{"icon": "timer-flash-fill"}` |
+| <img src="../../icons/System/timer-flash-line.svg" alt="timer-flash-line" width="24" height="24"> | `timer-flash-line` | chronograph,stopwatch,加速,秒表,计时器,闪电 | `{"icon": "timer-flash-line"}` |
+| <img src="../../icons/System/alarm-fill.svg" alt="alarm-fill" width="24" height="24"> | `alarm-fill` | alarm clock,提醒,闹钟 | `{"icon": "alarm-fill"}` |
+| <img src="../../icons/System/alarm-line.svg" alt="alarm-line" width="24" height="24"> | `alarm-line` | alarm clock,提醒,闹钟 | `{"icon": "alarm-line"}` |
+| <img src="../../icons/System/alarm-add-fill.svg" alt="alarm-add-fill" width="24" height="24"> | `alarm-add-fill` | add alarm,create,insert,plus,positive,创建,加上,增加,插入,新增提醒,添加闹钟 | `{"icon": "alarm-add-fill"}` |
+| <img src="../../icons/System/alarm-add-line.svg" alt="alarm-add-line" width="24" height="24"> | `alarm-add-line` | add alarm,create,insert,plus,positive,创建,加上,增加,插入,新增提醒,添加闹钟 | `{"icon": "alarm-add-line"}` |
+| <img src="../../icons/System/alarm-snooze-fill.svg" alt="alarm-snooze-fill" width="24" height="24"> | `alarm-snooze-fill` | 再睡一会,暂停闹钟,稍后提醒 | `{"icon": "alarm-snooze-fill"}` |
+| <img src="../../icons/System/alarm-snooze-line.svg" alt="alarm-snooze-line" width="24" height="24"> | `alarm-snooze-line` | 再睡一会,暂停闹钟,稍后提醒 | `{"icon": "alarm-snooze-line"}` |
+| <img src="../../icons/System/history-fill.svg" alt="history-fill" width="24" height="24"> | `history-fill` | recent,record,time machine,历史记录,最近,浏览记录 | `{"icon": "history-fill"}` |
+| <img src="../../icons/System/history-line.svg" alt="history-line" width="24" height="24"> | `history-line` | recent,record,time machine,历史记录,最近,浏览记录 | `{"icon": "history-line"}` |
+| <img src="../../icons/System/hourglass-2-fill.svg" alt="hourglass-2-fill" width="24" height="24"> | `hourglass-2-fill` | duration,history,recent,time,历史记录,时间,最近,沙漏,耗时 | `{"icon": "hourglass-2-fill"}` |
+| <img src="../../icons/System/hourglass-2-line.svg" alt="hourglass-2-line" width="24" height="24"> | `hourglass-2-line` | duration,history,recent,time,历史记录,时间,最近,沙漏,耗时 | `{"icon": "hourglass-2-line"}` |
+| <img src="../../icons/System/hourglass-fill.svg" alt="hourglass-fill" width="24" height="24"> | `hourglass-fill` | duration,history,recent,time,历史记录,时间,最近,沙漏,耗时 | `{"icon": "hourglass-fill"}` |
+| <img src="../../icons/System/hourglass-line.svg" alt="hourglass-line" width="24" height="24"> | `hourglass-line` | duration,history,recent,time,历史记录,时间,最近,沙漏,耗时 | `{"icon": "hourglass-line"}` |
+| <img src="../../icons/System/thumb-up-fill.svg" alt="thumb-up-fill" width="24" height="24"> | `thumb-up-fill` | good,like,upvote,喜欢,好评,赞 | `{"icon": "thumb-up-fill"}` |
+| <img src="../../icons/System/thumb-up-line.svg" alt="thumb-up-line" width="24" height="24"> | `thumb-up-line` | good,like,upvote,喜欢,好评,赞 | `{"icon": "thumb-up-line"}` |
+| <img src="../../icons/System/thumb-down-fill.svg" alt="thumb-down-fill" width="24" height="24"> | `thumb-down-fill` | bad,dislike,downvote,不喜欢,差评,踩 | `{"icon": "thumb-down-fill"}` |
+| <img src="../../icons/System/thumb-down-line.svg" alt="thumb-down-line" width="24" height="24"> | `thumb-down-line` | bad,dislike,downvote,不喜欢,差评,踩 | `{"icon": "thumb-down-line"}` |
+| <img src="../../icons/System/alarm-warning-fill.svg" alt="alarm-warning-fill" width="24" height="24"> | `alarm-warning-fill` | alert,police light,report,举报,告警,报警,警灯 | `{"icon": "alarm-warning-fill"}` |
+| <img src="../../icons/System/alarm-warning-line.svg" alt="alarm-warning-line" width="24" height="24"> | `alarm-warning-line` | alert,police light,report,举报,告警,报警,警灯 | `{"icon": "alarm-warning-line"}` |
+| <img src="../../icons/System/notification-badge-fill.svg" alt="notification-badge-fill" width="24" height="24"> | `notification-badge-fill` | alarm,alert,bell,red dot,remind,小红点,提醒,消息提示,警告,通知,铃铛 | `{"icon": "notification-badge-fill"}` |
+| <img src="../../icons/System/notification-badge-line.svg" alt="notification-badge-line" width="24" height="24"> | `notification-badge-line` | alarm,alert,bell,red dot,remind,小红点,提醒,消息提示,警告,通知,铃铛 | `{"icon": "notification-badge-line"}` |
+| <img src="../../icons/System/toggle-fill.svg" alt="toggle-fill" width="24" height="24"> | `toggle-fill` | switch,切换,开关,触发器 | `{"icon": "toggle-fill"}` |
+| <img src="../../icons/System/toggle-line.svg" alt="toggle-line" width="24" height="24"> | `toggle-line` | switch,切换,开关,触发器 | `{"icon": "toggle-line"}` |
+| <img src="../../icons/System/filter-fill.svg" alt="filter-fill" width="24" height="24"> | `filter-fill` | filtration,筛选,过滤器 | `{"icon": "filter-fill"}` |
+| <img src="../../icons/System/filter-line.svg" alt="filter-line" width="24" height="24"> | `filter-line` | filtration,筛选,过滤器 | `{"icon": "filter-line"}` |
+| <img src="../../icons/System/filter-2-fill.svg" alt="filter-2-fill" width="24" height="24"> | `filter-2-fill` | filtration,筛选,过滤器 | `{"icon": "filter-2-fill"}` |
+| <img src="../../icons/System/filter-2-line.svg" alt="filter-2-line" width="24" height="24"> | `filter-2-line` | filtration,筛选,过滤器 | `{"icon": "filter-2-line"}` |
+| <img src="../../icons/System/filter-3-fill.svg" alt="filter-3-fill" width="24" height="24"> | `filter-3-fill` | filtration,筛选,过滤器 | `{"icon": "filter-3-fill"}` |
+| <img src="../../icons/System/filter-3-line.svg" alt="filter-3-line" width="24" height="24"> | `filter-3-line` | filtration,筛选,过滤器 | `{"icon": "filter-3-line"}` |
+| <img src="../../icons/System/filter-off-fill.svg" alt="filter-off-fill" width="24" height="24"> | `filter-off-fill` | clear-filter,filtration,清除筛选,过滤 | `{"icon": "filter-off-fill"}` |
+| <img src="../../icons/System/filter-off-line.svg" alt="filter-off-line" width="24" height="24"> | `filter-off-line` | clear-filter,filtration,清除筛选,过滤 | `{"icon": "filter-off-line"}` |
+| <img src="../../icons/System/loader-fill.svg" alt="loader-fill" width="24" height="24"> | `loader-fill` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-fill"}` |
+| <img src="../../icons/System/loader-line.svg" alt="loader-line" width="24" height="24"> | `loader-line` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-line"}` |
+| <img src="../../icons/System/loader-2-fill.svg" alt="loader-2-fill" width="24" height="24"> | `loader-2-fill` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-2-fill"}` |
+| <img src="../../icons/System/loader-2-line.svg" alt="loader-2-line" width="24" height="24"> | `loader-2-line` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-2-line"}` |
+| <img src="../../icons/System/loader-3-fill.svg" alt="loader-3-fill" width="24" height="24"> | `loader-3-fill` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-3-fill"}` |
+| <img src="../../icons/System/loader-3-line.svg" alt="loader-3-line" width="24" height="24"> | `loader-3-line` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-3-line"}` |
+| <img src="../../icons/System/loader-4-fill.svg" alt="loader-4-fill" width="24" height="24"> | `loader-4-fill` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-4-fill"}` |
+| <img src="../../icons/System/loader-4-line.svg" alt="loader-4-line" width="24" height="24"> | `loader-4-line` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-4-line"}` |
+| <img src="../../icons/System/loader-5-fill.svg" alt="loader-5-fill" width="24" height="24"> | `loader-5-fill` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-5-fill"}` |
+| <img src="../../icons/System/loader-5-line.svg" alt="loader-5-line" width="24" height="24"> | `loader-5-line` | ajax,delay,loading,spinner,waiting,加载中,正在加载,等待,载入中 | `{"icon": "loader-5-line"}` |
+| <img src="../../icons/System/refresh-fill.svg" alt="refresh-fill" width="24" height="24"> | `refresh-fill` | loader,reload,repeat,replace,reset,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "refresh-fill"}` |
+| <img src="../../icons/System/refresh-line.svg" alt="refresh-line" width="24" height="24"> | `refresh-line` | loader,reload,repeat,replace,reset,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "refresh-line"}` |
+| <img src="../../icons/System/loop-left-fill.svg" alt="loop-left-fill" width="24" height="24"> | `loop-left-fill` | loader,reload,repeat,replace,reset,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "loop-left-fill"}` |
+| <img src="../../icons/System/loop-left-line.svg" alt="loop-left-line" width="24" height="24"> | `loop-left-line` | loader,reload,repeat,replace,reset,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "loop-left-line"}` |
+| <img src="../../icons/System/loop-left-ai-fill.svg" alt="loop-left-ai-fill" width="24" height="24"> | `loop-left-ai-fill` | AI 更新,ai update,smart refresh,智能刷新,自动化 | `{"icon": "loop-left-ai-fill"}` |
+| <img src="../../icons/System/loop-left-ai-line.svg" alt="loop-left-ai-line" width="24" height="24"> | `loop-left-ai-line` | AI 更新,ai update,smart refresh,智能刷新,自动化 | `{"icon": "loop-left-ai-line"}` |
+| <img src="../../icons/System/loop-right-fill.svg" alt="loop-right-fill" width="24" height="24"> | `loop-right-fill` | loader,reload,repeat,replace,reset,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "loop-right-fill"}` |
+| <img src="../../icons/System/loop-right-line.svg" alt="loop-right-line" width="24" height="24"> | `loop-right-line` | loader,reload,repeat,replace,reset,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "loop-right-line"}` |
+| <img src="../../icons/System/loop-right-ai-fill.svg" alt="loop-right-ai-fill" width="24" height="24"> | `loop-right-ai-fill` | AI 更新,ai update,smart refresh,智能刷新,自动化 | `{"icon": "loop-right-ai-fill"}` |
+| <img src="../../icons/System/loop-right-ai-line.svg" alt="loop-right-ai-line" width="24" height="24"> | `loop-right-ai-line` | AI 更新,ai update,smart refresh,智能刷新,自动化 | `{"icon": "loop-right-ai-line"}` |
+| <img src="../../icons/System/reset-left-fill.svg" alt="reset-left-fill" width="24" height="24"> | `reset-left-fill` | loader,refresh,reload,repeat,replace,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "reset-left-fill"}` |
+| <img src="../../icons/System/reset-left-line.svg" alt="reset-left-line" width="24" height="24"> | `reset-left-line` | loader,refresh,reload,repeat,replace,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "reset-left-line"}` |
+| <img src="../../icons/System/reset-right-fill.svg" alt="reset-right-fill" width="24" height="24"> | `reset-right-fill` | loader,refresh,reload,repeat,replace,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "reset-right-fill"}` |
+| <img src="../../icons/System/reset-right-line.svg" alt="reset-right-line" width="24" height="24"> | `reset-right-line` | loader,refresh,reload,repeat,replace,restart,spinner,synchronization,update,刷新,同步,更新,替换,重启,重复,重新加载,重置 | `{"icon": "reset-right-line"}` |
+| <img src="../../icons/System/progress-1-fill.svg" alt="progress-1-fill" width="24" height="24"> | `progress-1-fill` | percent,状态,百分比,进度 | `{"icon": "progress-1-fill"}` |
+| <img src="../../icons/System/progress-1-line.svg" alt="progress-1-line" width="24" height="24"> | `progress-1-line` | percent,状态,百分比,进度 | `{"icon": "progress-1-line"}` |
+| <img src="../../icons/System/progress-2-fill.svg" alt="progress-2-fill" width="24" height="24"> | `progress-2-fill` | percent,状态,百分比,进度 | `{"icon": "progress-2-fill"}` |
+| <img src="../../icons/System/progress-2-line.svg" alt="progress-2-line" width="24" height="24"> | `progress-2-line` | percent,状态,百分比,进度 | `{"icon": "progress-2-line"}` |
+| <img src="../../icons/System/progress-3-fill.svg" alt="progress-3-fill" width="24" height="24"> | `progress-3-fill` | percent,状态,百分比,进度 | `{"icon": "progress-3-fill"}` |
+| <img src="../../icons/System/progress-3-line.svg" alt="progress-3-line" width="24" height="24"> | `progress-3-line` | percent,状态,百分比,进度 | `{"icon": "progress-3-line"}` |
+| <img src="../../icons/System/progress-4-fill.svg" alt="progress-4-fill" width="24" height="24"> | `progress-4-fill` | percent,状态,百分比,进度 | `{"icon": "progress-4-fill"}` |
+| <img src="../../icons/System/progress-4-line.svg" alt="progress-4-line" width="24" height="24"> | `progress-4-line` | percent,状态,百分比,进度 | `{"icon": "progress-4-line"}` |
+| <img src="../../icons/System/progress-5-fill.svg" alt="progress-5-fill" width="24" height="24"> | `progress-5-fill` | percent,状态,百分比,进度 | `{"icon": "progress-5-fill"}` |
+| <img src="../../icons/System/progress-5-line.svg" alt="progress-5-line" width="24" height="24"> | `progress-5-line` | percent,状态,百分比,进度 | `{"icon": "progress-5-line"}` |
+| <img src="../../icons/System/progress-6-fill.svg" alt="progress-6-fill" width="24" height="24"> | `progress-6-fill` | percent,状态,百分比,进度 | `{"icon": "progress-6-fill"}` |
+| <img src="../../icons/System/progress-6-line.svg" alt="progress-6-line" width="24" height="24"> | `progress-6-line` | percent,状态,百分比,进度 | `{"icon": "progress-6-line"}` |
+| <img src="../../icons/System/progress-7-fill.svg" alt="progress-7-fill" width="24" height="24"> | `progress-7-fill` | percent,状态,百分比,进度 | `{"icon": "progress-7-fill"}` |
+| <img src="../../icons/System/progress-7-line.svg" alt="progress-7-line" width="24" height="24"> | `progress-7-line` | percent,状态,百分比,进度 | `{"icon": "progress-7-line"}` |
+| <img src="../../icons/System/progress-8-fill.svg" alt="progress-8-fill" width="24" height="24"> | `progress-8-fill` | percent,状态,百分比,进度 | `{"icon": "progress-8-fill"}` |
+| <img src="../../icons/System/progress-8-line.svg" alt="progress-8-line" width="24" height="24"> | `progress-8-line` | percent,状态,百分比,进度 | `{"icon": "progress-8-line"}` |

@@ -4,99 +4,195 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `tv` | 4k,antenna,broadcast,dolby vision,hdr10,iptv,ott,rabbit ears,smart tv,television,tv set,uhd,天线,广播,机顶盒,液晶电视,电视机,网络电视,超清,高清 | `{"icon": "tv"}` |
-| - | `tv-2` | 4k,OLED,display,dolby vision,hdr10,monitor,screen,smart tv,television,uhd,屏幕,显示器,智能电视,液晶,超清,高清 | `{"icon": "tv-2"}` |
-| - | `computer` | desktop,display,mini pc,monitor,personal computer,screen,tower,workstation,个人电脑,台式机,台式电脑,工作站,显示器,迷你主机 | `{"icon": "computer"}` |
-| - | `mac` | all-in-one,apple,computer,desktop,display,imac,monitor,retina,screen,一体机,台式机,显示器,苹果电脑,视网膜屏 | `{"icon": "mac"}` |
-| - | `macbook` | computer,laptop,macbook air,macbook pro,notebook,portable,retina,ultrabook,便携式电脑,苹果笔记本,超极本 | `{"icon": "macbook"}` |
-| - | `cellphone` | call,cell,communication,feature phone,handset,mobile phone,功能机,手机,按键机,电话,通讯 | `{"icon": "cellphone"}` |
-| - | `smartphone` | 4g,5g,android,handheld,handset,ios,iphone,lte,mobile device,smart phone,安卓,智能手机,智能机,移动设备,苹果 | `{"icon": "smartphone"}` |
-| - | `mobile-download` | apk,install app,ipa,phone,update,下载安装,安装包,安装应用,应用下载,应用安装,手机,更新 | `{"icon": "mobile-download"}` |
-| - | `tablet` | android tablet,ipad,slate,stylus,tablet pc,touchscreen,便携设备,平板电脑,手写笔,触屏,触控屏,触控板 | `{"icon": "tablet"}` |
-| - | `device` | endpoint,equipment,gadget,hardware,peripheral,外设,硬件,终端设备,装置 | `{"icon": "device"}` |
-| - | `phone` | call,contact,handset,landline,mobile,telephone,voip,听筒,固话,座机,手机,有线电话,移动电话,网络电话,联系 | `{"icon": "phone"}` |
-| - | `instance` | box,cloud,cvm,nft,virtual machine,云服务器,云端,实例,容器,盒子,虚拟机,虚机 | `{"icon": "instance"}` |
-| - | `database` | bars,datastore,mongodb,mysql,nosql,postgresql,progress,rdbms,resource,storage,数据仓库,数据存储,数据库 | `{"icon": "database"}` |
-| - | `database-2` | data center,data lake,datastore,db,discs,nosql,platter,silo,storage,数据中心,数据存储,数据库,磁盘阵列 | `{"icon": "database-2"}` |
-| - | `server` | backend,bare metal,cloud,hosting,network,node,rackmount,云服务,后端,服务器,机架式,物理机,网络,虚拟主机 | `{"icon": "server"}` |
-| - | `hard-drive` | backup,disc,disk drive,external drive,hdd,ssd,storage,固态硬盘,备份盘,外接硬盘,存储,机械硬盘,磁盘 | `{"icon": "hard-drive"}` |
-| - | `hard-drive-2` | data center,disc,hdd,rack,raid,server,storage,存储,数据中心,服务器,机架,硬盘,磁盘阵列 | `{"icon": "hard-drive-2"}` |
-| - | `hard-drive-3` | array,backup,disc,hot spare,mirror,raid,server,storage,备份,存储,服务器,热备盘,硬盘,镜像,阵列 | `{"icon": "hard-drive-3"}` |
-| - | `install` | configure,deployment,provision,setup wizard,software,初始化,安装向导,软件,部署,配置向导 | `{"icon": "install"}` |
-| - | `uninstall` | cleanup,delete,remove,software,删除,卸载,反安装,清理,移除 | `{"icon": "uninstall"}` |
-| - | `save` | backup,floppy disk,persist,save icon,store,保存,备份,存储,持久化,软盘 | `{"icon": "save"}` |
-| - | `save-2` | backup,floppy disk,persist,save icon,store,保存,备份,存储,持久化,软盘 | `{"icon": "save-2"}` |
-| - | `save-3` | backup,floppy disk,persist,save icon,store,保存,备份,存储,持久化,软盘 | `{"icon": "save-3"}` |
-| - | `sd-card` | SD卡,TF卡,flash,memory card,sd card,sdhc,sdxc,storage,tf card,内存卡,存储卡,闪存 | `{"icon": "sd-card"}` |
-| - | `sd-card-mini` | TF卡,memory card,micro sd,microsd,storage,tf card,内存卡,存储卡,微型SD卡,微型卡 | `{"icon": "sd-card-mini"}` |
-| - | `sim-card` | carrier,cellular,micro-sim,mobile card,nano-sim,network,subscriber identity module,手机卡,用户识别卡,电话卡,网络卡,运营商 | `{"icon": "sim-card"}` |
-| - | `sim-card-2` | carrier,cellular,embedded sim,esim,mobile card,network,subscriber identity module,嵌入式SIM,手机卡,电话卡,网络卡,运营商 | `{"icon": "sim-card-2"}` |
-| - | `dual-sim-1` | dual sim,dual standby,dual-sim,mobile,sim card,卡槽,双SIM,双卡双待,电话卡 | `{"icon": "dual-sim-1"}` |
-| - | `dual-sim-2` | dual sim,dual standby,dual-sim,mobile,sim card,卡槽,双SIM,双卡双待,电话卡 | `{"icon": "dual-sim-2"}` |
-| - | `sim-card-warning` | carrier,cellular,micro-sim,mobile card,nano-sim,network,subscriber identity module,手机卡,用户识别卡,电话卡,网络卡,运营商 | `{"icon": "sim-card-warning"}` |
-| - | `u-disk` | USB闪存盘,U盘驱动器,flash drive,pen drive,portable storage,thumb drive,usb drive,usb stick,优盘,随身碟 | `{"icon": "u-disk"}` |
-| - | `battery` | charge,energy,level,li-ion,percentage,power,电池,电源,电量百分比,能量,锂电 | `{"icon": "battery"}` |
-| - | `battery-charge` | charging,fast charge,plug,power,充电,快充,插头,电池,电源 | `{"icon": "battery-charge"}` |
-| - | `battery-low` | empty,low battery,low power,warning,低功耗,低电量,电池,电量不足,电量过低 | `{"icon": "battery-low"}` |
-| - | `battery-2` | charge,energy,level,li-ion,percentage,power,电池,电源,电量百分比,能量,锂电 | `{"icon": "battery-2"}` |
-| - | `battery-2-charge` | charging,fast charge,plug,power,充电,快充,插头,电池,电源 | `{"icon": "battery-2-charge"}` |
-| - | `battery-saver` | battery saver,eco mode,low power mode,power saving,低电量模式,电池,省电模式,节能模式 | `{"icon": "battery-saver"}` |
-| - | `battery-share` | distribute,forward,power sharing,reverse charge,share power,wireless charging,共享电量,分享,反向充电,无线充电,电池共享,转发 | `{"icon": "battery-share"}` |
-| - | `cast` | chromecast,miracast,mirroring,screen mirror,screen sharing,wireless display,屏幕共享,屏幕镜像,广播,无线,谷歌投屏 | `{"icon": "cast"}` |
-| - | `airplay` | airplay 2,apple,mirroring,screen mirror,screen sharing,wireless,屏幕镜像,无线,苹果投屏 | `{"icon": "airplay"}` |
-| - | `cpu` | arm,chipset,computing,core,processor,x86,中央处理器,架构,核心,芯片组 | `{"icon": "cpu"}` |
-| - | `gradienter` | balance,bubble level,measurement,spirit level,平衡,气泡水平仪,测量,角度仪 | `{"icon": "gradienter"}` |
-| - | `keyboard` | input device,mechanical,text entry,typing,wireless,打字,无线键盘,机械键盘,输入设备 | `{"icon": "keyboard"}` |
-| - | `keyboard-box` | input device,text entry,typing,打字,输入设备,键盘盒,键盘面板 | `{"icon": "keyboard-box"}` |
-| - | `mouse` | bluetooth,click,cursor,input device,pointer,wireless,指针,无线鼠标,点击,蓝牙鼠标,输入设备 | `{"icon": "mouse"}` |
-| - | `sensor` | accelerometer,capacitor,detector,gyroscope,monitoring,proximity,sensor device,加速度计,探测器,检测器,电容器,监测,距离传感器,陀螺仪 | `{"icon": "sensor"}` |
-| - | `router` | Mesh路由,Wi-Fi 6,access point,ax,mesh,modem,network,radio,signal tower,station,wifi router,wifi6,wlan,信号塔,光猫,基站,广播,接入点,无线路由,流量,网络,路由器 | `{"icon": "router"}` |
-| - | `radar` | detection,satellite receiver,scanner,scanning,sonar,卫星接收器,声呐,扫描仪,探测,锅,雷达 | `{"icon": "radar"}` |
-| - | `gamepad` | Switch,consoles,game controller,gaming,joystick,playstation,xbox,任天堂,控制器,摇杆,游戏手柄,游戏机 | `{"icon": "gamepad"}` |
-| - | `remote-control` | controller,infrared,ir remote,tv remote,电视遥控,红外遥控,遥控器 | `{"icon": "remote-control"}` |
-| - | `remote-control-2` | controller,infrared,ir remote,tv remote,电视遥控,红外遥控,遥控器 | `{"icon": "remote-control-2"}` |
-| - | `device-recover` | factory reset,recovery,reset device,restore,wipe,恢复出厂设置,清除数据,设备重置 | `{"icon": "device-recover"}` |
-| - | `hotspot` | mobile hotspot,personal hotspot,tethering,wifi sharing,个人热点,手机热点,热点分享,网络共享,网络热点 | `{"icon": "hotspot"}` |
-| - | `phone-find` | find my phone,locate device,track,定位设备,找回手机,查找手机,设备追踪 | `{"icon": "phone-find"}` |
-| - | `phone-lock` | device security,encrypt,lock screen,passcode,password,private,screen lock,加密,密码锁,屏幕锁,私人,设备安全,锁定手机,锁屏 | `{"icon": "phone-lock"}` |
-| - | `rotate-lock` | encrypt,landscape,lock rotation,orientation lock,password,portrait,private,screen rotation,security,加密,安全,密码,屏幕旋转,方向锁定,旋转锁,横屏,私人,竖屏,锁定旋转屏幕 | `{"icon": "rotate-lock"}` |
-| - | `restart` | reboot,refresh,reload,restart device,system restart,系统重启,设备重启,重新启动 | `{"icon": "restart"}` |
-| - | `shut-down` | power button,power off,shutdown,turn off,停机,关机,关闭电源,电源键 | `{"icon": "shut-down"}` |
-| - | `fingerprint` | authentication,biometric,fingerprint sensor,security,touch id,安全认证,指纹传感器,指纹识别,生物识别 | `{"icon": "fingerprint"}` |
-| - | `fingerprint-2` | authentication,biometric,fingerprint sensor,security,touch id,安全认证,指纹传感器,指纹识别,生物识别 | `{"icon": "fingerprint-2"}` |
-| - | `barcode` | code128,ean,product code,scan,upc,产品码,扫码,条形码,条码 | `{"icon": "barcode"}` |
-| - | `barcode-box` | code128,ean,product code,scan,upc,产品码,扫码,条形码,条码 | `{"icon": "barcode-box"}` |
-| - | `qr-code` | QR码,matrix code,qr code,quick response,二维码,快速响应码 | `{"icon": "qr-code"}` |
-| - | `qr-scan` | code reader,qr reader,scan qr,scanner,二维码阅读器,扫描,扫码器 | `{"icon": "qr-scan"}` |
-| - | `qr-scan-2` | code reader,qr reader,scan qr,scanner,二维码阅读器,扫描,扫码器 | `{"icon": "qr-scan-2"}` |
-| - | `qr-scan-ai` | qr code,qr scan,二维码,二维码扫描 | `{"icon": "qr-scan-ai"}` |
-| - | `scan` | barcode reader,detection,document scanner,扫描仪,文档扫描,条码阅读器,读取器 | `{"icon": "scan"}` |
-| - | `scan-2` | barcode reader,detection,document scanner,扫描仪,文档扫描,条码阅读器,读取器 | `{"icon": "scan-2"}` |
-| - | `rss` | atom,news,rss feed,subscribe,syndication,信息流,新闻,源,聚合,订阅 | `{"icon": "rss"}` |
-| - | `gps` | beidou,galileo,glonass,gnss,location,navigation,satellite,signal,伽利略,信号,全球导航,北斗,卫星,定位,格洛纳斯 | `{"icon": "gps"}` |
-| - | `base-station` | bts,cast,cell site,cellular tower,router,signal tower,wifi,信号塔,广播,流量,蜂窝基站,蜂窝塔,路由器 | `{"icon": "base-station"}` |
-| - | `bluetooth` | ble,bluetooth le,bt,connection,pairing,wireless,低功耗蓝牙,无线,连接,配对 | `{"icon": "bluetooth"}` |
-| - | `bluetooth-connect` | ble,bt,connected,paired,pairing,wireless,低功耗蓝牙,已连接,已配对,无线 | `{"icon": "bluetooth-connect"}` |
-| - | `wifi` | connection,internet,wi-fi,wireless network,wlan,互联网,无线局域网,无线网,网络连接 | `{"icon": "wifi"}` |
-| - | `wifi-off` | connection-fail,disabled,network off,no internet,offline,slash,断网,无线网,无网络,禁用,网络关闭,链接失败 | `{"icon": "wifi-off"}` |
-| - | `signal-wifi` | bars,cellular,network quality,strength,wireless,信号格,无线网,网络质量 | `{"icon": "signal-wifi"}` |
-| - | `signal-wifi-1` | cellular,one bar,strength,weak signal,wireless,一格,弱信号,无线网 | `{"icon": "signal-wifi-1"}` |
-| - | `signal-wifi-2` | cellular,medium signal,strength,two bars,wireless,两格,中等信号,无线网 | `{"icon": "signal-wifi-2"}` |
-| - | `signal-wifi-3` | cellular,strength,strong signal,three bars,wireless,三格,强信号,无线网 | `{"icon": "signal-wifi-3"}` |
-| - | `signal-wifi-error` | alert,cellular,connection-fail,danger,network error,no signal,offline,warning,危险,断网,无信号,无线网,网络错误,警告,链接失败 | `{"icon": "signal-wifi-error"}` |
-| - | `signal-wifi-off` | cellular,connection-fail,disabled,network off,offline,slash,断网,无线网,禁用,网络关闭,链接失败 | `{"icon": "signal-wifi-off"}` |
-| - | `signal-cellular-1` | cellular,one bar,strength,weak signal,wireless,一格,弱信号,无线网 | `{"icon": "signal-cellular-1"}` |
-| - | `signal-cellular-2` | cellular,medium signal,strength,two bars,wireless,两格,中等信号,无线网 | `{"icon": "signal-cellular-2"}` |
-| - | `signal-cellular-3` | cellular,strength,strong signal,three bars,wireless,三格,强信号,无线网 | `{"icon": "signal-cellular-3"}` |
-| - | `signal-cellular-off` | cellular,connection-fail,disabled,network off,offline,slash,断网,无线网,禁用,网络关闭,链接失败 | `{"icon": "signal-cellular-off"}` |
-| - | `network` | 网络 | `{"icon": "network"}` |
-| - | `network-off` | 网络关闭 | `{"icon": "network-off"}` |
-| - | `network-error` | alert,danger,fail,warning,危险,失败,警告,错误 | `{"icon": "network-error"}` |
-| - | `wireless-charging` | fast wireless charging,flash,inductive charging,power,qi charging,快速无线充电,感应充电,闪充 | `{"icon": "wireless-charging"}` |
-| - | `dashboard-2` | gauge,metrics,performance,speedometer,仪表盘,性能,指标,速度表 | `{"icon": "dashboard-2"}` |
-| - | `dashboard-3` | gauge,metrics,performance,speedometer,仪表盘,性能,指标,速度表 | `{"icon": "dashboard-3"}` |
-| - | `usb` | A口,C口,USB接口,connector,flash drive,port,type-a,type-c,usb 2.0,usb 3.0,usb 3.1,usb-c,优盘,连接器,接口 | `{"icon": "usb"}` |
-| - | `rfid` | devices,frequency,identification,nfc,radio,reader,tag,射频识别,无线,标签,读卡器,近场通信 | `{"icon": "rfid"}` |
-| - | `ram` | ddr4,ddr5,dram,electronics,memory,storage,内存条,内存模块,存储器,记忆卡 | `{"icon": "ram"}` |
-| - | `ram-2` | ddr4,ddr5,dram,electronics,memory,storage,内存条,内存模块,存储器,记忆卡 | `{"icon": "ram-2"}` |
-| - | `connector` | port,连接器,接口 | `{"icon": "connector"}` |
+| <img src="../../icons/Device/tv-fill.svg" alt="tv-fill" width="24" height="24"> | `tv-fill` | 4k,antenna,broadcast,dolby vision,hdr10,iptv,ott,rabbit ears,smart tv,television,tv set,uhd,天线,广播,机顶盒,液晶电视,电视机,网络电视,超清,高清 | `{"icon": "tv-fill"}` |
+| <img src="../../icons/Device/tv-line.svg" alt="tv-line" width="24" height="24"> | `tv-line` | 4k,antenna,broadcast,dolby vision,hdr10,iptv,ott,rabbit ears,smart tv,television,tv set,uhd,天线,广播,机顶盒,液晶电视,电视机,网络电视,超清,高清 | `{"icon": "tv-line"}` |
+| <img src="../../icons/Device/tv-2-fill.svg" alt="tv-2-fill" width="24" height="24"> | `tv-2-fill` | 4k,OLED,display,dolby vision,hdr10,monitor,screen,smart tv,television,uhd,屏幕,显示器,智能电视,液晶,超清,高清 | `{"icon": "tv-2-fill"}` |
+| <img src="../../icons/Device/tv-2-line.svg" alt="tv-2-line" width="24" height="24"> | `tv-2-line` | 4k,OLED,display,dolby vision,hdr10,monitor,screen,smart tv,television,uhd,屏幕,显示器,智能电视,液晶,超清,高清 | `{"icon": "tv-2-line"}` |
+| <img src="../../icons/Device/computer-fill.svg" alt="computer-fill" width="24" height="24"> | `computer-fill` | desktop,display,mini pc,monitor,personal computer,screen,tower,workstation,个人电脑,台式机,台式电脑,工作站,显示器,迷你主机 | `{"icon": "computer-fill"}` |
+| <img src="../../icons/Device/computer-line.svg" alt="computer-line" width="24" height="24"> | `computer-line` | desktop,display,mini pc,monitor,personal computer,screen,tower,workstation,个人电脑,台式机,台式电脑,工作站,显示器,迷你主机 | `{"icon": "computer-line"}` |
+| <img src="../../icons/Device/mac-fill.svg" alt="mac-fill" width="24" height="24"> | `mac-fill` | all-in-one,apple,computer,desktop,display,imac,monitor,retina,screen,一体机,台式机,显示器,苹果电脑,视网膜屏 | `{"icon": "mac-fill"}` |
+| <img src="../../icons/Device/mac-line.svg" alt="mac-line" width="24" height="24"> | `mac-line` | all-in-one,apple,computer,desktop,display,imac,monitor,retina,screen,一体机,台式机,显示器,苹果电脑,视网膜屏 | `{"icon": "mac-line"}` |
+| <img src="../../icons/Device/macbook-fill.svg" alt="macbook-fill" width="24" height="24"> | `macbook-fill` | computer,laptop,macbook air,macbook pro,notebook,portable,retina,ultrabook,便携式电脑,苹果笔记本,超极本 | `{"icon": "macbook-fill"}` |
+| <img src="../../icons/Device/macbook-line.svg" alt="macbook-line" width="24" height="24"> | `macbook-line` | computer,laptop,macbook air,macbook pro,notebook,portable,retina,ultrabook,便携式电脑,苹果笔记本,超极本 | `{"icon": "macbook-line"}` |
+| <img src="../../icons/Device/cellphone-fill.svg" alt="cellphone-fill" width="24" height="24"> | `cellphone-fill` | call,cell,communication,feature phone,handset,mobile phone,功能机,手机,按键机,电话,通讯 | `{"icon": "cellphone-fill"}` |
+| <img src="../../icons/Device/cellphone-line.svg" alt="cellphone-line" width="24" height="24"> | `cellphone-line` | call,cell,communication,feature phone,handset,mobile phone,功能机,手机,按键机,电话,通讯 | `{"icon": "cellphone-line"}` |
+| <img src="../../icons/Device/smartphone-fill.svg" alt="smartphone-fill" width="24" height="24"> | `smartphone-fill` | 4g,5g,android,handheld,handset,ios,iphone,lte,mobile device,smart phone,安卓,智能手机,智能机,移动设备,苹果 | `{"icon": "smartphone-fill"}` |
+| <img src="../../icons/Device/smartphone-line.svg" alt="smartphone-line" width="24" height="24"> | `smartphone-line` | 4g,5g,android,handheld,handset,ios,iphone,lte,mobile device,smart phone,安卓,智能手机,智能机,移动设备,苹果 | `{"icon": "smartphone-line"}` |
+| <img src="../../icons/Device/mobile-download-fill.svg" alt="mobile-download-fill" width="24" height="24"> | `mobile-download-fill` | apk,install app,ipa,phone,update,下载安装,安装包,安装应用,应用下载,应用安装,手机,更新 | `{"icon": "mobile-download-fill"}` |
+| <img src="../../icons/Device/mobile-download-line.svg" alt="mobile-download-line" width="24" height="24"> | `mobile-download-line` | apk,install app,ipa,phone,update,下载安装,安装包,安装应用,应用下载,应用安装,手机,更新 | `{"icon": "mobile-download-line"}` |
+| <img src="../../icons/Device/tablet-fill.svg" alt="tablet-fill" width="24" height="24"> | `tablet-fill` | android tablet,ipad,slate,stylus,tablet pc,touchscreen,便携设备,平板电脑,手写笔,触屏,触控屏,触控板 | `{"icon": "tablet-fill"}` |
+| <img src="../../icons/Device/tablet-line.svg" alt="tablet-line" width="24" height="24"> | `tablet-line` | android tablet,ipad,slate,stylus,tablet pc,touchscreen,便携设备,平板电脑,手写笔,触屏,触控屏,触控板 | `{"icon": "tablet-line"}` |
+| <img src="../../icons/Device/device-fill.svg" alt="device-fill" width="24" height="24"> | `device-fill` | endpoint,equipment,gadget,hardware,peripheral,外设,硬件,终端设备,装置 | `{"icon": "device-fill"}` |
+| <img src="../../icons/Device/device-line.svg" alt="device-line" width="24" height="24"> | `device-line` | endpoint,equipment,gadget,hardware,peripheral,外设,硬件,终端设备,装置 | `{"icon": "device-line"}` |
+| <img src="../../icons/Device/phone-fill.svg" alt="phone-fill" width="24" height="24"> | `phone-fill` | call,contact,handset,landline,mobile,telephone,voip,听筒,固话,座机,手机,有线电话,移动电话,网络电话,联系 | `{"icon": "phone-fill"}` |
+| <img src="../../icons/Device/phone-line.svg" alt="phone-line" width="24" height="24"> | `phone-line` | call,contact,handset,landline,mobile,telephone,voip,听筒,固话,座机,手机,有线电话,移动电话,网络电话,联系 | `{"icon": "phone-line"}` |
+| <img src="../../icons/Device/instance-fill.svg" alt="instance-fill" width="24" height="24"> | `instance-fill` | box,cloud,cvm,nft,virtual machine,云服务器,云端,实例,容器,盒子,虚拟机,虚机 | `{"icon": "instance-fill"}` |
+| <img src="../../icons/Device/instance-line.svg" alt="instance-line" width="24" height="24"> | `instance-line` | box,cloud,cvm,nft,virtual machine,云服务器,云端,实例,容器,盒子,虚拟机,虚机 | `{"icon": "instance-line"}` |
+| <img src="../../icons/Device/database-fill.svg" alt="database-fill" width="24" height="24"> | `database-fill` | bars,datastore,mongodb,mysql,nosql,postgresql,progress,rdbms,resource,storage,数据仓库,数据存储,数据库 | `{"icon": "database-fill"}` |
+| <img src="../../icons/Device/database-line.svg" alt="database-line" width="24" height="24"> | `database-line` | bars,datastore,mongodb,mysql,nosql,postgresql,progress,rdbms,resource,storage,数据仓库,数据存储,数据库 | `{"icon": "database-line"}` |
+| <img src="../../icons/Device/database-2-fill.svg" alt="database-2-fill" width="24" height="24"> | `database-2-fill` | data center,data lake,datastore,db,discs,nosql,platter,silo,storage,数据中心,数据存储,数据库,磁盘阵列 | `{"icon": "database-2-fill"}` |
+| <img src="../../icons/Device/database-2-line.svg" alt="database-2-line" width="24" height="24"> | `database-2-line` | data center,data lake,datastore,db,discs,nosql,platter,silo,storage,数据中心,数据存储,数据库,磁盘阵列 | `{"icon": "database-2-line"}` |
+| <img src="../../icons/Device/server-fill.svg" alt="server-fill" width="24" height="24"> | `server-fill` | backend,bare metal,cloud,hosting,network,node,rackmount,云服务,后端,服务器,机架式,物理机,网络,虚拟主机 | `{"icon": "server-fill"}` |
+| <img src="../../icons/Device/server-line.svg" alt="server-line" width="24" height="24"> | `server-line` | backend,bare metal,cloud,hosting,network,node,rackmount,云服务,后端,服务器,机架式,物理机,网络,虚拟主机 | `{"icon": "server-line"}` |
+| <img src="../../icons/Device/hard-drive-fill.svg" alt="hard-drive-fill" width="24" height="24"> | `hard-drive-fill` | backup,disc,disk drive,external drive,hdd,ssd,storage,固态硬盘,备份盘,外接硬盘,存储,机械硬盘,磁盘 | `{"icon": "hard-drive-fill"}` |
+| <img src="../../icons/Device/hard-drive-line.svg" alt="hard-drive-line" width="24" height="24"> | `hard-drive-line` | backup,disc,disk drive,external drive,hdd,ssd,storage,固态硬盘,备份盘,外接硬盘,存储,机械硬盘,磁盘 | `{"icon": "hard-drive-line"}` |
+| <img src="../../icons/Device/hard-drive-2-fill.svg" alt="hard-drive-2-fill" width="24" height="24"> | `hard-drive-2-fill` | data center,disc,hdd,rack,raid,server,storage,存储,数据中心,服务器,机架,硬盘,磁盘阵列 | `{"icon": "hard-drive-2-fill"}` |
+| <img src="../../icons/Device/hard-drive-2-line.svg" alt="hard-drive-2-line" width="24" height="24"> | `hard-drive-2-line` | data center,disc,hdd,rack,raid,server,storage,存储,数据中心,服务器,机架,硬盘,磁盘阵列 | `{"icon": "hard-drive-2-line"}` |
+| <img src="../../icons/Device/hard-drive-3-fill.svg" alt="hard-drive-3-fill" width="24" height="24"> | `hard-drive-3-fill` | array,backup,disc,hot spare,mirror,raid,server,storage,备份,存储,服务器,热备盘,硬盘,镜像,阵列 | `{"icon": "hard-drive-3-fill"}` |
+| <img src="../../icons/Device/hard-drive-3-line.svg" alt="hard-drive-3-line" width="24" height="24"> | `hard-drive-3-line` | array,backup,disc,hot spare,mirror,raid,server,storage,备份,存储,服务器,热备盘,硬盘,镜像,阵列 | `{"icon": "hard-drive-3-line"}` |
+| <img src="../../icons/Device/install-fill.svg" alt="install-fill" width="24" height="24"> | `install-fill` | configure,deployment,provision,setup wizard,software,初始化,安装向导,软件,部署,配置向导 | `{"icon": "install-fill"}` |
+| <img src="../../icons/Device/install-line.svg" alt="install-line" width="24" height="24"> | `install-line` | configure,deployment,provision,setup wizard,software,初始化,安装向导,软件,部署,配置向导 | `{"icon": "install-line"}` |
+| <img src="../../icons/Device/uninstall-fill.svg" alt="uninstall-fill" width="24" height="24"> | `uninstall-fill` | cleanup,delete,remove,software,删除,卸载,反安装,清理,移除 | `{"icon": "uninstall-fill"}` |
+| <img src="../../icons/Device/uninstall-line.svg" alt="uninstall-line" width="24" height="24"> | `uninstall-line` | cleanup,delete,remove,software,删除,卸载,反安装,清理,移除 | `{"icon": "uninstall-line"}` |
+| <img src="../../icons/Device/save-fill.svg" alt="save-fill" width="24" height="24"> | `save-fill` | backup,floppy disk,persist,save icon,store,保存,备份,存储,持久化,软盘 | `{"icon": "save-fill"}` |
+| <img src="../../icons/Device/save-line.svg" alt="save-line" width="24" height="24"> | `save-line` | backup,floppy disk,persist,save icon,store,保存,备份,存储,持久化,软盘 | `{"icon": "save-line"}` |
+| <img src="../../icons/Device/save-2-fill.svg" alt="save-2-fill" width="24" height="24"> | `save-2-fill` | backup,floppy disk,persist,save icon,store,保存,备份,存储,持久化,软盘 | `{"icon": "save-2-fill"}` |
+| <img src="../../icons/Device/save-2-line.svg" alt="save-2-line" width="24" height="24"> | `save-2-line` | backup,floppy disk,persist,save icon,store,保存,备份,存储,持久化,软盘 | `{"icon": "save-2-line"}` |
+| <img src="../../icons/Device/save-3-fill.svg" alt="save-3-fill" width="24" height="24"> | `save-3-fill` | backup,floppy disk,persist,save icon,store,保存,备份,存储,持久化,软盘 | `{"icon": "save-3-fill"}` |
+| <img src="../../icons/Device/save-3-line.svg" alt="save-3-line" width="24" height="24"> | `save-3-line` | backup,floppy disk,persist,save icon,store,保存,备份,存储,持久化,软盘 | `{"icon": "save-3-line"}` |
+| <img src="../../icons/Device/sd-card-fill.svg" alt="sd-card-fill" width="24" height="24"> | `sd-card-fill` | SD卡,TF卡,flash,memory card,sd card,sdhc,sdxc,storage,tf card,内存卡,存储卡,闪存 | `{"icon": "sd-card-fill"}` |
+| <img src="../../icons/Device/sd-card-line.svg" alt="sd-card-line" width="24" height="24"> | `sd-card-line` | SD卡,TF卡,flash,memory card,sd card,sdhc,sdxc,storage,tf card,内存卡,存储卡,闪存 | `{"icon": "sd-card-line"}` |
+| <img src="../../icons/Device/sd-card-mini-fill.svg" alt="sd-card-mini-fill" width="24" height="24"> | `sd-card-mini-fill` | TF卡,memory card,micro sd,microsd,storage,tf card,内存卡,存储卡,微型SD卡,微型卡 | `{"icon": "sd-card-mini-fill"}` |
+| <img src="../../icons/Device/sd-card-mini-line.svg" alt="sd-card-mini-line" width="24" height="24"> | `sd-card-mini-line` | TF卡,memory card,micro sd,microsd,storage,tf card,内存卡,存储卡,微型SD卡,微型卡 | `{"icon": "sd-card-mini-line"}` |
+| <img src="../../icons/Device/sim-card-fill.svg" alt="sim-card-fill" width="24" height="24"> | `sim-card-fill` | carrier,cellular,micro-sim,mobile card,nano-sim,network,subscriber identity module,手机卡,用户识别卡,电话卡,网络卡,运营商 | `{"icon": "sim-card-fill"}` |
+| <img src="../../icons/Device/sim-card-line.svg" alt="sim-card-line" width="24" height="24"> | `sim-card-line` | carrier,cellular,micro-sim,mobile card,nano-sim,network,subscriber identity module,手机卡,用户识别卡,电话卡,网络卡,运营商 | `{"icon": "sim-card-line"}` |
+| <img src="../../icons/Device/sim-card-2-fill.svg" alt="sim-card-2-fill" width="24" height="24"> | `sim-card-2-fill` | carrier,cellular,embedded sim,esim,mobile card,network,subscriber identity module,嵌入式SIM,手机卡,电话卡,网络卡,运营商 | `{"icon": "sim-card-2-fill"}` |
+| <img src="../../icons/Device/sim-card-2-line.svg" alt="sim-card-2-line" width="24" height="24"> | `sim-card-2-line` | carrier,cellular,embedded sim,esim,mobile card,network,subscriber identity module,嵌入式SIM,手机卡,电话卡,网络卡,运营商 | `{"icon": "sim-card-2-line"}` |
+| <img src="../../icons/Device/dual-sim-1-fill.svg" alt="dual-sim-1-fill" width="24" height="24"> | `dual-sim-1-fill` | dual sim,dual standby,dual-sim,mobile,sim card,卡槽,双SIM,双卡双待,电话卡 | `{"icon": "dual-sim-1-fill"}` |
+| <img src="../../icons/Device/dual-sim-1-line.svg" alt="dual-sim-1-line" width="24" height="24"> | `dual-sim-1-line` | dual sim,dual standby,dual-sim,mobile,sim card,卡槽,双SIM,双卡双待,电话卡 | `{"icon": "dual-sim-1-line"}` |
+| <img src="../../icons/Device/dual-sim-2-fill.svg" alt="dual-sim-2-fill" width="24" height="24"> | `dual-sim-2-fill` | dual sim,dual standby,dual-sim,mobile,sim card,卡槽,双SIM,双卡双待,电话卡 | `{"icon": "dual-sim-2-fill"}` |
+| <img src="../../icons/Device/dual-sim-2-line.svg" alt="dual-sim-2-line" width="24" height="24"> | `dual-sim-2-line` | dual sim,dual standby,dual-sim,mobile,sim card,卡槽,双SIM,双卡双待,电话卡 | `{"icon": "dual-sim-2-line"}` |
+| <img src="../../icons/Device/sim-card-warning-fill.svg" alt="sim-card-warning-fill" width="24" height="24"> | `sim-card-warning-fill` | carrier,cellular,micro-sim,mobile card,nano-sim,network,subscriber identity module,手机卡,用户识别卡,电话卡,网络卡,运营商 | `{"icon": "sim-card-warning-fill"}` |
+| <img src="../../icons/Device/sim-card-warning-line.svg" alt="sim-card-warning-line" width="24" height="24"> | `sim-card-warning-line` | carrier,cellular,micro-sim,mobile card,nano-sim,network,subscriber identity module,手机卡,用户识别卡,电话卡,网络卡,运营商 | `{"icon": "sim-card-warning-line"}` |
+| <img src="../../icons/Device/u-disk-fill.svg" alt="u-disk-fill" width="24" height="24"> | `u-disk-fill` | USB闪存盘,U盘驱动器,flash drive,pen drive,portable storage,thumb drive,usb drive,usb stick,优盘,随身碟 | `{"icon": "u-disk-fill"}` |
+| <img src="../../icons/Device/u-disk-line.svg" alt="u-disk-line" width="24" height="24"> | `u-disk-line` | USB闪存盘,U盘驱动器,flash drive,pen drive,portable storage,thumb drive,usb drive,usb stick,优盘,随身碟 | `{"icon": "u-disk-line"}` |
+| <img src="../../icons/Device/battery-fill.svg" alt="battery-fill" width="24" height="24"> | `battery-fill` | charge,energy,level,li-ion,percentage,power,电池,电源,电量百分比,能量,锂电 | `{"icon": "battery-fill"}` |
+| <img src="../../icons/Device/battery-line.svg" alt="battery-line" width="24" height="24"> | `battery-line` | charge,energy,level,li-ion,percentage,power,电池,电源,电量百分比,能量,锂电 | `{"icon": "battery-line"}` |
+| <img src="../../icons/Device/battery-charge-fill.svg" alt="battery-charge-fill" width="24" height="24"> | `battery-charge-fill` | charging,fast charge,plug,power,充电,快充,插头,电池,电源 | `{"icon": "battery-charge-fill"}` |
+| <img src="../../icons/Device/battery-charge-line.svg" alt="battery-charge-line" width="24" height="24"> | `battery-charge-line` | charging,fast charge,plug,power,充电,快充,插头,电池,电源 | `{"icon": "battery-charge-line"}` |
+| <img src="../../icons/Device/battery-low-fill.svg" alt="battery-low-fill" width="24" height="24"> | `battery-low-fill` | empty,low battery,low power,warning,低功耗,低电量,电池,电量不足,电量过低 | `{"icon": "battery-low-fill"}` |
+| <img src="../../icons/Device/battery-low-line.svg" alt="battery-low-line" width="24" height="24"> | `battery-low-line` | empty,low battery,low power,warning,低功耗,低电量,电池,电量不足,电量过低 | `{"icon": "battery-low-line"}` |
+| <img src="../../icons/Device/battery-2-fill.svg" alt="battery-2-fill" width="24" height="24"> | `battery-2-fill` | charge,energy,level,li-ion,percentage,power,电池,电源,电量百分比,能量,锂电 | `{"icon": "battery-2-fill"}` |
+| <img src="../../icons/Device/battery-2-line.svg" alt="battery-2-line" width="24" height="24"> | `battery-2-line` | charge,energy,level,li-ion,percentage,power,电池,电源,电量百分比,能量,锂电 | `{"icon": "battery-2-line"}` |
+| <img src="../../icons/Device/battery-2-charge-fill.svg" alt="battery-2-charge-fill" width="24" height="24"> | `battery-2-charge-fill` | charging,fast charge,plug,power,充电,快充,插头,电池,电源 | `{"icon": "battery-2-charge-fill"}` |
+| <img src="../../icons/Device/battery-2-charge-line.svg" alt="battery-2-charge-line" width="24" height="24"> | `battery-2-charge-line` | charging,fast charge,plug,power,充电,快充,插头,电池,电源 | `{"icon": "battery-2-charge-line"}` |
+| <img src="../../icons/Device/battery-saver-fill.svg" alt="battery-saver-fill" width="24" height="24"> | `battery-saver-fill` | battery saver,eco mode,low power mode,power saving,低电量模式,电池,省电模式,节能模式 | `{"icon": "battery-saver-fill"}` |
+| <img src="../../icons/Device/battery-saver-line.svg" alt="battery-saver-line" width="24" height="24"> | `battery-saver-line` | battery saver,eco mode,low power mode,power saving,低电量模式,电池,省电模式,节能模式 | `{"icon": "battery-saver-line"}` |
+| <img src="../../icons/Device/battery-share-fill.svg" alt="battery-share-fill" width="24" height="24"> | `battery-share-fill` | distribute,forward,power sharing,reverse charge,share power,wireless charging,共享电量,分享,反向充电,无线充电,电池共享,转发 | `{"icon": "battery-share-fill"}` |
+| <img src="../../icons/Device/battery-share-line.svg" alt="battery-share-line" width="24" height="24"> | `battery-share-line` | distribute,forward,power sharing,reverse charge,share power,wireless charging,共享电量,分享,反向充电,无线充电,电池共享,转发 | `{"icon": "battery-share-line"}` |
+| <img src="../../icons/Device/cast-fill.svg" alt="cast-fill" width="24" height="24"> | `cast-fill` | chromecast,miracast,mirroring,screen mirror,screen sharing,wireless display,屏幕共享,屏幕镜像,广播,无线,谷歌投屏 | `{"icon": "cast-fill"}` |
+| <img src="../../icons/Device/cast-line.svg" alt="cast-line" width="24" height="24"> | `cast-line` | chromecast,miracast,mirroring,screen mirror,screen sharing,wireless display,屏幕共享,屏幕镜像,广播,无线,谷歌投屏 | `{"icon": "cast-line"}` |
+| <img src="../../icons/Device/airplay-fill.svg" alt="airplay-fill" width="24" height="24"> | `airplay-fill` | airplay 2,apple,mirroring,screen mirror,screen sharing,wireless,屏幕镜像,无线,苹果投屏 | `{"icon": "airplay-fill"}` |
+| <img src="../../icons/Device/airplay-line.svg" alt="airplay-line" width="24" height="24"> | `airplay-line` | airplay 2,apple,mirroring,screen mirror,screen sharing,wireless,屏幕镜像,无线,苹果投屏 | `{"icon": "airplay-line"}` |
+| <img src="../../icons/Device/cpu-fill.svg" alt="cpu-fill" width="24" height="24"> | `cpu-fill` | arm,chipset,computing,core,processor,x86,中央处理器,架构,核心,芯片组 | `{"icon": "cpu-fill"}` |
+| <img src="../../icons/Device/cpu-line.svg" alt="cpu-line" width="24" height="24"> | `cpu-line` | arm,chipset,computing,core,processor,x86,中央处理器,架构,核心,芯片组 | `{"icon": "cpu-line"}` |
+| <img src="../../icons/Device/gradienter-fill.svg" alt="gradienter-fill" width="24" height="24"> | `gradienter-fill` | balance,bubble level,measurement,spirit level,平衡,气泡水平仪,测量,角度仪 | `{"icon": "gradienter-fill"}` |
+| <img src="../../icons/Device/gradienter-line.svg" alt="gradienter-line" width="24" height="24"> | `gradienter-line` | balance,bubble level,measurement,spirit level,平衡,气泡水平仪,测量,角度仪 | `{"icon": "gradienter-line"}` |
+| <img src="../../icons/Device/keyboard-fill.svg" alt="keyboard-fill" width="24" height="24"> | `keyboard-fill` | input device,mechanical,text entry,typing,wireless,打字,无线键盘,机械键盘,输入设备 | `{"icon": "keyboard-fill"}` |
+| <img src="../../icons/Device/keyboard-line.svg" alt="keyboard-line" width="24" height="24"> | `keyboard-line` | input device,mechanical,text entry,typing,wireless,打字,无线键盘,机械键盘,输入设备 | `{"icon": "keyboard-line"}` |
+| <img src="../../icons/Device/keyboard-box-fill.svg" alt="keyboard-box-fill" width="24" height="24"> | `keyboard-box-fill` | input device,text entry,typing,打字,输入设备,键盘盒,键盘面板 | `{"icon": "keyboard-box-fill"}` |
+| <img src="../../icons/Device/keyboard-box-line.svg" alt="keyboard-box-line" width="24" height="24"> | `keyboard-box-line` | input device,text entry,typing,打字,输入设备,键盘盒,键盘面板 | `{"icon": "keyboard-box-line"}` |
+| <img src="../../icons/Device/mouse-fill.svg" alt="mouse-fill" width="24" height="24"> | `mouse-fill` | bluetooth,click,cursor,input device,pointer,wireless,指针,无线鼠标,点击,蓝牙鼠标,输入设备 | `{"icon": "mouse-fill"}` |
+| <img src="../../icons/Device/mouse-line.svg" alt="mouse-line" width="24" height="24"> | `mouse-line` | bluetooth,click,cursor,input device,pointer,wireless,指针,无线鼠标,点击,蓝牙鼠标,输入设备 | `{"icon": "mouse-line"}` |
+| <img src="../../icons/Device/sensor-fill.svg" alt="sensor-fill" width="24" height="24"> | `sensor-fill` | accelerometer,capacitor,detector,gyroscope,monitoring,proximity,sensor device,加速度计,探测器,检测器,电容器,监测,距离传感器,陀螺仪 | `{"icon": "sensor-fill"}` |
+| <img src="../../icons/Device/sensor-line.svg" alt="sensor-line" width="24" height="24"> | `sensor-line` | accelerometer,capacitor,detector,gyroscope,monitoring,proximity,sensor device,加速度计,探测器,检测器,电容器,监测,距离传感器,陀螺仪 | `{"icon": "sensor-line"}` |
+| <img src="../../icons/Device/router-fill.svg" alt="router-fill" width="24" height="24"> | `router-fill` | Mesh路由,Wi-Fi 6,access point,ax,mesh,modem,network,radio,signal tower,station,wifi router,wifi6,wlan,信号塔,光猫,基站,广播,接入点,无线路由,流量,网络,路由器 | `{"icon": "router-fill"}` |
+| <img src="../../icons/Device/router-line.svg" alt="router-line" width="24" height="24"> | `router-line` | Mesh路由,Wi-Fi 6,access point,ax,mesh,modem,network,radio,signal tower,station,wifi router,wifi6,wlan,信号塔,光猫,基站,广播,接入点,无线路由,流量,网络,路由器 | `{"icon": "router-line"}` |
+| <img src="../../icons/Device/radar-fill.svg" alt="radar-fill" width="24" height="24"> | `radar-fill` | detection,satellite receiver,scanner,scanning,sonar,卫星接收器,声呐,扫描仪,探测,锅,雷达 | `{"icon": "radar-fill"}` |
+| <img src="../../icons/Device/radar-line.svg" alt="radar-line" width="24" height="24"> | `radar-line` | detection,satellite receiver,scanner,scanning,sonar,卫星接收器,声呐,扫描仪,探测,锅,雷达 | `{"icon": "radar-line"}` |
+| <img src="../../icons/Device/gamepad-fill.svg" alt="gamepad-fill" width="24" height="24"> | `gamepad-fill` | Switch,consoles,game controller,gaming,joystick,playstation,xbox,任天堂,控制器,摇杆,游戏手柄,游戏机 | `{"icon": "gamepad-fill"}` |
+| <img src="../../icons/Device/gamepad-line.svg" alt="gamepad-line" width="24" height="24"> | `gamepad-line` | Switch,consoles,game controller,gaming,joystick,playstation,xbox,任天堂,控制器,摇杆,游戏手柄,游戏机 | `{"icon": "gamepad-line"}` |
+| <img src="../../icons/Device/remote-control-fill.svg" alt="remote-control-fill" width="24" height="24"> | `remote-control-fill` | controller,infrared,ir remote,tv remote,电视遥控,红外遥控,遥控器 | `{"icon": "remote-control-fill"}` |
+| <img src="../../icons/Device/remote-control-line.svg" alt="remote-control-line" width="24" height="24"> | `remote-control-line` | controller,infrared,ir remote,tv remote,电视遥控,红外遥控,遥控器 | `{"icon": "remote-control-line"}` |
+| <img src="../../icons/Device/remote-control-2-fill.svg" alt="remote-control-2-fill" width="24" height="24"> | `remote-control-2-fill` | controller,infrared,ir remote,tv remote,电视遥控,红外遥控,遥控器 | `{"icon": "remote-control-2-fill"}` |
+| <img src="../../icons/Device/remote-control-2-line.svg" alt="remote-control-2-line" width="24" height="24"> | `remote-control-2-line` | controller,infrared,ir remote,tv remote,电视遥控,红外遥控,遥控器 | `{"icon": "remote-control-2-line"}` |
+| <img src="../../icons/Device/device-recover-fill.svg" alt="device-recover-fill" width="24" height="24"> | `device-recover-fill` | factory reset,recovery,reset device,restore,wipe,恢复出厂设置,清除数据,设备重置 | `{"icon": "device-recover-fill"}` |
+| <img src="../../icons/Device/device-recover-line.svg" alt="device-recover-line" width="24" height="24"> | `device-recover-line` | factory reset,recovery,reset device,restore,wipe,恢复出厂设置,清除数据,设备重置 | `{"icon": "device-recover-line"}` |
+| <img src="../../icons/Device/hotspot-fill.svg" alt="hotspot-fill" width="24" height="24"> | `hotspot-fill` | mobile hotspot,personal hotspot,tethering,wifi sharing,个人热点,手机热点,热点分享,网络共享,网络热点 | `{"icon": "hotspot-fill"}` |
+| <img src="../../icons/Device/hotspot-line.svg" alt="hotspot-line" width="24" height="24"> | `hotspot-line` | mobile hotspot,personal hotspot,tethering,wifi sharing,个人热点,手机热点,热点分享,网络共享,网络热点 | `{"icon": "hotspot-line"}` |
+| <img src="../../icons/Device/phone-find-fill.svg" alt="phone-find-fill" width="24" height="24"> | `phone-find-fill` | find my phone,locate device,track,定位设备,找回手机,查找手机,设备追踪 | `{"icon": "phone-find-fill"}` |
+| <img src="../../icons/Device/phone-find-line.svg" alt="phone-find-line" width="24" height="24"> | `phone-find-line` | find my phone,locate device,track,定位设备,找回手机,查找手机,设备追踪 | `{"icon": "phone-find-line"}` |
+| <img src="../../icons/Device/phone-lock-fill.svg" alt="phone-lock-fill" width="24" height="24"> | `phone-lock-fill` | device security,encrypt,lock screen,passcode,password,private,screen lock,加密,密码锁,屏幕锁,私人,设备安全,锁定手机,锁屏 | `{"icon": "phone-lock-fill"}` |
+| <img src="../../icons/Device/phone-lock-line.svg" alt="phone-lock-line" width="24" height="24"> | `phone-lock-line` | device security,encrypt,lock screen,passcode,password,private,screen lock,加密,密码锁,屏幕锁,私人,设备安全,锁定手机,锁屏 | `{"icon": "phone-lock-line"}` |
+| <img src="../../icons/Device/rotate-lock-fill.svg" alt="rotate-lock-fill" width="24" height="24"> | `rotate-lock-fill` | encrypt,landscape,lock rotation,orientation lock,password,portrait,private,screen rotation,security,加密,安全,密码,屏幕旋转,方向锁定,旋转锁,横屏,私人,竖屏,锁定旋转屏幕 | `{"icon": "rotate-lock-fill"}` |
+| <img src="../../icons/Device/rotate-lock-line.svg" alt="rotate-lock-line" width="24" height="24"> | `rotate-lock-line` | encrypt,landscape,lock rotation,orientation lock,password,portrait,private,screen rotation,security,加密,安全,密码,屏幕旋转,方向锁定,旋转锁,横屏,私人,竖屏,锁定旋转屏幕 | `{"icon": "rotate-lock-line"}` |
+| <img src="../../icons/Device/restart-fill.svg" alt="restart-fill" width="24" height="24"> | `restart-fill` | reboot,refresh,reload,restart device,system restart,系统重启,设备重启,重新启动 | `{"icon": "restart-fill"}` |
+| <img src="../../icons/Device/restart-line.svg" alt="restart-line" width="24" height="24"> | `restart-line` | reboot,refresh,reload,restart device,system restart,系统重启,设备重启,重新启动 | `{"icon": "restart-line"}` |
+| <img src="../../icons/Device/shut-down-fill.svg" alt="shut-down-fill" width="24" height="24"> | `shut-down-fill` | power button,power off,shutdown,turn off,停机,关机,关闭电源,电源键 | `{"icon": "shut-down-fill"}` |
+| <img src="../../icons/Device/shut-down-line.svg" alt="shut-down-line" width="24" height="24"> | `shut-down-line` | power button,power off,shutdown,turn off,停机,关机,关闭电源,电源键 | `{"icon": "shut-down-line"}` |
+| <img src="../../icons/Device/fingerprint-fill.svg" alt="fingerprint-fill" width="24" height="24"> | `fingerprint-fill` | authentication,biometric,fingerprint sensor,security,touch id,安全认证,指纹传感器,指纹识别,生物识别 | `{"icon": "fingerprint-fill"}` |
+| <img src="../../icons/Device/fingerprint-line.svg" alt="fingerprint-line" width="24" height="24"> | `fingerprint-line` | authentication,biometric,fingerprint sensor,security,touch id,安全认证,指纹传感器,指纹识别,生物识别 | `{"icon": "fingerprint-line"}` |
+| <img src="../../icons/Device/fingerprint-2-fill.svg" alt="fingerprint-2-fill" width="24" height="24"> | `fingerprint-2-fill` | authentication,biometric,fingerprint sensor,security,touch id,安全认证,指纹传感器,指纹识别,生物识别 | `{"icon": "fingerprint-2-fill"}` |
+| <img src="../../icons/Device/fingerprint-2-line.svg" alt="fingerprint-2-line" width="24" height="24"> | `fingerprint-2-line` | authentication,biometric,fingerprint sensor,security,touch id,安全认证,指纹传感器,指纹识别,生物识别 | `{"icon": "fingerprint-2-line"}` |
+| <img src="../../icons/Device/barcode-fill.svg" alt="barcode-fill" width="24" height="24"> | `barcode-fill` | code128,ean,product code,scan,upc,产品码,扫码,条形码,条码 | `{"icon": "barcode-fill"}` |
+| <img src="../../icons/Device/barcode-line.svg" alt="barcode-line" width="24" height="24"> | `barcode-line` | code128,ean,product code,scan,upc,产品码,扫码,条形码,条码 | `{"icon": "barcode-line"}` |
+| <img src="../../icons/Device/barcode-box-fill.svg" alt="barcode-box-fill" width="24" height="24"> | `barcode-box-fill` | code128,ean,product code,scan,upc,产品码,扫码,条形码,条码 | `{"icon": "barcode-box-fill"}` |
+| <img src="../../icons/Device/barcode-box-line.svg" alt="barcode-box-line" width="24" height="24"> | `barcode-box-line` | code128,ean,product code,scan,upc,产品码,扫码,条形码,条码 | `{"icon": "barcode-box-line"}` |
+| <img src="../../icons/Device/qr-code-fill.svg" alt="qr-code-fill" width="24" height="24"> | `qr-code-fill` | QR码,matrix code,qr code,quick response,二维码,快速响应码 | `{"icon": "qr-code-fill"}` |
+| <img src="../../icons/Device/qr-code-line.svg" alt="qr-code-line" width="24" height="24"> | `qr-code-line` | QR码,matrix code,qr code,quick response,二维码,快速响应码 | `{"icon": "qr-code-line"}` |
+| <img src="../../icons/Device/qr-scan-fill.svg" alt="qr-scan-fill" width="24" height="24"> | `qr-scan-fill` | code reader,qr reader,scan qr,scanner,二维码阅读器,扫描,扫码器 | `{"icon": "qr-scan-fill"}` |
+| <img src="../../icons/Device/qr-scan-line.svg" alt="qr-scan-line" width="24" height="24"> | `qr-scan-line` | code reader,qr reader,scan qr,scanner,二维码阅读器,扫描,扫码器 | `{"icon": "qr-scan-line"}` |
+| <img src="../../icons/Device/qr-scan-2-fill.svg" alt="qr-scan-2-fill" width="24" height="24"> | `qr-scan-2-fill` | code reader,qr reader,scan qr,scanner,二维码阅读器,扫描,扫码器 | `{"icon": "qr-scan-2-fill"}` |
+| <img src="../../icons/Device/qr-scan-2-line.svg" alt="qr-scan-2-line" width="24" height="24"> | `qr-scan-2-line` | code reader,qr reader,scan qr,scanner,二维码阅读器,扫描,扫码器 | `{"icon": "qr-scan-2-line"}` |
+| <img src="../../icons/Device/qr-scan-ai-fill.svg" alt="qr-scan-ai-fill" width="24" height="24"> | `qr-scan-ai-fill` | qr code,qr scan,二维码,二维码扫描 | `{"icon": "qr-scan-ai-fill"}` |
+| <img src="../../icons/Device/qr-scan-ai-line.svg" alt="qr-scan-ai-line" width="24" height="24"> | `qr-scan-ai-line` | qr code,qr scan,二维码,二维码扫描 | `{"icon": "qr-scan-ai-line"}` |
+| <img src="../../icons/Device/scan-fill.svg" alt="scan-fill" width="24" height="24"> | `scan-fill` | barcode reader,detection,document scanner,扫描仪,文档扫描,条码阅读器,读取器 | `{"icon": "scan-fill"}` |
+| <img src="../../icons/Device/scan-line.svg" alt="scan-line" width="24" height="24"> | `scan-line` | barcode reader,detection,document scanner,扫描仪,文档扫描,条码阅读器,读取器 | `{"icon": "scan-line"}` |
+| <img src="../../icons/Device/scan-2-fill.svg" alt="scan-2-fill" width="24" height="24"> | `scan-2-fill` | barcode reader,detection,document scanner,扫描仪,文档扫描,条码阅读器,读取器 | `{"icon": "scan-2-fill"}` |
+| <img src="../../icons/Device/scan-2-line.svg" alt="scan-2-line" width="24" height="24"> | `scan-2-line` | barcode reader,detection,document scanner,扫描仪,文档扫描,条码阅读器,读取器 | `{"icon": "scan-2-line"}` |
+| <img src="../../icons/Device/rss-fill.svg" alt="rss-fill" width="24" height="24"> | `rss-fill` | atom,news,rss feed,subscribe,syndication,信息流,新闻,源,聚合,订阅 | `{"icon": "rss-fill"}` |
+| <img src="../../icons/Device/rss-line.svg" alt="rss-line" width="24" height="24"> | `rss-line` | atom,news,rss feed,subscribe,syndication,信息流,新闻,源,聚合,订阅 | `{"icon": "rss-line"}` |
+| <img src="../../icons/Device/gps-fill.svg" alt="gps-fill" width="24" height="24"> | `gps-fill` | beidou,galileo,glonass,gnss,location,navigation,satellite,signal,伽利略,信号,全球导航,北斗,卫星,定位,格洛纳斯 | `{"icon": "gps-fill"}` |
+| <img src="../../icons/Device/gps-line.svg" alt="gps-line" width="24" height="24"> | `gps-line` | beidou,galileo,glonass,gnss,location,navigation,satellite,signal,伽利略,信号,全球导航,北斗,卫星,定位,格洛纳斯 | `{"icon": "gps-line"}` |
+| <img src="../../icons/Device/base-station-fill.svg" alt="base-station-fill" width="24" height="24"> | `base-station-fill` | bts,cast,cell site,cellular tower,router,signal tower,wifi,信号塔,广播,流量,蜂窝基站,蜂窝塔,路由器 | `{"icon": "base-station-fill"}` |
+| <img src="../../icons/Device/base-station-line.svg" alt="base-station-line" width="24" height="24"> | `base-station-line` | bts,cast,cell site,cellular tower,router,signal tower,wifi,信号塔,广播,流量,蜂窝基站,蜂窝塔,路由器 | `{"icon": "base-station-line"}` |
+| <img src="../../icons/Device/bluetooth-fill.svg" alt="bluetooth-fill" width="24" height="24"> | `bluetooth-fill` | ble,bluetooth le,bt,connection,pairing,wireless,低功耗蓝牙,无线,连接,配对 | `{"icon": "bluetooth-fill"}` |
+| <img src="../../icons/Device/bluetooth-line.svg" alt="bluetooth-line" width="24" height="24"> | `bluetooth-line` | ble,bluetooth le,bt,connection,pairing,wireless,低功耗蓝牙,无线,连接,配对 | `{"icon": "bluetooth-line"}` |
+| <img src="../../icons/Device/bluetooth-connect-fill.svg" alt="bluetooth-connect-fill" width="24" height="24"> | `bluetooth-connect-fill` | ble,bt,connected,paired,pairing,wireless,低功耗蓝牙,已连接,已配对,无线 | `{"icon": "bluetooth-connect-fill"}` |
+| <img src="../../icons/Device/bluetooth-connect-line.svg" alt="bluetooth-connect-line" width="24" height="24"> | `bluetooth-connect-line` | ble,bt,connected,paired,pairing,wireless,低功耗蓝牙,已连接,已配对,无线 | `{"icon": "bluetooth-connect-line"}` |
+| <img src="../../icons/Device/wifi-fill.svg" alt="wifi-fill" width="24" height="24"> | `wifi-fill` | connection,internet,wi-fi,wireless network,wlan,互联网,无线局域网,无线网,网络连接 | `{"icon": "wifi-fill"}` |
+| <img src="../../icons/Device/wifi-line.svg" alt="wifi-line" width="24" height="24"> | `wifi-line` | connection,internet,wi-fi,wireless network,wlan,互联网,无线局域网,无线网,网络连接 | `{"icon": "wifi-line"}` |
+| <img src="../../icons/Device/wifi-off-fill.svg" alt="wifi-off-fill" width="24" height="24"> | `wifi-off-fill` | connection-fail,disabled,network off,no internet,offline,slash,断网,无线网,无网络,禁用,网络关闭,链接失败 | `{"icon": "wifi-off-fill"}` |
+| <img src="../../icons/Device/wifi-off-line.svg" alt="wifi-off-line" width="24" height="24"> | `wifi-off-line` | connection-fail,disabled,network off,no internet,offline,slash,断网,无线网,无网络,禁用,网络关闭,链接失败 | `{"icon": "wifi-off-line"}` |
+| <img src="../../icons/Device/signal-wifi-fill.svg" alt="signal-wifi-fill" width="24" height="24"> | `signal-wifi-fill` | bars,cellular,network quality,strength,wireless,信号格,无线网,网络质量 | `{"icon": "signal-wifi-fill"}` |
+| <img src="../../icons/Device/signal-wifi-line.svg" alt="signal-wifi-line" width="24" height="24"> | `signal-wifi-line` | bars,cellular,network quality,strength,wireless,信号格,无线网,网络质量 | `{"icon": "signal-wifi-line"}` |
+| <img src="../../icons/Device/signal-wifi-1-fill.svg" alt="signal-wifi-1-fill" width="24" height="24"> | `signal-wifi-1-fill` | cellular,one bar,strength,weak signal,wireless,一格,弱信号,无线网 | `{"icon": "signal-wifi-1-fill"}` |
+| <img src="../../icons/Device/signal-wifi-1-line.svg" alt="signal-wifi-1-line" width="24" height="24"> | `signal-wifi-1-line` | cellular,one bar,strength,weak signal,wireless,一格,弱信号,无线网 | `{"icon": "signal-wifi-1-line"}` |
+| <img src="../../icons/Device/signal-wifi-2-fill.svg" alt="signal-wifi-2-fill" width="24" height="24"> | `signal-wifi-2-fill` | cellular,medium signal,strength,two bars,wireless,两格,中等信号,无线网 | `{"icon": "signal-wifi-2-fill"}` |
+| <img src="../../icons/Device/signal-wifi-2-line.svg" alt="signal-wifi-2-line" width="24" height="24"> | `signal-wifi-2-line` | cellular,medium signal,strength,two bars,wireless,两格,中等信号,无线网 | `{"icon": "signal-wifi-2-line"}` |
+| <img src="../../icons/Device/signal-wifi-3-fill.svg" alt="signal-wifi-3-fill" width="24" height="24"> | `signal-wifi-3-fill` | cellular,strength,strong signal,three bars,wireless,三格,强信号,无线网 | `{"icon": "signal-wifi-3-fill"}` |
+| <img src="../../icons/Device/signal-wifi-3-line.svg" alt="signal-wifi-3-line" width="24" height="24"> | `signal-wifi-3-line` | cellular,strength,strong signal,three bars,wireless,三格,强信号,无线网 | `{"icon": "signal-wifi-3-line"}` |
+| <img src="../../icons/Device/signal-wifi-error-fill.svg" alt="signal-wifi-error-fill" width="24" height="24"> | `signal-wifi-error-fill` | alert,cellular,connection-fail,danger,network error,no signal,offline,warning,危险,断网,无信号,无线网,网络错误,警告,链接失败 | `{"icon": "signal-wifi-error-fill"}` |
+| <img src="../../icons/Device/signal-wifi-error-line.svg" alt="signal-wifi-error-line" width="24" height="24"> | `signal-wifi-error-line` | alert,cellular,connection-fail,danger,network error,no signal,offline,warning,危险,断网,无信号,无线网,网络错误,警告,链接失败 | `{"icon": "signal-wifi-error-line"}` |
+| <img src="../../icons/Device/signal-wifi-off-fill.svg" alt="signal-wifi-off-fill" width="24" height="24"> | `signal-wifi-off-fill` | cellular,connection-fail,disabled,network off,offline,slash,断网,无线网,禁用,网络关闭,链接失败 | `{"icon": "signal-wifi-off-fill"}` |
+| <img src="../../icons/Device/signal-wifi-off-line.svg" alt="signal-wifi-off-line" width="24" height="24"> | `signal-wifi-off-line` | cellular,connection-fail,disabled,network off,offline,slash,断网,无线网,禁用,网络关闭,链接失败 | `{"icon": "signal-wifi-off-line"}` |
+| <img src="../../icons/Device/signal-cellular-1-fill.svg" alt="signal-cellular-1-fill" width="24" height="24"> | `signal-cellular-1-fill` | cellular,one bar,strength,weak signal,wireless,一格,弱信号,无线网 | `{"icon": "signal-cellular-1-fill"}` |
+| <img src="../../icons/Device/signal-cellular-1-line.svg" alt="signal-cellular-1-line" width="24" height="24"> | `signal-cellular-1-line` | cellular,one bar,strength,weak signal,wireless,一格,弱信号,无线网 | `{"icon": "signal-cellular-1-line"}` |
+| <img src="../../icons/Device/signal-cellular-2-fill.svg" alt="signal-cellular-2-fill" width="24" height="24"> | `signal-cellular-2-fill` | cellular,medium signal,strength,two bars,wireless,两格,中等信号,无线网 | `{"icon": "signal-cellular-2-fill"}` |
+| <img src="../../icons/Device/signal-cellular-2-line.svg" alt="signal-cellular-2-line" width="24" height="24"> | `signal-cellular-2-line` | cellular,medium signal,strength,two bars,wireless,两格,中等信号,无线网 | `{"icon": "signal-cellular-2-line"}` |
+| <img src="../../icons/Device/signal-cellular-3-fill.svg" alt="signal-cellular-3-fill" width="24" height="24"> | `signal-cellular-3-fill` | cellular,strength,strong signal,three bars,wireless,三格,强信号,无线网 | `{"icon": "signal-cellular-3-fill"}` |
+| <img src="../../icons/Device/signal-cellular-3-line.svg" alt="signal-cellular-3-line" width="24" height="24"> | `signal-cellular-3-line` | cellular,strength,strong signal,three bars,wireless,三格,强信号,无线网 | `{"icon": "signal-cellular-3-line"}` |
+| <img src="../../icons/Device/signal-cellular-off-fill.svg" alt="signal-cellular-off-fill" width="24" height="24"> | `signal-cellular-off-fill` | cellular,connection-fail,disabled,network off,offline,slash,断网,无线网,禁用,网络关闭,链接失败 | `{"icon": "signal-cellular-off-fill"}` |
+| <img src="../../icons/Device/signal-cellular-off-line.svg" alt="signal-cellular-off-line" width="24" height="24"> | `signal-cellular-off-line` | cellular,connection-fail,disabled,network off,offline,slash,断网,无线网,禁用,网络关闭,链接失败 | `{"icon": "signal-cellular-off-line"}` |
+| <img src="../../icons/Device/network-fill.svg" alt="network-fill" width="24" height="24"> | `network-fill` | 网络 | `{"icon": "network-fill"}` |
+| <img src="../../icons/Device/network-line.svg" alt="network-line" width="24" height="24"> | `network-line` | 网络 | `{"icon": "network-line"}` |
+| <img src="../../icons/Device/network-off-fill.svg" alt="network-off-fill" width="24" height="24"> | `network-off-fill` | 网络关闭 | `{"icon": "network-off-fill"}` |
+| <img src="../../icons/Device/network-off-line.svg" alt="network-off-line" width="24" height="24"> | `network-off-line` | 网络关闭 | `{"icon": "network-off-line"}` |
+| <img src="../../icons/Device/network-error-fill.svg" alt="network-error-fill" width="24" height="24"> | `network-error-fill` | alert,danger,fail,warning,危险,失败,警告,错误 | `{"icon": "network-error-fill"}` |
+| <img src="../../icons/Device/network-error-line.svg" alt="network-error-line" width="24" height="24"> | `network-error-line` | alert,danger,fail,warning,危险,失败,警告,错误 | `{"icon": "network-error-line"}` |
+| <img src="../../icons/Device/wireless-charging-fill.svg" alt="wireless-charging-fill" width="24" height="24"> | `wireless-charging-fill` | fast wireless charging,flash,inductive charging,power,qi charging,快速无线充电,感应充电,闪充 | `{"icon": "wireless-charging-fill"}` |
+| <img src="../../icons/Device/wireless-charging-line.svg" alt="wireless-charging-line" width="24" height="24"> | `wireless-charging-line` | fast wireless charging,flash,inductive charging,power,qi charging,快速无线充电,感应充电,闪充 | `{"icon": "wireless-charging-line"}` |
+| <img src="../../icons/Device/dashboard-2-fill.svg" alt="dashboard-2-fill" width="24" height="24"> | `dashboard-2-fill` | gauge,metrics,performance,speedometer,仪表盘,性能,指标,速度表 | `{"icon": "dashboard-2-fill"}` |
+| <img src="../../icons/Device/dashboard-2-line.svg" alt="dashboard-2-line" width="24" height="24"> | `dashboard-2-line` | gauge,metrics,performance,speedometer,仪表盘,性能,指标,速度表 | `{"icon": "dashboard-2-line"}` |
+| <img src="../../icons/Device/dashboard-3-fill.svg" alt="dashboard-3-fill" width="24" height="24"> | `dashboard-3-fill` | gauge,metrics,performance,speedometer,仪表盘,性能,指标,速度表 | `{"icon": "dashboard-3-fill"}` |
+| <img src="../../icons/Device/dashboard-3-line.svg" alt="dashboard-3-line" width="24" height="24"> | `dashboard-3-line` | gauge,metrics,performance,speedometer,仪表盘,性能,指标,速度表 | `{"icon": "dashboard-3-line"}` |
+| <img src="../../icons/Device/usb-fill.svg" alt="usb-fill" width="24" height="24"> | `usb-fill` | A口,C口,USB接口,connector,flash drive,port,type-a,type-c,usb 2.0,usb 3.0,usb 3.1,usb-c,优盘,连接器,接口 | `{"icon": "usb-fill"}` |
+| <img src="../../icons/Device/usb-line.svg" alt="usb-line" width="24" height="24"> | `usb-line` | A口,C口,USB接口,connector,flash drive,port,type-a,type-c,usb 2.0,usb 3.0,usb 3.1,usb-c,优盘,连接器,接口 | `{"icon": "usb-line"}` |
+| <img src="../../icons/Device/rfid-fill.svg" alt="rfid-fill" width="24" height="24"> | `rfid-fill` | devices,frequency,identification,nfc,radio,reader,tag,射频识别,无线,标签,读卡器,近场通信 | `{"icon": "rfid-fill"}` |
+| <img src="../../icons/Device/rfid-line.svg" alt="rfid-line" width="24" height="24"> | `rfid-line` | devices,frequency,identification,nfc,radio,reader,tag,射频识别,无线,标签,读卡器,近场通信 | `{"icon": "rfid-line"}` |
+| <img src="../../icons/Device/ram-fill.svg" alt="ram-fill" width="24" height="24"> | `ram-fill` | ddr4,ddr5,dram,electronics,memory,storage,内存条,内存模块,存储器,记忆卡 | `{"icon": "ram-fill"}` |
+| <img src="../../icons/Device/ram-line.svg" alt="ram-line" width="24" height="24"> | `ram-line` | ddr4,ddr5,dram,electronics,memory,storage,内存条,内存模块,存储器,记忆卡 | `{"icon": "ram-line"}` |
+| <img src="../../icons/Device/ram-2-fill.svg" alt="ram-2-fill" width="24" height="24"> | `ram-2-fill` | ddr4,ddr5,dram,electronics,memory,storage,内存条,内存模块,存储器,记忆卡 | `{"icon": "ram-2-fill"}` |
+| <img src="../../icons/Device/ram-2-line.svg" alt="ram-2-line" width="24" height="24"> | `ram-2-line` | ddr4,ddr5,dram,electronics,memory,storage,内存条,内存模块,存储器,记忆卡 | `{"icon": "ram-2-line"}` |
+| <img src="../../icons/Device/connector-fill.svg" alt="connector-fill" width="24" height="24"> | `connector-fill` | port,连接器,接口 | `{"icon": "connector-fill"}` |
+| <img src="../../icons/Device/connector-line.svg" alt="connector-line" width="24" height="24"> | `connector-line` | port,连接器,接口 | `{"icon": "connector-line"}` |

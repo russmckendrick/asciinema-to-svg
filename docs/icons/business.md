@@ -4,113 +4,223 @@
 
 | Icon | Name | Tags | Usage |
 |------|------|------|-------|
-| - | `mail` | communication,contact,email,envelope,inbox,letter,message,post,receive,send,信件,信封,发送,接收,收件箱,消息,联系,通信,邮件,邮政,邮箱 | `{"icon": "mail"}` |
-| - | `mail-ai` | artificial intelligence,email,envelope,inbox,message,post,smart mail,人工智能,信封,收件箱,消息,通信,邮件,邮箱 | `{"icon": "mail-ai"}` |
-| - | `mail-open` | email,envelope,inbox,message,opened,post,read,信封,已读,打开,收件箱,消息,通信,邮件,邮箱 | `{"icon": "mail-open"}` |
-| - | `mail-send` | delivery,email,envelope,inbox,message,post,whoosh,zoom,信封,发件箱,发送,投递,消息,通信,邮件,邮箱 | `{"icon": "mail-send"}` |
-| - | `mail-unread` | email,envelope,inbox,message,notification,post,信封,未读,消息,通信,通知,邮件,邮箱 | `{"icon": "mail-unread"}` |
-| - | `mail-add` | create,email,envelope,inbox,insert,message,plus,positive,post,信封,创建,加上,增加,插入,新增,消息,添加,通信,邮件,邮箱 | `{"icon": "mail-add"}` |
-| - | `mail-check` | done,email,envelope,inbox,message,ok,post,read,success,tick,verify,信封,完成,对勾,已读,成功,消息,确认,通信,邮件,邮箱 | `{"icon": "mail-check"}` |
-| - | `mail-close` | cancel,cross,email,envelope,exit,failed,inbox,message,post,quit,信封,停止,关闭,取消,失败,消息,退出,通信,邮件,邮箱 | `{"icon": "mail-close"}` |
-| - | `mail-download` | email,envelope,inbox,message,post,下载,信封,消息,通信,邮件,邮箱 | `{"icon": "mail-download"}` |
-| - | `mail-forbid` | email,envelope,inbox,message,post,privacy,信封,消息,禁止,通信,邮件,邮箱 | `{"icon": "mail-forbid"}` |
-| - | `mail-lock` | email,encrypt,envelope,inbox,message,password,post,private,security,信封,加密,安全,密码,消息,私人,通信,邮件,邮箱 | `{"icon": "mail-lock"}` |
-| - | `mail-settings` | cog,configuration,email,envelope,gear,inbox,management,message,options,post,preference,setup,信封,偏好,消息,管理,设置,通信,邮件,邮箱,配置,首选项 | `{"icon": "mail-settings"}` |
-| - | `mail-star` | bookmark,collection,email,envelope,favorite,inbox,like,message,post,rate,书签,信封,喜欢,收藏,星标,消息,评分,通信,邮件,邮箱 | `{"icon": "mail-star"}` |
-| - | `mail-volume` | email campaign,envelope,inbox,message,post,promotional email,sound,subscription,信封,推广,收件箱,消息,订阅,通信,邮件,邮箱 | `{"icon": "mail-volume"}` |
-| - | `inbox` | 收件箱 | `{"icon": "inbox"}` |
-| - | `inbox-2` | 收件箱 | `{"icon": "inbox-2"}` |
-| - | `inbox-archive` | 归档,收件箱,收纳 | `{"icon": "inbox-archive"}` |
-| - | `inbox-unarchive` | extract,unpack,unzip,取消归档,收件箱,解压缩,还原 | `{"icon": "inbox-unarchive"}` |
-| - | `cloud` | backup,download,online,server,sky,storage,upload,weather,上传,下载,云端,备份,天气,天空,存储,服务器 | `{"icon": "cloud"}` |
-| - | `cloud-off` | backup,connection fail,offline mode,online,server,slash,storage,weather,云端,备份,存储,断网,无信号,服务器,连接失败 | `{"icon": "cloud-off"}` |
-| - | `attachment` | annex,file,paperclip,文件,曲别针,附件 | `{"icon": "attachment"}` |
-| - | `profile` | account,bio,identity,individual,person,resume,个人资料,档案,简历,证件,身份证 | `{"icon": "profile"}` |
-| - | `archive` | box,存档,归档,收纳,盒子,纸箱 | `{"icon": "archive"}` |
-| - | `archive-2` | box,存档,归档,收纳,盒子,纸箱 | `{"icon": "archive-2"}` |
-| - | `archive-drawer` | night table,存档,床头柜,归档,抽屉,收纳 | `{"icon": "archive-drawer"}` |
-| - | `archive-stack` | box,堆叠,存档,归档,收纳,盒子,纸箱 | `{"icon": "archive-stack"}` |
-| - | `at` | @,mention,在,提到 | `{"icon": "at"}` |
-| - | `award` | achievement,badge,medal,勋章,奖牌,成就,金牌 | `{"icon": "award"}` |
-| - | `medal` | achievement,award,badge,勋章,奖牌,成就,金牌 | `{"icon": "medal"}` |
-| - | `medal-2` | achievement,award,badge,勋章,奖牌,成就,金牌 | `{"icon": "medal-2"}` |
-| - | `verified-badge` | authentication,certified,trust,verification,信任,认证标志,证书,验证 | `{"icon": "verified-badge"}` |
-| - | `bar-chart` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,柱状图,统计,节奏,韵律 | `{"icon": "bar-chart"}` |
-| - | `bar-chart-horizontal` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,柱状图,统计,节奏,韵律 | `{"icon": "bar-chart-horizontal"}` |
-| - | `bar-chart-2` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,排行,数据,柱状图,统计,节奏 | `{"icon": "bar-chart-2"}` |
-| - | `bar-chart-box` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,柱状图,统计,节奏 | `{"icon": "bar-chart-box"}` |
-| - | `bar-chart-box-ai` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,智能统计,柱状图,节奏 | `{"icon": "bar-chart-box-ai"}` |
-| - | `bar-chart-grouped` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,分组,图表,数据,柱状图,统计 | `{"icon": "bar-chart-grouped"}` |
-| - | `bubble-chart` | analysis,analytics,circles,data,graph,metrics,statistics,分析,图表,数据,气泡图,统计 | `{"icon": "bubble-chart"}` |
-| - | `pie-chart` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计,饼图,饼状图 | `{"icon": "pie-chart"}` |
-| - | `pie-chart-2` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计,饼图,饼状图 | `{"icon": "pie-chart-2"}` |
-| - | `pie-chart-box` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计,饼图,饼状图 | `{"icon": "pie-chart-box"}` |
-| - | `donut-chart` | analysis,analytics,circle,data,graph,metrics,pie,statistics,分析,图表,数据,环形图,统计 | `{"icon": "donut-chart"}` |
-| - | `line-chart` | analysis,analytics,data,graph,metrics,statistics,stats,分析,图表,折线图,数据,统计 | `{"icon": "line-chart"}` |
-| - | `stacked-chart` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计 | `{"icon": "stacked-chart"}` |
-| - | `area-chart` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计 | `{"icon": "area-chart"}` |
-| - | `bookmark` | tag,书签,标记 | `{"icon": "bookmark"}` |
-| - | `bookmark-2` | tag,书签,标记 | `{"icon": "bookmark-2"}` |
-| - | `bookmark-3` | tag,书签,标记,荣誉 | `{"icon": "bookmark-3"}` |
-| - | `briefcase` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase"}` |
-| - | `briefcase-2` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-2"}` |
-| - | `briefcase-3` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-3"}` |
-| - | `briefcase-4` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-4"}` |
-| - | `briefcase-5` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-5"}` |
-| - | `calculator` | arithmetic,calculation,compute,math,数学,算术,计算器,计算机 | `{"icon": "calculator"}` |
-| - | `calendar` | agenda,date,month,plan,schedule,time,year,年份,日历,日期,日程,时间表,月份,计划 | `{"icon": "calendar"}` |
-| - | `calendar-2` | agenda,date,month,plan,schedule,time,year,年份,日历,日期,日程,时间表,月份,计划 | `{"icon": "calendar-2"}` |
-| - | `calendar-event` | agenda,appointment,date,meeting,plan,schedule,time,会议,日历,日期,日程,时间表,月份,计划,预约 | `{"icon": "calendar-event"}` |
-| - | `calendar-todo` | agenda,date,plan,reminder,schedule,task,time,任务,提醒,日历,日期,日程,时间表,月份,计划 | `{"icon": "calendar-todo"}` |
-| - | `calendar-check` | agenda,attendance,check-in,date,done,ok,plan,punch,schedule,success,tick,time,verify,完成,对勾,成功,打卡,日历,日期,日程,时间表,月份,确认,签到,考勤,计划 | `{"icon": "calendar-check"}` |
-| - | `calendar-close` | agenda,cancel,cross,date,error,exit,plan,quit,schedule,time,停止,关闭,取消,日历,日期,日程,时间表,月份,计划,退出,错误 | `{"icon": "calendar-close"}` |
-| - | `calendar-schedule` | agenda,date,plan,time,日历,日期,日程,时间表,月份,计划,预定,预约 | `{"icon": "calendar-schedule"}` |
-| - | `customer-service` | earphones,headphones,headset,help,support,售后,客服,帮助,支持,耳机,耳麦 | `{"icon": "customer-service"}` |
-| - | `customer-service-2` | earphones,headphones,headset,help,smile,support,售后,客服,帮助,微笑,支持,耳机,耳麦 | `{"icon": "customer-service-2"}` |
-| - | `flag` | banner,mark,milestone,pin,国旗,旗子,旗帜,标记,里程碑 | `{"icon": "flag"}` |
-| - | `flag-off` | flag slash,旗帜关闭,标记取消 | `{"icon": "flag-off"}` |
-| - | `flag-2` | banner,mark,milestone,pin,国旗,旗子,旗帜,标记,里程碑 | `{"icon": "flag-2"}` |
-| - | `triangular-flag` | banner,mark,milestone,pin,国旗,旗子,旗帜,标记,里程碑 | `{"icon": "triangular-flag"}` |
-| - | `global` | earth,globe,international,internet,language,network,online,planet,search,union,world wide web,世界,互联网,全球,国际,地球,搜索,星球,线上,联合,语言 | `{"icon": "global"}` |
-| - | `global-off` | earth,globe,international,internet,language,network,online,planet,search,union,world wide web,世界,互联网,全球,国际,地球,搜索,星球,线上,联合,语言 | `{"icon": "global-off"}` |
-| - | `honour` | achievement,award,glory,honor,recognition,军衔,成就,荣耀,荣誉,认可,锦旗 | `{"icon": "honour"}` |
-| - | `links` | address,chain,connection,hyperlink,url,地址,联系,超链接,连接 | `{"icon": "links"}` |
-| - | `printer` | document,output,paper,print,打印机,文档,纸张 | `{"icon": "printer"}` |
-| - | `printer-cloud` | backup,cloud printing,network,online,remote,server,storage,云打印,云端,备份,存储,打印机,服务器,网络,远程 | `{"icon": "printer-cloud"}` |
-| - | `record-mail` | email,envelope,inbox,message,post,recording,tape,voice mail,录制,录音,消息,留言,磁带,语音信箱,通信,邮件,邮箱 | `{"icon": "record-mail"}` |
-| - | `reply` | answer,forward,response,响应,回复全部,回复所有,答复 | `{"icon": "reply"}` |
-| - | `reply-all` | answer,broadcast,forward,response,回复,广播,留言,答复,转发 | `{"icon": "reply-all"}` |
-| - | `send-plane` | airplane,delivery,message,发送,投递,消息,纸飞机 | `{"icon": "send-plane"}` |
-| - | `send-plane-2` | airplane,delivery,message,发送,投递,消息,纸飞机 | `{"icon": "send-plane-2"}` |
-| - | `send-ins` | airplane,delivery,message,发送,投递,消息,纸飞机 | `{"icon": "send-ins"}` |
-| - | `projector` | meeting,projection,会议室,投影仪 | `{"icon": "projector"}` |
-| - | `projector-2` | meeting,projection,会议室,投影仪,极米 | `{"icon": "projector-2"}` |
-| - | `slideshow` | PPT,keynote,meeting,presentation,会议室,幻灯片,投影,放映,演示,演讲 | `{"icon": "slideshow"}` |
-| - | `slideshow-2` | meeting,presentation,会议室,幻灯片,投影,放映,演示,演讲 | `{"icon": "slideshow-2"}` |
-| - | `slideshow-3` | meeting,presentation,会议室,幻灯片,投影,放映,演示,演讲,视频会议 | `{"icon": "slideshow-3"}` |
-| - | `slideshow-4` | meeting,presentation,会议室,可视对讲,幻灯片,投影,放映,演示,演讲 | `{"icon": "slideshow-4"}` |
-| - | `presentation` | teaching,training,培训,演讲,老师 | `{"icon": "presentation"}` |
-| - | `window` | browser,program,web,浏览器,程序,窗口,网站 | `{"icon": "window"}` |
-| - | `window-2` | browser,program,web,浏览器,程序,窗口,网站 | `{"icon": "window-2"}` |
-| - | `stack` | layers,叠加,图层,堆栈 | `{"icon": "stack"}` |
-| - | `shake-hands` | cooperation,合作,握手 | `{"icon": "shake-hands"}` |
-| - | `service` | client,cooperation,handshake,heart,合作,心,握手,服务 | `{"icon": "service"}` |
-| - | `registered` | brand,registration,trademark,品牌,商标,注册 | `{"icon": "registered"}` |
-| - | `trademark` | brand,intellectual property,registration,品牌,商标,注册,知识产权 | `{"icon": "trademark"}` |
-| - | `advertisement` | ad,campaign,marketing,promotion,广告,推广,活动,营销 | `{"icon": "advertisement"}` |
-| - | `copyleft` | free software,license,open source,开源,自由软件,著佐权,许可证 | `{"icon": "copyleft"}` |
-| - | `copyright` | intellectual property,license,版权,知识产权,许可证 | `{"icon": "copyright"}` |
-| - | `creative-commons` | cc,license,open source,开源,知识共享,许可证 | `{"icon": "creative-commons"}` |
-| - | `creative-commons-by` | attribution,copyright,版权,知识共享,署名 | `{"icon": "creative-commons-by"}` |
-| - | `creative-commons-nc` | copyright,noncommercial,版权,知识共享,非商业用途 | `{"icon": "creative-commons-nc"}` |
-| - | `creative-commons-nd` | copyright,no derivative works,版权,知识共享,禁止演绎 | `{"icon": "creative-commons-nd"}` |
-| - | `creative-commons-sa` | copyright,share alike,版权,相同方式共享,知识共享 | `{"icon": "creative-commons-sa"}` |
-| - | `creative-commons-zero` | cc0,copyright,版权,知识共享 | `{"icon": "creative-commons-zero"}` |
-| - | `megaphone` | bullhorn,campaign,commercial,loudspeaker,promote,喇叭,宣传,广告,扩音器,推广,活动 | `{"icon": "megaphone"}` |
-| - | `megaphone-2` | bullhorn,campaign,commercial,loudspeaker,promote,喇叭,宣传,广告,扩音器,推广,活动 | `{"icon": "megaphone-2"}` |
-| - | `pass-valid` | document,identification,passport,护照有效,文件,身份证,身份识别 | `{"icon": "pass-valid"}` |
-| - | `pass-pending` | document,id,passport,waiting,审核中,护照等待,文件,身份证 | `{"icon": "pass-pending"}` |
-| - | `pass-expired` | document,invalid,passport,护照过期,文件,无效,身份证 | `{"icon": "pass-expired"}` |
-| - | `id-card` | badge,identification,identity,license,passport,profile,user,护照,用户,许可证,证件,身份证 | `{"icon": "id-card"}` |
-| - | `info-card` | about,badge,detail,help,hint,identity,license,ocard,passport,user,关于,帮助,护照,提示,用户,许可证,详情,身份证 | `{"icon": "info-card"}` |
-| - | `seo` | marketing,ranking,search engine optimization,排名,搜索引擎优化,营销 | `{"icon": "seo"}` |
+| <img src="../../icons/Business/mail-fill.svg" alt="mail-fill" width="24" height="24"> | `mail-fill` | communication,contact,email,envelope,inbox,letter,message,post,receive,send,信件,信封,发送,接收,收件箱,消息,联系,通信,邮件,邮政,邮箱 | `{"icon": "mail-fill"}` |
+| <img src="../../icons/Business/mail-line.svg" alt="mail-line" width="24" height="24"> | `mail-line` | communication,contact,email,envelope,inbox,letter,message,post,receive,send,信件,信封,发送,接收,收件箱,消息,联系,通信,邮件,邮政,邮箱 | `{"icon": "mail-line"}` |
+| <img src="../../icons/Business/mail-ai-fill.svg" alt="mail-ai-fill" width="24" height="24"> | `mail-ai-fill` | artificial intelligence,email,envelope,inbox,message,post,smart mail,人工智能,信封,收件箱,消息,通信,邮件,邮箱 | `{"icon": "mail-ai-fill"}` |
+| <img src="../../icons/Business/mail-ai-line.svg" alt="mail-ai-line" width="24" height="24"> | `mail-ai-line` | artificial intelligence,email,envelope,inbox,message,post,smart mail,人工智能,信封,收件箱,消息,通信,邮件,邮箱 | `{"icon": "mail-ai-line"}` |
+| <img src="../../icons/Business/mail-open-fill.svg" alt="mail-open-fill" width="24" height="24"> | `mail-open-fill` | email,envelope,inbox,message,opened,post,read,信封,已读,打开,收件箱,消息,通信,邮件,邮箱 | `{"icon": "mail-open-fill"}` |
+| <img src="../../icons/Business/mail-open-line.svg" alt="mail-open-line" width="24" height="24"> | `mail-open-line` | email,envelope,inbox,message,opened,post,read,信封,已读,打开,收件箱,消息,通信,邮件,邮箱 | `{"icon": "mail-open-line"}` |
+| <img src="../../icons/Business/mail-send-fill.svg" alt="mail-send-fill" width="24" height="24"> | `mail-send-fill` | delivery,email,envelope,inbox,message,post,whoosh,zoom,信封,发件箱,发送,投递,消息,通信,邮件,邮箱 | `{"icon": "mail-send-fill"}` |
+| <img src="../../icons/Business/mail-send-line.svg" alt="mail-send-line" width="24" height="24"> | `mail-send-line` | delivery,email,envelope,inbox,message,post,whoosh,zoom,信封,发件箱,发送,投递,消息,通信,邮件,邮箱 | `{"icon": "mail-send-line"}` |
+| <img src="../../icons/Business/mail-unread-fill.svg" alt="mail-unread-fill" width="24" height="24"> | `mail-unread-fill` | email,envelope,inbox,message,notification,post,信封,未读,消息,通信,通知,邮件,邮箱 | `{"icon": "mail-unread-fill"}` |
+| <img src="../../icons/Business/mail-unread-line.svg" alt="mail-unread-line" width="24" height="24"> | `mail-unread-line` | email,envelope,inbox,message,notification,post,信封,未读,消息,通信,通知,邮件,邮箱 | `{"icon": "mail-unread-line"}` |
+| <img src="../../icons/Business/mail-add-fill.svg" alt="mail-add-fill" width="24" height="24"> | `mail-add-fill` | create,email,envelope,inbox,insert,message,plus,positive,post,信封,创建,加上,增加,插入,新增,消息,添加,通信,邮件,邮箱 | `{"icon": "mail-add-fill"}` |
+| <img src="../../icons/Business/mail-add-line.svg" alt="mail-add-line" width="24" height="24"> | `mail-add-line` | create,email,envelope,inbox,insert,message,plus,positive,post,信封,创建,加上,增加,插入,新增,消息,添加,通信,邮件,邮箱 | `{"icon": "mail-add-line"}` |
+| <img src="../../icons/Business/mail-check-fill.svg" alt="mail-check-fill" width="24" height="24"> | `mail-check-fill` | done,email,envelope,inbox,message,ok,post,read,success,tick,verify,信封,完成,对勾,已读,成功,消息,确认,通信,邮件,邮箱 | `{"icon": "mail-check-fill"}` |
+| <img src="../../icons/Business/mail-check-line.svg" alt="mail-check-line" width="24" height="24"> | `mail-check-line` | done,email,envelope,inbox,message,ok,post,read,success,tick,verify,信封,完成,对勾,已读,成功,消息,确认,通信,邮件,邮箱 | `{"icon": "mail-check-line"}` |
+| <img src="../../icons/Business/mail-close-fill.svg" alt="mail-close-fill" width="24" height="24"> | `mail-close-fill` | cancel,cross,email,envelope,exit,failed,inbox,message,post,quit,信封,停止,关闭,取消,失败,消息,退出,通信,邮件,邮箱 | `{"icon": "mail-close-fill"}` |
+| <img src="../../icons/Business/mail-close-line.svg" alt="mail-close-line" width="24" height="24"> | `mail-close-line` | cancel,cross,email,envelope,exit,failed,inbox,message,post,quit,信封,停止,关闭,取消,失败,消息,退出,通信,邮件,邮箱 | `{"icon": "mail-close-line"}` |
+| <img src="../../icons/Business/mail-download-fill.svg" alt="mail-download-fill" width="24" height="24"> | `mail-download-fill` | email,envelope,inbox,message,post,下载,信封,消息,通信,邮件,邮箱 | `{"icon": "mail-download-fill"}` |
+| <img src="../../icons/Business/mail-download-line.svg" alt="mail-download-line" width="24" height="24"> | `mail-download-line` | email,envelope,inbox,message,post,下载,信封,消息,通信,邮件,邮箱 | `{"icon": "mail-download-line"}` |
+| <img src="../../icons/Business/mail-forbid-fill.svg" alt="mail-forbid-fill" width="24" height="24"> | `mail-forbid-fill` | email,envelope,inbox,message,post,privacy,信封,消息,禁止,通信,邮件,邮箱 | `{"icon": "mail-forbid-fill"}` |
+| <img src="../../icons/Business/mail-forbid-line.svg" alt="mail-forbid-line" width="24" height="24"> | `mail-forbid-line` | email,envelope,inbox,message,post,privacy,信封,消息,禁止,通信,邮件,邮箱 | `{"icon": "mail-forbid-line"}` |
+| <img src="../../icons/Business/mail-lock-fill.svg" alt="mail-lock-fill" width="24" height="24"> | `mail-lock-fill` | email,encrypt,envelope,inbox,message,password,post,private,security,信封,加密,安全,密码,消息,私人,通信,邮件,邮箱 | `{"icon": "mail-lock-fill"}` |
+| <img src="../../icons/Business/mail-lock-line.svg" alt="mail-lock-line" width="24" height="24"> | `mail-lock-line` | email,encrypt,envelope,inbox,message,password,post,private,security,信封,加密,安全,密码,消息,私人,通信,邮件,邮箱 | `{"icon": "mail-lock-line"}` |
+| <img src="../../icons/Business/mail-settings-fill.svg" alt="mail-settings-fill" width="24" height="24"> | `mail-settings-fill` | cog,configuration,email,envelope,gear,inbox,management,message,options,post,preference,setup,信封,偏好,消息,管理,设置,通信,邮件,邮箱,配置,首选项 | `{"icon": "mail-settings-fill"}` |
+| <img src="../../icons/Business/mail-settings-line.svg" alt="mail-settings-line" width="24" height="24"> | `mail-settings-line` | cog,configuration,email,envelope,gear,inbox,management,message,options,post,preference,setup,信封,偏好,消息,管理,设置,通信,邮件,邮箱,配置,首选项 | `{"icon": "mail-settings-line"}` |
+| <img src="../../icons/Business/mail-star-fill.svg" alt="mail-star-fill" width="24" height="24"> | `mail-star-fill` | bookmark,collection,email,envelope,favorite,inbox,like,message,post,rate,书签,信封,喜欢,收藏,星标,消息,评分,通信,邮件,邮箱 | `{"icon": "mail-star-fill"}` |
+| <img src="../../icons/Business/mail-star-line.svg" alt="mail-star-line" width="24" height="24"> | `mail-star-line` | bookmark,collection,email,envelope,favorite,inbox,like,message,post,rate,书签,信封,喜欢,收藏,星标,消息,评分,通信,邮件,邮箱 | `{"icon": "mail-star-line"}` |
+| <img src="../../icons/Business/mail-volume-fill.svg" alt="mail-volume-fill" width="24" height="24"> | `mail-volume-fill` | email campaign,envelope,inbox,message,post,promotional email,sound,subscription,信封,推广,收件箱,消息,订阅,通信,邮件,邮箱 | `{"icon": "mail-volume-fill"}` |
+| <img src="../../icons/Business/mail-volume-line.svg" alt="mail-volume-line" width="24" height="24"> | `mail-volume-line` | email campaign,envelope,inbox,message,post,promotional email,sound,subscription,信封,推广,收件箱,消息,订阅,通信,邮件,邮箱 | `{"icon": "mail-volume-line"}` |
+| <img src="../../icons/Business/inbox-fill.svg" alt="inbox-fill" width="24" height="24"> | `inbox-fill` | 收件箱 | `{"icon": "inbox-fill"}` |
+| <img src="../../icons/Business/inbox-line.svg" alt="inbox-line" width="24" height="24"> | `inbox-line` | 收件箱 | `{"icon": "inbox-line"}` |
+| <img src="../../icons/Business/inbox-2-fill.svg" alt="inbox-2-fill" width="24" height="24"> | `inbox-2-fill` | 收件箱 | `{"icon": "inbox-2-fill"}` |
+| <img src="../../icons/Business/inbox-2-line.svg" alt="inbox-2-line" width="24" height="24"> | `inbox-2-line` | 收件箱 | `{"icon": "inbox-2-line"}` |
+| <img src="../../icons/Business/inbox-archive-fill.svg" alt="inbox-archive-fill" width="24" height="24"> | `inbox-archive-fill` | 归档,收件箱,收纳 | `{"icon": "inbox-archive-fill"}` |
+| <img src="../../icons/Business/inbox-archive-line.svg" alt="inbox-archive-line" width="24" height="24"> | `inbox-archive-line` | 归档,收件箱,收纳 | `{"icon": "inbox-archive-line"}` |
+| <img src="../../icons/Business/inbox-unarchive-fill.svg" alt="inbox-unarchive-fill" width="24" height="24"> | `inbox-unarchive-fill` | extract,unpack,unzip,取消归档,收件箱,解压缩,还原 | `{"icon": "inbox-unarchive-fill"}` |
+| <img src="../../icons/Business/inbox-unarchive-line.svg" alt="inbox-unarchive-line" width="24" height="24"> | `inbox-unarchive-line` | extract,unpack,unzip,取消归档,收件箱,解压缩,还原 | `{"icon": "inbox-unarchive-line"}` |
+| <img src="../../icons/Business/cloud-fill.svg" alt="cloud-fill" width="24" height="24"> | `cloud-fill` | backup,download,online,server,sky,storage,upload,weather,上传,下载,云端,备份,天气,天空,存储,服务器 | `{"icon": "cloud-fill"}` |
+| <img src="../../icons/Business/cloud-line.svg" alt="cloud-line" width="24" height="24"> | `cloud-line` | backup,download,online,server,sky,storage,upload,weather,上传,下载,云端,备份,天气,天空,存储,服务器 | `{"icon": "cloud-line"}` |
+| <img src="../../icons/Business/cloud-off-fill.svg" alt="cloud-off-fill" width="24" height="24"> | `cloud-off-fill` | backup,connection fail,offline mode,online,server,slash,storage,weather,云端,备份,存储,断网,无信号,服务器,连接失败 | `{"icon": "cloud-off-fill"}` |
+| <img src="../../icons/Business/cloud-off-line.svg" alt="cloud-off-line" width="24" height="24"> | `cloud-off-line` | backup,connection fail,offline mode,online,server,slash,storage,weather,云端,备份,存储,断网,无信号,服务器,连接失败 | `{"icon": "cloud-off-line"}` |
+| <img src="../../icons/Business/attachment-fill.svg" alt="attachment-fill" width="24" height="24"> | `attachment-fill` | annex,file,paperclip,文件,曲别针,附件 | `{"icon": "attachment-fill"}` |
+| <img src="../../icons/Business/attachment-line.svg" alt="attachment-line" width="24" height="24"> | `attachment-line` | annex,file,paperclip,文件,曲别针,附件 | `{"icon": "attachment-line"}` |
+| <img src="../../icons/Business/profile-fill.svg" alt="profile-fill" width="24" height="24"> | `profile-fill` | account,bio,identity,individual,person,resume,个人资料,档案,简历,证件,身份证 | `{"icon": "profile-fill"}` |
+| <img src="../../icons/Business/profile-line.svg" alt="profile-line" width="24" height="24"> | `profile-line` | account,bio,identity,individual,person,resume,个人资料,档案,简历,证件,身份证 | `{"icon": "profile-line"}` |
+| <img src="../../icons/Business/archive-fill.svg" alt="archive-fill" width="24" height="24"> | `archive-fill` | box,存档,归档,收纳,盒子,纸箱 | `{"icon": "archive-fill"}` |
+| <img src="../../icons/Business/archive-line.svg" alt="archive-line" width="24" height="24"> | `archive-line` | box,存档,归档,收纳,盒子,纸箱 | `{"icon": "archive-line"}` |
+| <img src="../../icons/Business/archive-2-fill.svg" alt="archive-2-fill" width="24" height="24"> | `archive-2-fill` | box,存档,归档,收纳,盒子,纸箱 | `{"icon": "archive-2-fill"}` |
+| <img src="../../icons/Business/archive-2-line.svg" alt="archive-2-line" width="24" height="24"> | `archive-2-line` | box,存档,归档,收纳,盒子,纸箱 | `{"icon": "archive-2-line"}` |
+| <img src="../../icons/Business/archive-drawer-fill.svg" alt="archive-drawer-fill" width="24" height="24"> | `archive-drawer-fill` | night table,存档,床头柜,归档,抽屉,收纳 | `{"icon": "archive-drawer-fill"}` |
+| <img src="../../icons/Business/archive-drawer-line.svg" alt="archive-drawer-line" width="24" height="24"> | `archive-drawer-line` | night table,存档,床头柜,归档,抽屉,收纳 | `{"icon": "archive-drawer-line"}` |
+| <img src="../../icons/Business/archive-stack-fill.svg" alt="archive-stack-fill" width="24" height="24"> | `archive-stack-fill` | box,堆叠,存档,归档,收纳,盒子,纸箱 | `{"icon": "archive-stack-fill"}` |
+| <img src="../../icons/Business/archive-stack-line.svg" alt="archive-stack-line" width="24" height="24"> | `archive-stack-line` | box,堆叠,存档,归档,收纳,盒子,纸箱 | `{"icon": "archive-stack-line"}` |
+| <img src="../../icons/Business/at-fill.svg" alt="at-fill" width="24" height="24"> | `at-fill` | @,mention,在,提到 | `{"icon": "at-fill"}` |
+| <img src="../../icons/Business/at-line.svg" alt="at-line" width="24" height="24"> | `at-line` | @,mention,在,提到 | `{"icon": "at-line"}` |
+| <img src="../../icons/Business/award-fill.svg" alt="award-fill" width="24" height="24"> | `award-fill` | achievement,badge,medal,勋章,奖牌,成就,金牌 | `{"icon": "award-fill"}` |
+| <img src="../../icons/Business/award-line.svg" alt="award-line" width="24" height="24"> | `award-line` | achievement,badge,medal,勋章,奖牌,成就,金牌 | `{"icon": "award-line"}` |
+| <img src="../../icons/Business/medal-fill.svg" alt="medal-fill" width="24" height="24"> | `medal-fill` | achievement,award,badge,勋章,奖牌,成就,金牌 | `{"icon": "medal-fill"}` |
+| <img src="../../icons/Business/medal-line.svg" alt="medal-line" width="24" height="24"> | `medal-line` | achievement,award,badge,勋章,奖牌,成就,金牌 | `{"icon": "medal-line"}` |
+| <img src="../../icons/Business/medal-2-fill.svg" alt="medal-2-fill" width="24" height="24"> | `medal-2-fill` | achievement,award,badge,勋章,奖牌,成就,金牌 | `{"icon": "medal-2-fill"}` |
+| <img src="../../icons/Business/medal-2-line.svg" alt="medal-2-line" width="24" height="24"> | `medal-2-line` | achievement,award,badge,勋章,奖牌,成就,金牌 | `{"icon": "medal-2-line"}` |
+| <img src="../../icons/Business/verified-badge-fill.svg" alt="verified-badge-fill" width="24" height="24"> | `verified-badge-fill` | authentication,certified,trust,verification,信任,认证标志,证书,验证 | `{"icon": "verified-badge-fill"}` |
+| <img src="../../icons/Business/verified-badge-line.svg" alt="verified-badge-line" width="24" height="24"> | `verified-badge-line` | authentication,certified,trust,verification,信任,认证标志,证书,验证 | `{"icon": "verified-badge-line"}` |
+| <img src="../../icons/Business/bar-chart-fill.svg" alt="bar-chart-fill" width="24" height="24"> | `bar-chart-fill` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,柱状图,统计,节奏,韵律 | `{"icon": "bar-chart-fill"}` |
+| <img src="../../icons/Business/bar-chart-line.svg" alt="bar-chart-line" width="24" height="24"> | `bar-chart-line` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,柱状图,统计,节奏,韵律 | `{"icon": "bar-chart-line"}` |
+| <img src="../../icons/Business/bar-chart-horizontal-fill.svg" alt="bar-chart-horizontal-fill" width="24" height="24"> | `bar-chart-horizontal-fill` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,柱状图,统计,节奏,韵律 | `{"icon": "bar-chart-horizontal-fill"}` |
+| <img src="../../icons/Business/bar-chart-horizontal-line.svg" alt="bar-chart-horizontal-line" width="24" height="24"> | `bar-chart-horizontal-line` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,柱状图,统计,节奏,韵律 | `{"icon": "bar-chart-horizontal-line"}` |
+| <img src="../../icons/Business/bar-chart-2-fill.svg" alt="bar-chart-2-fill" width="24" height="24"> | `bar-chart-2-fill` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,排行,数据,柱状图,统计,节奏 | `{"icon": "bar-chart-2-fill"}` |
+| <img src="../../icons/Business/bar-chart-2-line.svg" alt="bar-chart-2-line" width="24" height="24"> | `bar-chart-2-line` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,排行,数据,柱状图,统计,节奏 | `{"icon": "bar-chart-2-line"}` |
+| <img src="../../icons/Business/bar-chart-box-fill.svg" alt="bar-chart-box-fill" width="24" height="24"> | `bar-chart-box-fill` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,柱状图,统计,节奏 | `{"icon": "bar-chart-box-fill"}` |
+| <img src="../../icons/Business/bar-chart-box-line.svg" alt="bar-chart-box-line" width="24" height="24"> | `bar-chart-box-line` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,柱状图,统计,节奏 | `{"icon": "bar-chart-box-line"}` |
+| <img src="../../icons/Business/bar-chart-box-ai-fill.svg" alt="bar-chart-box-ai-fill" width="24" height="24"> | `bar-chart-box-ai-fill` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,智能统计,柱状图,节奏 | `{"icon": "bar-chart-box-ai-fill"}` |
+| <img src="../../icons/Business/bar-chart-box-ai-line.svg" alt="bar-chart-box-ai-line" width="24" height="24"> | `bar-chart-box-ai-line` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,图表,数据,智能统计,柱状图,节奏 | `{"icon": "bar-chart-box-ai-line"}` |
+| <img src="../../icons/Business/bar-chart-grouped-fill.svg" alt="bar-chart-grouped-fill" width="24" height="24"> | `bar-chart-grouped-fill` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,分组,图表,数据,柱状图,统计 | `{"icon": "bar-chart-grouped-fill"}` |
+| <img src="../../icons/Business/bar-chart-grouped-line.svg" alt="bar-chart-grouped-line" width="24" height="24"> | `bar-chart-grouped-line` | analysis,analytics,data,graph,metrics,rhythm,statistics,分析,分组,图表,数据,柱状图,统计 | `{"icon": "bar-chart-grouped-line"}` |
+| <img src="../../icons/Business/bubble-chart-fill.svg" alt="bubble-chart-fill" width="24" height="24"> | `bubble-chart-fill` | analysis,analytics,circles,data,graph,metrics,statistics,分析,图表,数据,气泡图,统计 | `{"icon": "bubble-chart-fill"}` |
+| <img src="../../icons/Business/bubble-chart-line.svg" alt="bubble-chart-line" width="24" height="24"> | `bubble-chart-line` | analysis,analytics,circles,data,graph,metrics,statistics,分析,图表,数据,气泡图,统计 | `{"icon": "bubble-chart-line"}` |
+| <img src="../../icons/Business/pie-chart-fill.svg" alt="pie-chart-fill" width="24" height="24"> | `pie-chart-fill` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计,饼图,饼状图 | `{"icon": "pie-chart-fill"}` |
+| <img src="../../icons/Business/pie-chart-line.svg" alt="pie-chart-line" width="24" height="24"> | `pie-chart-line` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计,饼图,饼状图 | `{"icon": "pie-chart-line"}` |
+| <img src="../../icons/Business/pie-chart-2-fill.svg" alt="pie-chart-2-fill" width="24" height="24"> | `pie-chart-2-fill` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计,饼图,饼状图 | `{"icon": "pie-chart-2-fill"}` |
+| <img src="../../icons/Business/pie-chart-2-line.svg" alt="pie-chart-2-line" width="24" height="24"> | `pie-chart-2-line` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计,饼图,饼状图 | `{"icon": "pie-chart-2-line"}` |
+| <img src="../../icons/Business/pie-chart-box-fill.svg" alt="pie-chart-box-fill" width="24" height="24"> | `pie-chart-box-fill` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计,饼图,饼状图 | `{"icon": "pie-chart-box-fill"}` |
+| <img src="../../icons/Business/pie-chart-box-line.svg" alt="pie-chart-box-line" width="24" height="24"> | `pie-chart-box-line` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计,饼图,饼状图 | `{"icon": "pie-chart-box-line"}` |
+| <img src="../../icons/Business/donut-chart-fill.svg" alt="donut-chart-fill" width="24" height="24"> | `donut-chart-fill` | analysis,analytics,circle,data,graph,metrics,pie,statistics,分析,图表,数据,环形图,统计 | `{"icon": "donut-chart-fill"}` |
+| <img src="../../icons/Business/donut-chart-line.svg" alt="donut-chart-line" width="24" height="24"> | `donut-chart-line` | analysis,analytics,circle,data,graph,metrics,pie,statistics,分析,图表,数据,环形图,统计 | `{"icon": "donut-chart-line"}` |
+| <img src="../../icons/Business/line-chart-fill.svg" alt="line-chart-fill" width="24" height="24"> | `line-chart-fill` | analysis,analytics,data,graph,metrics,statistics,stats,分析,图表,折线图,数据,统计 | `{"icon": "line-chart-fill"}` |
+| <img src="../../icons/Business/line-chart-line.svg" alt="line-chart-line" width="24" height="24"> | `line-chart-line` | analysis,analytics,data,graph,metrics,statistics,stats,分析,图表,折线图,数据,统计 | `{"icon": "line-chart-line"}` |
+| <img src="../../icons/Business/stacked-chart-fill.svg" alt="stacked-chart-fill" width="24" height="24"> | `stacked-chart-fill` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计 | `{"icon": "stacked-chart-fill"}` |
+| <img src="../../icons/Business/stacked-chart-line.svg" alt="stacked-chart-line" width="24" height="24"> | `stacked-chart-line` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计 | `{"icon": "stacked-chart-line"}` |
+| <img src="../../icons/Business/area-chart-fill.svg" alt="area-chart-fill" width="24" height="24"> | `area-chart-fill` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计 | `{"icon": "area-chart-fill"}` |
+| <img src="../../icons/Business/area-chart-line.svg" alt="area-chart-line" width="24" height="24"> | `area-chart-line` | analysis,analytics,data,graph,metrics,statistics,分析,图表,数据,统计 | `{"icon": "area-chart-line"}` |
+| <img src="../../icons/Business/bookmark-fill.svg" alt="bookmark-fill" width="24" height="24"> | `bookmark-fill` | tag,书签,标记 | `{"icon": "bookmark-fill"}` |
+| <img src="../../icons/Business/bookmark-line.svg" alt="bookmark-line" width="24" height="24"> | `bookmark-line` | tag,书签,标记 | `{"icon": "bookmark-line"}` |
+| <img src="../../icons/Business/bookmark-2-fill.svg" alt="bookmark-2-fill" width="24" height="24"> | `bookmark-2-fill` | tag,书签,标记 | `{"icon": "bookmark-2-fill"}` |
+| <img src="../../icons/Business/bookmark-2-line.svg" alt="bookmark-2-line" width="24" height="24"> | `bookmark-2-line` | tag,书签,标记 | `{"icon": "bookmark-2-line"}` |
+| <img src="../../icons/Business/bookmark-3-fill.svg" alt="bookmark-3-fill" width="24" height="24"> | `bookmark-3-fill` | tag,书签,标记,荣誉 | `{"icon": "bookmark-3-fill"}` |
+| <img src="../../icons/Business/bookmark-3-line.svg" alt="bookmark-3-line" width="24" height="24"> | `bookmark-3-line` | tag,书签,标记,荣誉 | `{"icon": "bookmark-3-line"}` |
+| <img src="../../icons/Business/briefcase-fill.svg" alt="briefcase-fill" width="24" height="24"> | `briefcase-fill` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-fill"}` |
+| <img src="../../icons/Business/briefcase-line.svg" alt="briefcase-line" width="24" height="24"> | `briefcase-line` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-line"}` |
+| <img src="../../icons/Business/briefcase-2-fill.svg" alt="briefcase-2-fill" width="24" height="24"> | `briefcase-2-fill` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-2-fill"}` |
+| <img src="../../icons/Business/briefcase-2-line.svg" alt="briefcase-2-line" width="24" height="24"> | `briefcase-2-line` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-2-line"}` |
+| <img src="../../icons/Business/briefcase-3-fill.svg" alt="briefcase-3-fill" width="24" height="24"> | `briefcase-3-fill` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-3-fill"}` |
+| <img src="../../icons/Business/briefcase-3-line.svg" alt="briefcase-3-line" width="24" height="24"> | `briefcase-3-line` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-3-line"}` |
+| <img src="../../icons/Business/briefcase-4-fill.svg" alt="briefcase-4-fill" width="24" height="24"> | `briefcase-4-fill` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-4-fill"}` |
+| <img src="../../icons/Business/briefcase-4-line.svg" alt="briefcase-4-line" width="24" height="24"> | `briefcase-4-line` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-4-line"}` |
+| <img src="../../icons/Business/briefcase-5-fill.svg" alt="briefcase-5-fill" width="24" height="24"> | `briefcase-5-fill` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-5-fill"}` |
+| <img src="../../icons/Business/briefcase-5-line.svg" alt="briefcase-5-line" width="24" height="24"> | `briefcase-5-line` | baggage,公文包,旅行箱,皮包,行李箱 | `{"icon": "briefcase-5-line"}` |
+| <img src="../../icons/Business/calculator-fill.svg" alt="calculator-fill" width="24" height="24"> | `calculator-fill` | arithmetic,calculation,compute,math,数学,算术,计算器,计算机 | `{"icon": "calculator-fill"}` |
+| <img src="../../icons/Business/calculator-line.svg" alt="calculator-line" width="24" height="24"> | `calculator-line` | arithmetic,calculation,compute,math,数学,算术,计算器,计算机 | `{"icon": "calculator-line"}` |
+| <img src="../../icons/Business/calendar-fill.svg" alt="calendar-fill" width="24" height="24"> | `calendar-fill` | agenda,date,month,plan,schedule,time,year,年份,日历,日期,日程,时间表,月份,计划 | `{"icon": "calendar-fill"}` |
+| <img src="../../icons/Business/calendar-line.svg" alt="calendar-line" width="24" height="24"> | `calendar-line` | agenda,date,month,plan,schedule,time,year,年份,日历,日期,日程,时间表,月份,计划 | `{"icon": "calendar-line"}` |
+| <img src="../../icons/Business/calendar-2-fill.svg" alt="calendar-2-fill" width="24" height="24"> | `calendar-2-fill` | agenda,date,month,plan,schedule,time,year,年份,日历,日期,日程,时间表,月份,计划 | `{"icon": "calendar-2-fill"}` |
+| <img src="../../icons/Business/calendar-2-line.svg" alt="calendar-2-line" width="24" height="24"> | `calendar-2-line` | agenda,date,month,plan,schedule,time,year,年份,日历,日期,日程,时间表,月份,计划 | `{"icon": "calendar-2-line"}` |
+| <img src="../../icons/Business/calendar-event-fill.svg" alt="calendar-event-fill" width="24" height="24"> | `calendar-event-fill` | agenda,appointment,date,meeting,plan,schedule,time,会议,日历,日期,日程,时间表,月份,计划,预约 | `{"icon": "calendar-event-fill"}` |
+| <img src="../../icons/Business/calendar-event-line.svg" alt="calendar-event-line" width="24" height="24"> | `calendar-event-line` | agenda,appointment,date,meeting,plan,schedule,time,会议,日历,日期,日程,时间表,月份,计划,预约 | `{"icon": "calendar-event-line"}` |
+| <img src="../../icons/Business/calendar-todo-fill.svg" alt="calendar-todo-fill" width="24" height="24"> | `calendar-todo-fill` | agenda,date,plan,reminder,schedule,task,time,任务,提醒,日历,日期,日程,时间表,月份,计划 | `{"icon": "calendar-todo-fill"}` |
+| <img src="../../icons/Business/calendar-todo-line.svg" alt="calendar-todo-line" width="24" height="24"> | `calendar-todo-line` | agenda,date,plan,reminder,schedule,task,time,任务,提醒,日历,日期,日程,时间表,月份,计划 | `{"icon": "calendar-todo-line"}` |
+| <img src="../../icons/Business/calendar-check-fill.svg" alt="calendar-check-fill" width="24" height="24"> | `calendar-check-fill` | agenda,attendance,check-in,date,done,ok,plan,punch,schedule,success,tick,time,verify,完成,对勾,成功,打卡,日历,日期,日程,时间表,月份,确认,签到,考勤,计划 | `{"icon": "calendar-check-fill"}` |
+| <img src="../../icons/Business/calendar-check-line.svg" alt="calendar-check-line" width="24" height="24"> | `calendar-check-line` | agenda,attendance,check-in,date,done,ok,plan,punch,schedule,success,tick,time,verify,完成,对勾,成功,打卡,日历,日期,日程,时间表,月份,确认,签到,考勤,计划 | `{"icon": "calendar-check-line"}` |
+| <img src="../../icons/Business/calendar-close-fill.svg" alt="calendar-close-fill" width="24" height="24"> | `calendar-close-fill` | agenda,cancel,cross,date,error,exit,plan,quit,schedule,time,停止,关闭,取消,日历,日期,日程,时间表,月份,计划,退出,错误 | `{"icon": "calendar-close-fill"}` |
+| <img src="../../icons/Business/calendar-close-line.svg" alt="calendar-close-line" width="24" height="24"> | `calendar-close-line` | agenda,cancel,cross,date,error,exit,plan,quit,schedule,time,停止,关闭,取消,日历,日期,日程,时间表,月份,计划,退出,错误 | `{"icon": "calendar-close-line"}` |
+| <img src="../../icons/Business/calendar-schedule-fill.svg" alt="calendar-schedule-fill" width="24" height="24"> | `calendar-schedule-fill` | agenda,date,plan,time,日历,日期,日程,时间表,月份,计划,预定,预约 | `{"icon": "calendar-schedule-fill"}` |
+| <img src="../../icons/Business/calendar-schedule-line.svg" alt="calendar-schedule-line" width="24" height="24"> | `calendar-schedule-line` | agenda,date,plan,time,日历,日期,日程,时间表,月份,计划,预定,预约 | `{"icon": "calendar-schedule-line"}` |
+| <img src="../../icons/Business/customer-service-fill.svg" alt="customer-service-fill" width="24" height="24"> | `customer-service-fill` | earphones,headphones,headset,help,support,售后,客服,帮助,支持,耳机,耳麦 | `{"icon": "customer-service-fill"}` |
+| <img src="../../icons/Business/customer-service-line.svg" alt="customer-service-line" width="24" height="24"> | `customer-service-line` | earphones,headphones,headset,help,support,售后,客服,帮助,支持,耳机,耳麦 | `{"icon": "customer-service-line"}` |
+| <img src="../../icons/Business/customer-service-2-fill.svg" alt="customer-service-2-fill" width="24" height="24"> | `customer-service-2-fill` | earphones,headphones,headset,help,smile,support,售后,客服,帮助,微笑,支持,耳机,耳麦 | `{"icon": "customer-service-2-fill"}` |
+| <img src="../../icons/Business/customer-service-2-line.svg" alt="customer-service-2-line" width="24" height="24"> | `customer-service-2-line` | earphones,headphones,headset,help,smile,support,售后,客服,帮助,微笑,支持,耳机,耳麦 | `{"icon": "customer-service-2-line"}` |
+| <img src="../../icons/Business/flag-fill.svg" alt="flag-fill" width="24" height="24"> | `flag-fill` | banner,mark,milestone,pin,国旗,旗子,旗帜,标记,里程碑 | `{"icon": "flag-fill"}` |
+| <img src="../../icons/Business/flag-line.svg" alt="flag-line" width="24" height="24"> | `flag-line` | banner,mark,milestone,pin,国旗,旗子,旗帜,标记,里程碑 | `{"icon": "flag-line"}` |
+| <img src="../../icons/Business/flag-off-fill.svg" alt="flag-off-fill" width="24" height="24"> | `flag-off-fill` | flag slash,旗帜关闭,标记取消 | `{"icon": "flag-off-fill"}` |
+| <img src="../../icons/Business/flag-off-line.svg" alt="flag-off-line" width="24" height="24"> | `flag-off-line` | flag slash,旗帜关闭,标记取消 | `{"icon": "flag-off-line"}` |
+| <img src="../../icons/Business/flag-2-fill.svg" alt="flag-2-fill" width="24" height="24"> | `flag-2-fill` | banner,mark,milestone,pin,国旗,旗子,旗帜,标记,里程碑 | `{"icon": "flag-2-fill"}` |
+| <img src="../../icons/Business/flag-2-line.svg" alt="flag-2-line" width="24" height="24"> | `flag-2-line` | banner,mark,milestone,pin,国旗,旗子,旗帜,标记,里程碑 | `{"icon": "flag-2-line"}` |
+| <img src="../../icons/Business/triangular-flag-fill.svg" alt="triangular-flag-fill" width="24" height="24"> | `triangular-flag-fill` | banner,mark,milestone,pin,国旗,旗子,旗帜,标记,里程碑 | `{"icon": "triangular-flag-fill"}` |
+| <img src="../../icons/Business/triangular-flag-line.svg" alt="triangular-flag-line" width="24" height="24"> | `triangular-flag-line` | banner,mark,milestone,pin,国旗,旗子,旗帜,标记,里程碑 | `{"icon": "triangular-flag-line"}` |
+| <img src="../../icons/Business/global-fill.svg" alt="global-fill" width="24" height="24"> | `global-fill` | earth,globe,international,internet,language,network,online,planet,search,union,world wide web,世界,互联网,全球,国际,地球,搜索,星球,线上,联合,语言 | `{"icon": "global-fill"}` |
+| <img src="../../icons/Business/global-line.svg" alt="global-line" width="24" height="24"> | `global-line` | earth,globe,international,internet,language,network,online,planet,search,union,world wide web,世界,互联网,全球,国际,地球,搜索,星球,线上,联合,语言 | `{"icon": "global-line"}` |
+| <img src="../../icons/Business/global-off-fill.svg" alt="global-off-fill" width="24" height="24"> | `global-off-fill` | earth,globe,international,internet,language,network,online,planet,search,union,world wide web,世界,互联网,全球,国际,地球,搜索,星球,线上,联合,语言 | `{"icon": "global-off-fill"}` |
+| <img src="../../icons/Business/global-off-line.svg" alt="global-off-line" width="24" height="24"> | `global-off-line` | earth,globe,international,internet,language,network,online,planet,search,union,world wide web,世界,互联网,全球,国际,地球,搜索,星球,线上,联合,语言 | `{"icon": "global-off-line"}` |
+| <img src="../../icons/Business/honour-fill.svg" alt="honour-fill" width="24" height="24"> | `honour-fill` | achievement,award,glory,honor,recognition,军衔,成就,荣耀,荣誉,认可,锦旗 | `{"icon": "honour-fill"}` |
+| <img src="../../icons/Business/honour-line.svg" alt="honour-line" width="24" height="24"> | `honour-line` | achievement,award,glory,honor,recognition,军衔,成就,荣耀,荣誉,认可,锦旗 | `{"icon": "honour-line"}` |
+| <img src="../../icons/Business/links-fill.svg" alt="links-fill" width="24" height="24"> | `links-fill` | address,chain,connection,hyperlink,url,地址,联系,超链接,连接 | `{"icon": "links-fill"}` |
+| <img src="../../icons/Business/links-line.svg" alt="links-line" width="24" height="24"> | `links-line` | address,chain,connection,hyperlink,url,地址,联系,超链接,连接 | `{"icon": "links-line"}` |
+| <img src="../../icons/Business/printer-fill.svg" alt="printer-fill" width="24" height="24"> | `printer-fill` | document,output,paper,print,打印机,文档,纸张 | `{"icon": "printer-fill"}` |
+| <img src="../../icons/Business/printer-line.svg" alt="printer-line" width="24" height="24"> | `printer-line` | document,output,paper,print,打印机,文档,纸张 | `{"icon": "printer-line"}` |
+| <img src="../../icons/Business/printer-cloud-fill.svg" alt="printer-cloud-fill" width="24" height="24"> | `printer-cloud-fill` | backup,cloud printing,network,online,remote,server,storage,云打印,云端,备份,存储,打印机,服务器,网络,远程 | `{"icon": "printer-cloud-fill"}` |
+| <img src="../../icons/Business/printer-cloud-line.svg" alt="printer-cloud-line" width="24" height="24"> | `printer-cloud-line` | backup,cloud printing,network,online,remote,server,storage,云打印,云端,备份,存储,打印机,服务器,网络,远程 | `{"icon": "printer-cloud-line"}` |
+| <img src="../../icons/Business/record-mail-fill.svg" alt="record-mail-fill" width="24" height="24"> | `record-mail-fill` | email,envelope,inbox,message,post,recording,tape,voice mail,录制,录音,消息,留言,磁带,语音信箱,通信,邮件,邮箱 | `{"icon": "record-mail-fill"}` |
+| <img src="../../icons/Business/record-mail-line.svg" alt="record-mail-line" width="24" height="24"> | `record-mail-line` | email,envelope,inbox,message,post,recording,tape,voice mail,录制,录音,消息,留言,磁带,语音信箱,通信,邮件,邮箱 | `{"icon": "record-mail-line"}` |
+| <img src="../../icons/Business/reply-fill.svg" alt="reply-fill" width="24" height="24"> | `reply-fill` | answer,forward,response,响应,回复全部,回复所有,答复 | `{"icon": "reply-fill"}` |
+| <img src="../../icons/Business/reply-line.svg" alt="reply-line" width="24" height="24"> | `reply-line` | answer,forward,response,响应,回复全部,回复所有,答复 | `{"icon": "reply-line"}` |
+| <img src="../../icons/Business/reply-all-fill.svg" alt="reply-all-fill" width="24" height="24"> | `reply-all-fill` | answer,broadcast,forward,response,回复,广播,留言,答复,转发 | `{"icon": "reply-all-fill"}` |
+| <img src="../../icons/Business/reply-all-line.svg" alt="reply-all-line" width="24" height="24"> | `reply-all-line` | answer,broadcast,forward,response,回复,广播,留言,答复,转发 | `{"icon": "reply-all-line"}` |
+| <img src="../../icons/Business/send-plane-fill.svg" alt="send-plane-fill" width="24" height="24"> | `send-plane-fill` | airplane,delivery,message,发送,投递,消息,纸飞机 | `{"icon": "send-plane-fill"}` |
+| <img src="../../icons/Business/send-plane-line.svg" alt="send-plane-line" width="24" height="24"> | `send-plane-line` | airplane,delivery,message,发送,投递,消息,纸飞机 | `{"icon": "send-plane-line"}` |
+| <img src="../../icons/Business/send-plane-2-fill.svg" alt="send-plane-2-fill" width="24" height="24"> | `send-plane-2-fill` | airplane,delivery,message,发送,投递,消息,纸飞机 | `{"icon": "send-plane-2-fill"}` |
+| <img src="../../icons/Business/send-plane-2-line.svg" alt="send-plane-2-line" width="24" height="24"> | `send-plane-2-line` | airplane,delivery,message,发送,投递,消息,纸飞机 | `{"icon": "send-plane-2-line"}` |
+| <img src="../../icons/Business/send-ins-fill.svg" alt="send-ins-fill" width="24" height="24"> | `send-ins-fill` | airplane,delivery,message,发送,投递,消息,纸飞机 | `{"icon": "send-ins-fill"}` |
+| <img src="../../icons/Business/send-ins-line.svg" alt="send-ins-line" width="24" height="24"> | `send-ins-line` | airplane,delivery,message,发送,投递,消息,纸飞机 | `{"icon": "send-ins-line"}` |
+| <img src="../../icons/Business/projector-fill.svg" alt="projector-fill" width="24" height="24"> | `projector-fill` | meeting,projection,会议室,投影仪 | `{"icon": "projector-fill"}` |
+| <img src="../../icons/Business/projector-line.svg" alt="projector-line" width="24" height="24"> | `projector-line` | meeting,projection,会议室,投影仪 | `{"icon": "projector-line"}` |
+| <img src="../../icons/Business/projector-2-fill.svg" alt="projector-2-fill" width="24" height="24"> | `projector-2-fill` | meeting,projection,会议室,投影仪,极米 | `{"icon": "projector-2-fill"}` |
+| <img src="../../icons/Business/projector-2-line.svg" alt="projector-2-line" width="24" height="24"> | `projector-2-line` | meeting,projection,会议室,投影仪,极米 | `{"icon": "projector-2-line"}` |
+| <img src="../../icons/Business/slideshow-fill.svg" alt="slideshow-fill" width="24" height="24"> | `slideshow-fill` | PPT,keynote,meeting,presentation,会议室,幻灯片,投影,放映,演示,演讲 | `{"icon": "slideshow-fill"}` |
+| <img src="../../icons/Business/slideshow-line.svg" alt="slideshow-line" width="24" height="24"> | `slideshow-line` | PPT,keynote,meeting,presentation,会议室,幻灯片,投影,放映,演示,演讲 | `{"icon": "slideshow-line"}` |
+| <img src="../../icons/Business/slideshow-2-fill.svg" alt="slideshow-2-fill" width="24" height="24"> | `slideshow-2-fill` | meeting,presentation,会议室,幻灯片,投影,放映,演示,演讲 | `{"icon": "slideshow-2-fill"}` |
+| <img src="../../icons/Business/slideshow-2-line.svg" alt="slideshow-2-line" width="24" height="24"> | `slideshow-2-line` | meeting,presentation,会议室,幻灯片,投影,放映,演示,演讲 | `{"icon": "slideshow-2-line"}` |
+| <img src="../../icons/Business/slideshow-3-fill.svg" alt="slideshow-3-fill" width="24" height="24"> | `slideshow-3-fill` | meeting,presentation,会议室,幻灯片,投影,放映,演示,演讲,视频会议 | `{"icon": "slideshow-3-fill"}` |
+| <img src="../../icons/Business/slideshow-3-line.svg" alt="slideshow-3-line" width="24" height="24"> | `slideshow-3-line` | meeting,presentation,会议室,幻灯片,投影,放映,演示,演讲,视频会议 | `{"icon": "slideshow-3-line"}` |
+| <img src="../../icons/Business/slideshow-4-fill.svg" alt="slideshow-4-fill" width="24" height="24"> | `slideshow-4-fill` | meeting,presentation,会议室,可视对讲,幻灯片,投影,放映,演示,演讲 | `{"icon": "slideshow-4-fill"}` |
+| <img src="../../icons/Business/slideshow-4-line.svg" alt="slideshow-4-line" width="24" height="24"> | `slideshow-4-line` | meeting,presentation,会议室,可视对讲,幻灯片,投影,放映,演示,演讲 | `{"icon": "slideshow-4-line"}` |
+| <img src="../../icons/Business/presentation-fill.svg" alt="presentation-fill" width="24" height="24"> | `presentation-fill` | teaching,training,培训,演讲,老师 | `{"icon": "presentation-fill"}` |
+| <img src="../../icons/Business/presentation-line.svg" alt="presentation-line" width="24" height="24"> | `presentation-line` | teaching,training,培训,演讲,老师 | `{"icon": "presentation-line"}` |
+| <img src="../../icons/Business/window-fill.svg" alt="window-fill" width="24" height="24"> | `window-fill` | browser,program,web,浏览器,程序,窗口,网站 | `{"icon": "window-fill"}` |
+| <img src="../../icons/Business/window-line.svg" alt="window-line" width="24" height="24"> | `window-line` | browser,program,web,浏览器,程序,窗口,网站 | `{"icon": "window-line"}` |
+| <img src="../../icons/Business/window-2-fill.svg" alt="window-2-fill" width="24" height="24"> | `window-2-fill` | browser,program,web,浏览器,程序,窗口,网站 | `{"icon": "window-2-fill"}` |
+| <img src="../../icons/Business/window-2-line.svg" alt="window-2-line" width="24" height="24"> | `window-2-line` | browser,program,web,浏览器,程序,窗口,网站 | `{"icon": "window-2-line"}` |
+| <img src="../../icons/Business/stack-fill.svg" alt="stack-fill" width="24" height="24"> | `stack-fill` | layers,叠加,图层,堆栈 | `{"icon": "stack-fill"}` |
+| <img src="../../icons/Business/stack-line.svg" alt="stack-line" width="24" height="24"> | `stack-line` | layers,叠加,图层,堆栈 | `{"icon": "stack-line"}` |
+| <img src="../../icons/Business/shake-hands-fill.svg" alt="shake-hands-fill" width="24" height="24"> | `shake-hands-fill` | cooperation,合作,握手 | `{"icon": "shake-hands-fill"}` |
+| <img src="../../icons/Business/shake-hands-line.svg" alt="shake-hands-line" width="24" height="24"> | `shake-hands-line` | cooperation,合作,握手 | `{"icon": "shake-hands-line"}` |
+| <img src="../../icons/Business/service-fill.svg" alt="service-fill" width="24" height="24"> | `service-fill` | client,cooperation,handshake,heart,合作,心,握手,服务 | `{"icon": "service-fill"}` |
+| <img src="../../icons/Business/service-line.svg" alt="service-line" width="24" height="24"> | `service-line` | client,cooperation,handshake,heart,合作,心,握手,服务 | `{"icon": "service-line"}` |
+| <img src="../../icons/Business/registered-fill.svg" alt="registered-fill" width="24" height="24"> | `registered-fill` | brand,registration,trademark,品牌,商标,注册 | `{"icon": "registered-fill"}` |
+| <img src="../../icons/Business/registered-line.svg" alt="registered-line" width="24" height="24"> | `registered-line` | brand,registration,trademark,品牌,商标,注册 | `{"icon": "registered-line"}` |
+| <img src="../../icons/Business/trademark-fill.svg" alt="trademark-fill" width="24" height="24"> | `trademark-fill` | brand,intellectual property,registration,品牌,商标,注册,知识产权 | `{"icon": "trademark-fill"}` |
+| <img src="../../icons/Business/trademark-line.svg" alt="trademark-line" width="24" height="24"> | `trademark-line` | brand,intellectual property,registration,品牌,商标,注册,知识产权 | `{"icon": "trademark-line"}` |
+| <img src="../../icons/Business/advertisement-fill.svg" alt="advertisement-fill" width="24" height="24"> | `advertisement-fill` | ad,campaign,marketing,promotion,广告,推广,活动,营销 | `{"icon": "advertisement-fill"}` |
+| <img src="../../icons/Business/advertisement-line.svg" alt="advertisement-line" width="24" height="24"> | `advertisement-line` | ad,campaign,marketing,promotion,广告,推广,活动,营销 | `{"icon": "advertisement-line"}` |
+| <img src="../../icons/Business/copyleft-fill.svg" alt="copyleft-fill" width="24" height="24"> | `copyleft-fill` | free software,license,open source,开源,自由软件,著佐权,许可证 | `{"icon": "copyleft-fill"}` |
+| <img src="../../icons/Business/copyleft-line.svg" alt="copyleft-line" width="24" height="24"> | `copyleft-line` | free software,license,open source,开源,自由软件,著佐权,许可证 | `{"icon": "copyleft-line"}` |
+| <img src="../../icons/Business/copyright-fill.svg" alt="copyright-fill" width="24" height="24"> | `copyright-fill` | intellectual property,license,版权,知识产权,许可证 | `{"icon": "copyright-fill"}` |
+| <img src="../../icons/Business/copyright-line.svg" alt="copyright-line" width="24" height="24"> | `copyright-line` | intellectual property,license,版权,知识产权,许可证 | `{"icon": "copyright-line"}` |
+| <img src="../../icons/Business/creative-commons-fill.svg" alt="creative-commons-fill" width="24" height="24"> | `creative-commons-fill` | cc,license,open source,开源,知识共享,许可证 | `{"icon": "creative-commons-fill"}` |
+| <img src="../../icons/Business/creative-commons-line.svg" alt="creative-commons-line" width="24" height="24"> | `creative-commons-line` | cc,license,open source,开源,知识共享,许可证 | `{"icon": "creative-commons-line"}` |
+| <img src="../../icons/Business/creative-commons-by-fill.svg" alt="creative-commons-by-fill" width="24" height="24"> | `creative-commons-by-fill` | attribution,copyright,版权,知识共享,署名 | `{"icon": "creative-commons-by-fill"}` |
+| <img src="../../icons/Business/creative-commons-by-line.svg" alt="creative-commons-by-line" width="24" height="24"> | `creative-commons-by-line` | attribution,copyright,版权,知识共享,署名 | `{"icon": "creative-commons-by-line"}` |
+| <img src="../../icons/Business/creative-commons-nc-fill.svg" alt="creative-commons-nc-fill" width="24" height="24"> | `creative-commons-nc-fill` | copyright,noncommercial,版权,知识共享,非商业用途 | `{"icon": "creative-commons-nc-fill"}` |
+| <img src="../../icons/Business/creative-commons-nc-line.svg" alt="creative-commons-nc-line" width="24" height="24"> | `creative-commons-nc-line` | copyright,noncommercial,版权,知识共享,非商业用途 | `{"icon": "creative-commons-nc-line"}` |
+| <img src="../../icons/Business/creative-commons-nd-fill.svg" alt="creative-commons-nd-fill" width="24" height="24"> | `creative-commons-nd-fill` | copyright,no derivative works,版权,知识共享,禁止演绎 | `{"icon": "creative-commons-nd-fill"}` |
+| <img src="../../icons/Business/creative-commons-nd-line.svg" alt="creative-commons-nd-line" width="24" height="24"> | `creative-commons-nd-line` | copyright,no derivative works,版权,知识共享,禁止演绎 | `{"icon": "creative-commons-nd-line"}` |
+| <img src="../../icons/Business/creative-commons-sa-fill.svg" alt="creative-commons-sa-fill" width="24" height="24"> | `creative-commons-sa-fill` | copyright,share alike,版权,相同方式共享,知识共享 | `{"icon": "creative-commons-sa-fill"}` |
+| <img src="../../icons/Business/creative-commons-sa-line.svg" alt="creative-commons-sa-line" width="24" height="24"> | `creative-commons-sa-line` | copyright,share alike,版权,相同方式共享,知识共享 | `{"icon": "creative-commons-sa-line"}` |
+| <img src="../../icons/Business/creative-commons-zero-fill.svg" alt="creative-commons-zero-fill" width="24" height="24"> | `creative-commons-zero-fill` | cc0,copyright,版权,知识共享 | `{"icon": "creative-commons-zero-fill"}` |
+| <img src="../../icons/Business/creative-commons-zero-line.svg" alt="creative-commons-zero-line" width="24" height="24"> | `creative-commons-zero-line` | cc0,copyright,版权,知识共享 | `{"icon": "creative-commons-zero-line"}` |
+| <img src="../../icons/Business/megaphone-fill.svg" alt="megaphone-fill" width="24" height="24"> | `megaphone-fill` | bullhorn,campaign,commercial,loudspeaker,promote,喇叭,宣传,广告,扩音器,推广,活动 | `{"icon": "megaphone-fill"}` |
+| <img src="../../icons/Business/megaphone-line.svg" alt="megaphone-line" width="24" height="24"> | `megaphone-line` | bullhorn,campaign,commercial,loudspeaker,promote,喇叭,宣传,广告,扩音器,推广,活动 | `{"icon": "megaphone-line"}` |
+| <img src="../../icons/Business/megaphone-2-fill.svg" alt="megaphone-2-fill" width="24" height="24"> | `megaphone-2-fill` | bullhorn,campaign,commercial,loudspeaker,promote,喇叭,宣传,广告,扩音器,推广,活动 | `{"icon": "megaphone-2-fill"}` |
+| <img src="../../icons/Business/megaphone-2-line.svg" alt="megaphone-2-line" width="24" height="24"> | `megaphone-2-line` | bullhorn,campaign,commercial,loudspeaker,promote,喇叭,宣传,广告,扩音器,推广,活动 | `{"icon": "megaphone-2-line"}` |
+| <img src="../../icons/Business/pass-valid-fill.svg" alt="pass-valid-fill" width="24" height="24"> | `pass-valid-fill` | document,identification,passport,护照有效,文件,身份证,身份识别 | `{"icon": "pass-valid-fill"}` |
+| <img src="../../icons/Business/pass-valid-line.svg" alt="pass-valid-line" width="24" height="24"> | `pass-valid-line` | document,identification,passport,护照有效,文件,身份证,身份识别 | `{"icon": "pass-valid-line"}` |
+| <img src="../../icons/Business/pass-pending-fill.svg" alt="pass-pending-fill" width="24" height="24"> | `pass-pending-fill` | document,id,passport,waiting,审核中,护照等待,文件,身份证 | `{"icon": "pass-pending-fill"}` |
+| <img src="../../icons/Business/pass-pending-line.svg" alt="pass-pending-line" width="24" height="24"> | `pass-pending-line` | document,id,passport,waiting,审核中,护照等待,文件,身份证 | `{"icon": "pass-pending-line"}` |
+| <img src="../../icons/Business/pass-expired-fill.svg" alt="pass-expired-fill" width="24" height="24"> | `pass-expired-fill` | document,invalid,passport,护照过期,文件,无效,身份证 | `{"icon": "pass-expired-fill"}` |
+| <img src="../../icons/Business/pass-expired-line.svg" alt="pass-expired-line" width="24" height="24"> | `pass-expired-line` | document,invalid,passport,护照过期,文件,无效,身份证 | `{"icon": "pass-expired-line"}` |
+| <img src="../../icons/Business/id-card-fill.svg" alt="id-card-fill" width="24" height="24"> | `id-card-fill` | badge,identification,identity,license,passport,profile,user,护照,用户,许可证,证件,身份证 | `{"icon": "id-card-fill"}` |
+| <img src="../../icons/Business/id-card-line.svg" alt="id-card-line" width="24" height="24"> | `id-card-line` | badge,identification,identity,license,passport,profile,user,护照,用户,许可证,证件,身份证 | `{"icon": "id-card-line"}` |
+| <img src="../../icons/Business/info-card-fill.svg" alt="info-card-fill" width="24" height="24"> | `info-card-fill` | about,badge,detail,help,hint,identity,license,ocard,passport,user,关于,帮助,护照,提示,用户,许可证,详情,身份证 | `{"icon": "info-card-fill"}` |
+| <img src="../../icons/Business/info-card-line.svg" alt="info-card-line" width="24" height="24"> | `info-card-line` | about,badge,detail,help,hint,identity,license,ocard,passport,user,关于,帮助,护照,提示,用户,许可证,详情,身份证 | `{"icon": "info-card-line"}` |
+| <img src="../../icons/Business/seo-fill.svg" alt="seo-fill" width="24" height="24"> | `seo-fill` | marketing,ranking,search engine optimization,排名,搜索引擎优化,营销 | `{"icon": "seo-fill"}` |
+| <img src="../../icons/Business/seo-line.svg" alt="seo-line" width="24" height="24"> | `seo-line` | marketing,ranking,search engine optimization,排名,搜索引擎优化,营销 | `{"icon": "seo-line"}` |
