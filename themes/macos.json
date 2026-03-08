@@ -1,0 +1,57 @@
+{
+  "name": "macos",
+  "font_family": "SFMono-Regular, Menlo, Consolas, Monaco, monospace",
+  "font_size": 18.0,
+  "line_height": 28.0,
+  "terminal": {
+    "background": "#232744",
+    "foreground": "#f5e9c9",
+    "selection": "#3f4a78",
+    "ansi_palette": [
+      "#232744",
+      "#ff6b6b",
+      "#7bd88f",
+      "#ffd166",
+      "#5dade2",
+      "#c792ea",
+      "#5ccfe6",
+      "#f8f8f2",
+      "#586e75",
+      "#ff8c8c",
+      "#8ce99a",
+      "#ffe08a",
+      "#87c4ff",
+      "#ddbdfc",
+      "#86e1fc",
+      "#ffffff"
+    ]
+  },
+  "chrome": {
+    "kind": "macos",
+    "background": "#232744",
+    "border_color": "#232744",
+    "title_color": "#cfd3e6",
+    "subtitle_color": "#7ea7d8",
+    "radius": 26.0,
+    "padding": 18.0,
+    "title_bar_height": 50.0
+  },
+  "prompt": {
+    "font_family": "SFMono-Regular, Menlo, Consolas, Monaco, monospace",
+    "font_size": 17.0,
+    "row_padding_x": 12.0,
+    "segment_height": 42.0,
+    "text_color": "#f5e9c9",
+    "edge_fill": "#4d9ea5",
+    "separator_fill": "#7ab39d",
+    "leading_symbol": "",
+    "trailing_symbol": "❯",
+    "palette": [
+      "#d96d0f",
+      "#d7a126",
+      "#78a85e",
+      "#4c8f97",
+      "#4a7d8d"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "linux",
+  "font_family": "Ubuntu Mono, DejaVu Sans Mono, monospace",
+  "font_size": 18.0,
+  "line_height": 28.0,
+  "terminal": {
+    "background": "#300021",
+    "foreground": "#f8f8f2",
+    "selection": "#5a0b3b",
+    "ansi_palette": [
+      "#300021",
+      "#ef2929",
+      "#8ae234",
+      "#fce94f",
+      "#729fcf",
+      "#ad7fa8",
+      "#34e2e2",
+      "#eeeeec",
+      "#555753",
+      "#ef2929",
+      "#8ae234",
+      "#fce94f",
+      "#729fcf",
+      "#ad7fa8",
+      "#34e2e2",
+      "#ffffff"
+    ]
+  },
+  "chrome": {
+    "kind": "linux",
+    "background": "#3c3b37",
+    "border_color": "#5a5a55",
+    "title_color": "#d7d7d7",
+    "subtitle_color": "#bcbcbc",
+    "radius": 10.0,
+    "padding": 12.0,
+    "title_bar_height": 36.0
+  },
+  "prompt": {
+    "font_family": "Ubuntu Mono, DejaVu Sans Mono, monospace",
+    "font_size": 17.0,
+    "row_padding_x": 10.0,
+    "segment_height": 38.0,
+    "text_color": "#f8f8f2",
+    "edge_fill": "#5f8c84",
+    "separator_fill": "#7aa39d",
+    "leading_symbol": "🐧",
+    "trailing_symbol": "$",
+    "palette": [
+      "#5b1a42",
+      "#7b4f38",
+      "#50796b",
+      "#5f8c84"
+    ]
+  }
+}

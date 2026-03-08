@@ -1,0 +1,1244 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="572" height="254" viewBox="0 0 572 254" role="img" aria-label="Animated terminal recording" data-theme="macos">
+<defs><style>
+        .terminal-text {
+            font-family: SFMono-Regular, Menlo, Consolas, Monaco, monospace;
+            font-size: 18px;
+            dominant-baseline: hanging;
+            white-space: pre;
+        }
+        .prompt-text {
+            font-family: SFMono-Regular, Menlo, Consolas, Monaco, monospace;
+            font-size: 17px;
+            dominant-baseline: middle;
+        }
+        .frame {
+            opacity: 0;
+            animation-duration: 13.367s;
+            animation-timing-function: steps(1, end);
+            animation-iteration-count: infinite;
+        }
+        </style>
+</defs><rect x="0" y="0" width="571.68" height="254.00" rx="26.00" fill="#232744" stroke="#232744"/>
+<text x="285.84" y="43.00" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#cfd3e6" dominant-baseline="middle" text-anchor="middle">Testing</text>
+<circle cx="36.00" cy="43.00" r="7" fill="#ff5f57"/>
+<circle cx="58.00" cy="43.00" r="7" fill="#febc2e"/>
+<circle cx="80.00" cy="43.00" r="7" fill="#28c840"/>
+<line x1="118.00" y1="43.00" x2="453.68" y2="43.00" stroke="#7ea7d8" stroke-width="1.5" opacity="0.55"/>
+<rect x="18.00" y="68.00" width="535.68" height="168.00" fill="#232744"/><g class="frame" style="animation-name: frame-0;">
+<style>@keyframes frame-0 { 0%, 6.748% { opacity: 0; } 6.748%, 100% { opacity: 1; } }</style>
+</g><g class="frame" style="animation-name: frame-1;">
+<style>@keyframes frame-1 { 0%, 7.122% { opacity: 0; } 7.122%, 100% { opacity: 1; } }</style>
+</g><g class="frame" style="animation-name: frame-2;">
+<style>@keyframes frame-2 { 0%, 7.496% { opacity: 0; } 7.496%, 100% { opacity: 1; } }</style>
+</g><g class="frame" style="animation-name: frame-3;">
+<style>@keyframes frame-3 { 0%, 7.870% { opacity: 0; } 7.870%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+</g><g class="frame" style="animation-name: frame-4;">
+<style>@keyframes frame-4 { 0%, 8.244% { opacity: 0; } 8.244%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+</g><g class="frame" style="animation-name: frame-5;">
+<style>@keyframes frame-5 { 0%, 8.618% { opacity: 0; } 8.618%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+</g><g class="frame" style="animation-name: frame-6;">
+<style>@keyframes frame-6 { 0%, 37.548% { opacity: 0; } 37.548%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+</g><g class="frame" style="animation-name: frame-7;">
+<style>@keyframes frame-7 { 0%, 39.007% { opacity: 0; } 39.007%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+</g><g class="frame" style="animation-name: frame-8;">
+<style>@keyframes frame-8 { 0%, 39.964% { opacity: 0; } 39.964%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+</g><g class="frame" style="animation-name: frame-9;">
+<style>@keyframes frame-9 { 0%, 41.146% { opacity: 0; } 41.146%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-10;">
+<style>@keyframes frame-10 { 0%, 42.164% { opacity: 0; } 42.164%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-11;">
+<style>@keyframes frame-11 { 0%, 43.862% { opacity: 0; } 43.862%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-12;">
+<style>@keyframes frame-12 { 0%, 48.597% { opacity: 0; } 48.597%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+</g><g class="frame" style="animation-name: frame-13;">
+<style>@keyframes frame-13 { 0%, 49.645% { opacity: 0; } 49.645%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+</g><g class="frame" style="animation-name: frame-14;">
+<style>@keyframes frame-14 { 0%, 51.545% { opacity: 0; } 51.545%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+</g><g class="frame" style="animation-name: frame-15;">
+<style>@keyframes frame-15 { 0%, 52.742% { opacity: 0; } 52.742%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+</g><g class="frame" style="animation-name: frame-16;">
+<style>@keyframes frame-16 { 0%, 54.350% { opacity: 0; } 54.350%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-17;">
+<style>@keyframes frame-17 { 0%, 57.545% { opacity: 0; } 57.545%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-18;">
+<style>@keyframes frame-18 { 0%, 62.161% { opacity: 0; } 62.161%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-19;">
+<style>@keyframes frame-19 { 0%, 62.535% { opacity: 0; } 62.535%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-20;">
+<style>@keyframes frame-20 { 0%, 62.909% { opacity: 0; } 62.909%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-21;">
+<style>@keyframes frame-21 { 0%, 63.283% { opacity: 0; } 63.283%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-22;">
+<style>@keyframes frame-22 { 0%, 63.657% { opacity: 0; } 63.657%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-23;">
+<style>@keyframes frame-23 { 0%, 64.031% { opacity: 0; } 64.031%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-24;">
+<style>@keyframes frame-24 { 0%, 64.405% { opacity: 0; } 64.405%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-25;">
+<style>@keyframes frame-25 { 0%, 64.779% { opacity: 0; } 64.779%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+</g><g class="frame" style="animation-name: frame-26;">
+<style>@keyframes frame-26 { 0%, 65.153% { opacity: 0; } 65.153%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+</g><g class="frame" style="animation-name: frame-27;">
+<style>@keyframes frame-27 { 0%, 65.527% { opacity: 0; } 65.527%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+</g><g class="frame" style="animation-name: frame-28;">
+<style>@keyframes frame-28 { 0%, 92.309% { opacity: 0; } 92.309%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="184.00" fill="#f5e9c9">e</text>
+</g><g class="frame" style="animation-name: frame-29;">
+<style>@keyframes frame-29 { 0%, 93.693% { opacity: 0; } 93.693%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="184.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="184.00" fill="#f5e9c9">x</text>
+</g><g class="frame" style="animation-name: frame-30;">
+<style>@keyframes frame-30 { 0%, 94.524% { opacity: 0; } 94.524%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="184.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="184.00" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="54.40" y="184.00" fill="#f5e9c9">i</text>
+</g><g class="frame" style="animation-name: frame-31;">
+<style>@keyframes frame-31 { 0%, 95.706% { opacity: 0; } 95.706%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="184.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="184.00" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="54.40" y="184.00" fill="#f5e9c9">i</text>
+<text class="terminal-text" x="62.50" y="184.00" fill="#f5e9c9">t</text>
+</g><g class="frame" style="animation-name: frame-32;">
+<style>@keyframes frame-32 { 0%, 97.756% { opacity: 0; } 97.756%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="184.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="184.00" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="54.40" y="184.00" fill="#f5e9c9">i</text>
+<text class="terminal-text" x="62.50" y="184.00" fill="#f5e9c9">t</text>
+</g><g class="frame" style="animation-name: frame-33;">
+<style>@keyframes frame-33 { 0%, 98.130% { opacity: 0; } 98.130%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="184.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="184.00" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="54.40" y="184.00" fill="#f5e9c9">i</text>
+<text class="terminal-text" x="62.50" y="184.00" fill="#f5e9c9">t</text>
+</g><g class="frame" style="animation-name: frame-34;">
+<style>@keyframes frame-34 { 0%, 98.504% { opacity: 0; } 98.504%, 100% { opacity: 1; } }</style>
+<path d="M 34.00 70.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="82.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="82.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,70.00 244.10,82.00 220.10,94.00" fill="#D79921"/>
+<polygon points="234.10,70.00 252.10,82.00 234.10,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="70.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="82.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,70.00 308.64,82.00 284.64,94.00" fill="#689D6A"/>
+<polygon points="298.64,70.00 316.64,82.00 298.64,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="70.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,70.00 353.60,82.00 329.60,94.00" fill="#458588"/>
+<polygon points="343.60,70.00 361.60,82.00 343.60,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="70.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,70.00 398.56,82.00 374.56,94.00" fill="#83A598"/>
+<polygon points="388.56,70.00 406.56,82.00 388.56,94.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="70.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,70.00 443.52,82.00 419.52,94.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="82.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="100.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="100.00" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="54.40" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="62.50" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="78.70" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="86.80" y="100.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="94.90" y="100.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="103.00" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="111.10" y="100.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="119.20" y="100.00" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="127.30" y="100.00" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="22.00" y="128.00" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="30.10" y="128.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="38.20" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="46.30" y="128.00" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="54.40" y="128.00" fill="#f5e9c9">o</text>
+<path d="M 34.00 154.00 h 192.10 l 16 12.00 l -16 12.00 h -18 a 12 12 0 0 1 -12 -12 a 12 12 0 0 1 12 -12 z" fill="#D65D0E"/>
+<text class="prompt-text" x="42.00" y="166.00" fill="#f5e9c9"></text>
+<text class="prompt-text" x="62.00" y="166.00" fill="#f5e9c9">russ.mckendrick</text>
+<polygon points="220.10,154.00 244.10,166.00 220.10,178.00" fill="#D79921"/>
+<polygon points="234.10,154.00 252.10,166.00 234.10,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="244.10" y="154.00" width="46.54" height="24.00" fill="#D79921"/>
+<text class="prompt-text" x="274.10" y="166.00" fill="#f5e9c9">~</text>
+<polygon points="284.64,154.00 308.64,166.00 284.64,178.00" fill="#689D6A"/>
+<polygon points="298.64,154.00 316.64,166.00 298.64,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="308.64" y="154.00" width="26.96" height="24.00" fill="#689D6A"/>
+<polygon points="329.60,154.00 353.60,166.00 329.60,178.00" fill="#458588"/>
+<polygon points="343.60,154.00 361.60,166.00 343.60,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="353.60" y="154.00" width="26.96" height="24.00" fill="#458588"/>
+<polygon points="374.56,154.00 398.56,166.00 374.56,178.00" fill="#83A598"/>
+<polygon points="388.56,154.00 406.56,166.00 388.56,178.00" fill="#4d9ea5" opacity="0.95"/>
+<rect x="398.56" y="154.00" width="26.96" height="24.00" fill="#83A598"/>
+<polygon points="419.52,154.00 443.52,166.00 419.52,178.00" fill="#7ab39d"/>
+<text class="prompt-text" x="439.52" y="166.00" fill="#39ff14">❯</text>
+<text class="terminal-text" x="22.00" y="184.00" fill="#41FF00" font-weight="700"></text>
+<text class="terminal-text" x="38.20" y="184.00" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="46.30" y="184.00" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="54.40" y="184.00" fill="#f5e9c9">i</text>
+<text class="terminal-text" x="62.50" y="184.00" fill="#f5e9c9">t</text>
+</g></svg>

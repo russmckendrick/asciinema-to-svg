@@ -1,0 +1,56 @@
+{
+  "name": "powershell",
+  "font_family": "Cascadia Code, Consolas, monospace",
+  "font_size": 18.0,
+  "line_height": 28.0,
+  "terminal": {
+    "background": "#012456",
+    "foreground": "#f7f7f7",
+    "selection": "#174a92",
+    "ansi_palette": [
+      "#012456",
+      "#ff6b6b",
+      "#7bd88f",
+      "#ffe66d",
+      "#5dade2",
+      "#c792ea",
+      "#5ccfe6",
+      "#f7f7f7",
+      "#6d88b2",
+      "#ff8787",
+      "#8ce99a",
+      "#fff0a6",
+      "#74c0fc",
+      "#d0bfff",
+      "#8ceafc",
+      "#ffffff"
+    ]
+  },
+  "chrome": {
+    "kind": "powershell",
+    "background": "#d9d9d9",
+    "border_color": "#c0c0c0",
+    "title_color": "#6d6d6d",
+    "subtitle_color": "#606060",
+    "radius": 0.0,
+    "padding": 0.0,
+    "title_bar_height": 32.0
+  },
+  "prompt": {
+    "font_family": "Cascadia Code, Consolas, monospace",
+    "font_size": 17.0,
+    "row_padding_x": 10.0,
+    "segment_height": 38.0,
+    "text_color": "#f7f7f7",
+    "edge_fill": "#174a92",
+    "separator_fill": "#2f71c2",
+    "leading_symbol": "⊞",
+    "trailing_symbol": ">",
+    "palette": [
+      "#0c5ea8",
+      "#1a7bc1",
+      "#3887d5",
+      "#4d9ae7"
+    ]
+  }
+}
