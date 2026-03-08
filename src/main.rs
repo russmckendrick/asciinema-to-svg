@@ -1,5 +1,6 @@
 mod cast;
 mod cli;
+mod icons;
 mod render;
 mod terminal;
 mod theme;

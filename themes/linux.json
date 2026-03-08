@@ -47,7 +47,7 @@
     "separator_fill": "#7aa39d",
     "leading_symbol": "🐧",
     "trailing_symbol": "$",
-    "segments": ["user", "~"],
+    "segments": [{"icon": "terminal-fill", "text": "user"}, {"icon": "folder-fill", "text": "~"}],
     "palette": [
       "#5b1a42",
       "#7b4f38",

@@ -48,9 +48,34 @@ Controls how statusline rows are rendered. Can also be supplied standalone via `
 - `separator_fill`: reserved for separator decoration color
 - `leading_symbol`: reserved for future use
 - `trailing_symbol`: reserved for future use
-- `segments`: array of strings defining the bespoke statusline content (e.g. `["user", "~"]`). Each entry becomes one colored segment.
+- `segments`: array defining the bespoke statusline content. Each entry becomes one colored segment. Entries can be:
+  - A plain string: `"user"` — renders text only (backward-compatible)
+  - An object with optional `text` and `icon` fields: `{"icon": "apple-fill", "text": "user"}` — renders an icon and/or text
+  - Icon-only: `{"icon": "folder-fill"}` — renders just the icon
+  - See the [Icon Reference](icons/README.md) for available icon names
 - `palette`: array of one or more segment background colors; segments cycle through these by index
 - `segment_padding_x` (optional): override horizontal text padding within segments
+
+### Segment Examples
+
+```json
+"segments": ["user", "~"]
+```
+
+```json
+"segments": [
+  {"icon": "apple-fill", "text": "user"},
+  {"icon": "folder-fill", "text": "~"}
+]
+```
+
+```json
+"segments": [
+  {"icon": "terminal-fill"},
+  "mixed-with-plain-text",
+  {"icon": "git-branch-line", "text": "main"}
+]
+```
 
 ## Notes
 

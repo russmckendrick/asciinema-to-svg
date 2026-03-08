@@ -1,3 +1,4 @@
+use crate::icons;
 use crate::terminal::screen_buffer::ScreenCell;
 use crate::theme::PromptTheme;
 use anyhow::Result;
@@ -41,13 +42,36 @@ pub fn render_bespoke_statusline(
         frame_x, row_y, terminal_width, h, terminal_bg
     )?;
 
+    let icon_size = h - 8.0;
+    let icon_text_gap = 4.0;
     let mut x = frame_x;
 
-    for (i, segment_text) in prompt.segments.iter().enumerate() {
+    for (i, segment) in prompt.segments.iter().enumerate() {
         let pi = i % palette_len;
         let bg = &prompt.palette[pi];
+
+        let segment_text = segment.text().unwrap_or("");
+        let icon_name = segment.icon();
+
+        // Resolve icon path data (warn and skip icon if not found)
+        let icon_data = icon_name.and_then(|name| {
+            let data = icons::lookup(name);
+            if data.is_none() {
+                eprintln!("warning: unknown icon '{}', skipping", name);
+            }
+            data
+        });
+
+        // Calculate content width
         let text_width = segment_text.len() as f32 * char_w;
-        let seg_width = (padding_x * 2.0 + text_width).max(padding_x * 2.0 + 8.0);
+        let icon_width = if icon_data.is_some() { icon_size } else { 0.0 };
+        let gap = if icon_data.is_some() && !segment_text.is_empty() {
+            icon_text_gap
+        } else {
+            0.0
+        };
+        let content_width = icon_width + gap + text_width;
+        let seg_width = (padding_x * 2.0 + content_width).max(padding_x * 2.0 + 8.0);
 
         // Background rect
         writeln!(
@@ -56,12 +80,25 @@ pub fn render_bespoke_statusline(
             x, row_y, seg_width, h, bg
         )?;
 
+        let mut content_x = x + padding_x;
+
+        // Icon (rendered as nested SVG with viewBox)
+        if let Some(path_data) = icon_data {
+            let icon_y = row_y + (h - icon_size) / 2.0;
+            writeln!(
+                svg,
+                r#"<svg x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" viewBox="0 0 24 24"><path d="{}" fill="{}"/></svg>"#,
+                content_x, icon_y, icon_size, icon_size, path_data, prompt.text_color
+            )?;
+            content_x += icon_size + gap;
+        }
+
         // Text label
         if !segment_text.is_empty() {
             writeln!(
                 svg,
                 r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="{}" fill="{}" dominant-baseline="central" class="statusline-text">{}</text>"#,
-                x + padding_x, text_y,
+                content_x, text_y,
                 super::css_text(&prompt.font_family),
                 prompt.font_size, prompt.text_color,
                 super::escape_xml(segment_text)
@@ -205,7 +242,7 @@ pub fn is_private_use_area(text: &str) -> bool {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::theme::PromptTheme;
+    use crate::theme::{PromptTheme, Segment};
 
     fn cell(text: &str) -> ScreenCell {
         ScreenCell {
@@ -239,7 +276,10 @@ mod tests {
                 "#78a85e".to_string(),
             ],
             segment_padding_x: None,
-            segments: vec!["user".to_string(), "~".to_string()],
+            segments: vec![
+                Segment::Text("user".to_string()),
+                Segment::Text("~".to_string()),
+            ],
         }
     }
 
@@ -296,5 +336,45 @@ mod tests {
                 cp
             );
         }
+    }
+
+    #[test]
+    fn render_icon_segment_produces_nested_svg() {
+        let mut prompt = test_prompt();
+        prompt.segments = vec![Segment::Rich {
+            text: Some("user".to_string()),
+            icon: Some("apple-fill".to_string()),
+        }];
+        let mut svg = String::new();
+        render_bespoke_statusline(&mut svg, &prompt, 16.0, 62.0, 400.0, 28.0, "#232744").unwrap();
+        assert!(svg.contains("viewBox=\"0 0 24 24\""), "should contain icon SVG");
+        assert!(svg.contains("<path d="), "should contain path element");
+        assert!(svg.contains("user"), "should contain text label");
+    }
+
+    #[test]
+    fn render_unknown_icon_skips_gracefully() {
+        let mut prompt = test_prompt();
+        prompt.segments = vec![Segment::Rich {
+            text: Some("dir".to_string()),
+            icon: Some("totally-fake-icon".to_string()),
+        }];
+        let mut svg = String::new();
+        render_bespoke_statusline(&mut svg, &prompt, 16.0, 62.0, 400.0, 28.0, "#232744").unwrap();
+        assert!(!svg.contains("viewBox"), "should not contain icon SVG");
+        assert!(svg.contains("dir"), "should still contain text label");
+    }
+
+    #[test]
+    fn render_icon_only_segment() {
+        let mut prompt = test_prompt();
+        prompt.segments = vec![Segment::Rich {
+            text: None,
+            icon: Some("folder-fill".to_string()),
+        }];
+        let mut svg = String::new();
+        render_bespoke_statusline(&mut svg, &prompt, 16.0, 62.0, 400.0, 28.0, "#232744").unwrap();
+        assert!(svg.contains("viewBox=\"0 0 24 24\""), "should contain icon SVG");
+        assert!(!svg.contains("statusline-text"), "should not contain text element");
     }
 }

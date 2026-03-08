@@ -24,6 +24,36 @@ The statusline text is defined in the theme, not extracted from the cast. This m
 
 Each entry in `segments` becomes one colored bar. Colors cycle through `palette`.
 
+## Icon Segments
+
+Segments can include icons from the bundled [Remix Icon](https://remixicon.com/) set (3,229 icons embedded at build time). Use an object with `icon` and optional `text` fields:
+
+```json
+"prompt": {
+  "segments": [
+    {"icon": "apple-fill", "text": "user"},
+    {"icon": "folder-fill", "text": "~"}
+  ],
+  "palette": ["#d96d0f", "#d7a126"]
+}
+```
+
+Icons are rendered as inline SVG elements (scaled to `line_height - 8px`) before the text label, with a 4px gap. If an icon name is not found, a warning is printed to stderr and the icon is skipped — the text still renders.
+
+Icon-only segments (no `text` field) are also supported:
+
+```json
+{"icon": "git-branch-line"}
+```
+
+Plain string segments remain backward-compatible:
+
+```json
+"segments": ["user", "~"]
+```
+
+See the [Icon Reference](icons/README.md) for the full list of available icon names.
+
 ## Statusline Override
 
 Use `--statusline <path>` to supply a standalone JSON config that overrides the theme's `prompt` section:

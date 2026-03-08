@@ -49,6 +49,34 @@ pub enum ChromeKind {
 }
 
 #[derive(Debug, Clone, Deserialize)]
+#[serde(untagged)]
+pub enum Segment {
+    Text(String),
+    Rich {
+        #[serde(default)]
+        text: Option<String>,
+        #[serde(default)]
+        icon: Option<String>,
+    },
+}
+
+impl Segment {
+    pub fn text(&self) -> Option<&str> {
+        match self {
+            Segment::Text(s) => Some(s.as_str()),
+            Segment::Rich { text, .. } => text.as_deref(),
+        }
+    }
+
+    pub fn icon(&self) -> Option<&str> {
+        match self {
+            Segment::Text(_) => None,
+            Segment::Rich { icon, .. } => icon.as_deref(),
+        }
+    }
+}
+
+#[derive(Debug, Clone, Deserialize)]
 #[allow(dead_code)]
 pub struct PromptTheme {
     pub font_family: String,
@@ -64,7 +92,7 @@ pub struct PromptTheme {
     #[serde(default)]
     pub segment_padding_x: Option<f32>,
     #[serde(default)]
-    pub segments: Vec<String>,
+    pub segments: Vec<Segment>,
 }
 
 impl PromptTheme {
@@ -152,5 +180,38 @@ mod tests {
 
         let result = ThemeDefinition::load(Some(path.to_string_lossy().as_ref()));
         assert!(result.is_err());
+    }
+
+    #[test]
+    fn segment_text_string_deserializes() {
+        let seg: Segment = serde_json::from_str(r#""user""#).unwrap();
+        assert_eq!(seg.text(), Some("user"));
+        assert_eq!(seg.icon(), None);
+    }
+
+    #[test]
+    fn segment_rich_object_deserializes() {
+        let seg: Segment =
+            serde_json::from_str(r#"{"text": "user", "icon": "apple-fill"}"#).unwrap();
+        assert_eq!(seg.text(), Some("user"));
+        assert_eq!(seg.icon(), Some("apple-fill"));
+    }
+
+    #[test]
+    fn segment_icon_only_deserializes() {
+        let seg: Segment = serde_json::from_str(r#"{"icon": "folder-fill"}"#).unwrap();
+        assert_eq!(seg.text(), None);
+        assert_eq!(seg.icon(), Some("folder-fill"));
+    }
+
+    #[test]
+    fn mixed_segments_array_deserializes() {
+        let segs: Vec<Segment> =
+            serde_json::from_str(r#"["plain", {"text": "dir", "icon": "folder-fill"}]"#).unwrap();
+        assert_eq!(segs.len(), 2);
+        assert_eq!(segs[0].text(), Some("plain"));
+        assert_eq!(segs[0].icon(), None);
+        assert_eq!(segs[1].text(), Some("dir"));
+        assert_eq!(segs[1].icon(), Some("folder-fill"));
     }
 }

@@ -66,6 +66,12 @@ cargo run -- demo.cast --theme ./themes/my-theme.json --output custom.svg
 - [Theme Format](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/theme-format.md)
 - [Rendering Pipeline](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/rendering.md)
 
+## Icons
+
+Statusline segments can include icons from the bundled [Remix Icon](https://remixicon.com/) set (3,229 icons). Icons are embedded in the binary at build time — no external files needed at runtime.
+
+> Icons by [Remix Icon](https://remixicon.com/) — licensed under the [Remix Icon License v1.0](https://github.com/Remix-Design/RemixIcon/blob/master/License).
+
 ## Development
 
 ```bash

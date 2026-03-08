@@ -8,4 +8,5 @@
 - [Rendering](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/rendering.md)
 - [Theme Format](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/theme-format.md)
 - [Statusline Rendering](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/statusline-rendering.md)
+- [Icon Reference](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/icons/README.md)
 - [Development](/Users/russ.mckendrick/Code/asciinema-to-svg/docs/development.md)
