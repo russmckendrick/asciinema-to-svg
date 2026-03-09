@@ -13,7 +13,8 @@ use std::path::Path;
 fn main() -> Result<()> {
     let cli = Cli::parse();
     let mut theme = theme::ThemeDefinition::load(cli.theme.as_deref())?;
-    theme.scale(cli.size.scale_factor());
+    let scale_factor = cli::resolve_scale_factor(&cli.size, cli.size_config.as_deref())?;
+    theme.scale(scale_factor);
     let session = cast::RecordingSession::read_from_file(Path::new(&cli.input))?;
     let title = cli
         .title
