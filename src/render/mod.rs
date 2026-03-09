@@ -255,20 +255,21 @@ fn append_window_chrome(
         )?;
     }
 
+    let title_font_size = if matches!(theme.chrome.kind, ChromeKind::Macos) {
+        theme.chrome.title_bar_height * 0.425
+    } else {
+        theme.chrome.title_bar_height * 0.35
+    };
     writeln!(
         svg,
-        r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="{}" fill="{}" dominant-baseline="middle"{}>{}</text>"#,
+        r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="{:.1}" fill="{}" dominant-baseline="middle"{}>{}</text>"#,
         match theme.chrome.kind {
             ChromeKind::Macos | ChromeKind::Linux => layout.width / 2.0,
             ChromeKind::Powershell => 12.0,
         },
         title_bar_center_y + 0.5,
         css_text("ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"),
-        if matches!(theme.chrome.kind, ChromeKind::Macos) {
-            17
-        } else {
-            14
-        },
+        title_font_size,
         theme.chrome.title_color,
         if matches!(theme.chrome.kind, ChromeKind::Macos | ChromeKind::Linux) {
             r#" text-anchor="middle""#
@@ -300,11 +301,13 @@ fn append_window_chrome(
         }
         ChromeKind::Powershell => {
             let y = theme.chrome.padding + theme.chrome.title_bar_height / 2.0;
+            let ctrl_font = theme.chrome.title_bar_height * 0.3;
             writeln!(
                 svg,
-                r#"<text x="{:.2}" y="{:.2}" font-family="Segoe UI, sans-serif" font-size="12" fill="{}" dominant-baseline="middle">_</text>"#,
+                r#"<text x="{:.2}" y="{:.2}" font-family="Segoe UI, sans-serif" font-size="{:.1}" fill="{}" dominant-baseline="middle">_</text>"#,
                 layout.width - 70.0,
                 y,
+                ctrl_font,
                 theme.chrome.subtitle_color
             )?;
             writeln!(
@@ -316,9 +319,10 @@ fn append_window_chrome(
             )?;
             writeln!(
                 svg,
-                r#"<text x="{:.2}" y="{:.2}" font-family="Segoe UI, sans-serif" font-size="12" fill="{}" dominant-baseline="middle">×</text>"#,
+                r#"<text x="{:.2}" y="{:.2}" font-family="Segoe UI, sans-serif" font-size="{:.1}" fill="{}" dominant-baseline="middle">×</text>"#,
                 layout.width - 18.0,
                 y,
+                ctrl_font,
                 theme.chrome.subtitle_color
             )?;
         }
@@ -414,14 +418,14 @@ fn append_row_text(
     row: &[ScreenCell],
     statusline: bool,
 ) -> Result<()> {
-    let text_y = row_y + 4.0;
+    let text_y = row_y + layout.line_height * 0.14;
     for (column, cell) in row.iter().enumerate() {
         if cell.is_wide_continuation || cell.text == " " {
             continue;
         }
 
         let cell_x = layout.frame_x + column as f32 * layout.cell_width;
-        let x = cell_x + 4.0;
+        let x = cell_x + layout.cell_width * 0.37;
         let background = effective_background(cell);
         if !background.eq_ignore_ascii_case(&theme.terminal.background) {
             writeln!(
@@ -469,9 +473,9 @@ fn append_row_text(
                 svg,
                 r#"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="{}" stroke-width="1.2"/>"#,
                 x,
-                text_y + 19.0,
+                text_y + layout.line_height * 0.68,
                 x + layout.cell_width * if cell.is_wide { 2.0 } else { 1.0 },
-                text_y + 19.0,
+                text_y + layout.line_height * 0.68,
                 effective_foreground(cell)
             )?;
         }
@@ -504,14 +508,14 @@ fn append_row_text_range(
         None => return Ok(()),
     };
 
-    let text_y = row_y + 4.0;
-    let mut x = layout.frame_x + 4.0;
+    let text_y = row_y + layout.line_height * 0.14;
+    let mut x = layout.frame_x + layout.cell_width * 0.37;
 
     // Draw $ prompt marker
     writeln!(
         svg,
         r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,
-        x, text_y + 2.0, theme.terminal.foreground
+        x, text_y + layout.line_height * 0.07, theme.terminal.foreground
     )?;
     x += layout.cell_width * 2.0;
 
@@ -557,8 +561,8 @@ fn append_prompt_marker(
     column: usize,
     cell: &ScreenCell,
 ) -> Result<()> {
-    let x = layout.frame_x + column as f32 * layout.cell_width + 1.0;
-    let y = row_y + 2.0;
+    let x = layout.frame_x + column as f32 * layout.cell_width + layout.cell_width * 0.09;
+    let y = row_y + layout.line_height * 0.07;
     writeln!(
         svg,
         r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,

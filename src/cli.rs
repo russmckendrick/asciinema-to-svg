@@ -1,4 +1,21 @@
-use clap::Parser;
+use clap::{Parser, ValueEnum};
+
+#[derive(Debug, Clone, Copy, ValueEnum, PartialEq, Eq)]
+pub enum Size {
+    Small,
+    Medium,
+    Large,
+}
+
+impl Size {
+    pub fn scale_factor(self) -> f32 {
+        match self {
+            Size::Small => 0.61,
+            Size::Medium => 0.78,
+            Size::Large => 1.0,
+        }
+    }
+}
 
 #[derive(Debug, Parser)]
 #[command(
@@ -17,6 +34,10 @@ pub struct Cli {
     /// Built-in theme name or a path to a theme JSON file
     #[arg(long)]
     pub theme: Option<String>,
+
+    /// Output size preset (small, medium, large)
+    #[arg(long, default_value = "medium")]
+    pub size: Size,
 
     /// Explicit output width in pixels
     #[arg(long)]

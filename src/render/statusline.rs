@@ -29,7 +29,7 @@ pub fn render_bespoke_statusline(
     }
 
     let palette_len = prompt.palette.len();
-    let arrow_width: f32 = 14.0;
+    let arrow_width: f32 = line_height * 0.5;
     let padding_x = prompt.segment_padding_x.unwrap_or(prompt.row_padding_x);
     let h = line_height;
     let text_y = row_y + h / 2.0;
@@ -42,8 +42,8 @@ pub fn render_bespoke_statusline(
         frame_x, row_y, terminal_width, h, terminal_bg
     )?;
 
-    let icon_size = h - 8.0;
-    let icon_text_gap = 4.0;
+    let icon_size = h * 0.714;
+    let icon_text_gap = h * 0.143;
     let mut x = frame_x;
 
     for (i, segment) in prompt.segments.iter().enumerate() {

@@ -132,6 +132,21 @@ impl ThemeDefinition {
         Ok(theme)
     }
 
+    pub fn scale(&mut self, factor: f32) {
+        self.font_size *= factor;
+        self.line_height *= factor;
+        self.chrome.padding *= factor;
+        self.chrome.title_bar_height *= factor;
+        self.chrome.content_top_gap *= factor;
+        self.chrome.radius *= factor;
+        self.prompt.font_size *= factor;
+        self.prompt.row_padding_x *= factor;
+        self.prompt.segment_height *= factor;
+        if let Some(ref mut v) = self.prompt.segment_padding_x {
+            *v *= factor;
+        }
+    }
+
     pub fn ansi_color(&self, index: usize) -> &str {
         &self.terminal.ansi_palette[index.min(15)]
     }
@@ -170,6 +185,18 @@ mod tests {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         assert_eq!(theme.name, "macos");
         assert_eq!(theme.chrome.kind, ChromeKind::Macos);
+    }
+
+    #[test]
+    fn scale_adjusts_dimensions() {
+        let mut theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let orig_font = theme.font_size;
+        let orig_line = theme.line_height;
+        let orig_padding = theme.chrome.padding;
+        theme.scale(0.5);
+        assert!((theme.font_size - orig_font * 0.5).abs() < 0.01);
+        assert!((theme.line_height - orig_line * 0.5).abs() < 0.01);
+        assert!((theme.chrome.padding - orig_padding * 0.5).abs() < 0.01);
     }
 
     #[test]
