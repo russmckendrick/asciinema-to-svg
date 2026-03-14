@@ -98,9 +98,11 @@ pub fn render_bespoke_statusline(
             writeln!(
                 svg,
                 r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="{}" fill="{}" dominant-baseline="central" class="statusline-text">{}</text>"#,
-                content_x, text_y,
+                content_x,
+                text_y,
                 super::css_text(&prompt.font_family),
-                prompt.font_size, prompt.text_color,
+                prompt.font_size,
+                prompt.text_color,
                 super::escape_xml(segment_text)
             )?;
         }
@@ -124,7 +126,13 @@ pub fn render_bespoke_statusline(
         writeln!(
             svg,
             r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}" class="statusline-arrow"/>"#,
-            x, row_y, x + arrow_width, row_y + h / 2.0, x, row_y + h, bg
+            x,
+            row_y,
+            x + arrow_width,
+            row_y + h / 2.0,
+            x,
+            row_y + h,
+            bg
         )?;
 
         x += arrow_width;
@@ -166,8 +174,7 @@ pub fn command_area(row: &[ScreenCell], terminal_bg: &str) -> (usize, usize) {
         let bg_count = row[gap_start..gap_end]
             .iter()
             .filter(|c| {
-                !c.is_wide_continuation
-                    && effective_bg(c).eq_ignore_ascii_case(terminal_bg)
+                !c.is_wide_continuation && effective_bg(c).eq_ignore_ascii_case(terminal_bg)
             })
             .count();
         if bg_count > best_len {
@@ -184,8 +191,7 @@ pub fn command_area(row: &[ScreenCell], terminal_bg: &str) -> (usize, usize) {
         let bg_count = row[gap_start..gap_end]
             .iter()
             .filter(|c| {
-                !c.is_wide_continuation
-                    && effective_bg(c).eq_ignore_ascii_case(terminal_bg)
+                !c.is_wide_continuation && effective_bg(c).eq_ignore_ascii_case(terminal_bg)
             })
             .count();
         if bg_count > best_len {
@@ -218,10 +224,22 @@ fn is_statusline_separator(text: &str) -> bool {
     };
     matches!(
         ch,
-        '\u{E0B0}' | '\u{E0B1}' | '\u{E0B2}' | '\u{E0B3}'
-            | '\u{E0B4}' | '\u{E0B5}' | '\u{E0B6}' | '\u{E0B7}'
-            | '\u{E0B8}' | '\u{E0B9}' | '\u{E0BA}' | '\u{E0BB}'
-            | '\u{E0BC}' | '\u{E0BD}' | '\u{E0BE}' | '\u{E0BF}'
+        '\u{E0B0}'
+            | '\u{E0B1}'
+            | '\u{E0B2}'
+            | '\u{E0B3}'
+            | '\u{E0B4}'
+            | '\u{E0B5}'
+            | '\u{E0B6}'
+            | '\u{E0B7}'
+            | '\u{E0B8}'
+            | '\u{E0B9}'
+            | '\u{E0BA}'
+            | '\u{E0BB}'
+            | '\u{E0BC}'
+            | '\u{E0BD}'
+            | '\u{E0BE}'
+            | '\u{E0BF}'
     )
 }
 
@@ -285,7 +303,14 @@ mod tests {
 
     #[test]
     fn detects_statusline_row_e0b0() {
-        let row = vec![cell("u"), cell("s"), cell("e"), cell("r"), cell("\u{E0B0}"), cell("~")];
+        let row = vec![
+            cell("u"),
+            cell("s"),
+            cell("e"),
+            cell("r"),
+            cell("\u{E0B0}"),
+            cell("~"),
+        ];
         assert!(is_statusline_row(&row));
     }
 
@@ -347,7 +372,10 @@ mod tests {
         }];
         let mut svg = String::new();
         render_bespoke_statusline(&mut svg, &prompt, 16.0, 62.0, 400.0, 28.0, "#232744").unwrap();
-        assert!(svg.contains("viewBox=\"0 0 24 24\""), "should contain icon SVG");
+        assert!(
+            svg.contains("viewBox=\"0 0 24 24\""),
+            "should contain icon SVG"
+        );
         assert!(svg.contains("<path d="), "should contain path element");
         assert!(svg.contains("user"), "should contain text label");
     }
@@ -374,7 +402,13 @@ mod tests {
         }];
         let mut svg = String::new();
         render_bespoke_statusline(&mut svg, &prompt, 16.0, 62.0, 400.0, 28.0, "#232744").unwrap();
-        assert!(svg.contains("viewBox=\"0 0 24 24\""), "should contain icon SVG");
-        assert!(!svg.contains("statusline-text"), "should not contain text element");
+        assert!(
+            svg.contains("viewBox=\"0 0 24 24\""),
+            "should contain icon SVG"
+        );
+        assert!(
+            !svg.contains("statusline-text"),
+            "should not contain text element"
+        );
     }
 }

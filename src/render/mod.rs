@@ -72,11 +72,10 @@ pub fn render_animated_svg(
     let natural_terminal_height =
         (session.terminal_size.height as f32 + extra_statusline_rows as f32) * natural_line_height;
     let natural_width = theme.chrome.padding * 2.0 + natural_terminal_width;
-    let natural_height =
-        theme.chrome.padding * 2.0
-            + theme.chrome.title_bar_height
-            + content_top_gap
-            + natural_terminal_height;
+    let natural_height = theme.chrome.padding * 2.0
+        + theme.chrome.title_bar_height
+        + content_top_gap
+        + natural_terminal_height;
 
     let mut width = options
         .width_px
@@ -448,7 +447,6 @@ fn append_row_text(
             continue;
         }
 
-
         // When statusline mode is enabled, skip any Private Use Area glyph
         // so we never depend on Nerd Fonts being installed.
         if statusline && statusline::is_private_use_area(&cell.text) {
@@ -499,9 +497,7 @@ fn append_row_text_range(
     // Find the first non-space, non-PUA cell to skip leading whitespace.
     let range = &row[start_col..end_col.min(row.len())];
     let first_visible = range.iter().position(|c| {
-        !c.is_wide_continuation
-            && c.text.trim() != ""
-            && !statusline::is_private_use_area(&c.text)
+        !c.is_wide_continuation && c.text.trim() != "" && !statusline::is_private_use_area(&c.text)
     });
     let first_visible = match first_visible {
         Some(i) => i,
@@ -515,7 +511,9 @@ fn append_row_text_range(
     writeln!(
         svg,
         r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,
-        x, text_y + layout.line_height * 0.07, theme.terminal.foreground
+        x,
+        text_y + layout.line_height * 0.07,
+        theme.terminal.foreground
     )?;
     x += layout.cell_width * 2.0;
 
@@ -730,7 +728,6 @@ mod tests {
         .unwrap();
         assert!(svg.contains(""));
     }
-
 
     #[test]
     fn replaces_prompt_marker_glyph_with_dollar() {

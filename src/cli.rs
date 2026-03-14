@@ -64,8 +64,9 @@ pub fn resolve_scale_factor(size: &str, config_path: Option<&str>) -> Result<f32
             serde_json::from_str(&contents)
                 .with_context(|| format!("failed to parse sizes config {}", path))?
         }
-        None => serde_json::from_str(BUILT_IN_SIZES)
-            .context("failed to parse built-in sizes.json")?,
+        None => {
+            serde_json::from_str(BUILT_IN_SIZES).context("failed to parse built-in sizes.json")?
+        }
     };
 
     map.get(size).copied().with_context(|| {
