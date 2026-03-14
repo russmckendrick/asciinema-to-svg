@@ -15,6 +15,7 @@ Rust CLI for converting asciinema v2/v3 cast files into themed animated SVG outp
 - Treat `themes/*.json` as the primary customization surface for visuals and prompt styling.
 - Update the relevant file in `docs/` whenever the CLI, theme schema, or rendering behavior changes.
 - Keep behavior-changing tests close to the touched module.
+- Always run `cargo build` and `cargo test` after making changes to verify compilation and test correctness before presenting results.
 
 ## Entry Points
 

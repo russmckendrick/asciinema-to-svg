@@ -348,35 +348,30 @@ pub fn render_dynamic_statusline(
         x += arrow_width;
     }
 
-    // Render any remaining text after the last segment (right-aligned status text)
-    // by scanning cells with terminal background after the last separator
-    let last_sep_col = row
-        .iter()
-        .enumerate()
-        .rev()
-        .find(|(_, c)| !c.is_wide_continuation && is_statusline_separator(&c.text))
-        .map(|(i, _)| i);
-
-    if let Some(last_sep) = last_sep_col {
-        for (col, cell) in row.iter().enumerate().skip(last_sep + 1) {
-            if cell.is_wide_continuation || cell.text.trim().is_empty() {
-                continue;
-            }
-            if is_private_use_area(&cell.text) {
-                continue;
-            }
-            let cx = frame_x + col as f32 * cell_width + cell_width * 0.37;
-            let cy = row_y + line_height * 0.14;
-            let fg = effective_bg_or_fg(cell, false);
-            writeln!(
-                svg,
-                r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">{}</text>"#,
-                cx,
-                cy,
-                fg,
-                super::escape_xml(&cell.text)
-            )?;
+    // Render any text on terminal-background cells (right-aligned status text
+    // like "medium · /effort" that sits outside the colored segments).
+    for (col, cell) in row.iter().enumerate() {
+        if cell.is_wide_continuation || cell.text.trim().is_empty() {
+            continue;
         }
+        if is_private_use_area(&cell.text) {
+            continue;
+        }
+        let bg = effective_bg_or_fg(cell, true);
+        if !bg.eq_ignore_ascii_case(terminal_bg) {
+            continue; // Already rendered as part of a colored segment
+        }
+        let cx = frame_x + col as f32 * cell_width + cell_width * 0.37;
+        let cy = row_y + line_height * 0.14;
+        let fg = effective_bg_or_fg(cell, false);
+        writeln!(
+            svg,
+            r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">{}</text>"#,
+            cx,
+            cy,
+            fg,
+            super::escape_xml(&cell.text)
+        )?;
     }
 
     Ok(())
