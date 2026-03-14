@@ -54,12 +54,10 @@ pub fn render_animated_svg(
                 let mut first = true;
                 for row_idx in 0..frame.buffer.height {
                     let row = frame.buffer.row(row_idx);
-                    if statusline::is_statusline_row(row) {
-                        if first {
-                            // First statusline row gets an extra line for itself
-                            extra += 1;
-                            first = false;
-                        }
+                    if statusline::is_statusline_row(row) && first {
+                        // First statusline row gets an extra line for itself
+                        extra += 1;
+                        first = false;
                     }
                 }
                 extra
@@ -330,6 +328,7 @@ fn append_window_chrome(
     Ok(())
 }
 
+#[allow(clippy::too_many_arguments)]
 fn append_frame(
     svg: &mut String,
     theme: &ThemeDefinition,
