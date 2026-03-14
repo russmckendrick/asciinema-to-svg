@@ -44,12 +44,11 @@ fn collect_svgs(dir: &Path, entries: &mut Vec<(String, String)>) {
         let path = entry.path();
         if path.is_dir() {
             collect_svgs(&path, entries);
-        } else if path.extension().and_then(|e| e.to_str()) == Some("svg") {
-            if let Some(name) = path.file_stem().and_then(|s| s.to_str()) {
-                if let Some(path_data) = extract_path_data(&path) {
-                    entries.push((name.to_string(), path_data));
-                }
-            }
+        } else if path.extension().and_then(|e| e.to_str()) == Some("svg")
+            && let Some(name) = path.file_stem().and_then(|s| s.to_str())
+            && let Some(path_data) = extract_path_data(&path)
+        {
+            entries.push((name.to_string(), path_data));
         }
     }
 }
