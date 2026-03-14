@@ -43,6 +43,20 @@ Load a custom theme file:
 cargo run -- demo.cast --theme ./themes/my-theme.json --output custom.svg
 ```
 
+## Examples
+
+### macOS (default theme)
+
+![macOS demo](docs/demos/demo-macos.svg)
+
+### Linux
+
+![Linux demo](docs/demos/demo-linux.svg)
+
+### Windows (PowerShell)
+
+![Windows demo](docs/demos/demo-windows.svg)
+
 ## Features
 
 - Imports asciinema v2 and v3 casts

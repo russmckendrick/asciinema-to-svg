@@ -1,0 +1,871 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="175" viewBox="0 0 300 175" role="img" aria-label="Animated terminal recording" data-theme="powershell">
+<defs><style>
+        .terminal-text {
+            font-family: Cascadia Code, Consolas, monospace;
+            font-size: 14.039999px;
+            font-weight: 400;
+            dominant-baseline: hanging;
+            white-space: pre;
+        }
+        .frame {
+            opacity: 0;
+            animation-duration: 13.367s;
+            animation-timing-function: steps(1, end);
+            animation-iteration-count: infinite;
+        }
+        </style>
+</defs><rect x="0" y="0" width="300.00" height="175.00" rx="0.00" fill="#d9d9d9" stroke="#c0c0c0"/>
+<text x="12.00" y="12.98" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="8.7" fill="#6d6d6d" dominant-baseline="middle">demo</text>
+<text x="230.00" y="12.48" font-family="Segoe UI, sans-serif" font-size="7.5" fill="#606060" dominant-baseline="middle">_</text>
+<rect x="254.00" y="7.48" width="10" height="10" fill="none" stroke="#606060"/>
+<text x="282.00" y="12.48" font-family="Segoe UI, sans-serif" font-size="7.5" fill="#606060" dominant-baseline="middle">×</text>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<g class="frame" style="animation-name: frame-0;">
+<style>@keyframes frame-0 { 0%, 6.748% { opacity: 0; } 6.748%, 7.122% { opacity: 1; } 7.122%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+</g><g class="frame" style="animation-name: frame-1;">
+<style>@keyframes frame-1 { 0%, 7.122% { opacity: 0; } 7.122%, 7.496% { opacity: 1; } 7.496%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+</g><g class="frame" style="animation-name: frame-2;">
+<style>@keyframes frame-2 { 0%, 7.496% { opacity: 0; } 7.496%, 7.870% { opacity: 1; } 7.870%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+</g><g class="frame" style="animation-name: frame-3;">
+<style>@keyframes frame-3 { 0%, 7.870% { opacity: 0; } 7.870%, 8.244% { opacity: 1; } 8.244%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-4;">
+<style>@keyframes frame-4 { 0%, 8.244% { opacity: 0; } 8.244%, 8.618% { opacity: 1; } 8.618%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-5;">
+<style>@keyframes frame-5 { 0%, 8.618% { opacity: 0; } 8.618%, 37.548% { opacity: 1; } 37.548%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-6;">
+<style>@keyframes frame-6 { 0%, 37.548% { opacity: 0; } 37.548%, 39.007% { opacity: 1; } 39.007%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+</g><g class="frame" style="animation-name: frame-7;">
+<style>@keyframes frame-7 { 0%, 39.007% { opacity: 0; } 39.007%, 39.964% { opacity: 1; } 39.964%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+</g><g class="frame" style="animation-name: frame-8;">
+<style>@keyframes frame-8 { 0%, 39.964% { opacity: 0; } 39.964%, 41.146% { opacity: 1; } 41.146%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+</g><g class="frame" style="animation-name: frame-9;">
+<style>@keyframes frame-9 { 0%, 41.146% { opacity: 0; } 41.146%, 42.164% { opacity: 1; } 42.164%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+</g><g class="frame" style="animation-name: frame-10;">
+<style>@keyframes frame-10 { 0%, 42.164% { opacity: 0; } 42.164%, 43.862% { opacity: 1; } 43.862%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+</g><g class="frame" style="animation-name: frame-11;">
+<style>@keyframes frame-11 { 0%, 43.862% { opacity: 0; } 43.862%, 48.597% { opacity: 1; } 48.597%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+</g><g class="frame" style="animation-name: frame-12;">
+<style>@keyframes frame-12 { 0%, 48.597% { opacity: 0; } 48.597%, 49.645% { opacity: 1; } 49.645%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+</g><g class="frame" style="animation-name: frame-13;">
+<style>@keyframes frame-13 { 0%, 49.645% { opacity: 0; } 49.645%, 51.545% { opacity: 1; } 51.545%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+</g><g class="frame" style="animation-name: frame-14;">
+<style>@keyframes frame-14 { 0%, 51.545% { opacity: 0; } 51.545%, 52.742% { opacity: 1; } 52.742%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+</g><g class="frame" style="animation-name: frame-15;">
+<style>@keyframes frame-15 { 0%, 52.742% { opacity: 0; } 52.742%, 54.350% { opacity: 1; } 54.350%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+</g><g class="frame" style="animation-name: frame-16;">
+<style>@keyframes frame-16 { 0%, 54.350% { opacity: 0; } 54.350%, 57.545% { opacity: 1; } 57.545%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+</g><g class="frame" style="animation-name: frame-17;">
+<style>@keyframes frame-17 { 0%, 57.545% { opacity: 0; } 57.545%, 62.161% { opacity: 1; } 62.161%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+</g><g class="frame" style="animation-name: frame-18;">
+<style>@keyframes frame-18 { 0%, 62.161% { opacity: 0; } 62.161%, 62.535% { opacity: 1; } 62.535%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+</g><g class="frame" style="animation-name: frame-19;">
+<style>@keyframes frame-19 { 0%, 62.535% { opacity: 0; } 62.535%, 62.909% { opacity: 1; } 62.909%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+</g><g class="frame" style="animation-name: frame-20;">
+<style>@keyframes frame-20 { 0%, 62.909% { opacity: 0; } 62.909%, 63.283% { opacity: 1; } 63.283%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+</g><g class="frame" style="animation-name: frame-21;">
+<style>@keyframes frame-21 { 0%, 63.283% { opacity: 0; } 63.283%, 63.657% { opacity: 1; } 63.657%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+</g><g class="frame" style="animation-name: frame-22;">
+<style>@keyframes frame-22 { 0%, 63.657% { opacity: 0; } 63.657%, 64.031% { opacity: 1; } 64.031%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+</g><g class="frame" style="animation-name: frame-23;">
+<style>@keyframes frame-23 { 0%, 64.031% { opacity: 0; } 64.031%, 64.405% { opacity: 1; } 64.405%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+</g><g class="frame" style="animation-name: frame-24;">
+<style>@keyframes frame-24 { 0%, 64.405% { opacity: 0; } 64.405%, 64.779% { opacity: 1; } 64.779%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+</g><g class="frame" style="animation-name: frame-25;">
+<style>@keyframes frame-25 { 0%, 64.779% { opacity: 0; } 64.779%, 65.153% { opacity: 1; } 65.153%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-26;">
+<style>@keyframes frame-26 { 0%, 65.153% { opacity: 0; } 65.153%, 65.527% { opacity: 1; } 65.527%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-27;">
+<style>@keyframes frame-27 { 0%, 65.527% { opacity: 0; } 65.527%, 92.309% { opacity: 1; } 92.309%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-28;">
+<style>@keyframes frame-28 { 0%, 92.309% { opacity: 0; } 92.309%, 93.693% { opacity: 1; } 93.693%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="143.46" fill="#f7f7f7">e</text>
+</g><g class="frame" style="animation-name: frame-29;">
+<style>@keyframes frame-29 { 0%, 93.693% { opacity: 0; } 93.693%, 94.524% { opacity: 1; } 94.524%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="143.46" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="143.46" fill="#f7f7f7">x</text>
+</g><g class="frame" style="animation-name: frame-30;">
+<style>@keyframes frame-30 { 0%, 94.524% { opacity: 0; } 94.524%, 95.706% { opacity: 1; } 95.706%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="143.46" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="143.46" fill="#f7f7f7">x</text>
+<text class="terminal-text" x="31.90" y="143.46" fill="#f7f7f7">i</text>
+</g><g class="frame" style="animation-name: frame-31;">
+<style>@keyframes frame-31 { 0%, 95.706% { opacity: 0; } 95.706%, 97.756% { opacity: 1; } 97.756%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="143.46" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="143.46" fill="#f7f7f7">x</text>
+<text class="terminal-text" x="31.90" y="143.46" fill="#f7f7f7">i</text>
+<text class="terminal-text" x="39.21" y="143.46" fill="#f7f7f7">t</text>
+</g><g class="frame" style="animation-name: frame-32;">
+<style>@keyframes frame-32 { 0%, 97.756% { opacity: 0; } 97.756%, 98.130% { opacity: 1; } 98.130%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="143.46" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="143.46" fill="#f7f7f7">x</text>
+<text class="terminal-text" x="31.90" y="143.46" fill="#f7f7f7">i</text>
+<text class="terminal-text" x="39.21" y="143.46" fill="#f7f7f7">t</text>
+</g><g class="frame" style="animation-name: frame-33;">
+<style>@keyframes frame-33 { 0%, 98.130% { opacity: 0; } 98.130%, 98.504% { opacity: 1; } 98.504%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="143.46" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="143.46" fill="#f7f7f7">x</text>
+<text class="terminal-text" x="31.90" y="143.46" fill="#f7f7f7">i</text>
+<text class="terminal-text" x="39.21" y="143.46" fill="#f7f7f7">t</text>
+</g><g class="frame" style="animation-name: frame-34;">
+<style>@keyframes frame-34 { 0%, 98.504% { opacity: 0; } 98.504%, 100.000% { opacity: 1; } 100.000%, 100% { opacity: 0; } }</style>
+<rect x="0.00" y="31.20" width="300.00" height="143.80" fill="#012456"/>
+<rect x="0.00" y="31.20" width="300.00" height="21.84" fill="#012456"/>
+<rect x="0.00" y="31.20" width="50.23" height="21.84" fill="#0c5ea8" class="statusline-seg"/>
+<svg x="7.80" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12 15V17H18V15H12ZM8.41421 12L5.58579 14.8284L7 16.2426L11.2426 12L7 7.75736L5.58579 9.17157L8.41421 12Z" fill="#f7f7f7"/></svg>
+<text x="26.52" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">PS</text>
+<rect x="50.23" y="31.20" width="10.92" height="21.84" fill="#1a7bc1"/>
+<polygon points="50.23,31.20 61.15,42.12 50.23,53.04" fill="#0c5ea8" class="statusline-arrow"/>
+<rect x="61.15" y="31.20" width="42.27" height="21.84" fill="#1a7bc1" class="statusline-seg"/>
+<svg x="68.95" y="34.32" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f7f7f7"/></svg>
+<text x="87.67" y="42.12" font-family="Cascadia Code, Consolas, monospace" font-size="13.259999" fill="#f7f7f7" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="103.42" y="31.20" width="10.92" height="21.84" fill="#012456"/>
+<polygon points="103.42,31.20 114.34,42.12 103.42,53.04" fill="#1a7bc1" class="statusline-arrow"/>
+<text class="terminal-text" x="0.66" y="76.41" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="77.94" fill="#f7f7f7">c</text>
+<text class="terminal-text" x="31.90" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="39.21" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="53.81" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="61.11" y="77.94" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="68.41" y="77.94" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="75.71" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="83.01" y="77.94" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="90.31" y="77.94" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="97.61" y="77.94" fill="#f7f7f7">&quot;</text>
+<text class="terminal-text" x="2.70" y="99.78" fill="#f7f7f7">h</text>
+<text class="terminal-text" x="10.00" y="99.78" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="17.30" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="24.60" y="99.78" fill="#f7f7f7">l</text>
+<text class="terminal-text" x="31.90" y="99.78" fill="#f7f7f7">o</text>
+<text class="terminal-text" x="0.66" y="141.93" fill="#41FF00">$</text>
+<text class="terminal-text" x="17.30" y="143.46" fill="#f7f7f7">e</text>
+<text class="terminal-text" x="24.60" y="143.46" fill="#f7f7f7">x</text>
+<text class="terminal-text" x="31.90" y="143.46" fill="#f7f7f7">i</text>
+<text class="terminal-text" x="39.21" y="143.46" fill="#f7f7f7">t</text>
+</g></svg>

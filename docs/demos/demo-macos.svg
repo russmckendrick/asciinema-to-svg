@@ -1,0 +1,873 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200" role="img" aria-label="Animated terminal recording" data-theme="macos">
+<defs><style>
+        .terminal-text {
+            font-family: SFMono-Regular, Menlo, Consolas, Monaco, monospace;
+            font-size: 14.039999px;
+            font-weight: 400;
+            dominant-baseline: hanging;
+            white-space: pre;
+        }
+        .frame {
+            opacity: 0;
+            animation-duration: 13.367s;
+            animation-timing-function: steps(1, end);
+            animation-iteration-count: infinite;
+        }
+        </style>
+</defs><rect x="0" y="0" width="300.00" height="200.00" rx="20.28" fill="#232744" stroke="#232744"/>
+<path d="M 1.00 19.28 A 18.28 18.28 0 0 1 19.28 1.00 L 280.72 1.00 A 18.28 18.28 0 0 1 299.00 19.28 L 299.00 42.12 L 1.00 42.12 Z" fill="#2a3157" opacity="0.82"/>
+<line x1="0.00" y1="42.62" x2="300.00" y2="42.62" stroke="#3a4677" stroke-width="1" opacity="0.8"/>
+<text x="150.00" y="21.56" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12.6" fill="#cfd3e6" dominant-baseline="middle" text-anchor="middle">demo</text>
+<circle cx="30.48" cy="21.56" r="7" fill="#ff5f57"/>
+<circle cx="52.48" cy="21.56" r="7" fill="#febc2e"/>
+<circle cx="74.48" cy="21.56" r="7" fill="#28c840"/>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<g class="frame" style="animation-name: frame-0;">
+<style>@keyframes frame-0 { 0%, 6.748% { opacity: 0; } 6.748%, 7.122% { opacity: 1; } 7.122%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+</g><g class="frame" style="animation-name: frame-1;">
+<style>@keyframes frame-1 { 0%, 7.122% { opacity: 0; } 7.122%, 7.496% { opacity: 1; } 7.496%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+</g><g class="frame" style="animation-name: frame-2;">
+<style>@keyframes frame-2 { 0%, 7.496% { opacity: 0; } 7.496%, 7.870% { opacity: 1; } 7.870%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+</g><g class="frame" style="animation-name: frame-3;">
+<style>@keyframes frame-3 { 0%, 7.870% { opacity: 0; } 7.870%, 8.244% { opacity: 1; } 8.244%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-4;">
+<style>@keyframes frame-4 { 0%, 8.244% { opacity: 0; } 8.244%, 8.618% { opacity: 1; } 8.618%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-5;">
+<style>@keyframes frame-5 { 0%, 8.618% { opacity: 0; } 8.618%, 37.548% { opacity: 1; } 37.548%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-6;">
+<style>@keyframes frame-6 { 0%, 37.548% { opacity: 0; } 37.548%, 39.007% { opacity: 1; } 39.007%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+</g><g class="frame" style="animation-name: frame-7;">
+<style>@keyframes frame-7 { 0%, 39.007% { opacity: 0; } 39.007%, 39.964% { opacity: 1; } 39.964%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+</g><g class="frame" style="animation-name: frame-8;">
+<style>@keyframes frame-8 { 0%, 39.964% { opacity: 0; } 39.964%, 41.146% { opacity: 1; } 41.146%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+</g><g class="frame" style="animation-name: frame-9;">
+<style>@keyframes frame-9 { 0%, 41.146% { opacity: 0; } 41.146%, 42.164% { opacity: 1; } 42.164%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-10;">
+<style>@keyframes frame-10 { 0%, 42.164% { opacity: 0; } 42.164%, 43.862% { opacity: 1; } 43.862%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-11;">
+<style>@keyframes frame-11 { 0%, 43.862% { opacity: 0; } 43.862%, 48.597% { opacity: 1; } 48.597%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-12;">
+<style>@keyframes frame-12 { 0%, 48.597% { opacity: 0; } 48.597%, 49.645% { opacity: 1; } 49.645%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+</g><g class="frame" style="animation-name: frame-13;">
+<style>@keyframes frame-13 { 0%, 49.645% { opacity: 0; } 49.645%, 51.545% { opacity: 1; } 51.545%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+</g><g class="frame" style="animation-name: frame-14;">
+<style>@keyframes frame-14 { 0%, 51.545% { opacity: 0; } 51.545%, 52.742% { opacity: 1; } 52.742%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+</g><g class="frame" style="animation-name: frame-15;">
+<style>@keyframes frame-15 { 0%, 52.742% { opacity: 0; } 52.742%, 54.350% { opacity: 1; } 54.350%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+</g><g class="frame" style="animation-name: frame-16;">
+<style>@keyframes frame-16 { 0%, 54.350% { opacity: 0; } 54.350%, 57.545% { opacity: 1; } 57.545%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-17;">
+<style>@keyframes frame-17 { 0%, 57.545% { opacity: 0; } 57.545%, 62.161% { opacity: 1; } 62.161%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-18;">
+<style>@keyframes frame-18 { 0%, 62.161% { opacity: 0; } 62.161%, 62.535% { opacity: 1; } 62.535%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-19;">
+<style>@keyframes frame-19 { 0%, 62.535% { opacity: 0; } 62.535%, 62.909% { opacity: 1; } 62.909%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-20;">
+<style>@keyframes frame-20 { 0%, 62.909% { opacity: 0; } 62.909%, 63.283% { opacity: 1; } 63.283%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+</g><g class="frame" style="animation-name: frame-21;">
+<style>@keyframes frame-21 { 0%, 63.283% { opacity: 0; } 63.283%, 63.657% { opacity: 1; } 63.657%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-22;">
+<style>@keyframes frame-22 { 0%, 63.657% { opacity: 0; } 63.657%, 64.031% { opacity: 1; } 64.031%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-23;">
+<style>@keyframes frame-23 { 0%, 64.031% { opacity: 0; } 64.031%, 64.405% { opacity: 1; } 64.405%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-24;">
+<style>@keyframes frame-24 { 0%, 64.405% { opacity: 0; } 64.405%, 64.779% { opacity: 1; } 64.779%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+</g><g class="frame" style="animation-name: frame-25;">
+<style>@keyframes frame-25 { 0%, 64.779% { opacity: 0; } 64.779%, 65.153% { opacity: 1; } 65.153%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-26;">
+<style>@keyframes frame-26 { 0%, 65.153% { opacity: 0; } 65.153%, 65.527% { opacity: 1; } 65.527%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-27;">
+<style>@keyframes frame-27 { 0%, 65.527% { opacity: 0; } 65.527%, 92.309% { opacity: 1; } 92.309%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+</g><g class="frame" style="animation-name: frame-28;">
+<style>@keyframes frame-28 { 0%, 92.309% { opacity: 0; } 92.309%, 93.693% { opacity: 1; } 93.693%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="160.62" fill="#f5e9c9">e</text>
+</g><g class="frame" style="animation-name: frame-29;">
+<style>@keyframes frame-29 { 0%, 93.693% { opacity: 0; } 93.693%, 94.524% { opacity: 1; } 94.524%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="160.62" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="160.62" fill="#f5e9c9">x</text>
+</g><g class="frame" style="animation-name: frame-30;">
+<style>@keyframes frame-30 { 0%, 94.524% { opacity: 0; } 94.524%, 95.706% { opacity: 1; } 95.706%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="160.62" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="160.62" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="44.38" y="160.62" fill="#f5e9c9">i</text>
+</g><g class="frame" style="animation-name: frame-31;">
+<style>@keyframes frame-31 { 0%, 95.706% { opacity: 0; } 95.706%, 97.756% { opacity: 1; } 97.756%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="160.62" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="160.62" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="44.38" y="160.62" fill="#f5e9c9">i</text>
+<text class="terminal-text" x="51.69" y="160.62" fill="#f5e9c9">t</text>
+</g><g class="frame" style="animation-name: frame-32;">
+<style>@keyframes frame-32 { 0%, 97.756% { opacity: 0; } 97.756%, 98.130% { opacity: 1; } 98.130%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="160.62" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="160.62" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="44.38" y="160.62" fill="#f5e9c9">i</text>
+<text class="terminal-text" x="51.69" y="160.62" fill="#f5e9c9">t</text>
+</g><g class="frame" style="animation-name: frame-33;">
+<style>@keyframes frame-33 { 0%, 98.130% { opacity: 0; } 98.130%, 98.504% { opacity: 1; } 98.504%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="160.62" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="160.62" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="44.38" y="160.62" fill="#f5e9c9">i</text>
+<text class="terminal-text" x="51.69" y="160.62" fill="#f5e9c9">t</text>
+</g><g class="frame" style="animation-name: frame-34;">
+<style>@keyframes frame-34 { 0%, 98.504% { opacity: 0; } 98.504%, 100.000% { opacity: 1; } 100.000%, 100% { opacity: 0; } }</style>
+<rect x="12.48" y="48.36" width="275.04" height="139.16" fill="#232744"/>
+<rect x="12.48" y="48.36" width="275.04" height="21.84" fill="#232744"/>
+<rect x="12.48" y="48.36" width="69.26" height="21.84" fill="#d96d0f" class="statusline-seg"/>
+<svg x="21.84" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z" fill="#f5e9c9"/></svg>
+<text x="40.56" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">user</text>
+<rect x="81.74" y="48.36" width="10.92" height="21.84" fill="#d7a126"/>
+<polygon points="81.74,48.36 92.66,59.28 81.74,70.20" fill="#d96d0f" class="statusline-arrow"/>
+<rect x="92.66" y="48.36" width="45.39" height="21.84" fill="#d7a126" class="statusline-seg"/>
+<svg x="102.02" y="51.48" width="15.59" height="15.59" viewBox="0 0 24 24"><path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z" fill="#f5e9c9"/></svg>
+<text x="120.74" y="59.28" font-family="SFMono-Regular, Menlo, Consolas, Monaco, monospace" font-size="13.259999" fill="#f5e9c9" dominant-baseline="central" class="statusline-text">~</text>
+<rect x="138.05" y="48.36" width="10.92" height="21.84" fill="#232744"/>
+<polygon points="138.05,48.36 148.97,59.28 138.05,70.20" fill="#d7a126" class="statusline-arrow"/>
+<text class="terminal-text" x="13.14" y="93.57" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="95.10" fill="#f5e9c9">c</text>
+<text class="terminal-text" x="44.38" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="51.69" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="66.29" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="73.59" y="95.10" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="80.89" y="95.10" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="88.19" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="95.49" y="95.10" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="102.79" y="95.10" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="110.09" y="95.10" fill="#f5e9c9">&quot;</text>
+<text class="terminal-text" x="15.18" y="116.94" fill="#f5e9c9">h</text>
+<text class="terminal-text" x="22.48" y="116.94" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="29.78" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="37.08" y="116.94" fill="#f5e9c9">l</text>
+<text class="terminal-text" x="44.38" y="116.94" fill="#f5e9c9">o</text>
+<text class="terminal-text" x="13.14" y="159.09" fill="#41FF00">$</text>
+<text class="terminal-text" x="29.78" y="160.62" fill="#f5e9c9">e</text>
+<text class="terminal-text" x="37.08" y="160.62" fill="#f5e9c9">x</text>
+<text class="terminal-text" x="44.38" y="160.62" fill="#f5e9c9">i</text>
+<text class="terminal-text" x="51.69" y="160.62" fill="#f5e9c9">t</text>
+</g></svg>
