@@ -4,10 +4,56 @@ use crate::theme::PromptTheme;
 use anyhow::Result;
 use std::fmt::Write;
 
-/// Check whether a row contains any statusline separator glyph.
+/// Check whether a row looks like a statusline.
+///
+/// A row is a statusline if it contains explicit powerline separator glyphs,
+/// OR if it has 3+ groups of cells with distinct non-terminal background colors
+/// (typical of powerline/starship-style status bars that use colored segments
+/// without explicit separator characters).
 pub fn is_statusline_row(row: &[ScreenCell]) -> bool {
-    row.iter()
+    // Fast path: explicit powerline separators
+    if row
+        .iter()
         .any(|cell| !cell.is_wide_continuation && is_statusline_separator(&cell.text))
+    {
+        return true;
+    }
+
+    // Detect colored-segment rows: count distinct background-color groups
+    has_colored_segments(row, 3)
+}
+
+/// Returns true if the row has at least `min_groups` distinct non-default
+/// background-color segments (runs of cells sharing the same bg color).
+fn has_colored_segments(row: &[ScreenCell], min_groups: usize) -> bool {
+    let mut groups = 0usize;
+    let mut prev_bg: Option<&str> = None;
+
+    for cell in row {
+        if cell.is_wide_continuation {
+            continue;
+        }
+        let bg = effective_bg(cell);
+        let is_default = cell.text.trim().is_empty() && !is_private_use_area(&cell.text);
+        // Only count cells that have visible non-space content or PUA icons
+        let has_content = cell.text.trim() != "" || is_private_use_area(&cell.text);
+
+        if has_content {
+            match prev_bg {
+                Some(pbg) if pbg.eq_ignore_ascii_case(bg) => {}
+                _ => {
+                    // Check it's a non-trivial background (not just default)
+                    // by looking at whether multiple cells share this bg
+                    prev_bg = Some(bg);
+                    groups += 1;
+                }
+            }
+        } else if !is_default {
+            prev_bg = None;
+        }
+    }
+
+    groups >= min_groups
 }
 
 /// Render a bespoke statusline using the theme's `prompt.segments` text.
@@ -216,6 +262,230 @@ fn effective_bg(cell: &ScreenCell) -> &str {
     }
 }
 
+/// Render a statusline row by extracting colored segments directly from the
+/// terminal cell data.  Groups consecutive cells by background color (skipping
+/// separator glyphs), then draws each segment as a colored rect + text with
+/// powerline arrow separators between them.
+pub fn render_dynamic_statusline(
+    svg: &mut String,
+    row: &[ScreenCell],
+    frame_x: f32,
+    row_y: f32,
+    terminal_width: f32,
+    line_height: f32,
+    cell_width: f32,
+    terminal_bg: &str,
+    font_family: &str,
+    font_size: f32,
+) -> Result<()> {
+    // Fill row with terminal background first
+    writeln!(
+        svg,
+        r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
+        frame_x, row_y, terminal_width, line_height, terminal_bg
+    )?;
+
+    // Extract segments: groups of cells with the same non-terminal background
+    let segments = extract_segments(row, terminal_bg);
+    if segments.is_empty() {
+        return Ok(());
+    }
+
+    let arrow_width = line_height * 0.5;
+    let padding_x = cell_width * 0.5;
+    let text_y = row_y + line_height / 2.0;
+    let mut x = frame_x;
+
+    for (i, seg) in segments.iter().enumerate() {
+        let seg_width = seg.text.len() as f32 * cell_width + padding_x * 2.0;
+
+        // Segment background
+        writeln!(
+            svg,
+            r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}" class="statusline-seg"/>"#,
+            x, row_y, seg_width, line_height, seg.bg
+        )?;
+
+        // Segment text
+        if !seg.text.is_empty() {
+            writeln!(
+                svg,
+                r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="{}" fill="{}" dominant-baseline="central" class="statusline-text">{}</text>"#,
+                x + padding_x,
+                text_y,
+                super::css_text(font_family),
+                font_size,
+                seg.fg,
+                super::escape_xml(&seg.text)
+            )?;
+        }
+
+        x += seg_width;
+
+        // Arrow separator
+        let next_bg = segments
+            .get(i + 1)
+            .map(|s| s.bg.as_str())
+            .unwrap_or(terminal_bg);
+
+        writeln!(
+            svg,
+            r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
+            x, row_y, arrow_width, line_height, next_bg
+        )?;
+        writeln!(
+            svg,
+            r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}" class="statusline-arrow"/>"#,
+            x,
+            row_y,
+            x + arrow_width,
+            row_y + line_height / 2.0,
+            x,
+            row_y + line_height,
+            seg.bg
+        )?;
+
+        x += arrow_width;
+    }
+
+    // Render any remaining text after the last segment (right-aligned status text)
+    // by scanning cells with terminal background after the last separator
+    let last_sep_col = row
+        .iter()
+        .enumerate()
+        .rev()
+        .find(|(_, c)| !c.is_wide_continuation && is_statusline_separator(&c.text))
+        .map(|(i, _)| i);
+
+    if let Some(last_sep) = last_sep_col {
+        for (col, cell) in row.iter().enumerate().skip(last_sep + 1) {
+            if cell.is_wide_continuation || cell.text.trim().is_empty() {
+                continue;
+            }
+            if is_private_use_area(&cell.text) {
+                continue;
+            }
+            let cx = frame_x + col as f32 * cell_width + cell_width * 0.37;
+            let cy = row_y + line_height * 0.14;
+            let fg = effective_bg_or_fg(cell, false);
+            writeln!(
+                svg,
+                r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">{}</text>"#,
+                cx,
+                cy,
+                fg,
+                super::escape_xml(&cell.text)
+            )?;
+        }
+    }
+
+    Ok(())
+}
+
+struct DynSegment {
+    bg: String,
+    fg: String,
+    text: String,
+}
+
+fn extract_segments(row: &[ScreenCell], terminal_bg: &str) -> Vec<DynSegment> {
+    let mut segments: Vec<DynSegment> = Vec::new();
+    let mut current_bg: Option<String> = None;
+    let mut current_fg = String::new();
+    let mut current_text = String::new();
+
+    for cell in row {
+        if cell.is_wide_continuation {
+            continue;
+        }
+        // Skip separator glyphs
+        if is_statusline_separator(&cell.text) {
+            // Flush current segment
+            if let Some(bg) = current_bg.take() {
+                segments.push(DynSegment {
+                    bg,
+                    fg: current_fg.clone(),
+                    text: current_text.trim().to_string(),
+                });
+                current_text.clear();
+            }
+            continue;
+        }
+        // Skip PUA chars (nerd font icons)
+        if is_private_use_area(&cell.text) {
+            continue;
+        }
+
+        let bg = effective_bg_or_fg(cell, true).to_string();
+
+        // Skip cells with terminal background (they're gaps, not segments)
+        if bg.eq_ignore_ascii_case(terminal_bg) {
+            if let Some(cbg) = current_bg.take() {
+                segments.push(DynSegment {
+                    bg: cbg,
+                    fg: current_fg.clone(),
+                    text: current_text.trim().to_string(),
+                });
+                current_text.clear();
+            }
+            continue;
+        }
+
+        match &current_bg {
+            Some(cbg) if cbg.eq_ignore_ascii_case(&bg) => {
+                // Same segment, append text
+                current_text.push_str(&cell.text);
+            }
+            Some(_) => {
+                // Different bg = new segment; flush previous
+                let prev_bg = current_bg.take().unwrap();
+                segments.push(DynSegment {
+                    bg: prev_bg,
+                    fg: current_fg.clone(),
+                    text: current_text.trim().to_string(),
+                });
+                current_text.clear();
+                current_bg = Some(bg);
+                current_fg = effective_bg_or_fg(cell, false).to_string();
+                current_text.push_str(&cell.text);
+            }
+            None => {
+                current_bg = Some(bg);
+                current_fg = effective_bg_or_fg(cell, false).to_string();
+                current_text.push_str(&cell.text);
+            }
+        }
+    }
+
+    // Flush final segment
+    if let Some(bg) = current_bg {
+        let trimmed = current_text.trim().to_string();
+        if !trimmed.is_empty() {
+            segments.push(DynSegment {
+                bg,
+                fg: current_fg,
+                text: trimmed,
+            });
+        }
+    }
+
+    segments
+}
+
+fn effective_bg_or_fg(cell: &ScreenCell, want_bg: bool) -> &str {
+    if cell.reversed {
+        if want_bg {
+            &cell.foreground
+        } else {
+            &cell.background
+        }
+    } else if want_bg {
+        &cell.background
+    } else {
+        &cell.foreground
+    }
+}
+
 /// All statusline separator glyphs (both solid and thin variants).
 fn is_statusline_separator(text: &str) -> bool {
     let ch = match text.chars().next() {
@@ -272,6 +542,8 @@ mod tests {
             underline: false,
             reversed: false,
             faint: false,
+            strikethrough: false,
+            overline: false,
             is_wide: false,
             is_wide_continuation: false,
         }

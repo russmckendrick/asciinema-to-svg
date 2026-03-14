@@ -87,7 +87,7 @@ impl AnsiParser {
                 Some(index + 1)
             }
             'M' => {
-                buffer.move_cursor_by(-1, 0);
+                buffer.reverse_index();
                 Some(index + 1)
             }
             'c' => {
@@ -95,6 +95,14 @@ impl AnsiParser {
                 buffer.clear_display(2, None);
                 buffer.move_cursor_to(0, 0);
                 Some(index + 1)
+            }
+            // Character set selection (skip the designator byte)
+            '(' | ')' | '*' | '+' => {
+                if index + 2 < chars.len() {
+                    Some(index + 2)
+                } else {
+                    None
+                }
             }
             _ => Some(index + 1),
         }
@@ -116,12 +124,13 @@ impl AnsiParser {
         for index in param_start..chars.len() {
             let ch = chars[index];
             if ('@'..='~').contains(&ch) {
-                if private_marker.is_some() {
-                    return Some(index);
-                }
                 let params =
                     parse_parameters(&chars[param_start..index].iter().collect::<String>());
-                self.apply_csi(ch, &params, buffer);
+                if private_marker == Some('?') {
+                    self.apply_private_mode(ch, &params, buffer);
+                } else if private_marker.is_none() {
+                    self.apply_csi(ch, &params, buffer);
+                }
                 return Some(index);
             }
         }
@@ -162,8 +171,38 @@ impl AnsiParser {
                 get_param(parameters, 0, 1).max(1) as usize,
                 Some(&self.style),
             ),
+            'L' => buffer.insert_lines(get_param(parameters, 0, 1).max(1) as usize),
+            'M' => buffer.delete_lines(get_param(parameters, 0, 1).max(1) as usize),
+            '@' => buffer.insert_characters(get_param(parameters, 0, 1).max(1) as usize),
+            'r' => {
+                let top = (get_param(parameters, 0, 1).max(1) - 1) as usize;
+                let bottom = (get_param(parameters, 1, buffer.height() as i32).max(1) - 1) as usize;
+                buffer.set_scroll_region(top, bottom);
+            }
             's' => buffer.save_cursor(),
             'u' => buffer.restore_cursor(),
+            _ => {}
+        }
+    }
+
+    fn apply_private_mode(&mut self, command: char, parameters: &[i32], buffer: &mut ScreenBuffer) {
+        match command {
+            'h' => {
+                for &param in parameters {
+                    match param {
+                        1049 => buffer.enter_alt_screen(),
+                        _ => {}
+                    }
+                }
+            }
+            'l' => {
+                for &param in parameters {
+                    match param {
+                        1049 => buffer.exit_alt_screen(),
+                        _ => {}
+                    }
+                }
+            }
             _ => {}
         }
     }
@@ -190,6 +229,7 @@ impl AnsiParser {
                 3 => self.style.italic = true,
                 4 => self.style.underline = true,
                 7 => self.style.reversed = true,
+                9 => self.style.strikethrough = true,
                 22 => {
                     self.style.bold = false;
                     self.style.faint = false;
@@ -197,6 +237,9 @@ impl AnsiParser {
                 23 => self.style.italic = false,
                 24 => self.style.underline = false,
                 27 => self.style.reversed = false,
+                29 => self.style.strikethrough = false,
+                53 => self.style.overline = true,
+                55 => self.style.overline = false,
                 39 => self.style.foreground = buffer.default_style().foreground.clone(),
                 49 => self.style.background = buffer.default_style().background.clone(),
                 30..=37 => {
@@ -333,5 +376,87 @@ mod tests {
         let mut parser = AnsiParser::new(style, theme);
         parser.process("ABC\x1b[1D!", &mut buffer);
         assert_eq!(buffer.get_cell(0, 2).text, "!");
+    }
+
+    #[test]
+    fn applies_bold_and_faint() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(8, 2, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        parser.process("\x1b[1mB\x1b[2mF\x1b[22mN", &mut buffer);
+        assert!(buffer.get_cell(0, 0).bold);
+        assert!(!buffer.get_cell(0, 0).faint);
+        assert!(buffer.get_cell(0, 1).faint);
+        assert!(!buffer.get_cell(0, 1).bold);
+        assert!(!buffer.get_cell(0, 2).bold);
+        assert!(!buffer.get_cell(0, 2).faint);
+    }
+
+    #[test]
+    fn applies_strikethrough() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(8, 2, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        parser.process("\x1b[9mS\x1b[29mN", &mut buffer);
+        assert!(buffer.get_cell(0, 0).strikethrough);
+        assert!(!buffer.get_cell(0, 1).strikethrough);
+    }
+
+    #[test]
+    fn applies_overline() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(8, 2, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        parser.process("\x1b[53mO\x1b[55mN", &mut buffer);
+        assert!(buffer.get_cell(0, 0).overline);
+        assert!(!buffer.get_cell(0, 1).overline);
+    }
+
+    #[test]
+    fn handles_scroll_region() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(10, 5, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        // Set scroll region to rows 2-4 (1-indexed: 2;4)
+        parser.process("\x1b[2;4r", &mut buffer);
+        // Cursor should be at 0,0 after setting scroll region
+        assert_eq!(buffer.cursor_row(), 0);
+    }
+
+    #[test]
+    fn handles_insert_delete_lines() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(4, 4, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        parser.process("AAA\n", &mut buffer);
+        parser.process("BBB\n", &mut buffer);
+        parser.process("CCC", &mut buffer);
+        // Move to row 1 and insert a line
+        parser.process("\x1b[2;1H\x1b[1L", &mut buffer);
+        // Row 1 should now be blank
+        assert_eq!(buffer.get_cell(1, 0).text, " ");
+    }
+
+    #[test]
+    fn handles_alt_screen() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(4, 2, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        parser.process("ABCD", &mut buffer);
+        assert_eq!(buffer.get_cell(0, 0).text, "A");
+        // Enter alt screen
+        parser.process("\x1b[?1049h", &mut buffer);
+        assert_eq!(buffer.get_cell(0, 0).text, " ");
+        parser.process("XY", &mut buffer);
+        assert_eq!(buffer.get_cell(0, 0).text, "X");
+        // Exit alt screen
+        parser.process("\x1b[?1049l", &mut buffer);
+        assert_eq!(buffer.get_cell(0, 0).text, "A");
     }
 }

@@ -35,7 +35,8 @@ pub fn render_animated_svg(
         session.terminal_size.height,
         theme,
     );
-    let mut frames = emulator.replay(session);
+    let all_frames = emulator.replay(session);
+    let mut frames = deduplicate_frames(all_frames);
     normalize_frame_timing(&mut frames);
 
     let natural_cell_width = theme.font_size * 0.6;
@@ -379,9 +380,8 @@ fn append_frame(
         let row_y = layout.frame_y + y_offset;
 
         if statusline && statusline::is_statusline_row(row) {
-            // Only draw the bespoke statusline once per frame (on the first
-            // statusline row). Subsequent statusline rows are simply skipped.
             if !statusline_drawn {
+                // First statusline row: render the bespoke shell prompt
                 statusline::render_bespoke_statusline(
                     svg,
                     prompt,
@@ -393,12 +393,29 @@ fn append_frame(
                 )?;
                 statusline_drawn = true;
                 y_offset += layout.line_height;
+                // Render any typed command text on its own line below
+                let (cmd_start, cmd_end) =
+                    statusline::command_area(row, &theme.terminal.background);
+                let cmd_y = layout.frame_y + y_offset;
+                append_row_text_range(svg, layout, theme, cmd_y, row, cmd_start, cmd_end)?;
+                y_offset += layout.line_height;
+            } else {
+                // Subsequent statusline rows: render by extracting actual
+                // colored segments from the terminal cell data.
+                statusline::render_dynamic_statusline(
+                    svg,
+                    row,
+                    layout.frame_x,
+                    row_y,
+                    layout.terminal_width,
+                    layout.line_height,
+                    layout.cell_width,
+                    &theme.terminal.background,
+                    &theme.font_family,
+                    theme.font_size,
+                )?;
+                y_offset += layout.line_height;
             }
-            // Render any typed command text on its own line below the statusline
-            let (cmd_start, cmd_end) = statusline::command_area(row, &theme.terminal.background);
-            let cmd_y = layout.frame_y + y_offset;
-            append_row_text_range(svg, layout, theme, cmd_y, row, cmd_start, cmd_end)?;
-            y_offset += layout.line_height;
         } else {
             append_row_text(svg, layout, theme, row_y, row, statusline)?;
             y_offset += layout.line_height;
@@ -446,10 +463,41 @@ fn append_row_text(
             continue;
         }
 
+        // Render block element characters as SVG rects instead of text glyphs
+        // for pixel-perfect rendering regardless of font support.
+        if let Some(regions) = block_char_regions(&cell.text) {
+            let fg = effective_foreground(cell);
+            let cw = layout.cell_width;
+            let ch = layout.line_height;
+            for (rx, ry, rw, rh) in regions {
+                writeln!(
+                    svg,
+                    r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
+                    cell_x + rx * cw,
+                    row_y + ry * ch,
+                    rw * cw,
+                    rh * ch,
+                    fg
+                )?;
+            }
+            continue;
+        }
+
         // When statusline mode is enabled, skip any Private Use Area glyph
         // so we never depend on Nerd Fonts being installed.
         if statusline && statusline::is_private_use_area(&cell.text) {
             continue;
+        }
+
+        let mut extra_attrs = String::new();
+        if cell.bold {
+            extra_attrs.push_str(r#" font-weight="bold""#);
+        }
+        if cell.italic {
+            extra_attrs.push_str(r#" font-style="italic""#);
+        }
+        if cell.faint {
+            extra_attrs.push_str(r#" opacity="0.5""#);
         }
 
         writeln!(
@@ -458,22 +506,43 @@ fn append_row_text(
             x,
             text_y,
             effective_foreground(cell),
-            if cell.italic {
-                r#" font-style="italic""#
-            } else {
-                ""
-            },
+            extra_attrs,
             escape_xml(&cell.text)
         )?;
+
+        let cell_w = layout.cell_width * if cell.is_wide { 2.0 } else { 1.0 };
+        let fg = effective_foreground(cell);
         if cell.underline {
             writeln!(
                 svg,
                 r#"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="{}" stroke-width="1.2"/>"#,
                 x,
                 text_y + layout.line_height * 0.68,
-                x + layout.cell_width * if cell.is_wide { 2.0 } else { 1.0 },
+                x + cell_w,
                 text_y + layout.line_height * 0.68,
-                effective_foreground(cell)
+                fg
+            )?;
+        }
+        if cell.strikethrough {
+            writeln!(
+                svg,
+                r#"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="{}" stroke-width="1.2"/>"#,
+                x,
+                text_y + layout.line_height * 0.25,
+                x + cell_w,
+                text_y + layout.line_height * 0.25,
+                fg
+            )?;
+        }
+        if cell.overline {
+            writeln!(
+                svg,
+                r#"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="{}" stroke-width="1.2"/>"#,
+                cell_x,
+                row_y,
+                cell_x + cell_w,
+                row_y,
+                fg
             )?;
         }
     }
@@ -590,6 +659,46 @@ fn effective_background(cell: &ScreenCell) -> &str {
     }
 }
 
+/// Remove consecutive frames whose visible buffer content is identical,
+/// keeping only the last frame in each run of duplicates (to preserve timing).
+fn deduplicate_frames(frames: Vec<TerminalFrame>) -> Vec<TerminalFrame> {
+    if frames.len() <= 1 {
+        return frames;
+    }
+    let mut result: Vec<TerminalFrame> = Vec::with_capacity(frames.len());
+    for frame in frames {
+        if let Some(prev) = result.last() {
+            if buffers_equal(&prev.buffer, &frame.buffer) {
+                // Replace previous with this one (keep later timestamp)
+                let last = result.len() - 1;
+                result[last] = frame;
+                continue;
+            }
+        }
+        result.push(frame);
+    }
+    result
+}
+
+fn buffers_equal(
+    a: &crate::terminal::screen_buffer::ScreenBuffer,
+    b: &crate::terminal::screen_buffer::ScreenBuffer,
+) -> bool {
+    if a.width != b.width || a.height != b.height {
+        return false;
+    }
+    for row in 0..a.height {
+        let ra = a.row(row);
+        let rb = b.row(row);
+        for col in 0..a.width {
+            if ra[col] != rb[col] {
+                return false;
+            }
+        }
+    }
+    true
+}
+
 fn normalize_frame_timing(frames: &mut [TerminalFrame]) {
     if frames.is_empty() {
         return;
@@ -607,6 +716,62 @@ fn normalize_frame_timing(frames: &mut [TerminalFrame]) {
 
 fn css_text(value: &str) -> String {
     value.replace('&', "&amp;").replace('"', "&quot;")
+}
+
+/// Map Unicode block element characters to sub-cell rectangle regions.
+/// Returns (x_frac, y_frac, w_frac, h_frac) tuples relative to cell size.
+fn block_char_regions(text: &str) -> Option<Vec<(f32, f32, f32, f32)>> {
+    let ch = text.chars().next()?;
+    let regions = match ch {
+        // Full block
+        '█' => vec![(0.0, 0.0, 1.0, 1.0)],
+        // Half blocks
+        '▀' => vec![(0.0, 0.0, 1.0, 0.5)],
+        '▄' => vec![(0.0, 0.5, 1.0, 0.5)],
+        '▌' => vec![(0.0, 0.0, 0.5, 1.0)],
+        '▐' => vec![(0.5, 0.0, 0.5, 1.0)],
+        // Quadrant blocks
+        '▘' => vec![(0.0, 0.0, 0.5, 0.5)],
+        '▝' => vec![(0.5, 0.0, 0.5, 0.5)],
+        '▖' => vec![(0.0, 0.5, 0.5, 0.5)],
+        '▗' => vec![(0.5, 0.5, 0.5, 0.5)],
+        // Three-quadrant blocks
+        '▛' => vec![(0.0, 0.0, 1.0, 0.5), (0.0, 0.5, 0.5, 0.5)],
+        '▜' => vec![(0.0, 0.0, 1.0, 0.5), (0.5, 0.5, 0.5, 0.5)],
+        '▙' => vec![(0.0, 0.0, 0.5, 0.5), (0.0, 0.5, 1.0, 0.5)],
+        '▟' => vec![(0.5, 0.0, 0.5, 0.5), (0.0, 0.5, 1.0, 0.5)],
+        // Partial vertical blocks (left side, increasing width)
+        '▏' => vec![(0.0, 0.0, 0.125, 1.0)],
+        '▎' => vec![(0.0, 0.0, 0.25, 1.0)],
+        '▍' => vec![(0.0, 0.0, 0.375, 1.0)],
+        '▋' => vec![(0.0, 0.0, 0.625, 1.0)],
+        '▊' => vec![(0.0, 0.0, 0.75, 1.0)],
+        '▉' => vec![(0.0, 0.0, 0.875, 1.0)],
+        // Partial horizontal blocks (bottom, increasing height)
+        '▁' => vec![(0.0, 0.875, 1.0, 0.125)],
+        '▂' => vec![(0.0, 0.75, 1.0, 0.25)],
+        '▃' => vec![(0.0, 0.625, 1.0, 0.375)],
+        '▅' => vec![(0.0, 0.375, 1.0, 0.625)],
+        '▆' => vec![(0.0, 0.25, 1.0, 0.75)],
+        '▇' => vec![(0.0, 0.125, 1.0, 0.875)],
+        // Right partial blocks
+        '▕' => vec![(0.875, 0.0, 0.125, 1.0)],
+        // Box-drawing: horizontal lines rendered as thin rects for seamless tiling
+        '─' | '━' => vec![(0.0, 0.45, 1.0, 0.1)],
+        '│' | '┃' => vec![(0.45, 0.0, 0.1, 1.0)],
+        // Light box-drawing corners and tees
+        '┌' => vec![(0.45, 0.45, 0.55, 0.1), (0.45, 0.45, 0.1, 0.55)],
+        '┐' => vec![(0.0, 0.45, 0.55, 0.1), (0.45, 0.45, 0.1, 0.55)],
+        '└' => vec![(0.45, 0.0, 0.1, 0.55), (0.45, 0.45, 0.55, 0.1)],
+        '┘' => vec![(0.45, 0.0, 0.1, 0.55), (0.0, 0.45, 0.55, 0.1)],
+        '├' => vec![(0.45, 0.0, 0.1, 1.0), (0.45, 0.45, 0.55, 0.1)],
+        '┤' => vec![(0.45, 0.0, 0.1, 1.0), (0.0, 0.45, 0.55, 0.1)],
+        '┬' => vec![(0.0, 0.45, 1.0, 0.1), (0.45, 0.45, 0.1, 0.55)],
+        '┴' => vec![(0.0, 0.45, 1.0, 0.1), (0.45, 0.0, 0.1, 0.55)],
+        '┼' => vec![(0.0, 0.45, 1.0, 0.1), (0.45, 0.0, 0.1, 1.0)],
+        _ => return None,
+    };
+    Some(regions)
 }
 
 fn escape_xml(value: &str) -> String {

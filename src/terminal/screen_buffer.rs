@@ -9,6 +9,8 @@ pub struct TextStyle {
     pub underline: bool,
     pub reversed: bool,
     pub faint: bool,
+    pub strikethrough: bool,
+    pub overline: bool,
 }
 
 #[derive(Debug, Clone, PartialEq)]
@@ -21,6 +23,8 @@ pub struct ScreenCell {
     pub underline: bool,
     pub reversed: bool,
     pub faint: bool,
+    pub strikethrough: bool,
+    pub overline: bool,
     pub is_wide: bool,
     pub is_wide_continuation: bool,
 }
@@ -36,6 +40,8 @@ impl ScreenCell {
             underline: style.underline,
             reversed: style.reversed,
             faint: style.faint,
+            strikethrough: style.strikethrough,
+            overline: style.overline,
             is_wide: false,
             is_wide_continuation: false,
         }
@@ -51,6 +57,8 @@ impl ScreenCell {
             underline: style.underline,
             reversed: style.reversed,
             faint: style.faint,
+            strikethrough: style.strikethrough,
+            overline: style.overline,
             is_wide: wide,
             is_wide_continuation: continuation,
         }
@@ -68,6 +76,11 @@ pub struct ScreenBuffer {
     saved_row: usize,
     saved_col: usize,
     pending_wrap: bool,
+    scroll_top: usize,
+    scroll_bottom: usize,
+    alt_cells: Option<Vec<Vec<ScreenCell>>>,
+    alt_cursor_row: usize,
+    alt_cursor_col: usize,
 }
 
 impl ScreenBuffer {
@@ -80,6 +93,8 @@ impl ScreenBuffer {
             underline: false,
             reversed: false,
             faint: false,
+            strikethrough: false,
+            overline: false,
         };
         let cells = (0..height.max(1))
             .map(|_| {
@@ -89,9 +104,10 @@ impl ScreenBuffer {
             })
             .collect();
 
+        let h = height.max(1);
         Self {
             width: width.max(1),
-            height: height.max(1),
+            height: h,
             default_style,
             cells,
             cursor_row: 0,
@@ -99,6 +115,11 @@ impl ScreenBuffer {
             saved_row: 0,
             saved_col: 0,
             pending_wrap: false,
+            scroll_top: 0,
+            scroll_bottom: h - 1,
+            alt_cells: None,
+            alt_cursor_row: 0,
+            alt_cursor_col: 0,
         }
     }
 
@@ -112,6 +133,10 @@ impl ScreenBuffer {
 
     pub fn cursor_row(&self) -> usize {
         self.cursor_row
+    }
+
+    pub fn height(&self) -> usize {
+        self.height
     }
 
     #[allow(dead_code)]
@@ -155,10 +180,19 @@ impl ScreenBuffer {
 
     pub fn line_feed(&mut self) {
         self.pending_wrap = false;
-        if self.cursor_row + 1 >= self.height {
-            self.scroll_up(1);
-        } else {
+        if self.cursor_row == self.scroll_bottom {
+            self.scroll_up_region(1);
+        } else if self.cursor_row + 1 < self.height {
             self.cursor_row += 1;
+        }
+    }
+
+    pub fn reverse_index(&mut self) {
+        self.pending_wrap = false;
+        if self.cursor_row == self.scroll_top {
+            self.scroll_down_region(1);
+        } else if self.cursor_row > 0 {
+            self.cursor_row -= 1;
         }
     }
 
@@ -305,14 +339,120 @@ impl ScreenBuffer {
         }
     }
 
-    fn scroll_up(&mut self, count: usize) {
+    fn scroll_up_region(&mut self, count: usize) {
+        let top = self.scroll_top;
+        let bottom = self.scroll_bottom;
         for _ in 0..count {
-            self.cells.remove(0);
-            self.cells.push(
-                (0..self.width)
+            if top < self.cells.len() {
+                self.cells.remove(top);
+                let blank_row: Vec<ScreenCell> = (0..self.width)
                     .map(|_| ScreenCell::blank(&self.default_style))
-                    .collect(),
-            );
+                    .collect();
+                let insert_at = bottom.min(self.cells.len());
+                self.cells.insert(insert_at, blank_row);
+            }
+        }
+    }
+
+    fn scroll_down_region(&mut self, count: usize) {
+        let top = self.scroll_top;
+        let bottom = self.scroll_bottom;
+        for _ in 0..count {
+            if bottom < self.cells.len() {
+                self.cells.remove(bottom);
+                let blank_row: Vec<ScreenCell> = (0..self.width)
+                    .map(|_| ScreenCell::blank(&self.default_style))
+                    .collect();
+                self.cells.insert(top, blank_row);
+            }
+        }
+    }
+
+    pub fn set_scroll_region(&mut self, top: usize, bottom: usize) {
+        self.scroll_top = top.min(self.height - 1);
+        self.scroll_bottom = bottom.min(self.height - 1);
+        if self.scroll_top > self.scroll_bottom {
+            std::mem::swap(&mut self.scroll_top, &mut self.scroll_bottom);
+        }
+        self.move_cursor_to(0, 0);
+    }
+
+    #[allow(dead_code)]
+    pub fn reset_scroll_region(&mut self) {
+        self.scroll_top = 0;
+        self.scroll_bottom = self.height - 1;
+    }
+
+    pub fn insert_lines(&mut self, count: usize) {
+        let row = self.cursor_row;
+        if row < self.scroll_top || row > self.scroll_bottom {
+            return;
+        }
+        for _ in 0..count {
+            if self.scroll_bottom < self.cells.len() {
+                self.cells.remove(self.scroll_bottom);
+            }
+            let blank_row: Vec<ScreenCell> = (0..self.width)
+                .map(|_| ScreenCell::blank(&self.default_style))
+                .collect();
+            self.cells.insert(row, blank_row);
+        }
+        self.cursor_col = 0;
+    }
+
+    pub fn delete_lines(&mut self, count: usize) {
+        let row = self.cursor_row;
+        if row < self.scroll_top || row > self.scroll_bottom {
+            return;
+        }
+        for _ in 0..count {
+            if row < self.cells.len() {
+                self.cells.remove(row);
+            }
+            let blank_row: Vec<ScreenCell> = (0..self.width)
+                .map(|_| ScreenCell::blank(&self.default_style))
+                .collect();
+            let insert_at = self.scroll_bottom.min(self.cells.len());
+            self.cells.insert(insert_at, blank_row);
+        }
+        self.cursor_col = 0;
+    }
+
+    pub fn insert_characters(&mut self, count: usize) {
+        let row = self.cursor_row;
+        let col = self.cursor_col;
+        let count = count.min(self.width.saturating_sub(col));
+        for _ in 0..count {
+            if self.cells[row].len() > self.width.saturating_sub(1) {
+                self.cells[row].pop();
+            }
+            self.cells[row].insert(col, ScreenCell::blank(&self.default_style));
+        }
+        // Ensure row length stays correct
+        self.cells[row].truncate(self.width);
+    }
+
+    pub fn enter_alt_screen(&mut self) {
+        let saved = self.cells.clone();
+        self.alt_cells = Some(saved);
+        self.alt_cursor_row = self.cursor_row;
+        self.alt_cursor_col = self.cursor_col;
+        // Clear the screen for the alt buffer
+        for row in 0..self.height {
+            for col in 0..self.width {
+                self.cells[row][col] = ScreenCell::blank(&self.default_style);
+            }
+        }
+        self.cursor_row = 0;
+        self.cursor_col = 0;
+        self.pending_wrap = false;
+    }
+
+    pub fn exit_alt_screen(&mut self) {
+        if let Some(saved) = self.alt_cells.take() {
+            self.cells = saved;
+            self.cursor_row = self.alt_cursor_row;
+            self.cursor_col = self.alt_cursor_col;
         }
     }
 }

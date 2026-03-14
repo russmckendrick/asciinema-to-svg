@@ -1,6 +1,6 @@
 [package]
 name = "asciinema-to-svg"
-version = "0.1.0"
+version = "0.0.2"
 edition = "2024"
 description = "Convert asciinema v2 and v3 casts into themed animated SVG terminal recordings"
 license = "MIT"
