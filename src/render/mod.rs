@@ -151,10 +151,10 @@ pub fn render_animated_svg(
     writeln!(
         svg,
         r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
-        layout.frame_x,
-        layout.frame_y,
-        layout.terminal_width,
-        layout.terminal_height,
+        layout.frame_x.round(),
+        layout.frame_y.round(),
+        layout.terminal_width.round(),
+        layout.terminal_height.round(),
         theme.terminal.background
     )?;
 
@@ -196,6 +196,8 @@ fn append_styles(svg: &mut String, theme: &ThemeDefinition, duration: f64) -> Re
             animation-duration: {}s;
             animation-timing-function: steps(1, end);
             animation-iteration-count: infinite;
+            will-change: opacity;
+            transform: translateZ(0);
         }}
         </style>"#,
         css_text(&theme.font_family),
@@ -364,10 +366,10 @@ fn append_frame(
     writeln!(
         svg,
         r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
-        layout.frame_x,
-        layout.frame_y,
-        layout.terminal_width,
-        layout.terminal_height,
+        layout.frame_x.round(),
+        layout.frame_y.round(),
+        layout.terminal_width.round(),
+        layout.terminal_height.round(),
         theme.terminal.background
     )?;
 
@@ -377,7 +379,7 @@ fn append_frame(
 
     for row_index in 0..frame.buffer.height {
         let row = frame.buffer.row(row_index);
-        let row_y = layout.frame_y + y_offset;
+        let row_y = (layout.frame_y + y_offset).round();
 
         if statusline && statusline::is_statusline_row(row) {
             if !statusline_drawn {
@@ -396,7 +398,7 @@ fn append_frame(
                 // Render any typed command text on its own line below
                 let (cmd_start, cmd_end) =
                     statusline::command_area(row, &theme.terminal.background);
-                let cmd_y = layout.frame_y + y_offset;
+                let cmd_y = (layout.frame_y + y_offset).round();
                 append_row_text_range(svg, layout, theme, cmd_y, row, cmd_start, cmd_end)?;
                 y_offset += layout.line_height;
             } else {
@@ -433,28 +435,30 @@ fn append_row_text(
     row: &[ScreenCell],
     statusline: bool,
 ) -> Result<()> {
-    let text_y = row_y + layout.line_height * 0.14;
+    // All emitted coordinates are snapped to whole pixels so Safari (and other
+    // browsers using GPU compositor layers per <g>) can re-rasterize each
+    // frame's layer to identical pixels every animation cycle. Sub-pixel
+    // coordinates re-rasterize with slight variance, producing visible shimmer.
+    let row_y = row_y.round();
+    let line_h = layout.line_height.round();
+    let text_y = (row_y + layout.line_height * 0.14).round();
     for (column, cell) in row.iter().enumerate() {
         if cell.is_wide_continuation || cell.text == " " {
             continue;
         }
 
-        let cell_x = layout.frame_x + column as f32 * layout.cell_width;
-        let x = cell_x + layout.cell_width * 0.37;
+        let cell_cols = if cell.is_wide { 2 } else { 1 };
+        let cell_x = (layout.frame_x + column as f32 * layout.cell_width).round();
+        let cell_right =
+            (layout.frame_x + (column + cell_cols) as f32 * layout.cell_width).round();
+        let cell_w = cell_right - cell_x;
+        let x = (cell_x + layout.cell_width * 0.37).round();
         let background = effective_background(cell);
         if !background.eq_ignore_ascii_case(&theme.terminal.background) {
             writeln!(
                 svg,
                 r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
-                cell_x,
-                row_y,
-                if cell.is_wide {
-                    layout.cell_width * 2.0
-                } else {
-                    layout.cell_width
-                },
-                layout.line_height,
-                background
+                cell_x, row_y, cell_w, line_h, background
             )?;
         }
 
@@ -464,19 +468,25 @@ fn append_row_text(
         }
 
         // Render block element characters as SVG rects instead of text glyphs
-        // for pixel-perfect rendering regardless of font support.
+        // for pixel-perfect rendering regardless of font support. Edges snap
+        // to the same integer pixel grid as the cell itself so half-blocks
+        // (▀ ▄ ▌ ▐) tile cleanly without seams.
         if let Some(regions) = block_char_regions(&cell.text) {
             let fg = effective_foreground(cell);
-            let cw = layout.cell_width;
-            let ch = layout.line_height;
+            let cw_f = layout.cell_width;
+            let ch_f = layout.line_height;
             for (rx, ry, rw, rh) in regions {
+                let x0 = (cell_x + rx * cw_f).round();
+                let y0 = (row_y + ry * ch_f).round();
+                let x1 = (cell_x + (rx + rw) * cw_f).round();
+                let y1 = (row_y + (ry + rh) * ch_f).round();
                 writeln!(
                     svg,
                     r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
-                    cell_x + rx * cw,
-                    row_y + ry * ch,
-                    rw * cw,
-                    rh * ch,
+                    x0,
+                    y0,
+                    x1 - x0,
+                    y1 - y0,
                     fg
                 )?;
             }
@@ -510,27 +520,28 @@ fn append_row_text(
             escape_xml(&cell.text)
         )?;
 
-        let cell_w = layout.cell_width * if cell.is_wide { 2.0 } else { 1.0 };
         let fg = effective_foreground(cell);
         if cell.underline {
+            let uy = (text_y + layout.line_height * 0.68).round();
             writeln!(
                 svg,
                 r#"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="{}" stroke-width="1.2"/>"#,
                 x,
-                text_y + layout.line_height * 0.68,
+                uy,
                 x + cell_w,
-                text_y + layout.line_height * 0.68,
+                uy,
                 fg
             )?;
         }
         if cell.strikethrough {
+            let sy = (text_y + layout.line_height * 0.25).round();
             writeln!(
                 svg,
                 r#"<line x1="{:.2}" y1="{:.2}" x2="{:.2}" y2="{:.2}" stroke="{}" stroke-width="1.2"/>"#,
                 x,
-                text_y + layout.line_height * 0.25,
+                sy,
                 x + cell_w,
-                text_y + layout.line_height * 0.25,
+                sy,
                 fg
             )?;
         }
@@ -572,15 +583,17 @@ fn append_row_text_range(
         None => return Ok(()),
     };
 
-    let text_y = row_y + layout.line_height * 0.14;
+    let row_y = row_y.round();
+    let text_y = (row_y + layout.line_height * 0.14).round();
+    let prompt_y = (row_y + layout.line_height * 0.14 + layout.line_height * 0.07).round();
     let mut x = layout.frame_x + layout.cell_width * 0.37;
 
     // Draw $ prompt marker
     writeln!(
         svg,
         r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,
-        x,
-        text_y + layout.line_height * 0.07,
+        x.round(),
+        prompt_y,
         theme.terminal.foreground
     )?;
     x += layout.cell_width * 2.0;
@@ -601,7 +614,7 @@ fn append_row_text_range(
         writeln!(
             svg,
             r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}"{}>{}</text>"#,
-            x,
+            x.round(),
             text_y,
             effective_foreground(cell),
             if cell.italic {
@@ -627,8 +640,8 @@ fn append_prompt_marker(
     column: usize,
     cell: &ScreenCell,
 ) -> Result<()> {
-    let x = layout.frame_x + column as f32 * layout.cell_width + layout.cell_width * 0.09;
-    let y = row_y + layout.line_height * 0.07;
+    let x = (layout.frame_x + column as f32 * layout.cell_width + layout.cell_width * 0.09).round();
+    let y = (row_y + layout.line_height * 0.07).round();
     writeln!(
         svg,
         r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,

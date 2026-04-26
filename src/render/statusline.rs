@@ -75,20 +75,31 @@ pub fn render_bespoke_statusline(
     }
 
     let palette_len = prompt.palette.len();
-    let arrow_width: f32 = line_height * 0.5;
+    let arrow_width: f32 = (line_height * 0.5).round();
     let padding_x = prompt.segment_padding_x.unwrap_or(prompt.row_padding_x);
-    let h = line_height;
-    let text_y = row_y + h / 2.0;
+    let h = line_height.round();
+    // All emitted coords are snapped to whole pixels so Safari (and other
+    // browsers compositing each <g class="frame"> as its own GPU layer) can
+    // re-rasterize each cycle to identical pixels — preventing the shimmer
+    // that fractional sub-pixel coords cause when layers are evicted and
+    // re-rasterized.
+    let row_y = row_y.round();
+    let frame_x = frame_x.round();
+    let text_y = (row_y + h / 2.0).round();
     let char_w = prompt.font_size * 0.6;
 
     // Fill the full row with terminal background first
     writeln!(
         svg,
         r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
-        frame_x, row_y, terminal_width, h, terminal_bg
+        frame_x,
+        row_y,
+        terminal_width.round(),
+        h,
+        terminal_bg
     )?;
 
-    let icon_size = h * 0.714;
+    let icon_size = (h * 0.714).round();
     let icon_text_gap = h * 0.143;
     let mut x = frame_x;
 
@@ -117,24 +128,26 @@ pub fn render_bespoke_statusline(
             0.0
         };
         let content_width = icon_width + gap + text_width;
-        let seg_width = (padding_x * 2.0 + content_width).max(padding_x * 2.0 + 8.0);
+        let seg_width = (padding_x * 2.0 + content_width)
+            .max(padding_x * 2.0 + 8.0)
+            .round();
 
         // Background rect
         writeln!(
             svg,
             r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}" class="statusline-seg"/>"#,
-            x, row_y, seg_width, h, bg
+            x.round(), row_y, seg_width, h, bg
         )?;
 
         let mut content_x = x + padding_x;
 
         // Icon (rendered as nested SVG with viewBox)
         if let Some(path_data) = icon_data {
-            let icon_y = row_y + (h - icon_size) / 2.0;
+            let icon_y = (row_y + (h - icon_size) / 2.0).round();
             writeln!(
                 svg,
                 r#"<svg x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" viewBox="0 0 24 24"><path d="{}" fill="{}"/></svg>"#,
-                content_x, icon_y, icon_size, icon_size, path_data, prompt.text_color
+                content_x.round(), icon_y, icon_size, icon_size, path_data, prompt.text_color
             )?;
             content_x += icon_size + gap;
         }
@@ -144,7 +157,7 @@ pub fn render_bespoke_statusline(
             writeln!(
                 svg,
                 r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="{}" fill="{}" dominant-baseline="central" class="statusline-text">{}</text>"#,
-                content_x,
+                content_x.round(),
                 text_y,
                 super::css_text(&prompt.font_family),
                 prompt.font_size,
@@ -162,22 +175,23 @@ pub fn render_bespoke_statusline(
             terminal_bg
         };
 
+        let arrow_x = x.round();
         // Background fill behind arrow
         writeln!(
             svg,
             r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
-            x, row_y, arrow_width, h, next_bg
+            arrow_x, row_y, arrow_width, h, next_bg
         )?;
         // Arrow triangle
         writeln!(
             svg,
             r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}" class="statusline-arrow"/>"#,
-            x,
+            arrow_x,
             row_y,
-            x + arrow_width,
-            row_y + h / 2.0,
-            x,
-            row_y + h,
+            (arrow_x + arrow_width).round(),
+            (row_y + h / 2.0).round(),
+            arrow_x,
+            (row_y + h).round(),
             bg
         )?;
 
@@ -278,11 +292,21 @@ pub fn render_dynamic_statusline(
     font_family: &str,
     font_size: f32,
 ) -> Result<()> {
+    // Snap to whole pixels — see comment in render_bespoke_statusline.
+    let row_y = row_y.round();
+    let frame_x = frame_x.round();
+    let line_h = line_height.round();
+    let text_y = (row_y + line_h / 2.0).round();
+
     // Fill row with terminal background first
     writeln!(
         svg,
         r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
-        frame_x, row_y, terminal_width, line_height, terminal_bg
+        frame_x,
+        row_y,
+        terminal_width.round(),
+        line_h,
+        terminal_bg
     )?;
 
     // Extract segments: groups of cells with the same non-terminal background
@@ -291,19 +315,19 @@ pub fn render_dynamic_statusline(
         return Ok(());
     }
 
-    let arrow_width = line_height * 0.5;
+    let arrow_width = (line_height * 0.5).round();
     let padding_x = cell_width * 0.5;
-    let text_y = row_y + line_height / 2.0;
     let mut x = frame_x;
 
     for (i, seg) in segments.iter().enumerate() {
-        let seg_width = seg.text.len() as f32 * cell_width + padding_x * 2.0;
+        let seg_width = (seg.text.len() as f32 * cell_width + padding_x * 2.0).round();
+        let seg_x = x.round();
 
         // Segment background
         writeln!(
             svg,
             r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}" class="statusline-seg"/>"#,
-            x, row_y, seg_width, line_height, seg.bg
+            seg_x, row_y, seg_width, line_h, seg.bg
         )?;
 
         // Segment text
@@ -311,7 +335,7 @@ pub fn render_dynamic_statusline(
             writeln!(
                 svg,
                 r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="{}" fill="{}" dominant-baseline="central" class="statusline-text">{}</text>"#,
-                x + padding_x,
+                (seg_x + padding_x).round(),
                 text_y,
                 super::css_text(font_family),
                 font_size,
@@ -328,20 +352,21 @@ pub fn render_dynamic_statusline(
             .map(|s| s.bg.as_str())
             .unwrap_or(terminal_bg);
 
+        let arrow_x = x.round();
         writeln!(
             svg,
             r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
-            x, row_y, arrow_width, line_height, next_bg
+            arrow_x, row_y, arrow_width, line_h, next_bg
         )?;
         writeln!(
             svg,
             r#"<polygon points="{:.2},{:.2} {:.2},{:.2} {:.2},{:.2}" fill="{}" class="statusline-arrow"/>"#,
-            x,
+            arrow_x,
             row_y,
-            x + arrow_width,
-            row_y + line_height / 2.0,
-            x,
-            row_y + line_height,
+            (arrow_x + arrow_width).round(),
+            (row_y + line_h / 2.0).round(),
+            arrow_x,
+            (row_y + line_h).round(),
             seg.bg
         )?;
 
@@ -361,8 +386,8 @@ pub fn render_dynamic_statusline(
         if !bg.eq_ignore_ascii_case(terminal_bg) {
             continue; // Already rendered as part of a colored segment
         }
-        let cx = frame_x + col as f32 * cell_width + cell_width * 0.37;
-        let cy = row_y + line_height * 0.14;
+        let cx = (frame_x + col as f32 * cell_width + cell_width * 0.37).round();
+        let cy = (row_y + line_height * 0.14).round();
         let fg = effective_bg_or_fg(cell, false);
         writeln!(
             svg,
