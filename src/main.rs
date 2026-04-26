@@ -16,15 +16,12 @@ fn main() -> Result<()> {
     let scale_factor = cli::resolve_scale_factor(&cli.size, cli.size_config.as_deref())?;
     theme.scale(scale_factor);
     let session = cast::RecordingSession::read_from_file(Path::new(&cli.input))?;
-    let title = cli
-        .title
-        .clone()
-        .or_else(|| {
-            Path::new(&cli.input)
-                .file_stem()
-                .map(|value| value.to_string_lossy().to_string())
-        })
-        .or_else(|| Some("Terminal".to_string()));
+
+    // The cast file stem is only a *fallback* — render will prefer an explicit
+    // --title, then any OSC 0/2 title captured during replay, before this.
+    let fallback_title = Path::new(&cli.input)
+        .file_stem()
+        .map(|value| value.to_string_lossy().to_string());
 
     let statusline_config = cli
         .statusline
@@ -38,9 +35,16 @@ fn main() -> Result<()> {
         render::RenderOptions {
             width_px: cli.width,
             height_px: cli.height,
-            window_title: title,
+            window_title: cli.title.clone(),
+            fallback_title,
             statusline: !cli.no_statusline,
             statusline_config,
+            speed: cli.speed,
+            idle_time_limit: cli.idle_time_limit,
+            start: cli.start,
+            end: cli.end,
+            at: cli.at,
+            loop_animation: !cli.no_loop,
         },
     )?;
 

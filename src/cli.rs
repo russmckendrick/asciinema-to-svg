@@ -50,6 +50,34 @@ pub struct Cli {
     /// Path to a standalone statusline config JSON (overrides theme prompt section)
     #[arg(long)]
     pub statusline: Option<String>,
+
+    /// Playback speed multiplier (1.0 = real time, 2.0 = double speed)
+    #[arg(long, default_value_t = 1.0)]
+    pub speed: f32,
+
+    /// Cap any pause between events at this many seconds
+    #[arg(long, value_name = "SECS")]
+    pub idle_time_limit: Option<f32>,
+
+    /// Start the rendered animation at this time (seconds, relative to the cast)
+    #[arg(long, value_name = "SECS")]
+    pub start: Option<f64>,
+
+    /// End the rendered animation at this time (seconds, relative to the cast)
+    #[arg(long, value_name = "SECS")]
+    pub end: Option<f64>,
+
+    /// Render a single static SVG of the buffer at this time (seconds); no animation
+    #[arg(long, value_name = "SECS")]
+    pub at: Option<f64>,
+
+    /// Play the animation once instead of looping forever
+    #[arg(long)]
+    pub no_loop: bool,
+
+    /// Print warnings about unhandled control sequences to stderr
+    #[arg(long)]
+    pub verbose: bool,
 }
 
 /// Resolve the scale factor for the given size preset name.

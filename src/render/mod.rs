@@ -9,9 +9,44 @@ use std::fmt::Write;
 pub struct RenderOptions {
     pub width_px: Option<u32>,
     pub height_px: Option<u32>,
+    /// Explicit `--title` override (highest priority).
     pub window_title: Option<String>,
+    /// Title to use when `window_title` is not set and the cast did not set
+    /// an OSC 0/2 title (typically the input file stem).
+    pub fallback_title: Option<String>,
     pub statusline: bool,
     pub statusline_config: Option<PromptTheme>,
+
+    /// Playback speed multiplier (1.0 = real time).
+    pub speed: f32,
+    /// Cap any inter-frame gap at this many seconds.
+    pub idle_time_limit: Option<f32>,
+    /// Trim the cast to `[start, end]` (seconds, original timeline).
+    pub start: Option<f64>,
+    pub end: Option<f64>,
+    /// If set, render a single static frame at this time and skip animation.
+    pub at: Option<f64>,
+    /// True (default) loops the animation forever; false plays once.
+    pub loop_animation: bool,
+}
+
+impl Default for RenderOptions {
+    fn default() -> Self {
+        Self {
+            width_px: None,
+            height_px: None,
+            window_title: None,
+            fallback_title: None,
+            statusline: true,
+            statusline_config: None,
+            speed: 1.0,
+            idle_time_limit: None,
+            start: None,
+            end: None,
+            at: None,
+            loop_animation: true,
+        }
+    }
 }
 
 struct Layout {
@@ -37,7 +72,12 @@ pub fn render_animated_svg(
     );
     let all_frames = emulator.replay(session);
     let mut frames = deduplicate_frames(all_frames);
+    apply_timing(&mut frames, &options);
+    if let Some(at) = options.at {
+        frames = select_static_frame(frames, at);
+    }
     normalize_frame_timing(&mut frames);
+    let static_mode = options.at.is_some();
 
     let natural_cell_width = theme.font_size * 0.6;
     let natural_line_height = theme.line_height;
@@ -127,13 +167,14 @@ pub fn render_animated_svg(
     };
 
     // CLI override wins; otherwise prefer the OSC 0/2 title captured during
-    // replay (most recent non-empty title across frames), falling back to a
-    // generic label.
-    let title = options.window_title.unwrap_or_else(|| {
+    // replay (most recent non-empty title across frames), then the caller's
+    // fallback (typically the cast file stem), then a generic label.
+    let title = options.window_title.clone().unwrap_or_else(|| {
         frames
             .iter()
             .rev()
             .find_map(|f| f.buffer.title().filter(|t| !t.is_empty()).map(str::to_string))
+            .or_else(|| options.fallback_title.clone())
             .unwrap_or_else(|| "Terminal".to_string())
     });
     let total_duration = frames
@@ -152,7 +193,13 @@ pub fn render_animated_svg(
         escape_xml(&theme.name)
     )?;
     svg.push_str("<defs>");
-    append_styles(&mut svg, theme, total_duration)?;
+    append_styles(
+        &mut svg,
+        theme,
+        total_duration,
+        static_mode,
+        options.loop_animation,
+    )?;
     svg.push_str("</defs>");
     append_window_chrome(&mut svg, theme, &layout, &title)?;
     writeln!(
@@ -165,29 +212,66 @@ pub fn render_animated_svg(
         theme.terminal.background
     )?;
 
-    for (index, frame) in frames.iter().enumerate() {
-        let next_frame_time = frames
-            .get(index + 1)
-            .map(|next| next.time)
-            .unwrap_or(total_duration);
-        append_frame(
-            &mut svg,
-            theme,
-            &layout,
-            frame,
-            next_frame_time,
-            index,
-            total_duration,
-            options.statusline,
-            options.statusline_config.as_ref(),
-        )?;
+    if static_mode {
+        // Single frame, no animation wrapper, no @keyframes.
+        if let Some(frame) = frames.first() {
+            append_frame_body(
+                &mut svg,
+                theme,
+                &layout,
+                frame,
+                options.statusline,
+                options.statusline_config.as_ref(),
+            )?;
+        }
+    } else {
+        for (index, frame) in frames.iter().enumerate() {
+            let next_frame_time = frames
+                .get(index + 1)
+                .map(|next| next.time)
+                .unwrap_or(total_duration);
+            append_frame(
+                &mut svg,
+                theme,
+                &layout,
+                frame,
+                next_frame_time,
+                index,
+                total_duration,
+                options.statusline,
+                options.statusline_config.as_ref(),
+            )?;
+        }
     }
 
     svg.push_str("</svg>");
     Ok(svg)
 }
 
-fn append_styles(svg: &mut String, theme: &ThemeDefinition, duration: f64) -> Result<()> {
+fn append_styles(
+    svg: &mut String,
+    theme: &ThemeDefinition,
+    duration: f64,
+    static_mode: bool,
+    loop_animation: bool,
+) -> Result<()> {
+    let frame_rule = if static_mode {
+        String::new()
+    } else {
+        let iter = if loop_animation { "infinite" } else { "1" };
+        format!(
+            r#"
+        .frame {{
+            opacity: 0;
+            animation-duration: {}s;
+            animation-timing-function: steps(1, end);
+            animation-iteration-count: {};
+            will-change: opacity;
+            transform: translateZ(0);
+        }}"#,
+            duration, iter
+        )
+    };
     writeln!(
         svg,
         r#"<style>
@@ -197,19 +281,11 @@ fn append_styles(svg: &mut String, theme: &ThemeDefinition, duration: f64) -> Re
             font-weight: 400;
             dominant-baseline: hanging;
             white-space: pre;
-        }}
-        .frame {{
-            opacity: 0;
-            animation-duration: {}s;
-            animation-timing-function: steps(1, end);
-            animation-iteration-count: infinite;
-            will-change: opacity;
-            transform: translateZ(0);
-        }}
+        }}{}
         </style>"#,
         css_text(&theme.font_family),
         theme.font_size,
-        duration
+        frame_rule
     )?;
     Ok(())
 }
@@ -267,14 +343,20 @@ fn append_window_chrome(
     } else {
         theme.chrome.title_bar_height * 0.35
     };
+    // Chrome glyphs and circles are emitted once, but the browser may still
+    // re-rasterize the chrome layer on every animation cycle. Snap their
+    // coordinates to whole pixels so long titles can't shimmer via sub-pixel
+    // glyph repositioning.
+    let title_x = match theme.chrome.kind {
+        ChromeKind::Macos | ChromeKind::Linux => (layout.width / 2.0).round(),
+        ChromeKind::Powershell => 12.0,
+    };
+    let title_y = (title_bar_center_y + 0.5).round();
     writeln!(
         svg,
         r#"<text x="{:.2}" y="{:.2}" font-family="{}" font-size="{:.1}" fill="{}" dominant-baseline="middle"{}>{}</text>"#,
-        match theme.chrome.kind {
-            ChromeKind::Macos | ChromeKind::Linux => layout.width / 2.0,
-            ChromeKind::Powershell => 12.0,
-        },
-        title_bar_center_y + 0.5,
+        title_x,
+        title_y,
         css_text("ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"),
         title_font_size,
         theme.chrome.title_color,
@@ -288,18 +370,19 @@ fn append_window_chrome(
 
     match theme.chrome.kind {
         ChromeKind::Macos => {
+            let cy = (title_bar_center_y + 0.5).round();
             for (index, color) in ["#ff5f57", "#febc2e", "#28c840"].iter().enumerate() {
                 writeln!(
                     svg,
                     r#"<circle cx="{:.2}" cy="{:.2}" r="7" fill="{}"/>"#,
-                    theme.chrome.padding + 18.0 + 22.0 * index as f32,
-                    title_bar_center_y + 0.5,
+                    (theme.chrome.padding + 18.0 + 22.0 * index as f32).round(),
+                    cy,
                     color
                 )?;
             }
         }
         ChromeKind::Linux => {
-            let y = theme.chrome.padding + theme.chrome.title_bar_height / 2.0;
+            let y = (theme.chrome.padding + theme.chrome.title_bar_height / 2.0).round();
             writeln!(
                 svg,
                 r##"<circle cx="18" cy="{:.2}" r="8" fill="#dd4814"/><circle cx="42" cy="{:.2}" r="8" fill="#666666"/><circle cx="66" cy="{:.2}" r="8" fill="#888888"/>"##,
@@ -307,12 +390,12 @@ fn append_window_chrome(
             )?;
         }
         ChromeKind::Powershell => {
-            let y = theme.chrome.padding + theme.chrome.title_bar_height / 2.0;
+            let y = (theme.chrome.padding + theme.chrome.title_bar_height / 2.0).round();
             let ctrl_font = theme.chrome.title_bar_height * 0.3;
             writeln!(
                 svg,
                 r#"<text x="{:.2}" y="{:.2}" font-family="Segoe UI, sans-serif" font-size="{:.1}" fill="{}" dominant-baseline="middle">_</text>"#,
-                layout.width - 70.0,
+                (layout.width - 70.0).round(),
                 y,
                 ctrl_font,
                 theme.chrome.subtitle_color
@@ -320,14 +403,14 @@ fn append_window_chrome(
             writeln!(
                 svg,
                 r#"<rect x="{:.2}" y="{:.2}" width="10" height="10" fill="none" stroke="{}"/>"#,
-                layout.width - 46.0,
-                y - 5.0,
+                (layout.width - 46.0).round(),
+                (y - 5.0).round(),
                 theme.chrome.subtitle_color
             )?;
             writeln!(
                 svg,
                 r#"<text x="{:.2}" y="{:.2}" font-family="Segoe UI, sans-serif" font-size="{:.1}" fill="{}" dominant-baseline="middle">×</text>"#,
-                layout.width - 18.0,
+                (layout.width - 18.0).round(),
                 y,
                 ctrl_font,
                 theme.chrome.subtitle_color
@@ -370,6 +453,24 @@ fn append_frame(
         r#"<style>@keyframes frame-{} {{ 0%, {:.3}% {{ opacity: 0; }} {:.3}%, {:.3}% {{ opacity: 1; }} {:.3}%, 100% {{ opacity: 0; }} }}</style>"#,
         index, start, start, end, end
     )?;
+    append_frame_body(svg, theme, layout, frame, statusline, statusline_config)?;
+    svg.push_str("</g>");
+    Ok(())
+}
+
+/// Emit the visual contents of a single frame: the per-frame terminal-bg fill
+/// followed by per-row content (statusline rendering or plain row text).
+///
+/// Used both inside the per-frame `<g>` wrapper for animated mode and as the
+/// sole rendered content for static (`--at`) mode.
+fn append_frame_body(
+    svg: &mut String,
+    theme: &ThemeDefinition,
+    layout: &Layout,
+    frame: &TerminalFrame,
+    statusline: bool,
+    statusline_config: Option<&PromptTheme>,
+) -> Result<()> {
     writeln!(
         svg,
         r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}"/>"#,
@@ -390,7 +491,6 @@ fn append_frame(
 
         if statusline && statusline::is_statusline_row(row) {
             if !statusline_drawn {
-                // First statusline row: render the bespoke shell prompt
                 statusline::render_bespoke_statusline(
                     svg,
                     prompt,
@@ -402,15 +502,12 @@ fn append_frame(
                 )?;
                 statusline_drawn = true;
                 y_offset += layout.line_height;
-                // Render any typed command text on its own line below
                 let (cmd_start, cmd_end) =
                     statusline::command_area(row, &theme.terminal.background);
                 let cmd_y = (layout.frame_y + y_offset).round();
                 append_row_text_range(svg, layout, theme, cmd_y, row, cmd_start, cmd_end)?;
                 y_offset += layout.line_height;
             } else {
-                // Subsequent statusline rows: render by extracting actual
-                // colored segments from the terminal cell data.
                 statusline::render_dynamic_statusline(
                     svg,
                     row,
@@ -430,7 +527,6 @@ fn append_frame(
             y_offset += layout.line_height;
         }
     }
-    svg.push_str("</g>");
     Ok(())
 }
 
@@ -679,6 +775,76 @@ fn effective_background(cell: &ScreenCell) -> &str {
     }
 }
 
+/// Apply the timing transformations driven by CLI flags, in order:
+///   1. Trim to `[start, end]` and rebase the surviving frames to start at 0.
+///   2. Cap any inter-frame gap that exceeds `idle_time_limit`, sliding all
+///      subsequent frames earlier by the saved time.
+///   3. Multiply all times by `1 / speed` so faster speeds compress the cast.
+///
+/// The order matters: trim defines the slice the user cares about, idle-cap
+/// then makes that slice watchable by removing dead air, and speed finally
+/// scales the whole thing. Operations are no-ops when their flag is unset.
+fn apply_timing(frames: &mut Vec<TerminalFrame>, opts: &RenderOptions) {
+    if let Some(start) = opts.start {
+        frames.retain(|f| f.time >= start);
+        for f in frames.iter_mut() {
+            f.time -= start;
+        }
+    }
+    if let Some(end) = opts.end {
+        let cutoff = end - opts.start.unwrap_or(0.0);
+        frames.retain(|f| f.time <= cutoff);
+    }
+
+    if let Some(limit) = opts.idle_time_limit.filter(|l| *l > 0.0) {
+        let limit = limit as f64;
+        let mut total_saved = 0.0_f64;
+        let mut last_original: Option<f64> = None;
+        for f in frames.iter_mut() {
+            let original = f.time;
+            f.time = original - total_saved;
+            if let Some(prev) = last_original {
+                let gap = original - prev;
+                if gap > limit {
+                    let saving = gap - limit;
+                    total_saved += saving;
+                    f.time -= saving;
+                }
+            }
+            last_original = Some(original);
+        }
+    }
+
+    if (opts.speed - 1.0).abs() > 1e-6 && opts.speed > 0.0 {
+        let scale = 1.0 / opts.speed as f64;
+        for f in frames.iter_mut() {
+            f.time *= scale;
+        }
+    }
+}
+
+/// Pick the buffer state at time `at` for `--at` static export.
+///
+/// Returns the last frame whose time is <= `at`. If `at` is before any frame,
+/// returns the first frame (the empty initial buffer); if all frames are
+/// before `at`, returns the final frame.
+fn select_static_frame(frames: Vec<TerminalFrame>, at: f64) -> Vec<TerminalFrame> {
+    if frames.is_empty() {
+        return frames;
+    }
+    let mut chosen_index = 0usize;
+    for (i, frame) in frames.iter().enumerate() {
+        if frame.time <= at {
+            chosen_index = i;
+        } else {
+            break;
+        }
+    }
+    let mut iter = frames.into_iter();
+    let chosen = iter.nth(chosen_index).expect("non-empty by guard above");
+    vec![chosen]
+}
+
 /// Remove consecutive frames whose visible buffer content is identical,
 /// keeping only the last frame in each run of duplicates (to preserve timing).
 fn deduplicate_frames(frames: Vec<TerminalFrame>) -> Vec<TerminalFrame> {
@@ -825,6 +991,7 @@ mod tests {
                 window_title: Some("demo".to_string()),
                 statusline: true,
                 statusline_config: None,
+                ..Default::default()
             },
         )
         .unwrap();
@@ -852,6 +1019,7 @@ mod tests {
                 window_title: Some("demo".to_string()),
                 statusline: true,
                 statusline_config: None,
+                ..Default::default()
             },
         )
         .unwrap();
@@ -878,6 +1046,7 @@ mod tests {
                 window_title: None,
                 statusline: true,
                 statusline_config: None,
+                ..Default::default()
             },
         )
         .unwrap();
@@ -907,6 +1076,7 @@ mod tests {
                 window_title: None,
                 statusline: false,
                 statusline_config: None,
+                ..Default::default()
             },
         )
         .unwrap();
@@ -931,10 +1101,154 @@ mod tests {
                 window_title: None,
                 statusline: true,
                 statusline_config: None,
+                ..Default::default()
             },
         )
         .unwrap();
         assert!(svg.contains("$</text>"));
         assert!(!svg.contains(""));
+    }
+
+    fn make_simple_session(events: &[(f64, &str)]) -> RecordingSession {
+        let mut content = String::from(r#"{"version":2,"width":20,"height":4,"timestamp":0}"#);
+        for (time, data) in events {
+            content.push('\n');
+            content.push_str(&format!(
+                r#"[{},"o",{}]"#,
+                time,
+                serde_json::to_string(data).unwrap()
+            ));
+        }
+        RecordingSession::read_from_str(&content).unwrap()
+    }
+
+    fn frames_at_times(times: &[f64]) -> Vec<TerminalFrame> {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        times
+            .iter()
+            .map(|&t| TerminalFrame {
+                time: t,
+                buffer: crate::terminal::screen_buffer::ScreenBuffer::new(2, 2, &theme),
+            })
+            .collect()
+    }
+
+    #[test]
+    fn apply_timing_speed_halves_frame_times() {
+        let mut frames = frames_at_times(&[0.0, 1.0, 2.0]);
+        let opts = RenderOptions {
+            speed: 2.0,
+            ..Default::default()
+        };
+        apply_timing(&mut frames, &opts);
+        assert!((frames[0].time - 0.0).abs() < 1e-9);
+        assert!((frames[1].time - 0.5).abs() < 1e-9);
+        assert!((frames[2].time - 1.0).abs() < 1e-9);
+    }
+
+    #[test]
+    fn apply_timing_idle_cap_collapses_long_pauses() {
+        let mut frames = frames_at_times(&[0.0, 0.1, 5.1, 5.2]);
+        let opts = RenderOptions {
+            idle_time_limit: Some(0.5),
+            ..Default::default()
+        };
+        apply_timing(&mut frames, &opts);
+        assert!((frames[0].time - 0.0).abs() < 1e-9);
+        assert!((frames[1].time - 0.1).abs() < 1e-9);
+        assert!((frames[2].time - 0.6).abs() < 1e-9);
+        assert!((frames[3].time - 0.7).abs() < 1e-9);
+    }
+
+    #[test]
+    fn apply_timing_start_end_trims_and_rebases() {
+        let mut frames = frames_at_times(&[0.0, 1.0, 2.0, 3.0, 4.0]);
+        let opts = RenderOptions {
+            start: Some(1.0),
+            end: Some(3.0),
+            ..Default::default()
+        };
+        apply_timing(&mut frames, &opts);
+        assert_eq!(frames.len(), 3);
+        assert!((frames[0].time - 0.0).abs() < 1e-9);
+        assert!((frames[1].time - 1.0).abs() < 1e-9);
+        assert!((frames[2].time - 2.0).abs() < 1e-9);
+    }
+
+    #[test]
+    fn at_produces_static_svg_with_no_animation() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let session = make_simple_session(&[(0.1, "first"), (0.5, "\r\nsecond")]);
+        let svg = render_animated_svg(
+            &session,
+            &theme,
+            RenderOptions {
+                at: Some(0.6),
+                ..Default::default()
+            },
+        )
+        .unwrap();
+        assert!(
+            !svg.contains("@keyframes"),
+            "static SVG must not contain @keyframes"
+        );
+        assert!(
+            !svg.contains(r#"class="frame""#),
+            "static SVG must not wrap content in a .frame group"
+        );
+        assert!(svg.contains(">f</text>"));
+        assert!(svg.contains(">s</text>"));
+    }
+
+    #[test]
+    fn no_loop_sets_iteration_count_to_one() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let session = make_simple_session(&[(0.1, "hi")]);
+        let svg = render_animated_svg(
+            &session,
+            &theme,
+            RenderOptions {
+                loop_animation: false,
+                ..Default::default()
+            },
+        )
+        .unwrap();
+        assert!(svg.contains("animation-iteration-count: 1;"));
+        assert!(!svg.contains("animation-iteration-count: infinite"));
+    }
+
+    #[test]
+    fn osc_title_used_when_no_cli_title() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let session = make_simple_session(&[(0.1, "\u{1b}]2;set-by-osc\u{07}hello")]);
+        let svg = render_animated_svg(
+            &session,
+            &theme,
+            RenderOptions {
+                window_title: None,
+                fallback_title: Some("file-stem".to_string()),
+                ..Default::default()
+            },
+        )
+        .unwrap();
+        assert!(svg.contains(">set-by-osc</text>"));
+        assert!(!svg.contains(">file-stem</text>"));
+    }
+
+    #[test]
+    fn fallback_title_used_when_no_cli_or_osc_title() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let session = make_simple_session(&[(0.1, "no title set")]);
+        let svg = render_animated_svg(
+            &session,
+            &theme,
+            RenderOptions {
+                window_title: None,
+                fallback_title: Some("file-stem".to_string()),
+                ..Default::default()
+            },
+        )
+        .unwrap();
+        assert!(svg.contains(">file-stem</text>"));
     }
 }
