@@ -18,7 +18,16 @@ pub struct TerminalSize {
 #[derive(Debug, Clone, PartialEq)]
 pub struct AsciicastEvent {
     pub time: f64,
+    pub kind: EventKind,
     pub data: String,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EventKind {
+    /// `o` — terminal output bytes to feed into the parser.
+    Output,
+    /// `r` — terminal resize, with `data` shaped as `"COLSxROWS"`.
+    Resize,
 }
 
 #[derive(Debug, Deserialize)]
@@ -106,23 +115,28 @@ impl RecordingSession {
             let Some(time) = parts[0].as_f64() else {
                 continue;
             };
-            let kind = parts[1].as_str().unwrap_or_default();
-            if kind != "o" {
-                if version == 3 {
-                    elapsed += time;
-                }
-                continue;
-            }
-            let data = parts[2].as_str().unwrap_or_default().to_string();
+            let raw_kind = parts[1].as_str().unwrap_or_default();
+            let event_kind = match raw_kind {
+                "o" => Some(EventKind::Output),
+                "r" => Some(EventKind::Resize),
+                _ => None,
+            };
+            // For v3, every event's `time` is a delta we must accumulate even
+            // when we discard the event, so later timestamps stay correct.
             let absolute_time = if version == 3 {
                 elapsed += time;
                 elapsed
             } else {
                 time
             };
+            let Some(kind) = event_kind else {
+                continue;
+            };
+            let data = parts[2].as_str().unwrap_or_default().to_string();
 
             events.push(AsciicastEvent {
                 time: absolute_time.max(0.0),
+                kind,
                 data,
             });
         }
@@ -167,5 +181,37 @@ mod tests {
     fn rejects_unknown_version() {
         let result = RecordingSession::read_from_str(r#"{"version":9}"#);
         assert!(result.is_err());
+    }
+
+    #[test]
+    fn parses_resize_events_alongside_output() {
+        let content = r#"{"version":2,"width":80,"height":24,"timestamp":0}
+[0.1,"o","hello"]
+[0.5,"r","100x40"]
+[0.6,"o"," world"]
+"#;
+        let session = RecordingSession::read_from_str(content).unwrap();
+        assert_eq!(session.events.len(), 3);
+        assert_eq!(session.events[0].kind, EventKind::Output);
+        assert_eq!(session.events[1].kind, EventKind::Resize);
+        assert_eq!(session.events[1].data, "100x40");
+        assert_eq!(session.events[2].kind, EventKind::Output);
+    }
+
+    #[test]
+    fn drops_other_event_kinds_but_preserves_v3_timing() {
+        // For v3 casts, every event's `time` is a delta. Even when we drop an
+        // event we still need to advance the clock so later timestamps remain
+        // accurate.
+        let content = r#"{"version":3,"term":{"cols":80,"rows":24},"timestamp":0}
+[0.1,"o","a"]
+[0.5,"i","ignored input"]
+[0.2,"o","b"]
+"#;
+        let session = RecordingSession::read_from_str(content).unwrap();
+        assert_eq!(session.events.len(), 2);
+        // 'a' at 0.1, 'b' at 0.1 + 0.5 + 0.2 = 0.8 (the dropped 'i' still
+        // counts toward elapsed time).
+        assert!((session.events[1].time - 0.8).abs() < 1e-9);
     }
 }

@@ -1,18 +1,18 @@
-use super::screen_buffer::{ScreenBuffer, TextStyle};
+use super::screen_buffer::ScreenBuffer;
 use crate::theme::ThemeDefinition;
 
 pub struct AnsiParser {
-    style: TextStyle,
     theme: ThemeDefinition,
     pending_escape: String,
+    verbose: bool,
 }
 
 impl AnsiParser {
-    pub fn new(style: TextStyle, theme: ThemeDefinition) -> Self {
+    pub fn new(theme: ThemeDefinition, verbose: bool) -> Self {
         Self {
-            style,
             theme,
             pending_escape: String::new(),
+            verbose,
         }
     }
 
@@ -57,7 +57,7 @@ impl AnsiParser {
                 continue;
             }
 
-            buffer.put_char(ch, &self.style);
+            buffer.put_char(ch);
             index += 1;
         }
     }
@@ -91,8 +91,8 @@ impl AnsiParser {
                 Some(index + 1)
             }
             'c' => {
-                self.style = buffer.default_style().clone();
-                buffer.clear_display(2, None);
+                buffer.reset_current_style();
+                buffer.clear_display(2);
                 buffer.move_cursor_to(0, 0);
                 Some(index + 1)
             }
@@ -161,16 +161,10 @@ impl AnsiParser {
                 let col = (get_param(parameters, 1, 1).max(1) - 1) as usize;
                 buffer.move_cursor_to(row, col);
             }
-            'J' => buffer.clear_display(get_param(parameters, 0, 0), Some(&self.style)),
-            'K' => buffer.clear_line(get_param(parameters, 0, 0), Some(&self.style)),
-            'P' => buffer.delete_characters(
-                get_param(parameters, 0, 1).max(1) as usize,
-                Some(&self.style),
-            ),
-            'X' => buffer.erase_chars(
-                get_param(parameters, 0, 1).max(1) as usize,
-                Some(&self.style),
-            ),
+            'J' => buffer.clear_display(get_param(parameters, 0, 0)),
+            'K' => buffer.clear_line(get_param(parameters, 0, 0)),
+            'P' => buffer.delete_characters(get_param(parameters, 0, 1).max(1) as usize),
+            'X' => buffer.erase_chars(get_param(parameters, 0, 1).max(1) as usize),
             'L' => buffer.insert_lines(get_param(parameters, 0, 1).max(1) as usize),
             'M' => buffer.delete_lines(get_param(parameters, 0, 1).max(1) as usize),
             '@' => buffer.insert_characters(get_param(parameters, 0, 1).max(1) as usize),
@@ -181,31 +175,50 @@ impl AnsiParser {
             }
             's' => buffer.save_cursor(),
             'u' => buffer.restore_cursor(),
-            _ => {}
+            other => {
+                if self.verbose {
+                    eprintln!(
+                        "warning: unhandled CSI '{}' (params: {:?})",
+                        other, parameters
+                    );
+                }
+            }
         }
     }
 
     fn apply_private_mode(&mut self, command: char, parameters: &[i32], buffer: &mut ScreenBuffer) {
         match command {
-            'h' => {
+            'h' | 'l' => {
+                let on = command == 'h';
                 for &param in parameters {
                     match param {
-                        25 => buffer.set_cursor_visible(true),
-                        1049 => buffer.enter_alt_screen(),
-                        _ => {}
+                        25 => buffer.set_cursor_visible(on),
+                        1049 => {
+                            if on {
+                                buffer.enter_alt_screen();
+                            } else {
+                                buffer.exit_alt_screen();
+                            }
+                        }
+                        other => {
+                            if self.verbose {
+                                eprintln!(
+                                    "warning: unhandled private mode '?{}{}' ",
+                                    other, command
+                                );
+                            }
+                        }
                     }
                 }
             }
-            'l' => {
-                for &param in parameters {
-                    match param {
-                        25 => buffer.set_cursor_visible(false),
-                        1049 => buffer.exit_alt_screen(),
-                        _ => {}
-                    }
+            other => {
+                if self.verbose {
+                    eprintln!(
+                        "warning: unhandled private CSI '{}' (params: {:?})",
+                        other, parameters
+                    );
                 }
             }
-            _ => {}
         }
     }
 
@@ -218,65 +231,68 @@ impl AnsiParser {
 
         let mut index = 0usize;
         while index < parameters.len() {
-            match parameters[index] {
-                0 => self.style = buffer.default_style().clone(),
+            let p = parameters[index];
+            match p {
+                0 => buffer.reset_current_style(),
                 1 => {
-                    self.style.bold = true;
-                    self.style.faint = false;
+                    let s = buffer.current_style_mut();
+                    s.bold = true;
+                    s.faint = false;
                 }
                 2 => {
-                    self.style.bold = false;
-                    self.style.faint = true;
+                    let s = buffer.current_style_mut();
+                    s.bold = false;
+                    s.faint = true;
                 }
-                3 => self.style.italic = true,
-                4 => self.style.underline = true,
-                7 => self.style.reversed = true,
-                9 => self.style.strikethrough = true,
+                3 => buffer.current_style_mut().italic = true,
+                4 => buffer.current_style_mut().underline = true,
+                7 => buffer.current_style_mut().reversed = true,
+                9 => buffer.current_style_mut().strikethrough = true,
                 22 => {
-                    self.style.bold = false;
-                    self.style.faint = false;
+                    let s = buffer.current_style_mut();
+                    s.bold = false;
+                    s.faint = false;
                 }
-                23 => self.style.italic = false,
-                24 => self.style.underline = false,
-                27 => self.style.reversed = false,
-                29 => self.style.strikethrough = false,
-                53 => self.style.overline = true,
-                55 => self.style.overline = false,
-                39 => self.style.foreground = buffer.default_style().foreground.clone(),
-                49 => self.style.background = buffer.default_style().background.clone(),
+                23 => buffer.current_style_mut().italic = false,
+                24 => buffer.current_style_mut().underline = false,
+                27 => buffer.current_style_mut().reversed = false,
+                29 => buffer.current_style_mut().strikethrough = false,
+                53 => buffer.current_style_mut().overline = true,
+                55 => buffer.current_style_mut().overline = false,
+                39 => {
+                    let fg = buffer.default_style().foreground.clone();
+                    buffer.current_style_mut().foreground = fg;
+                }
+                49 => {
+                    let bg = buffer.default_style().background.clone();
+                    buffer.current_style_mut().background = bg;
+                }
                 30..=37 => {
-                    self.style.foreground = self
-                        .theme
-                        .ansi_color((parameters[index] - 30) as usize)
-                        .to_string()
+                    let color = self.theme.ansi_color((p - 30) as usize).to_string();
+                    buffer.current_style_mut().foreground = color;
                 }
                 40..=47 => {
-                    self.style.background = self
-                        .theme
-                        .ansi_color((parameters[index] - 40) as usize)
-                        .to_string()
+                    let color = self.theme.ansi_color((p - 40) as usize).to_string();
+                    buffer.current_style_mut().background = color;
                 }
                 90..=97 => {
-                    self.style.foreground = self
-                        .theme
-                        .ansi_color((8 + parameters[index] - 90) as usize)
-                        .to_string()
+                    let color = self.theme.ansi_color((8 + p - 90) as usize).to_string();
+                    buffer.current_style_mut().foreground = color;
                 }
                 100..=107 => {
-                    self.style.background = self
-                        .theme
-                        .ansi_color((8 + parameters[index] - 100) as usize)
-                        .to_string()
+                    let color = self.theme.ansi_color((8 + p - 100) as usize).to_string();
+                    buffer.current_style_mut().background = color;
                 }
                 38 | 48 => {
                     if index + 2 < parameters.len() && parameters[index + 1] == 5 {
                         let color = self
                             .theme
                             .ansi256_color(parameters[index + 2].clamp(0, 255) as u8);
-                        if parameters[index] == 38 {
-                            self.style.foreground = color;
+                        let s = buffer.current_style_mut();
+                        if p == 38 {
+                            s.foreground = color;
                         } else {
-                            self.style.background = color;
+                            s.background = color;
                         }
                         index += 2;
                     } else if index + 4 < parameters.len() && parameters[index + 1] == 2 {
@@ -286,15 +302,20 @@ impl AnsiParser {
                             parameters[index + 3].clamp(0, 255) as u8,
                             parameters[index + 4].clamp(0, 255) as u8
                         );
-                        if parameters[index] == 38 {
-                            self.style.foreground = color;
+                        let s = buffer.current_style_mut();
+                        if p == 38 {
+                            s.foreground = color;
                         } else {
-                            self.style.background = color;
+                            s.background = color;
                         }
                         index += 4;
                     }
                 }
-                _ => {}
+                other => {
+                    if self.verbose {
+                        eprintln!("warning: unhandled SGR parameter {}", other);
+                    }
+                }
             }
             index += 1;
         }
@@ -384,8 +405,7 @@ mod tests {
     fn applies_ansi_colors() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(8, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process("\x1b[31mA\x1b[0mB", &mut buffer);
         assert_eq!(buffer.get_cell(0, 0).foreground, "#ff6b6b");
         assert_eq!(
@@ -398,8 +418,7 @@ mod tests {
     fn moves_cursor_left() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(8, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process("ABC\x1b[1D!", &mut buffer);
         assert_eq!(buffer.get_cell(0, 2).text, "!");
     }
@@ -408,8 +427,7 @@ mod tests {
     fn applies_bold_and_faint() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(8, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process("\x1b[1mB\x1b[2mF\x1b[22mN", &mut buffer);
         assert!(buffer.get_cell(0, 0).bold);
         assert!(!buffer.get_cell(0, 0).faint);
@@ -423,8 +441,7 @@ mod tests {
     fn applies_strikethrough() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(8, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process("\x1b[9mS\x1b[29mN", &mut buffer);
         assert!(buffer.get_cell(0, 0).strikethrough);
         assert!(!buffer.get_cell(0, 1).strikethrough);
@@ -434,8 +451,7 @@ mod tests {
     fn applies_overline() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(8, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process("\x1b[53mO\x1b[55mN", &mut buffer);
         assert!(buffer.get_cell(0, 0).overline);
         assert!(!buffer.get_cell(0, 1).overline);
@@ -445,8 +461,7 @@ mod tests {
     fn handles_scroll_region() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(10, 5, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         // Set scroll region to rows 2-4 (1-indexed: 2;4)
         parser.process("\x1b[2;4r", &mut buffer);
         // Cursor should be at 0,0 after setting scroll region
@@ -457,8 +472,7 @@ mod tests {
     fn handles_insert_delete_lines() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(4, 4, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process("AAA\n", &mut buffer);
         parser.process("BBB\n", &mut buffer);
         parser.process("CCC", &mut buffer);
@@ -472,8 +486,7 @@ mod tests {
     fn handles_cursor_visibility_private_mode() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(4, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         assert!(buffer.cursor_visible());
         parser.process("\x1b[?25l", &mut buffer);
         assert!(!buffer.cursor_visible());
@@ -485,8 +498,7 @@ mod tests {
     fn captures_osc_window_title_with_bel_terminator() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(8, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process("\x1b]2;wibble\x07ok", &mut buffer);
         assert_eq!(buffer.title(), Some("wibble"));
         // OSC payload was consumed, but text after the terminator was rendered.
@@ -498,8 +510,7 @@ mod tests {
     fn captures_osc_window_title_with_st_terminator() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(8, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process("\x1b]0;hello\x1b\\!", &mut buffer);
         assert_eq!(buffer.title(), Some("hello"));
         assert_eq!(buffer.get_cell(0, 0).text, "!");
@@ -510,8 +521,7 @@ mod tests {
         // OSC 8 (hyperlinks) and others should be consumed but not set title.
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(8, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process(
             "\x1b]8;;https://example.com\x07link\x1b]8;;\x07",
             &mut buffer,
@@ -524,8 +534,7 @@ mod tests {
     fn handles_alt_screen() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(4, 2, &theme);
-        let style = buffer.default_style().clone();
-        let mut parser = AnsiParser::new(style, theme);
+        let mut parser = AnsiParser::new(theme, false);
         parser.process("ABCD", &mut buffer);
         assert_eq!(buffer.get_cell(0, 0).text, "A");
         // Enter alt screen
@@ -535,6 +544,43 @@ mod tests {
         assert_eq!(buffer.get_cell(0, 0).text, "X");
         // Exit alt screen
         parser.process("\x1b[?1049l", &mut buffer);
+        assert_eq!(buffer.get_cell(0, 0).text, "A");
+    }
+
+    #[test]
+    fn replay_dispatches_resize_events_to_buffer() {
+        use crate::cast::RecordingSession;
+        use crate::terminal::TerminalEmulator;
+
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let session = RecordingSession::read_from_str(
+            r#"{"version":2,"width":4,"height":2,"timestamp":0}
+[0.1,"o","abcd"]
+[0.5,"r","8x3"]
+[0.6,"o","X"]
+"#,
+        )
+        .unwrap();
+        let mut emulator = TerminalEmulator::new(4, 2, &theme, false);
+        let frames = emulator.replay(&session);
+        // Initial output frame is still 4x2.
+        assert_eq!(frames[0].buffer.width, 4);
+        assert_eq!(frames[0].buffer.height, 2);
+        // Final frame is post-resize and post-'X' write: 8x3, 'a' preserved.
+        let last = frames.last().unwrap();
+        assert_eq!(last.buffer.width, 8);
+        assert_eq!(last.buffer.height, 3);
+        assert_eq!(last.buffer.get_cell(0, 0).text, "a");
+    }
+
+    #[test]
+    fn unknown_csi_does_not_crash_and_silently_ignored_when_quiet() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(4, 2, &theme);
+        let mut parser = AnsiParser::new(theme, false);
+        // CSI 'Z' (cursor backward tabulation) is unhandled — must be consumed
+        // as a complete sequence so the trailing 'A' still renders.
+        parser.process("\x1b[3ZA", &mut buffer);
         assert_eq!(buffer.get_cell(0, 0).text, "A");
     }
 }

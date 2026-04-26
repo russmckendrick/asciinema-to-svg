@@ -70,6 +70,10 @@ pub struct ScreenBuffer {
     pub width: usize,
     pub height: usize,
     default_style: TextStyle,
+    /// The active text style applied to incoming glyphs and to cells cleared
+    /// by ED/EL/DCH/ECH. The parser mutates this directly via SGR, instead of
+    /// holding its own parallel `TextStyle` that could drift out of sync.
+    current_style: TextStyle,
     cells: Vec<Vec<ScreenCell>>,
     cursor_row: usize,
     cursor_col: usize,
@@ -110,6 +114,7 @@ impl ScreenBuffer {
         Self {
             width: width.max(1),
             height: h,
+            current_style: default_style.clone(),
             default_style,
             cells,
             cursor_row: 0,
@@ -125,6 +130,19 @@ impl ScreenBuffer {
             alt_cursor_col: 0,
             title: None,
         }
+    }
+
+    #[allow(dead_code)]
+    pub fn current_style(&self) -> &TextStyle {
+        &self.current_style
+    }
+
+    pub fn current_style_mut(&mut self) -> &mut TextStyle {
+        &mut self.current_style
+    }
+
+    pub fn reset_current_style(&mut self) {
+        self.current_style = self.default_style.clone();
     }
 
     // Wired by the parser via ?25h/l; the renderer will consume this once
@@ -167,7 +185,7 @@ impl ScreenBuffer {
         &self.cells[row][col]
     }
 
-    pub fn put_char(&mut self, ch: char, style: &TextStyle) {
+    pub fn put_char(&mut self, ch: char) {
         match ch {
             '\n' => self.line_feed(),
             '\r' => self.carriage_return(),
@@ -176,11 +194,11 @@ impl ScreenBuffer {
                 let next_stop = ((self.cursor_col / 8) + 1) * 8;
                 let spaces = (next_stop.saturating_sub(self.cursor_col)).max(1);
                 for _ in 0..spaces {
-                    self.put_printable(" ", style);
+                    self.put_printable(" ");
                 }
             }
             c if c.is_control() => {}
-            c => self.put_printable(&c.to_string(), style),
+            c => self.put_printable(&c.to_string()),
         }
     }
 
@@ -235,8 +253,8 @@ impl ScreenBuffer {
         self.move_cursor_to(self.saved_row, self.saved_col);
     }
 
-    pub fn clear_line(&mut self, mode: i32, style: Option<&TextStyle>) {
-        let style = style.unwrap_or(&self.default_style).clone();
+    pub fn clear_line(&mut self, mode: i32) {
+        let style = self.current_style.clone();
         match mode {
             1 => {
                 for col in 0..=self.cursor_col {
@@ -256,8 +274,8 @@ impl ScreenBuffer {
         }
     }
 
-    pub fn clear_display(&mut self, mode: i32, style: Option<&TextStyle>) {
-        let style = style.unwrap_or(&self.default_style).clone();
+    pub fn clear_display(&mut self, mode: i32) {
+        let style = self.current_style.clone();
         match mode {
             1 => {
                 for row in 0..=self.cursor_row {
@@ -293,8 +311,8 @@ impl ScreenBuffer {
         }
     }
 
-    pub fn delete_characters(&mut self, count: usize, style: Option<&TextStyle>) {
-        let style = style.unwrap_or(&self.default_style).clone();
+    pub fn delete_characters(&mut self, count: usize) {
+        let style = self.current_style.clone();
         let count = count.min(self.width.saturating_sub(self.cursor_col));
         let row = self.cursor_row;
         for col in self.cursor_col..self.width.saturating_sub(count) {
@@ -305,8 +323,8 @@ impl ScreenBuffer {
         }
     }
 
-    pub fn erase_chars(&mut self, count: usize, style: Option<&TextStyle>) {
-        let style = style.unwrap_or(&self.default_style).clone();
+    pub fn erase_chars(&mut self, count: usize) {
+        let style = self.current_style.clone();
         let end = (self.cursor_col + count).min(self.width);
         for col in self.cursor_col..end {
             self.cells[self.cursor_row][col] = ScreenCell::blank(&style);
@@ -338,7 +356,7 @@ impl ScreenBuffer {
         self.cells[row][target].text.push_str(text);
     }
 
-    fn put_printable(&mut self, text: &str, style: &TextStyle) {
+    fn put_printable(&mut self, text: &str) {
         if self.pending_wrap {
             self.pending_wrap = false;
             self.cursor_col = 0;
@@ -352,12 +370,12 @@ impl ScreenBuffer {
         }
 
         self.cells[self.cursor_row][self.cursor_col] =
-            ScreenCell::from_text(text, style, wide, false);
+            ScreenCell::from_text(text, &self.current_style, wide, false);
         self.cursor_col += 1;
 
         if wide && self.cursor_col < self.width {
             self.cells[self.cursor_row][self.cursor_col] =
-                ScreenCell::from_text(" ", style, false, true);
+                ScreenCell::from_text(" ", &self.current_style, false, true);
             self.cursor_col += 1;
         }
 
@@ -454,6 +472,42 @@ impl ScreenBuffer {
         self.cells[row].truncate(self.width);
     }
 
+    /// Resize the buffer in place, preserving as much of the existing content
+    /// as fits. Cells become blank (in the current style) when the buffer
+    /// grows; rows and columns past the new bounds are truncated when it
+    /// shrinks. Cursor and scroll region are clamped to the new geometry.
+    pub fn resize(&mut self, width: usize, height: usize) {
+        let new_w = width.max(1);
+        let new_h = height.max(1);
+        let blank = ScreenCell::blank(&self.current_style);
+
+        for row in self.cells.iter_mut() {
+            if row.len() < new_w {
+                row.resize(new_w, blank.clone());
+            } else {
+                row.truncate(new_w);
+            }
+        }
+        if self.cells.len() < new_h {
+            let blank_row: Vec<ScreenCell> = (0..new_w).map(|_| blank.clone()).collect();
+            while self.cells.len() < new_h {
+                self.cells.push(blank_row.clone());
+            }
+        } else {
+            self.cells.truncate(new_h);
+        }
+
+        self.width = new_w;
+        self.height = new_h;
+        self.cursor_row = self.cursor_row.min(new_h - 1);
+        self.cursor_col = self.cursor_col.min(new_w - 1);
+        self.saved_row = self.saved_row.min(new_h - 1);
+        self.saved_col = self.saved_col.min(new_w - 1);
+        self.scroll_top = 0;
+        self.scroll_bottom = new_h - 1;
+        self.pending_wrap = false;
+    }
+
     pub fn enter_alt_screen(&mut self) {
         let saved = self.cells.clone();
         self.alt_cells = Some(saved);
@@ -508,8 +562,7 @@ mod tests {
     fn supports_wide_characters() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(4, 2, &theme);
-        let style = buffer.default_style().clone();
-        buffer.put_char('中', &style);
+        buffer.put_char('中');
         assert_eq!(buffer.get_cell(0, 0).text, "中");
         assert!(buffer.get_cell(0, 0).is_wide);
         assert!(buffer.get_cell(0, 1).is_wide_continuation);
@@ -537,25 +590,59 @@ mod tests {
     fn combining_mark_at_buffer_start_attaches_when_cell_has_glyph() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(4, 2, &theme);
-        let style = buffer.default_style().clone();
         // Place 'e' at (0,0), then move cursor back so a combining mark
         // arriving with cursor at (0,0) attaches to (0,0)'s glyph.
-        buffer.put_char('e', &style);
+        buffer.put_char('e');
         buffer.move_cursor_to(0, 0);
         buffer.append_to_previous_cell("\u{0301}"); // combining acute
         assert_eq!(buffer.get_cell(0, 0).text, "e\u{0301}");
     }
 
     #[test]
+    fn resize_grows_preserving_existing_content() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(4, 2, &theme);
+        for ch in "abcd".chars() {
+            buffer.put_char(ch);
+        }
+        buffer.resize(8, 4);
+        assert_eq!(buffer.width, 8);
+        assert_eq!(buffer.height, 4);
+        // Original glyphs survive at their original positions.
+        assert_eq!(buffer.get_cell(0, 0).text, "a");
+        assert_eq!(buffer.get_cell(0, 3).text, "d");
+        // New cells are blank.
+        assert_eq!(buffer.get_cell(0, 4).text, " ");
+        assert_eq!(buffer.get_cell(3, 0).text, " ");
+    }
+
+    #[test]
+    fn resize_shrink_clamps_cursor_and_drops_overflow() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(8, 4, &theme);
+        for ch in "12345678".chars() {
+            buffer.put_char(ch);
+        }
+        // Cursor is at end of row 0.
+        buffer.resize(4, 2);
+        assert_eq!(buffer.width, 4);
+        assert_eq!(buffer.height, 2);
+        // Cursor clamped inside new bounds.
+        assert!(buffer.cursor_row() < 2);
+        // Visible content is the truncated head of the original row.
+        assert_eq!(buffer.get_cell(0, 0).text, "1");
+        assert_eq!(buffer.get_cell(0, 3).text, "4");
+    }
+
+    #[test]
     fn scrolls_when_newlines_overflow() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let mut buffer = ScreenBuffer::new(4, 2, &theme);
-        let style = buffer.default_style().clone();
         for line in ["1", "2", "3"] {
             for ch in line.chars() {
-                buffer.put_char(ch, &style);
+                buffer.put_char(ch);
             }
-            buffer.put_char('\n', &style);
+            buffer.put_char('\n');
         }
         assert_eq!(buffer.height, 2);
         assert!(

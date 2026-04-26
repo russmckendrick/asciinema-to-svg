@@ -1,7 +1,7 @@
 pub mod ansi_parser;
 pub mod screen_buffer;
 
-use crate::cast::RecordingSession;
+use crate::cast::{EventKind, RecordingSession};
 use crate::theme::ThemeDefinition;
 use ansi_parser::AnsiParser;
 use screen_buffer::ScreenBuffer;
@@ -18,16 +18,23 @@ pub struct TerminalEmulator {
 }
 
 impl TerminalEmulator {
-    pub fn new(width: usize, height: usize, theme: &ThemeDefinition) -> Self {
+    pub fn new(width: usize, height: usize, theme: &ThemeDefinition, verbose: bool) -> Self {
         let buffer = ScreenBuffer::new(width, height, theme);
-        let parser = AnsiParser::new(buffer.default_style().clone(), theme.clone());
+        let parser = AnsiParser::new(theme.clone(), verbose);
         Self { parser, buffer }
     }
 
     pub fn replay(&mut self, session: &RecordingSession) -> Vec<TerminalFrame> {
         let mut frames = Vec::with_capacity(session.events.len());
         for event in &session.events {
-            self.parser.process(&event.data, &mut self.buffer);
+            match event.kind {
+                EventKind::Output => self.parser.process(&event.data, &mut self.buffer),
+                EventKind::Resize => {
+                    if let Some((cols, rows)) = parse_resize(&event.data) {
+                        self.buffer.resize(cols, rows);
+                    }
+                }
+            }
             frames.push(TerminalFrame {
                 time: event.time,
                 buffer: self.buffer.clone(),
@@ -41,4 +48,12 @@ impl TerminalEmulator {
         }
         frames
     }
+}
+
+/// Parse a resize event payload like `"80x24"` into `(cols, rows)`.
+fn parse_resize(data: &str) -> Option<(usize, usize)> {
+    let (cols, rows) = data.split_once('x')?;
+    let cols = cols.trim().parse().ok()?;
+    let rows = rows.trim().parse().ok()?;
+    Some((cols, rows))
 }

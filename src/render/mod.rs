@@ -28,6 +28,8 @@ pub struct RenderOptions {
     pub at: Option<f64>,
     /// True (default) loops the animation forever; false plays once.
     pub loop_animation: bool,
+    /// When true, the parser logs unhandled control sequences to stderr.
+    pub verbose: bool,
 }
 
 impl Default for RenderOptions {
@@ -45,6 +47,7 @@ impl Default for RenderOptions {
             end: None,
             at: None,
             loop_animation: true,
+            verbose: false,
         }
     }
 }
@@ -69,6 +72,7 @@ pub fn render_animated_svg(
         session.terminal_size.width,
         session.terminal_size.height,
         theme,
+        options.verbose,
     );
     let all_frames = emulator.replay(session);
     let mut frames = deduplicate_frames(all_frames);
@@ -82,7 +86,14 @@ pub fn render_animated_svg(
     let natural_cell_width = theme.font_size * 0.6;
     let natural_line_height = theme.line_height;
     let content_top_gap = theme.chrome.content_top_gap;
-    let natural_terminal_width = session.terminal_size.width as f32 * natural_cell_width;
+    // Casts can resize mid-stream (`r` events). Use the maximum observed buffer
+    // size for canvas sizing so smaller frames sit inside the larger canvas
+    // without truncating later content.
+    let (canvas_cols, canvas_rows) = frames.iter().fold(
+        (session.terminal_size.width, session.terminal_size.height),
+        |(w, h), f| (w.max(f.buffer.width), h.max(f.buffer.height)),
+    );
+    let natural_terminal_width = canvas_cols as f32 * natural_cell_width;
 
     // Each statusline row with command text occupies an extra line_height
     // (one for the statusline bar, one for the "$ command" line below it).
@@ -109,7 +120,7 @@ pub fn render_animated_svg(
         0
     };
     let natural_terminal_height =
-        (session.terminal_size.height as f32 + extra_statusline_rows as f32) * natural_line_height;
+        (canvas_rows as f32 + extra_statusline_rows as f32) * natural_line_height;
     let natural_width = theme.chrome.padding * 2.0 + natural_terminal_width;
     let natural_height = theme.chrome.padding * 2.0
         + theme.chrome.title_bar_height
@@ -154,14 +165,13 @@ pub fn render_animated_svg(
                 - theme.chrome.title_bar_height
                 - content_top_gap)
                 .max(1.0),
-            cell_width: ((width - theme.chrome.padding * 2.0)
-                / session.terminal_size.width.max(1) as f32)
+            cell_width: ((width - theme.chrome.padding * 2.0) / canvas_cols.max(1) as f32)
                 .max(theme.font_size * 0.52),
             line_height: ((height
                 - theme.chrome.padding * 2.0
                 - theme.chrome.title_bar_height
                 - content_top_gap)
-                / session.terminal_size.height.max(1) as f32)
+                / canvas_rows.max(1) as f32)
                 .max(theme.line_height),
         }
     };
@@ -1266,5 +1276,26 @@ mod tests {
         )
         .unwrap();
         assert!(svg.contains(">file-stem</text>"));
+    }
+
+    #[test]
+    fn canvas_grows_to_max_observed_buffer_size_after_resize() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        // Cast starts at 20x4 then resizes to 40x6 mid-stream.
+        let content = r#"{"version":2,"width":20,"height":4,"timestamp":0}
+[0.1,"o","hi"]
+[0.5,"r","40x6"]
+[0.6,"o","x"]
+"#;
+        let session = RecordingSession::read_from_str(content).unwrap();
+        let svg = render_animated_svg(&session, &theme, RenderOptions::default()).unwrap();
+        // Canvas should be sized for the LARGER (post-resize) terminal: 40 cols.
+        // natural_cell_width = font_size * 0.6 = 18 * 0.6 = 10.8; 40 cols = 432px;
+        // plus 2*16 padding = 464; the SVG width attribute should be 464.
+        assert!(
+            svg.contains(r#"width="464""#),
+            "expected canvas sized for 40-col terminal; got: {}",
+            svg.lines().next().unwrap_or("")
+        );
     }
 }

@@ -45,6 +45,7 @@ fn main() -> Result<()> {
             end: cli.end,
             at: cli.at,
             loop_animation: !cli.no_loop,
+            verbose: cli.verbose,
         },
     )?;
 
