@@ -126,9 +126,16 @@ pub fn render_animated_svg(
         }
     };
 
-    let title = options
-        .window_title
-        .unwrap_or_else(|| "Terminal".to_string());
+    // CLI override wins; otherwise prefer the OSC 0/2 title captured during
+    // replay (most recent non-empty title across frames), falling back to a
+    // generic label.
+    let title = options.window_title.unwrap_or_else(|| {
+        frames
+            .iter()
+            .rev()
+            .find_map(|f| f.buffer.title().filter(|t| !t.is_empty()).map(str::to_string))
+            .unwrap_or_else(|| "Terminal".to_string())
+    });
     let total_duration = frames
         .last()
         .map(|frame| frame.time.max(0.2) + 0.2)

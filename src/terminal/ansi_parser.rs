@@ -73,7 +73,7 @@ impl AnsiParser {
         }
         match chars[index + 1] {
             '[' => self.try_handle_csi(chars, index + 2, buffer),
-            ']' => skip_osc(chars, index + 2),
+            ']' => handle_osc(chars, index + 2, buffer),
             '7' => {
                 buffer.save_cursor();
                 Some(index + 1)
@@ -190,6 +190,7 @@ impl AnsiParser {
             'h' => {
                 for &param in parameters {
                     match param {
+                        25 => buffer.set_cursor_visible(true),
                         1049 => buffer.enter_alt_screen(),
                         _ => {}
                     }
@@ -198,6 +199,7 @@ impl AnsiParser {
             'l' => {
                 for &param in parameters {
                     match param {
+                        25 => buffer.set_cursor_visible(false),
                         1049 => buffer.exit_alt_screen(),
                         _ => {}
                     }
@@ -319,16 +321,40 @@ fn get_param(parameters: &[i32], index: usize, default: i32) -> i32 {
     parameters.get(index).copied().unwrap_or(default)
 }
 
-fn skip_osc(chars: &[char], start: usize) -> Option<usize> {
-    for index in start..chars.len() {
+/// Parse an OSC payload starting after the `ESC ]` introducer. Returns the
+/// index of the final terminator byte (BEL or the trailing `\` of `ESC \`).
+///
+/// We capture window title sequences (`OSC 0;Pt` and `OSC 2;Pt`) into the
+/// buffer; everything else (hyperlinks, color queries, etc.) is consumed and
+/// dropped so the renderer never sees its raw bytes.
+fn handle_osc(chars: &[char], start: usize, buffer: &mut ScreenBuffer) -> Option<usize> {
+    let mut payload_end = None;
+    let mut term_end = None;
+    let mut index = start;
+    while index < chars.len() {
         if chars[index] == '\x07' {
-            return Some(index);
+            payload_end = Some(index);
+            term_end = Some(index);
+            break;
         }
         if chars[index] == '\x1b' && index + 1 < chars.len() && chars[index + 1] == '\\' {
-            return Some(index + 1);
+            payload_end = Some(index);
+            term_end = Some(index + 1);
+            break;
+        }
+        index += 1;
+    }
+    let (Some(payload_end), Some(term_end)) = (payload_end, term_end) else {
+        return None;
+    };
+
+    let payload: String = chars[start..payload_end].iter().collect();
+    if let Some((ps, pt)) = payload.split_once(';') {
+        if matches!(ps, "0" | "2") {
+            buffer.set_title(pt.to_string());
         }
     }
-    None
+    Some(term_end)
 }
 
 fn is_zero_width_char(ch: char) -> bool {
@@ -440,6 +466,55 @@ mod tests {
         parser.process("\x1b[2;1H\x1b[1L", &mut buffer);
         // Row 1 should now be blank
         assert_eq!(buffer.get_cell(1, 0).text, " ");
+    }
+
+    #[test]
+    fn handles_cursor_visibility_private_mode() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(4, 2, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        assert!(buffer.cursor_visible());
+        parser.process("\x1b[?25l", &mut buffer);
+        assert!(!buffer.cursor_visible());
+        parser.process("\x1b[?25h", &mut buffer);
+        assert!(buffer.cursor_visible());
+    }
+
+    #[test]
+    fn captures_osc_window_title_with_bel_terminator() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(8, 2, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        parser.process("\x1b]2;wibble\x07ok", &mut buffer);
+        assert_eq!(buffer.title(), Some("wibble"));
+        // OSC payload was consumed, but text after the terminator was rendered.
+        assert_eq!(buffer.get_cell(0, 0).text, "o");
+        assert_eq!(buffer.get_cell(0, 1).text, "k");
+    }
+
+    #[test]
+    fn captures_osc_window_title_with_st_terminator() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(8, 2, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        parser.process("\x1b]0;hello\x1b\\!", &mut buffer);
+        assert_eq!(buffer.title(), Some("hello"));
+        assert_eq!(buffer.get_cell(0, 0).text, "!");
+    }
+
+    #[test]
+    fn ignores_non_title_osc_sequences() {
+        // OSC 8 (hyperlinks) and others should be consumed but not set title.
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(8, 2, &theme);
+        let style = buffer.default_style().clone();
+        let mut parser = AnsiParser::new(style, theme);
+        parser.process("\x1b]8;;https://example.com\x07link\x1b]8;;\x07", &mut buffer);
+        assert_eq!(buffer.title(), None);
+        assert_eq!(buffer.get_cell(0, 0).text, "l");
     }
 
     #[test]

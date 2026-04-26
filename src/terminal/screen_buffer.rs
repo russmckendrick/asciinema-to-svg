@@ -73,6 +73,7 @@ pub struct ScreenBuffer {
     cells: Vec<Vec<ScreenCell>>,
     cursor_row: usize,
     cursor_col: usize,
+    cursor_visible: bool,
     saved_row: usize,
     saved_col: usize,
     pending_wrap: bool,
@@ -81,6 +82,7 @@ pub struct ScreenBuffer {
     alt_cells: Option<Vec<Vec<ScreenCell>>>,
     alt_cursor_row: usize,
     alt_cursor_col: usize,
+    title: Option<String>,
 }
 
 impl ScreenBuffer {
@@ -112,6 +114,7 @@ impl ScreenBuffer {
             cells,
             cursor_row: 0,
             cursor_col: 0,
+            cursor_visible: true,
             saved_row: 0,
             saved_col: 0,
             pending_wrap: false,
@@ -120,7 +123,27 @@ impl ScreenBuffer {
             alt_cells: None,
             alt_cursor_row: 0,
             alt_cursor_col: 0,
+            title: None,
         }
+    }
+
+    // Wired by the parser via ?25h/l; the renderer will consume this once
+    // theme-driven cursor rendering lands.
+    #[allow(dead_code)]
+    pub fn cursor_visible(&self) -> bool {
+        self.cursor_visible
+    }
+
+    pub fn set_cursor_visible(&mut self, visible: bool) {
+        self.cursor_visible = visible;
+    }
+
+    pub fn title(&self) -> Option<&str> {
+        self.title.as_deref()
+    }
+
+    pub fn set_title(&mut self, title: String) {
+        self.title = Some(title);
     }
 
     pub fn default_style(&self) -> &TextStyle {
@@ -291,7 +314,12 @@ impl ScreenBuffer {
     }
 
     pub fn append_to_previous_cell(&mut self, text: &str) {
+        // At buffer start with no preceding cell, attach to cell (0,0) itself
+        // if it has visible content; otherwise drop (no glyph to combine onto).
         if self.cursor_row == 0 && self.cursor_col == 0 {
+            if self.cells[0][0].text != " " {
+                self.cells[0][0].text.push_str(text);
+            }
             return;
         }
         let (row, col) = if self.cursor_col > 0 {
@@ -491,6 +519,37 @@ mod tests {
         assert_eq!(buffer.get_cell(0, 0).text, "中");
         assert!(buffer.get_cell(0, 0).is_wide);
         assert!(buffer.get_cell(0, 1).is_wide_continuation);
+    }
+
+    #[test]
+    fn cursor_visibility_defaults_true_and_can_toggle() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(4, 2, &theme);
+        assert!(buffer.cursor_visible());
+        buffer.set_cursor_visible(false);
+        assert!(!buffer.cursor_visible());
+    }
+
+    #[test]
+    fn title_starts_none_and_can_be_set() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(4, 2, &theme);
+        assert_eq!(buffer.title(), None);
+        buffer.set_title("hello".to_string());
+        assert_eq!(buffer.title(), Some("hello"));
+    }
+
+    #[test]
+    fn combining_mark_at_buffer_start_attaches_when_cell_has_glyph() {
+        let theme = ThemeDefinition::load(Some("macos")).unwrap();
+        let mut buffer = ScreenBuffer::new(4, 2, &theme);
+        let style = buffer.default_style().clone();
+        // Place 'e' at (0,0), then move cursor back so a combining mark
+        // arriving with cursor at (0,0) attaches to (0,0)'s glyph.
+        buffer.put_char('e', &style);
+        buffer.move_cursor_to(0, 0);
+        buffer.append_to_previous_cell("\u{0301}"); // combining acute
+        assert_eq!(buffer.get_cell(0, 0).text, "e\u{0301}");
     }
 
     #[test]
