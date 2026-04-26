@@ -4,11 +4,9 @@ Statusline prompt rendering is enabled by default.
 
 ## Behavior
 
-- The renderer scans each row for statusline separator glyphs (U+E0B0–U+E0BF range).
-- When a separator is found, the row is treated as a **statusline row** and is **skipped** — its raw content is not rendered.
-- Instead, a **bespoke statusline** is drawn using the `prompt.segments` array from the theme (or `--statusline` override).
-- Each segment is drawn as a colored `<rect>` with a right-pointing arrow `<polygon>` separator, using the theme's `prompt.palette` colors (cycling by index).
-- Only the **first** statusline row per frame triggers the statusline; subsequent statusline rows are silently skipped.
+- A row is treated as a **statusline row** if it contains a powerline separator glyph (U+E0B0–U+E0BF) or has 3+ distinct non-default background-color segments.
+- The **first** statusline row per frame is rendered in **bespoke mode**: the row's raw content is replaced with the theme's `prompt.segments` array (theme- or `--statusline`-supplied). Each segment becomes a colored `<rect>` with a right-pointing arrow `<polygon>` separator, palette colors cycling by index. Below it, on its own line, the renderer draws the theme's `trailing_symbol` followed by the typed command extracted from the row's gap area.
+- **Subsequent** statusline rows in the same frame are rendered in **dynamic mode**: colored segments are extracted directly from the row's cell data and drawn with the same arrow separator style.
 - The statusline height matches `line_height`, so it is the same height as regular text rows.
 
 ## Bespoke Segments

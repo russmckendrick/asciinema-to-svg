@@ -136,7 +136,11 @@ pub fn render_bespoke_statusline(
         writeln!(
             svg,
             r#"<rect x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" fill="{}" class="statusline-seg"/>"#,
-            x.round(), row_y, seg_width, h, bg
+            x.round(),
+            row_y,
+            seg_width,
+            h,
+            bg
         )?;
 
         let mut content_x = x + padding_x;
@@ -147,7 +151,12 @@ pub fn render_bespoke_statusline(
             writeln!(
                 svg,
                 r#"<svg x="{:.2}" y="{:.2}" width="{:.2}" height="{:.2}" viewBox="0 0 24 24"><path d="{}" fill="{}"/></svg>"#,
-                content_x.round(), icon_y, icon_size, icon_size, path_data, prompt.text_color
+                content_x.round(),
+                icon_y,
+                icon_size,
+                icon_size,
+                path_data,
+                prompt.text_color
             )?;
             content_x += icon_size + gap;
         }
@@ -280,6 +289,7 @@ fn effective_bg(cell: &ScreenCell) -> &str {
 /// terminal cell data.  Groups consecutive cells by background color (skipping
 /// separator glyphs), then draws each segment as a colored rect + text with
 /// powerline arrow separators between them.
+#[allow(clippy::too_many_arguments)]
 pub fn render_dynamic_statusline(
     svg: &mut String,
     row: &[ScreenCell],
@@ -574,11 +584,7 @@ mod tests {
             font_family: "monospace".to_string(),
             font_size: 17.0,
             row_padding_x: 12.0,
-            segment_height: 28.0,
             text_color: "#f5e9c9".to_string(),
-            edge_fill: "#4d9ea5".to_string(),
-            separator_fill: "#7ab39d".to_string(),
-            leading_symbol: "\u{E0B6}".to_string(),
             trailing_symbol: "\u{276F}".to_string(),
             palette: vec![
                 "#d96d0f".to_string(),

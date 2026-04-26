@@ -173,7 +173,12 @@ pub fn render_animated_svg(
         frames
             .iter()
             .rev()
-            .find_map(|f| f.buffer.title().filter(|t| !t.is_empty()).map(str::to_string))
+            .find_map(|f| {
+                f.buffer
+                    .title()
+                    .filter(|t| !t.is_empty())
+                    .map(str::to_string)
+            })
             .or_else(|| options.fallback_title.clone())
             .unwrap_or_else(|| "Terminal".to_string())
     });
@@ -552,8 +557,7 @@ fn append_row_text(
 
         let cell_cols = if cell.is_wide { 2 } else { 1 };
         let cell_x = (layout.frame_x + column as f32 * layout.cell_width).round();
-        let cell_right =
-            (layout.frame_x + (column + cell_cols) as f32 * layout.cell_width).round();
+        let cell_right = (layout.frame_x + (column + cell_cols) as f32 * layout.cell_width).round();
         let cell_w = cell_right - cell_x;
         let x = (cell_x + layout.cell_width * 0.37).round();
         let background = effective_background(cell);
@@ -566,7 +570,14 @@ fn append_row_text(
         }
 
         if is_prompt_marker_glyph(&cell.text) {
-            append_prompt_marker(svg, layout, row_y, column, cell)?;
+            append_prompt_marker(
+                svg,
+                layout,
+                row_y,
+                column,
+                cell,
+                &theme.prompt.trailing_symbol,
+            )?;
             continue;
         }
 
@@ -665,7 +676,8 @@ fn append_row_text(
 
 /// Render command text from a statusline row's command area.
 ///
-/// Draws a `$` prompt marker at the left edge, then the command text
+/// Draws the theme's `prompt.trailing_symbol` (e.g. `$` on Linux, `❯` on
+/// macOS, `>` on PowerShell) at the left edge, then the command text
 /// immediately after it, shifted to the start of the line.
 fn append_row_text_range(
     svg: &mut String,
@@ -691,13 +703,14 @@ fn append_row_text_range(
     let prompt_y = (row_y + layout.line_height * 0.14 + layout.line_height * 0.07).round();
     let mut x = layout.frame_x + layout.cell_width * 0.37;
 
-    // Draw $ prompt marker
+    // Draw the theme's prompt prefix glyph.
     writeln!(
         svg,
-        r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,
+        r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">{}</text>"#,
         x.round(),
         prompt_y,
-        theme.terminal.foreground
+        theme.terminal.foreground,
+        escape_xml(&theme.prompt.trailing_symbol)
     )?;
     x += layout.cell_width * 2.0;
 
@@ -742,15 +755,17 @@ fn append_prompt_marker(
     row_y: f32,
     column: usize,
     cell: &ScreenCell,
+    glyph: &str,
 ) -> Result<()> {
     let x = (layout.frame_x + column as f32 * layout.cell_width + layout.cell_width * 0.09).round();
     let y = (row_y + layout.line_height * 0.07).round();
     writeln!(
         svg,
-        r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">$</text>"#,
+        r#"<text class="terminal-text" x="{:.2}" y="{:.2}" fill="{}">{}</text>"#,
         x,
         y,
-        effective_foreground(cell)
+        effective_foreground(cell),
+        escape_xml(glyph)
     )?;
     Ok(())
 }
@@ -853,13 +868,13 @@ fn deduplicate_frames(frames: Vec<TerminalFrame>) -> Vec<TerminalFrame> {
     }
     let mut result: Vec<TerminalFrame> = Vec::with_capacity(frames.len());
     for frame in frames {
-        if let Some(prev) = result.last() {
-            if buffers_equal(&prev.buffer, &frame.buffer) {
-                // Replace previous with this one (keep later timestamp)
-                let last = result.len() - 1;
-                result[last] = frame;
-                continue;
-            }
+        if let Some(prev) = result.last()
+            && buffers_equal(&prev.buffer, &frame.buffer)
+        {
+            // Replace previous with this one (keep later timestamp)
+            let last = result.len() - 1;
+            result[last] = frame;
+            continue;
         }
         result.push(frame);
     }
@@ -1084,7 +1099,7 @@ mod tests {
     }
 
     #[test]
-    fn replaces_prompt_marker_glyph_with_dollar() {
+    fn replaces_prompt_marker_glyph_with_theme_trailing_symbol() {
         let theme = ThemeDefinition::load(Some("macos")).unwrap();
         let session = RecordingSession::read_from_str(
             r#"{"version":2,"width":20,"height":4,"timestamp":0}
@@ -1105,7 +1120,8 @@ mod tests {
             },
         )
         .unwrap();
-        assert!(svg.contains("$</text>"));
+        // macOS theme defines trailing_symbol as `❯` (U+276F).
+        assert!(svg.contains("❯</text>"));
         assert!(!svg.contains(""));
     }
 

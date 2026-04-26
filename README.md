@@ -64,13 +64,16 @@ cargo run -- demo.cast --theme ./themes/my-theme.json --output custom.svg
 - Ships with `macos`, `linux`, and `powershell` themes
 - Enables statusline prompt remapping by default
 - Supports custom theme JSON files
+- Captures OSC 0/2 window titles from the cast and uses them as the SVG title (overridable with `--title`)
+- Pixel-snapped frame rendering with a GPU-pinned compositor layer to avoid Safari shimmer
+- Timing controls: `--speed`, `--idle-time-limit`, `--start`/`--end`, `--at` (single static frame), `--no-loop`
 - Allows explicit output `--width`, `--height`, and `--title` overrides
 
 ## Current Scope
 
 - No recording functionality
 - No PTY or shell spawning
-- No alternate output formats
+- SVG output only (no raster formats yet)
 - No subcommands
 
 ## Documentation

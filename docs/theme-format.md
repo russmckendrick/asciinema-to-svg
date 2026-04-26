@@ -20,7 +20,6 @@ Theme files are JSON documents. The tool ships with built-in themes under [`them
 
 - `background`: terminal background color
 - `foreground`: default text color
-- `selection`: reserved for selection styling
 - `ansi_palette`: 16 ANSI colors in order
 
 ## `chrome`
@@ -42,12 +41,8 @@ Controls how statusline rows are rendered. Can also be supplied standalone via `
 - `font_family`: font used for segment text
 - `font_size`: text size inside segments
 - `row_padding_x`: horizontal padding inside each segment before/after text
-- `segment_height`: reserved height value (defaults to `28.0` to match `line_height`)
 - `text_color`: color of text inside segments
-- `edge_fill`: reserved for edge decoration color
-- `separator_fill`: reserved for separator decoration color
-- `leading_symbol`: reserved for future use
-- `trailing_symbol`: reserved for future use
+- `trailing_symbol`: glyph rendered as the prompt prefix on the command line below a statusline. Built-in themes use `$` (Linux), `❯` (macOS), `>` (PowerShell). Also substituted whenever the cast emits the U+EB70 prompt-marker glyph from a Nerd Font, so output stays portable.
 - `segments`: array defining the bespoke statusline content. Each entry becomes one colored segment. Entries can be:
   - A plain string: `"user"` — renders text only (backward-compatible)
   - An object with optional `text` and `icon` fields: `{"icon": "apple-fill", "text": "user"}` — renders an icon and/or text

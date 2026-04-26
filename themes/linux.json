@@ -6,7 +6,6 @@
   "terminal": {
     "background": "#300021",
     "foreground": "#f8f8f2",
-    "selection": "#5a0b3b",
     "ansi_palette": [
       "#300021",
       "#ef2929",
@@ -41,13 +40,18 @@
     "font_family": "Ubuntu Mono, DejaVu Sans Mono, monospace",
     "font_size": 17.0,
     "row_padding_x": 10.0,
-    "segment_height": 28.0,
     "text_color": "#f8f8f2",
-    "edge_fill": "#5f8c84",
-    "separator_fill": "#7aa39d",
-    "leading_symbol": "🐧",
     "trailing_symbol": "$",
-    "segments": [{"icon": "terminal-fill", "text": "user"}, {"icon": "folder-fill", "text": "~"}],
+    "segments": [
+      {
+        "icon": "terminal-fill",
+        "text": "user"
+      },
+      {
+        "icon": "folder-fill",
+        "text": "~"
+      }
+    ],
     "palette": [
       "#5b1a42",
       "#7b4f38",

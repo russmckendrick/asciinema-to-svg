@@ -349,10 +349,10 @@ fn handle_osc(chars: &[char], start: usize, buffer: &mut ScreenBuffer) -> Option
     };
 
     let payload: String = chars[start..payload_end].iter().collect();
-    if let Some((ps, pt)) = payload.split_once(';') {
-        if matches!(ps, "0" | "2") {
-            buffer.set_title(pt.to_string());
-        }
+    if let Some((ps, pt)) = payload.split_once(';')
+        && matches!(ps, "0" | "2")
+    {
+        buffer.set_title(pt.to_string());
     }
     Some(term_end)
 }
@@ -512,7 +512,10 @@ mod tests {
         let mut buffer = ScreenBuffer::new(8, 2, &theme);
         let style = buffer.default_style().clone();
         let mut parser = AnsiParser::new(style, theme);
-        parser.process("\x1b]8;;https://example.com\x07link\x1b]8;;\x07", &mut buffer);
+        parser.process(
+            "\x1b]8;;https://example.com\x07link\x1b]8;;\x07",
+            &mut buffer,
+        );
         assert_eq!(buffer.title(), None);
         assert_eq!(buffer.get_cell(0, 0).text, "l");
     }

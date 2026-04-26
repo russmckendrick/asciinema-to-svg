@@ -6,7 +6,6 @@
   "terminal": {
     "background": "#232744",
     "foreground": "#f5e9c9",
-    "selection": "#3f4a78",
     "ansi_palette": [
       "#232744",
       "#ff6b6b",
@@ -41,13 +40,18 @@
     "font_family": "SFMono-Regular, Menlo, Consolas, Monaco, monospace",
     "font_size": 17.0,
     "row_padding_x": 12.0,
-    "segment_height": 28.0,
     "text_color": "#f5e9c9",
-    "edge_fill": "#4d9ea5",
-    "separator_fill": "#7ab39d",
-    "leading_symbol": "",
-    "trailing_symbol": "❯",
-    "segments": [{"icon": "apple-fill", "text": "user"}, {"icon": "folder-fill", "text": "~"}],
+    "trailing_symbol": "\u276f",
+    "segments": [
+      {
+        "icon": "apple-fill",
+        "text": "user"
+      },
+      {
+        "icon": "folder-fill",
+        "text": "~"
+      }
+    ],
     "palette": [
       "#d96d0f",
       "#d7a126",

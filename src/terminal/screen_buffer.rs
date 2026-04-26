@@ -405,12 +405,6 @@ impl ScreenBuffer {
         self.move_cursor_to(0, 0);
     }
 
-    #[allow(dead_code)]
-    pub fn reset_scroll_region(&mut self) {
-        self.scroll_top = 0;
-        self.scroll_bottom = self.height - 1;
-    }
-
     pub fn insert_lines(&mut self, count: usize) {
         let row = self.cursor_row;
         if row < self.scroll_top || row > self.scroll_bottom {

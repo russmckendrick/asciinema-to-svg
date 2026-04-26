@@ -21,8 +21,6 @@ pub struct ThemeDefinition {
 pub struct TerminalTheme {
     pub background: String,
     pub foreground: String,
-    #[allow(dead_code)]
-    pub selection: String,
     pub ansi_palette: [String; 16],
 }
 
@@ -77,16 +75,13 @@ impl Segment {
 }
 
 #[derive(Debug, Clone, Deserialize)]
-#[allow(dead_code)]
 pub struct PromptTheme {
     pub font_family: String,
     pub font_size: f32,
     pub row_padding_x: f32,
-    pub segment_height: f32,
     pub text_color: String,
-    pub edge_fill: String,
-    pub separator_fill: String,
-    pub leading_symbol: String,
+    /// Glyph rendered as the prompt prefix on the command line below a
+    /// statusline (e.g. `$` on Linux, `❯` on macOS, `>` on PowerShell).
     pub trailing_symbol: String,
     pub palette: Vec<String>,
     #[serde(default)]
@@ -141,7 +136,6 @@ impl ThemeDefinition {
         self.chrome.radius *= factor;
         self.prompt.font_size *= factor;
         self.prompt.row_padding_x *= factor;
-        self.prompt.segment_height *= factor;
         if let Some(ref mut v) = self.prompt.segment_padding_x {
             *v *= factor;
         }
